@@ -142,7 +142,7 @@
       "slug": "clydebridge",
       "name": "Clydebridge",
       "local_authority": "South Lanarkshire",
-      "developer": "Apatura (presumed)",
+      "developer": "unknown (no developer named in any source)",
       "capacity_claim": "360 MW grid connection",
       "stage": "grid_record_only",
       "triage": "unverifiable"
@@ -151,7 +151,7 @@
       "slug": "easterhouse",
       "name": "Easterhouse",
       "local_authority": "Glasgow City",
-      "developer": "Apatura (presumed)",
+      "developer": "unknown (no developer named in any source)",
       "capacity_claim": "500 MW grid connection",
       "stage": "grid_record_only",
       "triage": "unverifiable"
