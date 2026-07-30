@@ -1,0 +1,51 @@
+[
+  {
+    "reference": "26/00138/EIA",
+    "planning_authority": "North Ayrshire Council",
+    "application_type": "eia_scoping",
+    "description": "Request for EIA Scoping Opinion for new data centre, Hunterston Estate, West Kilbride. Scoping material (as reported) covers a campus of multiple data centre buildings (up to 6 initially) with combined footprint up to 300,000 m2 and heights up to 35 m on ~88 ha, plus ~300-space car parking, substations, underground cabling, access roads, drainage, generators and cooling equipment; construction from 2027 for ~7 years to 2034. Submitted by Tetra Tech (F.A.O. Stuart Murison) on behalf of the developer; case officer Iain Davies.",
+    "submission_date": "2026-02-25",
+    "validation_date": "2026-02-27",
+    "consultation_deadline": "2026-03-13",
+    "decision_date": "2026-03-30",
+    "decision": "scoping_opinion_issued",
+    "decision_notes": "Portal status 'Scoping Agreed', delegated decision. Consultation responses on file from Transport Scotland, SEPA, flooding, Scottish Water, environmental health, roads, HSE, West of Scotland Archaeology Service, Historic Environment Scotland and NatureScot. WoSAS flagged high archaeological potential, risk from trenchless cabling to buried remains, and the historic landscape connection to Hunterston House and Castle, recommending non-invasive survey and trial trenching before determination.",
+    "eia_required": true,
+    "official_url": "https://www.eplanning.north-ayrshire.gov.uk/OnlinePlanning/applicationDetails.do?activeTab=summary&keyVal=TB0Y9PLE04X00",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2026-02-25",
+        "event_type": "submission",
+        "title": "EIA scoping request received by North Ayrshire Council",
+        "source_ids": ["src-nac-26-00138-eia"]
+      },
+      {
+        "event_date": "2026-03-30",
+        "event_type": "decision",
+        "title": "Scoping opinion agreed (delegated)",
+        "source_ids": ["src-nac-26-00138-eia"]
+      }
+    ],
+    "source_ids": ["src-nac-26-00138-eia", "src-ayrshire-today-archaeology"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "North Ayrshire Council",
+    "application_type": "full_application",
+    "description": "Anticipated full planning application with Environmental Impact Assessment for the data centre campus; developer states it is expected in 2026. Not yet submitted as of 30 July 2026 — the council has publicly confirmed no formal application is under consideration. No Proposal of Application Notice (PAN) reference located on the portal; as a major EIA development a PAN and statutory pre-application consultation would be expected before submission.",
+    "decision": "pending",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-eneus-hunterston-page", "src-irvine-times-greens"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Scottish Government Energy Consents Unit (reported)",
+    "application_type": "s36",
+    "description": "Related but separate consented battery energy storage scheme at Hunterston: reported planning permission January 2022 (originally Amp Energy's 'Scottish Green Battery Complex', 400 MW at Hunterston; APRS states 450 MW), now taken forward by Revera Energy as a 400 MW/800 MWh BESS with FID in June 2026 and construction expected from Q3 2026, including a 400 kV substation. Consent reference not yet located; recorded here because campaigners cite site/grid overlap with the data centre proposal.",
+    "decision": "approved",
+    "decision_notes": "Consent date and reference unverified against the ECU register; MW figure disputed (400 vs 450 MW).",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-ess-news-revera-bess", "src-aprs-hunterston"]
+  }
+]

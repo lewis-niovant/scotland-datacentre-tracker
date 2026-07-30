@@ -872,5 +872,132 @@
     "reliability_tier": 1,
     "status": "broken",
     "notes": "Portal unreachable from the research environment on 2026-07-30 (TLS connection reset / HTTP 503 via proxy). PAN records 24/01025/PAN and 26/00069/PAN could therefore NOT be verified against the primary record; details rest on APRS and the selling agent's particulars. Re-check needed."
+  },
+  {
+    "id": "src-nac-26-00138-eia",
+    "title": "26/00138/EIA — Request for EIA Scoping Opinion for new data centre, Hunterston Estate, West Kilbride (North Ayrshire Idox portal record)",
+    "publisher": "North Ayrshire Council",
+    "source_type": "planning_portal",
+    "url": "https://www.eplanning.north-ayrshire.gov.uk/OnlinePlanning/applicationDetails.do?activeTab=summary&keyVal=TB0Y9PLE04X00",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Received 25 Feb 2026, validated 27 Feb 2026, consultation to 13 Mar 2026, decision 'Scoping Agreed' issued 30 Mar 2026 (delegated). Applicant listed as Tetra Tech F.A.O. Stuart Murison (consultant acting for developer). Case officer Iain Davies; ward North Coast; Fairlie Community Council area. 12 documents including EIA scoping report (doc id 1330826) and consultation responses from Transport Scotland, SEPA, flood, Scottish Water, environmental health, roads, HSE, West of Scotland Archaeology Service, Historic Environment Scotland and NatureScot."
+  },
+  {
+    "id": "src-eneus-hunterston-page",
+    "title": "Hunterston Data Centre — project page",
+    "publisher": "Eneus Energy",
+    "source_type": "developer_publication",
+    "url": "https://eneusenergy.com/hunterston",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing/FAQ material",
+    "notes": "States: ~164-acre site; developed by Eneus Energy and Revera Energy on Hunterston Estate land; Carlyle and GIC backing Eneus; transmission-level grid connection; closed-loop cooling with minimal water in normal operation, initial fill trucked in, supply confirmed from Scottish Water Camphill WTW; batteries for ~10 minutes ride-through plus standby generators up to 48 hours; investment expected to exceed £10bn; 1,000+ construction jobs; operational job numbers 'under review'; application expected 2026, construction 2027/28."
+  },
+  {
+    "id": "src-aprs-hunterston",
+    "title": "Hunterston Data Centre (case page)",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/hunterston-data-centre/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group opposing rural data centre development",
+    "notes": "States: EIA scoping report submitted Feb 2026; site 88.16 ha of Grade 3 agricultural land just north of West Kilbride next to Hunterston Power Station; building footprint up to 300,000 m2 across ~30 ha, buildings up to 35 m; APRS infers 'at least 500MW' hyperscale; states a 450MW BESS on/adjacent to the site got planning permission in 2022 and is under construction; construction 2027 for ~7 years to 2034. Page content retrieved via search excerpts; direct fetch returned empty (likely bot-blocking)."
+  },
+  {
+    "id": "src-ayrshire-today-archaeology",
+    "title": "Archaeological concerns over Hunterston data centre plan",
+    "publisher": "Ayrshire Today",
+    "source_type": "journalism",
+    "url": "https://www.ayrshire-today.co.uk/news/26165906.archaeological-concerns-hunterston-data-centre-plan/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports scoping opinion agreed; up to 6 buildings initially, 300,000 m2 combined footprint, up to 35 m high; 300-space car parking, substations, underground cabling, generators, cooling plant; construction 2027 for ~7 years to 2034. West of Scotland Archaeological Service: site of 'high archaeological potential'; trenchless cabling could destroy buried remains; historic landscape connections to Hunterston House and Castle need protection; recommends non-invasive survey plus trial trenching before determination."
+  },
+  {
+    "id": "src-ess-news-revera-bess",
+    "title": "Revera takes final investment decision on 800 MWh BESS near former UK nuclear plants",
+    "publisher": "ESS News (pv magazine group)",
+    "source_type": "journalism",
+    "publication_date": "2026-06-15",
+    "url": "https://www.ess-news.com/2026/06/15/revera-takes-final-investment-decision-on-800-mwh-bess-near-former-uk-nuclear-plants/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Revera Energy (Carlyle-backed) FID June 2026 on 400 MW / 800 MWh Hunterston BESS ~1 mile from Hunterston A/B; construction expected Q3 2026; direct transmission connection (TEC register); 400 kV substation construction underway; part of 1 GW/2 GWh Scottish portfolio (>£500m); developer estimates ~550 direct construction jobs and 45 long-term operational jobs across portfolio."
+  },
+  {
+    "id": "src-irvine-times-greens",
+    "title": "Scottish Greens call for pause to Ayrshire data centre plans",
+    "publisher": "Irvine Times",
+    "source_type": "journalism",
+    "url": "https://www.irvinetimes.com/news/26241634.scottish-greens-call-pause-ayrshire-data-centre-plans/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Scottish Greens MSP Cara McKee calls for halt to hyperscale data centre proposals (Hunterston and Irvine) pending national strategy/guidance; cites water and power consumption concerns. North Ayrshire Council responds that no formal planning application is currently under consideration and any proposal would undergo full statutory assessment including EIA."
+  },
+  {
+    "id": "src-change-hunterston-petition",
+    "title": "Petition: Protect Hunterston's Coast, Countryside and Heritage — Reject the Hyperscale Data centre",
+    "publisher": "Change.org (petition starter 'Laura R')",
+    "source_type": "community_material",
+    "publication_date": "2026-06-04",
+    "url": "https://www.change.org/p/protect-hunterston-s-coast-countryside-and-heritage-reject-the-hyperscale-data-centre",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Opposition petition",
+    "notes": "~3,150 signatures as of 30 Jul 2026; cites ~84 ha of agricultural land, Firth of Clyde marine ecology, A78 traffic through Seamill and Fairlie, narrow historic stone gate pillars at the South Entrance unsuitable for two-way HGVs, and setting of Hunterston Castle and Portencross Castle."
+  },
+  {
+    "id": "src-aprs-hunter-clan-protest",
+    "title": "'Defend your Castle' protesters tell Hunter Clan over Estate plans for hyperscale data centre (press release)",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/press-release/locals-protest-hunter-clan-gathering-over-estate-plans-for-hyperscale-data-centre/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group press release",
+    "notes": "Local protest at a Clan Hunter gathering over Hunterston Estate's role as landowner for the data centre. Direct fetch returned empty; content known only from search results — details unverified."
+  },
+  {
+    "id": "src-ch-eneus-energy-ltd",
+    "title": "ENEUS ENERGY LIMITED, company SC739030 (and ENEUS ENERGY HOLDINGS LIMITED SC466495)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC739030",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Eneus Energy Limited SC739030, active, incorporated 22 Jul 2022, registered at Suite 2, Ground Floor, Orchard Brae House, 30 Queensferry Road, Edinburgh EH4 2HS. Eneus Energy Holdings Limited SC466495, active, incorporated 30 Dec 2013, same address. Which entity is the prospective applicant is not confirmed from planning records (scoping applicant field shows consultant Tetra Tech)."
+  },
+  {
+    "id": "src-carlyle-eneus",
+    "title": "Carlyle and GIC invest in green ammonia development company Eneus Energy",
+    "publisher": "Carlyle",
+    "source_type": "developer_publication",
+    "publication_date": "2022-08-01",
+    "url": "https://www.carlyle.com/media-room/news-release-archive/carlyle-and-gic-invest-in-green-ammonia-development-company-eneus-energy",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "notes": "Carlyle and GIC strategic investment (2022) in Eneus Energy, then described as a green ammonia developer with 14GW+ pipeline; founders Robert Armour and Chris Bronsdon. Eneus has since broadened to digital infrastructure."
+  },
+  {
+    "id": "src-peel-hunterston-parc",
+    "title": "Hunterston PARC (Port and Resource Centre) — energy transition hub",
+    "publisher": "Peel Ports Group",
+    "source_type": "developer_publication",
+    "url": "https://www.peelports.com/energy-transition-hubs/hunterston-parc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "notes": "Peel Ports' separate brownfield industrial campus at the former Hunterston coal terminal (Clydeport). Distinct landholding from the Hunterston Estate farmland proposed for the Eneus/Revera data centre; used here to distinguish the two Hunterston sites."
+  },
+  {
+    "id": "src-highview-hunterston",
+    "title": "Highview launches second phase of its LDES programme with 2.5GWh power plant at Hunterston, Ayrshire",
+    "publisher": "Highview Power",
+    "source_type": "developer_publication",
+    "url": "https://highviewpower.com/news_announcement/highview-launches-second-phase-of-its-long-duration-energy-storage-ldes-programme-with-2-5gwh-power-plant-at-hunterston-ayrshire/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "notes": "Separate 2.5 GWh liquid-air energy storage project at Hunterston (Hunterston PARC), illustrating the concentration of energy projects around the Hunterston 400 kV grid node. Not part of the data centre scheme."
   }
 ]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Eneus Energy Limited",
+    "role": "developer",
+    "company_number": "SC739030",
+    "jurisdiction": "Scotland",
+    "website": "https://eneusenergy.com",
+    "ownership_summary": "Incorporated 22 July 2022, registered at Orchard Brae House, 30 Queensferry Road, Edinburgh. Related to Eneus Energy Holdings Limited (SC466495, incorporated 2013, same address; founders Robert Armour and Chris Bronsdon). Carlyle and GIC made a strategic investment in Eneus Energy in 2022, when it was positioned as a green hydrogen/ammonia developer; it has since expanded into data centre development. Which group entity (or SPV) will be the planning applicant is not yet confirmed.",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "source_ids": ["src-ch-eneus-energy-ltd", "src-carlyle-eneus", "src-eneus-hunterston-page"]
+  },
+  {
+    "name": "Revera Energy",
+    "role": "developer",
+    "ownership_summary": "Carlyle-backed UK energy storage developer named by Eneus as co-developer of the Hunterston data centre; separately developing the consented Hunterston 400 MW/800 MWh BESS (FID June 2026) as part of a 1 GW/2 GWh Scottish portfolio.",
+    "confidence": "medium",
+    "notes": "The precise contractual split between Eneus and Revera on the data centre is not disclosed.",
+    "source_ids": ["src-eneus-hunterston-page", "src-ess-news-revera-bess"]
+  },
+  {
+    "name": "Hunterston Estate (Hunter family)",
+    "role": "landowner",
+    "ownership_summary": "The data centre is proposed on Hunterston Estate land in partnership with the estate. Reported context: the estate extends to ~770 acres, ~260 acres owned by the Hunter family with the remainder held by industrial owners after historic compulsory purchase but farmed by the estate.",
+    "confidence": "medium",
+    "notes": "Land ownership of the specific application parcels not verified against title records.",
+    "source_ids": ["src-eneus-hunterston-page", "src-aprs-hunter-clan-protest"]
+  },
+  {
+    "name": "The Carlyle Group",
+    "role": "investor",
+    "notes": "Investor in Eneus Energy (with GIC, since 2022) and backer of Revera Energy.",
+    "source_ids": ["src-carlyle-eneus", "src-ess-news-revera-bess"]
+  },
+  {
+    "name": "GIC",
+    "role": "investor",
+    "jurisdiction": "Singapore",
+    "notes": "Singapore sovereign wealth fund; co-investor in Eneus Energy since 2022.",
+    "source_ids": ["src-carlyle-eneus"]
+  },
+  {
+    "name": "Tetra Tech",
+    "role": "consultant",
+    "notes": "Environmental/planning consultant; named applicant contact (F.A.O. Stuart Murison) on EIA scoping request 26/00138/EIA.",
+    "source_ids": ["src-nac-26-00138-eia"]
+  },
+  {
+    "name": "North Ayrshire Council",
+    "role": "planning_authority",
+    "source_ids": ["src-nac-26-00138-eia"]
+  },
+  {
+    "name": "Scottish Water",
+    "role": "water_provider",
+    "notes": "Developer states Scottish Water has confirmed supply capacity from Camphill Water Treatment Works; scoping consultation response on file.",
+    "source_ids": ["src-eneus-hunterston-page", "src-nac-26-00138-eia"]
+  },
+  {
+    "name": "Peel Ports Group (Clydeport)",
+    "role": "other",
+    "notes": "Owner of the adjacent brownfield Hunterston PARC (former coal terminal) and Hunterston Terminal. No confirmed role in the data centre scheme, which is on Hunterston Estate farmland; included to distinguish the two Hunterston landholdings.",
+    "source_ids": ["src-peel-hunterston-parc"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot",
+    "notes": "Tracking and opposing the proposal; publicised the 'Defend your Castle' protest at a Clan Hunter gathering.",
+    "source_ids": ["src-aprs-hunterston", "src-aprs-hunter-clan-protest"]
+  }
+]

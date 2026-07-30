@@ -1,0 +1,42 @@
+{
+  "slug": "hunterston",
+  "canonical_name": "Hunterston Data Centre",
+  "display_name": "Hunterston (North Ayrshire)",
+  "aliases": [
+    {
+      "alias": "Hunterston Estate data centre",
+      "alias_type": "place_name",
+      "source_ids": ["src-nac-26-00138-eia"]
+    }
+  ],
+  "summary": "Proposed hyperscale data centre campus on around 88 ha of Hunterston Estate farmland beside the former Hunterston A/B nuclear power stations, north of West Kilbride, promoted by Eneus Energy with Revera Energy (both Carlyle-linked). An EIA scoping request (26/00138/EIA) was submitted to North Ayrshire Council on 25 February 2026 and a scoping opinion was agreed on 30 March 2026; a full application with EIA is expected in 2026. Scoping material describes multiple buildings with a combined footprint of up to 300,000 m2 and heights up to 35 m, construction from 2027 for around seven years. The developer has not published a MW capacity; campaigners infer at least 500 MW. A separate consented BESS at Hunterston (Revera, 400 MW/800 MWh, FID June 2026) shares the grid node.",
+  "project_type": "hyperscale",
+  "status": "scoping",
+  "status_source_ids": ["src-nac-26-00138-eia"],
+  "maturity_level": "M1",
+  "maturity_explanation": "EIA scoping request 26/00138/EIA validated 27 Feb 2026 and scoping opinion agreed 30 Mar 2026 on the North Ayrshire portal; no PAN or planning application located as of 30 Jul 2026, and the council has publicly confirmed no formal application is under consideration. Developer states an application is expected in 2026.",
+  "verification_level": "verified",
+  "local_authority": "North Ayrshire Council",
+  "region": "Ayrshire",
+  "first_public_date": "2026-02-25",
+  "anticipated_construction_start": "2027 (scoping report) / 2027-28 (developer website); ~7-year build to 2034",
+  "anticipated_operational_date": "Phased; completion of all works expected 2034 (scoping report, as reported)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "latest_development": {
+    "date": "2026-03-30",
+    "headline": "North Ayrshire Council issues EIA scoping opinion (Scoping Agreed) for the Hunterston data centre; full application with EIA expected later in 2026",
+    "source_ids": ["src-nac-26-00138-eia", "src-eneus-hunterston-page"]
+  },
+  "unknowns": [
+    "IT load / grid import capacity in MW — not disclosed by the developer; APRS's 'at least 500MW' is a campaign inference",
+    "Which corporate entity will be the applicant (Eneus Energy Limited SC739030, a holdings entity, or a project SPV); scoping applicant field shows only consultant Tetra Tech",
+    "Exact red-line boundary and which field parcels of the Hunterston Estate are included; hence exact agricultural land classification per parcel (Grade 3 reported by APRS, not yet verified against the scoping report or James Hutton Institute mapping)",
+    "Whether and how the site boundary overlaps or adjoins the consented Hunterston BESS (450 MW consent reported by APRS in 2022 vs Revera's 400 MW/800 MWh FID scheme) and the shared 400 kV connection arrangements",
+    "Grid connection agreement details (TEC quantity, connection date) for the data centre itself",
+    "Operational job numbers — developer says 'currently under review'",
+    "Formal positions of Fairlie and West Kilbride community councils and of statutory consultees beyond the scoping responses",
+    "Any Peel Ports / Clydeport involvement (the data centre is on Hunterston Estate land, not Peel's Hunterston PARC, but interface with PARC infrastructure is unclear)"
+  ]
+}

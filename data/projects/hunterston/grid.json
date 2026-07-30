@@ -1,0 +1,14 @@
+{
+  "network_operator": "Transmission connection in SP Transmission area (Hunterston is a major 400 kV node); specific connection agreement for the data centre not identified",
+  "connection_status": "unknown",
+  "requested_import_capacity_mw": {
+    "value": null,
+    "state": "not_disclosed",
+    "source_ids": ["src-eneus-hunterston-page"]
+  },
+  "nearby_substation": "Hunterston 400 kV substation (adjacent to former Hunterston A/B nuclear stations; landing point for HVDC and offshore wind links)",
+  "evidence_basis": "Developer website states a 'high-voltage transmission level connection' with no MW figure. The adjacent Revera BESS holds transmission entry capacity on NESO's TEC register with a 400 kV substation under construction. No NESO/TEC entry has been verified for the data centre itself.",
+  "overlaps_other_project": "Hunterston BESS (Revera Energy, 400 MW/800 MWh, consented 2022, FID June 2026); Highview Power 2.5 GWh liquid-air storage planned at Hunterston PARC — all competing for / using the same Hunterston grid node",
+  "notes": "Hunterston's status as a major grid node (former nuclear connection capacity) is the developers' stated rationale for the location. The data centre's own connection route — new TEC, sharing the BESS connection, or private wire — is not disclosed.",
+  "source_ids": ["src-eneus-hunterston-page", "src-ess-news-revera-bess", "src-highview-hunterston"]
+}

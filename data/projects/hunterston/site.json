@@ -1,0 +1,50 @@
+{
+  "site_name": "Hunterston Estate",
+  "address": "Hunterston Estate, West Kilbride, North Ayrshire",
+  "settlement": "West Kilbride",
+  "latitude": 55.72,
+  "longitude": -4.87,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 881600,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "APRS (citing EIA scoping report: 88.16 ha)",
+    "source_ids": ["src-aprs-hunterston"],
+    "notes": "Developer website states 'approximately 164 acres' (~66 ha), which differs from the 88.16 ha scoping figure; possibly developable area vs whole scoping boundary."
+  },
+  "building_footprint_m2": {
+    "value": 300000,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Eneus Energy (EIA scoping report, maximum parameters)",
+    "notes": "Combined footprint of multiple data centre buildings 'not exceeding 300,000 m2' (~30 ha), up to 6 buildings initially.",
+    "source_ids": ["src-aprs-hunterston", "src-ayrshire-today-archaeology"]
+  },
+  "max_building_height_m": {
+    "value": 35,
+    "unit": "m",
+    "state": "developer_stated",
+    "claimant": "Eneus Energy (EIA scoping report, as reported)",
+    "source_ids": ["src-aprs-hunterston", "src-ayrshire-today-archaeology"]
+  },
+  "number_of_buildings": {
+    "value": 6,
+    "unit": "buildings",
+    "state": "reported",
+    "claimant": "Ayrshire Today (from scoping report: up to 6 initially, possibly more at design stage)",
+    "source_ids": ["src-ayrshire-today-archaeology"]
+  },
+  "greenfield_brownfield": "greenfield",
+  "agricultural_land_class": "Grade 3 (reported by APRS; parcel-level classification not verified)",
+  "current_land_use": "Agricultural land (fields, woodland, wetland and watercourses) on the Hunterston Estate, farmed by the Hunter family estate",
+  "nearest_settlements": ["West Kilbride", "Seamill", "Fairlie", "Portencross"],
+  "protected_designations": [
+    "Setting of Hunterston Castle and Hunterston House (historic landscape connections flagged by West of Scotland Archaeology Service)",
+    "Setting of Portencross Castle (raised by objectors)",
+    "Area of high archaeological potential (West of Scotland Archaeology Service scoping response)"
+  ],
+  "land_notes": "The site is Hunterston Estate farmland immediately inland of the former Hunterston A/B nuclear stations — distinct from Peel Ports' brownfield Hunterston PARC (former coal terminal) to the west. Reported context: the estate extends to ~770 acres of which ~260 acres are owned by the Hunter family, the remainder held by industrial owners following historic compulsory purchase but farmed by the estate. Coordinates are an approximate centroid of the estate between West Kilbride and the power station; no red-line boundary published, so no boundary.geojson is provided.",
+  "source_ids": ["src-nac-26-00138-eia", "src-aprs-hunterston", "src-eneus-hunterston-page", "src-ayrshire-today-archaeology"]
+}
