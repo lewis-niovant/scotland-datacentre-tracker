@@ -251,6 +251,14 @@ export function developersOf(p: ProjectRecord): string[] {
 }
 
 export function projectCoords(p: ProjectRecord): [number, number] | null {
+  /* `display_point` is set by the build wherever the researched lat/lon fell
+     outside the site's own official boundary — the red line came off the
+     application and is the better evidence. The researched point is still on the
+     record, so the discrepancy stays visible on the profile. */
+  const dp = p.site?.display_point
+  if (Array.isArray(dp) && typeof dp[0] === 'number' && typeof dp[1] === 'number') {
+    return [dp[0], dp[1]]
+  }
   const { longitude, latitude } = p.site ?? {}
   if (typeof longitude === 'number' && typeof latitude === 'number') return [longitude, latitude]
   return null

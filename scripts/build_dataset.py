@@ -41,6 +41,87 @@ TIER2_PRECISIONS = {"exact", "site_centroid", "approximate"}
 TIER3_PRECISIONS = {"settlement_level"}
 
 
+# ---------------------------------------------------------------------------
+# Reconciling the researched point with the official boundary
+#
+# The site lat/lon and the Spatial Hub red line were sourced independently, so
+# for several projects the marker fell hundreds of metres — in one case ~2.9 km
+# — outside its own boundary. The red line came off the actual application and
+# is the better evidence, so where the two disagree the marker moves onto the
+# boundary. The researched point is kept in the feature's properties, so the
+# discrepancy stays auditable rather than being silently erased.
+# ---------------------------------------------------------------------------
+
+def _rings(geom):
+    """Outer rings of a Polygon/MultiPolygon, holes ignored."""
+    if not geom:
+        return []
+    if geom.get("type") == "Polygon":
+        return [geom["coordinates"][0]]
+    if geom.get("type") == "MultiPolygon":
+        return [poly[0] for poly in geom["coordinates"]]
+    return []
+
+
+def _in_ring(pt, ring):
+    x, y = pt
+    inside = False
+    for i in range(len(ring)):
+        xi, yi = ring[i][0], ring[i][1]
+        xj, yj = ring[i - 1][0], ring[i - 1][1]
+        if (yi > y) != (yj > y) and x < (xj - xi) * (y - yi) / (yj - yi) + xi:
+            inside = not inside
+    return inside
+
+
+def _ring_area(ring):
+    """Unsigned shoelace area in squared degrees — for ranking rings only."""
+    a = 0.0
+    for i in range(len(ring)):
+        x1, y1 = ring[i][0], ring[i][1]
+        x2, y2 = ring[i - 1][0], ring[i - 1][1]
+        a += x1 * y2 - x2 * y1
+    return abs(a) / 2
+
+
+def representative_point(rings):
+    """A point guaranteed to be *inside* the largest ring.
+
+    The vertex-mean centroid is used when it already falls inside; concave
+    parcels get a scanline fallback — the midpoint of the widest interior span
+    on the line through the centroid's latitude.
+    """
+    if not rings:
+        return None
+    ring = max(rings, key=_ring_area)
+    if len(ring) < 3:
+        return None
+    cx = sum(p[0] for p in ring) / len(ring)
+    cy = sum(p[1] for p in ring) / len(ring)
+    if _in_ring((cx, cy), ring):
+        return [cx, cy]
+    xs = []
+    for i in range(len(ring)):
+        x1, y1 = ring[i][0], ring[i][1]
+        x2, y2 = ring[i - 1][0], ring[i - 1][1]
+        if (y1 > cy) != (y2 > cy):
+            xs.append((x2 - x1) * (cy - y1) / (y2 - y1) + x1)
+    xs.sort()
+    if len(xs) < 2:
+        return [cx, cy]
+    # widest span between consecutive crossing pairs is interior
+    best = max(zip(xs[0::2], xs[1::2]), key=lambda ab: ab[1] - ab[0])
+    return [(best[0] + best[1]) / 2, cy]
+
+
+def haversine_m(a, b):
+    lon1, lat1 = a
+    lon2, lat2 = b
+    dx = (lon2 - lon1) * 111320 * math.cos(math.radians((lat1 + lat2) / 2))
+    dy = (lat2 - lat1) * 110540
+    return math.hypot(dx, dy)
+
+
 def projected_extent(slug, site, is_sensitive):
     """A square of side sqrt(area) centred on the site point, or None.
 
@@ -95,6 +176,7 @@ def main():
 
     projects = []
     geo_features = []
+    point_snaps = []
 
     for pdir in sorted(PROJECTS_DIR.iterdir()) if PROJECTS_DIR.exists() else []:
         if not pdir.is_dir() or not (pdir / "project.json").exists():
@@ -108,10 +190,43 @@ def main():
         projects.append(record)
 
         site = record.get("site") or {}
+        boundary_feats = []
+        for geo_name, kind in (("boundary", "boundary"), ("buildings", "building")):
+            g = load(pdir / "geo" / f"{geo_name}.geojson")
+            if g:
+                feats = g["features"] if g.get("type") == "FeatureCollection" else [g]
+                for f in feats:
+                    f.setdefault("properties", {})
+                    f["properties"].update({"slug": slug, "kind": kind})
+                    geo_features.append(f)
+                    if kind == "boundary":
+                        boundary_feats.append(f)
+        has_boundary = bool(boundary_feats)
+
         if "latitude" in site and "longitude" in site:
+            recorded = [site["longitude"], site["latitude"]]
+            coords, snapped, offset = recorded, False, None
+            if has_boundary:
+                primary = next(
+                    (f for f in boundary_feats if f["properties"].get("is_primary")),
+                    max(boundary_feats,
+                        key=lambda f: f["properties"].get("official_area_m2") or 0),
+                )
+                rings = _rings(primary.get("geometry"))
+                if rings and not any(_in_ring(recorded, r) for r in rings):
+                    inner = representative_point(rings)
+                    if inner:
+                        coords, snapped = inner, True
+                        offset = round(haversine_m(recorded, inner))
+                        point_snaps.append((slug, offset))
+                        # The map draws its markers from the project record, not
+                        # from geo.json, so the reconciled point has to land here
+                        # too or the dot keeps floating off its own red line.
+                        site["display_point"] = inner
+                        site["display_point_offset_m"] = offset
             geo_features.append({
                 "type": "Feature",
-                "geometry": {"type": "Point", "coordinates": [site["longitude"], site["latitude"]]},
+                "geometry": {"type": "Point", "coordinates": coords},
                 "properties": {
                     "slug": slug,
                     "kind": "project_point",
@@ -119,19 +234,13 @@ def main():
                     "status": record["project"]["status"],
                     "maturity": record["project"]["maturity_level"],
                     "location_precision": site.get("location_precision"),
+                    # Auditability: when the marker was moved onto the official red
+                    # line, say so and keep the point the research actually recorded.
+                    "snapped_to_boundary": snapped,
+                    "recorded_point": recorded if snapped else None,
+                    "snap_offset_m": offset,
                 },
             })
-        has_boundary = False
-        for geo_name, kind in (("boundary", "boundary"), ("buildings", "building")):
-            g = load(pdir / "geo" / f"{geo_name}.geojson")
-            if g:
-                feats = g["features"] if g.get("type") == "FeatureCollection" else [g]
-                if kind == "boundary" and feats:
-                    has_boundary = True
-                for f in feats:
-                    f.setdefault("properties", {})
-                    f["properties"].update({"slug": slug, "kind": kind})
-                    geo_features.append(f)
 
         # Tiers 2/3 only where tier 1 is absent — a projection never competes with a red line.
         if not has_boundary:
@@ -156,6 +265,10 @@ def main():
     with_boundary = len({f["properties"]["slug"] for f in geo_features
                          if f["properties"].get("kind") == "boundary"})
     print(f"Built {len(projects)} project(s), {len(geo_features)} geo feature(s) -> {OUT_DIR.relative_to(ROOT)}")
+    if point_snaps:
+        print(f"  markers moved onto their official boundary: {len(point_snaps)}")
+        for slug, d in sorted(point_snaps, key=lambda kv: -kv[1]):
+            print(f"    {slug}: recorded point was {d} m outside the red line")
     for kind, n in sorted(kinds.items(), key=lambda kv: str(kv[0])):
         print(f"  {kind}: {n}")
     print(f"  extents — tier 1 official boundary: {with_boundary} project(s); "

@@ -6,7 +6,7 @@ import { STATUS_GROUPS, STATUS_GROUP_META, projectCoords, statusGroup } from '..
 import type { LensDef } from '../lib/lenses'
 import {
   boundaryFeatures, buildingMasses, centroidOf, extentExplanation, extentFeatures, pitchGrid,
-  polysOf, primaryBoundary, type MassSpec,
+  polysOf, primaryBoundary, STOREY_M, type MassSpec,
 } from '../lib/geometry'
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
@@ -26,6 +26,10 @@ export const EXTENT3 = '#6b6560'
 export const BOUNDARY_MIN_ZOOM = 9
 /** Zoom at which the derived pitch grid appears. */
 export const PITCH_MIN_ZOOM = 12
+/** Block drawn for a site that publishes a height but no footprint: 120 m square.
+    It exists so the sourced height has something to stand on — it is captioned as
+    nominal everywhere it appears and is drawn in a different colour. */
+export const NOMINAL_BLOCK_M2 = 120 * 120
 
 interface Props {
   projects: ProjectRecord[]
@@ -36,6 +40,8 @@ interface Props {
   threeD: boolean
   showPitches: boolean
   pitchM2: number
+  /** How many of the shown projects publish a height, so the 3D caption can be honest. */
+  onMassCount?: (n: number) => void
 }
 
 function qv(q?: QuantityClaim): number | null {
@@ -202,8 +208,11 @@ function ariaFor(props: Record<string, unknown>, lens: LensDef): string {
 }
 
 export default function MapView({
-  projects, lens, geo, selectedSlug, onSelect, threeD, showPitches, pitchM2,
+  projects, lens, geo, selectedSlug, onSelect, threeD, showPitches, pitchM2, onMassCount,
 }: Props) {
+  const massCountRef = useRef(onMassCount)
+  massCountRef.current = onMassCount
+  const setMassCount = (n: number) => massCountRef.current?.(n)
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<MapLibreMap | null>(null)
   const loadedRef = useRef(false)
@@ -215,6 +224,7 @@ export default function MapView({
   const syncRef = useRef<() => void>(() => {})
   const fitSigRef = useRef<string | null>(null)
   const areaLabelsRef = useRef(new Map<string, Marker>())
+  const heightLabelsRef = useRef(new Map<string, Marker>())
   const popupRef = useRef<Popup | null>(null)
   /* Effects that add data to the style must wait for 'load' — and must re-run
      once it happens, or the polygons stay frozen/empty forever. */
@@ -271,7 +281,7 @@ export default function MapView({
         filter: ['==', ['get', 'tier'], 2],
         paint: {
           'fill-color': EXTENT2,
-          'fill-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0, BOUNDARY_MIN_ZOOM + 1.2, 0.07],
+          'fill-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0, BOUNDARY_MIN_ZOOM + 1.2, 0.13],
         },
       })
       map.addLayer({
@@ -293,7 +303,7 @@ export default function MapView({
         id: 'dc-extent3-fill', type: 'fill', source: 'dc-extents',
         minzoom: BOUNDARY_MIN_ZOOM,
         filter: ['==', ['get', 'tier'], 3],
-        paint: { 'fill-color': EXTENT3, 'fill-opacity': 0.02 },
+        paint: { 'fill-color': EXTENT3, 'fill-opacity': 0.05 },
       })
       map.addLayer({
         id: 'dc-extent3-line', type: 'line', source: 'dc-extents',
@@ -302,9 +312,9 @@ export default function MapView({
         layout: { 'line-join': 'round', 'line-cap': 'round' },
         paint: {
           'line-color': EXTENT3,
-          'line-dasharray': [0.1, 2.2],
-          'line-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0.12, BOUNDARY_MIN_ZOOM + 1, 0.75],
-          'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.8, 12, 3, 16, 3.6],
+          'line-dasharray': [0.6, 1.6],
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0.2, BOUNDARY_MIN_ZOOM + 1, 0.95],
+          'line-width': ['interpolate', ['linear'], ['zoom'], 9, 2, 12, 3.2, 16, 4],
         },
       })
       map.addLayer({
@@ -319,14 +329,26 @@ export default function MapView({
         },
       })
 
+      /* Pitches read as turf, not as a wireframe: a filled body in two mown
+         shades with a white touchline on top. A 0.7px green mesh was the whole
+         reason the comparison didn't land. */
       map.addLayer({
-        id: 'dc-pitch-grid', type: 'line', source: 'dc-pitches',
+        id: 'dc-pitch-fill', type: 'fill', source: 'dc-pitches',
         minzoom: PITCH_MIN_ZOOM,
         layout: { visibility: 'none' },
         paint: {
-          'line-color': '#2f7d31',
-          'line-width': 0.7,
-          'line-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.8],
+          'fill-color': ['case', ['==', ['get', 'stripe'], 1], '#3f9142', '#357c38'],
+          'fill-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.62],
+        },
+      })
+      map.addLayer({
+        id: 'dc-pitch-grid', type: 'line', source: 'dc-pitches',
+        minzoom: PITCH_MIN_ZOOM,
+        layout: { visibility: 'none', 'line-join': 'round' },
+        paint: {
+          'line-color': '#ffffff',
+          'line-width': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0.5, 16, 1.4],
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.85],
         },
       })
       map.addLayer({
@@ -334,8 +356,10 @@ export default function MapView({
         minzoom: 10.5,
         layout: { visibility: 'none' },
         paint: {
-          'fill-extrusion-color': '#1c5cab',
-          'fill-extrusion-opacity': 0.8,
+          'fill-extrusion-color': [
+            'case', ['==', ['get', 'footprint_sourced'], true], '#1c5cab', '#7a8698',
+          ],
+          'fill-extrusion-opacity': 0.85,
           'fill-extrusion-height': ['coalesce', ['to-number', ['get', 'height']], 12],
           'fill-extrusion-base': 0,
         },
@@ -370,6 +394,34 @@ export default function MapView({
           'circle-opacity': 0.95,
           'circle-stroke-color': '#ffffff',
           'circle-stroke-width': 2,
+        },
+      })
+
+      /* Individual dots were sized by the lens metric but never labelled with it,
+         so at street level there was no way to read a site's figure without
+         opening its panel. Ride the label on the same clustered source. */
+      map.addLayer({
+        id: 'dc-dot-label', type: 'symbol', source: 'dc-points',
+        filter: ['!', ['has', 'point_count']],
+        minzoom: 10.5,
+        layout: {
+          'text-field': ['get', 'metric_label'],
+          /* Must be a stack the basemap's glyph server actually serves. The
+             MapLibre default (Open Sans / Arial Unicode) 404s against
+             openfreemap, which drops the labels silently. */
+          'text-font': ['Noto Sans Bold'],
+          'text-size': 11.5,
+          'text-offset': [0, 1.5],
+          'text-anchor': 'top',
+          'text-max-width': 11,
+          'text-allow-overlap': false,
+          'text-optional': true,
+        },
+        paint: {
+          'text-color': '#2c2a26',
+          'text-halo-color': '#ffffff',
+          'text-halo-width': 1.6,
+          'text-opacity': ['interpolate', ['linear'], ['zoom'], 10.5, 0, 11.3, 1],
         },
       })
 
@@ -470,6 +522,8 @@ export default function MapView({
       markersRef.current.clear()
       for (const [, m] of areaLabelsRef.current) m.remove()
       areaLabelsRef.current.clear()
+      for (const [, m] of heightLabelsRef.current) m.remove()
+      heightLabelsRef.current.clear()
       popupRef.current?.remove()
       popupRef.current = null
       map.remove()
@@ -523,15 +577,21 @@ export default function MapView({
     pitches?.setData(pitchGrid([...feats, ...exts], pitchM2) as never)
   }, [geo, projects, pitchM2, ready])
 
-  /* ---------- indicative masses: only where footprint AND height are sourced ---------- */
+  /* ---------- indicative masses: driven by SOURCED HEIGHT ----------
+
+     Height is the thing 3D is for, so height alone qualifies a site. Requiring a
+     published footprint as well meant only 2 of 39 projects ever extruded, which
+     is why the 3D button looked broken. Where the footprint isn't published we
+     draw a nominal block instead — a height ruler, captioned as such, never a
+     claim about how much of the site is built on. */
   useEffect(() => {
     const map = mapRef.current
     if (!map || !loadedRef.current) return
     const specs: MassSpec[] = []
     for (const p of projects) {
-      const fp = qv(p.site?.building_footprint_m2)
       const h = qv(p.site?.max_building_height_m)
-      if (fp == null || h == null) continue
+      if (h == null) continue
+      const fp = qv(p.site?.building_footprint_m2)
       const b = primaryBoundary(geo, p.project.slug)
       const centre = (b && centroidOf(polysOf(b))) ?? projectCoords(p)
       if (!centre) continue
@@ -539,13 +599,15 @@ export default function MapView({
         slug: p.project.slug,
         name: p.project.display_name ?? p.project.canonical_name,
         centre,
-        footprintM2: fp,
+        footprintM2: fp ?? NOMINAL_BLOCK_M2,
+        footprintSourced: fp != null,
         heightM: h,
-        buildings: qv(p.site?.number_of_buildings) ?? 1,
+        buildings: fp != null ? qv(p.site?.number_of_buildings) ?? 1 : 1,
       })
     }
     const src = map.getSource('dc-buildings') as GeoJSONSource | undefined
     src?.setData(buildingMasses(specs) as never)
+    setMassCount(specs.length)
   }, [geo, projects, ready])
 
   /* ---------- pitch-ratio labels on each official boundary ---------- */
@@ -585,12 +647,43 @@ export default function MapView({
     }
   }, [geo, projects, pitchM2, ready])
 
+  /* ---------- height labels: metres translated into storeys ---------- */
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !loadedRef.current) return
+    const live = new Set<string>()
+    if (threeD) {
+      for (const p of projects) {
+        const h = qv(p.site?.max_building_height_m)
+        if (h == null) continue
+        const b = primaryBoundary(geo, p.project.slug)
+        const centre = (b && centroidOf(polysOf(b))) ?? projectCoords(p)
+        if (!centre) continue
+        const key = p.project.slug
+        live.add(key)
+        if (heightLabelsRef.current.has(key)) continue
+        const sourced = qv(p.site?.building_footprint_m2) != null
+        const el = document.createElement('div')
+        el.className = 'height-label'
+        el.innerHTML = `<strong>${h} m tall</strong>`
+          + `<span>≈ ${Math.max(1, Math.round(h / STOREY_M))} storeys · `
+          + `${sourced ? 'published footprint' : 'nominal block, footprint not published'}</span>`
+        heightLabelsRef.current.set(key, new Marker({ element: el }).setLngLat(centre).addTo(map))
+      }
+    }
+    for (const [key, m] of heightLabelsRef.current) {
+      if (!live.has(key)) { m.remove(); heightLabelsRef.current.delete(key) }
+    }
+  }, [threeD, geo, projects, ready])
+
   /* Labels ride with the pitch grid: same toggle, same zoom threshold. */
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
     const apply = () => {
-      const on = showPitches && map.getZoom() >= PITCH_MIN_ZOOM
+      /* In 3D the height label sits on the same centroid, so showing both stacks
+         two cards on one point and neither can be read. Height wins in 3D. */
+      const on = showPitches && !threeD && map.getZoom() >= PITCH_MIN_ZOOM
       for (const [, m] of areaLabelsRef.current) {
         m.getElement().classList.toggle('on', on)
       }
@@ -599,13 +692,15 @@ export default function MapView({
     map.on('zoomend', apply)
     map.on('moveend', apply)
     return () => { map.off('zoomend', apply); map.off('moveend', apply) }
-  }, [showPitches, ready, geo, projects])
+  }, [showPitches, threeD, ready, geo, projects])
 
   /* ---------- pitch-grid visibility ---------- */
   useEffect(() => {
     const map = mapRef.current
-    if (!map || !loadedRef.current || !map.getLayer('dc-pitch-grid')) return
-    map.setLayoutProperty('dc-pitch-grid', 'visibility', showPitches ? 'visible' : 'none')
+    if (!map || !loadedRef.current) return
+    for (const id of ['dc-pitch-fill', 'dc-pitch-grid']) {
+      if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', showPitches ? 'visible' : 'none')
+    }
   }, [showPitches, ready])
 
   /* ---------- selection highlight ---------- */

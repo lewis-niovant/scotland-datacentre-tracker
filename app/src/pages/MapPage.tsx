@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import type { LensId } from '../types'
+import type { LensId, ProjectRecord } from '../types'
 import { extentCounts } from '../lib/geometry'
 import { developersOf, statusGroup, useDataset } from '../lib/data'
 import { lensById } from '../lib/lenses'
@@ -18,37 +18,74 @@ export default function MapPage() {
   const [threeD, setThreeD] = useState(false)
   const [showPitches, setShowPitches] = useState(false)
   const [showIntro, setShowIntro] = useState(() => !introDismissed())
+  const [massCount, setMassCount] = useState(0)
 
   const lens = lensById(lensId)
   const all = ds.observatory.projects
   const pitchM2 = ds.observatory.constants?.comparisons?.football_pitch_m2?.value ?? 7140
   const extents = useMemo(() => extentCounts(ds.geo, all.length), [ds.geo, all.length])
 
+  /* One predicate per filter dimension, so each dimension's option list can be
+     built from the projects surviving *the other* dimensions. That is what makes
+     the filters interact: pick City of Edinburgh and the developer list narrows
+     to developers that actually have a site there, rather than offering choices
+     that lead to an empty map. */
+  const matches = useMemo(() => ({
+    groups: (p: ProjectRecord) =>
+      !filters.groups.length || filters.groups.includes(statusGroup(p.project.status)),
+    developer: (p: ProjectRecord) =>
+      !filters.developer || developersOf(p).includes(filters.developer),
+    authority: (p: ProjectRecord) =>
+      !filters.authority || p.project.local_authority === filters.authority,
+  }), [filters])
+
+  /** Everything passing every dimension except `except`. */
+  const exceptFor = useMemo(() => {
+    const keys = ['groups', 'developer', 'authority'] as const
+    return (except: (typeof keys)[number]) =>
+      all.filter((p) => keys.every((k) => k === except || matches[k](p)))
+  }, [all, matches])
+
   const developers = useMemo(
-    () => [...new Set(all.flatMap(developersOf))].sort(),
-    [all],
+    () => [...new Set(exceptFor('developer').flatMap(developersOf))].sort(),
+    [exceptFor],
   )
   const authorities = useMemo(
-    () => [...new Set(all.map((p) => p.project.local_authority).filter(Boolean))].sort(),
-    [all],
+    () => [...new Set(exceptFor('authority').map((p) => p.project.local_authority).filter(Boolean))].sort(),
+    [exceptFor],
+  )
+  /* Status chips stay visible but go dim-and-disabled when nothing would match,
+     so the map still shows what the dataset does and does not contain. */
+  const availableGroups = useMemo(
+    () => new Set(exceptFor('groups').map((p) => statusGroup(p.project.status))),
+    [exceptFor],
   )
 
   const filtered = useMemo(
-    () =>
-      all.filter((p) => {
-        if (filters.groups.length && !filters.groups.includes(statusGroup(p.project.status))) return false
-        if (filters.developer && !developersOf(p).includes(filters.developer)) return false
-        if (filters.authority && p.project.local_authority !== filters.authority) return false
-        return true
-      }),
-    [all, filters],
+    () => all.filter((p) => matches.groups(p) && matches.developer(p) && matches.authority(p)),
+    [all, matches],
   )
+
+  /* Narrowing one dimension can strand a choice made in another — pick a council
+     that the previously-selected developer does not build in and the map would go
+     blank with both chips still lit. Drop the stranded choice instead. */
+  const applyFilters = (next: Filters): Filters => {
+    const ok = (f: Filters) =>
+      all.some((p) =>
+        (!f.groups.length || f.groups.includes(statusGroup(p.project.status)))
+        && (!f.developer || developersOf(p).includes(f.developer))
+        && (!f.authority || p.project.local_authority === f.authority))
+    if (ok(next)) return next
+    if (next.developer && next.developer !== filters.developer) return { ...next, authority: '' }
+    if (next.authority && next.authority !== filters.authority) return { ...next, developer: '' }
+    return next
+  }
 
   const selectedProject = filtered.find((p) => p.project.slug === selected) ?? null
   const tiles = useMemo(() => lens.stats(filtered), [lens, filtered])
 
   return (
-    <div className="map-page">
+    <div className={`map-page${selectedProject ? ' has-panel' : ''}`}>
       <div className="map-wrap">
         <MapView
           projects={filtered}
@@ -59,15 +96,17 @@ export default function MapPage() {
           threeD={threeD}
           showPitches={showPitches}
           pitchM2={pitchM2}
+          onMassCount={setMassCount}
         />
         <div className="map-topbar">
           <StatsStrip tiles={tiles} shown={filtered.length} total={all.length} />
           <LensSwitcher lens={lensId} onChange={setLensId} />
           <FilterChips
             filters={filters}
-            onChange={(f) => { setFilters(f); setSelected(null) }}
+            onChange={(f) => { setFilters(applyFilters(f)); setSelected(null) }}
             developers={developers}
             authorities={authorities}
+            availableGroups={availableGroups}
           />
           <p className="map-note">
             Zoom in for site extents: <strong>{extents.official} official red-line boundaries</strong>,{' '}
@@ -77,8 +116,17 @@ export default function MapPage() {
         </div>
         {threeD && (
           <p className="map-hint">
-            <strong>Indicative massing</strong> — footprint and height are sourced; the layout is not.
-            Only projects publishing both appear.
+            {massCount > 0 ? (
+              <>
+                <strong>Indicative massing — {massCount} of {filtered.length} shown projects
+                publish a height.</strong> Height is sourced. Where a footprint is published the
+                block uses it; where it is not, a nominal 120 m block carries the height and is
+                drawn in grey. Layouts are illustrative throughout.
+              </>
+            ) : (
+              <><strong>No height figures in this selection.</strong> The map is tilted, but nothing
+              here publishes a building height to extrude. Clear the filters to see the sites that do.</>
+            )}
           </p>
         )}
         {showPitches && !threeD && (

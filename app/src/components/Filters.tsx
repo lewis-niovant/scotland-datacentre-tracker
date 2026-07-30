@@ -16,12 +16,14 @@ export interface Filters {
 export const EMPTY_FILTERS: Filters = { groups: [], developer: '', authority: '' }
 
 export function FilterChips({
-  filters, onChange, developers, authorities,
+  filters, onChange, developers, authorities, availableGroups,
 }: {
   filters: Filters
   onChange: (f: Filters) => void
   developers: string[]
   authorities: string[]
+  /** Status groups still reachable under the other active filters. */
+  availableGroups: Set<StatusGroup>
 }) {
   const toggleGroup = (g: StatusGroup) => {
     const groups = filters.groups.includes(g)
@@ -33,11 +35,18 @@ export function FilterChips({
     <div className="chip-row" role="toolbar" aria-label="Filters">
       {STATUS_GROUPS.map((g) => {
         const meta = STATUS_GROUP_META[g]
+        const on = filters.groups.includes(g)
+        /* An unreachable group stays visible but inert — the absence is itself
+           information. An already-selected chip is never disabled, or it could
+           not be switched off. */
+        const dead = !on && !availableGroups.has(g)
         return (
           <button
             key={g}
-            className="chip"
-            aria-pressed={filters.groups.includes(g)}
+            className={`chip${dead ? ' unavailable' : ''}`}
+            aria-pressed={on}
+            disabled={dead}
+            title={dead ? `No ${meta.label.toLowerCase()} projects under the current filters` : undefined}
             onClick={() => toggleGroup(g)}
           >
             <span className="dot" style={{ background: `light-dark(${meta.color}, ${meta.colorDark})` }} />
