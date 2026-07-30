@@ -1,0 +1,31 @@
+[
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 600,
+    "state": "developer_stated",
+    "claimant": "ILI Group",
+    "confidence": "high",
+    "preferred": true,
+    "preferred_rationale": "The 600 MW figure is used consistently by the developer, SPICe-cited material, APRS and all press coverage; no conflicting capacity figure (e.g. 550 MW) was found for Cato.",
+    "notes": "Headline capacity of the Cato campus at full build-out; unclear whether IT load or grid import.",
+    "source_ids": ["src-dcr-submission", "src-aprs-auchtertool", "src-dcr-objections"]
+  },
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 600,
+    "state": "developer_stated",
+    "claimant": "ILI Group",
+    "confidence": "medium",
+    "notes": "Developer states the project has an 'approved Gate 2 grid position' for 600 MW at maximum capacity. Not independently verified against NESO connection-queue data.",
+    "source_ids": ["src-dcr-submission"]
+  },
+  {
+    "capacity_type": "backup_generation",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "ILI Group",
+    "confidence": "low",
+    "notes": "No public figure found for standby/backup generation capacity or fuel type; check application documents on the Fife portal.",
+    "source_ids": ["src-fife-portal-26-01243-ppp"]
+  }
+]

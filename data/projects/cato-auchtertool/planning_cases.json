@@ -1,0 +1,61 @@
+[
+  {
+    "reference": "25/00552/PAN",
+    "planning_authority": "Fife Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice for the Cato data centre, Auchtertool; APRS records it as agreed on 22 March (2025).",
+    "decision": "other",
+    "decision_notes": "PAN agreed 22 March 2025 per APRS; date not independently verified on the portal.",
+    "official_url": "https://planning.fife.gov.uk/online/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2025-03-22", "event_type": "pan_agreed", "title": "PAN 25/00552/PAN agreed by Fife Council (per APRS)", "source_ids": ["src-aprs-auchtertool"] }
+    ],
+    "source_ids": ["src-aprs-auchtertool"]
+  },
+  {
+    "reference": "25/03079/SCR",
+    "planning_authority": "Fife Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening request for the proposed data centre at Camilla Farm/Auchtertool, submitted 10 November 2025 after two extensions to the screening timetable (including a NatureScot consultation).",
+    "submission_date": "2025-11-10",
+    "decision_date": "2026-04-01",
+    "decision": "screening_eia_not_required",
+    "decision_notes": "Fife Council concluded under the Town and Country Planning (EIA) (Scotland) Regulations 2017 (Schedule 2 discretion) that predicted effects were not significant enough to require EIA. The decision was strongly criticised (community council 'appalled'; MSP Mark Ruskell 'unfathomable'); Environmental Rights Centre Scotland advised a credible legal basis for challenge; a screening direction request has since been made to the Scottish Government, whose determination is outstanding.",
+    "eia_required": false,
+    "official_url": "https://planning.fife.gov.uk/online/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2025-11-10", "event_type": "submission", "title": "EIA screening request submitted", "source_ids": ["src-aprs-auchtertool"] },
+      { "event_date": "2026-04-01", "event_type": "decision", "title": "Screening opinion issued: EIA not required", "source_ids": ["src-aprs-auchtertool", "src-cft-eia"] }
+    ],
+    "source_ids": ["src-aprs-auchtertool", "src-cft-eia"]
+  },
+  {
+    "reference": "26/01243/PPP",
+    "planning_authority": "Fife Council",
+    "application_type": "permission_in_principle",
+    "description": "Planning permission in principle for a data centre campus (Class 6) comprising data hall buildings, gatehouses and associated infrastructure, Land To The North Of Camilla Road, Gleniston, Auchtertool. Applicant listed on portal as Mr Greig Templeton; press and council statements identify the applicant company as ILI Cato Limited. 1,651 documents on the portal.",
+    "submission_date": "2026-04-29",
+    "validation_date": "2026-05-21",
+    "consultation_deadline": "2026-07-02",
+    "decision": "pending",
+    "decision_notes": "Status 'Registered' as of 30 July 2026. Portal neighbour-consultation expiry 24 July 2026; council confirmed all representations received by 24 July 2026 will be considered. Portal records 'Environmental Assessment Requested: No' and expected decision level 'Case Officer' (likely to change given scale/representations).",
+    "eia_required": false,
+    "representations": {
+      "objections": 1200,
+      "as_of_date": "2026-07-24",
+      "notes": "1,200+ objections published on the portal at the 24 July 2026 deadline; the council reported 14,000-16,000 total representations received, with ~10,000 documents processed for publication. Objection/support split not yet published. SEPA lodged a holding objection requesting further flooding information. Petitions: 8,000+ signatures against the development; 2,500+ for a Scottish moratorium on hyperscale data centres. The 1,200 figure is a published minimum."
+    },
+    "official_url": "https://planning.fife.gov.uk/online/applicationDetails.do?activeTab=summary&keyVal=TE9GGMHFFWY00",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2026-04-29", "event_type": "received", "title": "Application received by Fife Council", "source_ids": ["src-fife-portal-26-01243-ppp"] },
+      { "event_date": "2026-05-21", "event_type": "validated", "title": "Application validated", "source_ids": ["src-fife-portal-26-01243-ppp"] },
+      { "event_date": "2026-05-25", "event_type": "published", "title": "Application published on the Fife planning portal (per APRS)", "source_ids": ["src-aprs-auchtertool"] },
+      { "event_date": "2026-07-02", "event_type": "consultation_close", "title": "Advertised public comment deadline", "source_ids": ["src-aprs-auchtertool"] },
+      { "event_date": "2026-07-24", "event_type": "consultation_close", "title": "Neighbour consultation expiry; council confirms all representations to this date will be considered; 14,000-16,000 representations reported", "source_ids": ["src-fife-portal-26-01243-ppp", "src-cft-14000"] }
+    ],
+    "source_ids": ["src-fife-portal-26-01243-ppp", "src-cft-14000", "src-dcr-objections", "src-aprs-auchtertool"]
+  }
+]

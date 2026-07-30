@@ -1,0 +1,89 @@
+{
+  "slug": "cato-auchtertool",
+  "canonical_name": "Cato Data Centre, Auchtertool",
+  "display_name": "Cato (Auchtertool, Fife)",
+  "aliases": [
+    {
+      "alias": "Cato Data Centre Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-dcr-submission"
+      ]
+    },
+    {
+      "alias": "Camilla Farm / Land to the north of Camilla Road, Gleniston, Auchtertool",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-fife-portal-26-01243-ppp"
+      ]
+    },
+    {
+      "alias": "ILI Cato",
+      "alias_type": "spv_name",
+      "source_ids": [
+        "src-ch-ili-cato",
+        "src-aprs-auchtertool"
+      ]
+    },
+    {
+      "alias": "The Stoics (network name; Cato is the first of three)",
+      "alias_type": "other",
+      "source_ids": [
+        "src-dcr-submission"
+      ]
+    }
+  ],
+  "summary": "Proposed ~600 MW hyperscale AI/cloud data centre campus of around £5bn on farmland north-west of Auchtertool village, Fife, promoted by ILI Group through SPV ILI Cato Limited. A planning permission in principle application (26/01243/PPP) was validated by Fife Council on 21 May 2026 for a campus of six to seven data hall buildings up to 35 m high (~280,000 m2 of buildings), gatehouses, substations and infrastructure. Fife Council screened the project as not requiring EIA (April 2026), a decision now subject to a Scottish Government screening direction request. The first of ILI's three planned 'Stoics' data centres (with Rufus, East Ayrshire, and Aurelius, North Lanarkshire). The application drew over 1,200 published objections and reportedly 14,000-16,000 total representations, plus a SEPA holding objection on flooding.",
+  "project_type": "hyperscale",
+  "status": "pending",
+  "status_source_ids": [
+    "src-fife-portal-26-01243-ppp"
+  ],
+  "maturity_level": "M2",
+  "maturity_explanation": "Formal planning permission in principle application 26/01243/PPP validated by Fife Council on 21 May 2026 and currently undetermined ('Registered'); preceded by PAN 25/00552/PAN (2025) and EIA screening 25/03079/SCR (decided 1 April 2026).",
+  "verification_level": "verified",
+  "local_authority": "Fife",
+  "region": "Fife",
+  "related_project_slugs": [
+    "hurlford-rufus"
+  ],
+  "first_public_date": "2025-03-22",
+  "anticipated_construction_start": "2027 (developer statement at submission)",
+  "anticipated_operational_date": "Phased over roughly five years from a 2027 start (developer); a three-year build programme was also reported",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-09-30",
+  "confidence_overall": "high",
+  "is_public": true,
+  "is_sensitive": false,
+  "phases": [
+    {
+      "phase_name": "Phased build-out of six identical-footprint data hall buildings",
+      "description": "The campus is designed as six separate buildings with identical footprints to enable phased construction (some reporting says up to seven buildings); energy use rising from ~400 GWh/yr in early phases to a possible ~4,000 GWh/yr at full build-out.",
+      "status": "pending",
+      "source_ids": [
+        "src-aj-design",
+        "src-spice-data-centres",
+        "src-stv-community"
+      ]
+    }
+  ],
+  "latest_development": {
+    "date": "2026-07-24",
+    "headline": "Consultation closed with 14,000-16,000 representations reported, including 1,200+ published objections, an Auchtertool Community Council objection and a SEPA holding objection on flooding; ILI arranged further meetings with residents",
+    "source_ids": [
+      "src-cft-14000",
+      "src-dcr-objections"
+    ]
+  },
+  "unknowns": [
+    "Agricultural land classification (LCA class) of the site — not found in available reporting; check the planning statement/soil assessment among the 1,651 portal documents",
+    "Red-line site area: 25 ha (61 acres) was reported by DCD, but 280,000 m2 (28 ha) of buildings is also reported — the exact red-line boundary area and how the two figures reconcile is unverified",
+    "Cooling technology and definitive water source/volumes at full build-out (developer cites 'free cooling' and 34,000 m3/yr, but the community council notes a new water main would likely be required)",
+    "Backup/standby generation type and capacity (diesel/gas engine count) — not disclosed in secondary sources; check application documents",
+    "Grid connection details: which network/transmission operator, connection site/substation and voltage behind the claimed 600 MW Gate 2 position",
+    "Outcome of the EIA screening direction request to Scottish Ministers",
+    "Exact objection/support split among the 14,000-16,000 representations (council had published only ~1,200+ at time of reporting)",
+    "IT load vs grid import split of the 600 MW figure",
+    "Whether Hallyards Castle ruins on/adjacent to the site are a designated heritage asset and how the layout treats them"
+  ]
+}

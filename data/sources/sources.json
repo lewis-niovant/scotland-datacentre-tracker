@@ -208,5 +208,118 @@
     "reliability_tier": 5,
     "perspective": "Campaign group opposed to hyperscale data centres in Scotland",
     "notes": "Page itself blocked by bot protection; content known via search excerpts: objection argues proposal contrary to development plan and environmental information inadequate; APRS calls for moratorium on hyperscale AI data centres."
+  },
+  {
+    "id": "src-fife-portal-26-01243-ppp",
+    "title": "Fife Council planning portal record 26/01243/PPP — Planning permission in principle for a data centre campus (Class 6), Land To The North Of Camilla Road, Gleniston, Auchtertool",
+    "publisher": "Fife Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://planning.fife.gov.uk/online/applicationDetails.do?activeTab=summary&keyVal=TE9GGMHFFWY00",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Received 29 Apr 2026, validated 21 May 2026, status Registered; 1,651 documents; applicant Mr Greig Templeton; agent Simon Munro, LoganPM; case officer Scott Simpson; ward Burntisland, Kinghorn and West Kirkcaldy; community council Auchtertool; portal 'Environmental Assessment Requested: No'; neighbour consultation expiry 24 Jul 2026."
+  },
+  {
+    "id": "src-ch-ili-cato",
+    "title": "Companies House record: ILI CATO LIMITED (SC825081), including officers and persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC825081",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 7 Oct 2024; registered office 33 Bothwell Road, Hamilton ML3 0AS; SIC 41201; sole director Mark Thomas Wilson (appointed 7 Oct 2024); PSC Intelligent Land Investments Group Plc (SC564296), 75%+ shares and voting rights, right to appoint/remove directors."
+  },
+  {
+    "id": "src-aprs-auchtertool",
+    "title": "ILI Cato, Auchtertool, Fife — campaign page and EIA scoping report analysis",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/auchtertool-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group opposed to the development",
+    "notes": "Gives site coordinates 56.109111, -3.265364; PAN 25/00552/PAN agreed 22 Mar (2025); EIA screening 25/03079/SCR submitted 10 Nov 2025, 'No EIA Required' decision 1 Apr 2026; PPP published 25 May 2026, comments until 2 Jul 2026; notes adjacent newly built ILI BESS; plans show buildings over Hallyards Castle ruins; APRS calculation 4,200 GWh/yr at 80% load factor vs application Energy Statement ultimate ~4,000 GWh/yr; campaign group 'Say No to Cato'."
+  },
+  {
+    "id": "src-dcr-submission",
+    "title": "ILI Group submits plans for £5bn Fife AI data centre",
+    "publisher": "Data Centre Review",
+    "source_type": "journalism",
+    "url": "https://datacentrereview.com/2026/06/ili-group-submits-plans-for-5bn-fife-ai-data-centre/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "600 MW, £5bn (Stoics network £15bn: Cato 600 MW, Rufus East Ayrshire 540 MW, Aurelius North Lanarkshire 400 MW, ~1.5 GW total); 'approved Gate 2 grid position' at 600 MW; BiGGAR Economics: 9,660 construction job-years Scotland (1,450 Fife), £708m construction GVA Scotland (£105m Fife), 540 operational jobs Scotland (262 Fife), 120 permanent skilled on-site jobs; water 34,000 m3/yr (=239 homes); construction start expected 2027, five-year phased rollout; ILI CEO Mark Wilson."
+  },
+  {
+    "id": "src-dcr-objections",
+    "title": "More than 1,200 objections lodged against £5bn Fife data centre",
+    "publisher": "Data Centre Review",
+    "source_type": "journalism",
+    "url": "https://datacentrereview.com/2026/07/more-than-1200-objections-lodged-against-5bn-fife-data-centre/",
+    "publication_date": "2026-07-24",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "1,200+ objections on portal with more expected; 8,000+ signature petition against Auchtertool development; 2,500+ signature petition for Scottish moratorium on hyperscale data centres; Auchtertool Community Council objection ('ill-conceived and inappropriate'); ILI response on renewables/curtailment and separate water infrastructure."
+  },
+  {
+    "id": "src-aj-design",
+    "title": "Graeme Nicholls plans massive Ancient Greek-inspired data centre in Fife",
+    "publisher": "Architects' Journal",
+    "source_type": "journalism",
+    "url": "https://www.architectsjournal.co.uk/news/graeme-nicholls-plans-massive-ancient-greek-inspired-data-centre-in-fife",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "280,000 m2 hyperscale data centre; six separate buildings with identical footprints for phased construction; 35 m height; architect Graeme Nicholls Architects (Glasgow), involved in all three Stoics projects."
+  },
+  {
+    "id": "src-dcd-filing",
+    "title": "ILI files to develop 600MW Stoic data center in Fife, Scotland",
+    "publisher": "Data Center Dynamics",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/ili-files-to-develop-600mw-stoic-data-center-in-fife-scotland/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reported 25-hectare development, ~£5bn, delivered in phases over several years. Full article behind 403 to fetcher; figures taken from search-result excerpts — verify against planning documents."
+  },
+  {
+    "id": "src-cft-eia",
+    "title": "Auchtertool data centre — Fife Council has no environmental report",
+    "publisher": "Central Fife Times",
+    "source_type": "journalism",
+    "url": "https://www.centralfifetimes.com/news/26167894.auchtertool-data-centre---fife-council-no-environmental-report/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Fife Council (service manager Mary Stewart) concluded EIA not required under 2017 Regulations (Schedule 2 discretion); ACC chair Andrea Cail 'appalled'; Environmental Rights Centre Scotland advised 'credible legal basis for a challenge'; Greens MSP Mark Ruskell called decision 'unfathomable', suggested public inquiry; developer ILI Cato Limited; data halls up to 35 m, substations, security fencing, gatehouses."
+  },
+  {
+    "id": "src-cft-14000",
+    "title": "Over 14,000 responses to plans for massive Auchtertool data centre",
+    "publisher": "Central Fife Times (Local Democracy Reporting Service)",
+    "source_type": "journalism",
+    "url": "https://www.centralfifetimes.com/news/26412705.14-000-responses-plans-massive-auchtertool-data-centre/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "14,000–16,000 representations received by 24 Jul 2026 deadline; ~10,000 documents processed for public release; hundreds attended June meeting at Auchtertool Village Hall; SEPA holding objection in July pending further flooding information; Fife Council Head of Planning Pam Ewen quoted."
+  },
+  {
+    "id": "src-stv-community",
+    "title": "Fife community 'taken aback' at scale of plans for data centre",
+    "publisher": "STV News",
+    "source_type": "journalism",
+    "url": "https://news.stv.tv/north/fife-community-taken-aback-at-scale-of-plans-for-data-centre",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Auchtertool ~215 houses; three-year build programme cited; ACC chair Andrea Cail quotes on water/discharge/electricity uncertainty; ILI cites cooler climate for 'free cooling' and proximity to wind farms and battery storage; site plans 'up to seven buildings and an on-site substation' (per related search excerpt)."
+  },
+  {
+    "id": "src-acc-village-update",
+    "title": "Update on Proposed Datacentre Near Auchtertool (community council update, Nov 2025)",
+    "publisher": "Auchtertool Village / Auchtertool Community Council",
+    "source_type": "community_material",
+    "url": "https://www.auchtertoolvillage.com/post/update-on-proposed-datacentre-near-auchtertool",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Community council acting as neutral facilitator at that stage",
+    "notes": "Pre-application stage (Nov 2025): access from B925 west of Auchtertool; ~25% of site visible from most of the village; buildings 30-35 m; developer then indicated 30-50 permanent jobs and up to 1,000 construction jobs; possible district heating; water mains pipe too small, new pipe likely required; Scottish Water Horizons involved; application then targeted for Q1 2026."
   }
 ]

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "ILI Cato Limited",
+    "role": "spv",
+    "company_number": "SC825081",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Wholly-owned project SPV; PSC is Intelligent Land Investments Group Plc (SC564296) with 75%+ shares and voting rights and the right to appoint/remove directors. Sole director Mark Thomas Wilson (appointed at incorporation, 7 Oct 2024). Registered office 33 Bothwell Road, Hamilton ML3 0AS. SIC 41201 (construction of commercial buildings).",
+    "beneficial_owner_public": true,
+    "valid_from": "2024-10-07",
+    "confidence": "high",
+    "notes": "Identified as the applicant company by press and Fife Council statements; the portal's named applicant is 'Mr Greig Templeton'.",
+    "source_ids": ["src-ch-ili-cato", "src-cft-eia"]
+  },
+  {
+    "name": "Intelligent Land Investments Group Plc (ILI Group)",
+    "role": "developer",
+    "company_number": "SC564296",
+    "jurisdiction": "Scotland",
+    "website": "https://ili-energy.com",
+    "ownership_summary": "Parent and person with significant control of ILI Cato Limited; Hamilton-based land/energy developer (BESS, pumped hydro, and the 'Stoics' data centre portfolio). CEO Mark Wilson.",
+    "confidence": "high",
+    "notes": "Also parent of the wider ~1.5 GW Stoics network: Cato (Fife, 600 MW), Rufus (East Ayrshire, 540 MW), Aurelius (North Lanarkshire, 400 MW); network investment claimed at £15bn.",
+    "source_ids": ["src-ch-ili-cato", "src-dcr-submission"]
+  },
+  {
+    "name": "Intelligent Land Investments Group Plc (ILI Group)",
+    "role": "parent_company",
+    "company_number": "SC564296",
+    "jurisdiction": "Scotland",
+    "confidence": "high",
+    "source_ids": ["src-ch-ili-cato"]
+  },
+  {
+    "name": "Graeme Nicholls Architects",
+    "role": "consultant",
+    "jurisdiction": "Scotland",
+    "notes": "Glasgow practice; architect for Cato and the other two Stoics projects; design references Ancient Greek stoa architecture.",
+    "confidence": "high",
+    "source_ids": ["src-aj-design"]
+  },
+  {
+    "name": "LoganPM (agent: Simon Munro)",
+    "role": "consultant",
+    "notes": "Planning agent on 26/01243/PPP, address Inverlair Farm, Tulloch, Roy Bridge PH31 4AR.",
+    "confidence": "high",
+    "source_ids": ["src-fife-portal-26-01243-ppp"]
+  },
+  {
+    "name": "BiGGAR Economics",
+    "role": "consultant",
+    "notes": "Author of the economic impact assessment cited by the developer (job-years and GVA figures).",
+    "confidence": "medium",
+    "source_ids": ["src-dcr-submission"]
+  },
+  {
+    "name": "Fife Council",
+    "role": "planning_authority",
+    "notes": "Case officer Scott Simpson; ward Burntisland, Kinghorn and West Kirkcaldy. Issued the contested 'EIA not required' screening opinion (1 Apr 2026).",
+    "confidence": "high",
+    "source_ids": ["src-fife-portal-26-01243-ppp", "src-cft-eia"]
+  },
+  {
+    "name": "Auchtertool Community Council",
+    "role": "community_group",
+    "notes": "Initially a neutral facilitator gathering resident views (Nov 2025); formally objected to 26/01243/PPP, describing it as 'ill-conceived and inappropriate'. Chair Andrea Cail.",
+    "confidence": "high",
+    "source_ids": ["src-dcr-objections", "src-acc-village-update", "src-cft-eia"]
+  },
+  {
+    "name": "Say No to Cato",
+    "role": "campaign_group",
+    "notes": "Local campaign group opposing the development (Facebook-based), promoted by APRS.",
+    "confidence": "medium",
+    "source_ids": ["src-aprs-auchtertool"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot/auchtertool-dc/",
+    "notes": "National campaign group; published an EIA scoping analysis and a formal objection (author Nikki Sinclair, Policy Manager); calculates full-build energy use at ~4,200 GWh/yr.",
+    "confidence": "high",
+    "source_ids": ["src-aprs-auchtertool"]
+  },
+  {
+    "name": "SEPA",
+    "role": "other",
+    "notes": "Statutory consultee; lodged a holding objection in July 2026 requesting further flooding information.",
+    "confidence": "high",
+    "source_ids": ["src-cft-14000"]
+  },
+  {
+    "name": "Scottish Water Horizons",
+    "role": "water_provider",
+    "notes": "Involved in pre-application discussions on water supply; existing mains reported too small, a new pipe likely required.",
+    "confidence": "medium",
+    "source_ids": ["src-acc-village-update"]
+  }
+]
