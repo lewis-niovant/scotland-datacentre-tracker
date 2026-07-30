@@ -3557,5 +3557,185 @@
     "reliability_tier": 1,
     "status": "active",
     "notes": "Official red-line application boundaries supplied daily by all 34 Scottish planning authorities. Open Government Licence v3. Accessed via WFS with ?authkey=; srsName=EPSG:4326. Some authorities supply buffered points rather than true boundaries, so geometry is validated before use."
+  },
+  {
+    "id": "src-peeringdb-pulsant-sc1",
+    "title": "Pulsant Edinburgh SC-1 (South Gyle) - facility record",
+    "publisher": "PeeringDB",
+    "source_type": "other",
+    "url": "https://www.peeringdb.com/fac/271",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Operator-maintained interconnection directory entry; gives address The Clocktower Estate, Flassches Yard, South Gyle Crescent, Edinburgh EH12 9LB and coordinates 55.930562, -3.295901."
+  },
+  {
+    "id": "src-pulsant-sc1-specs",
+    "title": "Colocation Data Centre - Edinburgh (South Gyle) SC-1",
+    "publisher": "Pulsant",
+    "source_type": "developer_publication",
+    "url": "https://www.pulsant.com/colocation/sc-1",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Operator page; states total building size 4,648 m2, total data hall space 2,628 m2, and that the site is 6.5 miles west of central Edinburgh."
+  },
+  {
+    "id": "src-peeringdb-pulsant-sc2",
+    "title": "Pulsant Edinburgh SC-2 (Medway) - facility record",
+    "publisher": "PeeringDB",
+    "source_type": "other",
+    "url": "https://www.peeringdb.com/fac/15135",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Gives 7 Bankhead Medway, Edinburgh EH11 4BY; used only for context on the wider campus."
+  },
+  {
+    "id": "src-peeringdb-pulsant-sc3",
+    "title": "Pulsant Edinburgh SC-3 (Newbridge) - facility record",
+    "publisher": "PeeringDB",
+    "source_type": "other",
+    "url": "https://www.peeringdb.com/fac/1802",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Gives 7 Claylands Road, Newbridge, Edinburgh EH28 8LF; used only for context on the wider campus."
+  },
+  {
+    "id": "src-postcodes-io-eh12-9lb",
+    "title": "Postcode lookup: EH12 9LB",
+    "publisher": "postcodes.io (Ideal Postcodes, ONS/OS open data)",
+    "source_type": "map_or_gis",
+    "url": "https://api.postcodes.io/postcodes/EH129LB",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Returns latitude 55.929333, longitude -3.293943, admin district City of Edinburgh. Postcode-unit centroid, not a building centroid."
+  },
+  {
+    "id": "src-peeringdb-iomart-dc1",
+    "title": "iomart DC1 Glasgow - facility record",
+    "publisher": "PeeringDB",
+    "source_type": "other",
+    "url": "https://www.peeringdb.com/fac/305",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Operator-maintained entry for iomart Hosting Limited; gives 88 Middlesex Street, Glasgow G41 1EE and coordinates 55.851165, -4.283217."
+  },
+  {
+    "id": "src-postcodes-io-g41-1ee",
+    "title": "Postcode lookup: G41 1EE",
+    "publisher": "postcodes.io (Ideal Postcodes, ONS/OS open data)",
+    "source_type": "map_or_gis",
+    "url": "https://api.postcodes.io/postcodes/G411EE",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Returns latitude 55.85137, longitude -4.282626, admin district Glasgow City."
+  },
+  {
+    "id": "src-datavita-dv2-location",
+    "title": "DV2 Glasgow Data Centre - 177 Bothwell Street",
+    "publisher": "DataVita Ltd",
+    "source_type": "developer_publication",
+    "url": "https://www.datavita.co.uk/location/glasgow",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Operator page; confirms DV2 is purpose built, of Tier III design, situated in the basement of 177 Bothwell Street; states 1,000 m2 and 130 racks."
+  },
+  {
+    "id": "src-nes-177-bothwell",
+    "title": "177 Bothwell Street, Glasgow - office address",
+    "publisher": "NHS Education for Scotland",
+    "source_type": "government_publication",
+    "url": "https://www.nes.scot.nhs.uk/contact-us/177-bothwell-street-glasgow/",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Independent corroboration that the postcode of 177 Bothwell Street is G2 7ER."
+  },
+  {
+    "id": "src-postcodes-io-g2-7er",
+    "title": "Postcode lookup: G2 7ER",
+    "publisher": "postcodes.io (Ideal Postcodes, ONS/OS open data)",
+    "source_type": "map_or_gis",
+    "url": "https://api.postcodes.io/postcodes/G27ER",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Returns latitude 55.861447, longitude -4.265494, admin district Glasgow City."
+  },
+  {
+    "id": "src-dcm-brightsolid-aberdeen",
+    "title": "brightsolid Aberdeen Data Center - Whitemyres Ave",
+    "publisher": "Data Center Map",
+    "source_type": "other",
+    "url": "https://www.datacentermap.com/united-kingdom/aberdeen/brightsolid-aberdeen/",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Colocation directory listing giving Whitemyres Avenue, Aberdeen AB16 6HQ; also describes Tier III accreditation, two data halls and up to 25 kW per rack."
+  },
+  {
+    "id": "src-peeringdb-brightsolid-aberdeen",
+    "title": "brightsolid Aberdeen Data Centre - facility record",
+    "publisher": "PeeringDB",
+    "source_type": "other",
+    "url": "https://www.peeringdb.com/fac/2417",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Operator-maintained entry for Brightsolid Online Technology Ltd; gives the address as Lang Stracht, Aberdeen AB15 6DF, conflicting with the Whitemyres Avenue listing. No geocode published."
+  },
+  {
+    "id": "src-postcodes-io-ab16-6hq",
+    "title": "Postcode lookup: AB16 6HQ",
+    "publisher": "postcodes.io (Ideal Postcodes, ONS/OS open data)",
+    "source_type": "map_or_gis",
+    "url": "https://api.postcodes.io/postcodes/AB166HQ",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Returns latitude 57.153087, longitude -2.157559, admin district Aberdeen City."
+  },
+  {
+    "id": "src-postcodes-io-ab15-6df",
+    "title": "Postcode lookup: AB15 6DF",
+    "publisher": "postcodes.io (Ideal Postcodes, ONS/OS open data)",
+    "source_type": "map_or_gis",
+    "url": "https://api.postcodes.io/postcodes/AB156DF",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Returns latitude 57.15303, longitude -2.159427, admin district Aberdeen City. Recorded to show the two candidate addresses are about 120 m apart."
+  },
+  {
+    "id": "src-midlothian-acf-22-00803-dpp",
+    "title": "Planning application 22/00803/DPP - ACF Bush Estate, Penicuik EH26 0PH",
+    "publisher": "Midlothian Council",
+    "source_type": "planning_portal",
+    "url": "https://planning-applications.midlothian.gov.uk/OnlinePlanning/applicationDetails.do?activeTab=summary&keyVal=RKYOLKKVG9H00",
+    "reliability_tier": 1,
+    "retrieved_date": "2026-07-30",
+    "notes": "Official Idox Public Access record. Not directly reachable from this research environment on 2026-07-30 (gateway refused the connection); details were read from the Planning Alerts mirror and should be re-checked against the council portal."
+  },
+  {
+    "id": "src-planningalerts-acf-22-00803-dpp",
+    "title": "Midlothian planning application 22/00803/DPP: ACF Bush Estate Penicuik EH26 0PH - 'Extension to advanced computer facility and associated works'",
+    "publisher": "Planning Alerts (planning.org.uk)",
+    "source_type": "other",
+    "url": "https://planning.org.uk/app/216/RKYOLKKVG9H00",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30",
+    "notes": "Third-party mirror of the Midlothian Idox record. States received 7 November 2022, validated 3 August 2023, 25 documents, agent Izabela Murray, 93 West George Street, Glasgow G2 1PB. Links through to the council record."
+  },
+  {
+    "id": "src-postcodes-io-eh26-0ph",
+    "title": "Postcode lookup: EH26 0PH",
+    "publisher": "postcodes.io (Ideal Postcodes, ONS/OS open data)",
+    "source_type": "map_or_gis",
+    "url": "https://api.postcodes.io/postcodes/EH260PH",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Returns latitude 55.859348, longitude -3.207051, admin district Midlothian."
+  },
+  {
+    "id": "src-postcodes-io-eh26-0qa",
+    "title": "Postcode lookup: EH26 0QA",
+    "publisher": "postcodes.io (Ideal Postcodes, ONS/OS open data)",
+    "source_type": "map_or_gis",
+    "url": "https://api.postcodes.io/postcodes/EH260QA",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "notes": "Returns latitude 55.855483, longitude -3.199822, admin district Midlothian. Alternative postcode cited for the Bush Estate."
   }
 ]

@@ -1,12 +1,17 @@
 {
   "site_name": "EPCC Advanced Computing Facility",
   "settlement": "South of Edinburgh (Midlothian, university research estate)",
-  "latitude": 55.86,
-  "longitude": -3.21,
-  "location_precision": "approximate",
+  "latitude": 55.859348,
+  "longitude": -3.207051,
+  "location_precision": "site_centroid",
   "current_land_use": "University high-performance computing data centre",
-  "land_notes": "Coordinates coarsened to district level (sensitive national research infrastructure). EPCC publicly describes the ACF as its secure, resilient data centre outside the city; no further location detail recorded deliberately. Location and any boundary shown here come from public record (planning register, operator listings). Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
+  "land_notes": "The site address is confirmed by a Midlothian Council planning record: application 22/00803/DPP, 'Extension to advanced computer facility and associated works', at 'ACF Bush Estate Penicuik EH26 0PH'. This is the Bush Estate / Easter Bush research estate south of Edinburgh, consistent with EPCC's own description of the ACF and with City Region Deal material placing it on the Easter Bush campus. Coordinates derive from the Royal Mail postcode unit centroid returned by the postcodes.io API for the postcode recorded above. EPCC's contact page lists the postcode EH26 0QA for the Bush Estate area; the centroids of EH26 0PH and EH26 0QA are roughly 600 m apart, and EH26 0PH is preferred here because it comes from the planning record for the facility itself. Because the postcode covers a large rural research estate rather than a single plot, this is recorded as a site centroid, not an exact fix. Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
   "source_ids": [
-    "src-epcc-acf"
-  ]
+    "src-epcc-acf",
+    "src-midlothian-acf-22-00803-dpp",
+    "src-planningalerts-acf-22-00803-dpp",
+    "src-postcodes-io-eh26-0ph"
+  ],
+  "address": "Advanced Computing Facility (ACF), Bush Estate, Penicuik, Midlothian",
+  "postcode": "EH26 0PH"
 }
