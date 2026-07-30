@@ -5,7 +5,7 @@
   "latitude": 55.92097,
   "longitude": -4.189606,
   "location_precision": "approximate",
-  "boundary_precision": "none",
+  "boundary_precision": "red_line_official",
   "number_of_buildings": {
     "value": 4,
     "unit": "data centre buildings",
@@ -13,12 +13,18 @@
     "claimant": "Apatura (consultation panels)",
     "applicable_date": "2025-08-15",
     "notes": "Buildings A (80MW, 10 data halls), B (64MW, 8 DH), C1 and C2 (48MW, 6 DH each), plus substation, district heating building, general support building, guard huts and three BESS areas.",
-    "source_ids": ["src-apatura-westerhill-panels"]
+    "source_ids": [
+      "src-apatura-westerhill-panels"
+    ]
   },
   "greenfield_brownfield": "mixed",
   "current_land_use": "Farmland/undeveloped land within the Westerhill Regeneration Area, near HMP Low Moss, a crematorium, rail yard and industrial estate (per consultation masterplan layout)",
   "green_belt": true,
-  "nearest_settlements": ["Bishopbriggs", "Cadder", "Lenzie"],
+  "nearest_settlements": [
+    "Bishopbriggs",
+    "Cadder",
+    "Lenzie"
+  ],
   "protected_designations": [
     "Partially within designated Green Belt (developer-stated)",
     "Adjacent to Antonine Wall World Heritage Site buffer zone (developer-stated 'sensitive area')",

@@ -2,3 +2,4 @@ node_modules/
 dist/
 app/public/data/
 __pycache__/
+.env

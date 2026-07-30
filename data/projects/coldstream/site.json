@@ -5,7 +5,7 @@
   "latitude": 55.684,
   "longitude": -2.351,
   "location_precision": "approximate",
-  "boundary_precision": "none",
+  "boundary_precision": "red_line_official",
   "site_area_m2": {
     "value": 690000,
     "unit": "m2",
@@ -14,7 +14,9 @@
     "applicable_date": "2025-07-14",
     "confidence": "medium",
     "notes": "Reported as 69 hectares of greenfield land",
-    "source_ids": ["src-dcd-apatura-coldstream-2025"]
+    "source_ids": [
+      "src-dcd-apatura-coldstream-2025"
+    ]
   },
   "gross_floor_area_m2": {
     "value": 70000,
@@ -24,12 +26,19 @@
     "applicable_date": "2025-07-14",
     "confidence": "medium",
     "notes": "Reported as 'up to 70,000 sqm of data centre buildings'; unclear whether footprint or gross floor area",
-    "source_ids": ["src-dcd-apatura-coldstream-2025"]
+    "source_ids": [
+      "src-dcd-apatura-coldstream-2025"
+    ]
   },
   "greenfield_brownfield": "greenfield",
   "current_land_use": "Arable farmland",
   "green_belt": null,
-  "nearest_settlements": ["Leitholm", "Eccles", "Birgham", "Coldstream"],
+  "nearest_settlements": [
+    "Leitholm",
+    "Eccles",
+    "Birgham",
+    "Coldstream"
+  ],
   "protected_designations": [],
   "land_notes": "Gently sloping arable land rising from the southern boundary and falling to the Laprig Burn at the northern boundary. Council screening found no Sites of Special Scientific Interest within a 5 km radius likely to be affected. Coordinates are an approximate centroid offset north-east of Stainrigg Mains farmstead (Nominatim: 55.6808, -2.3551); no red-line plan was retrievable, so precision is honest-approximate. The site sits roughly 5 km north of the River Tweed, which forms the England border at Coldstream; the Till valley lies across the border in Northumberland, and the scheme drew coverage in the Northumberland press.",
   "source_ids": [

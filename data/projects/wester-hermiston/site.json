@@ -4,7 +4,7 @@
   "latitude": 55.91672,
   "longitude": -3.328259,
   "location_precision": "approximate",
-  "boundary_precision": "none",
+  "boundary_precision": "red_line_official",
   "site_area_m2": {
     "value": 240000,
     "unit": "m2",
@@ -13,7 +13,11 @@
     "applicable_date": "2026-03-25",
     "confidence": "medium",
     "notes": "Conflicting claims preserved: council PAN committee paper describes 'an agricultural field comprising of 24 hectares in total'; the developer's Cundall GHG report describes a '77-acre site' (c.311,600 m2), and the local petition says 'over 30 hectares'. The discrepancy may reflect red-line versus wider landholding; unresolved.",
-    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-cundall-ghg-report", "src-changeorg-wester-hermiston"]
+    "source_ids": [
+      "src-cec-pan-report-wester-hermiston",
+      "src-cundall-ghg-report",
+      "src-changeorg-wester-hermiston"
+    ]
   },
   "building_footprint_m2": {
     "value": 54690,
@@ -23,7 +27,9 @@
     "applicable_date": "2025-11-28",
     "confidence": "medium",
     "notes": "'Total building footprint of approximately 54,690 m2' across three data centre buildings.",
-    "source_ids": ["src-cundall-ghg-report"]
+    "source_ids": [
+      "src-cundall-ghg-report"
+    ]
   },
   "number_of_buildings": {
     "value": 3,
@@ -33,12 +39,19 @@
     "applicable_date": "2025-11-28",
     "confidence": "medium",
     "notes": "Two identical two-storey 48 MW data centre buildings (DC01, DC02) and one single-storey 36 MW building (DC03), plus c.6,300 m2 of office floor area; 136 car parking spaces, 15 accessible spaces, 8 motorcycle and 131 cycle spaces. Heights in metres not published.",
-    "source_ids": ["src-cundall-ghg-report"]
+    "source_ids": [
+      "src-cundall-ghg-report"
+    ]
   },
   "greenfield_brownfield": "greenfield",
   "current_land_use": "Agricultural field (described by objectors as productive prime agricultural land)",
   "green_belt": true,
-  "nearest_settlements": ["Hermiston", "Currie", "Riccarton (Heriot-Watt campus)", "Ratho"],
+  "nearest_settlements": [
+    "Hermiston",
+    "Currie",
+    "Riccarton (Heriot-Watt campus)",
+    "Ratho"
+  ],
   "protected_designations": [
     "Edinburgh Green Belt (City Plan 2030)",
     "Gogar Special Landscape Area (City Plan 2030)",
@@ -48,5 +61,10 @@
     "Category A listed Heriot-Watt University Riccarton Estate North Gate Lodge, gatepiers and screen walls (LB 27369) and category B listed Hermiston House west lodge, gate towers, gig-house and boundary walls (LB 27389) nearby"
   ],
   "land_notes": "Site sits between the Union Canal/M8 to the north and the A71/Riccarton Campus & Business Park to the south, west of Hermiston and the City Bypass, in the Pentland Hills ward. Coordinates are APRS's marker for the site (derived from indicative EIA-document layout), treated as approximate; no red-line boundary has been published on an accessible source, so no boundary polygon is provided.",
-  "source_ids": ["src-cec-pan-report-wester-hermiston", "src-cundall-ghg-report", "src-aprs-wester-hermiston", "src-changeorg-wester-hermiston"]
+  "source_ids": [
+    "src-cec-pan-report-wester-hermiston",
+    "src-cundall-ghg-report",
+    "src-aprs-wester-hermiston",
+    "src-changeorg-wester-hermiston"
+  ]
 }

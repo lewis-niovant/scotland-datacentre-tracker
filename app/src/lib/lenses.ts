@@ -1,6 +1,6 @@
 import type { LensId, ProjectRecord } from '../types'
 import {
-  fmtGBP, fmtInt, fmtMW, headlineCapacityMW, headlineCapexGBP, headlineEnergyGWh,
+  fmtGBP, fmtInt, fmtM3, fmtMW, headlineCapacityMW, headlineCapexGBP, headlineEnergyGWh,
   headlineWaterM3, maturityNumber, operationalJobsClaim, publishedObjections,
   statusGroup, STATUS_GROUP_META,
 } from './data'

@@ -1,0 +1,157 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.3059,
+        55.9315
+       ],
+       [
+        -3.3063,
+        55.9321
+       ],
+       [
+        -3.3069,
+        55.9328
+       ],
+       [
+        -3.3071,
+        55.9332
+       ],
+       [
+        -3.3073,
+        55.9333
+       ],
+       [
+        -3.3075,
+        55.9333
+       ],
+       [
+        -3.3077,
+        55.9333
+       ],
+       [
+        -3.3081,
+        55.9333
+       ],
+       [
+        -3.3089,
+        55.9331
+       ],
+       [
+        -3.3093,
+        55.9331
+       ],
+       [
+        -3.3088,
+        55.9324
+       ],
+       [
+        -3.3107,
+        55.932
+       ],
+       [
+        -3.311,
+        55.9319
+       ],
+       [
+        -3.311,
+        55.9319
+       ],
+       [
+        -3.3113,
+        55.9318
+       ],
+       [
+        -3.3104,
+        55.9304
+       ],
+       [
+        -3.3059,
+        55.9315
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "south-gyle",
+    "reference": "25/04239/PPP",
+    "local_auth": "City of Edinburgh",
+    "application_type": "permission_in_principle",
+    "is_primary": true,
+    "official_area_m2": 59005,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.306,
+        55.9315
+       ],
+       [
+        -3.3072,
+        55.9332
+       ],
+       [
+        -3.3074,
+        55.9333
+       ],
+       [
+        -3.3079,
+        55.9333
+       ],
+       [
+        -3.3094,
+        55.933
+       ],
+       [
+        -3.3089,
+        55.9323
+       ],
+       [
+        -3.3112,
+        55.9318
+       ],
+       [
+        -3.3102,
+        55.9306
+       ],
+       [
+        -3.306,
+        55.9315
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "south-gyle",
+    "reference": "25/03575/SCR",
+    "local_auth": "City of Edinburgh",
+    "application_type": "eia_screening",
+    "is_primary": false,
+    "official_area_m2": 52560,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  }
+ ]
+}

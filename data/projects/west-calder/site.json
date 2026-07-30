@@ -6,10 +6,19 @@
   "latitude": 55.856204,
   "longitude": -3.59266,
   "location_precision": "site_centroid",
-  "boundary_precision": "none",
+  "boundary_precision": "red_line_official",
   "greenfield_brownfield": "brownfield",
   "previous_land_use": "Former Freeport outlet shopping and leisure village (long-closed retail development)",
-  "nearest_settlements": ["West Calder", "Stoneyburn", "Addiewell", "Breich"],
+  "nearest_settlements": [
+    "West Calder",
+    "Stoneyburn",
+    "Addiewell",
+    "Breich"
+  ],
   "land_notes": "Coordinates are the application point from the West Lothian Council portal records (via PlanIt mirror; PAC point 55.856204,-3.59266 and EIA screening point 55.856854,-3.594571; parish Stoneyburn, ward Fauldhouse & The Breich Valley). Developer describes the site as north-west of West Calder within the former Freeport site with 'strong connections to the grid and transport networks'. Note: 'Freeport' is the historic name of the failed outlet village, not a UK Green Freeport designation. Site area and building details not published; red-line boundary not available, so no boundary file drawn.",
-  "source_ids": ["src-planit-westlothian-dc", "src-wlc-portal-0625-pac-25", "src-apatura-freeport-project"]
+  "source_ids": [
+    "src-planit-westlothian-dc",
+    "src-wlc-portal-0625-pac-25",
+    "src-apatura-freeport-project"
+  ]
 }

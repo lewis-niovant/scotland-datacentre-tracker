@@ -5,7 +5,7 @@
   "latitude": 56.109111,
   "longitude": -3.265364,
   "location_precision": "approximate",
-  "boundary_precision": "none",
+  "boundary_precision": "red_line_official",
   "site_area_m2": {
     "value": 250000,
     "unit": "m2",
@@ -13,7 +13,9 @@
     "claimant": "Data Center Dynamics (reporting the application)",
     "confidence": "low",
     "notes": "Reported as a '25-hectare development' (61 acres). Sits oddly against the reported 280,000 m2 of buildings — the red-line area is likely larger; verify against the location plan on the Fife portal.",
-    "source_ids": ["src-dcd-filing"]
+    "source_ids": [
+      "src-dcd-filing"
+    ]
   },
   "gross_floor_area_m2": {
     "value": 280000,
@@ -24,7 +26,10 @@
     "preferred": true,
     "preferred_rationale": "Consistent across SPICe ('almost 40 football pitches' of buildings) and AJ (280,000 m2 across six identical buildings); whether it is footprint or gross floor area is not fully clear from secondary sources.",
     "notes": "Described variously as building area/site coverage.",
-    "source_ids": ["src-spice-data-centres", "src-aj-design"]
+    "source_ids": [
+      "src-spice-data-centres",
+      "src-aj-design"
+    ]
   },
   "max_building_height_m": {
     "value": 35,
@@ -33,7 +38,11 @@
     "claimant": "SPICe / Fife Council application description",
     "confidence": "high",
     "notes": "Data halls up to 35 m ('roughly a 12-storey block of flats'); community council was told 30-35 m pre-application.",
-    "source_ids": ["src-spice-data-centres", "src-cft-eia", "src-acc-village-update"]
+    "source_ids": [
+      "src-spice-data-centres",
+      "src-cft-eia",
+      "src-acc-village-update"
+    ]
   },
   "number_of_buildings": {
     "value": null,
@@ -44,11 +53,24 @@
     "claimant": "Architects' Journal (six identical buildings) / STV News (up to seven buildings plus on-site substation)",
     "confidence": "medium",
     "notes": "Conflicting counts preserved: six data halls of identical footprint (AJ, from the architect) vs 'up to seven buildings' (STV, from site plans). PPP stage, so illustrative only.",
-    "source_ids": ["src-aj-design", "src-stv-community"]
+    "source_ids": [
+      "src-aj-design",
+      "src-stv-community"
+    ]
   },
   "greenfield_brownfield": "greenfield",
   "current_land_use": "Agricultural land (farmland)",
-  "nearest_settlements": ["Auchtertool (~215 houses, immediately south-east)", "Kirkcaldy", "Cowdenbeath"],
-  "land_notes": "Farmland north-west of Auchtertool, between Kirkcaldy and Cowdenbeath; access proposed from the B925. APRS states submitted plans show buildings covering the ruins of Hallyards Castle, and that a newly constructed ILI battery energy storage system sits immediately east of the site. Community council reported ~25% of the site would be visible from most of the village. Agricultural land classification not established (see project unknowns). SEPA lodged a holding objection in July 2026 pending further flooding information.",
-  "source_ids": ["src-fife-portal-26-01243-ppp", "src-aprs-auchtertool", "src-stv-community", "src-acc-village-update", "src-cft-14000"]
+  "nearest_settlements": [
+    "Auchtertool (~215 houses, immediately south-east)",
+    "Kirkcaldy",
+    "Cowdenbeath"
+  ],
+  "land_notes": "Farmland north-west of Auchtertool, between Kirkcaldy and Cowdenbeath; access proposed from the B925. APRS states submitted plans show buildings covering the ruins of Hallyards Castle, and that a newly constructed ILI battery energy storage system sits immediately east of the site. Community council reported ~25% of the site would be visible from most of the village. Agricultural land classification not established (see project unknowns). SEPA lodged a holding objection in July 2026 pending further flooding information. Official red-line area (Spatial Hub, planning application boundary): 68.5 ha; previously recorded 25 ha (reported); difference +174%. The official application red line for 26/01243/PPP encloses ~68.5 ha, far larger than the ~25 ha reported in press coverage. The press figure may describe developable area or building footprint rather than the full application boundary; SPICe's ~280,000 m2 of buildings would sit comfortably inside 68.5 ha. Requires a check of the application's location plan to resolve. Both figures retained.",
+  "source_ids": [
+    "src-fife-portal-26-01243-ppp",
+    "src-aprs-auchtertool",
+    "src-stv-community",
+    "src-acc-village-update",
+    "src-cft-14000"
+  ]
 }

@@ -3546,5 +3546,16 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 4,
     "notes": "September 2025 CoreWeave-DataVita partnership announcement coverage; describes DV1 as Scotland's largest data centre."
+  },
+  {
+    "id": "src-spatialhub-planning-applications",
+    "title": "Planning Applications: Official (polygons) — sh_plnapp:pub_plnapppol",
+    "publisher": "Improvement Service / Spatial Hub Scotland",
+    "source_type": "map_or_gis",
+    "url": "https://data.spatialhub.scot/dataset/planning_applications_official-is",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Official red-line application boundaries supplied daily by all 34 Scottish planning authorities. Open Government Licence v3. Accessed via WFS with ?authkey=; srsName=EPSG:4326. Some authorities supply buffered points rather than true boundaries, so geometry is validated before use."
   }
 ]

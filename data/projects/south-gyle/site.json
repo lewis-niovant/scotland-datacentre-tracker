@@ -6,14 +6,16 @@
   "latitude": 55.931989,
   "longitude": -3.308918,
   "location_precision": "site_centroid",
-  "boundary_precision": "none",
+  "boundary_precision": "red_line_official",
   "site_area_m2": {
     "value": 57400,
     "unit": "m2",
     "state": "reported",
     "claimant": "Deadline News (reporting application documents; 5.74 hectares)",
     "confidence": "medium",
-    "source_ids": ["src-deadline-hearing"]
+    "source_ids": [
+      "src-deadline-hearing"
+    ]
   },
   "max_building_height_m": {
     "value": 32,
@@ -24,7 +26,9 @@
     "claimant": "Shelborn Drummond Ltd / studioNWA Architects (illustrative height parameter at PPP stage)",
     "confidence": "medium",
     "notes": "25-32 m parameter for the illustrative design, allowing 2 to 2.5 floors of data halls above ground-level electrical infrastructure rooms; prior extant office consent (22/05659/FUL) included six blocks exceeding 33 m. Final heights would be set at MSC/detailed stage.",
-    "source_ids": ["src-shp-consultation-board"]
+    "source_ids": [
+      "src-shp-consultation-board"
+    ]
   },
   "number_of_buildings": {
     "value": 2,
@@ -33,7 +37,10 @@
     "claimant": "Shelborn Drummond Ltd (illustrative layout)",
     "confidence": "medium",
     "notes": "Two separate data centre buildings plus dedicated electrical substation, enclosed standby generator compounds, security lodge and parking.",
-    "source_ids": ["src-shp-consultation-board", "src-scn-refusal"]
+    "source_ids": [
+      "src-shp-consultation-board",
+      "src-scn-refusal"
+    ]
   },
   "greenfield_brownfield": "brownfield",
   "current_land_use": "Cleared former office site (Drummond House, former RBS headquarters built 1993, demolished c. 2022) with the retained Younger Building, hardstanding car parking and a central landscaped green space protected by City Plan 2030 Policy Env 23",
@@ -46,9 +53,16 @@
     "claimant": "APRS (observation at committee)",
     "confidence": "low",
     "notes": "Refers to a consented mixed-use development including housing about 50 m from the data centre site, expected to start construction in 2026 (Parabola/Edinburgh Park scheme), not existing occupied homes. APRS also stated the site is 220 m from a nursery and close to residential homes.",
-    "source_ids": ["src-aprs-refusal-pr", "src-dcr-campaigners"]
+    "source_ids": [
+      "src-aprs-refusal-pr",
+      "src-dcr-campaigners"
+    ]
   },
-  "nearest_settlements": ["South Gyle", "Edinburgh Park", "Gyle/Broomhouse area, Edinburgh"],
+  "nearest_settlements": [
+    "South Gyle",
+    "Edinburgh Park",
+    "Gyle/Broomhouse area, Edinburgh"
+  ],
   "protected_designations": [
     "On-site protected open space (City Plan 2030 Policy Env 23) - proposed to be relocated as a new public park fronting Lochside Court"
   ],
