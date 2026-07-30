@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { StatusGroup } from '../types'
-import { STATUS_GROUPS, STATUS_GROUP_META } from '../lib/data'
+import { STATUS_GROUPS, STATUS_GROUP_META, fmtInt } from '../lib/data'
+import { BOUNDARY_MIN_ZOOM, PITCH_MIN_ZOOM } from './MapView'
 import type { LensDef, StatTileDef } from '../lib/lenses'
 import { LENSES } from '../lib/lenses'
 import type { LensId } from '../types'
@@ -82,9 +83,13 @@ export function LensSwitcher({ lens, onChange }: { lens: LensId; onChange: (id: 
   )
 }
 
-export function StatsStrip({ tiles }: { tiles: StatTileDef[] }) {
+export function StatsStrip({ tiles, shown, total }: { tiles: StatTileDef[]; shown: number; total: number }) {
   return (
     <div className="stats-strip" aria-label="Summary statistics for the current filters">
+      <div className={`stat-tile count-tile${shown < total ? ' filtered' : ''}`}>
+        <div className="v">{shown} of {total}</div>
+        <div className="l">{shown < total ? 'projects shown (filtered)' : 'projects shown'}</div>
+      </div>
       {tiles.map((t, i) => (
         <div className="stat-tile" key={i}>
           <div className="v">{t.value}</div>
@@ -97,7 +102,7 @@ export function StatsStrip({ tiles }: { tiles: StatTileDef[] }) {
 
 const SEQ_LEGEND = ['#86b6ef', '#5598e7', '#2a78d6', '#1c5cab', '#0d366b']
 
-export function MapLegend({ lens }: { lens: LensDef }) {
+export function MapLegend({ lens, showPitches, pitchM2 }: { lens: LensDef; showPitches: boolean; pitchM2: number }) {
   /* Collapsed by default on small screens so the map stays clear. */
   const [open, setOpen] = useState<boolean>(() =>
     typeof window !== 'undefined' ? window.matchMedia('(min-width: 800px)').matches : true,
@@ -143,9 +148,37 @@ export function MapLegend({ lens }: { lens: LensDef }) {
             </>
           )}
           <div className="row cluster-note">
-            <span className="cluster-dot">7</span>
-            grouped sites — tap to zoom
+            <span className="cluster-key" aria-hidden="true">
+              <svg viewBox="0 0 34 34">
+                <circle cx="17" cy="17" r="13" className="ck-plate" />
+                <circle cx="17" cy="17" r="13" className="ck-a" />
+                <circle cx="17" cy="17" r="13" className="ck-b" />
+              </svg>
+            </span>
+            <span>
+              Bubbles show the <strong>{lens.aggregateLabel}</strong> with the number of sites;
+              the ring shows {lens.id === 'overview' || lens.id === 'planning'
+                ? 'the status mix'
+                : 'how many of them have a published figure'}. Tap to zoom in.
+            </span>
           </div>
+          <div className="row boundary-note">
+            <span className="redline-key" aria-hidden="true" />
+            <span>
+              Solid red line = <strong>official red-line boundary</strong> (Spatial Hub Scotland
+              planning applications, OGL v3). Visible from zoom {BOUNDARY_MIN_ZOOM} — zoom in to
+              reveal real site boundaries. Only 17 of the 39 projects have one; the rest are points.
+            </span>
+          </div>
+          {showPitches && (
+            <div className="row pitch-note-row">
+              <span className="pitch-key" aria-hidden="true" />
+              <span>
+                Thin green grid = derived {fmtInt(pitchM2)} m² football pitches inside the official
+                boundary (drawn by us, layout illustrative). Appears from zoom {PITCH_MIN_ZOOM}.
+              </span>
+            </div>
+          )}
         </div>
       )}
     </div>

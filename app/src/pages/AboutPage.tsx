@@ -79,6 +79,30 @@ export default function AboutPage() {
       </section>
 
       <section className="section">
+        <h2>Site boundaries on the map</h2>
+        <ul className="plain">
+          <li>
+            <strong>Solid red lines are official.</strong> They are the red-line application
+            boundaries published in the Spatial Hub Scotland planning-applications dataset (local
+            authority data, Ordnance Survey base, licensed under the Open Government Licence v3),
+            retrieved on the snapshot date. 17 of the 39 projects currently have one; the remainder
+            appear only as approximate points.
+          </li>
+          <li>
+            <strong>The official area often disagrees with the reported one.</strong> Where both
+            exist, profiles show the red-line area and the researched/reported figure side by side
+            rather than reconciling them.
+          </li>
+          <li>
+            <strong>Football-pitch grids and 3D masses are drawn by us.</strong> The pitch grid tiles
+            105 × 68 m cells inside the official boundary; building masses use the published footprint
+            and maximum height, but their layout is invented and captioned as indicative. Both are
+            switchable, like every other comparison.
+          </li>
+        </ul>
+      </section>
+
+      <section className="section">
         <h2>Comparison constants</h2>
         <p className="small">
           Scale comparisons in project profiles use these disclosed constants and can be turned off:

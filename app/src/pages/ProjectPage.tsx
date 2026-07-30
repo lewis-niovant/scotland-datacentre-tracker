@@ -8,6 +8,7 @@ import {
   headlineWaterM3, developersOf, useDataset,
 } from '../lib/data'
 import { MaturityBadge, StatusBadge, StateChip, VerificationBadge } from '../components/Badges'
+import { primaryBoundary } from '../lib/geometry'
 
 /* ---------------- helpers ---------------- */
 
@@ -88,7 +89,7 @@ function PitchIcon() {
   )
 }
 
-function PitchComparison({ areaM2, pitchM2 }: { areaM2: number; pitchM2: number }) {
+function PitchComparison({ areaM2, pitchM2, basis }: { areaM2: number; pitchM2: number; basis: string }) {
   const pitches = areaM2 / pitchM2
   const rounded = pitches >= 10 ? Math.round(pitches) : Math.round(pitches * 10) / 10
   let perIcon = 1
@@ -99,14 +100,14 @@ function PitchComparison({ areaM2, pitchM2 }: { areaM2: number; pitchM2: number 
   return (
     <div className="pitch-compare">
       <div className="pitch-headline">
-        <strong>≈ {fmtInt(rounded)} football pitches</strong> of claimed site area
+        <strong>≈ {fmtInt(rounded)} football pitches</strong> of {basis}
       </div>
       <div className="pitch-row" aria-hidden="true">
         {Array.from({ length: Math.min(icons, 40) }, (_, i) => <PitchIcon key={i} />)}
       </div>
       <div className="pitch-note">
         {perIcon > 1 ? `Each pitch icon ≈ ${perIcon} pitches. ` : ''}
-        Assumes a {fmtInt(pitchM2)} m² pitch; site area {fmtInt(areaM2)} m² as claimed.
+        Assumes a {fmtInt(pitchM2)} m² pitch; area {fmtInt(areaM2)} m² ({basis}).
       </div>
     </div>
   )
@@ -148,7 +149,15 @@ export default function ProjectPage() {
   const water = headlineWaterM3(record)
   const cap = headlineCapacityMW(record)
   const devs = developersOf(record)
-  const area = site?.site_area_m2?.value
+  const reportedArea = site?.site_area_m2?.value
+  const boundary = primaryBoundary(ds.geo, project.slug)
+  const officialArea = typeof boundary?.properties.official_area_m2 === 'number'
+    ? boundary.properties.official_area_m2
+    : null
+  /* Prefer the official red line where one exists — but always show both,
+     because the discrepancies are the editorial point. */
+  const area = officialArea ?? (typeof reportedArea === 'number' ? reportedArea : undefined)
+  const areaBasis = officialArea != null ? 'official red-line area' : 'claimed site area'
   const pitchM2 = constants?.football_pitch_m2?.value
   const houseKwh = constants?.household_annual_electricity_kwh?.value
   const poolM3 = constants?.olympic_pool_m3?.value
@@ -179,8 +188,17 @@ export default function ProjectPage() {
             </div>
           </div>
           <div className="hero-stat">
-            <div className="hv">{typeof area === 'number' ? `${fmtInt(area / 10000)} ha` : '—'}</div>
-            <div className="hl">claimed site area {site?.site_area_m2 && <StateChip state={site.site_area_m2.state} />}</div>
+            <div className="hv">
+              {typeof area === 'number'
+                ? `${area / 10000 < 100 ? (area / 10000).toFixed(1) : fmtInt(area / 10000)} ha`
+                : '—'}
+            </div>
+            <div className="hl">
+              {officialArea != null ? 'official red-line area' : 'claimed site area'}{' '}
+              {officialArea != null
+                ? <StateChip state="confirmed" />
+                : site?.site_area_m2 && <StateChip state={site.site_area_m2.state} />}
+            </div>
           </div>
           <div className="hero-stat">
             <div className="hv hv-sm">{project.local_authority}</div>
@@ -191,6 +209,31 @@ export default function ProjectPage() {
             <div className="hl">developer</div>
           </div>
         </div>
+        {officialArea != null && (
+          <>
+            <div className="area-compare">
+              <span className="ac official">
+                <span className="k">Official red line</span>
+                <span className="n">{(officialArea / 10000).toFixed(1)} ha</span>
+              </span>
+              {typeof reportedArea === 'number' && (
+                <span className="ac">
+                  <span className="k">Reported</span>
+                  <span className="n">{(reportedArea / 10000).toFixed(1)} ha</span>
+                </span>
+              )}
+            </div>
+            <p className="small muted">
+              Red-line area measured from the official application boundary
+              {boundary?.properties.reference ? ` (${boundary.properties.reference}, ` : ' ('}
+              {boundary?.properties.local_auth ?? 'local authority'} via Spatial Hub Scotland, OGL v3
+              {boundary?.properties.retrieved_date ? `, retrieved ${fmtDate(boundary.properties.retrieved_date)}` : ''}).
+              {typeof reportedArea === 'number' && Math.abs(officialArea - reportedArea) / officialArea > 0.15 && (
+                <> The reported figure differs materially from the official boundary — both are shown rather than reconciled.</>
+              )}
+            </p>
+          </>
+        )}
         <p className="hero-summary">{project.summary}</p>
         {maturity && (
           <p className="small muted">
@@ -227,7 +270,9 @@ export default function ProjectPage() {
           </div>
           {showComparisons && (
             <>
-              {typeof area === 'number' && pitchM2 && <PitchComparison areaM2={area} pitchM2={pitchM2} />}
+              {typeof area === 'number' && pitchM2 && (
+                <PitchComparison areaM2={area} pitchM2={pitchM2} basis={areaBasis} />
+              )}
               <div className="compare-cards">
                 {energy != null && houseKwh && (
                   <div className="compare-card">

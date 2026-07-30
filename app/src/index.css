@@ -527,3 +527,112 @@ ul.plain li:last-child { border-bottom: 0; }
   display: flex; align-items: center; justify-content: center; height: 100%;
   color: var(--ink-3); font-size: 14px; flex-direction: column; gap: 8px; padding: 20px; text-align: center;
 }
+
+/* ---------------- utility ---------------- */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+
+/* ---------------- data-carrying cluster donuts ---------------- */
+.cluster-donut {
+  position: relative; display: block; padding: 0; border: 0; background: none;
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+  filter: drop-shadow(0 2px 5px rgba(17, 17, 16, 0.28));
+  transition: transform 0.12s ease;
+}
+.cluster-donut:hover { transform: scale(1.04); }
+.cluster-donut:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 50%; }
+.cluster-donut svg { display: block; width: 100%; height: 100%; transform: rotate(-90deg); }
+.cluster-donut .plate {
+  fill: var(--surface-1);
+  stroke: var(--surface-1);
+  stroke-width: 9;
+}
+.cluster-donut .seg { fill: none; stroke-width: 6; stroke-linecap: butt; }
+.cluster-donut .donut-text {
+  position: absolute; inset: 7px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 1px;
+  pointer-events: none; text-align: center; line-height: 1.05;
+}
+.cluster-donut .dv {
+  font-size: 13px; font-weight: 700; letter-spacing: -0.02em;
+  color: var(--ink-1); font-variant-numeric: tabular-nums;
+  max-width: 84%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.cluster-donut .dv.md { font-size: 11px; }
+.cluster-donut .dv.sm { font-size: 9.5px; font-weight: 650; white-space: normal; line-height: 1.05; max-width: 72%; }
+.cluster-donut .dn { font-size: 9.5px; font-weight: 600; color: var(--ink-3); white-space: nowrap; }
+
+.stat-tile.count-tile .v { color: var(--ink-1); }
+.stat-tile.count-tile.filtered { border-color: var(--accent); box-shadow: var(--shadow-1), 0 0 0 1px var(--accent); }
+
+/* legend keys for the new layers */
+.map-legend .cluster-key { width: 24px; height: 24px; flex: none; }
+.map-legend .cluster-key svg { width: 24px; height: 24px; transform: rotate(-90deg); }
+.map-legend .cluster-key .ck-plate { fill: var(--surface-1); stroke: var(--surface-1); stroke-width: 8; }
+.map-legend .cluster-key .ck-a,
+.map-legend .cluster-key .ck-b { fill: none; stroke-width: 5; }
+.map-legend .cluster-key .ck-a { stroke: var(--accent); stroke-dasharray: 49 33; }
+.map-legend .cluster-key .ck-b { stroke: var(--ink-3); stroke-dasharray: 29 53; stroke-dashoffset: -51; }
+.map-legend .boundary-note,
+.map-legend .pitch-note-row { margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--hairline); align-items: flex-start; }
+.map-legend .cluster-note { align-items: flex-start; }
+.map-legend .redline-key {
+  width: 18px; height: 12px; flex: none; margin-top: 3px;
+  border: 2px solid light-dark(#c0242d, #f0656b);
+  background: light-dark(rgba(192, 36, 45, 0.12), rgba(240, 101, 107, 0.16));
+  border-radius: 2px;
+}
+.map-legend .pitch-key {
+  width: 18px; height: 12px; flex: none; margin-top: 3px; border-radius: 2px;
+  border: 1px solid var(--pitch);
+  background:
+    repeating-linear-gradient(to right, var(--pitch) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(to bottom, var(--pitch) 0 1px, transparent 1px 5px);
+}
+
+/* boundary / massing callouts on the map */
+.map-hint {
+  position: absolute; left: 12px; bottom: 76px; z-index: 8;
+  max-width: min(66vw, 320px);
+  background: var(--surface-1); border: 1px solid var(--border);
+  border-left: 3px solid var(--accent); border-radius: var(--r-sm);
+  padding: 7px 11px; font-size: 10.5px; color: var(--ink-2);
+  box-shadow: var(--shadow-2);
+}
+.map-hint strong { color: var(--ink-1); }
+
+/* official vs reported area on the profile page */
+.area-compare { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 2px 0 8px; font-size: 12px; }
+.area-compare .ac {
+  display: inline-flex; align-items: baseline; gap: 6px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 999px; padding: 4px 11px;
+}
+.area-compare .ac .k { color: var(--ink-2); font-size: 11px; }
+.area-compare .ac .n { font-weight: 700; font-variant-numeric: tabular-nums; }
+.area-compare .ac.official { border-color: light-dark(#c0242d, #f0656b); }
+.area-compare .ac.official .k { color: light-dark(#96181f, #f0656b); }
+
+.map-note {
+  align-self: flex-start; margin: 0;
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 999px;
+  padding: 5px 12px; font-size: 11px; color: var(--ink-2); box-shadow: var(--shadow-1);
+  max-width: min(92vw, 420px);
+}
+.map-note strong { color: var(--ink-1); font-weight: 650; }
+
+/* derived pitch-ratio label on an official boundary */
+.pitch-label {
+  display: none; pointer-events: none; text-align: center;
+  background: var(--surface-1); border: 1px solid var(--border);
+  border-left: 3px solid var(--pitch);
+  border-radius: var(--r-sm); padding: 4px 9px; box-shadow: var(--shadow-1);
+  white-space: nowrap;
+}
+.pitch-label.on { display: block; }
+.pitch-label strong { display: block; font-size: 11.5px; color: var(--ink-1); }
+.pitch-label span { display: block; font-size: 9.5px; color: var(--ink-2); }
+
+.map-hint { text-align: left; line-height: 1.45; }

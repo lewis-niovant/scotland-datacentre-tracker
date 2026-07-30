@@ -15,10 +15,12 @@ export default function MapPage() {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
   const [selected, setSelected] = useState<string | null>(null)
   const [threeD, setThreeD] = useState(false)
+  const [showPitches, setShowPitches] = useState(false)
   const [showIntro, setShowIntro] = useState(() => !introDismissed())
 
   const lens = lensById(lensId)
   const all = ds.observatory.projects
+  const pitchM2 = ds.observatory.constants?.comparisons?.football_pitch_m2?.value ?? 7140
 
   const developers = useMemo(
     () => [...new Set(all.flatMap(developersOf))].sort(),
@@ -53,9 +55,11 @@ export default function MapPage() {
           selectedSlug={selected}
           onSelect={setSelected}
           threeD={threeD}
+          showPitches={showPitches}
+          pitchM2={pitchM2}
         />
         <div className="map-topbar">
-          <StatsStrip tiles={tiles} />
+          <StatsStrip tiles={tiles} shown={filtered.length} total={all.length} />
           <LensSwitcher lens={lensId} onChange={setLensId} />
           <FilterChips
             filters={filters}
@@ -63,8 +67,23 @@ export default function MapPage() {
             developers={developers}
             authorities={authorities}
           />
+          <p className="map-note">
+            Zoom in to reveal <strong>official red-line site boundaries</strong> (17 of 39 projects).
+          </p>
         </div>
-        <MapLegend lens={lens} />
+        {threeD && (
+          <p className="map-hint">
+            <strong>Indicative massing</strong> — footprint and height are sourced; the layout is not.
+            Only projects publishing both appear.
+          </p>
+        )}
+        {showPitches && !threeD && (
+          <p className="map-hint">
+            <strong>Pitch grid on</strong> — 105 × 68 m cells inside official boundaries; zoom in to
+            see them. Comparisons can be switched off.
+          </p>
+        )}
+        <MapLegend lens={lens} showPitches={showPitches} pitchM2={pitchM2} />
         <div className="map-controls">
           <button
             className="map-btn"
@@ -73,6 +92,15 @@ export default function MapPage() {
             title="Tilt the map and show building volumes where footprints are published"
           >
             3D
+          </button>
+          <button
+            className="map-btn"
+            aria-pressed={showPitches}
+            onClick={() => setShowPitches((v) => !v)}
+            title={`Overlay a ${pitchM2} m² football-pitch grid inside official site boundaries (zoom in to see it)`}
+          >
+            <span aria-hidden="true">⬚</span>
+            <span className="sr-only">Show size comparison grid</span>
           </button>
         </div>
         {selectedProject && (

@@ -83,7 +83,7 @@ export const LENSES: LensDef[] = [
     id: 'overview',
     metric: (p) => headlineCapacityMW(p)?.mw ?? null,
     metricMax: AGG_MW,
-    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figures'),
+    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figure'),
     aggregateLabel: 'claimed capacity in the group',
     label: 'Overview',
     legend: 'Colour: status group',
@@ -100,7 +100,7 @@ export const LENSES: LensDef[] = [
     id: 'electricity',
     metric: (p) => headlineCapacityMW(p)?.mw ?? null,
     metricMax: AGG_MW,
-    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figures'),
+    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figure'),
     aggregateLabel: 'claimed capacity in the group',
     label: '⚡ Electricity',
     legend: 'Size & shade: claimed capacity (MW)',
@@ -123,8 +123,14 @@ export const LENSES: LensDef[] = [
     id: 'water',
     metric: (p) => headlineWaterM3(p),
     metricMax: AGG_WATER,
-    fmtAggregate: (t, n) => (n ? `${fmtM3(t)}/yr` : 'no figures'),
-    aggregateLabel: 'claimed water use in the group',
+    /* Compact enough for a bubble centre; the legend carries "per year". */
+    fmtAggregate: (t, n) => {
+      if (!n) return 'no figure'
+      if (t >= 1e6) return `${(t / 1e6).toFixed(1)}m m³`
+      if (t >= 1e4) return `${Math.round(t / 1000)}k m³`
+      return fmtM3(t)
+    },
+    aggregateLabel: 'claimed water use per year in the group',
     label: '💧 Water',
     legend: 'Size & shade: claimed water use (m³/yr)',
     marker: (p) => {
@@ -145,7 +151,7 @@ export const LENSES: LensDef[] = [
     id: 'economics',
     metric: (p) => headlineCapexGBP(p),
     metricMax: AGG_CAPEX,
-    fmtAggregate: (t, n) => (n ? fmtGBP(t) : 'no figures'),
+    fmtAggregate: (t, n) => (n ? fmtGBP(t) : 'no figure'),
     aggregateLabel: 'claimed investment in the group',
     label: '💷 Economics',
     legend: 'Size & shade: claimed capital expenditure',
@@ -168,7 +174,7 @@ export const LENSES: LensDef[] = [
     id: 'planning',
     metric: (p) => publishedObjections(p),
     metricMax: AGG_OBJECTIONS,
-    fmtAggregate: (t, n) => (n ? `${fmtInt(t)}+` : 'no objections published'),
+    fmtAggregate: (t, n) => (n ? `${fmtInt(t)}+` : '0 published'),
     aggregateLabel: 'published objections in the group',
     label: '📋 Planning',
     legend: 'Colour: status group · size: live application',

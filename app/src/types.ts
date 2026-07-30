@@ -92,6 +92,7 @@ export interface Site {
   boundary_precision?: string
   site_area_m2?: QuantityClaim
   gross_floor_area_m2?: QuantityClaim
+  building_footprint_m2?: QuantityClaim
   max_building_height_m?: QuantityClaim
   number_of_buildings?: QuantityClaim
   greenfield_brownfield?: string
