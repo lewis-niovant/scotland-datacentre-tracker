@@ -1,0 +1,49 @@
+{
+  "slug": "duns-southside",
+  "canonical_name": "Southside Data Centre",
+  "display_name": "Southside (Duns / Longformacus, Scottish Borders)",
+  "aliases": [
+    {
+      "alias": "Southside Data Centre, Land at Clawbare Cottage, Longformacus",
+      "alias_type": "place_name",
+      "source_ids": ["src-sbc-portal-southside-scr", "src-bt-southside-pan"]
+    },
+    {
+      "alias": "Duns (Longformacus) data centre",
+      "alias_type": "other",
+      "source_ids": ["src-aprs-duns-dc"]
+    }
+  ],
+  "summary": "Proposed 225 MW data centre campus ('Southside') on moorland and farmland of the Roxburghe Estate at Clawbare Cottage, between Longformacus and Westruther in the Lammermuir Hills, about 11 km west of Duns. Promoted by Sunlaws Development Company Limited (SC121007), a Roxburghe Estates entity. Three two-storey buildings up to 24 m high with an 8.1 ha ground footprint are proposed, marketed as using curtailed local wind generation via the Fallago Rig substation, with a claimed £2bn investment and construction from about 2029 for 2030 operation. EIA screening (25/01835/SCR) concluded in February 2026 that EIA is required; a PAN and June 2026 consultations followed, and an EIA scoping report was submitted in July 2026. No full planning application has been lodged (expected no earlier than late 2026). A 'Save the Lammermuirs' campaign opposes the scheme.",
+  "project_type": "unknown",
+  "status": "pre_application",
+  "status_source_ids": ["src-sbc-portal-southside-scr", "src-bt-southside-pan", "src-bt-southside-scoping"],
+  "maturity_level": "M1",
+  "maturity_explanation": "Pre-application stage with formal early steps completed: EIA screening request submitted circa December 2025 (SBC ref 25/01835/SCR) with a screening decision reported 27 February 2026 that EIA is required; Proposal of Application Notice accepted by Scottish Borders Council in May/June 2026 with statutory consultation events held 4 and 10 June 2026; EIA scoping report submitted July 2026. No planning application validated — developer states one is expected no earlier than late 2026 — so M1, not M2.",
+  "verification_level": "verified",
+  "local_authority": "Scottish Borders Council",
+  "region": "Scottish Borders",
+  "first_public_date": "2025-12-11",
+  "anticipated_construction_start": "2029 (developer indication; one report says late 2028/early 2029)",
+  "anticipated_operational_date": "2030 (developer indication)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-11-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-07-15",
+    "headline": "EIA scoping report submitted to Scottish Borders Council; developer says full EIA and planning application expected no earlier than late 2026 (exact scoping submission date not confirmed; reported mid-July 2026)",
+    "source_ids": ["src-bt-southside-scoping"]
+  },
+  "unknowns": [
+    "Exact planning references and dates for the PAN and the EIA scoping request (only the screening reference 25/01835/SCR is confirmed; the SBC portal returned 503 during research)",
+    "Text of the EIA screening opinion of 27 February 2026 (reported via APRS only) and of the scoping report",
+    "Whether total floorspace is 54,000 m2 per building (Border Telegraph) or 54,000 m2 across the three buildings (trade-press phrasing is ambiguous)",
+    "Whether the 225 MW figure is IT load, grid import capacity, or total site demand, and whether any grid connection application/offer exists with SP Energy Networks / SP Transmission or NESO",
+    "Precise site boundary and the split between moorland and farmland; agricultural land classification not published",
+    "Formal positions of Duns and Longformacus & District community councils (none located)",
+    "Methodology and author of the preliminary economic study (£47m Borders value over 15 years; £776m tax over 15 years)",
+    "Relationship, if any, between the mains-gas backup generation described in the screening-stage reporting and the later 'no diesel backup generators' statement"
+  ]
+}

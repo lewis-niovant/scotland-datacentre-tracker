@@ -1,0 +1,14 @@
+[
+  {
+    "cooling_type": "closed_loop_liquid",
+    "cooling_description": "Developer website states a 'closed loop cooling system, not connected to interrupt local water supplies', and consultation publicity says the upland site 'lends itself to keeping the centre at optimum low temperatures without the need for water cooling'. However, the earlier screening-stage description referred to water supply from Scottish Water and a borehole requiring a SEPA licence — the purpose (cooling vs domestic/initial fill) is not stated.",
+    "annual_water_m3": null,
+    "potable_water": null,
+    "closed_loop": true,
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "No quantified water figures published at this pre-application stage; the closed-loop/no-water-cooling claim and the Scottish Water + borehole supply described at screening stage should be reconciled against the EIA when submitted.",
+    "source_ids": ["src-southsidedc-site", "src-deadline-southside-consult", "src-bt-southside-plans"]
+  }
+]

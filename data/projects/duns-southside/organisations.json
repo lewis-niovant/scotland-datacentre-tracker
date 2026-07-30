@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Sunlaws Development Company Limited",
+    "role": "developer",
+    "company_number": "SC121007",
+    "jurisdiction": "Scotland",
+    "website": "https://southsidedc.com/",
+    "ownership_summary": "Active private limited company incorporated 27 October 1989, registered at Roxburghe Estates Office, Kelso TD5 7SF. SIC codes 56101 (licensed restaurants) and 68209 (letting/operating own or leased real estate) — a long-standing estate vehicle, not a data-centre SPV. Until 1 April 2024 controlled by the 'Second Discretionary Trust' (75%+ of shares); since then four individual PSCs each recorded with 'significant influence or control': Andrew William Michael Christie-Miller, Louisa Ann Church, Dermot Julian Jenkinson and Lord Andrew Victor Hope. Press describes it as 'made up of Roxburghe Estates and the landowner' / the estate's development arm.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "notes": "Also the named applicant for EIA screening 25/01835/SCR and the PAN.",
+    "source_ids": ["src-ch-sunlaws", "src-ch-sunlaws-psc", "src-sbc-portal-southside-scr", "src-bt-southside-scoping"]
+  },
+  {
+    "name": "Roxburghe Estates",
+    "role": "landowner",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Estate of the Duke of Roxburghe (Innes-Ker family), managed from the Roxburghe Estates Office, Kelso. The Southside site at Clawbare Cottage is on Roxburghe Estate land; Sunlaws Development Company Ltd is described as the estate's development arm. Managing Director Jaap Röell has fronted the consultation; the Duke of Roxburghe attended the Westruther consultation event.",
+    "beneficial_owner_public": null,
+    "confidence": "medium",
+    "notes": "Roxburghe Estates itself is not a single registered company; the precise legal owner of the site (trust or estate entity) has not been verified against Registers of Scotland.",
+    "source_ids": ["src-bt-southside-scoping", "src-hellorayo-duke", "src-deadline-southside-consult"]
+  },
+  {
+    "name": "Scottish Borders Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "confidence": "high",
+    "source_ids": ["src-sbc-portal-southside-scr", "src-bt-southside-pan"]
+  },
+  {
+    "name": "Save the Lammermuirs – Stop the Data Centre",
+    "role": "campaign_group",
+    "confidence": "high",
+    "notes": "Community campaign group launched at the site in late May/early June 2026; contact savethelammermuirs@gmail.com; associated online petition reported at over 6,000 signatures by mid-June 2026.",
+    "source_ids": ["src-bt-residents-fight", "src-itv-southside-campaign", "src-hellorayo-duke", "src-midlothianview-campaign"]
+  },
+  {
+    "name": "SP Energy Networks / SP Transmission (inferred network operator)",
+    "role": "network_operator",
+    "confidence": "low",
+    "notes": "The Scottish Borders lies in the SP Energy Networks distribution and SP Transmission areas, and the developer cites the Fallago Rig substation; however no source names the network operator or evidences a connection application. Recorded as inferred context only.",
+    "source_ids": ["src-deadline-southside-consult"]
+  }
+]

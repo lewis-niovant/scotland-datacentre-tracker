@@ -1362,5 +1362,161 @@
     "perspective": "Campaign tracker; lead-generation only",
     "status": "broken",
     "notes": "Page returned no readable content on 2026-07-30; used only as evidence the project is tracked by APRS."
+  },
+  {
+    "id": "src-sbc-portal-southside-scr",
+    "title": "Scottish Borders Council ePlanning record 25/01835/SCR — Southside Data Centre, Land At Clawbare Cottage, Longformacus, Duns (EIA screening; keyVal T7264GNT0BQ00)",
+    "publisher": "Scottish Borders Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://eplanning.scotborders.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=T7264GNT0BQ00",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Portal returned HTTP 503 to direct fetch attempts on 2026-07-30; reference 25/01835/SCR, keyVal, description ('Erection of data centre comprising of three data centre buildings with associated infrastructure') and screening decision letter date (27 Feb 2026, EIA required) were recovered via search-engine indexes of the portal and planning aggregators. Needs direct re-verification when portal is reachable."
+  },
+  {
+    "id": "src-planningorg-sunlaws-form",
+    "title": "Application document for 25/01835/SCR (Sunlaws Development Company Limited), mirrored by planning.org.uk docs service, dated 2025-12-11",
+    "publisher": "planning.org.uk (mirror of Scottish Borders Council document)",
+    "source_type": "planning_document",
+    "url": "https://docs.planning.org.uk/20251211/231/T7264GNT0BQ00/21pk056v2z6iaoe3.pdf",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "PDF returned HTTP 403 to fetch attempts; used only as evidence that a Sunlaws Development Company Limited document exists under keyVal T7264GNT0BQ00 with an aggregator publication date of 11 December 2025 (consistent with a December 2025 screening submission)."
+  },
+  {
+    "id": "src-bt-southside-plans",
+    "title": "Plans submitted for IT data centre on Roxburghe Estate",
+    "publisher": "Border Telegraph",
+    "source_type": "journalism",
+    "url": "https://www.bordertelegraph.com/news/25696248.plans-submitted-data-centre-roxburghe-estate/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports the EIA (screening) request to Scottish Borders Council: three two-storey buildings up to 24 m, 8.1 ha ground footprint, 54,000 m2 internal floorspace per building (50/50 IT vs M&E), mains gas connection with gas backup generation, Scottish Water plus borehole supply (SEPA licence), site 2 km from Longformacus, 5 km from Westruther, 11 km from Duns, 9.4 km SE of Fallago Rig wind farm."
+  },
+  {
+    "id": "src-bt-southside-pan",
+    "title": "Southside Data Centre bid for Clawbare Cottage, Longformacus (PAN confirmed by council)",
+    "publisher": "Border Telegraph",
+    "source_type": "journalism",
+    "url": "https://www.bordertelegraph.com/news/26153473.southside-data-centre-bid-clawbare-cottage-longformacus/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports Proposal of Application Notice submitted to Scottish Borders Council and council confirmation that the June 2026 consultation events satisfy statutory requirements."
+  },
+  {
+    "id": "src-bt-southside-scoping",
+    "title": "Plans for Borders data centre move forward with new report (EIA scoping report submitted)",
+    "publisher": "Border Telegraph",
+    "source_type": "journalism",
+    "url": "https://www.bordertelegraph.com/news/26265847.plans-borders-data-centre-move-forward-new-report/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports Environmental Scoping Report submitted to Scottish Borders Council (July 2026); ~170 residents at June events; 145 local jobs (100 direct, 45 indirect); ~1,000 construction jobs; preliminary economic study of £47m additional value to Scottish Borders over first 15 years; full EIA and planning application expected no earlier than late 2026."
+  },
+  {
+    "id": "src-bt-residents-fight",
+    "title": "Residents fight against Artificial Intelligence data centre",
+    "publisher": "Border Telegraph",
+    "source_type": "journalism",
+    "url": "https://www.bordertelegraph.com/news/26160374.residents-fight-artificial-intelligence-data-centre/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Launch of 'Save the Lammermuirs – Stop the Data Centre'; campaigner Kathleen White quotes; developer claims incl. £776m tax revenue over 15 years; affected communities Longformacus, Allenford, Cranshaws; Southern Upland Way and upland bird species cited."
+  },
+  {
+    "id": "src-itv-southside-campaign",
+    "title": "Campaigners oppose plans for £2 billion data centre in the Scottish Borders",
+    "publisher": "ITV News Border",
+    "source_type": "journalism",
+    "url": "https://www.itv.com/news/border/2026-06-08/2-billion-data-centre-in-the-scottish-borders-opposed-by-campaign-group",
+    "publication_date": "2026-06-08",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Campaign objections (industrialisation of Lammermuirs, footprint equivalent to 11 football pitches); developer responses; £12m/year Borders figure."
+  },
+  {
+    "id": "src-deadline-southside-consult",
+    "title": "Borders data centre — public consultation begins",
+    "publisher": "Deadline News",
+    "source_type": "journalism",
+    "url": "https://www.deadlinenews.co.uk/2026/06/01/borders-data-centre-public-consultation-begins/",
+    "publication_date": "2026-06-01",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Direct fetch returned 403; content recovered via search snippets: site 'principally powered through local renewable energy' citing proximity of multiple windfarms and the Fallago Rig substation and curtailed generation; 145 local jobs, 250+ across Scotland, ~1,000 construction; consultation events 4 and 10 June 2026."
+  },
+  {
+    "id": "src-hellorayo-duke",
+    "title": "Duke of Roxburghe greets visitors at public consultation on data centre in Lammermuir Hills",
+    "publisher": "Greatest Hits Radio Borders (hellorayo.co.uk)",
+    "source_type": "journalism",
+    "url": "https://www.hellorayo.co.uk/greatest-hits/borders/news/duke-roxburghe-data-centre-westruther",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Duke of Roxburghe and Jaap Röell (MD, Roxburghe Estates) at Westruther event 10 June 2026; >6,000-signature online petition; green roofs with moorland species; 'no diesel backup generators proposed'; application expected before end-2026; construction potentially late 2028/early 2029."
+  },
+  {
+    "id": "src-midlothianview-campaign",
+    "title": "AI data centre is a 'dumb idea' as campaign launched",
+    "publisher": "Midlothian View",
+    "source_type": "journalism",
+    "url": "https://midlothianview.com/news/ai-data-centre-is-a-dumb-idea-as-campaign-launched",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Campaign launch detail; site located between Dirrington Great Law and Dirrington Little Law near the Southern Upland Way; £25m/year Scotland and £12m/year Borders developer claims."
+  },
+  {
+    "id": "src-southsidedc-site",
+    "title": "Southside Data Centre — Sustainable Infrastructure in the Scottish Borders (developer website)",
+    "publisher": "Sunlaws Development Company Limited / Roxburghe Estates",
+    "source_type": "developer_publication",
+    "url": "https://southsidedc.com/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing; presents project favourably",
+    "notes": "225 MW; closed-loop cooling 'not connected to interrupt local water supplies'; living roof; use of curtailed wind energy; project described as concept/early stage."
+  },
+  {
+    "id": "src-aprs-duns-dc",
+    "title": "Duns (Longformacus) — APRS data centre tracker page",
+    "publisher": "Action to Protect Rural Scotland",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/duns-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign organisation critical of rural data centre development; used for lead-generation only",
+    "notes": "Page content did not render to fetches (empty body); via search snippets: describes a '220MW data centre on farmland and moorland on Roxburghe Estate' and states 'the development will need to have an EIA (decision letter 27 Feb 2026)'."
+  },
+  {
+    "id": "src-ch-sunlaws",
+    "title": "SUNLAWS DEVELOPMENT COMPANY LIMITED (SC121007) — company overview",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC121007",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Active private limited company, incorporated 27 October 1989; registered office Roxburghe Estates Office, Kelso, Roxburghshire TD5 7SF; SIC 56101 (licensed restaurants) and 68209 (other letting and operating of own or leased real estate)."
+  },
+  {
+    "id": "src-ch-sunlaws-psc",
+    "title": "SUNLAWS DEVELOPMENT COMPANY LIMITED (SC121007) — persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC121007/persons-with-significant-control",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Four active individual PSCs each with 'significant influence or control' notified 1 April 2024 (A W M Christie-Miller, L A Church, D J Jenkinson, Lord Andrew Victor Hope); prior PSC 'Second Discretionary Trust' (75%+ shares) ceased 1 April 2024 — consistent with trust ownership associated with the Roxburghe/Innes-Ker family estate structure."
+  },
+  {
+    "id": "src-scotsman-southside-wind",
+    "title": "New £2bn Borders data centre aims to harness wasted wind power",
+    "publisher": "The Scotsman",
+    "source_type": "journalism",
+    "url": "https://www.scotsman.com/hays-way/new-ps2bn-borders-data-centre-aims-to-harness-wasted-wind-power-8651825",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Direct fetch returned 403; via search snippets: frames the project around using curtailed Lammermuir wind generation; £2bn investment figure."
   }
 ]

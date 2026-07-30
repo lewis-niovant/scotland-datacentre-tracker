@@ -1,0 +1,31 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 225,
+    "state": "developer_stated",
+    "claimant": "Sunlaws Development Company Limited (developer website and press briefing)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Figure used consistently on the developer's own website and in trade-press summaries of the EIA material; the 220 MW figure appears only on the APRS campaign page and is likely a rounding or transcription variant.",
+    "notes": "Reported as the capacity the campus 'would offer' / 'consume approximately' at full build-out; whether this is IT load or grid import is not disclosed. Trade press also describes it as approximate electricity consumption at full capacity.",
+    "source_ids": ["src-southsidedc-site", "src-bt-southside-scoping", "src-deadline-southside-consult"]
+  },
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 220,
+    "state": "reported",
+    "claimant": "Action to Protect Rural Scotland (campaign tracker page)",
+    "confidence": "low",
+    "notes": "APRS describes 'a 220MW data centre on farmland and moorland on Roxburghe Estate'; conflicts with the developer's 225 MW figure and no provenance is given.",
+    "source_ids": ["src-aprs-duns-dc"]
+  },
+  {
+    "capacity_type": "backup_generation",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "Sunlaws Development Company Limited",
+    "confidence": "low",
+    "notes": "Screening-stage description (Dec 2025) refers to a mains gas connection with emergency backup gas generation for outages and testing; by June 2026 consultation reporting the developer stated no diesel backup generators are proposed. No capacity figure for backup generation disclosed, and the gas-backup position may have evolved.",
+    "source_ids": ["src-bt-southside-plans", "src-hellorayo-duke"]
+  }
+]

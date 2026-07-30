@@ -1,0 +1,57 @@
+{
+  "site_name": "Land at Clawbare Cottage, Longformacus",
+  "settlement": "Longformacus",
+  "latitude": 55.76,
+  "longitude": -2.54,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 1510000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "Trade press description of the 151 ha campus (echoed in project briefing material)",
+    "confidence": "low",
+    "notes": "151 ha figure appears in trade-press summaries of the EIA material; not verified against a red-line plan because the SBC portal was unreachable. The built ground footprint is much smaller (see building_footprint_m2).",
+    "source_ids": ["src-sbc-portal-southside-scr", "src-bt-southside-plans"]
+  },
+  "building_footprint_m2": {
+    "value": 81000,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Sunlaws Development Company Limited (EIA screening description)",
+    "confidence": "medium",
+    "notes": "8.1 ha total ground footprint for three two-storey data centre buildings; campaigners describe this as 'equivalent to 11 football pitches'.",
+    "source_ids": ["src-bt-southside-plans", "src-itv-southside-campaign"]
+  },
+  "gross_floor_area_m2": {
+    "value": 162000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "Border Telegraph reading of the screening submission (54,000 m2 internal floorspace per building x 3)",
+    "confidence": "low",
+    "notes": "Border Telegraph states 54,000 m2 internal floorspace per building (50% IT halls, 50% mechanical/electrical); trade-press phrasing ('each spanning a total of 54,000 sqm') is ambiguous and could mean 54,000 m2 across all three. Unresolved conflict — 162,000 m2 recorded as the per-building reading, low confidence.",
+    "source_ids": ["src-bt-southside-plans"]
+  },
+  "max_building_height_m": {
+    "value": 24,
+    "unit": "m",
+    "state": "developer_stated",
+    "claimant": "Sunlaws Development Company Limited (EIA screening description)",
+    "confidence": "medium",
+    "source_ids": ["src-bt-southside-plans", "src-bt-residents-fight"]
+  },
+  "number_of_buildings": {
+    "value": 3,
+    "unit": "buildings",
+    "state": "developer_stated",
+    "claimant": "Sunlaws Development Company Limited",
+    "confidence": "high",
+    "source_ids": ["src-sbc-portal-southside-scr", "src-bt-southside-plans"]
+  },
+  "greenfield_brownfield": "greenfield",
+  "current_land_use": "Upland moorland and farmland on the Roxburghe Estate in the Lammermuir Hills (APRS describes 'farmland and moorland'; developer proposes green roofs planted with moorland species)",
+  "nearest_settlements": ["Longformacus (~2 km)", "Westruther (~5 km)", "Duns (~11 km)", "Allenford", "Cranshaws"],
+  "protected_designations": [],
+  "land_notes": "Site lies between Longformacus and Westruther in the Lammermuir Hills, reported as sitting between Dirrington Great Law and Dirrington Little Law with the Southern Upland Way passing nearby. Agricultural land classification and any formal landscape designations (e.g. whether within the Lammermuir Hills Special Landscape Area) could not be verified from available sources — no statutory designation was confirmed, so protected_designations is left empty rather than guessed. Coordinates are an approximate mid-point between Longformacus and Westruther near the Dirrington laws, not a surveyed centroid; no red-line boundary published, so no boundary polygon is provided.",
+  "source_ids": ["src-bt-southside-plans", "src-aprs-duns-dc", "src-midlothianview-campaign", "src-bt-residents-fight", "src-hellorayo-duke"]
+}

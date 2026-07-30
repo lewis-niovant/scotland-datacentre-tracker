@@ -1,0 +1,17 @@
+[
+  {
+    "scenario_name": "Full build-out (developer marketing)",
+    "annual_energy_gwh": null,
+    "peak_load_mw": 225,
+    "renewable_claim_percent": 100,
+    "matching_method": "unstated",
+    "power_purchase_agreement": null,
+    "onsite_generation": "None proposed for primary supply; screening-stage description included emergency backup gas generation via a mains gas connection, while June 2026 reporting states no diesel backup generators are proposed",
+    "demand_flexibility": "Developer markets the project as absorbing frequently curtailed local wind generation, but no flexibility mechanism, private wire or PPA has been evidenced",
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "'Powered entirely by renewable energy' / 'principally powered through local renewable energy' are developer claims with no stated matching method; 225 MW is the developer's full-capacity consumption figure, recorded here as peak load for want of a stated basis. No annual energy figure published.",
+    "source_ids": ["src-southsidedc-site", "src-deadline-southside-consult", "src-hellorayo-duke", "src-bt-southside-plans"]
+  }
+]
