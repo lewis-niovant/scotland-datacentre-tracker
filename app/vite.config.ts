@@ -31,4 +31,8 @@ function maplibreWorkerAssets(): Plugin {
 export default defineConfig({
   base: './',
   plugins: [react(), maplibreWorkerAssets()],
+  /* In dev the optimizer pre-bundles maplibre-gl but never emits the module
+     worker it resolves at runtime, so the map silently never loads tiles.
+     Excluding it serves the package's own files, worker included. */
+  optimizeDeps: { exclude: ['maplibre-gl'] },
 })

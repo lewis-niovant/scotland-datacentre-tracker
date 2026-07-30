@@ -201,6 +201,29 @@ button { font-family: inherit; }
   border-radius: var(--r-md); cursor: pointer; box-shadow: var(--shadow-2);
 }
 .map-btn[aria-pressed='true'] { background: var(--chip-on); color: var(--chip-on-ink); }
+.map-btn.tour-btn { color: var(--ink-2); font-weight: 700; }
+
+/* focus mode: the national chrome stands down, one site takes the page */
+.focus-bar {
+  display: flex; align-items: center; gap: 10px;
+  animation: focus-in 0.28s ease both;
+}
+@keyframes focus-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.focus-back {
+  flex: none; border: 1px solid var(--border); background: var(--surface-1); color: var(--ink-1);
+  font: inherit; font-size: 13px; font-weight: 650; padding: 9px 14px; min-height: 40px;
+  border-radius: 999px; cursor: pointer; box-shadow: var(--shadow-2); white-space: nowrap;
+}
+.focus-name {
+  display: flex; flex-direction: column; min-width: 0;
+  background: var(--surface-1); border: 1px solid var(--border);
+  border-radius: var(--r-md); padding: 6px 14px; box-shadow: var(--shadow-1);
+}
+.focus-name strong {
+  font-size: 14.5px; letter-spacing: -0.01em;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.focus-name span { font-size: 10.5px; color: var(--ink-3); }
 
 /* legend — collapsible pill, works on mobile too */
 .map-legend { position: absolute; left: 12px; bottom: 26px; z-index: 9; max-width: min(70vw, 300px); }
@@ -324,6 +347,13 @@ button { font-family: inherit; }
 .summary-card .meta { font-size: 12.5px; color: var(--ink-2); margin-bottom: 8px; }
 .summary-card p.blurb { font-size: 13.5px; color: var(--ink-2); margin: 10px 0 14px; }
 .badge-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; align-items: center; }
+.map-jump {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 650; text-decoration: none;
+  color: var(--accent-deep); background: var(--accent-soft);
+  border: 1px solid transparent; border-radius: 999px; padding: 5px 12px;
+}
+.map-jump:hover { border-color: var(--accent); }
 .kv-mini { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; font-size: 13px; margin: 10px 0; }
 .kv-mini dt { color: var(--ink-3); }
 .kv-mini dd { margin: 0; font-weight: 550; }
@@ -846,7 +876,9 @@ ul.plain li:last-child { border-bottom: 0; }
   margin: 0; font-size: 12.5px; color: var(--ink-3);
 }
 .reveal-caption { margin: 0; font-size: 13px; line-height: 1.5; color: var(--ink-2); min-height: 2.6em; }
-.reveal-actions { display: flex; gap: 8px; }
+.reveal-actions { display: flex; gap: 8px; align-items: center; }
+.reveal-btn.reveal-sat { margin-left: auto; font-size: 12px; color: var(--ink-2); }
+.reveal-btn.reveal-sat[aria-pressed='true'] { background: var(--chip-on); border-color: var(--chip-on); color: var(--chip-on-ink); }
 .reveal-btn {
   border: 1px solid var(--border); background: var(--surface-1); color: var(--ink-1);
   border-radius: var(--r-md); padding: 8px 14px; font-size: 13px; cursor: pointer;

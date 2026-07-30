@@ -94,7 +94,11 @@ function popupContent(p: ProjectRecord, sources: Record<string, SourceEntry>): H
 
 /* Below this the sites are still clustered into donuts, and 19 megaphones sit on
    top of each other — unreadable, and they intercept each other's clicks. They
-   appear as the cluster breaks up, the same way individual dots do. */
+   appear as the cluster breaks up, the same way individual dots do.
+
+   There is deliberately no on/off button for these any more: objections are part
+   of the record, and they surface by themselves as the reader gets close enough
+   for them to be legible. */
 export const OBJECTION_MIN_ZOOM = 9.2
 
 interface Props {
@@ -102,15 +106,12 @@ interface Props {
   ready: boolean
   projects: ProjectRecord[]
   sources: Record<string, SourceEntry>
-  show: boolean
   /** Slug whose bubble should be opened programmatically (used by the tour). */
   openFor?: string | null
-  /** True when the toggle is on but the map is too far out to draw the bubbles. */
-  onZoomedOut?: (v: boolean) => void
 }
 
 export default function ObjectionMarkers({
-  map, ready, projects, sources, show, openFor, onZoomedOut,
+  map, ready, projects, sources, openFor,
 }: Props) {
   const markersRef = useRef(new Map<string, Marker>())
   const popupRef = useRef<Popup | null>(null)
@@ -126,13 +127,11 @@ export default function ObjectionMarkers({
     return () => { map.off('zoomend', read); map.off('moveend', read) }
   }, [map])
 
-  useEffect(() => { onZoomedOut?.(show && !zoomedIn) }, [show, zoomedIn, onZoomedOut])
-
   useEffect(() => {
     if (!map || !ready) return
     const live = new Set<string>()
 
-    if (show && zoomedIn) {
+    if (zoomedIn) {
       for (const p of projects) {
         if (!hasObjectionStory(p)) continue
         const coords = projectCoords(p)
@@ -166,7 +165,7 @@ export default function ObjectionMarkers({
     for (const [slug, m] of markersRef.current) {
       if (!live.has(slug)) { m.remove(); markersRef.current.delete(slug) }
     }
-  }, [map, ready, projects, sources, show, zoomedIn])
+  }, [map, ready, projects, sources, zoomedIn])
 
   /* The guided tour opens one bubble without a click. The marker it wants only
      exists once the beat's camera has flown far enough in, so wait for the

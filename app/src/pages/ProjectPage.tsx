@@ -186,6 +186,13 @@ export default function ProjectPage() {
           <StatusBadge status={project.status} />
           <MaturityBadge level={project.maturity_level} />
           <VerificationBadge level={project.verification_level} />
+          <Link
+            className="map-jump"
+            to={{ pathname: '/', search: `?site=${project.slug}` }}
+            title="Open the main map zoomed to this site"
+          >
+            ◎ View on the map
+          </Link>
         </div>
         <div className="hero-grid">
           <div className="hero-stat">

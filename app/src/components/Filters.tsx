@@ -16,7 +16,7 @@ export interface Filters {
 export const EMPTY_FILTERS: Filters = { groups: [], developer: '', authority: '' }
 
 export function FilterChips({
-  filters, onChange, developers, authorities, availableGroups,
+  filters, onChange, developers, authorities, availableGroups, presentGroups,
 }: {
   filters: Filters
   onChange: (f: Filters) => void
@@ -24,6 +24,10 @@ export function FilterChips({
   authorities: string[]
   /** Status groups still reachable under the other active filters. */
   availableGroups: Set<StatusGroup>
+  /** Status groups with at least one project anywhere in the dataset. A chip
+      that can never match anything is dropped outright — a control that does
+      nothing is clutter, not information. */
+  presentGroups: Set<StatusGroup>
 }) {
   const toggleGroup = (g: StatusGroup) => {
     const groups = filters.groups.includes(g)
@@ -33,7 +37,7 @@ export function FilterChips({
   }
   return (
     <div className="chip-row" role="toolbar" aria-label="Filters">
-      {STATUS_GROUPS.map((g) => {
+      {STATUS_GROUPS.filter((g) => presentGroups.has(g)).map((g) => {
         const meta = STATUS_GROUP_META[g]
         const on = filters.groups.includes(g)
         /* An unreachable group stays visible but inert — the absence is itself
@@ -112,12 +116,14 @@ export function StatsStrip({ tiles, shown, total }: { tiles: StatTileDef[]; show
 
 const SEQ_LEGEND = ['#86b6ef', '#5598e7', '#2a78d6', '#1c5cab', '#0d366b']
 
-export function MapLegend({ lens, showPitches, pitchM2, geo, totalProjects }: {
+export function MapLegend({ lens, showPitches, pitchM2, geo, totalProjects, presentGroups }: {
   lens: LensDef
   showPitches: boolean
   pitchM2: number
   geo: GeoCollection
   totalProjects: number
+  /** Same rule as the chips: only explain colours the map can actually show. */
+  presentGroups: Set<StatusGroup>
 }) {
   const counts = extentCounts(geo, totalProjects)
   /* Collapsed by default on small screens so the map stays clear. */
@@ -143,7 +149,7 @@ export function MapLegend({ lens, showPitches, pitchM2, geo, totalProjects }: {
         <div className="legend-body">
           <div className="legend-title">{lens.legend}</div>
           {lens.id === 'overview' || lens.id === 'planning' ? (
-            STATUS_GROUPS.map((g) => {
+            STATUS_GROUPS.filter((g) => presentGroups.has(g)).map((g) => {
               const meta = STATUS_GROUP_META[g]
               return (
                 <div className="row" key={g}>

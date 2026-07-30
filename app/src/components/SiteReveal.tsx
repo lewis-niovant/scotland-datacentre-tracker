@@ -7,15 +7,24 @@ import {
   primaryBoundary, projectedExtent, STOREY_M, type MassSpec,
 } from '../lib/geometry'
 import { EXTENT2, EXTENT3, NOMINAL_BLOCK_M2, OSM_BUILT, REDLINE } from './MapView'
+import { addContextLayers, setContext3D, setSatellite } from '../lib/context3d'
 
 /* A small staged map on the project page: locate the site, draw its extent, fill
    it with football pitches, then stand its published height up.
+
+   Satellite imagery is the default here — at site scale the fields, houses and
+   roads around the outline are the context that makes the size and height mean
+   something. The Height stage adds terrain and the surrounding OSM buildings in
+   grey, so the block is compared against what actually stands nearby.
 
    Only the stages we actually hold data for are offered, and the caption on each
    says which of the three tiers the extent is. A project with no geometry gets no
    map at all rather than an empty frame — see hasSiteReveal(). */
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
+/** The Location stage pulls right back to this zoom, so "where is it?" is
+    answered regionally — the site-scale framing is the next stage's job. */
+const LOCATE_ZOOM = 7.6
 
 function qv(q?: { value?: number | null; max?: number | null; min?: number | null }): number | null {
   if (!q) return null
@@ -39,9 +48,11 @@ export default function SiteReveal({ geo, p, pitchM2 }: {
   const boxRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<MapLibreMap | null>(null)
   const massLabelRef = useRef<Marker | null>(null)
+  const locatePinRef = useRef<Marker | null>(null)
   const [ready, setReady] = useState(false)
   const [stage, setStage] = useState(0)
   const [failed, setFailed] = useState(false)
+  const [sat, setSat] = useState(true)
 
   const boundary = primaryBoundary(geo, p.project.slug)
   /* Largest of the surveyed outlines — a facility can be several halls. */
@@ -103,16 +114,19 @@ export default function SiteReveal({ geo, p, pitchM2 }: {
     const polys = polysOf(shape)
     const [minX, minY, maxX, maxY] = bboxOf(polys)
     if (!Number.isFinite(minX)) return
+    /* Stage 0 is Location: open on the regional view, not on the site. */
+    const startCentre = centroidOf(polys) ?? [(minX + maxX) / 2, (minY + maxY) / 2]
     const map = new MapLibreMap({
       container: boxRef.current,
       style: MAP_STYLE,
-      bounds: [[minX, minY], [maxX, maxY]],
-      fitBoundsOptions: { padding: 46 },
+      center: startCentre as [number, number],
+      zoom: LOCATE_ZOOM,
       attributionControl: { compact: true },
       interactive: true,
     })
     map.on('error', () => setFailed(true))
     map.on('load', () => {
+      addContextLayers(map)
       const empty = { type: 'FeatureCollection' as const, features: [] }
       map.addSource('sr-shape', { type: 'geojson', data: empty })
       map.addSource('sr-pitches', { type: 'geojson', data: empty })
@@ -190,12 +204,21 @@ export default function SiteReveal({ geo, p, pitchM2 }: {
     return () => {
       massLabelRef.current?.remove()
       massLabelRef.current = null
+      locatePinRef.current?.remove()
+      locatePinRef.current = null
       map.remove()
       mapRef.current = null
       setReady(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [p.project.slug])
+
+  /* ---------- satellite imagery toggle ---------- */
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !ready) return
+    setSatellite(map, sat)
+  }, [sat, ready])
 
   /* ---------- apply the current stage ---------- */
   useEffect(() => {
@@ -222,17 +245,30 @@ export default function SiteReveal({ geo, p, pitchM2 }: {
       map.setPaintProperty('sr-mass', 'fill-extrusion-height', 0)
       map.setLayoutProperty('sr-mass', 'visibility', 'none')
     }
-    map.easeTo({ pitch: showMass ? 58 : 0, duration: 750 })
+    /* Height is only legible against what stands around it: raise the real
+       neighbouring buildings (OSM heights) and the ground itself with the block. */
+    setContext3D(map, { buildings: showMass, terrain: showMass && sat })
 
     /* The pitch fill would otherwise sit over the block it is meant to sit under. */
     map.setPaintProperty('sr-pitch-fill', 'fill-opacity', on('pitches') ? (showMass ? 0.34 : 0.62) : 0)
 
+    /* One camera command per stage — two overlapping animations cancel each other. */
+    const polys = polysOf(shape!)
+    const centre = centroidOf(polys)
     if (key === 'locate') {
-      const polys = polysOf(shape!)
+      /* Regional context with a pin: the answer to "where?", not "how big?". */
+      if (centre) map.easeTo({ center: centre, zoom: LOCATE_ZOOM, pitch: 0, duration: 900 })
+      if (!locatePinRef.current && centre) {
+        locatePinRef.current = new Marker({ color: '#2a78d6' }).setLngLat(centre).addTo(map)
+      }
+    } else {
+      locatePinRef.current?.remove()
+      locatePinRef.current = null
       const [minX, minY, maxX, maxY] = bboxOf(polys)
-      map.fitBounds([[minX, minY], [maxX, maxY]], { padding: 46, duration: 700 })
+      const cam = map.cameraForBounds([[minX, minY], [maxX, maxY]], { padding: 46 })
+      if (cam) map.easeTo({ ...cam, pitch: showMass ? 58 : 0, duration: 900 })
     }
-  }, [stage, ready, allStages]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [stage, ready, allStages, sat]) // eslint-disable-line react-hooks/exhaustive-deps
 
   /* ---------- height caption marker ---------- */
   useEffect(() => {
@@ -289,6 +325,14 @@ export default function SiteReveal({ geo, p, pitchM2 }: {
           onClick={() => setStage((v) => Math.min(allStages.length - 1, v + 1))}
         >
           Next →
+        </button>
+        <button
+          className="reveal-btn reveal-sat"
+          aria-pressed={sat}
+          onClick={() => setSat((v) => !v)}
+          title="Toggle satellite imagery (Esri World Imagery)"
+        >
+          {sat ? 'Imagery on' : 'Imagery off'}
         </button>
       </div>
       <p className="figure-note">

@@ -27,7 +27,6 @@ export interface TourState {
   groups: StatusGroup[]
   showPitches: boolean
   threeD: boolean
-  showObjections: boolean
   /** Slug whose objection bubble should open itself on this beat. */
   openObjections?: string | null
   camera: { center?: [number, number]; zoom?: number; pitch?: number; national?: boolean }
@@ -42,12 +41,8 @@ export interface Beat {
   hold: number
 }
 
-/** Everything that is not already running — the beat about proposals should
-    show the proposals, not silently fall back to all 39. */
-const PROPOSAL_GROUPS: StatusGroup[] = ['consented', 'pending', 'pre_app', 'refused', 'speculative']
-
 const BASE: TourState = {
-  groups: [], showPitches: false, threeD: false, showObjections: false, openObjections: null,
+  groups: [], showPitches: false, threeD: false, openObjections: null,
   camera: { national: true },
 }
 
@@ -59,6 +54,11 @@ export function buildScript(projects: ProjectRecord[], boundarySlugs: Set<string
   const total = projects.length
   const operating = projects.filter((p) => statusGroup(p.project.status) === 'operating')
   const totalMW = projects.reduce((t, p) => t + (headlineCapacityMW(p)?.mw ?? 0), 0)
+  /* Everything that is not already running — derived from the data, so the beat
+     about proposals shows the proposals without naming groups the dataset lacks. */
+  const PROPOSAL_GROUPS: StatusGroup[] = [
+    ...new Set(projects.map((p) => statusGroup(p.project.status))),
+  ].filter((g) => g !== 'operating')
 
   /* The headline site is chosen for the strength of its record, not for the
      biggest number. The beats that follow show a red-line boundary, a building
@@ -139,9 +139,9 @@ export function buildScript(projects: ProjectRecord[], boundarySlugs: Set<string
       title: bigObjections != null
         ? `${fmtInt(bigObjections)}+ published objections`
         : 'Communities have objected',
-      body: 'Megaphone bubbles mark sites where objections are on record. Open one to read the concerns raised, the developer’s response, and a link to every source.',
+      body: 'Zoom in anywhere and megaphone bubbles appear on sites where objections are on record. Open one to read the concerns raised, the developer’s response, and a link to every source.',
       state: {
-        ...BASE, showObjections: true, openObjections: bigSlug,
+        ...BASE, openObjections: bigSlug,
         camera: { center: bigCoords, zoom: 12.6 },
       },
       hold: 7000,
@@ -151,8 +151,8 @@ export function buildScript(projects: ProjectRecord[], boundarySlugs: Set<string
   beats.push({
     kicker: 'Over to you',
     title: 'The map is yours',
-    body: 'Switch lenses to see the same sites by electricity, water, money or planning status. Tap any site for its full profile and its sources.',
-    state: { ...BASE, showObjections: true },
+    body: 'Zoom into any one site and the map switches itself to a close-up view — satellite imagery, football pitches, 3D. Tap any site for its full profile and its sources, and replay this tour any time with the ? button.',
+    state: { ...BASE },
     hold: 5200,
   })
   return beats

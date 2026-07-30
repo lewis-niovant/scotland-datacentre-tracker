@@ -33,6 +33,14 @@ Official red-line planning boundaries are held for **17 of the 39 projects**, fe
 
 See [docs/GEOMETRY_AND_BOUNDARIES.md](docs/GEOMETRY_AND_BOUNDARIES.md) for coverage, the area reconciliation against previously researched site areas, why the other 22 projects have no boundary, where dashed "area sourced, shape modelled" extents are used instead, and the access recipe for reproducing the fetch.
 
+## Basemap, imagery and terrain
+
+The cartographic basemap is OpenFreeMap (© OpenMapTiles, data © OpenStreetMap contributors). Site close-ups additionally use — all keyless, attributed in the map's attribution control:
+
+- **Satellite imagery** — Esri World Imagery (Esri, Maxar, Earthstar Geographics, and the GIS User Community).
+- **Terrain** — Terrarium elevation tiles from the AWS Open Data terrain tiles dataset (Mapzen/Joerd lineage).
+- **Surrounding buildings in 3D** — extruded from OpenStreetMap `render_height` values in the basemap's vector tiles, drawn matte grey; indicative data-centre masses are drawn separately from sourced heights and captioned as illustrative.
+
 ## Validation
 
 ```

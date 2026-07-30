@@ -8,9 +8,10 @@ import {
   boundaryFeatures, buildingMasses, centroidOf, extentExplanation, extentFeatures, pitchGrid,
   osmFootprints, pitchesPhrase, polysOf, primaryBoundary, STOREY_M, type MassSpec,
 } from '../lib/geometry'
+import { addContextLayers, setContext3D, setSatellite } from '../lib/context3d'
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
-const SCOTLAND_BOUNDS: [[number, number], [number, number]] = [[-7.9, 54.6], [-0.6, 60.95]]
+export const SCOTLAND_BOUNDS: [[number, number], [number, number]] = [[-7.9, 54.6], [-0.6, 60.95]]
 const ACCENT = '#2a78d6'
 const NO_DATA = '#898781'
 
@@ -42,6 +43,8 @@ interface Props {
   selectedSlug: string | null
   onSelect: (slug: string | null) => void
   threeD: boolean
+  /** Satellite imagery with terrain and surrounding OSM buildings in 3D. */
+  satellite: boolean
   showPitches: boolean
   pitchM2: number
   /** How many of the shown projects publish a height, so the 3D caption can be honest. */
@@ -218,8 +221,8 @@ function ariaFor(props: Record<string, unknown>, lens: LensDef): string {
 }
 
 export default function MapView({
-  projects, lens, geo, selectedSlug, onSelect, threeD, showPitches, pitchM2, onMassCount,
-  onMapReady, suppressAutoFit,
+  projects, lens, geo, selectedSlug, onSelect, threeD, satellite, showPitches, pitchM2,
+  onMassCount, onMapReady, suppressAutoFit,
 }: Props) {
   const massCountRef = useRef(onMassCount)
   massCountRef.current = onMassCount
@@ -260,6 +263,9 @@ export default function MapView({
          colours are chosen against it rather than against the UI theme. */
       const red = REDLINE
       const empty = { type: 'FeatureCollection' as const, features: [] }
+
+      /* Satellite, terrain and surrounding-building context, hidden until asked for. */
+      addContextLayers(map)
 
       map.addSource('dc-boundaries', { type: 'geojson', data: empty })
       map.addSource('dc-osm', { type: 'geojson', data: empty })
@@ -763,6 +769,22 @@ export default function MapView({
     map.setFilter('dc-selected', ['==', ['get', 'slug'], selectedSlug ?? '__none__'])
   }, [selectedSlug, ready])
 
+  /* ---------- satellite imagery ---------- */
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !loadedRef.current) return
+    setSatellite(map, satellite)
+  }, [satellite, ready])
+
+  /* ---------- 3D context: surrounding buildings and terrain ---------- */
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !loadedRef.current) return
+    /* Terrain only rides with imagery: on the flat cartographic style the relief
+       reads as rendering glitches, over imagery it reads as the actual ground. */
+    setContext3D(map, { buildings: threeD, terrain: threeD && satellite })
+  }, [threeD, satellite, ready])
+
   /* ---------- 3D: tilt AND extrusion visibility ---------- */
   useEffect(() => {
     const map = mapRef.current
@@ -817,13 +839,22 @@ export default function MapView({
   }, [projects])
 
   /* ---------- fly to selection ---------- */
+  const threeDRef = useRef(threeD)
+  threeDRef.current = threeD
   useEffect(() => {
     const map = mapRef.current
     if (!map || !selectedSlug) return
     const p = projects.find((x) => x.project.slug === selectedSlug)
     const coords = p && projectCoords(p)
     if (coords) {
-      map.easeTo({ center: coords, zoom: Math.max(map.getZoom(), 12.4), duration: 600 })
+      /* Selecting a site can switch 3D on in the same breath (focus mode); the
+         pitch must ride in THIS easeTo, because a second one would cancel it. */
+      map.easeTo({
+        center: coords,
+        zoom: Math.max(map.getZoom(), 12.4),
+        pitch: threeDRef.current ? 55 : map.getPitch(),
+        duration: 600,
+      })
     }
   }, [selectedSlug, projects])
 
