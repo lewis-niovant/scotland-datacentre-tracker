@@ -1,122 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { useEffect, useState } from 'react'
+import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { DataContext, loadDataset, type Dataset, fmtDate } from './lib/data'
+import { Header, BottomNav } from './components/Nav'
+import MapPage from './pages/MapPage'
+import ProjectsPage from './pages/ProjectsPage'
+import ProjectPage from './pages/ProjectPage'
+import AboutPage from './pages/AboutPage'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Shell({ ds }: { ds: Dataset }) {
+  const location = useLocation()
+  const isMap = location.pathname === '/' || location.pathname === ''
+  const snapshot = ds.observatory.constants?.snapshot_date ?? ds.observatory.generated_from_snapshot
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    <div className="app-shell">
+      <Header snapshot={snapshot} />
+      <main className={`app-main${isMap ? '' : ' scrollable'}`}>
+        <Routes>
+          <Route path="/" element={<MapPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/project/:slug" element={<ProjectPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+        {!isMap && (
+          <footer className="app-footer">
+            Scotland Data Centre Observatory · Data snapshot: {fmtDate(snapshot)} · Independent and
+            evidence-led; every figure is a sourced claim, not a fact.
+          </footer>
+        )}
+      </main>
+      <BottomNav />
+    </div>
   )
 }
 
-export default App
+export default function App() {
+  const [ds, setDs] = useState<Dataset | null>(null)
+  const [failed, setFailed] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    loadDataset()
+      .then((d) => { if (!cancelled) setDs(d) })
+      .catch(() => { if (!cancelled) setFailed(true) })
+    return () => { cancelled = true }
+  }, [])
+
+  if (failed) {
+    return (
+      <div className="error-screen">
+        <strong>Could not load the Observatory dataset.</strong>
+        <span>Please check your connection and reload.</span>
+      </div>
+    )
+  }
+  if (!ds) return <div className="loading-screen">Loading the Observatory…</div>
+
+  return (
+    <DataContext.Provider value={ds}>
+      <HashRouter>
+        <Shell ds={ds} />
+      </HashRouter>
+    </DataContext.Provider>
+  )
+}
