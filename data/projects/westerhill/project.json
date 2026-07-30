@@ -3,19 +3,41 @@
   "canonical_name": "Westerhill AI Energy Campus",
   "display_name": "Westerhill (Bishopbriggs) AI data centre & BESS",
   "aliases": [
-    { "alias": "Westerhill AI Energy Campus", "alias_type": "marketing_name", "source_ids": ["src-apatura-westerhill-project"] },
-    { "alias": "Land Adjacent To Crosshill Road, Bishopbriggs", "alias_type": "place_name", "source_ids": ["src-edc-portal-tp-ed-25-0428"] },
-    { "alias": "Apatura DC Project 6 Ltd", "alias_type": "spv_name", "source_ids": ["src-public-notice-portal-westerhill-pan", "src-companies-house-apatura-dc6"] }
+    {
+      "alias": "Westerhill AI Energy Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-apatura-westerhill-project"
+      ]
+    },
+    {
+      "alias": "Land Adjacent To Crosshill Road, Bishopbriggs",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-edc-portal-tp-ed-25-0428"
+      ]
+    },
+    {
+      "alias": "Apatura DC Project 6 Ltd",
+      "alias_type": "spv_name",
+      "source_ids": [
+        "src-public-notice-portal-westerhill-pan",
+        "src-companies-house-apatura-dc6"
+      ]
+    }
   ],
   "summary": "Apatura proposes a 300MW AI data centre campus with a co-located 500MW battery energy storage system on land adjacent to Crosshill Road, Westerhill, north-east of Bishopbriggs, within East Dunbartonshire Council's adopted Westerhill Regeneration Area masterplan. The data centre would be consented by the council; the BESS is intended to be consented separately under section 36 via the Energy Consents Unit. As of July 2026 the project is at pre-application stage: an EIA screening opinion (TP/ED/25/0245) concluded EIA is required, and a Proposal of Application Notice (TP/ED/25/0428) was lodged in August 2025, but no full planning application or s36 application has been located.",
   "project_type": "hyperscale",
   "status": "pre_application",
-  "status_source_ids": ["src-edc-portal-tp-ed-25-0428", "src-aprs-westerhill"],
+  "status_source_ids": [
+    "src-edc-portal-tp-ed-25-0428",
+    "src-aprs-westerhill"
+  ],
   "maturity_level": "M1",
   "maturity_explanation": "Early development: EIA screening decided (EIA required, 8 Jul 2025), PAN lodged (1 Aug 2025, closed 16 Sep 2025) and public consultation held Sep 2025; developer states a NESO grid offer was accepted June 2025. No validated full planning application or ECU s36 application found as of 30 Jul 2026 (APRS recorded status still pre-planning on 23 Feb 2026).",
   "verification_level": "verified",
   "local_authority": "East Dunbartonshire Council",
-  "region": "Glasgow City Region",
+  "region": "Glasgow and Clyde Valley",
   "first_public_date": "2025-04-29",
   "anticipated_construction_start": "2027 (developer indicative timeline; earlier panel version said 2026)",
   "anticipated_operational_date": "2029 (developer indicative timeline)",
@@ -27,7 +49,10 @@
   "latest_development": {
     "date": "2026-02-23",
     "headline": "APRS re-checked the case and recorded it still at pre-planning; press reporting (Feb 2026) said an application to East Dunbartonshire Council was expected imminently",
-    "source_ids": ["src-aprs-westerhill", "src-urban-realm-westerhill"]
+    "source_ids": [
+      "src-aprs-westerhill",
+      "src-urban-realm-westerhill"
+    ]
   },
   "unknowns": [
     "Site area in hectares (not stated in any located source; red-line boundary shown only as consultation graphics)",

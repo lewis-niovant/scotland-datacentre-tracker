@@ -3,26 +3,46 @@
   "canonical_name": "MeyGen tidal-powered data centre, Caithness",
   "display_name": "MeyGen data centre (Mey, Caithness)",
   "aliases": [
-    { "alias": "World's first ocean-powered data centre", "alias_type": "marketing_name", "source_ids": ["src-proactive-simec-datacentre-2019"] },
-    { "alias": "MeyGen (Invest Highland opportunity)", "alias_type": "marketing_name", "source_ids": ["src-invest-highland-data-centres"] }
+    {
+      "alias": "World's first ocean-powered data centre",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-proactive-simec-datacentre-2019"
+      ]
+    },
+    {
+      "alias": "MeyGen (Invest Highland opportunity)",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-invest-highland-data-centres"
+      ]
+    }
   ],
   "summary": "SIMEC Atlantis Energy (now SAE Renewables) announced in 2019 a 'world's first ocean-powered' hyperscale data centre in Caithness, supplied by private wire from an expanded MeyGen tidal array, targeting operation by 2024. An EIA screening request for a data centre at Mey (20/01258/SCRE) was decided by Highland Council in March 2020, but no application followed and the original timeline lapsed. The 20+ ha SAE-owned greenfield site is now marketed by Invest Highland as an investment opportunity; SAE's current planning activity at Mey is a 300 MW battery storage scheme.",
   "project_type": "hyperscale",
   "status": "strategic_opportunity",
-  "status_source_ids": ["src-invest-highland-data-centres", "src-planit-highland-20-01258-scre"],
+  "status_source_ids": [
+    "src-invest-highland-data-centres",
+    "src-planit-highland-20-01258-scre"
+  ],
   "maturity_level": "M1",
   "maturity_explanation": "A real early-development step is evidenced: EIA screening request 20/01258/SCRE for 'Development of data centre' at Land 500m West of Philips Mains, Mey, decided 2020-03-25 — consistent in place and timing with the SIMEC Atlantis MeyGen data centre announcement. No planning application, PAN or scoping has followed in six years; the site is now marketed as an opportunity, so M1 reflects the highest evidenced stage of a currently dormant proposal.",
   "verification_level": "verified",
   "local_authority": "The Highland Council",
-  "region": "Caithness",
+  "region": "Highland",
   "first_public_date": "2019-11-01",
   "last_verified_at": "2026-07-30",
   "confidence_overall": "low",
-  "related_project_slugs": ["dounreay"],
+  "related_project_slugs": [
+    "dounreay"
+  ],
   "latest_development": {
     "date": "2026-07-30",
     "headline": "No data centre planning activity since the March 2020 EIA screening; site remains on Invest Highland's opportunity listing while SAE pursues a 300 MW BESS nearby at Mey",
-    "source_ids": ["src-invest-highland-data-centres", "src-jog-mey-bess"]
+    "source_ids": [
+      "src-invest-highland-data-centres",
+      "src-jog-mey-bess"
+    ]
   },
   "unknowns": [
     "Applicant named on EIA screening 20/01258/SCRE and whether EIA was required (Highland portal returned 503; details taken from PlanIt aggregate record)",

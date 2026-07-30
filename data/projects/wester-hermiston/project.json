@@ -6,28 +6,40 @@
     {
       "alias": "Wester Hermiston AI Data Campus",
       "alias_type": "marketing_name",
-      "source_ids": ["src-apatura-wh-project"]
+      "source_ids": [
+        "src-apatura-wh-project"
+      ]
     },
     {
       "alias": "Land 300 Metres North Of 50 Research Avenue North, Riccarton",
       "alias_type": "place_name",
-      "source_ids": ["src-cec-pan-report-wester-hermiston"]
+      "source_ids": [
+        "src-cec-pan-report-wester-hermiston"
+      ]
     },
     {
       "alias": "P108 Currie - Wester Hermiston",
       "alias_type": "other",
-      "source_ids": ["src-cundall-ghg-report"]
+      "source_ids": [
+        "src-cundall-ghg-report"
+      ]
     },
     {
       "alias": "Apatura DC Project 11 Ltd",
       "alias_type": "spv_name",
-      "source_ids": ["src-ch-apatura-dc-project-11", "src-cec-pan-report-wester-hermiston"]
+      "source_ids": [
+        "src-ch-apatura-dc-project-11",
+        "src-cec-pan-report-wester-hermiston"
+      ]
     }
   ],
   "summary": "Proposed 200 MW 'AI data centre campus' by Apatura (SPV Apatura DC Project 11 Ltd) on Green Belt farmland at Wester Hermiston, north of Heriot-Watt University's Riccarton campus and west of the Edinburgh City Bypass, near Currie. A Proposal of Application Notice (25/03978/PAN) was submitted on 1 August 2025 for a forthcoming full ('national development') planning application; an initial EIA screening (25/02924/SCR) concluded on 7 July 2025 that EIA was not required, and a second screening request (25/05576/SCR) was validated on 19 December 2025 and remained under consideration as of the council's March 2026 committee paper. Design documents describe three data centre buildings totalling c.54,690 m2 footprint connected to Currie Substation, with £1.4bn claimed investment. A local campaign, APRS and the Cockburn Association oppose or question the scheme, in the wake of the refusal of the nearby South Gyle data centre in February 2026.",
   "project_type": "hyperscale",
   "status": "pre_application",
-  "status_source_ids": ["src-cec-pan-report-wester-hermiston", "src-aprs-wester-hermiston"],
+  "status_source_ids": [
+    "src-cec-pan-report-wester-hermiston",
+    "src-aprs-wester-hermiston"
+  ],
   "maturity_level": "M1",
   "maturity_explanation": "PAN submitted 1 August 2025 and reported to the Development Management Sub-Committee on 25 March 2026 as a 'forthcoming application'; two EIA screening requests made (one determined EIA-not-required 7 July 2025, the second validated 19 December 2025 and under consideration). No full planning application located on any source as of 30 July 2026 - the developer's own timeline targeted submission in Q1-Q2 2026 but design documents dated November 2025 were only released via FOI. Early development (M1), not M2: no validated application for the data centre itself has been verified.",
   "verification_level": "verified",
@@ -44,7 +56,11 @@
   "latest_development": {
     "date": "2026-03-25",
     "headline": "Council committee notes forthcoming Apatura application; second EIA screening request (25/05576/SCR, validated 19 Dec 2025) still under consideration; opposition petitions and June 2026 council call for a national data centre moratorium follow the South Gyle refusal",
-    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-cockburn-western-edge", "src-changeorg-wester-hermiston"]
+    "source_ids": [
+      "src-cec-pan-report-wester-hermiston",
+      "src-cockburn-western-edge",
+      "src-changeorg-wester-hermiston"
+    ]
   },
   "unknowns": [
     "Whether a full planning application has now been submitted/validated (developer targeted Q1-Q2 2026; council portal blocked automated access during research; APRS 'application validated 19 Dec 2025' appears to refer to the EIA screening request 25/05576/SCR, not a full application)",
@@ -57,5 +73,9 @@
     "Methodology and consultant behind the 'independent economic analysis' cited for £1.4bn investment and GVA/jobs claims; the 245 Edinburgh jobs figure lacks a category (construction vs operational, direct vs indirect)",
     "Landowner identity and land agreement status",
     "Whether the application will be notified to Scottish Ministers as a national development under NPF4 'Digital Fibre Network' designation"
+  ],
+  "related_project_slugs": [
+    "gogar",
+    "south-gyle"
   ]
 }

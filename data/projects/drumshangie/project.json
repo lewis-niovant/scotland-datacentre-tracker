@@ -3,19 +3,39 @@
   "canonical_name": "Drumshangie data centre campus (East Airdrie)",
   "display_name": "Drumshangie / East Airdrie data centre campus",
   "aliases": [
-    { "alias": "Apatura Drumshangie", "alias_type": "marketing_name", "source_ids": ["src-aprs-drumshangie"] },
-    { "alias": "Digital/Data Centre & Manufacturing Campus, East Airdrie", "alias_type": "marketing_name", "source_ids": ["src-shepherd-east-airdrie-sale"] },
-    { "alias": "Drumshangie Moss / former Drumshangie opencast mine", "alias_type": "place_name", "source_ids": ["src-aprs-drumshangie"] }
+    {
+      "alias": "Apatura Drumshangie",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-aprs-drumshangie"
+      ]
+    },
+    {
+      "alias": "Digital/Data Centre & Manufacturing Campus, East Airdrie",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-shepherd-east-airdrie-sale"
+      ]
+    },
+    {
+      "alias": "Drumshangie Moss / former Drumshangie opencast mine",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-aprs-drumshangie"
+      ]
+    }
   ],
   "summary": "Proposed data centre campus of up to 500MW (grid demand application) on the former Drumshangie opencast coal workings and Drumshangie Moss between Airdrie, Plains and Greengairs, North Lanarkshire, on land owned by the Albert Bartlett group. A first Proposal of Application Notice (24/01025/PAN) was lodged in October 2024 for a digital/data centre and manufacturing campus and the 117 ha site was marketed for sale; a fresh PAN (26/00069/PAN) attributed to developer Apatura was submitted 19 January 2026 and accepted 2 February 2026, with a Planning Permission in Principle application signalled for summer 2026. EIA screening reportedly concluded no EIA is required. The site encompasses the Stanrigg pit disaster site, where 19 miners died in 1918 and 11 remain entombed, with a memorial adjacent.",
   "project_type": "unknown",
   "status": "pre_application",
-  "status_source_ids": ["src-aprs-drumshangie"],
+  "status_source_ids": [
+    "src-aprs-drumshangie"
+  ],
   "maturity_level": "M1",
   "maturity_explanation": "Two PANs reported (24/01025/PAN Oct 2024; 26/00069/PAN submitted 19 Jan 2026, accepted 2 Feb 2026) and an EIA screening reportedly completed; no PPP application located as of 30 July 2026, so the project is in early development / pre-application. Council portal could not be reached to confirm the primary record.",
   "verification_level": "reported",
   "local_authority": "North Lanarkshire Council",
-  "region": "North Lanarkshire",
+  "region": "Lanarkshire",
   "first_public_date": "2024-10-09",
   "anticipated_construction_start": "unknown",
   "last_verified_at": "2026-07-30",
@@ -26,7 +46,9 @@
   "latest_development": {
     "date": "2026-02-02",
     "headline": "PAN 26/00069/PAN accepted by North Lanarkshire Council; Planning Permission in Principle application signalled for summer 2026",
-    "source_ids": ["src-aprs-drumshangie"]
+    "source_ids": [
+      "src-aprs-drumshangie"
+    ]
   },
   "unknowns": [
     "Primary planning-portal records for 24/01025/PAN and 26/00069/PAN could not be retrieved (portal unreachable from research environment); PAN details rest on APRS and selling-agent material.",

@@ -14,7 +14,9 @@
   "local_authority": "Glasgow City Council",
   "region": "Glasgow and Clyde Valley",
   "related_project_slugs": [
-    "datavita-dv1"
+    "datavita-dv1",
+    "datavita-dv4",
+    "datavita-dv6"
   ],
   "last_verified_at": "2026-07-30",
   "confidence_overall": "medium",

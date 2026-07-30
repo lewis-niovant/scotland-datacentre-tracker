@@ -4,17 +4,32 @@
   "display_name": "Fearn Airfield (Invest Highland opportunity)",
   "summary": "Marketed inward-investment prospect, not a project: Invest Highland lists 315 hectares at the former RAF Fearn airfield and surrounding land in Easter Ross, owned by a local landowner, for renewable energy, data centre and commercial development. No developer or operator has been identified and no planning application for a data centre exists.",
   "aliases": [
-    { "alias": "Fearn Airfield and Surrounds", "alias_type": "marketing_name", "source_ids": ["src-invest-highland-opportunities"] },
-    { "alias": "RAF Fearn / HMS Owl (former)", "alias_type": "former_name", "source_ids": ["src-invest-highland-data-centres"] }
+    {
+      "alias": "Fearn Airfield and Surrounds",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-invest-highland-opportunities"
+      ]
+    },
+    {
+      "alias": "RAF Fearn / HMS Owl (former)",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-invest-highland-data-centres"
+      ]
+    }
   ],
   "project_type": "unknown",
   "status": "strategic_opportunity",
-  "status_source_ids": ["src-invest-highland-data-centres", "src-invest-highland-opportunities"],
+  "status_source_ids": [
+    "src-invest-highland-data-centres",
+    "src-invest-highland-opportunities"
+  ],
   "maturity_level": "M0",
   "maturity_explanation": "Agency marketing listing only: land allocated/promoted for renewable energy, data centre and commercial uses. No named developer, no planning record found for a data centre at Fearn on the Highland register or PlanIt.",
   "verification_level": "unverifiable",
   "local_authority": "The Highland Council",
-  "region": "Easter Ross",
+  "region": "Highland",
   "last_verified_at": "2026-07-30",
   "confidence_overall": "low",
   "unknowns": [

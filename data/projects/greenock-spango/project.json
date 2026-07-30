@@ -3,21 +3,56 @@
   "canonical_name": "Spango Valley data centre and BESS (former IBM site, Greenock)",
   "display_name": "Spango Valley, Greenock",
   "aliases": [
-    { "alias": "Spango Valley Campus", "alias_type": "marketing_name", "source_ids": ["src-datacentermap-spango"] },
-    { "alias": "Spango Valley DCH1", "alias_type": "marketing_name", "source_ids": ["src-colomap-spango"] },
-    { "alias": "Former IBM site, Inverkip Road, Greenock", "alias_type": "former_name", "source_ids": ["src-spango-consult-home", "src-bebeez-spango"] },
-    { "alias": "Valley Park", "alias_type": "former_name", "source_ids": ["src-bebeez-spango"] },
-    { "alias": "Greenock IBM Data Centre", "alias_type": "other", "source_ids": ["src-aprs-spango"] }
+    {
+      "alias": "Spango Valley Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-datacentermap-spango"
+      ]
+    },
+    {
+      "alias": "Spango Valley DCH1",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-colomap-spango"
+      ]
+    },
+    {
+      "alias": "Former IBM site, Inverkip Road, Greenock",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-spango-consult-home",
+        "src-bebeez-spango"
+      ]
+    },
+    {
+      "alias": "Valley Park",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-bebeez-spango"
+      ]
+    },
+    {
+      "alias": "Greenock IBM Data Centre",
+      "alias_type": "other",
+      "source_ids": [
+        "src-aprs-spango"
+      ]
+    }
   ],
   "summary": "Proposed data centre (developer-stated maximum 150 MW; two buildings of c.34,500 sqm and c.40,000 sqm) with a co-located c.99 MW battery energy storage system on the cleared brownfield site of IBM's former Spango Valley factory (1954-2016/17), Inverkip Road, south-west Greenock, Inverclyde. Developer Slate Island Developments Ltd (sole director Alexander 'Sandy' Easdale) is pivoting the site from a consented £100m housing-led mixed-use scheme (PPP for up to 450 homes, finalised March 2023) which failed to attract a viable end user. A Proposal of Application Notice was lodged with Inverclyde Council in late February 2026, with statutory pre-application consultation in March-April 2026; the data centre is to be a Major application to Inverclyde Council (targeted June 2026 submission, November 2026 determination) and the BESS a separate Section 36 application to the Scottish Government Energy Consents Unit. The developer states a Gate 1 grid offer from SP Energy Networks and 'strong interest' from an unnamed data centre operator. No named operator, IT-load breakdown, cooling/water detail or fibre-connectivity claim has been published.",
   "project_type": "unknown",
   "status": "pre_application",
-  "status_source_ids": ["src-spango-consult-home", "src-spango-consult-proposals", "src-inverclydenow-spango-dc"],
+  "status_source_ids": [
+    "src-spango-consult-home",
+    "src-spango-consult-proposals",
+    "src-inverclydenow-spango-dc"
+  ],
   "maturity_level": "M1",
   "maturity_explanation": "PAN lodged with Inverclyde Council late February 2026 (developer states 27 February 2026); two rounds of statutory pre-application consultation held March-April 2026; planning application targeted for June 2026 but no evidence found by 30 July 2026 that it has been submitted or validated. BESS Section 36 application to ECU also not yet located.",
   "verification_level": "reported",
   "local_authority": "Inverclyde Council",
-  "region": "Inverclyde / Glasgow City Region",
+  "region": "Glasgow and Clyde Valley",
   "first_public_date": "2026-02-27",
   "anticipated_construction_start": "not stated by developer",
   "anticipated_operational_date": "not stated; planning permission targeted end-2026 (developer, via press)",
@@ -29,7 +64,10 @@
   "latest_development": {
     "date": "2026-04-28",
     "headline": "Second round of pre-application consultation completed (exhibition 23 April, online event 28 April 2026); application submission targeted for June 2026",
-    "source_ids": ["src-spango-consult-proposals", "src-spango-consult-updates"]
+    "source_ids": [
+      "src-spango-consult-proposals",
+      "src-spango-consult-updates"
+    ]
   },
   "unknowns": [
     "Official PAN reference number — Inverclyde Council's Idox planning portal (planning.inverclyde.gov.uk) was unreachable (HTTP 503) on 2026-07-30 and no press or Gazette source states the reference",

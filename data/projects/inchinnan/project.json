@@ -3,17 +3,25 @@
   "canonical_name": "Inchinnan grid connection (potential data centre site)",
   "display_name": "Inchinnan (grid record only)",
   "aliases": [
-    { "alias": "Inchinan", "alias_type": "other", "source_ids": ["src-aprs-data-centre-map"] }
+    {
+      "alias": "Inchinan",
+      "alias_type": "other",
+      "source_ids": [
+        "src-aprs-data-centre-map"
+      ]
+    }
   ],
   "summary": "A 180MW gate 2 grid connection reported by APRS (citing NESO's Existing Agreements Register) for 'Inchinan' — assumed to mean Inchinnan, the Renfrewshire village between Renfrew and Erskine with an established business park. No planning application, developer announcement or press coverage has been found; the site exists in the public record only as a grid connection agreement. No developer has been identified.",
   "project_type": "unknown",
   "status": "grid_record_only",
-  "status_source_ids": ["src-aprs-data-centre-map"],
+  "status_source_ids": [
+    "src-aprs-data-centre-map"
+  ],
   "maturity_level": "M0",
   "maturity_explanation": "Only evidence is a reported 180MW gate 2 grid connection in NESO's Existing Agreements Register as relayed by APRS (page updated July 2026). PlanIt search of Renfrewshire 'data centre' records 2019-2026 found 6 records, none at Inchinnan (the two May 2025 data-centre-campus EIA screening requests were at Gleniffer Road, Paisley and Caplaw Road, Neilston, both withdrawn); no developer or press attribution found.",
   "verification_level": "unverifiable",
   "local_authority": "Renfrewshire Council",
-  "region": "Renfrewshire",
+  "region": "Glasgow and Clyde Valley",
   "last_verified_at": "2026-07-30",
   "next_review_at": "2026-10-30",
   "confidence_overall": "low",
@@ -22,7 +30,9 @@
   "latest_development": {
     "date": "2026-07-29",
     "headline": "APRS data centre map (updated 29 July 2026) lists Inchinnan 180MW among five gate 2 connection sites 'not otherwise seen elsewhere'",
-    "source_ids": ["src-aprs-data-centre-map"]
+    "source_ids": [
+      "src-aprs-data-centre-map"
+    ]
   },
   "unknowns": [
     "The NESO register row (connectee, connection site, dates) has not been independently extracted; the 180MW figure rests on APRS's reading.",

@@ -3,18 +3,32 @@
   "canonical_name": "Haspielaw Farm data centre campus (Hamilton)",
   "display_name": "Haspielaw data centre, Hamilton",
   "aliases": [
-    { "alias": "Haspielaw (Hamilton)", "alias_type": "place_name", "source_ids": ["src-aprs-hamilton-dc"] },
-    { "alias": "Land At Haspielaw Farm, Muttonhole Road, Hamilton ML3 8RX", "alias_type": "place_name", "source_ids": ["src-planit-haspielaw-p250490"] }
+    {
+      "alias": "Haspielaw (Hamilton)",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-aprs-hamilton-dc"
+      ]
+    },
+    {
+      "alias": "Land At Haspielaw Farm, Muttonhole Road, Hamilton ML3 8RX",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-planit-haspielaw-p250490"
+      ]
+    }
   ],
   "summary": "Proposed data centre campus on land at Haspielaw Farm, Muttonhole Road, south-west of Hamilton, South Lanarkshire, attributed to developer Apatura. The only formal planning record located is an EIA screening opinion request (P/25/0490, received 29 April 2025) describing a data centre campus with ancillary offices/employment floorspace, emergency back-up generators, fuel storage, a battery energy storage system, sub-station and associated works; South Lanarkshire Council determined on 25 June 2025 that EIA is required. No PAN or planning application has been located, no capacity has been disclosed by the developer (campaign group Foxglove uses a 250MW working estimate), and no grid, economic or community details specific to the site were found.",
   "project_type": "unknown",
   "status": "screening",
-  "status_source_ids": ["src-planit-haspielaw-p250490"],
+  "status_source_ids": [
+    "src-planit-haspielaw-p250490"
+  ],
   "maturity_level": "M1",
   "maturity_explanation": "EIA screening opinion request P/25/0490 received 29 April 2025 and determined 25 June 2025 (EIA required) is the only formal planning activity located as of 30 July 2026; no PAN, scoping request or application found on the council register (via PlanIt mirror; the council portal itself was unreachable). Early development on thin evidence.",
   "verification_level": "verified",
   "local_authority": "South Lanarkshire Council",
-  "region": "South Lanarkshire",
+  "region": "Lanarkshire",
   "first_public_date": "2025-04-29",
   "last_verified_at": "2026-07-30",
   "next_review_at": "2026-09-30",
@@ -24,7 +38,9 @@
   "latest_development": {
     "date": "2025-06-25",
     "headline": "South Lanarkshire Council issues screening opinion: EIA required for proposed Haspielaw Farm data centre campus",
-    "source_ids": ["src-planit-haspielaw-p250490"]
+    "source_ids": [
+      "src-planit-haspielaw-p250490"
+    ]
   },
   "unknowns": [
     "No capacity figure (MW IT load or grid import) has been disclosed by the developer for Haspielaw; the only figure in circulation is Foxglove's 250MW working estimate.",

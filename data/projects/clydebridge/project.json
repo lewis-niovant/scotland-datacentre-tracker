@@ -5,12 +5,14 @@
   "summary": "A 360MW gate 2 grid connection reported by APRS (citing NESO's Existing Agreements Register) for 'Clydebridge, just outside Glasgow' — presumed to relate to the former Clydebridge Steelworks area between Cambuslang and Rutherglen, South Lanarkshire. No planning application, pre-application notice, developer announcement or press coverage has been found; the site exists in the public record only as a grid connection agreement. No developer has been identified.",
   "project_type": "unknown",
   "status": "grid_record_only",
-  "status_source_ids": ["src-aprs-data-centre-map"],
+  "status_source_ids": [
+    "src-aprs-data-centre-map"
+  ],
   "maturity_level": "M0",
   "maturity_explanation": "Only evidence is a reported 360MW gate 2 grid connection in NESO's Existing Agreements Register as relayed by APRS (page updated July 2026). PlanIt searches (2019-2026) across all authorities for 'Clydebridge' and South Lanarkshire data centre keywords found no planning record; no developer or press attribution found.",
   "verification_level": "unverifiable",
   "local_authority": "South Lanarkshire Council",
-  "region": "South Lanarkshire",
+  "region": "Lanarkshire",
   "last_verified_at": "2026-07-30",
   "next_review_at": "2026-10-30",
   "confidence_overall": "low",
@@ -19,7 +21,9 @@
   "latest_development": {
     "date": "2026-07-29",
     "headline": "APRS data centre map (updated 29 July 2026) lists Clydebridge 360MW among five gate 2 connection sites 'not otherwise seen elsewhere'",
-    "source_ids": ["src-aprs-data-centre-map"]
+    "source_ids": [
+      "src-aprs-data-centre-map"
+    ]
   },
   "unknowns": [
     "The NESO Existing Agreements Register row itself (connectee name, connection site, agreement date, connection date) has not been independently extracted; the 360MW figure rests on APRS's reading of the register.",

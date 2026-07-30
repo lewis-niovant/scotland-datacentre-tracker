@@ -18,7 +18,7 @@
       "developer": "Apatura + Ravenscraig Ltd",
       "capacity_claim": "550 MW, £3.9bn",
       "stage": "pre_application (PAN)",
-      "triage": "verified"
+      "triage": "reported"
     },
     {
       "slug": "drumshangie",
@@ -26,8 +26,8 @@
       "local_authority": "North Lanarkshire",
       "developer": "Apatura",
       "capacity_claim": "500 MW",
-      "stage": "pre_application (24/01025/PAN)",
-      "triage": "verified"
+      "stage": "pre_application (PANs 24/01025/PAN and 26/00069/PAN accepted Feb 2026; EIA not required per APRS; portal unverified)",
+      "triage": "reported"
     },
     {
       "slug": "newhouse-aurelius",
@@ -44,7 +44,7 @@
       "local_authority": "North Lanarkshire",
       "developer": "HFD / DataVita",
       "capacity_claim": "part of ~500 MW AIGZ",
-      "stage": "screening (EIA not required)",
+      "stage": "pre_application (PAN 25/01322/PAN Dec 2025; EIA screening 26/00707/EIASCR not required Jun 2026)",
       "triage": "verified"
     },
     {
@@ -53,7 +53,7 @@
       "local_authority": "North Lanarkshire",
       "developer": "HFD / DataVita",
       "capacity_claim": "part of ~500 MW AIGZ",
-      "stage": "pending",
+      "stage": "pre_application (PAN 25/01328/PAN at South Lanridge Farm)",
       "triage": "verified",
       "notes": "DV6 = HFD Renewables NL PAN 25/01328/PAN at South Lanridge Farm, Newhouse (SPV DataVita DV6 Ltd SC863396); distinct from ILI Aurelius ~0.9km away"
     },
@@ -72,7 +72,7 @@
       "local_authority": "South Lanarkshire",
       "developer": "Apatura",
       "capacity_claim": "unknown",
-      "stage": "pre_application (EIA required)",
+      "stage": "screening (P/25/0490 EIA required Jun 2025; no PAN or application found)",
       "triage": "verified"
     },
     {
@@ -90,7 +90,7 @@
       "local_authority": "City of Edinburgh",
       "developer": "Apatura",
       "capacity_claim": "200 MW",
-      "stage": "pre_application (PAN 25/03978/PAN; screening 25/02924/SCR EIA-not-required Jul 2025; re-screening 25/05576/SCR pending; no FUL found)",
+      "stage": "pre_application (PAN 25/03978/PAN; screening 25/02924/SCR EIA-not-required Jul 2025; re-screening 25/05576/SCR EIA-not-required 6 May 2026; no FUL found)",
       "triage": "verified"
     },
     {
@@ -99,8 +99,8 @@
       "local_authority": "West Lothian",
       "developer": "Apatura",
       "capacity_claim": "250 MW",
-      "stage": "reported in planning",
-      "triage": "reported"
+      "stage": "pre_application (PAN 0625/PAC/25 response Aug 2025; EIA screening 0346/EIA/25 not required Jun 2025)",
+      "triage": "verified"
     },
     {
       "slug": "gogar",
@@ -108,7 +108,7 @@
       "local_authority": "City of Edinburgh",
       "developer": "unknown",
       "capacity_claim": "200 MW (SPICe)",
-      "stage": "screening (EIA screened out)",
+      "stage": "unknown (no distinct scheme found; SPICe 200MW \"Gogor\" line is a conflation of South Gyle / Wester Hermiston)",
       "triage": "reported"
     },
     {
@@ -227,7 +227,7 @@
       "local_authority": "East Lothian",
       "developer": "Thistle Sands Data Ltd",
       "capacity_claim": "unstated; 60–62.5 ha",
-      "stage": "pre_application (EIA required)",
+      "stage": "scoping (EIA screening 25/00008/SCR EIA required; scoping opinion issued 30 Mar 2026; no PAN or application)",
       "triage": "verified"
     },
     {
@@ -237,7 +237,7 @@
       "developer": "East Lothian Council + SDCL (JV negotiation)",
       "capacity_claim": "unstated",
       "stage": "strategic_opportunity",
-      "triage": "reported"
+      "triage": "verified"
     },
     {
       "slug": "killean",
@@ -246,7 +246,7 @@
       "developer": "Argyll Data Development + SambaNova partnership",
       "capacity_claim": "claims 100–600 MW → 2 GW+, £15bn",
       "stage": "announced (only a small 2020 consent exists)",
-      "triage": "reported",
+      "triage": "verified",
       "notes": "Treat capacity claims sceptically"
     },
     {
@@ -274,7 +274,7 @@
       "developer": "NDA + CX Power",
       "capacity_claim": "up to 1 GW",
       "stage": "pre_application (env studies)",
-      "triage": "verified"
+      "triage": "reported"
     },
     {
       "slug": "greenock-spango",
@@ -283,7 +283,7 @@
       "developer": "Slate Island Developments",
       "capacity_claim": "two buildings ~74,500 m2 + 99 MW BESS",
       "stage": "pre_application (PAN Feb 2026)",
-      "triage": "verified"
+      "triage": "reported"
     },
     {
       "slug": "dounreay",
@@ -309,8 +309,8 @@
       "local_authority": "Highland",
       "developer": "none (prospect)",
       "capacity_claim": "n/a",
-      "stage": "strategic_opportunity",
-      "triage": "unverifiable"
+      "stage": "strategic_opportunity (EIA screening 20/01258/SCRE decided 2020; nothing since; site marketed)",
+      "triage": "verified"
     },
     {
       "slug": "operating-estate",
@@ -320,7 +320,7 @@
       "capacity_claim": "~39 facilities, mostly <10 MW",
       "stage": "operating",
       "triage": "verified",
-      "notes": "Handled as multiple sensitive-flagged records with coarse locations"
+      "notes": "Researched as individual canonical records: brightsolid-aberdeen, datavita-dv1, datavita-dv2, epcc-acf-edinburgh, iomart-glasgow, pulsant-south-gyle (coarse locations where sensitive)"
     }
   ]
 }

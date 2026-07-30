@@ -3,20 +3,46 @@
   "canonical_name": "DataVita DV4 Data Centre and Battery Storage, Lancaster Avenue, Chapelhall",
   "display_name": "DataVita DV4 (Lancaster Avenue, Chapelhall)",
   "aliases": [
-    { "alias": "DV4", "alias_type": "phase_name", "source_ids": ["src-aprs-chapelhall-aigz", "src-ch-datavita-spvs"] },
-    { "alias": "Land At Lancaster Avenue, Chapelhall", "alias_type": "place_name", "source_ids": ["src-planit-nlc-25-01322-pan"] },
-    { "alias": "DataVita DV4 Limited", "alias_type": "spv_name", "source_ids": ["src-ch-datavita-spvs"] }
+    {
+      "alias": "DV4",
+      "alias_type": "phase_name",
+      "source_ids": [
+        "src-aprs-chapelhall-aigz",
+        "src-ch-datavita-spvs"
+      ]
+    },
+    {
+      "alias": "Land At Lancaster Avenue, Chapelhall",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-planit-nlc-25-01322-pan"
+      ]
+    },
+    {
+      "alias": "DataVita DV4 Limited",
+      "alias_type": "spv_name",
+      "source_ids": [
+        "src-ch-datavita-spvs"
+      ]
+    }
   ],
   "summary": "Pre-application data centre and battery storage proposal on Green Belt land at Lancaster Avenue, Chapelhall, forming part of DataVita/HFD's Lanarkshire AI Growth Zone programme (designated 29 January 2026 with CoreWeave as anchor partner; the 500MW figure is a zone-level claim, not this site's). A Proposal of Application Notice (25/01322/PAN) was lodged in December 2025, developer consultation events were held in May-June 2026, and an EIA screening request (26/00707/EIASCR) describing a c.100-124MW green data centre was determined 'EIA Not Required' on 19 June 2026. No planning application had been submitted as of 30 July 2026.",
   "project_type": "hyperscale",
   "status": "pre_application",
-  "status_source_ids": ["src-planit-nlc-25-01322-pan", "src-planit-nlc-26-00707-eiascr"],
+  "status_source_ids": [
+    "src-planit-nlc-25-01322-pan",
+    "src-planit-nlc-26-00707-eiascr"
+  ],
   "maturity_level": "M1",
   "maturity_explanation": "PAN 25/01322/PAN received 2025-12-17 (Comments issued 2026-01-19); statutory pre-application consultation events held 12 May, 2 June and 4 June 2026; EIA screening 26/00707/EIASCR determined not required 2026-06-19. No validated planning application located on the PlanIt mirror of the council portal as of 2026-07-30.",
   "verification_level": "verified",
   "local_authority": "North Lanarkshire Council",
   "region": "Lanarkshire",
-  "related_project_slugs": ["datavita-dv1", "datavita-dv6"],
+  "related_project_slugs": [
+    "datavita-dv1",
+    "datavita-dv6",
+    "datavita-dv2"
+  ],
   "first_public_date": "2025-12-17",
   "anticipated_operational_date": "UK Government FoI response (per APRS): 'DV4 will be driven by Scottish Power connections timescales which we expect to be brought forward to 2027'",
   "last_verified_at": "2026-07-30",
@@ -27,7 +53,10 @@
   "latest_development": {
     "date": "2026-06-19",
     "headline": "North Lanarkshire Council determined EIA is not required for the proposed DV4 data centre (26/00707/EIASCR); screening opinion published 20 July 2026 after campaign requests",
-    "source_ids": ["src-planit-nlc-26-00707-eiascr", "src-aprs-chapelhall-aigz"]
+    "source_ids": [
+      "src-planit-nlc-26-00707-eiascr",
+      "src-aprs-chapelhall-aigz"
+    ]
   },
   "unknowns": [
     "Named applicant on the PAN/screening (portal shows 'See source'; agent address 111 McDonald Road, Edinburgh; SPV DataVita DV4 Ltd exists but its role on the applications is unconfirmed)",

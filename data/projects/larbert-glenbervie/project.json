@@ -3,15 +3,42 @@
   "canonical_name": "Larbert Data Centre Campus (Glenbervie)",
   "display_name": "Larbert Data Centre Campus",
   "aliases": [
-    { "alias": "Glenbervie", "alias_type": "place_name", "source_ids": ["src-falkirk-portal-p260237", "src-apatura-news-submission"] },
-    { "alias": "Larbert AI Data Campus", "alias_type": "marketing_name", "source_ids": ["src-apatura-consult-project"] },
-    { "alias": "Larbert AI Energy Campus", "alias_type": "marketing_name", "source_ids": ["src-apatura-consult-project"] },
-    { "alias": "Apatura Plean data centre (predecessor site)", "alias_type": "former_name", "source_ids": ["src-dcd-relocation"] }
+    {
+      "alias": "Glenbervie",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-falkirk-portal-p260237",
+        "src-apatura-news-submission"
+      ]
+    },
+    {
+      "alias": "Larbert AI Data Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-apatura-consult-project"
+      ]
+    },
+    {
+      "alias": "Larbert AI Energy Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-apatura-consult-project"
+      ]
+    },
+    {
+      "alias": "Apatura Plean data centre (predecessor site)",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-dcd-relocation"
+      ]
+    }
   ],
   "summary": "Proposed 300 MW AI data centre campus by Apatura (applicant Apatura DC Project 5 Ltd) on ~55 acres of Scottish Enterprise-owned land at Glenbervie Business Park, Bellsdyke Road/Stirling Road, Larbert, Falkirk. Full application P/26/0237/FUL validated by Falkirk Council on 4 June 2026; two data centre buildings totalling 128,863 m2 at 25 m height plus an 11,500 m2 substation. Developer claims ~£1bn investment and first power 2028; the application drew ~6,700 objections by the July 2026 consultation close. 'Larbert' and 'Glenbervie' are the same campus — the scheme was relocated from Plean (Stirling) to Glenbervie, Larbert in October 2025.",
   "project_type": "hyperscale",
   "status": "pending",
-  "status_source_ids": ["src-falkirk-portal-p260237"],
+  "status_source_ids": [
+    "src-falkirk-portal-p260237"
+  ],
   "maturity_level": "M2",
   "maturity_explanation": "Full planning application P/26/0237/FUL received 29 May 2026 and validated 4 June 2026 by Falkirk Council; status 'Awaiting decision' as of 30 July 2026. Not yet consented.",
   "verification_level": "verified",
@@ -28,7 +55,10 @@
   "latest_development": {
     "date": "2026-07-02",
     "headline": "Public consultation period closed with ~6,700 objections recorded on Falkirk Council portal; pre-determination hearing reported to be required before committee decision",
-    "source_ids": ["src-deadline-news-objections", "src-stv-fears"]
+    "source_ids": [
+      "src-deadline-news-objections",
+      "src-stv-fears"
+    ]
   },
   "unknowns": [
     "Exact site area in the red-line boundary (55 acres per developer press release vs 'around 50 acres' in consultation material) — application drawings not retrieved",
@@ -40,5 +70,9 @@
     "Whether the application is EIA development and whether an EIA Report was submitted (STV reports a 52-document environmental impact assessment, unverified against the portal)",
     "Committee/pre-determination hearing dates",
     "Terms of Apatura's land arrangement with Scottish Enterprise (option, missives, lease)"
+  ],
+  "related_project_slugs": [
+    "jawcraig",
+    "ravenscraig"
   ]
 }

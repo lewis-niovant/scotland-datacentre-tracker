@@ -5,13 +5,17 @@
   "summary": "A 180MW gate 2 grid connection reported by APRS (citing NESO's Existing Agreements Register) for 'Jawcraig, Falkirk' — Jawcraig is a small farming settlement about 2 miles north of Slamannan on the Slamannan Plateau, Falkirk Council area, with a history of colliery, opencast fireclay and brickworks land. No planning application, developer announcement or press coverage has been found; the site exists in the public record only as a grid connection agreement. No developer has been identified.",
   "project_type": "unknown",
   "status": "grid_record_only",
-  "status_source_ids": ["src-aprs-data-centre-map"],
+  "status_source_ids": [
+    "src-aprs-data-centre-map"
+  ],
   "maturity_level": "M0",
   "maturity_explanation": "Only evidence is a reported 180MW gate 2 grid connection in NESO's Existing Agreements Register as relayed by APRS (page updated July 2026). PlanIt searches 2019-2026 for 'Jawcraig' (all authorities) and Falkirk + 'data centre' found no Jawcraig record (the only Falkirk data centre application is the separate Larbert/Glenbervie project); no developer or press attribution found.",
   "verification_level": "unverifiable",
   "local_authority": "Falkirk Council",
-  "region": "Falkirk",
-  "related_project_slugs": ["larbert-glenbervie"],
+  "region": "Forth Valley",
+  "related_project_slugs": [
+    "larbert-glenbervie"
+  ],
   "last_verified_at": "2026-07-30",
   "next_review_at": "2026-10-30",
   "confidence_overall": "low",
@@ -20,7 +24,9 @@
   "latest_development": {
     "date": "2026-07-29",
     "headline": "APRS data centre map (updated 29 July 2026) lists Jawcraig, Falkirk 180MW among five gate 2 connection sites 'not otherwise seen elsewhere'",
-    "source_ids": ["src-aprs-data-centre-map"]
+    "source_ids": [
+      "src-aprs-data-centre-map"
+    ]
   },
   "unknowns": [
     "The NESO register row (connectee, connection site, dates) has not been independently extracted; the 180MW figure rests on APRS's reading.",

@@ -5,12 +5,15 @@
   "summary": "Marketed inward-investment prospect, not a project: Invest Highland (The Highland Council) lists 148 hectares at the Dounreay former nuclear site, Caithness, owned by the Nuclear Decommissioning Authority, as a potential hyperscale data centre location citing 'abundant clean and green power options' and subsea fibre links (Farice, potential AE-5). No developer, operator or planning application has been identified.",
   "project_type": "unknown",
   "status": "strategic_opportunity",
-  "status_source_ids": ["src-invest-highland-data-centres", "src-invest-highland-opportunities"],
+  "status_source_ids": [
+    "src-invest-highland-data-centres",
+    "src-invest-highland-opportunities"
+  ],
   "maturity_level": "M0",
   "maturity_explanation": "Agency marketing listing only. No named developer or operator, no planning record found on the Highland Council register or PlanIt for a data centre at Dounreay, and the site remains under active nuclear decommissioning by the NDA.",
   "verification_level": "unverifiable",
   "local_authority": "The Highland Council",
-  "region": "Caithness",
+  "region": "Highland",
   "last_verified_at": "2026-07-30",
   "confidence_overall": "low",
   "unknowns": [
@@ -18,5 +21,8 @@
     "What 'abundant clean and green power options' means in practice — no grid connection capacity, generation source or MW figure is stated",
     "Actual status and landing arrangements of the cited Farice and prospective AE-5 subsea cable connectivity for a commercial data centre",
     "Any developer or operator interest to date"
+  ],
+  "related_project_slugs": [
+    "meygen-caithness"
   ]
 }
