@@ -1,0 +1,39 @@
+{
+  "site_name": "Drumshangie / East Airdrie (former Drumshangie opencast mine and Drumshangie Moss)",
+  "address": "Land northeast of Airdrie, north of Plains, extending toward Greengairs, North Lanarkshire",
+  "postcode": "ML6 7TD",
+  "settlement": "Airdrie",
+  "latitude": 55.888866,
+  "longitude": -3.941682,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 1172100,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "Shepherd Chartered Surveyors (selling agent, on behalf of landowner)",
+    "notes": "117.21 ha (289.63 acres) per sale particulars for the marketed Digital/Data Centre & Manufacturing Campus. The wider Albert Bartlett East Airdrie landholding is c.383.27 ha per the July 2024 EIA NTS for the separate mixed-use application.",
+    "source_ids": ["src-shepherd-east-airdrie-sale", "src-east-airdrie-eia-nts"]
+  },
+  "gross_floor_area_m2": {
+    "value": 111484,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "Shepherd Chartered Surveyors (selling agent)",
+    "notes": "'Over 1.2 million sq ft' total floorspace marketed for the whole campus (data centres, gigafactory, research, offices, BESS) — not data centre floorspace alone. Converted at 1.2M sq ft = 111,484 m2.",
+    "source_ids": ["src-shepherd-east-airdrie-sale"]
+  },
+  "greenfield_brownfield": "mixed",
+  "current_land_use": "Largely vacant restored/disturbed former opencast land, moss/peatland and rough grazing",
+  "previous_land_use": "Opencast and deep coal mining (Drumshangie Mine and surrounding pits; mining in the wider Greengairs area from the 1840s to the late 20th century)",
+  "green_belt": null,
+  "nearest_settlements": ["Plains", "Greengairs", "Wattston", "Airdrie"],
+  "protected_designations": [
+    "Drumshangie Moss North SINC (within/adjacent to wider landholding)",
+    "Drumshangie Moss: Dykehead (South) SINC (within/adjacent to wider landholding)",
+    "Longriggend Moss SSSI (vicinity)",
+    "Stanrigg Memorial (non-statutory heritage feature within/adjacent to site)"
+  ],
+  "land_notes": "Described by APRS and the applicant's EIA as brownfield (ex-opencast, historic mining disturbance), but the land includes Drumshangie Moss peatland with organic soils/peat recorded on site, so it is recorded here as mixed. The site encompasses the location of the 1918 Stanrigg pit disaster: 19 miners died when peat moss inrushed the Arbuckle Pit; 11 bodies were never recovered and remain entombed, with a memorial c.100 m from the accident site. NLC LDP 2022 allocated parts of the landholding as NLC00520 (Data Centre, Greengairs Road, 65.30 ha) and NLC00519 (Energy Plant, 29.52 ha); APRS states the most recent development plan position switched the site toward mixed use. Coordinates are APRS's stated point for the proposal, not a verified red-line centroid.",
+  "source_ids": ["src-aprs-drumshangie", "src-shepherd-east-airdrie-sale", "src-east-airdrie-eia-nts", "src-wikipedia-stanrigg"]
+}

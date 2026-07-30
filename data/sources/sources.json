@@ -764,5 +764,113 @@
     "reliability_tier": 3,
     "perspective": "Landowner/regeneration JV material",
     "notes": "Describes Ravenscraig Ltd as a joint venture of Scottish Enterprise, Wilson Bowden Developments and Tata Steel regenerating the former Ravenscraig steelworks (closed 1992), one of Europe's largest brownfield regeneration sites."
+  },
+  {
+    "id": "src-aprs-drumshangie",
+    "title": "Apatura Drumshangie",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/drumshangie-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Rural-protection campaign group tracking Scottish data centre proposals; opposed to countryside development pressure. Used as lead-generation; factual claims cross-checked where possible.",
+    "notes": "Lists both PAN references (26/00069/PAN and 24/01025/PAN), PAN dates, coordinates, EIA screening outcome (EIA not required), 500MW grid application, Stanrigg disaster sensitivity, LDP history, and site-for-sale particulars link."
+  },
+  {
+    "id": "src-shepherd-east-airdrie-sale",
+    "title": "Digital/Data Centre & Manufacturing Campus, East Airdrie — sale particulars",
+    "publisher": "Shepherd Chartered Surveyors",
+    "source_type": "other",
+    "url": "https://www.shepherd.co.uk/property/digital-and-manufacturing-campus-east-airdrie/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Marketing particulars prepared by selling agent on behalf of the landowner; presents the site favourably.",
+    "notes": "States site area 117.21 ha (289.63 acres), ML6 7TD, over 1.2 million sq ft total floorspace, PAN 24/01025/PAN submitted 9 October 2024, grid connection application submitted 21 October 2024 for 500MW planned demand capacity, proposed uses incl. data centres, gigafactory, BESS. Offers invited (POA)."
+  },
+  {
+    "id": "src-dcd-apatura-ravenscraig-bebeez",
+    "title": "Apatura plans 500MW data center campus in Scotland (DCD article, republished by BeBeez International)",
+    "publisher": "Data Centre Dynamics / BeBeez International",
+    "source_type": "journalism",
+    "url": "https://bebeez.eu/2025/06/27/apatura-plans-500mw-data-center-campus-in-scotland/",
+    "publication_date": "2025-06-27",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "perspective": "Trade press. Original DCD URL (https://www.datacenterdynamics.com/en/news/apatura-plans-500mw-data-center-campus-in-scotland/) returned 403 from the research environment; text read via BeBeez republication.",
+    "notes": "Article body is primarily about Apatura's Ravenscraig 550MW proposal but includes Drumshangie background: 2012 data centre permission at the former Drumshangie Mine 'seemingly never came to fruition'; updated plans filed in 2024 by 'an affiliate of UK potato-supplier Albert Bartlett' for data centres, offices etc.; some filings reference an energy-from-waste facility. Also describes Apatura: founded 2014 per its own application, privately owned, claimed 10.6GW grid-secured portfolio incl. 1.8GW targeting data centres, five AI-ready central-belt sites."
+  },
+  {
+    "id": "src-east-airdrie-eia-nts",
+    "title": "Drumshangie, East Airdrie — Environmental Impact Assessment Report Vol 3: Non-Technical Summary (Albert Bartlett Ltd, July 2024)",
+    "publisher": "Albert Bartlett Ltd (applicant); hosted on docs.planning.org.uk",
+    "source_type": "eia_document",
+    "url": "https://docs.planning.org.uk/20240715/17/SGCE47BAH4J00/19036skit6wuvg7f.pdf",
+    "publication_date": "2024-07-15",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Applicant-commissioned EIA for Albert Bartlett Ltd's separate East Airdrie mixed-use PPiP (up to 3,000 homes, industrial and retail on c.383.27 ha) — NOT the data centre application itself, but covers the same landholding.",
+    "notes": "Confirms Albert Bartlett Ltd full ownership of the East Airdrie/Drumshangie landholding; NLC LDP 2022 allocations NLC00519 (Energy Plant, Greengairs Road, 29.52 ha), NLC00520 (Data Centre, Greengairs Road, 65.30 ha), NLC00585; site 'predominantly brownfield' with historic mining disturbance; peat/organic soils present; Drumshangie Moss North SINC and Drumshangie Moss: Dykehead (South) SINC; Stanrigg Memorial assessed as visual receptor (Viewpoint 7, slight effects)."
+  },
+  {
+    "id": "src-ch-apatura-ltd",
+    "title": "APATURA LTD (13948114) — Companies House overview and persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/13948114",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 1 March 2022 (formerly Green Power Consultants Holding Ltd until Oct 2023), Altrincham, Cheshire; SIC 35110/35120/35130. Active PSC: Felstead Ford Limited (14552991), 50-75% shares/votes, notified 1 Feb 2023. Conflicts with press claim that Apatura was 'founded in 2014'."
+  },
+  {
+    "id": "src-ch-apatura-dc",
+    "title": "APATURA DC LTD (16041291) and Apatura DC Project SPVs — Companies House",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16041291",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Apatura DC Ltd incorporated 25 October 2024; PSCs: Apatura Ltd (75%+) and Adrian Ashley Hill (right to appoint/remove directors). Companies House search also shows numbered SPVs 'Apatura DC Project 1–10 Ltd' incorporated 28 October 2024, plus Apatura Battery Ltd, Apatura Construction Ltd, Apatura Alba Ltd (SC832374, Edinburgh)."
+  },
+  {
+    "id": "src-ch-felstead-ford",
+    "title": "FELSTEAD FORD LIMITED (14552991) — persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/14552991/persons-with-significant-control",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Sole active PSC: Adrian Ashley Hill (born June 1978, British, UK resident), 75%+ shares and voting rights — ultimate beneficial owner of Apatura Ltd on the Companies House record."
+  },
+  {
+    "id": "src-ch-albert-bartlett",
+    "title": "Companies House search results: Albert Bartlett group companies",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/search?q=albert+bartlett",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Albert Bartlett & Sons (Airdrie) Limited (SC037896, inc. 1962), Albert Bartlett Holdings Limited (SC531407), Albert Bartlett Properties Limited (SC646257) — all registered at New Monkland, 251 Stirling Road, Airdrie ML6 7SP, adjoining the East Airdrie/Drumshangie landholding. Exact group entity named as EIA applicant is 'Albert Bartlett Ltd'."
+  },
+  {
+    "id": "src-wikipedia-stanrigg",
+    "title": "Stanrigg mining accident",
+    "publisher": "Wikipedia",
+    "source_type": "other",
+    "url": "https://en.wikipedia.org/wiki/Stanrigg_mining_accident",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "perspective": "Crowd-sourced encyclopaedia; consistent with Scottish Mining Website and Northern Mine Research Society accounts.",
+    "notes": "9 July 1918 inrush at Arbuckle Pit, Stanrigg Colliery: 19 miners killed including six teenage boys; 11 bodies never recovered and remain entombed at the site; cause was subsidence/inrush of the overlying peat moss. Memorial (standing stone plus 19 stones) erected c.100 m from the accident site; centenary commemoration 2018."
+  },
+  {
+    "id": "src-nlc-eplanning-portal",
+    "title": "North Lanarkshire Council ePlanning portal (Idox Public Access)",
+    "publisher": "North Lanarkshire Council",
+    "source_type": "planning_portal",
+    "url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "broken",
+    "notes": "Portal unreachable from the research environment on 2026-07-30 (TLS connection reset / HTTP 503 via proxy). PAN records 24/01025/PAN and 26/00069/PAN could therefore NOT be verified against the primary record; details rest on APRS and the selling agent's particulars. Re-check needed."
   }
 ]

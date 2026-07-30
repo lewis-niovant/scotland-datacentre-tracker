@@ -1,0 +1,16 @@
+{
+  "connection_status": "application",
+  "requested_import_capacity_mw": {
+    "value": 500,
+    "unit": "MW",
+    "state": "reported",
+    "claimant": "Shepherd Chartered Surveyors (selling agent, on behalf of landowner)",
+    "applicable_date": "2024-10-21",
+    "confidence": "medium",
+    "notes": "Sale particulars state a grid connection application was submitted on 21 October 2024 for 500MW planned demand capacity.",
+    "source_ids": ["src-shepherd-east-airdrie-sale"]
+  },
+  "evidence_basis": "Selling agent's sale particulars only; no network operator, NESO queue entry, connection offer, voltage or substation identified. The site sits in the SP Energy Networks licence area, but the counterparty to the application was not disclosed.",
+  "notes": "APRS repeats the 500MW grid-application figure. Whether Apatura's 2026 proposal relies on this same application, and whether it survived the 2025-26 connections-queue reform (Gate 1/Gate 2), is unknown.",
+  "source_ids": ["src-shepherd-east-airdrie-sale", "src-aprs-drumshangie"]
+}
