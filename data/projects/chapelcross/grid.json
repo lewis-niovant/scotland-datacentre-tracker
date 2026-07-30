@@ -1,0 +1,9 @@
+{
+  "network_operator": "SP Energy Networks (SP Distribution) / SP Transmission area",
+  "connection_status": "unknown",
+  "nearby_substation": "Chapelcross substation (grid supply point serving the former power station site)",
+  "reinforcement_required": null,
+  "evidence_basis": "Developer marketing only: 'grid connections to existing substations' plus private-wire connections to regional renewables. The former power station's grid infrastructure and a nearby Grid Supply Point are cited in SOSE material for the adjacent Energy Transition Zone. No NESO connections-queue entry, SPEN offer, or planning document evidencing a 1 GW (or any) connection for this project was located.",
+  "notes": "The 1 GW campus figure has no located grid counterpart; whether it implies a transmission-level connection application at Chapelcross is unverified.",
+  "source_ids": ["src-cx-campus-vision", "src-cx-govuk-nda-release"]
+}

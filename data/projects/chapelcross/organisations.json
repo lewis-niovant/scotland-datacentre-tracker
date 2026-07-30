@@ -1,0 +1,67 @@
+[
+  {
+    "name": "CX Power Limited",
+    "role": "developer",
+    "company_number": "16880627",
+    "jurisdiction": "England and Wales",
+    "website": "https://www.cxtechnologycampus.co.uk/",
+    "ownership_summary": "Described by NDA/SOSE as 'an entity comprising GA Consultants and Global Mutual Properties Limited'. CX Power Limited incorporated 28 November 2025 (nine days after the strategic-developer announcement), registered at Ort House, 147 Arlington Road, Camden, London NW1 7ET; SIC 68209 (letting/operating of own or leased real estate). Directors: Giovanni Maria Ciuccio, Graham Henry Edwards.",
+    "beneficial_owner_public": null,
+    "valid_from": "2025-11-28",
+    "confidence": "medium",
+    "notes": "PSC register entries not visible at retrieval (2026-07-30). It is inferred but not confirmed that CX Power Limited 16880627 is the 'CX Power' named in the NDA announcement (the announcement pre-dates incorporation).",
+    "source_ids": ["src-cx-companies-house", "src-cx-sose-strategic-developer"]
+  },
+  {
+    "name": "GA Consultants",
+    "role": "parent_company",
+    "ownership_summary": "Named as one of the two constituents of CX Power; SOSE gives CX Power's contact as enquiries@gaconsultants.co.uk. Corporate identity/company number not established.",
+    "confidence": "low",
+    "source_ids": ["src-cx-sose-strategic-developer", "src-cx-govuk-nda-release"]
+  },
+  {
+    "name": "Global Mutual Properties Limited",
+    "role": "parent_company",
+    "ownership_summary": "Named as the other constituent of CX Power; part of the Global Mutual real-estate investment group. Specific company number not verified.",
+    "confidence": "low",
+    "source_ids": ["src-cx-sose-strategic-developer", "src-cx-govuk-nda-release"]
+  },
+  {
+    "name": "Nuclear Decommissioning Authority",
+    "role": "landowner",
+    "jurisdiction": "UK (non-departmental public body)",
+    "website": "https://www.gov.uk/government/organisations/nuclear-decommissioning-authority",
+    "notes": "Owns the Chapelcross estate including the 135 acres of unlicensed land; entered Heads of Terms with CX Power in November 2025.",
+    "valid_from": "2025-11-19",
+    "confidence": "high",
+    "source_ids": ["src-cx-govuk-nda-release"]
+  },
+  {
+    "name": "Nuclear Restoration Services",
+    "role": "other",
+    "notes": "NDA group subsidiary operating/decommissioning the licensed Chapelcross site; partner in the wider hub programme and convenor of the Site Stakeholder Group.",
+    "confidence": "high",
+    "source_ids": ["src-cx-govuk-nda-release"]
+  },
+  {
+    "name": "South of Scotland Enterprise",
+    "role": "government",
+    "website": "https://www.southofscotlandenterprise.com/",
+    "notes": "Economic development agency; partner in the Chapelcross masterplan and manager of the adjacent (separate) Chapelcross Energy Transition Zone plots.",
+    "confidence": "high",
+    "source_ids": ["src-cx-sose-strategic-developer"]
+  },
+  {
+    "name": "Dumfries and Galloway Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "source_ids": ["src-cx-campus-website"]
+  },
+  {
+    "name": "Borderlands Inclusive Growth Deal (Borderlands Partnership)",
+    "role": "government",
+    "notes": "Named strategic partner in the wider Chapelcross hub programme; the £350m cross-border deal funds Chapelcross site infrastructure works, but no project-specific funding for the data centre campus has been identified. The campus itself is described as privately funded.",
+    "confidence": "medium",
+    "source_ids": ["src-cx-govuk-nda-release"]
+  }
+]

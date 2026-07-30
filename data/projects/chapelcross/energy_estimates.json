@@ -1,0 +1,14 @@
+[
+  {
+    "scenario_name": "Developer zero-carbon claim",
+    "renewable_claim_percent": 100,
+    "matching_method": "unstated",
+    "onsite_generation": "Private grid concept: grid connections to existing substations plus private-wire connections to renewable sources; power mix described as wind, solar, biomass, hydrogen and future low-carbon technologies; potential hydrogen integration for flexibility.",
+    "methodology": "None published. Claim rests on cited regional resources: 3 GW of renewable energy supplies within 50 miles and 1.2 GW of planned/consented wind and solar developments — not contracted supply.",
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "'Zero-carbon target in its energy operation' per the November 2025 announcement. No annual energy, PUE or load figures published; no PPA disclosed.",
+    "source_ids": ["src-cx-campus-vision", "src-cx-govuk-nda-release", "src-cx-no2np-repost"]
+  }
+]

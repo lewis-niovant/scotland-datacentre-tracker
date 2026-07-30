@@ -1,0 +1,34 @@
+{
+  "site_name": "Land north of former Chapelcross nuclear power station",
+  "settlement": "Creca / Annan",
+  "latitude": 55.02,
+  "longitude": -3.22,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 550000,
+    "min": 546000,
+    "max": 570000,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "CX Power / NDA",
+    "preferred": true,
+    "preferred_rationale": "Developer website states 55 hectares; NDA/SOSE releases describe 135 acres (54.6 ha) of unlicensed land; press reports 57 ha. Figures are close but not identical; developer figure preferred pending a red-line plan.",
+    "notes": "No red-line boundary published; coordinates are an approximate centroid of the Chapelcross estate north of the former station.",
+    "source_ids": ["src-cx-campus-website", "src-cx-govuk-nda-release", "src-cx-dng24-plan-unveiled"]
+  },
+  "gross_floor_area_m2": {
+    "value": 161920,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "CX Power",
+    "notes": "Stated as 'up to 161,920 sqm of data centre' floorspace, plus energy infrastructure, training facilities and industrial space.",
+    "source_ids": ["src-cx-campus-website", "src-cx-sose-strategic-developer"]
+  },
+  "greenfield_brownfield": "mixed",
+  "current_land_use": "Unlicensed NDA landholding adjacent to the licensed (decommissioning) Chapelcross nuclear site",
+  "previous_land_use": "Part of the Chapelcross nuclear power station estate (station operated 1959-2004; cooling towers demolished 2007)",
+  "nearest_settlements": ["Creca", "Annan", "Eastriggs"],
+  "land_notes": "Land owned by the Nuclear Decommissioning Authority; CX Power appointed as strategic developer of 135 acres within the unlicensed landholding under Heads of Terms (November 2025). Tenure structure (lease/sale) not disclosed. Greenfield/brownfield character of the specific 55 ha parcel not confirmed from planning documents; classed 'mixed' pending the scoping report.",
+  "source_ids": ["src-cx-govuk-nda-release", "src-cx-sose-strategic-developer", "src-cx-campus-about"]
+}

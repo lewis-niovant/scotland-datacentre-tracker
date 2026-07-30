@@ -1,0 +1,28 @@
+[
+  {
+    "claim_category": "total_jobs_unspecified",
+    "value": null,
+    "value_min": 200,
+    "unit": "jobs",
+    "geographic_scope": "Local economy (Annan / Dumfries and Galloway)",
+    "claimant": "NDA / SOSE (joint announcement)",
+    "methodology": "None published; phrase used is 'several hundred high value jobs'. Not broken down into construction vs operational, direct vs indirect, or FTE.",
+    "independently_reviewed": false,
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "value_min of 200 is a literal floor for 'several hundred'; no upper figure or category given. Press coverage repeats it as 'hundreds of high skilled jobs'.",
+    "source_ids": ["src-cx-govuk-nda-release", "src-cx-sose-strategic-developer", "src-cx-dng24-plan-unveiled"]
+  },
+  {
+    "claim_category": "capital_expenditure",
+    "value": null,
+    "unit": "gbp",
+    "claimant": "NDA / SOSE",
+    "binding_status": "aspirational",
+    "state": "not_disclosed",
+    "confidence": "low",
+    "notes": "Described only as a 'privately funded, multi-million pound' development; no capex figure published.",
+    "source_ids": ["src-cx-govuk-nda-release"]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "reference": null,
+    "planning_authority": "Dumfries and Galloway Council",
+    "application_type": "eia_scoping",
+    "description": "Developer states an EIA Scoping Report for the CX Technology Campus was submitted in March 2026, with a full Environmental Impact Assessment underway. Reference and scoping opinion could not be verified: the council ePlanning portal blocked automated access on 2026-07-30.",
+    "decision": "pending",
+    "eia_required": true,
+    "official_url": "https://eaccess.dumgal.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2026-03-01",
+        "event_type": "scoping_submission_claimed",
+        "title": "EIA Scoping Report submitted (developer-stated, March 2026; exact date unknown)",
+        "source_ids": ["src-cx-campus-website"]
+      }
+    ],
+    "source_ids": ["src-cx-campus-website", "src-cx-dumgal-portal-attempt"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Dumfries and Galloway Council",
+    "application_type": "pan",
+    "description": "Statutory-style pre-application community consultation is underway ahead of a Planning Permission in Principle application targeted for December 2026 (a PAN is required at least 12 weeks before a major application in Scotland, but no PAN reference has been located). Consultation events: Victoria Halls, Annan 12 May 2026 and Creca Hall 13 May 2026; second round Creca Village Hall 16 June 2026 and Victoria Halls, Annan 17 June 2026.",
+    "decision": "pending",
+    "official_url": "https://eaccess.dumgal.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2026-05-12",
+        "event_type": "consultation_event",
+        "title": "First consultation event, Victoria Halls, Annan",
+        "source_ids": ["src-cx-dng24-consultation"]
+      },
+      {
+        "event_date": "2026-05-13",
+        "event_type": "consultation_event",
+        "title": "Consultation event, Creca Hall",
+        "source_ids": ["src-cx-dng24-consultation"]
+      },
+      {
+        "event_date": "2026-06-16",
+        "event_type": "consultation_event",
+        "title": "Consultation event, Creca Village Hall",
+        "source_ids": ["src-cx-dng24-plan-unveiled"]
+      },
+      {
+        "event_date": "2026-06-17",
+        "event_type": "consultation_event",
+        "title": "Consultation event, Victoria Halls, Annan",
+        "source_ids": ["src-cx-dng24-plan-unveiled"]
+      }
+    ],
+    "source_ids": ["src-cx-dng24-consultation", "src-cx-dng24-plan-unveiled", "src-cx-dumgal-portal-attempt"]
+  }
+]

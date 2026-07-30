@@ -2021,5 +2021,138 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 4,
     "notes": "Coal-fired station operated 1967/68-2013; chimneys demolished 2015; used for site history and location cross-check only."
+  },
+  {
+    "id": "src-cx-sose-strategic-developer",
+    "title": "Strategic developer CX Power announced to accelerate Chapelcross Hub",
+    "publisher": "South of Scotland Enterprise",
+    "source_type": "government_publication",
+    "url": "https://www.southofscotlandenterprise.com/news/chapelcross-strategic-developer",
+    "publication_date": "2025-11-19",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Economic development agency and delivery partner; promotional standpoint",
+    "notes": "Names CX Power (GA Consultants + Global Mutual Properties Limited) as strategic developer of 135 acres of unlicensed NDA land; 1GW data centre campus claim; 'several hundred high value jobs'."
+  },
+  {
+    "id": "src-cx-govuk-nda-release",
+    "title": "NDA working with private developer to accelerate Chapelcross Hub",
+    "publisher": "Nuclear Decommissioning Authority / GOV.UK",
+    "source_type": "government_publication",
+    "url": "https://www.gov.uk/government/news/nda-working-with-private-developer-to-accelerate-chapelcross-hub",
+    "publication_date": "2025-11-19",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Landowner (NDA) press release; promotional standpoint",
+    "notes": "Heads of Terms between NDA and CX Power; 135 acres unlicensed land; 1GW data centre campus potential; privately funded multi-million pound development; Borderlands Growth Deal context (£350m deal-wide, not project-specific)."
+  },
+  {
+    "id": "src-cx-campus-website",
+    "title": "CX Technology Campus — homepage",
+    "publisher": "CX Power / CX Technology Campus",
+    "source_type": "developer_publication",
+    "url": "https://www.cxtechnologycampus.co.uk/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing",
+    "notes": "55-hectare campus; up to 161,920 sqm data centre floorspace; 1GW; EIA scoping report stated as submitted March 2026; Planning Permission in Principle targeted December 2026; phased construction 2027-2035."
+  },
+  {
+    "id": "src-cx-campus-about",
+    "title": "CX Technology Campus — About Us",
+    "publisher": "CX Power / CX Technology Campus",
+    "source_type": "developer_publication",
+    "url": "https://www.cxtechnologycampus.co.uk/about-us/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing",
+    "notes": "Site described as land to the north of the former Chapelcross nuclear power station; components: data centres, substation, light industrial, skills hub."
+  },
+  {
+    "id": "src-cx-campus-vision",
+    "title": "CX Technology Campus — Our Vision",
+    "publisher": "CX Power / CX Technology Campus",
+    "source_type": "developer_publication",
+    "url": "https://www.cxtechnologycampus.co.uk/our-vision/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing",
+    "notes": "Private grid strategy: grid connections to existing substations, private wire to renewables, hydrogen integration; power mix wind/solar/biomass/hydrogen."
+  },
+  {
+    "id": "src-cx-dng24-consultation",
+    "title": "CX Technology Campus launches community consultation for future of Chapelcross",
+    "publisher": "DnG24 (Dumfries & Galloway news)",
+    "source_type": "journalism",
+    "url": "https://www.dng24.co.uk/cx-technology-campus-launches-community-consultation-for-future-of-chapelcross/",
+    "publication_date": "2026-05-06",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "First consultation events Victoria Halls Annan 12 May 2026 (3-7pm) and Creca Hall 13 May 2026 (5-7pm); environmental studies underway ahead of Planning Permission in Principle submission. Publication date approximate (early May 2026); accessed via search excerpt as site returned 403 to direct fetch."
+  },
+  {
+    "id": "src-cx-dng24-plan-unveiled",
+    "title": "AI data centre plan unveiled",
+    "publisher": "DnG24 (Dumfries & Galloway news)",
+    "source_type": "journalism",
+    "url": "https://www.dng24.co.uk/ai-data-centre-plan-unveiled/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "57-hectare campus 'could be operational by 2030'; hundreds of high-skilled jobs; further consultation events Creca Village Hall 16 June 2026 and Victoria Halls Annan 17 June 2026. Accessed via search excerpts; direct fetch returned 403."
+  },
+  {
+    "id": "src-cx-no2np-repost",
+    "title": "Chapelcross (news digest, 21 November 2025)",
+    "publisher": "No2NuclearPower",
+    "source_type": "campaign_material",
+    "url": "https://www.no2nuclearpower.org.uk/news/chapelcross-21-11-25/",
+    "publication_date": "2025-11-21",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Anti-nuclear campaign site reproducing press coverage; no editorial criticism added in this item",
+    "notes": "Reproduces trade press coverage: 1GW campus, 3GW renewables within 50 miles, 1.2GW planned/consented wind and solar, cooling 'that doesn't place a burden on water resources' targeting 'full water neutrality'."
+  },
+  {
+    "id": "src-cx-projectscot",
+    "title": "Strategic developer announced to accelerate Chapelcross masterplan",
+    "publisher": "Project Scotland",
+    "source_type": "journalism",
+    "url": "https://projectscot.com/2025/11/strategic-developer-announced-to-accelerate-chapelcross-masterplan/",
+    "publication_date": "2025-11-20",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Trade press coverage of NDA/CX Power announcement. Publication date approximate (November 2025)."
+  },
+  {
+    "id": "src-cx-companies-house",
+    "title": "CX POWER LIMITED (company 16880627), Companies House register",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16880627",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 28 November 2025 (nine days after the NDA announcement); registered office Ort House, 147 Arlington Road, Camden, London NW1 7ET; SIC 68209; directors Giovanni Maria Ciuccio and Graham Henry Edwards; PSC page returned no results at retrieval (PSC data not yet visible)."
+  },
+  {
+    "id": "src-cx-dumgal-portal-attempt",
+    "title": "Dumfries & Galloway Council ePlanning portal (search attempted, blocked)",
+    "publisher": "Dumfries and Galloway Council",
+    "source_type": "planning_portal",
+    "url": "https://eaccess.dumgal.gov.uk/online-applications/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "broken",
+    "notes": "Portal search for 'Chapelcross' could not be completed on 2026-07-30: Cloudflare anti-bot challenge blocked programmatic access. No PAN or EIA scoping reference could therefore be verified against the official record."
+  },
+  {
+    "id": "src-cx-nrsssg-meeting-pack",
+    "title": "Chapelcross Site Stakeholder Group meeting pack, 18 March 2026",
+    "publisher": "Nuclear Restoration Services Site Stakeholder Groups",
+    "source_type": "government_publication",
+    "url": "https://nrsssg.com/wp-content/uploads/2026/01/Meeting-Pack-Of-Papers-And-Reports-For-the-Chapelcross-SSG-Meeting-Wednesday-18-March-2026.pdf",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "broken",
+    "notes": "PDF download failed (503/truncated) on 2026-07-30. Search excerpts attribute to SSG material: data centre relocated to Chapelcross site with manufacturing/R&D moving to Eastriggs; 'potential site commencement in 2027'. Needs verification against the document itself."
   }
 ]
