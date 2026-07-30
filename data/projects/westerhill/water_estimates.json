@@ -1,0 +1,14 @@
+[
+  {
+    "phase": "operational",
+    "cooling_type": "closed_loop_liquid",
+    "cooling_description": "Developer states a 'highly efficient closed-loop water cooling system' recycling the same water, with a heat-exchange plant sized to enable future export of recovered heat to district heating networks.",
+    "annual_water_m3": null,
+    "closed_loop": true,
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "No water volumes, source of supply, or WUE disclosed. Claim that closed-loop design 'drastically reduces water consumption' is unquantified.",
+    "source_ids": ["src-apatura-westerhill-panels"]
+  }
+]

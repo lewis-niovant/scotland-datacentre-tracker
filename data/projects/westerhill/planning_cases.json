@@ -1,0 +1,63 @@
+[
+  {
+    "reference": "TP/ED/25/0245",
+    "planning_authority": "East Dunbartonshire Council",
+    "application_type": "eia_screening",
+    "description": "EIA Screening Opinion for a proposed Data Centre Campus development on land South and West of Crosshill Road, Westerhill, Glasgow, G66 4SR.",
+    "submission_date": "2025-04-29",
+    "validation_date": "2025-04-29",
+    "decision_date": "2025-07-08",
+    "decision": "screening_eia_required",
+    "eia_required": true,
+    "official_url": "https://planning.eastdunbarton.gov.uk/online-applications/applicationDetails.do?keyVal=SVGZSLGJ09L00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-edc-portal-tp-ed-25-0245"]
+  },
+  {
+    "reference": "ENQ/ED/2025/00075",
+    "planning_authority": "East Dunbartonshire Council (consultee to Scottish Government Energy Consents Unit)",
+    "application_type": "eia_screening",
+    "description": "Energy Consents Unit consultation on EIA Screening Opinion EDC00006158 — BESS element on the same site (intended s36 route).",
+    "submission_date": "2025-05-15",
+    "validation_date": "2025-05-15",
+    "decision_date": "2025-07-08",
+    "decision": "screening_eia_required",
+    "eia_required": true,
+    "official_url": "https://planning.eastdunbarton.gov.uk/online-applications/applicationDetails.do?keyVal=SWAOP2GJ06G00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-edc-portal-enq-ed-2025-00075"]
+  },
+  {
+    "reference": "TP/ED/25/0428",
+    "planning_authority": "East Dunbartonshire Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice: Erection of an AI data centre with 300MW demand utility capacity with ancillary BESS (to be consented via separate S36 application to the ECU), car parking, landscaping, roads, access and associated works. Land Adjacent To Crosshill Road, Bishopbriggs. Applicant Apatura DC Project 6 Ltd.",
+    "submission_date": "2025-08-01",
+    "validation_date": "2025-08-26",
+    "decision_date": "2025-09-16",
+    "decision": "other",
+    "decision_notes": "Portal shows status 'Decided', decision 'Closed' (PAN process concluded); this is not a consent decision.",
+    "official_url": "https://planning.eastdunbarton.gov.uk/online-applications/applicationDetails.do?keyVal=T0B1NMGJ09L00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-09-29",
+        "event_type": "public_consultation_event",
+        "title": "Pre-application public exhibition, Allan Glens Rugby Club, 212 Kirkintilloch Road, Bishopbriggs G64 2NE",
+        "source_ids": ["src-public-notice-portal-westerhill-pan"]
+      }
+    ],
+    "source_ids": ["src-edc-portal-tp-ed-25-0428", "src-public-notice-portal-westerhill-pan"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Scottish Government Energy Consents Unit",
+    "application_type": "s36",
+    "description": "Intended section 36 application for the 500MW BESS. No application located on the ECU register as of 30 July 2026 (register search returned an application error; web searches found no lodged application). ECU screening reference EDC00006158 evidences pre-application engagement.",
+    "decision": "pending",
+    "eia_required": true,
+    "official_url": "https://www.energyconsents.scot/Register.aspx",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-edc-portal-enq-ed-2025-00075", "src-apatura-westerhill-project"]
+  }
+]

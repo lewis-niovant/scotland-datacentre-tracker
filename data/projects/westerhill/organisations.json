@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Apatura Ltd",
+    "role": "developer",
+    "company_number": "13948114",
+    "jurisdiction": "England and Wales",
+    "website": "https://apatura.energy/",
+    "ownership_summary": "UK energy storage and data centre developer with offices in York and Edinburgh; promotes multiple Scottish data centre projects (Ravenscraig, Wester Hermiston, Coldstream, Freeport West Lothian, Ochiltree, Westerhill).",
+    "confidence": "high",
+    "source_ids": ["src-apatura-westerhill-project", "src-foxglove-scotland-dc"]
+  },
+  {
+    "name": "Apatura DC Project 6 Ltd",
+    "role": "applicant",
+    "company_number": "16044735",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "SPV incorporated 28 Oct 2024, registered office 3rd Floor 1 Ashley Road, Altrincham WA14 2DT; SIC codes 35110/35120/35130 (electricity). Named as applicant on the PAN public notice.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "notes": "One of at least 12 numbered 'Apatura DC Project' SPVs at the same registered address.",
+    "source_ids": ["src-companies-house-apatura-dc6", "src-public-notice-portal-westerhill-pan"]
+  },
+  {
+    "name": "AAH Consultants (AAH Planning)",
+    "role": "consultant",
+    "website": "https://www.aahconsultants.co.uk",
+    "notes": "Apatura's planning consultant; named on consultation panels as supporting all Apatura planning applications.",
+    "confidence": "high",
+    "source_ids": ["src-apatura-westerhill-panels"]
+  },
+  {
+    "name": "East Dunbartonshire Council",
+    "role": "planning_authority",
+    "notes": "Planning authority for the data centre element; also promoter of the Westerhill Regeneration Area masterplan and Westerhill Development Road under the Glasgow City Region City Deal.",
+    "confidence": "high",
+    "source_ids": ["src-edc-portal-tp-ed-25-0428", "src-edc-westerhill-masterplan"]
+  },
+  {
+    "name": "Scottish Government Energy Consents Unit",
+    "role": "government",
+    "notes": "Intended consenting authority for the 500MW BESS via section 36 of the Electricity Act 1989.",
+    "confidence": "high",
+    "source_ids": ["src-edc-portal-enq-ed-2025-00075", "src-apatura-westerhill-project"]
+  },
+  {
+    "name": "National Energy System Operator (NESO)",
+    "role": "network_operator",
+    "notes": "Developer states a formal grid connection agreement/offer was accepted with NESO in June 2025; connection proposed to Lambhill substation. Not independently verified.",
+    "confidence": "medium",
+    "source_ids": ["src-apatura-westerhill-project", "src-apatura-westerhill-panels"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot/bishopbriggs-dc/",
+    "notes": "Tracks the proposal as part of its data centres campaign; calls for a moratorium on hyperscale AI data centres in Scotland.",
+    "confidence": "high",
+    "source_ids": ["src-aprs-westerhill"]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 300,
+    "state": "developer_stated",
+    "claimant": "Apatura DC Project 6 Ltd",
+    "phase": "full campus",
+    "confidence": "high",
+    "preferred": true,
+    "preferred_rationale": "Matches the PAN description on the council portal ('300MW demand utility capacity') and all developer material.",
+    "notes": "Described as 'demand utility capacity' in PAN TP/ED/25/0428; developer material calls it a '300MW AI data campus'. Not explicitly broken down into IT load vs total demand.",
+    "source_ids": ["src-edc-portal-tp-ed-25-0428", "src-apatura-westerhill-project", "src-foxglove-scotland-dc"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 500,
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "confidence": "high",
+    "notes": "500MW BESS in containerised units across three battery areas; intended to be consented separately under section 36 via the Energy Consents Unit. ECU EIA screening reference EDC00006158; screening concluded EIA required (8 Jul 2025). No s36 application located as of 30 Jul 2026.",
+    "source_ids": ["src-apatura-westerhill-project", "src-apatura-westerhill-panels", "src-edc-portal-enq-ed-2025-00075"]
+  },
+  {
+    "capacity_type": "it_load",
+    "value_mw": 240,
+    "state": "inferred",
+    "claimant": "Scotland Data Centre Observatory (sum of building labels)",
+    "confidence": "medium",
+    "notes": "Consultation masterplan labels the four data centre buildings 80MW + 64MW + 48MW + 48MW = 240MW, against the 300MW campus demand figure. Interpretation (IT load vs building demand) not stated by developer.",
+    "source_ids": ["src-apatura-westerhill-panels"]
+  },
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 200,
+    "state": "reported",
+    "claimant": "Action to Protect Rural Scotland",
+    "confidence": "low",
+    "notes": "APRS page headline describes 'a 200MW data centre', inconsistent with the 300MW figure it also cites from the developer website; likely an error but preserved as a conflicting claim.",
+    "source_ids": ["src-aprs-westerhill"]
+  }
+]

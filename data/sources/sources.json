@@ -1518,5 +1518,123 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 4,
     "notes": "Direct fetch returned 403; via search snippets: frames the project around using curtailed Lammermuir wind generation; £2bn investment figure."
+  },
+  {
+    "id": "src-edc-portal-tp-ed-25-0428",
+    "title": "TP/ED/25/0428 — Proposal of Application Notice: Erection of an AI data centre with 300MW demand utility capacity with ancillary BESS (to be consented via separate S36 application to the ECU), Land Adjacent To Crosshill Road, Bishopbriggs",
+    "publisher": "East Dunbartonshire Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://planning.eastdunbarton.gov.uk/online-applications/applicationDetails.do?keyVal=T0B1NMGJ09L00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "PAN received 2025-08-01, validated 2025-08-26, status Decided/Closed 2025-09-16. 2 documents, 3 related cases listed on portal."
+  },
+  {
+    "id": "src-edc-portal-tp-ed-25-0245",
+    "title": "TP/ED/25/0245 — EIA Screening Opinion for a proposed Data Centre Campus development on land South and West of Crosshill Road, Westerhill, Glasgow, G66 4SR",
+    "publisher": "East Dunbartonshire Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://planning.eastdunbarton.gov.uk/online-applications/applicationDetails.do?keyVal=SVGZSLGJ09L00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Received/validated 2025-04-29; decision 'EIA Required' issued 2025-07-08."
+  },
+  {
+    "id": "src-edc-portal-enq-ed-2025-00075",
+    "title": "ENQ/ED/2025/00075 — Energy Consents Unit consultation on EIA Screening Opinion EDC00006158 (BESS), Land Adjacent To Crosshill Road, Bishopbriggs",
+    "publisher": "East Dunbartonshire Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://planning.eastdunbarton.gov.uk/online-applications/applicationDetails.do?keyVal=SWAOP2GJ06G00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Received 2025-05-15; decision 'EIA Required' issued 2025-07-08. ECU screening reference EDC00006158 relates to the s36 BESS element."
+  },
+  {
+    "id": "src-companies-house-apatura-dc6",
+    "title": "APATURA DC PROJECT 6 LTD (16044735) — company overview",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16044735",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Active private limited company, incorporated 2024-10-28, registered office 3rd Floor 1 Ashley Road, Altrincham, Cheshire WA14 2DT. SIC 35110/35120/35130 (electricity production/transmission/distribution)."
+  },
+  {
+    "id": "src-apatura-westerhill-project",
+    "title": "Westerhill AI Energy Campus — The Project (consultation website)",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/westerhill/the-project",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material",
+    "notes": "300MW data centre + 500MW BESS; BESS via s36 to ECU; grid connection to Lambhill substation; NESO grid offer accepted June 2025; indicative timeline to 2029 operation."
+  },
+  {
+    "id": "src-apatura-westerhill-panels",
+    "title": "Westerhill AI Energy Campus public consultation exhibition panels (v2, August 2025)",
+    "publisher": "Apatura / AAH Consultants",
+    "source_type": "developer_publication",
+    "url": "https://145830797.fs1.hubspotusercontent-eu1.net/hubfs/145830797/Westerhill%20panels-v2.pdf",
+    "publication_date": "2025-08-15",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer consultation material",
+    "notes": "Masterplan layout: Building A 80MW (10 data halls), Building B 64MW (8 DH), Buildings C1 & C2 48MW each (6 DH); three BESS areas; substation; district heating building; economic claims (£2.1bn capex, 2,157 construction jobs/yr, 1,730 operational jobs/yr, £642m construction GVA, £420m/yr operational, £91.2m local construction spend); site partially Green Belt, adjacent Antonine Wall WHS buffer zone; closed-loop water cooling; s75 community benefit; PDF metadata dated 2025-08-15."
+  },
+  {
+    "id": "src-aprs-westerhill",
+    "title": "Apatura Westerhill (Bishopbriggs) — data centre campaign page",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/bishopbriggs-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group seeking moratorium on hyperscale AI data centres; lead-generation use only, but page lists primary planning references",
+    "notes": "Lists TP/ED/25/0245 (EIA Required), TP/ED/25/0428 (PAN), ENQ case for BESS; coordinates 55.920970, -4.189606; 'Green Belt farmland between Bishopbriggs and Lenzie'; info last checked 23 Feb 2026, status 'pre planning'. Page headline says 200MW, inconsistent with its own 300MW figure elsewhere."
+  },
+  {
+    "id": "src-urban-realm-westerhill",
+    "title": "Planned data centre to ensure Bishopbriggs plays a role in the AI economy",
+    "publisher": "Urban Realm",
+    "source_type": "journalism",
+    "url": "https://www.urbanrealm.com/news/2025/09/02/planned-data-centre-to-ensure-bishopbriggs-plays-a-role-in-the-ai-economy/",
+    "publication_date": "2025-09-02",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports 300MW data centre, 500MW battery storage in containers, low-profile data halls, 4m CCTV, 2.4m fence; application expected by end of 2025. Full text behind bot-protection; content via search extracts."
+  },
+  {
+    "id": "src-foxglove-scotland-dc",
+    "title": "Data centres planned for Scotland could use three quarters of country's current electricity demand",
+    "publisher": "Foxglove",
+    "source_type": "campaign_material",
+    "url": "https://www.foxglove.org.uk/wp-content/uploads/2025/12/2025_12_02_PUB-Scotland-planned-data-centres.pdf",
+    "publication_date": "2025-12-02",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Tech-justice campaign group critical of hyperscale data centres",
+    "notes": "Table compiled from planning portals (Nov 2025) lists Westerhill, Land Adjacent To Crosshill Road, Bishopbriggs: 300MW capacity, developer Apatura, East Dunbartonshire; no emissions figure."
+  },
+  {
+    "id": "src-edc-westerhill-masterplan",
+    "title": "Westerhill Regeneration Area — Masterplan, Development Road and useful links",
+    "publisher": "East Dunbartonshire Council",
+    "source_type": "government_publication",
+    "url": "https://www.eastdunbarton.gov.uk/services/a-z-of-services/planning-building-standards/city-deal/westerhill-regeneration-area/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "WRA planning guidance adopted by the Council 2024-09-26 as guidance under LDP2 and a material consideration; c.300 ha area; part of £46.77m Place and Growth Programme (Glasgow City Region City Deal); includes Westerhill Development Road."
+  },
+  {
+    "id": "src-public-notice-portal-westerhill-pan",
+    "title": "Public notice: pre-application consultation event, Allan Glens Rugby Club, 212 Kirkintilloch Road, Bishopbriggs (Apatura DC Project 6 Ltd, Land East of Crosshill Road, Westerhill, Glasgow, G66 4SR)",
+    "publisher": "Public Notice Portal",
+    "source_type": "other",
+    "url": "https://publicnoticeportal.uk/notice/planning/68c9fa645f4b94a032c43960",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "broken",
+    "notes": "Statutory PAN public notice naming applicant Apatura DC Project 6 Ltd and exhibition of 2025-09-29; URL returned 404 at retrieval, content recovered via search extracts."
   }
 ]

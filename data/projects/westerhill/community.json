@@ -1,0 +1,47 @@
+{
+  "summary": "Formal community response is limited so far because the project remains pre-application: no application is open for representations. Apatura held statutory pre-application consultation in September 2025, including a public exhibition at Allan Glens Rugby Club, Bishopbriggs (29 September 2025) and an online consultation site. APRS tracks the site in its national data centres campaign, characterising it as Green Belt farmland between Bishopbriggs and Lenzie and calling for a moratorium on hyperscale AI data centres; Foxglove included the site in its December 2025 analysis of the aggregate electricity demand of planned Scottish data centres. No community council position, objection counts, or East Dunbartonshire Council member statements were located.",
+  "principal_concerns": [
+    {
+      "concern": "Loss of Green Belt farmland between Bishopbriggs and Lenzie",
+      "raised_by": "Action to Protect Rural Scotland",
+      "developer_response": "Apatura states the site is partially Green Belt but allocated for development within the adopted Westerhill Regeneration Area, with landscaping/screening and ecological mitigation zones proposed.",
+      "source_ids": ["src-aprs-westerhill", "src-apatura-westerhill-panels"]
+    },
+    {
+      "concern": "Aggregate electricity demand of planned Scottish data centres (Westerhill counted at 300MW within a 2,000-3,000MW national pipeline)",
+      "raised_by": "Foxglove",
+      "source_ids": ["src-foxglove-scotland-dc"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Community benefit fund coordinated by the council through Section 75 agreements, potentially administered with a partner such as Foundation Scotland",
+      "claimant": "Apatura",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-apatura-westerhill-panels"]
+    },
+    {
+      "benefit": "Potential recovered-heat supply to local district heating networks via an on-site heat-exchange plant",
+      "claimant": "Apatura",
+      "binding_status": "aspirational",
+      "source_ids": ["src-apatura-westerhill-panels"]
+    },
+    {
+      "benefit": "Skills partnerships with local colleges and universities; jobs and investment supporting the Westerhill Regeneration Area vision",
+      "claimant": "Apatura",
+      "binding_status": "aspirational",
+      "source_ids": ["src-apatura-westerhill-panels"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland",
+      "stakeholder_type": "campaign_group",
+      "position": "Monitors the proposal within its data centres campaign; nationally seeks a moratorium on hyperscale AI data centres until governance and policy frameworks are, in its view, fit for purpose.",
+      "source_ids": ["src-aprs-westerhill"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland", "Foxglove"],
+  "planning_authority_contact": "East Dunbartonshire Council, 12 Strathkelvin Place, Kirkintilloch G66 1TJ; 0300 123 4510; customerservices@eastdunbarton.gov.uk",
+  "notes": "Objection/support counts will only exist once a full application is validated. The council's position as planning authority is undetermined; note the council separately promotes the Westerhill Regeneration Area masterplan within which the site sits, which may be a point of local debate about its dual role."
+}
