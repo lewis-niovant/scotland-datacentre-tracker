@@ -1,0 +1,20 @@
+{
+  "site_name": "Dounreay (former nuclear site)",
+  "settlement": "Dounreay, near Thurso",
+  "latitude": 58.578,
+  "longitude": -3.744,
+  "location_precision": "settlement_level",
+  "site_area_m2": {
+    "value": 1480000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "Invest Highland",
+    "notes": "Marketed as 148 hectares; boundary of the marketed land within/around the licensed nuclear site not published",
+    "source_ids": ["src-invest-highland-data-centres"]
+  },
+  "greenfield_brownfield": "brownfield",
+  "current_land_use": "Nuclear licensed site undergoing decommissioning (NDA/Nuclear Restoration Services)",
+  "previous_land_use": "Dounreay nuclear research and fast reactor establishment",
+  "land_notes": "Marketed by Invest Highland as NDA-owned, 'short term' availability. Compatibility of hyperscale development with an active nuclear decommissioning programme is unaddressed in the marketing.",
+  "source_ids": ["src-invest-highland-data-centres", "src-invest-highland-opportunities"]
+}

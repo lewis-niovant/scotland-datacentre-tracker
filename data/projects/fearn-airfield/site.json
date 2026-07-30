@@ -1,0 +1,21 @@
+{
+  "site_name": "Fearn Airfield and surrounds",
+  "settlement": "Hill of Fearn, near Tain",
+  "latitude": 57.759,
+  "longitude": -3.943,
+  "location_precision": "settlement_level",
+  "site_area_m2": {
+    "value": 3150000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "Invest Highland",
+    "notes": "Marketed as 315 hectares including 'surrounds'; no boundary published",
+    "source_ids": ["src-invest-highland-data-centres"]
+  },
+  "greenfield_brownfield": "mixed",
+  "current_land_use": "Former airfield with agricultural buildings and farmland; adjacent Easter Airfield remains in use as an unlicensed airstrip",
+  "previous_land_use": "RAF Fearn / Royal Navy air station HMS Owl (WWII)",
+  "nearest_settlements": ["Hill of Fearn", "Balintore", "Tain"],
+  "land_notes": "Marketed by Invest Highland as owned by a 'local landowner' (unnamed), availability 'short term', for renewable energy, data centre and commercial development.",
+  "source_ids": ["src-invest-highland-data-centres", "src-invest-highland-opportunities"]
+}

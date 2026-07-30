@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Unnamed local landowner",
+    "role": "landowner",
+    "confidence": "low",
+    "notes": "Invest Highland states ownership by a 'local landowner' without naming them.",
+    "source_ids": ["src-invest-highland-data-centres"]
+  },
+  {
+    "name": "Invest Highland (The Highland Council)",
+    "role": "government",
+    "website": "https://investhighland.com",
+    "notes": "Inward-investment agency marketing the opportunity; contact invest@highland.gov.uk.",
+    "source_ids": ["src-invest-highland-data-centres", "src-invest-highland-opportunities"]
+  },
+  {
+    "name": "The Highland Council",
+    "role": "planning_authority",
+    "source_ids": ["src-invest-highland-data-centres"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "reference": "20/01258/SCRE",
+    "planning_authority": "The Highland Council",
+    "application_type": "eia_screening",
+    "description": "Request for EIA Screening Opinion — Development of data centre, Land 500M West of Philips Mains, Mey. Attribution to the SIMEC Atlantis MeyGen data centre proposal is inferred from location and timing; the applicant name could not be confirmed because the council portal was unavailable (HTTP 503) at retrieval.",
+    "submission_date": "2020-03-13",
+    "decision_date": "2020-03-25",
+    "decision": "other",
+    "decision_notes": "PlanIt records app_state 'Permitted' (screening opinion issued); whether EIA was required is not stated in the aggregate record.",
+    "eia_required": null,
+    "official_url": "https://wam.highland.gov.uk/wam/applicationDetails.do?keyVal=Q7CGAQIH09K00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-highland-20-01258-scre", "src-highland-wam-20-01258-scre"]
+  }
+]

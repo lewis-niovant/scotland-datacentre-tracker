@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Simec Atlantis Energy Ltd (now SAE Renewables)",
+    "role": "landowner",
+    "website": "https://saerenewables.com",
+    "notes": "Stated by Invest Highland as owner of the 20+ ha marketed site; also the MeyGen tidal array owner and originator of the 2019 data centre proposal.",
+    "confidence": "medium",
+    "source_ids": ["src-invest-highland-data-centres", "src-proactive-simec-datacentre-2019"]
+  },
+  {
+    "name": "SIMEC Atlantis Energy / SAE Renewables",
+    "role": "developer",
+    "valid_from": "2019-11-01",
+    "confidence": "medium",
+    "notes": "Announced and promoted the ocean-powered data centre 2019-2020; no data centre activity attributed to SAE since, and its current Mey planning activity is the 300 MW Mey BESS. Developer role treated as historic/dormant.",
+    "source_ids": ["src-proactive-simec-datacentre-2019", "src-renewablesnow-atlantis-datacentre-update", "src-jog-mey-bess"]
+  },
+  {
+    "name": "Invest Highland (The Highland Council)",
+    "role": "government",
+    "website": "https://investhighland.com",
+    "notes": "Markets the site as a hyperscale data centre investment opportunity; contact invest@highland.gov.uk.",
+    "source_ids": ["src-invest-highland-data-centres", "src-invest-highland-opportunities"]
+  },
+  {
+    "name": "The Highland Council",
+    "role": "planning_authority",
+    "source_ids": ["src-planit-highland-20-01258-scre"]
+  }
+]

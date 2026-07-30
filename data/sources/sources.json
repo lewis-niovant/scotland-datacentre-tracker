@@ -3041,5 +3041,89 @@
     "url": "https://www.datacenterdynamics.com/en/news/750m-supercomputer-for-university-of-edinburgh-back-on-the-table-after-government-u-turn/",
     "reliability_tier": 4,
     "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-invest-highland-data-centres",
+    "title": "Data Centres — sector page listing Dounreay, MeyGen and Fearn Airfield hyperscale data centre opportunities",
+    "publisher": "Invest Highland (The Highland Council)",
+    "source_type": "government_publication",
+    "url": "https://investhighland.com/sectors/data-centres/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Inward-investment marketing by the local authority; promotional framing, no independent verification of power/fibre claims",
+    "notes": "States Dounreay 148 ha (NDA-owned, decommissioning, 'abundant clean and green power options', Farice subsea cable link to London, potential AE-5); MeyGen 20+ ha greenfield owned by Simec Atlantis Energy Ltd, tidal generation; Fearn Airfield 315 ha, local landowner, former RAF airfield. All listed as 'short term' availability."
+  },
+  {
+    "id": "src-invest-highland-opportunities",
+    "title": "Investment Opportunities listing (Dounreay, MeyGen, Fearn Airfield and Surrounds)",
+    "publisher": "Invest Highland (The Highland Council)",
+    "source_type": "government_publication",
+    "url": "https://investhighland.com/investment/investment-opportunities",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Local-authority investment marketing",
+    "notes": "Individual project URLs (e.g. /project/dounreay/) redirect back to this listing page; the listing is the effective primary marketing record."
+  },
+  {
+    "id": "src-planit-highland-20-01258-scre",
+    "title": "PlanIt record 20/01258/SCRE — Request for EIA Screening Opinion, Development of data centre, Land 500M West Of Philips Mains, Mey",
+    "publisher": "PlanIt (aggregating The Highland Council planning register)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/api/applics/json?search=data%20centre&auth=Highland",
+    "publication_date": "2020-03-13",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "Start date 2020-03-13, decided 2020-03-25, app_state 'Permitted' (screening opinion issued; EIA requirement outcome not stated in the aggregate record). Coordinates -3.219615, 58.629519."
+  },
+  {
+    "id": "src-highland-wam-20-01258-scre",
+    "title": "Highland Council planning portal record 20/01258/SCRE (Mey data centre EIA screening)",
+    "publisher": "The Highland Council",
+    "source_type": "planning_portal",
+    "url": "https://wam.highland.gov.uk/wam/applicationDetails.do?keyVal=Q7CGAQIH09K00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "broken",
+    "notes": "Portal returned HTTP 503 on 2026-07-30; details taken from PlanIt aggregate record. Applicant name not yet confirmed from the official record."
+  },
+  {
+    "id": "src-proactive-simec-datacentre-2019",
+    "title": "SIMEC Atlantis unveils plans to create tidal powered data centre in Scotland",
+    "publisher": "Proactive Investors",
+    "source_type": "journalism",
+    "url": "https://www.proactiveinvestors.co.uk/companies/news/902268/simec-atlantis-unveils-plans-to-create-tidal-powered-data-centre-in-scotland-902268.html",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "2019 announcement of 'world's first ocean-powered data centre' in Caithness supplied from MeyGen; ~80 MW additional tidal capacity planned; hyperscale ambition; original target of going live by 2024."
+  },
+  {
+    "id": "src-renewablesnow-atlantis-datacentre-update",
+    "title": "Atlantis provides update on MeyGen, continues work on data centre plan",
+    "publisher": "Renewables Now",
+    "source_type": "journalism",
+    "url": "https://renewablesnow.com/news/atlantis-provides-update-on-meygen-continues-work-on-data-centre-plan-684863/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Follow-up reporting c.2020: data centre to be connected to the tidal array by private wire, 'virtual power plant' concept with nearby wind farms, international subsea fibre connections envisaged."
+  },
+  {
+    "id": "src-jog-mey-bess",
+    "title": "300MW battery storage plan unveiled by SAE Renewables for site near Mey in Caithness",
+    "publisher": "John O'Groat Journal",
+    "source_type": "journalism",
+    "url": "https://www.johnogroat-journal.co.uk/news/300mw-battery-storage-plan-unveiled-11-hectare-site-near-mey-354113/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Context: SAE Renewables' 300 MW / 1.2 GWh Mey BESS (s36) on 10.7 ha next to the consented Gills Bay 132kV substation — same locality as the 2020 data centre screening; shows SAE's current focus at Mey is battery storage, not the data centre."
+  },
+  {
+    "id": "src-farrpoint-datacentre-longlist",
+    "title": "Data Centre Site Development Longlist for Scotland",
+    "publisher": "FarrPoint for Scottish Enterprise / Scottish Futures Trust",
+    "source_type": "government_publication",
+    "url": "https://www.farrpoint.com/uploads/store/mediaupload/1713/file/Data-centre-sites-in-scotland-report-FarrPoint.pdf",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "National site longlist context for Scottish green data hosting strategy; background to Highland Council's marketing of northern sites."
   }
 ]
