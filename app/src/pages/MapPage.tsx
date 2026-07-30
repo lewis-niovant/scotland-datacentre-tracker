@@ -1,11 +1,13 @@
 import { useMemo, useState } from 'react'
 import type { LensId, ProjectRecord } from '../types'
-import { extentCounts } from '../lib/geometry'
+import { boundaryFeatures, extentCounts } from '../lib/geometry'
 import { developersOf, statusGroup, useDataset } from '../lib/data'
 import { lensById } from '../lib/lenses'
 import MapView from '../components/MapView'
 import ProjectSheet from '../components/ProjectSheet'
-import IntroOverlay, { introDismissed } from '../components/IntroOverlay'
+import GuidedTour, { introDismissed, type TourState } from '../components/GuidedTour'
+import ObjectionMarkers, { hasObjectionStory } from '../components/ObjectionMarkers'
+import type { Map as MapLibreMap } from 'maplibre-gl'
 import {
   EMPTY_FILTERS, FilterChips, LensSwitcher, MapLegend, StatsStrip, type Filters,
 } from '../components/Filters'
@@ -19,6 +21,15 @@ export default function MapPage() {
   const [showPitches, setShowPitches] = useState(false)
   const [showIntro, setShowIntro] = useState(() => !introDismissed())
   const [massCount, setMassCount] = useState(0)
+  const [showObjections, setShowObjections] = useState(false)
+  const [map, setMap] = useState<MapLibreMap | null>(null)
+  const [tourOpenObjections, setTourOpenObjections] = useState<string | null>(null)
+  const [objectionsTooFar, setObjectionsTooFar] = useState(false)
+
+  /* While the tour is flying, the map must not also auto-fit to the filter
+     changes the tour itself is making — the two cameras fight and the flight
+     stutters. */
+  const tourRunning = showIntro
 
   const lens = lensById(lensId)
   const all = ds.observatory.projects
@@ -81,6 +92,24 @@ export default function MapPage() {
     return next
   }
 
+  const boundarySlugs = useMemo(
+    () => new Set(boundaryFeatures(ds.geo).map((f) => f.properties.slug ?? '')),
+    [ds.geo],
+  )
+
+  const objectionSites = useMemo(() => filtered.filter(hasObjectionStory).length, [filtered])
+
+  /* The tour drives the same controls the user has, so nothing it sets is state
+     they cannot immediately change once it ends. */
+  const applyTourState = (t: TourState) => {
+    setFilters({ ...EMPTY_FILTERS, groups: t.groups })
+    setShowPitches(t.showPitches)
+    setThreeD(t.threeD)
+    setShowObjections(t.showObjections)
+    setTourOpenObjections(t.openObjections ?? null)
+    setSelected(null)
+  }
+
   const selectedProject = filtered.find((p) => p.project.slug === selected) ?? null
   const tiles = useMemo(() => lens.stats(filtered), [lens, filtered])
 
@@ -97,6 +126,17 @@ export default function MapPage() {
           showPitches={showPitches}
           pitchM2={pitchM2}
           onMassCount={setMassCount}
+          onMapReady={setMap}
+          suppressAutoFit={tourRunning}
+        />
+        <ObjectionMarkers
+          map={map}
+          ready={!!map}
+          projects={filtered}
+          sources={ds.observatory.sources ?? {}}
+          show={showObjections}
+          openFor={tourOpenObjections}
+          onZoomedOut={setObjectionsTooFar}
         />
         <div className="map-topbar">
           <StatsStrip tiles={tiles} shown={filtered.length} total={all.length} />
@@ -129,19 +169,26 @@ export default function MapPage() {
             )}
           </p>
         )}
+        {objectionsTooFar && (
+          <p className="map-hint">
+            <strong>Objections on — zoom in to see them.</strong> {objectionSites} of the shown
+            sites have concerns on record; the bubbles appear once sites separate out of their
+            clusters.
+          </p>
+        )}
         {showPitches && !threeD && (
           <p className="map-hint">
             <strong>Pitch grid on</strong> — 105 × 68 m cells inside official boundaries and
             projected extents; zoom in to see them. Comparisons can be switched off.
           </p>
         )}
-        <MapLegend
+        {!showIntro && <MapLegend
           lens={lens}
           showPitches={showPitches}
           pitchM2={pitchM2}
           geo={ds.geo}
           totalProjects={all.length}
-        />
+        />}
         <div className="map-controls">
           <button
             className="map-btn"
@@ -150,6 +197,18 @@ export default function MapPage() {
             title="Tilt the map and show building volumes where footprints are published"
           >
             3D
+          </button>
+          <button
+            className="map-btn"
+            aria-pressed={showObjections}
+            disabled={objectionSites === 0}
+            onClick={() => setShowObjections((v) => !v)}
+            title={objectionSites === 0
+              ? 'No recorded objections in this selection'
+              : `Show recorded community objections (${objectionSites} sites in this selection)`}
+          >
+            <span aria-hidden="true">📣</span>
+            <span className="sr-only">Show community objections</span>
           </button>
           <button
             className="map-btn"
@@ -168,7 +227,15 @@ export default function MapPage() {
             onClose={() => setSelected(null)}
           />
         )}
-        {showIntro && <IntroOverlay onDismiss={() => setShowIntro(false)} />}
+        {showIntro && (
+          <GuidedTour
+            projects={all}
+            boundarySlugs={boundarySlugs}
+            map={map}
+            onState={applyTourState}
+            onDone={() => { setShowIntro(false); setTourOpenObjections(null) }}
+          />
+        )}
       </div>
     </div>
   )

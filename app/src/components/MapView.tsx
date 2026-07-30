@@ -42,6 +42,12 @@ interface Props {
   pitchM2: number
   /** How many of the shown projects publish a height, so the 3D caption can be honest. */
   onMassCount?: (n: number) => void
+  /** Hands the live map out, so overlays owned by the page (objection bubbles,
+      the guided tour camera) can attach without MapView knowing about them. */
+  onMapReady?: (map: MapLibreMap | null) => void
+  /** The guided tour drives its own camera; the filter auto-fit must stand down
+      while it does, or the two animations fight each other. */
+  suppressAutoFit?: boolean
 }
 
 function qv(q?: QuantityClaim): number | null {
@@ -209,6 +215,7 @@ function ariaFor(props: Record<string, unknown>, lens: LensDef): string {
 
 export default function MapView({
   projects, lens, geo, selectedSlug, onSelect, threeD, showPitches, pitchM2, onMassCount,
+  onMapReady, suppressAutoFit,
 }: Props) {
   const massCountRef = useRef(onMassCount)
   massCountRef.current = onMassCount
@@ -339,6 +346,8 @@ export default function MapView({
         paint: {
           'fill-color': ['case', ['==', ['get', 'stripe'], 1], '#3f9142', '#357c38'],
           'fill-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.62],
+          /* Turf washes in over the site rather than appearing all at once. */
+          'fill-opacity-transition': { duration: 520, delay: 0 },
         },
       })
       map.addLayer({
@@ -349,6 +358,7 @@ export default function MapView({
           'line-color': '#ffffff',
           'line-width': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0.5, 16, 1.4],
           'line-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.85],
+          'line-opacity-transition': { duration: 520, delay: 180 },
         },
       })
       map.addLayer({
@@ -360,8 +370,11 @@ export default function MapView({
             'case', ['==', ['get', 'footprint_sourced'], true], '#1c5cab', '#7a8698',
           ],
           'fill-extrusion-opacity': 0.85,
-          'fill-extrusion-height': ['coalesce', ['to-number', ['get', 'height']], 12],
+          'fill-extrusion-height': 0,
           'fill-extrusion-base': 0,
+          /* Blocks grow up out of the ground when 3D is switched on — the motion
+             is what makes the height register as height rather than as a shape. */
+          'fill-extrusion-height-transition': { duration: 900, delay: 120 },
         },
       })
 
@@ -532,6 +545,11 @@ export default function MapView({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  useEffect(() => {
+    onMapReady?.(ready ? mapRef.current : null)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready])
+
   /* ---------- points update when projects / lens change ---------- */
   useEffect(() => {
     const map = mapRef.current
@@ -668,7 +686,8 @@ export default function MapView({
         el.innerHTML = `<strong>${h} m tall</strong>`
           + `<span>≈ ${Math.max(1, Math.round(h / STOREY_M))} storeys · `
           + `${sourced ? 'published footprint' : 'nominal block, footprint not published'}</span>`
-        heightLabelsRef.current.set(key, new Marker({ element: el }).setLngLat(centre).addTo(map))
+        heightLabelsRef.current.set(key,
+          new Marker({ element: el, offset: [0, -74] }).setLngLat(centre).addTo(map))
       }
     }
     for (const [key, m] of heightLabelsRef.current) {
@@ -714,11 +733,30 @@ export default function MapView({
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
-    map.easeTo({ pitch: threeD ? 55 : 0, bearing: 0, duration: 600 })
+    /* While the tour is flying it owns the camera: its beat already specifies a
+       pitch, and a second easeTo here lands on top of it and cancels the zoom
+       mid-flight. Only the extrusion visibility is ours to change then. */
+    if (!suppressAutoFit) map.easeTo({ pitch: threeD ? 55 : 0, bearing: 0, duration: 600 })
     if (loadedRef.current && map.getLayer('dc-building-extrusion')) {
-      map.setLayoutProperty('dc-building-extrusion', 'visibility', threeD ? 'visible' : 'none')
+      if (threeD) {
+        map.setLayoutProperty('dc-building-extrusion', 'visibility', 'visible')
+        /* Set the real height on the next frame so the transition has a 0 to
+           animate from; setting both at once would skip straight to full height. */
+        requestAnimationFrame(() => {
+          if (!mapRef.current?.getLayer('dc-building-extrusion')) return
+          map.setPaintProperty('dc-building-extrusion', 'fill-extrusion-height',
+            ['coalesce', ['to-number', ['get', 'height']], 12])
+        })
+      } else {
+        map.setPaintProperty('dc-building-extrusion', 'fill-extrusion-height', 0)
+        window.setTimeout(() => {
+          if (mapRef.current?.getLayer('dc-building-extrusion')) {
+            map.setLayoutProperty('dc-building-extrusion', 'visibility', 'none')
+          }
+        }, 900)
+      }
     }
-  }, [threeD, ready])
+  }, [threeD, ready, suppressAutoFit])
 
   /* ---------- a filter change moves the map, so filtering is visibly effective ---------- */
   useEffect(() => {
@@ -728,7 +766,7 @@ export default function MapView({
     const first = fitSigRef.current === null
     const changed = fitSigRef.current !== sig
     fitSigRef.current = sig
-    if (first || !changed || selectedSlug) return
+    if (first || !changed || selectedSlug || suppressAutoFit) return
     const coords = projects.map(projectCoords).filter((c): c is [number, number] => !!c)
     if (!coords.length) return
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
