@@ -816,3 +816,40 @@ ul.plain li:last-child { border-bottom: 0; }
 /* The objection popup can be long; keep it inside the viewport rather than
    running off the bottom of the map. */
 .obj-popup .maplibregl-popup-content { max-height: min(58vh, 460px); overflow-y: auto; }
+
+/* ================= per-project staged site reveal ================= */
+.reveal-section { display: flex; flex-direction: column; gap: 10px; }
+.reveal-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.reveal-head h2 { margin: 0; font-size: 16px; }
+.reveal-steps { display: flex; gap: 4px; flex-wrap: wrap; }
+.reveal-steps button {
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--ink-2);
+  border-radius: 999px; padding: 5px 11px; font-size: 12px; cursor: pointer;
+}
+.reveal-steps button.done { color: var(--ink-1); border-color: var(--hairline); }
+.reveal-steps button.on {
+  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+}
+.reveal-map {
+  position: relative; height: 320px; border-radius: var(--r-md); overflow: hidden;
+  border: 1px solid var(--border); background: var(--surface-2);
+}
+@media (min-width: 800px) { .reveal-map { height: 400px; } }
+.reveal-canvas {
+  /* MapLibre stamps `position: relative` on its container, which beats `inset:0`
+     and collapses the box to zero height. Size it explicitly, as .map-canvas does. */
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 0; isolation: isolate;
+}
+.reveal-fallback {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  margin: 0; font-size: 12.5px; color: var(--ink-3);
+}
+.reveal-caption { margin: 0; font-size: 13px; line-height: 1.5; color: var(--ink-2); min-height: 2.6em; }
+.reveal-actions { display: flex; gap: 8px; }
+.reveal-btn {
+  border: 1px solid var(--border); background: var(--surface-1); color: var(--ink-1);
+  border-radius: var(--r-md); padding: 8px 14px; font-size: 13px; cursor: pointer;
+}
+.reveal-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.reveal-btn[disabled] { opacity: 0.4; cursor: not-allowed; }

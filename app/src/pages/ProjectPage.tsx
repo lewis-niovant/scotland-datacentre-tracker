@@ -8,6 +8,7 @@ import {
   headlineWaterM3, developersOf, useDataset,
 } from '../lib/data'
 import { MaturityBadge, StatusBadge, StateChip, VerificationBadge } from '../components/Badges'
+import SiteReveal from '../components/SiteReveal'
 import { extentExplanation, primaryBoundary, projectedExtent } from '../lib/geometry'
 
 /* ---------------- helpers ---------------- */
@@ -270,6 +271,9 @@ export default function ProjectPage() {
           </p>
         )}
       </div>
+
+      {/* ---------- the site, staged: locate, extent, pitches, height ---------- */}
+      <SiteReveal geo={ds.geo} p={record} pitchM2={pitchM2 ?? 7140} />
 
       {/* ---------- scale comparisons stay visible: the delight ---------- */}
       {(typeof area === 'number' && pitchM2) || (energy != null && houseKwh) || (water != null && poolM3) ? (
