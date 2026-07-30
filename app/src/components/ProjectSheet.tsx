@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import type { ProjectRecord } from '../types'
 import {
@@ -7,10 +7,13 @@ import {
 } from '../lib/data'
 import { MaturityBadge, StateChip, VerificationBadge } from './Badges'
 
-/** Bottom sheet (mobile) / side panel (desktop). On mobile it opens as a
-    peek — name, status, headline figure — and expands on tap or upward drag. */
+/** Bottom sheet (mobile) / side panel (desktop).
+
+    It opens on the summary in full. It used to open as a peek that had to be
+    tapped to expand before the "Full profile" button was even reachable — two
+    clicks to reach the thing one click should have shown. Drag-down still
+    closes it on mobile. */
 export default function ProjectSheet({ p, onClose }: { p: ProjectRecord; onClose: () => void }) {
-  const [expanded, setExpanded] = useState(false)
   const dragStartY = useRef<number | null>(null)
   const name = p.project.display_name ?? p.project.canonical_name
   const cap = headlineCapacityMW(p)
@@ -22,25 +25,12 @@ export default function ProjectSheet({ p, onClose }: { p: ProjectRecord; onClose
     if (dragStartY.current == null) return
     const dy = e.changedTouches[0].clientY - dragStartY.current
     dragStartY.current = null
-    if (dy < -24) setExpanded(true)
-    else if (dy > 24) { if (expanded) setExpanded(false); else onClose() }
+    if (dy > 24) onClose()
   }
 
   return (
-    <aside
-      className={`sheet${expanded ? ' expanded' : ' peek'}`}
-      aria-label={`Summary of ${name}`}
-    >
-      <div
-        className="sheet-head"
-        onTouchStart={onTouchStart}
-        onTouchEnd={onTouchEnd}
-        onClick={() => setExpanded((v) => !v)}
-        role="button"
-        tabIndex={0}
-        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setExpanded((v) => !v) } }}
-        aria-expanded={expanded}
-      >
+    <aside className="sheet expanded" aria-label={`Summary of ${name}`}>
+      <div className="sheet-head" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
         <div className="sheet-handle" aria-hidden="true" />
         <div className="sheet-title-row">
           <div className="sheet-title">

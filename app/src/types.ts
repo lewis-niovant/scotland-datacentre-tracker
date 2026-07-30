@@ -88,6 +88,11 @@ export interface Site {
   settlement?: string
   latitude?: number
   longitude?: number
+  /** Set by the build only when `latitude`/`longitude` fell outside the site's
+      own official boundary: a point inside the red line, used for the marker. */
+  display_point?: [number, number]
+  /** How far the researched point was from the boundary it belongs to, in metres. */
+  display_point_offset_m?: number
   location_precision?: string
   boundary_precision?: string
   site_area_m2?: QuantityClaim
@@ -302,7 +307,7 @@ export interface Observatory {
 /* ---- geo.json ---- */
 
 /** The kinds actually emitted by scripts/build_dataset.py. */
-export type GeoKind = 'project_point' | 'boundary' | 'building' | 'projected_extent'
+export type GeoKind = 'project_point' | 'boundary' | 'building' | 'projected_extent' | 'pitch'
 
 export interface GeoProperties {
   slug?: string

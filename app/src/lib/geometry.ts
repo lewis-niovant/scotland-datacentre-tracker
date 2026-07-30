@@ -218,7 +218,9 @@ export function pitchGrid(features: GeoFeature[], pitchM2: number): GeoCollectio
               [x0, y0], [x0 + dLon, y0], [x0 + dLon, y0 + dLat], [x0, y0 + dLat], [x0, y0],
             ]],
           },
-          properties: { kind: 'building', slug: f.properties.slug },
+          /* `stripe` alternates so the fill reads as mown turf rather than as a
+             wireframe grid — the point is "these are pitches", not "here is a mesh". */
+          properties: { kind: 'pitch', slug: f.properties.slug, stripe: (r + c) % 2 },
         })
         if (out.length >= MAX_CELLS) return { type: 'FeatureCollection', features: out }
       }
@@ -231,13 +233,21 @@ export function pitchGrid(features: GeoFeature[], pitchM2: number): GeoCollectio
 /* Indicative building masses                                         */
 /* ------------------------------------------------------------------ */
 
+/** Storey height used to translate metres into something a reader can picture.
+    A data hall is not an office floor; this is a comparison unit, not a claim
+    about the building's internal structure. */
+export const STOREY_M = 3.5
+
 export interface MassSpec {
   slug: string
   name: string
   centre: Position
+  /** Published footprint, or the nominal block used when only height is sourced. */
   footprintM2: number
   heightM: number
   buildings: number
+  /** False when `footprintM2` is the nominal block, so captions can say so. */
+  footprintSourced: boolean
 }
 
 /** Splits the published footprint into `buildings` equal square masses laid out
@@ -274,6 +284,8 @@ export function buildingMasses(specs: MassSpec[]): GeoCollection {
           slug: s.slug,
           name: s.name,
           height: s.heightM,
+          storeys: Math.max(1, Math.round(s.heightM / STOREY_M)),
+          footprint_sourced: s.footprintSourced,
           indicative: true,
         },
       })

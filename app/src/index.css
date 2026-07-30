@@ -125,7 +125,13 @@ button { font-family: inherit; }
 /* width/height are explicit because maplibre's stylesheet (loaded after this
    one) resets .maplibregl-map to position:relative, which would otherwise
    collapse the absolutely-positioned box to zero height. */
-.map-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.map-canvas {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  /* Markers carry inline z-indexes up to 200. Without a stacking context here
+     they were laid out against the page, so cluster bubbles punched through the
+     intro scrim (z 40) and the project panel. `isolation` contains them. */
+  z-index: 0; isolation: isolate;
+}
 .map-canvas .maplibregl-canvas { outline: none; }
 
 .map-topbar {
@@ -286,14 +292,9 @@ button { font-family: inherit; }
   animation: sheet-up 0.28s cubic-bezier(0.2, 0.8, 0.3, 1);
 }
 @keyframes sheet-up { from { transform: translateY(40%); opacity: 0.6; } to { transform: none; opacity: 1; } }
-.sheet.peek { max-height: 132px; }
-.sheet.peek .sheet-body {
-  overflow: hidden; opacity: 0.4;
-  mask-image: linear-gradient(to bottom, #000 10%, transparent 70%);
-  -webkit-mask-image: linear-gradient(to bottom, #000 10%, transparent 70%);
-}
-.sheet.expanded { max-height: 68%; }
-.sheet-head { flex: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+/* The sheet no longer opens as a peek; the class is gone from the markup. */
+.sheet.expanded { max-height: 72%; }
+.sheet-head { flex: none; -webkit-tap-highlight-color: transparent; }
 .sheet-handle { display: flex; justify-content: center; padding: 8px 0 2px; }
 .sheet-handle::before { content: ''; width: 40px; height: 4px; border-radius: 2px; background: var(--hairline); }
 .sheet-title-row { display: flex; align-items: flex-start; gap: 8px; padding: 2px 12px 8px 16px; }
@@ -309,7 +310,7 @@ button { font-family: inherit; }
 }
 .sheet-body { overflow-y: auto; padding: 0 16px 16px; transition: opacity 0.2s ease; }
 @media (min-width: 800px) {
-  .sheet, .sheet.peek, .sheet.expanded {
+  .sheet, .sheet.expanded {
     left: auto; top: 12px; right: 12px; bottom: 12px; width: 400px;
     border-radius: var(--r-lg); max-height: none;
     animation: sheet-in 0.24s ease;
@@ -318,8 +319,7 @@ button { font-family: inherit; }
   .sheet-handle { display: none; }
   .sheet-head { cursor: default; }
   .sheet-title-row { padding-top: 14px; }
-  .sheet.peek .sheet-body { overflow-y: auto; opacity: 1; }
-}
+  }
 
 .summary-card .meta { font-size: 12.5px; color: var(--ink-2); margin-bottom: 8px; }
 .summary-card p.blurb { font-size: 13.5px; color: var(--ink-2); margin: 10px 0 14px; }
@@ -707,3 +707,26 @@ ul.plain li:last-child { border-bottom: 0; }
    can never run off the bottom of the map. */
 .map-legend { display: flex; flex-direction: column-reverse; align-items: flex-start; }
 .map-legend .legend-body { margin-top: 0; margin-bottom: 6px; max-height: min(52vh, 420px); }
+
+
+/* ---- height labels (3D) ---- */
+.height-label {
+  display: block; pointer-events: none; text-align: center;
+  padding: 4px 8px; border-radius: 6px; white-space: nowrap;
+  background: color-mix(in srgb, var(--surface-1) 92%, transparent);
+  border: 1px solid var(--hairline); box-shadow: 0 1px 4px rgb(0 0 0 / 0.18);
+  border-left: 3px solid #1c5cab;
+}
+.height-label strong { display: block; font-size: 11.5px; color: var(--ink-1); }
+.height-label span { display: block; font-size: 9.5px; color: var(--ink-2); }
+
+/* A filter option that the other active filters have made unreachable. */
+.chip.unavailable { opacity: 0.36; cursor: not-allowed; text-decoration: line-through; }
+
+/* On desktop the project panel is a 400px right-hand column, which sat straight
+   on top of the 3D and pitch buttons — opening a project made them unreachable.
+   Slide the controls clear of it while it is open. */
+@media (min-width: 800px) {
+  .map-page.has-panel .map-controls { right: 424px; }
+}
+.map-controls { transition: right 0.24s ease; }
