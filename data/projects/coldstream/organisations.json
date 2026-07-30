@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Apatura Ltd",
+    "role": "developer",
+    "company_number": "13948114",
+    "jurisdiction": "England and Wales",
+    "website": "https://apatura.energy",
+    "ownership_summary": "Energy infrastructure developer founded 2014 (per press); Companies House entity Apatura Ltd incorporated 2022. Press coverage credits the group with a 10.6 GW grid-secured portfolio including 1.8 GW of grid connections targeting data centre developments; corporate site claims access to 10 GW of renewable energy capacity.",
+    "beneficial_owner_public": null,
+    "confidence": "high",
+    "source_ids": ["src-companies-house-apatura-ltd", "src-apatura-website-data-centres", "src-dcd-apatura-coldstream-2025"]
+  },
+  {
+    "name": "Apatura DC Project 3 Ltd",
+    "role": "spv",
+    "company_number": "16044768",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "Active company incorporated 2024-10-28, registered at 3rd Floor 1 Ashley Road, Altrincham WA14 2DT — the same address as a numbered series of Apatura DC Project SPVs. Attributed as the Coldstream project vehicle by Data Center Dynamics; not confirmed against primary planning documents.",
+    "beneficial_owner_public": null,
+    "confidence": "medium",
+    "notes": "SPV-to-site attribution rests on journalism (tier 4); screening documents were not retrievable to confirm the named applicant.",
+    "source_ids": ["src-companies-house-apatura-dc-project-3", "src-dcd-apatura-coldstream-2025"]
+  },
+  {
+    "name": "Scottish Borders Council",
+    "role": "planning_authority",
+    "website": "https://eplanning.scotborders.gov.uk/online-applications/",
+    "confidence": "high",
+    "source_ids": ["src-sbc-portal-25-00556-scr", "src-planit-scottish-borders"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot/data-centre-map/",
+    "notes": "Tracks the Coldstream proposal on its national data centre map; director Dr Kat Jones described such developments as a threat requiring public awareness.",
+    "confidence": "high",
+    "source_ids": ["src-border-telegraph-aprs-map-2026"]
+  }
+]

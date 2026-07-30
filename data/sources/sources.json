@@ -2283,5 +2283,133 @@
     "reliability_tier": 3,
     "status": "active",
     "notes": "As of 2026-07-30 the site is a near-empty shell (logo only, © 2026); the /news.html page returns 404. Consistent with reported cessation of operations."
+  },
+  {
+    "id": "src-sbc-portal-25-00556-scr",
+    "title": "Scottish Borders Council planning portal record 25/00556/SCR — Erection of data centre campus, The Laundry Field BESS, North and East of Stainrigg Mains Farm, Coldstream",
+    "publisher": "Scottish Borders Council",
+    "source_type": "planning_portal",
+    "url": "https://eplanning.scotborders.gov.uk/online-applications/applicationDetails.do?keyVal=SVVR76NT0BQ00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Portal returned HTTP 503 on 2026-07-30; record metadata (reference, description, address, received 2025-05-07, decided 2025-07-04) verified via the PlanIt aggregator which mirrors this portal (src-planit-scottish-borders). Screening documents themselves not retrieved."
+  },
+  {
+    "id": "src-planit-scottish-borders",
+    "title": "PlanIt planning applications API, Scottish Borders authority, keyword search 'data centre'",
+    "publisher": "PlanIt (planit.org.uk)",
+    "source_type": "other",
+    "url": "https://www.planit.org.uk/api/applics/json?auth=Scottish+Borders&search=data+centre&recent=3000",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Neutral aggregator scraping Idox portals; used as fallback while eplanning.scotborders.gov.uk returned 503",
+    "status": "active",
+    "notes": "Returned 25/00556/SCR (received 2025-05-07, decided 2025-07-04, status 'Permitted', parish Leitholm, Eccles & Birgham Community Council) as the only Coldstream-area data centre case; no PAN or full application for the site found in the same search as of 2026-07-30."
+  },
+  {
+    "id": "src-dcd-apatura-coldstream-2025",
+    "title": "Apatura files for 300MW data center campus in Scotland",
+    "publisher": "Data Center Dynamics",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/apatura-files-for-300mw-data-center-campus-in-scotland/",
+    "publication_date": "2025-07-14",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "status": "active",
+    "notes": "Page blocked direct fetch (403); content recovered from search excerpts. Reports: SPV Apatura DC Project 3 Ltd; 69 ha greenfield; up to 70,000 sqm data centre buildings; 300 MW; 500 MW BESS; on-site substation; roof-mounted solar PV; ~3-year build once construction starts; full applications for data centre and BESS not yet submitted. Publication date approximate (mid-July 2025)."
+  },
+  {
+    "id": "src-border-telegraph-coldstream-screening",
+    "title": "Digital green data centre in Coldstream moves closer to reality",
+    "publisher": "Border Telegraph",
+    "source_type": "journalism",
+    "url": "https://www.bordertelegraph.com/news/25295810.digital-green-data-centre-coldstream-moves-closer-reality/",
+    "publication_date": "2025-07-09",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "status": "active",
+    "notes": "Reports SBC screening outcome: principal planning officer Scott Shearer determined EIA not required; site is arable farmland north and east of Stainrigg Mains Farm, gently sloping with Laprig Burn at northern boundary; scheme includes data centre, ancillary offices, plant, emergency backup generators with fuel storage, and BESS; developer statement of 'nationally significant contribution to Scotland'. Publication date approximate."
+  },
+  {
+    "id": "src-scottish-farmer-coldstream-screening",
+    "title": "Digital green data centre in Coldstream moves closer to reality (syndicated)",
+    "publisher": "The Scottish Farmer",
+    "source_type": "journalism",
+    "url": "https://www.thescottishfarmer.co.uk/news/25297079.digital-green-data-centre-coldstream-moves-closer-reality/",
+    "publication_date": "2025-07-09",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "status": "active",
+    "notes": "Same Newsquest copy as Border Telegraph piece; confirms current use arable, topography, planner's reasoning (no SSSI within 5 km affected), and proposed mitigation (planting, habitat creation, ecological enhancement, screening). Publication date approximate."
+  },
+  {
+    "id": "src-border-telegraph-aprs-map-2026",
+    "title": "Interactive map launched charting every 'hyperscale' data centre project in Borders",
+    "publisher": "Border Telegraph",
+    "source_type": "journalism",
+    "url": "https://www.bordertelegraph.com/news/25955521.interactive-map-charts-fox-hyperscale-data-centre-sites/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "status": "active",
+    "notes": "Reports APRS interactive map covering Borders hyperscale sites (Duns and Coldstream); states for Coldstream that 'the planning application is still to be decided upon, but it was ruled an EIA was not required'; quotes APRS director Dr Kat Jones on the 'threat' posed by such developments. Publication date not captured (circa early 2026)."
+  },
+  {
+    "id": "src-foxglove-scotland-dc-2025",
+    "title": "Data centres planned for Scotland could use three quarters of country's current electricity demand",
+    "publisher": "Foxglove",
+    "source_type": "campaign_material",
+    "url": "https://www.foxglove.org.uk/wp-content/uploads/2025/12/2025_12_02_PUB-Scotland-planned-data-centres.pdf",
+    "publication_date": "2025-12-02",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Tech-justice campaign group critical of data centre expansion; figures compiled from developers' own planning-portal claims (November 2025 keyword search)",
+    "status": "active",
+    "notes": "Table row: 'The Laundry Field', Land N. & E. of Stainrigg Mains Farm, Coldstream, 300 MW, developer Apatura, local authority Scottish Borders; annual emissions n/a."
+  },
+  {
+    "id": "src-companies-house-apatura-dc-project-3",
+    "title": "APATURA DC PROJECT 3 LTD (company number 16044768)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16044768",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Active company incorporated 2024-10-28, registered office 3rd Floor 1 Ashley Road, Altrincham, Cheshire WA14 2DT; one of a numbered series of Apatura DC Project SPVs at the same address. Located via Companies House search 2026-07-30."
+  },
+  {
+    "id": "src-companies-house-apatura-ltd",
+    "title": "APATURA LTD (company number 13948114)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/13948114",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Parent/group company of the Apatura DC Project SPV series; register entry located via search, filings not reviewed in detail."
+  },
+  {
+    "id": "src-nominatim-stainrigg",
+    "title": "OpenStreetMap Nominatim gazetteer result for Stainrigg Mains, Leitholm, Scottish Borders TD12 4LZ",
+    "publisher": "OpenStreetMap / Nominatim",
+    "source_type": "map_or_gis",
+    "url": "https://nominatim.openstreetmap.org/search?q=Stainrigg&countrycodes=gb&format=json",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Stainrigg Mains farm at 55.6808, -2.3551. Project site is described as land north and east of the farm, so recorded coordinates are offset slightly north-east with precision 'approximate'."
+  },
+  {
+    "id": "src-apatura-website-data-centres",
+    "title": "Data Centres — Apatura corporate website",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://apatura.energy/data-centres/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing",
+    "status": "active",
+    "notes": "No Coldstream-specific page as of 2026-07-30; general claims of access to '10GW of renewable energy capacity' and 'Scotland's largest energy storage pipeline'. Press coverage elsewhere attributes to Apatura a 10.6 GW grid-secured portfolio including 1.8 GW of grid connections targeting data centre developments."
   }
 ]

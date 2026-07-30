@@ -1,0 +1,14 @@
+[
+  {
+    "claim_category": "other",
+    "value": null,
+    "unit": "unstated",
+    "geographic_scope": "Scotland",
+    "claimant": "Apatura (screening request, as reported by Border Telegraph / The Scottish Farmer)",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Purely qualitative claim that the development would make a 'nationally significant contribution to Scotland', aligned with digital-infrastructure policy priorities. No quantified jobs, investment, GVA or business-rates figures specific to Coldstream were found in any source; the developer's quantified job claims located during research relate to its Larbert scheme, not this site.",
+    "source_ids": ["src-border-telegraph-coldstream-screening", "src-scottish-farmer-coldstream-screening"]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "reference": "25/00556/SCR",
+    "planning_authority": "Scottish Borders Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening request for erection of data centre campus (flexible data centre facility, ancillary offices, plant, emergency backup generators with fuel storage, and battery energy storage system) on land at The Laundry Field, north and east of Stainrigg Mains Farm, Coldstream. Parish: Leitholm, Eccles & Birgham Community Council area.",
+    "submission_date": "2025-05-07",
+    "decision_date": "2025-07-04",
+    "decision": "screening_eia_not_required",
+    "decision_notes": "Principal planning officer Scott Shearer determined the impacts of the proposal would not require an Environmental Impact Assessment, citing distance from protected designations (no SSSI within 5 km likely to be affected), while press reporting noted planners acknowledged the site is 'vast' and that the project's scale will demand extensive review at application stage.",
+    "eia_required": false,
+    "official_url": "https://eplanning.scotborders.gov.uk/online-applications/applicationDetails.do?keyVal=SVVR76NT0BQ00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-05-07",
+        "event_type": "received",
+        "title": "Screening request received by Scottish Borders Council",
+        "source_ids": ["src-planit-scottish-borders"]
+      },
+      {
+        "event_date": "2025-07-04",
+        "event_type": "decision",
+        "title": "Screening opinion issued: EIA not required",
+        "source_ids": ["src-planit-scottish-borders", "src-border-telegraph-coldstream-screening"]
+      }
+    ],
+    "source_ids": [
+      "src-sbc-portal-25-00556-scr",
+      "src-planit-scottish-borders",
+      "src-border-telegraph-coldstream-screening",
+      "src-scottish-farmer-coldstream-screening"
+    ]
+  }
+]

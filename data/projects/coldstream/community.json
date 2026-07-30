@@ -1,0 +1,21 @@
+{
+  "summary": "Little organised local response is publicly visible at this early (pre-application) stage. The site falls within the Leitholm, Eccles & Birgham Community Council area. National campaign group APRS lists the proposal on its Scotland-wide data centre map, and the Borders press has reported it as one of two hyperscale proposals in the region (with Duns/Longformacus). The scheme also drew coverage in the Northumberland press given the site's proximity to the England border. No formal objections could exist yet because no application open to representations has been identified.",
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Critical/monitoring: launched an interactive map charting hyperscale data centre projects including Coldstream; director Dr Kat Jones said it is 'vital that we get the information out to help people see the extent of the threat'.",
+      "source_ids": ["src-border-telegraph-aprs-map-2026"]
+    },
+    {
+      "stakeholder": "Foxglove",
+      "stakeholder_type": "ngo",
+      "position": "Critical of cumulative electricity demand: includes the 300 MW Coldstream scheme in its November 2025 survey concluding planned Scottish data centres could demand 50-75% of Scotland's current peak electricity demand.",
+      "date": "2025-12-02",
+      "source_ids": ["src-foxglove-scotland-dc-2025"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)", "Foxglove"],
+  "planning_authority_contact": "Scottish Borders Council planning department (eplanning.scotborders.gov.uk)",
+  "notes": "No Coldstream-specific residents' group, community council minute, or petition was located. Developer-claimed local benefits were limited to ecological mitigation (new planting, habitat creation, ecological enhancement, landscape screening) described in the screening request."
+}
