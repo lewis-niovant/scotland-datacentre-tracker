@@ -6,7 +6,7 @@ import { STATUS_GROUPS, STATUS_GROUP_META, projectCoords, statusGroup } from '..
 import type { LensDef } from '../lib/lenses'
 import {
   boundaryFeatures, buildingMasses, centroidOf, extentExplanation, extentFeatures, pitchGrid,
-  polysOf, primaryBoundary, STOREY_M, type MassSpec,
+  osmFootprints, pitchesPhrase, polysOf, primaryBoundary, STOREY_M, type MassSpec,
 } from '../lib/geometry'
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
@@ -22,6 +22,10 @@ export const REDLINE = '#c0242d'
 export const EXTENT2 = '#9a5b12'
 /** Tier 3 — projected extent, settlement-level location. Dotted, fainter, unfilled. */
 export const EXTENT3 = '#6b6560'
+/** Tier 4 — a surveyed OSM outline of what is actually built. Solid like a red
+    line because it is real geometry, but a different hue so the two are never
+    confused: one is what was applied for, the other is what stands there. */
+export const OSM_BUILT = '#1f7a6f'
 /** Zoom at which real boundaries appear (the national view stays clean). */
 export const BOUNDARY_MIN_ZOOM = 9
 /** Zoom at which the derived pitch grid appears. */
@@ -161,7 +165,7 @@ function donutHTML(props: Record<string, unknown>, lens: LensDef, dark: boolean)
 /* ---------------- extent explanation popups ---------------- */
 
 /** Hit-testable extent layers, most specific first. */
-const EXTENT_LAYERS = ['dc-extent2-fill', 'dc-extent3-fill', 'dc-boundary-fill']
+const EXTENT_LAYERS = ['dc-osm-fill', 'dc-extent2-fill', 'dc-extent3-fill', 'dc-boundary-fill']
 
 function openExtentPopup(
   map: MapLibreMap,
@@ -258,6 +262,7 @@ export default function MapView({
       const empty = { type: 'FeatureCollection' as const, features: [] }
 
       map.addSource('dc-boundaries', { type: 'geojson', data: empty })
+      map.addSource('dc-osm', { type: 'geojson', data: empty })
       map.addSource('dc-extents', { type: 'geojson', data: empty })
       map.addSource('dc-extent-centres', { type: 'geojson', data: empty })
       map.addSource('dc-pitches', { type: 'geojson', data: empty })
@@ -281,6 +286,26 @@ export default function MapView({
           'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.6, 12, 2.6, 16, 3.4],
         },
       })
+      /* ---- tier 4: built footprint (OpenStreetMap) ---- */
+      map.addLayer({
+        id: 'dc-osm-fill', type: 'fill', source: 'dc-osm',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        paint: {
+          'fill-color': OSM_BUILT,
+          'fill-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0, BOUNDARY_MIN_ZOOM + 1.2, 0.24],
+        },
+      })
+      map.addLayer({
+        id: 'dc-osm-line', type: 'line', source: 'dc-osm',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: {
+          'line-color': OSM_BUILT,
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0.15, BOUNDARY_MIN_ZOOM + 1, 1],
+          'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.6, 12, 2.6, 16, 3.4],
+        },
+      })
+
       /* ---- tier 2: dashed, faint fill ---- */
       map.addLayer({
         id: 'dc-extent2-fill', type: 'fill', source: 'dc-extents',
@@ -574,6 +599,11 @@ export default function MapView({
       if (map.getLayer(id)) map.setFilter(id, ['in', ['get', 'slug'], ['literal', slugs]])
     }
 
+    /* Built footprints travel with the same filters. */
+    const osm = osmFootprints(geo).filter((f) => slugs.includes(f.properties.slug ?? ''))
+    ;(map.getSource('dc-osm') as GeoJSONSource | undefined)
+      ?.setData({ type: 'FeatureCollection', features: osm } as never)
+
     /* Projected extents (tiers 2 and 3) travel with the same filters. */
     const exts = extentFeatures(geo).filter((f) => slugs.includes(f.properties.slug ?? ''))
     ;(map.getSource('dc-extents') as GeoJSONSource | undefined)
@@ -592,7 +622,7 @@ export default function MapView({
     /* The pitch grid works inside projections too, so people can count pitches
        for a projected site as well as an official one. */
     const pitches = map.getSource('dc-pitches') as GeoJSONSource | undefined
-    pitches?.setData(pitchGrid([...feats, ...exts], pitchM2) as never)
+    pitches?.setData(pitchGrid([...feats, ...exts, ...osm], pitchM2) as never)
   }, [geo, projects, pitchM2, ready])
 
   /* ---------- indicative masses: driven by SOURCED HEIGHT ----------
@@ -636,27 +666,31 @@ export default function MapView({
     const wanted = [
       ...boundaryFeatures(geo).filter((f) => f.properties.is_primary && slugs.has(f.properties.slug ?? '')),
       ...extentFeatures(geo).filter((f) => slugs.has(f.properties.slug ?? '')),
+      ...osmFootprints(geo).filter((f) => slugs.has(f.properties.slug ?? '')),
     ]
     const live = new Set<string>()
     for (const f of wanted) {
       const isExtent = f.properties.kind === 'projected_extent'
-      const areaM2 = isExtent ? f.properties.area_m2 : f.properties.official_area_m2
+      const isOsm = f.properties.kind === 'osm_footprint'
+      const areaM2 = isExtent || isOsm ? f.properties.area_m2 : f.properties.official_area_m2
       const centre = centroidOf(polysOf(f))
       if (typeof areaM2 !== 'number' || !centre) continue
       const key = `${f.properties.slug}|${f.properties.reference ?? f.properties.kind ?? ''}`
       live.add(key)
       if (areaLabelsRef.current.has(key)) continue
       const el = document.createElement('div')
-      const tier = isExtent ? (f.properties.tier === 3 ? 3 : 2) : 1
+      const tier = isOsm ? 4 : isExtent ? (f.properties.tier === 3 ? 3 : 2) : 1
       el.className = `pitch-label t${tier}`
       /* The true ratio, from the same area the tooltip quotes. */
-      const pitches = Math.round(areaM2 / pitchM2)
+      const phrase = pitchesPhrase(areaM2, pitchM2)
       const caption = tier === 1
         ? 'official red line'
-        : tier === 2
-          ? 'projected size, not a boundary'
-          : 'projected size · location settlement-level only'
-      el.innerHTML = `<strong>≈ ${pitches} football pitches</strong>`
+        : tier === 4
+          ? 'built footprint (OpenStreetMap)'
+          : tier === 2
+            ? 'projected size, not a boundary'
+            : 'projected size · location settlement-level only'
+      el.innerHTML = `<strong>${phrase.replace(/^about /, '≈ ')}</strong>`
         + `<span>${caption} · ${(areaM2 / 10000).toFixed(1)} ha</span>`
       areaLabelsRef.current.set(key, new Marker({ element: el }).setLngLat(centre).addTo(map))
     }

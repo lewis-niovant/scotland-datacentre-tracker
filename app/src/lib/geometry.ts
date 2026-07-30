@@ -46,6 +46,18 @@ export function primaryBoundary(geo: GeoCollection, slug: string): GeoFeature | 
   )
 }
 
+/** Surveyed building outlines from OpenStreetMap, for facilities that predate the
+    planning portal and so have no red line. Evidence of what is built — never a
+    planning boundary, and styled and captioned as its own thing. */
+export function osmFootprints(geo: GeoCollection, slug?: string): GeoFeature[] {
+  return geo.features.filter(
+    (f) =>
+      f?.properties?.kind === 'osm_footprint' &&
+      (slug === undefined || f.properties.slug === slug) &&
+      (f.geometry?.type === 'Polygon' || f.geometry?.type === 'MultiPolygon'),
+  )
+}
+
 /** Derived squares emitted by build_dataset.py for projects with no red line. */
 export function extentFeatures(geo: GeoCollection, tier?: 2 | 3): GeoFeature[] {
   return geo.features.filter(
@@ -63,23 +75,28 @@ export function projectedExtent(geo: GeoCollection, slug: string): GeoFeature | 
 
 /** How many projects sit in each extent tier, counted from the data itself. */
 export function extentCounts(geo: GeoCollection, totalProjects: number): {
-  official: number; tier2: number; tier3: number; none: number
+  official: number; osm: number; tier2: number; tier3: number; none: number
 } {
   const uniq = (fs: GeoFeature[]) => new Set(fs.map((f) => f.properties.slug ?? '')).size
   const official = uniq(boundaryFeatures(geo))
+  const osm = uniq(osmFootprints(geo))
   const tier2 = uniq(extentFeatures(geo, 2))
   const tier3 = uniq(extentFeatures(geo, 3))
-  return { official, tier2, tier3, none: Math.max(0, totalProjects - official - tier2 - tier3) }
+  return {
+    official, osm, tier2, tier3,
+    none: Math.max(0, totalProjects - official - osm - tier2 - tier3),
+  }
 }
 
 /* ------------------------------------------------------------------ */
 /* Tooltip wording — one source of truth for map popups and legend      */
 /* ------------------------------------------------------------------ */
 
-export const EXTENT_TIER_LABELS: Record<1 | 2 | 3, string> = {
+export const EXTENT_TIER_LABELS: Record<1 | 2 | 3 | 4, string> = {
   1: 'Official planning boundary',
   2: 'Projected size — not a planning boundary',
   3: 'Projected size, location approximate — not a planning boundary',
+  4: 'Built footprint — not a planning boundary',
 }
 
 const STATE_WORDS: Record<string, string> = {
@@ -97,8 +114,23 @@ function ha(m2: number): string {
 }
 
 /** The wording the owner asked for, verbatim, for either kind of extent feature. */
-export function extentExplanation(f: GeoFeature): { tier: 1 | 2 | 3; title: string; body: string } {
+export function extentExplanation(
+  f: GeoFeature,
+): { tier: 1 | 2 | 3 | 4; title: string; body: string } {
   const p = f.properties
+  if (p.kind === 'osm_footprint') {
+    return {
+      tier: 4,
+      title: 'Built footprint — not a planning boundary',
+      body:
+        'The outline of the buildings that actually stand here, surveyed by '
+        + 'OpenStreetMap contributors and matched to this facility by name. '
+        + 'This facility predates the online planning portal, so no red line exists for it. '
+        + `${p.area_m2 ? `${ha(Number(p.area_m2))}. ` : ''}`
+        + '© OpenStreetMap contributors, ODbL.'
+        + (p.retrieved_date ? ` Retrieved ${p.retrieved_date}.` : ''),
+    }
+  }
   if (p.kind === 'boundary') {
     return {
       tier: 1,
@@ -182,6 +214,18 @@ export function pointInAny(pt: Position, polys: Poly[]): boolean {
 export function pitchDims(pitchM2: number): { w: number; h: number } {
   const s = Math.sqrt(pitchM2 / (105 * 68))
   return { w: 105 * s, h: 68 * s }
+}
+
+/** Football pitches in words, for any area.
+
+    A built footprint can easily be smaller than one pitch, where naive rounding
+    produced "about 0 football pitches" — and one pitch produced "1 pitches". */
+export function pitchesPhrase(areaM2: number, pitchM2: number): string {
+  const n = areaM2 / pitchM2
+  if (n < 0.85) return `about ${Math.round(n * 100)}% of a single football pitch`
+  const r = Math.round(n)
+  if (r === 1) return 'about one football pitch'
+  return `about ${r.toLocaleString('en-GB')} football pitches`
 }
 
 const MAX_CELLS = 4000

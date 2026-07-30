@@ -150,6 +150,7 @@ export default function MapPage() {
           />
           <p className="map-note">
             Zoom in for site extents: <strong>{extents.official} official red-line boundaries</strong>,{' '}
+            {extents.osm > 0 && <>{extents.osm} built footprints from OpenStreetMap, </>}
             {extents.tier2 + extents.tier3} projected from a stated area (dashed/dotted — not
             boundaries). Tap any shape to see which it is.
           </p>

@@ -307,7 +307,8 @@ export interface Observatory {
 /* ---- geo.json ---- */
 
 /** The kinds actually emitted by scripts/build_dataset.py. */
-export type GeoKind = 'project_point' | 'boundary' | 'building' | 'projected_extent' | 'pitch'
+export type GeoKind =
+  | 'project_point' | 'boundary' | 'building' | 'projected_extent' | 'pitch' | 'osm_footprint'
 
 export interface GeoProperties {
   slug?: string

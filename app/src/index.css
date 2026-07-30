@@ -853,3 +853,5 @@ ul.plain li:last-child { border-bottom: 0; }
 }
 .reveal-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 .reveal-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+.pitch-label.t4 { border-left-color: #1f7a6f; }
+.extent-key.t4, .extent-pop.t4 .extent-key { border: 2px solid #1f7a6f; background: rgb(31 122 111 / 0.18); }
