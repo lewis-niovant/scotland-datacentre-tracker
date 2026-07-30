@@ -1,0 +1,41 @@
+[
+  {
+    "reference": "20/00229/PP",
+    "planning_authority": "Argyll and Bute Council",
+    "application_type": "full_application",
+    "description": "Erection of building for data storage purposes (Class 4), Killellan Farm, Toward, Dunoon PA23 7UJ. Applicant Mr R Mitchell; agent Cliff Denovan, Dunoon. Local delegated decision; no EIA requested. This single-building permission is the only planning consent underpinning the marketed 'Killellan AI Growth Zone'.",
+    "submission_date": "2020-02-06",
+    "validation_date": "2020-02-06",
+    "decision_date": "2020-05-15",
+    "decision": "approved",
+    "decision_notes": "Portal records 'Application Approved' and a permission expiry date of 15 May 2023; commencement subsequently certified as lawful under 25/00445/CLAWU. 6 public comments and 7 constraints are listed on the portal; contents not itemised here.",
+    "eia_required": false,
+    "representations": { "notes": "Portal shows 6 comments on the application; support/objection split not extracted." },
+    "official_url": "https://publicaccess.argyll-bute.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=Q58Q2XCHMZQ00",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-ab-20-00229-pp"]
+  },
+  {
+    "reference": "25/00445/CLAWU",
+    "planning_authority": "Argyll and Bute Council",
+    "application_type": "other",
+    "description": "Certificate of lawful use/development (existing): material operations in respect of lawful commencement of implementation of planning permission 20/00229/PP. Applicant Mr R Mitchell. Confirms works were begun so the 2020 permission has been implemented and cannot lapse — obtained days after submission, two months before the AI Growth Zone bid.",
+    "submission_date": "2025-03-20",
+    "validation_date": "2025-03-21",
+    "decision_date": "2025-03-28",
+    "decision": "approved",
+    "official_url": "https://publicaccess.argyll-bute.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=STDU0QCHGEK00",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-ab-25-00445-clawu"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Argyll and Bute Council",
+    "application_type": "other",
+    "description": "Main campus (100-600 MW / 2 GW+ on ~74 ha): NO planning application, proposal of application notice (PAN), EIA screening or scoping request located on the Argyll and Bute Public Access portal as of 30 July 2026. A portal search for the Killellan Farm address returns only 20/00229/PP and 25/00445/CLAWU. The developer's AI Growth Zone bid states that, upon designation, 'a comprehensive masterplan' would be submitted to the UK Government and Argyll and Bute Council — i.e. the developer itself confirms no masterplan application has yet been made.",
+    "decision": "pending",
+    "decision_notes": "Recorded to make the claims-vs-consent gap explicit; this is the largest such gap in the dataset.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-ab-20-00229-pp", "src-add-aigz-application", "src-aprs-argyll-dc"]
+  }
+]

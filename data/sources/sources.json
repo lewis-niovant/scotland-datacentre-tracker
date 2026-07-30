@@ -2705,5 +2705,146 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 1,
     "notes": "Adjacent but SEPARATE scheme ~0.9km east of Aurelius: PAN received 2025-12-17 for data centre buildings, flexible commercial/industrial buildings, substation and BESS at South Lanridge Farm, Linrigg Road, Newhouse ML1 5ND; applicant HFD Renewables NL per STV. Recorded to prevent conflation with ILI Aurelius."
+  },
+  {
+    "id": "src-ab-20-00229-pp",
+    "title": "Planning application 20/00229/PP — Erection of building for data storage purposes (Class 4), Killellan Farm, Toward, Dunoon PA23 7UJ",
+    "publisher": "Argyll and Bute Council (Public Access planning portal)",
+    "source_type": "planning_portal",
+    "url": "https://publicaccess.argyll-bute.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=Q58Q2XCHMZQ00",
+    "publication_date": "2020-05-15",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Applicant Mr R Mitchell, agent Cliff Denovan. Received/validated 6 Feb 2020, approved (local delegated decision) 15 May 2020, permission expiry recorded as 15 May 2023. No EIA requested. 6 public comments, 7 constraints listed. Alternative reference 100231872-001."
+  },
+  {
+    "id": "src-ab-25-00445-clawu",
+    "title": "Application 25/00445/CLAWU — Certificate of lawfulness: material operations in respect of lawful commencement of implementation of planning permission 20/00229/PP, Killellan Farm, Toward",
+    "publisher": "Argyll and Bute Council (Public Access planning portal)",
+    "source_type": "planning_portal",
+    "url": "https://publicaccess.argyll-bute.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=STDU0QCHGEK00",
+    "publication_date": "2025-03-28",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Applicant Mr R Mitchell. Received 20 Mar 2025, approved 28 Mar 2025 (case officer Ronnie Hogg). Confirms material commencement of the 2020 permission, i.e. the developer moved to keep the 2020 consent alive shortly before the AI Growth Zone bid."
+  },
+  {
+    "id": "src-add-aigz-application",
+    "title": "Killellan AI Growth Zone Application, 30 May 2025 (final approved version)",
+    "publisher": "Argyll Data Development Ltd / Argyll Energy Development Ltd",
+    "source_type": "developer_publication",
+    "url": "https://static1.squarespace.com/static/6762cd4c40ea67044a0810b3/t/6849f32648c8072a4b362693/1749676844583/Killellan+AI+Growth+Zone+Application+30052025_FinalApproved.pdf",
+    "publication_date": "2025-05-30",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer bid document to UK Government AI Growth Zone programme; promotional and unverified",
+    "notes": "56-page bid. Key contents: 184-acre (74 ha) site at Killellan Farm; existing infrastructure 'up to 20 MW'; formal grid application submitted for 6 MW first building; phasing 100 MW -> 600 MW -> 2 GW+, long-term vision 10 GW connectivity / 2-3 GW active; £6bn projected investment; capex ~£5.3bn; GVA £3.12bn over 10 years (£312m/yr); SPEN budget quote 20 MW at 33 kV, £5.31m + VAT, 16.8 km cable; Commsworld fibre letter (two diverse 100Gb waves, new builds Kilchattan Bay-Rothesay ~8 miles and Innellan exchange-site ~6 miles); CorPower Ocean 2 GW wave array ambition (600 MW project phased 30/60/120/390 MW 2029-2033, sited near Islay); landowner Mr Robert Mitchell, quarry operated by Cowal Sand and Gravel Ltd since 2006 (~20 ha)."
+  },
+  {
+    "id": "src-sambanova-argyll-pr",
+    "title": "Argyll and SambaNova Partner to Deliver the UK's First Renewable-Powered Sovereign AI Cloud",
+    "publisher": "SambaNova Systems (press release, also via Businesswire)",
+    "source_type": "developer_publication",
+    "url": "https://sambanova.ai/press/argyll-and-sambanova-partner-to-deliver-the-uks-first-renewable-powered-sovereign-ai-cloud",
+    "publication_date": "2025-10-23",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Joint marketing announcement; 'strategic partnership', not a construction contract",
+    "notes": "Claims: Killellan AI Growth Zone, Cowal Peninsula, 184-acre site; phase 1 100-600 MW, 2 GW+ full build-out; £15bn projected total investment; 2,000+ annual construction jobs, 1,200 permanent jobs, £734m annual GVA; on-site wind, wave, solar with vanadium-flow batteries and island-mode private wire; SambaNova SN40L air-cooled systems; waste heat to vertical farming/aquaculture/district heating."
+  },
+  {
+    "id": "src-aprs-argyll-dc",
+    "title": "Killean, Argyll, near Dunoon — APRS data centres campaign page",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/argyll-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group opposed to hyperscale data centres in rural Scotland",
+    "notes": "Page was captcha-blocked on 2026-07-30; content obtained via search-engine excerpts only. APRS describes a 1,000 MW hyperscale data centre scaling to 2,000 MW, ~186 acres of brownfield and farmland, notes the only consent is the 2020 permission for a 'building for data storage purposes' and that no planning application is visible for the 74 ha AI Growth Zone site. APRS uses the name 'Killean' (the developer and council records use 'Killellan')."
+  },
+  {
+    "id": "src-ch-argyll-data-development",
+    "title": "Companies House record: ARGYLL DATA DEVELOPMENT LTD (SC759203)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC759203",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 17 Feb 2023; registered office Killellan Farm, Toward, Dunoon PA23 7UJ. Active directors (Jul 2026): Peter Griffiths (appointed 17 Feb 2023), Robert Lyle Mitchell (17 Feb 2023), Brian Michael Bowen (3 Aug 2024). Resigned: Ian Hunter (2024), Peter Hudson and Alistair Jury (both resigned 1 Apr 2026)."
+  },
+  {
+    "id": "src-ch-argyll-energy-development",
+    "title": "Companies House record: ARGYLL ENERGY DEVELOPMENT LTD (SC759139)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC759139",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 16 Feb 2023; registered office Killellan Farm, Toward, Dunoon PA23 7UJ. Active directors: Peter Griffiths, Robert Lyle Mitchell. Resigned: Ian Hunter (Sep 2023), Roger Willison-Grey (Dec 2023)."
+  },
+  {
+    "id": "src-ch-argyll-infrastructure-holdings",
+    "title": "Companies House record: ARGYLL INFRASTRUCTURE HOLDINGS LIMITED (SC870385)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC870385",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 17 November 2025; registered office 204 Argyll Business Centre, 204 Argyll Street, Dunoon PA23 7HA. Note: press coverage states AIH was 'founded in 2023', which does not match this incorporation date; the 2023-incorporated entities are Argyll Data Development Ltd and Argyll Energy Development Ltd."
+  },
+  {
+    "id": "src-ch-cowal-sand-gravel",
+    "title": "Companies House record: COWAL SAND & GRAVEL LTD. (SC266441)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC266441",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 14 Apr 2004; registered office Killellan Farm, Toward, Dunoon PA23 7UJ; SIC 08120 (operation of gravel and sand pits). Operator of the Killellan quarry; named in the AI Growth Zone bid as applicant for quarry consents."
+  },
+  {
+    "id": "src-sbn-aih-investment",
+    "title": "Argyll company aiming to build AI data centre secures new investment",
+    "publisher": "Scottish Business News",
+    "source_type": "journalism",
+    "url": "https://scottishbusinessnews.net/argyll-company-aiming-to-build-ai-data-centre-secures-new-investment/",
+    "publication_date": "2025-12-09",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Argyll Infrastructure Holdings Ltd: initial £15m capital raise confirmed; £100m further funding in negotiation (3-6 months); €2bn total target with European Guarantee Services and Luxembourg fund manager Ocorian AIFM. Three-year exclusivity agreement with SambaNova; first technology order placed. Founders Peter Griffiths (MD) and Robert 'Bert' Mitchell (local farmer). Jobs: 30 initially, 150 within two years, up to 2,000 indirect. Multi-site strategy: Dunoon and Perth."
+  },
+  {
+    "id": "src-bebeez-launch-2026",
+    "title": "Argyll and SambaNova launch sovereign AI cloud in the UK",
+    "publisher": "BeBeez International (reproducing DCD reporting)",
+    "source_type": "journalism",
+    "url": "https://bebeez.eu/2026/05/06/argyll-and-sambanova-launch-sovereign-ai-cloud-in-the-uk/",
+    "publication_date": "2026-05-06",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "May 2026 'launch' is a disaggregated inference platform hosted across multiple undisclosed existing UK data centres (~10 kW/rack, SambaNova SN50), NOT at Killellan; the Killellan growth zone 'remains under development'. Repeats £15bn ($20bn) projected investment. SambaNova raised $350m Series E in early 2026."
+  },
+  {
+    "id": "src-dcd-oil-rig-2025",
+    "title": "Data center campus planned for former oil rig factory in Dunoon, Scotland",
+    "publisher": "Data Centre Dynamics (DCD)",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/data-center-campus-planned-for-former-oil-rig-factory-in-dunoon-scotland/",
+    "publication_date": "2025-08-13",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Direct fetch blocked (403); content via search excerpts and BeBeez syndication. Describes the site as formerly housing a factory/quarry where oil and gas rigs were built (the Ardyne Point yard near Toward once employed ~3,000); reports AIH aiming to invest ~£15bn ($20bn) in the Dunoon campus (August 2025 announcement)."
+  },
+  {
+    "id": "src-argylldev-website",
+    "title": "Argyll Data Development — AI Growth Zone overview and news pages",
+    "publisher": "Argyll Data Development Ltd",
+    "source_type": "developer_publication",
+    "url": "https://argylldev.com/ai-growth-zone-overview",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing",
+    "notes": "Hosts the AI Growth Zone bid document and the SambaNova partnership announcement."
   }
 ]

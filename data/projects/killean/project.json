@@ -1,0 +1,75 @@
+{
+  "slug": "killean",
+  "canonical_name": "Killellan AI Growth Zone (Killellan Farm, Toward)",
+  "display_name": "Killellan / \"Killean\" (Cowal, Argyll and Bute)",
+  "aliases": [
+    { "alias": "Killean data centre", "alias_type": "place_name", "source_ids": ["src-aprs-argyll-dc"] },
+    { "alias": "Killellan AI Growth Zone", "alias_type": "marketing_name", "source_ids": ["src-add-aigz-application", "src-sambanova-argyll-pr"] },
+    { "alias": "Killellan Farm Data Centre", "alias_type": "place_name", "source_ids": ["src-add-aigz-application"] },
+    { "alias": "Dunoon campus", "alias_type": "other", "source_ids": ["src-dcd-oil-rig-2025"] },
+    { "alias": "Cowal Data Centre", "alias_type": "other", "source_ids": ["src-add-aigz-application"] }
+  ],
+  "summary": "Marketed hyperscale AI campus at Killellan Farm, Toward, on the Cowal peninsula south of Dunoon (not Kintyre — the similarly named Killean in Kintyre is a different place). Argyll Data Development Ltd and Argyll Energy Development Ltd (two small companies registered at the farm, directors Peter Griffiths and landowner Robert Mitchell) bid in May 2025 for UK Government AI Growth Zone designation of a 184-acre quarry-and-farmland site, and in October 2025 announced a strategic partnership with SambaNova Systems claiming a 100-600 MW first phase, 2 GW+ full build-out and £15bn investment. The only planning consent that exists is a 2020 delegated permission (20/00229/PP) for a single data-storage building of modest scale, kept alive by a March 2025 certificate of lawful commencement; no application, PAN, screening or scoping for the main campus has been located on the Argyll and Bute portal. The sovereign AI cloud 'launched' in May 2026 runs from other, undisclosed UK data centres. The gap between headline claims (up to 10 GW connectivity, £15bn) and consented reality (one small building; a developer-stated 6 MW grid application) is the largest in this dataset.",
+  "project_type": "hyperscale",
+  "status": "announced",
+  "status_source_ids": ["src-sambanova-argyll-pr", "src-ab-20-00229-pp"],
+  "maturity_level": "M0",
+  "maturity_explanation": "The marketed 100-600 MW / 2 GW+ campus is concept-stage: no planning application, PAN, EIA screening or scoping for it exists on the Argyll and Bute portal as of 30 Jul 2026. The only consent is 20/00229/PP (approved 15 May 2020) for one Class 4 data-storage building, with lawful commencement certified via 25/00445/CLAWU (28 Mar 2025). That small consented element alone might merit M3, but it is not the announced project; the campus itself is M0 with M1 features (land control, AI Growth Zone bid, initial £15m raise).",
+  "verification_level": "verified",
+  "local_authority": "Argyll and Bute Council",
+  "region": "Argyll and Bute (Cowal peninsula)",
+  "first_public_date": "2025-05-30",
+  "anticipated_construction_start": "Developer states first (2020-consented) building operational by 2026 subject to funding; no dates for main campus",
+  "anticipated_operational_date": "Developer claim: 500 MW operational by 2030 (AI Growth Zone bid); unverified",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "phases": [
+    {
+      "phase_name": "Consented 2020 building (data storage, Class 4)",
+      "phase_number": 0,
+      "description": "Single building permitted under 20/00229/PP; developer-stated first connection of 6 MW; developer anticipated operational 2026 subject to funding",
+      "status": "consented",
+      "source_ids": ["src-ab-20-00229-pp", "src-ab-25-00445-clawu", "src-add-aigz-application"]
+    },
+    {
+      "phase_name": "Phase 1 scale-up to 100 MW",
+      "phase_number": 1,
+      "status": "announced",
+      "source_ids": ["src-add-aigz-application", "src-sambanova-argyll-pr"]
+    },
+    {
+      "phase_name": "Growth to 600 MW",
+      "phase_number": 2,
+      "description": "Developer projects 500 MW operational by 2030",
+      "status": "announced",
+      "source_ids": ["src-add-aigz-application"]
+    },
+    {
+      "phase_name": "Full build-out 2 GW+",
+      "phase_number": 3,
+      "description": "Long-term vision of up to 10 GW connectivity supporting 2-3 GW active capacity with triple redundancy",
+      "status": "announced",
+      "source_ids": ["src-add-aigz-application", "src-sambanova-argyll-pr"]
+    }
+  ],
+  "latest_development": {
+    "date": "2026-05-06",
+    "headline": "Argyll/SambaNova sovereign AI inference cloud launched — but hosted across multiple undisclosed existing UK data centres, not at Killellan, which 'remains under development'",
+    "source_ids": ["src-bebeez-launch-2026"]
+  },
+  "unknowns": [
+    "No planning application, PAN, EIA screening or scoping for the main 74 ha campus has been located; it is unknown whether or when one will be submitted",
+    "Dimensions/floor area of the consented 2020 building not extracted from portal documents (reported elsewhere as a single ~70x20 m building); portal documents tab not itemised",
+    "Whether the UK Government has designated (or shortlisted) Killellan as an AI Growth Zone — no government confirmation found",
+    "The nature and enforceability of SambaNova's commitment beyond a marketing partnership and a three-year exclusivity agreement with AIH",
+    "Identity of investors behind AIH's £15m raise and status of the further £100m / €2bn fund-raising",
+    "Actual grid connection status with SPEN — only a developer-stated 6 MW application and a £5.31m budget quote for a 20 MW 33 kV connection are evidenced, both from the developer's own bid",
+    "Ownership relationships between Argyll Infrastructure Holdings Ltd (inc. Nov 2025), Argyll Data Development Ltd and Argyll Energy Development Ltd — no PSC/group accounts reviewed",
+    "Source of the £15bn figure and reconciliation with the £6bn and £5.3bn figures in the developer's own May 2025 bid",
+    "South Cowal Community Council's position; content of the 6 public comments on 20/00229/PP",
+    "Which quarry polygon exactly corresponds to the 184-acre site (boundary not published in accessible form)"
+  ]
+}

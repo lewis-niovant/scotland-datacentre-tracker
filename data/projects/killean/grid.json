@@ -1,0 +1,17 @@
+{
+  "network_operator": "SP Energy Networks (SPEN)",
+  "connection_status": "application",
+  "requested_import_capacity_mw": {
+    "value": 6,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Argyll Data Development Ltd",
+    "notes": "Bid states a formal application has been submitted for a 6 MW initial connection for the first building. Not independently confirmed in any grid register.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  "connection_voltage_kv": 33,
+  "reinforcement_required": true,
+  "evidence_basis": "Developer's AI Growth Zone bid only (May 2025): existing site infrastructure 'up to 20 MW'; SPEN budget estimate for a 20 MW 33 kV connection at £5.31m + VAT requiring 16.8 km of 400 mm2 cable; claim of a 'planned and confirmed grid power upgrade' achievable in 12-18 months; long-term options canvassed with SSEN, SPEN and Eclipse Power (IDNO), including a claimed local 2 GW offshore wind project. None verified from network-operator sources.",
+  "notes": "The developer explicitly positions the site as not dependent on grid connection at scale, claiming 'island mode' operation via on-site wave/wind/solar and vanadium-flow storage. The gap between a 6 MW application plus 20 MW quote and the 2 GW-10 GW connectivity vision is unexplained. Fibre is a parallel constraint: Commsworld letter shows diverse connectivity requires two new fibre builds (Kilchattan Bay-Rothesay ~8 miles; Innellan exchange-site ~6 miles).",
+  "source_ids": ["src-add-aigz-application"]
+}

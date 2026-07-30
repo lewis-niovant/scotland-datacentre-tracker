@@ -1,0 +1,15 @@
+[
+  {
+    "scenario_name": "Developer renewable/island-mode claim",
+    "estimate_type": "developer",
+    "renewable_claim_percent": 100,
+    "matching_method": "onsite",
+    "onsite_generation": "Claimed mix of on-site/dedicated wind, wave (CorPower Ocean array off the west coast near Islay — 600 MW pre-FEED, 2 GW ambition), solar, biogas/waste-to-energy (per Aug 2025 press), with vanadium-flow battery storage (Invinity) and a private-wire network enabling 'island mode'",
+    "demand_flexibility": "Microgrid with grid-balancing and use of curtailed renewables claimed",
+    "methodology": "Marketing/bid statements; no energy model, PPA or consent for any generation asset published. Target power price stated at ~£0.05/kWh.",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "The dedicated wave array central to the 100% renewable claim relies on pre-commercial technology (CorPower C4 at pre-FEED/FEED stage) and would itself require marine licensing not yet applied for. SambaNova SN40L systems claimed to use ~one-tenth the power of GPU systems, air-cooled (no liquid cooling).",
+    "source_ids": ["src-add-aigz-application", "src-sambanova-argyll-pr", "src-dcd-oil-rig-2025"]
+  }
+]

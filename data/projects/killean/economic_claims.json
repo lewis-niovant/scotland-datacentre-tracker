@@ -1,0 +1,91 @@
+[
+  {
+    "claim_category": "capital_expenditure",
+    "value": 15000000000,
+    "unit": "gbp",
+    "geographic_scope": "Killellan campus / Scotland",
+    "claimant": "Argyll Data Development / SambaNova press release (also attributed to AIH in Aug 2025 press)",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "£15bn 'projected total investment' at full build-out. Conflicts with the developer's own May 2025 bid (£6bn projected investment; £5.3bn construction capex). No financing evidence beyond a £15m initial raise.",
+    "source_ids": ["src-sambanova-argyll-pr", "src-dcd-oil-rig-2025", "src-bebeez-launch-2026"]
+  },
+  {
+    "claim_category": "capital_expenditure",
+    "value": 6000000000,
+    "unit": "gbp",
+    "geographic_scope": "Scotland's digital economy",
+    "claimant": "Argyll Data Development Ltd (AI Growth Zone bid, May 2025)",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "'A projected £6 billion investment'. Same document elsewhere estimates total construction capex at ~£5.3bn, of which ~£2bn to local/regional supply chains. The later £15bn figure is 2.5x this; no reconciliation published.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "claim_category": "gva",
+    "value": 312000000,
+    "unit": "gbp_per_year",
+    "geographic_scope": "Scotland",
+    "period": "10-year construction phase (£3.12bn total)",
+    "claimant": "Argyll Data Development Ltd (AI Growth Zone bid)",
+    "methodology": "Not disclosed",
+    "binding_status": "modelled",
+    "state": "developer_stated",
+    "confidence": "low",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "claim_category": "gva",
+    "value": 734000000,
+    "unit": "gbp_per_year",
+    "geographic_scope": "Scottish economy",
+    "claimant": "Argyll/SambaNova press release (Oct 2025)",
+    "methodology": "Not disclosed",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Conflicts with the £312m/yr figure in the developer's own May 2025 bid; period and basis unstated.",
+    "source_ids": ["src-sambanova-argyll-pr"]
+  },
+  {
+    "claim_category": "peak_construction_workforce",
+    "value": 2000,
+    "unit": "jobs",
+    "geographic_scope": "Unstated",
+    "period": "'2,000+ annual construction jobs' over the build",
+    "claimant": "Argyll/SambaNova press release",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Direct/indirect split not stated; recorded as peak/annual construction workforce claim.",
+    "source_ids": ["src-sambanova-argyll-pr"]
+  },
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": 1200,
+    "unit": "jobs",
+    "geographic_scope": "Unstated",
+    "claimant": "Argyll/SambaNova press release ('1,200 permanent positions')",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Direct/indirect status not stated by claimant; classified as direct operational on the plain reading of 'permanent positions', unverified.",
+    "source_ids": ["src-sambanova-argyll-pr"]
+  },
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": 30,
+    "value_max": 150,
+    "unit": "jobs",
+    "geographic_scope": "AIH company (Dunoon and Perth sites)",
+    "period": "30 initially, 150 within two years",
+    "claimant": "Argyll Infrastructure Holdings (via Scottish Business News, Dec 2025)",
+    "binding_status": "commitment_stated",
+    "state": "reported",
+    "confidence": "medium",
+    "notes": "Same coverage claims up to 2,000 indirect UK jobs (unclassified methodology).",
+    "source_ids": ["src-sbn-aih-investment"]
+  }
+]
