@@ -1,0 +1,48 @@
+{
+  "site_name": "Land South of the A1 at West Barns Mains",
+  "address": "Land South Of The A1 At West Barns Mains, Dunbar, East Lothian",
+  "settlement": "Dunbar / West Barns",
+  "latitude": 55.985545,
+  "longitude": -2.522045,
+  "location_precision": "site_centroid",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 602000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "East Lothian Council scoping opinion (approximately 60.2 hectares)",
+    "confidence": "high",
+    "notes": "60.2 ha stated in the council scoping opinion and repeated by APRS and the East Lothian Courier; the site comprises three fields per the Bell briefing's summary of the applicant's Screening Report.",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr", "src-aprs-dunbar-dc", "src-courier-cockenzie-scrutiny"]
+  },
+  "max_building_height_m": {
+    "value": 12,
+    "unit": "m",
+    "state": "reported",
+    "claimant": "Applicant ZTV modelling assumption reported in council scoping opinion",
+    "confidence": "low",
+    "notes": "ZTV figures were based on a building height of approximately 12 m excluding roof-mounted plant, described as 'worst-case'; the council's Landscape Officer noted this excludes plant and platform levels, and the Bell briefing states height parameters are not yet fixed. Not a committed design parameter.",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr", "src-bell-briefing-west-barns-mains"]
+  },
+  "greenfield_brownfield": "greenfield",
+  "agricultural_land_class": "Class 2 and 3.1 (prime agricultural land, per East Lothian Council scoping opinion); campaign material describes it as Grade 2",
+  "current_land_use": "Arable farmland (three fields)",
+  "nearest_home_distance_m": {
+    "value": 50,
+    "unit": "m",
+    "state": "reported",
+    "claimant": "APRS (homes on Muirfield Road and Home Avenue, Dunbar)",
+    "confidence": "medium",
+    "notes": "Campaign-stated distance, consistent with the council scoping opinion identifying noise-sensitive receptors at Easter Broomhouse Cottages (immediate south), Bowerhouse (west) and Wester Broomhouse Farm (southeast) and the Bell briefing's description of the site as directly adjacent to existing dwellings.",
+    "source_ids": ["src-aprs-dunbar-dc", "src-elc-scoping-opinion-25-00008-scr"]
+  },
+  "nearest_settlements": ["Dunbar", "West Barns", "Easter Broomhouse Cottages", "Bowerhouse", "Wester Broomhouse Farm"],
+  "protected_designations": [
+    "Site lies within the boundaries of the Battle of Dunbar I (BTL31) and Battle of Dunbar II (BTL7) inventory historic battlefields (per HES comments in scoping opinion)",
+    "Firth of Forth SPA/Ramsar approximately 1.5 km away (per council Biodiversity Officer comments); Outer Firth of Forth SPA and St Andrews Bay Complex SPA qualifying species recorded within 2 km",
+    "Nearby scheduled monuments: Eweford Cottages pit alignment and settlements (SM5835), Eweford Cottages enclosure (SM5834), Bowerhouse enclosure (SM5833), Easter Broomhouse standing stone (SM739), Doon Hill forts (SM5764)",
+    "Bower House Dovecot (Category A listed, LB14757) on western periphery of the site"
+  ],
+  "land_notes": "The council scoping opinion states the site is within Class 2 and 3.1 prime agricultural land; SEPA notes Class 0 mineral soils (no peat/carbon-rich soils). Spott Burn and the water table were flagged by the council Biodiversity Officer as requiring assessment given expected water demand. Habitats Regulations Appraisal is required.",
+  "source_ids": ["src-elc-scoping-opinion-25-00008-scr", "src-aprs-dunbar-dc", "src-bell-briefing-west-barns-mains"]
+}

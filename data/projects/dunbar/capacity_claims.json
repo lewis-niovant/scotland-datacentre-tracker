@@ -1,0 +1,11 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "None — no MW figure published by developer or any other party",
+    "confidence": "high",
+    "notes": "APRS states 'We do not know what the Capacity of this site would be but, given the size of the site it will be a hyperscale data centre'. The Bell briefing notes the applicant's EIA Screening Report 'provides no details of the scale of power demand from the data centre' despite mentioning two SPEN grid connection offers. No capacity figure appears in any located source.",
+    "source_ids": ["src-aprs-dunbar-dc", "src-bell-briefing-west-barns-mains"]
+  }
+]

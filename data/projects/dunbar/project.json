@@ -1,0 +1,47 @@
+{
+  "slug": "dunbar",
+  "canonical_name": "West Barns Mains Data Centre (Dunbar)",
+  "display_name": "Dunbar (West Barns Mains)",
+  "aliases": [
+    {
+      "alias": "Green Energy Data Centre and Community Renewable Heat Hub, Land South of the A1 at West Barns Mains",
+      "alias_type": "other",
+      "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+    },
+    {
+      "alias": "TSD Dunbar Data Centre",
+      "alias_type": "marketing_name",
+      "source_ids": ["src-bell-briefing-west-barns-mains"]
+    }
+  ],
+  "summary": "Proposed 'green energy data centre and community renewable heat hub' by Thistle Sands Data Ltd on approximately 60.2 ha of prime (Class 2 and 3.1) agricultural land south of the A1 at West Barns Mains, on the southern edge of Dunbar, East Lothian. The proposal is pre-application: an EIA screening request (25/00008/SCR) led East Lothian Council to determine that EIA is required, and the Council issued a formal EIA scoping opinion on 30 March 2026. The proposed development includes data centre buildings, substations, district heating infrastructure, access roads, parking, landscaping and drainage. No electrical capacity (MW) has been disclosed. An organised local opposition group exists and campaign groups describe the scheme as hyperscale given the site area.",
+  "project_type": "unknown",
+  "status": "scoping",
+  "status_source_ids": ["src-elc-scoping-opinion-25-00008-scr", "src-aprs-dunbar-dc"],
+  "maturity_level": "M1",
+  "maturity_explanation": "Early development / pre-application: EIA screening under reference 25/00008/SCR concluded EIA is required (per APRS summary of the council decision), and East Lothian Council issued an EIA scoping opinion on 30 March 2026 in response to a scoping request received 30 January 2026. No planning application, and no Proposal of Application Notice, has been located.",
+  "verification_level": "verified",
+  "local_authority": "East Lothian Council",
+  "region": "East Lothian",
+  "first_public_date": "2025-11-28",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-03-30",
+    "headline": "East Lothian Council issues EIA scoping opinion for the West Barns Mains data centre and community renewable heat hub (25/00008/SCR)",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+  },
+  "unknowns": [
+    "No electrical capacity (MW) figure has been disclosed by the developer or any other party; APRS explicitly states 'Capacity not known'.",
+    "The applicant's EIA Screening Report and Scoping Report have not been located online (the East Lothian planning portal was unreachable during research); details of the two reported SPEN grid connection offers are unknown.",
+    "No economic claims (jobs, investment, GVA) by the developer or any party have been located.",
+    "Whether a Proposal of Application Notice (PAN) has been lodged is unknown.",
+    "Corporate backers/funders of Thistle Sands Data Ltd beyond its two individual shareholders (Kenneth Ross and Steve Ruggi) are unknown; no accounts filed yet (incorporated May 2025).",
+    "A reported site figure of up to 62.5 ha could not be corroborated; all located sources state approximately 60.2 ha.",
+    "Water demand, cooling method, backup generation fuel and energy use are all undisclosed.",
+    "Landowner and any land option arrangements are unknown."
+  ]
+}

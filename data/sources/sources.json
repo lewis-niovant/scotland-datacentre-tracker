@@ -1636,5 +1636,95 @@
     "reliability_tier": 2,
     "status": "broken",
     "notes": "Statutory PAN public notice naming applicant Apatura DC Project 6 Ltd and exhibition of 2025-09-29; URL returned 404 at retrieval, content recovered via search extracts."
+  },
+  {
+    "id": "src-elc-scoping-opinion-25-00008-scr",
+    "title": "EIA Scoping Opinion: Land South Of The A1 At West Barns Mains (25/00008/SCR), ref EIA/SCOPING/26/02",
+    "publisher": "East Lothian Council",
+    "source_type": "planning_document",
+    "url": "https://aprs.scot/wp-content/uploads/2026/04/25_00008_SCR-SCOPING_OPINION-3767009.pdf",
+    "publication_date": "2026-03-30",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "perspective": "Official council document; copy hosted on APRS website because the East Lothian Idox portal was unreachable at time of research",
+    "notes": "Formal scoping opinion issued to Young Planning & Energy Consenting (FAO Grant Young) in response to a scoping request received 30 January 2026 (Scoping Report dated 28 January 2026). Describes the proposal as a green energy data centre and community renewable heat hub of ~60.2 ha including data centre buildings, substations, district heating infrastructure, access roads, parking, landscaping and drainage. States the site is within Class 2 and 3.1 prime agricultural land and that HRA is required."
+  },
+  {
+    "id": "src-elc-planning-portal-dunbar",
+    "title": "East Lothian Council planning portal (Idox Public Access)",
+    "publisher": "East Lothian Council",
+    "source_type": "planning_portal",
+    "url": "https://pa.eastlothian.gov.uk/online-applications/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "broken",
+    "notes": "Portal returned HTTP 503 / connection reset to all automated requests on 2026-07-30; application record for 25/00008/SCR could not be viewed directly. Marked broken for this retrieval only — retry manually."
+  },
+  {
+    "id": "src-aprs-dunbar-dc",
+    "title": "Dunbar (West Barns Mains) campaign page",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/dunbar-dc/",
+    "publication_date": "2026-03-02",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group opposed to data centre development on rural land",
+    "notes": "States 60.2 ha, grade 2 agricultural land, developer Thistle Sands Data Ltd, site 50 m from homes on Muirfield Road and Home Avenue, capacity not known, coordinates 55.985545, -2.522045, EIA screening ref 25/00008/SCR with council deciding EIA is required. Hosts copies of the scoping opinion and the Simon Bell briefing. Page last modified 2026-04-16."
+  },
+  {
+    "id": "src-bell-briefing-west-barns-mains",
+    "title": "Proposed Green Energy Data Centre and Community Renewable Heat Hub on land south of the A1 at West Barns Mains: issues and critique of EIA Screening Report",
+    "publisher": "Professor Simon Bell (submitted to East Lothian Council; hosted by APRS)",
+    "source_type": "community_material",
+    "url": "https://aprs.scot/wp-content/uploads/2026/04/PROPOSED-GREEN-ENERGY-DATA-CENTRE-AND-COMMUNITY-RENEWABLE-HEAT-HUB-ON-LAND-SOUTH-OF-THE-A1-AT-WEST-BARNS-MAINS-1.docx.pdf",
+    "publication_date": "2025-11-28",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Critique written to argue that EIA should be required; author is a landscape architecture academic; document notes AI assistance in drafting",
+    "notes": "Summarises the applicant's EIA Screening Report: ~60.2 ha across three fields, 'TSD Dunbar Data Centre', single-storey buildings with height parameters not yet fixed, substation(s), emergency backup generation, district heating network centre, and reference to two SPEN grid connection offers. Screening Report itself not located online."
+  },
+  {
+    "id": "src-ch-thistle-sands-data",
+    "title": "THISTLE SANDS DATA LIMITED (SC850350) — company overview, officers and persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC850350",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 29 May 2025; registered office 295 Fenwick Road, Glasgow G46 6UH; SIC 63110 data processing/hosting; directors Kenneth Ross (appointed 29 May 2025, b. Sep 1948) and Steve Ruggi (appointed 31 Oct 2025, b. Jan 1962); PSCs Kenneth Ross (notified 29 May 2025) and Steve Ruggi (notified 21 Oct 2025), each holding 25-50% of shares and voting rights with right to appoint/remove directors. No corporate parent registered."
+  },
+  {
+    "id": "src-sustaining-dunbar-datacentre-debate",
+    "title": "Datacentre Debate",
+    "publisher": "Sustaining Dunbar",
+    "source_type": "community_material",
+    "url": "https://sustainingdunbar.org/2026/06/datacentre-debate/",
+    "publication_date": "2026-06-19",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Local sustainability charity opposed to the development",
+    "notes": "Describes the proposal as a 'hyperscale' AI datacentre, links to the local opposition Facebook group, and states the Dunbar opposition campaign is joining a Scotland-wide call for a moratorium on hyperscale AI data centre applications (24 cited as in the pipeline)."
+  },
+  {
+    "id": "src-courier-cockenzie-scrutiny",
+    "title": "Calls for scrutiny over Cockenzie data centre plans",
+    "publisher": "East Lothian Courier",
+    "source_type": "journalism",
+    "url": "https://www.eastlothiancourier.com/news/26254348.calls-scrutiny-cockenzie-data-centre-plans/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports that Thistle Sands Data Ltd proposals at West Barns Mains could cover up to 60.2 ha of greenfield land and have been met with opposition, and that the Facebook group 'Opposition to the West Barns Mains Data Centre' had 705 members."
+  },
+  {
+    "id": "src-fb-opposition-west-barns-mains",
+    "title": "Opposition to the West Barns Mains Data Centre (Facebook group)",
+    "publisher": "Facebook group (community)",
+    "source_type": "social_media_lead",
+    "url": "https://www.facebook.com/groups/1316627133660077",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Local opposition group",
+    "notes": "Group linked from both APRS and Sustaining Dunbar pages; content not directly readable without login. Lead-generation only."
   }
 ]
