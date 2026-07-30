@@ -321,5 +321,165 @@
     "reliability_tier": 5,
     "perspective": "Community council acting as neutral facilitator at that stage",
     "notes": "Pre-application stage (Nov 2025): access from B925 west of Auchtertool; ~25% of site visible from most of the village; buildings 30-35 m; developer then indicated 30-50 permanent jobs and up to 1,000 construction jobs; possible district heating; water mains pipe too small, new pipe likely required; Scottish Water Horizons involved; application then targeted for Q1 2026."
+  },
+  {
+    "id": "src-abdnshire-portal-app-2016-0766",
+    "title": "Planning application APP/2016/0766 — Mixed Use Development Comprising Town Centre ... Land to West and South West of Rifle Range, Blackdog, Aberdeen",
+    "publisher": "Aberdeenshire Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://upa.aberdeenshire.gov.uk/online-applications/search.do?action=simple&searchType=Application&searchCriteria.reference=APP/2016/0766",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "The portal (upa.aberdeenshire.gov.uk) was unreachable during this research session (HTTP 503 / connection reset, apparent WAF blocking). Reference, description and site address corroborated via the Scottish Government notification record (src-govscot-na-abs-045) and APRS page. Decision notice, conditions and any section 75 could not be inspected — follow up when portal is reachable."
+  },
+  {
+    "id": "src-govscot-na-abs-045",
+    "title": "Planning decision NA-ABS-045: mixed use development on land at Blackdog, Aberdeen (F/APP/2016/0766)",
+    "publisher": "Scottish Government",
+    "source_type": "government_publication",
+    "url": "https://www.gov.scot/publications/planning-decision-na-abs-045/",
+    "publication_date": "2017-06-01",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "Notified application; case closed 2017-08-22, 'cleared back to the planning authority for their own determination'. Confirms proposal description: mixed use town centre incl. regional food hall, retail, leisure, Class 3, business/industrial (Classes 4,5,6), A90 access alterations, low carbon infrastructure, at land to west and south west of rifle range, Blackdog."
+  },
+  {
+    "id": "src-ashfield-2016-application",
+    "title": "Major new planning application set to transform Blackdog, Aberdeenshire",
+    "publisher": "Ashfield Land",
+    "source_type": "developer_publication",
+    "url": "https://ashfieldland.co.uk/news/major-new-planning-application-set-to-transform-blackdog-aberdeenshire/",
+    "publication_date": "2016-04-18",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material",
+    "notes": "£150m mixed-use application lodged 2016 with Kirkwood Homes: 600 houses (150 affordable), regional food hall, hotel, cinema, retail, offices/industrial, park & ride, primary school site. Claims for that scheme: 1,200 construction jobs, 1,500 FT jobs long term, £586m salaries over 25 years, £1.56bn GVA. Site allocated in 2012 Aberdeenshire LDP; Blackdog Masterplan approved 2013; on Energetica corridor at A90/AWPR junction."
+  },
+  {
+    "id": "src-ashfield-2017-consent",
+    "title": "Blackdog, Aberdeen granted planning permission",
+    "publisher": "Ashfield Land",
+    "source_type": "developer_publication",
+    "url": "https://ashfieldland.co.uk/news/blackdog-aberdeen-granted-planning-permission/",
+    "publication_date": "2017-04-27",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material",
+    "notes": "Reports unanimous approval of the £150m town-centre/mixed-use plans by Aberdeenshire councillors on 2017-04-27; Kirkwood Homes housing on same site approved the month before (March 2017). Note tension with src-govscot-na-abs-045: application was notified to Scottish Ministers and only cleared back on 2017-08-22, so the formal decision notice post-dates the committee approval."
+  },
+  {
+    "id": "src-energetica-blackdog",
+    "title": "Blackdog Project — Energetica corridor key projects page",
+    "publisher": "Energetica (Aberdeen City & Shire / Opportunity North East partnership)",
+    "source_type": "other",
+    "url": "https://energetica.co.uk/key-projects/blackdog-project",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "notes": "Describes 71-acre mixed-use development; first phase (48 houses) granted permission November 2015; applications March 2016; unanimous Formartine Committee approval March 2017 and full council approval April 2017; repeats 1,200 construction / 1,500 net additional FT jobs, £586m salaries, £1.56bn GVA claims for the mixed-use scheme."
+  },
+  {
+    "id": "src-aprs-blackdog",
+    "title": "Blackdog, north of Aberdeen — APRS data centre campaign page (includes developer press release text, 22 April 2026)",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/aberdeen-blackdog/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group critical of hyperscale data centres in Scotland",
+    "notes": "Identifies the prior consent relied on by the developers as PPiP APP/2016/0766 and quotes them saying they 'believe plans for the multi-billion pound data centre would align with these conditions'; states detailed planning yet to be submitted. Reproduces the full 22 April 2026 developer press release (600MW initial, multi-GW ambition, 1,000 construction / 100 permanent / 2,000 indirect jobs, >£10bn per GW, Cerulean Winds Aspen private-wire discussions, True North Advisors/Diffley Partnership poll 62% of 1,303 in favour, ONE and ETZ Ltd support). Also flags toxic oil & gas waste dump in dunes directly south of the site."
+  },
+  {
+    "id": "src-digit-600mw",
+    "title": "Aberdeen tipped for 600MW AI campus, powered by offshore wind",
+    "publisher": "DIGIT.fyi",
+    "source_type": "journalism",
+    "url": "https://www.digit.fyi/aberdeen-tipped-for-600mw-ai-campus-powered-by-offshore-wind/",
+    "publication_date": "2026-04-22",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "600MW first phase, consent 'secured for first phase', ground-breaking hoped 2026 subject to commercial agreements; up to 1,000 construction jobs, 100 permanent high-skilled, 2,000 indirect; Cerulean Winds Aspen discussions; >£10bn per GW."
+  },
+  {
+    "id": "src-abn-blackdog",
+    "title": "Blackdog poised for multi-billion-pound data centre",
+    "publisher": "Aberdeen Business News",
+    "source_type": "journalism",
+    "url": "https://aberdeenbusinessnews.co.uk/blackdog-poised-for-multi-billion-pound-data-centre/",
+    "publication_date": "2026-04-20",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "200 acres incl. former MoD firing range; initial 600MW renewable and grid-connected power; claimed access to 3GW of renewable wind energy; ScotWind/INTOG and subsea-cable claims; jobs figures as press release; no application reference given."
+  },
+  {
+    "id": "src-pj-datacentre",
+    "title": "Multi-billion-pound data centre plan for Blackdog near Aberdeen",
+    "publisher": "The Press and Journal",
+    "source_type": "journalism",
+    "url": "https://www.pressandjournal.co.uk/fp/business/local/6999464/multi-billion-pound-data-centre-blackdog-aberdeen/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Cited via search results only (page not retrievable in this environment). APRS identifies the P&J as the outlet that carried the developer press release."
+  },
+  {
+    "id": "src-dcd-blackdog",
+    "title": "600MW data center could be built near Aberdeen, Scotland — report",
+    "publisher": "Data Centre Dynamics (DCD)",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/600mw-data-center-could-be-built-near-aberdeen-scotland-report/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Page returned 403; content known via search excerpts: 200-acre site 5 miles north of Aberdeen; Ashfield Land + TechRE; 600MW initial scaling to multi-gigawatts; consent secured for first phase; possible private-wire and international subsea cables."
+  },
+  {
+    "id": "src-pj-landfill",
+    "title": "Oil waste to finally be removed from former notorious north-east landfill (Blackdog)",
+    "publisher": "The Press and Journal",
+    "source_type": "journalism",
+    "url": "https://www.pressandjournal.co.uk/fp/news/aberdeen-aberdeenshire/1893907/oil-waste-to-finally-be-removed-from-former-notorious-north-east-landfill/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Via search excerpts: Blackdog landfill took ~70% of offshore waste landed in the north-east in the 1980s; used from ~1930s to 1980s; Aberdeenshire Council designated site, beach and dunes contaminated land in 2004; FCC Environment UK remediation project approved 2019. The dump lies in the dunes directly south of the development site (per APRS)."
+  },
+  {
+    "id": "src-ch-ashfield-aberdeen",
+    "title": "Companies House: ASHFIELD LAND (ABERDEEN) LTD, 09634263",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/09634263",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Active; incorporated 2015-06-11; registered office St Catherine's Court, Berkeley Place, Clifton, Bristol BS8 1BQ (Ashfield Land group address); SIC 68100 buying and selling of own real estate; accounts to 2025-03-31 filed."
+  },
+  {
+    "id": "src-ch-techre",
+    "title": "Companies House search: TechRE entities (TECHRE DATA CENTRES LIMITED SC724371; TECHRE CONSULTING LIMITED SC597436)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/search/companies?q=techre",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "TECHRE DATA CENTRES LIMITED, SC724371, incorporated 2022-02-24, 7 Hopetoun Crescent, Edinburgh EH7 4AY; TECHRE CONSULTING LIMITED, SC597436, Edinburgh, incorporated May 2018. Which entity is party to the Blackdog venture is not confirmed by primary documents."
+  },
+  {
+    "id": "src-ch-blackdog-land",
+    "title": "Companies House: BLACKDOG LAND (ABERDEEN) LIMITED, SC458222, and PSC register",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC458222/persons-with-significant-control",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 2013-09-03, registered at 7 Golden Square, Aberdeen AB10 1EP. PSCs: Alexander Barclay Thow and Jacqueline Thow (each 25-50% shares/votes). Relationship to the data centre consortium not established — recorded as a possibly related land entity only."
+  },
+  {
+    "id": "src-urbanrealm-2017",
+    "title": "£150m Aberdeenshire leisure destination secures green light",
+    "publisher": "Urban Realm",
+    "source_type": "journalism",
+    "url": "https://www.urbanrealm.com/news/2017/04/27/150m-aberdeenshire-leisure-destination-secures-green-light/",
+    "publication_date": "2017-04-27",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Corroborates 27 April 2017 approval of the £150m Blackdog mixed-use masterplan; Kirkwood Homes housing scheme approved the month before."
   }
 ]

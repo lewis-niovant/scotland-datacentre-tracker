@@ -1,0 +1,43 @@
+{
+  "summary": "Announcement-stage project; no statutory consultation for a data centre application has occurred. The developers commissioned a poll (True North Advisors / Diffley Partnership) reporting 62% of 1,303 people across Aberdeen and Aberdeenshire in favour of a 'green data centre, industrial and energy park' at Blackdog. APRS has added Blackdog to its data centres campaign map and questions whether offshore wind should power data centres. Regional economic development bodies ONE and ETZ Ltd publicly support the project.",
+  "claimed_local_benefits": [
+    {
+      "benefit": "Around 1,000 construction jobs, ~100 permanent high-skilled roles, up to 2,000 indirect jobs, billions of pounds of private investment and a 'just transition' route for oil and gas workers",
+      "claimant": "Ashfield Land / TechRE",
+      "binding_status": "aspirational",
+      "source_ids": ["src-aprs-blackdog", "src-digit-600mw"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Critical scrutiny: highlights that only a 2016 mixed-use PPiP exists, that detailed planning is yet to be submitted, that the site adjoins a dune system and a toxic oil-and-gas waste dump, and questions whether Scotland's offshore wind should be used for data centres.",
+      "source_ids": ["src-aprs-blackdog"]
+    },
+    {
+      "stakeholder": "Opportunity North East (ONE)",
+      "stakeholder_type": "business_group",
+      "position": "Supportive: CEO Jennifer Craw says the north east's access to offshore wind gives it a competitive edge for hyperscale AI investment.",
+      "date": "2026-04-22",
+      "source_ids": ["src-aprs-blackdog"]
+    },
+    {
+      "stakeholder": "ETZ Ltd",
+      "stakeholder_type": "business_group",
+      "position": "Supportive of the project as part of regional energy transition and digital economy ambitions.",
+      "date": "2026-04-22",
+      "source_ids": ["src-aprs-blackdog"]
+    },
+    {
+      "stakeholder": "Cerulean Winds",
+      "stakeholder_type": "other",
+      "position": "Supportive as prospective power supplier: 'clean power enabling digital growth, and digital demand accelerating renewable deployment' (Laura Jarvie), while noting Aspen will first supply the grid and decarbonise oil and gas platforms.",
+      "date": "2026-04-22",
+      "source_ids": ["src-aprs-blackdog", "src-digit-600mw"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "planning_authority_contact": "Aberdeenshire Council planning service (Formartine area)",
+  "notes": "The 62%-in-favour poll was commissioned in connection with the developers' announcement and reported in their press release; the questionnaire and methodology have not been published, so it is recorded as a developer claim. Belhelvie Community Council covers the Blackdog area and has commented on other local applications; its position on the data centre was not located."
+}

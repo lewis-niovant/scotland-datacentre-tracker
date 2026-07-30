@@ -1,0 +1,65 @@
+{
+  "slug": "blackdog",
+  "canonical_name": "Blackdog Data Centre and AI Campus",
+  "display_name": "Blackdog (Aberdeenshire)",
+  "aliases": [
+    {
+      "alias": "Blackdog AI campus",
+      "alias_type": "marketing_name",
+      "source_ids": ["src-aprs-blackdog", "src-digit-600mw"]
+    },
+    {
+      "alias": "Blackdog Masterplan / Energetica Blackdog Project",
+      "alias_type": "former_name",
+      "source_ids": ["src-energetica-blackdog"]
+    }
+  ],
+  "summary": "Proposed 'multi-gigawatt' hyperscale AI data centre campus on around 200 acres at Blackdog, five miles north of Aberdeen, including a former MoD firing range, announced in April 2026 by Ashfield Land and TechRE with an initial 600 MW phase claimed. No data-centre planning application has been lodged: the 'planning consent already secured' claim rests on a 2016 planning permission in principle (APP/2016/0766) for a mixed-use town centre/business scheme, with which the developers say the data centre plans would align. Powering the site from offshore wind (ScotWind/INTOG, Cerulean Winds' Aspen) via private wire is described as under discussion, not contracted.",
+  "project_type": "hyperscale",
+  "status": "announced",
+  "status_source_ids": ["src-aprs-blackdog", "src-digit-600mw", "src-abn-blackdog"],
+  "maturity_level": "M1",
+  "maturity_explanation": "Land assembled by the developers and a prior planning permission in principle (APP/2016/0766, mixed use, not a data centre) exists on the site, but no data-centre application, EIA screening/scoping or PAN has been located on the Aberdeenshire portal or in reporting; APRS and press state detailed planning is yet to be submitted. Announcement stage with claimed 'planning foundations' — early development, not M2/M3 for the data centre itself.",
+  "verification_level": "reported",
+  "local_authority": "Aberdeenshire Council",
+  "region": "North East Scotland",
+  "first_public_date": "2026-04-20",
+  "anticipated_construction_start": "2026 (developer hope, 'first ground broken', subject to final commercial agreements)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "phases": [
+    {
+      "phase_name": "Initial phase (claimed 600 MW)",
+      "phase_number": 1,
+      "description": "Initial 600 MW of 'renewable and grid connected power'; developers state planning consent 'already secured' for the first phase, apparently relying on the 2016 mixed-use PPiP rather than any data-centre-specific permission.",
+      "status": "announced",
+      "target_start_date": "2026",
+      "source_ids": ["src-aprs-blackdog", "src-digit-600mw", "src-abn-blackdog"]
+    },
+    {
+      "phase_name": "Ultimate build-out ('multi-gigawatt' campus)",
+      "phase_number": 2,
+      "description": "Aspiration to scale to a multi-gigawatt data centre and AI campus; no capacity figure, application or grid evidence located for this ambition.",
+      "status": "announced",
+      "source_ids": ["src-aprs-blackdog", "src-abn-blackdog"]
+    }
+  ],
+  "latest_development": {
+    "date": "2026-04-22",
+    "headline": "Developers Ashfield Land and TechRE announce 600 MW initial / multi-gigawatt data centre and AI campus at Blackdog, citing existing first-phase consent and hoped 2026 start",
+    "source_ids": ["src-aprs-blackdog", "src-digit-600mw"]
+  },
+  "unknowns": [
+    "Formal decision date, conditions and any section 75 obligations of PPiP APP/2016/0766 (Aberdeenshire Idox portal unreachable during research; committee approval 27 Apr 2017, ministerial clearance 22 Aug 2017, issue of decision notice not confirmed)",
+    "Whether PPiP APP/2016/0766 remains extant (PPiP durations/lapse) and whether a data centre (likely Class 4/5/6 question) genuinely falls within its terms — only the developers' own statement that plans 'would align' exists",
+    "Which corporate entity is the applicant/SPV for the data centre (no Blackdog data centre SPV located at Companies House; TechRE has multiple Edinburgh-registered entities)",
+    "Any grid connection application/offer with SSEN Transmission or NESO for 600 MW import — no evidence found beyond developer statements",
+    "Whether any contractual arrangement exists with Cerulean Winds (Aspen) or any ScotWind/INTOG project — reported only as 'discussions' and 'exploring'",
+    "Operator or anchor tenant — none named",
+    "Exact site boundary of the 200-acre data centre landholding versus the earlier 71-acre mixed-use consent area",
+    "Whether remediation of the contaminated former landfill in the dunes south of the site affects the developable area"
+  ]
+}

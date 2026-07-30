@@ -1,0 +1,37 @@
+[
+  {
+    "capacity_type": "first_phase",
+    "value_mw": 600,
+    "state": "developer_stated",
+    "applicable_date": "2026-04-22",
+    "phase": "Initial phase",
+    "claimant": "Ashfield Land / TechRE press release",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Only figure given for the initial phase; consistently reported across outlets, but appears in no planning or grid document located.",
+    "notes": "Described as 'an initial 600 megawatts of both renewable and grid connected power'. No planning application or grid connection evidence for 600 MW was located.",
+    "source_ids": ["src-aprs-blackdog", "src-digit-600mw", "src-abn-blackdog", "src-dcd-blackdog"]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": null,
+    "minimum_mw": 1000,
+    "state": "developer_stated",
+    "applicable_date": "2026-04-22",
+    "phase": "Ultimate ambition",
+    "claimant": "Ashfield Land / TechRE press release",
+    "confidence": "low",
+    "notes": "'Multi-gigawatt' campus ambition — no specific figure. Recorded with minimum 1,000 MW purely as the literal floor of 'multi-gigawatt'; aspirational and unsupported by any application or grid record.",
+    "source_ids": ["src-aprs-blackdog", "src-abn-blackdog"]
+  },
+  {
+    "capacity_type": "onsite_generation",
+    "value_mw": null,
+    "maximum_mw": 3000,
+    "state": "developer_stated",
+    "claimant": "Henry Sutton, Director, TechRE",
+    "confidence": "low",
+    "notes": "Claim of 'access to three gigawatts of renewably generated wind energy' — refers to potential offshore wind (ScotWind/INTOG, Cerulean Winds Aspen) that might be linked by private wire, not on-site generation or a contracted supply. Recorded as a claim of available renewable supply, not capacity of the facility.",
+    "source_ids": ["src-aprs-blackdog", "src-abn-blackdog"]
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "site_name": "Land at Blackdog (including former MoD rifle range), east of the A90 at the AWPR junction",
+  "settlement": "Blackdog",
+  "latitude": 57.228,
+  "longitude": -2.078,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 809371,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Ashfield Land / TechRE press release (approx. 200 acres)",
+    "applicable_date": "2026-04-22",
+    "confidence": "medium",
+    "notes": "200 acres converted to m2; described as 'around 200 acres'. The earlier consented mixed-use development was described by Energetica as 71 acres, so the data centre landholding is substantially larger than the 2016 PPiP town-centre area.",
+    "source_ids": ["src-aprs-blackdog", "src-abn-blackdog", "src-energetica-blackdog"]
+  },
+  "greenfield_brownfield": "mixed",
+  "current_land_use": "Largely undeveloped coastal land including former MoD firing range; adjacent Blackdog village, industrial estate and ongoing housing development (Kirkwood/Persimmon)",
+  "previous_land_use": "Ministry of Defence rifle/firing ranges; part of wider Blackdog Masterplan area allocated in 2012 Aberdeenshire LDP; former oil-and-gas waste landfill in dunes immediately south of the site (designated contaminated land 2004, remediation project approved 2019)",
+  "nearest_settlements": ["Blackdog", "Balmedie", "Potterton", "Bridge of Don (Aberdeen)"],
+  "land_notes": "Site sits on the Energetica corridor at the junction of the A90 and the Aberdeen Western Peripheral Route. APRS notes the site is on the edge of the dune system. Historic contamination is in the dunes directly south of the development land, not confirmed within the red line. Coordinates are an approximate centroid of the land east of the A90 around the former rifle range; no red-line boundary for the data centre has been published, so no boundary polygon is provided.",
+  "source_ids": ["src-aprs-blackdog", "src-govscot-na-abs-045", "src-pj-landfill", "src-energetica-blackdog"]
+}

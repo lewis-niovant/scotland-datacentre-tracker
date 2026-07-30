@@ -1,0 +1,47 @@
+[
+  {
+    "reference": "APP/2016/0766",
+    "planning_authority": "Aberdeenshire Council",
+    "application_type": "permission_in_principle",
+    "description": "Mixed Use Development Comprising Town Centre Including Regional Food Hall, Retail, Leisure and Class 3 Uses; Business and Industrial Uses (Classes 4, 5 and 6); Alterations to Access from A90 Roundabout, Local Access, Landscaping, Car Parking, Cycle and Pedestrian Facilities and Low Carbon Infrastructure — Land to West and South West of Rifle Range, Blackdog, Aberdeen. This is the pre-existing consent the data centre developers cite: they state planning consent is 'already secured' for the first phase and that they 'believe plans for the multi-billion pound data centre would align with these conditions'. It is not a data centre permission.",
+    "submission_date": "2016-03-01",
+    "committee_date": "2017-04-27",
+    "decision": "approved",
+    "decision_notes": "Unanimous approval by Formartine Area Committee (March 2017) and full council (27 April 2017) per developer/Energetica accounts. The application was notified to Scottish Ministers (case NA-ABS-045) and cleared back to Aberdeenshire Council for its own determination on 22 August 2017; the formal decision notice, its date, conditions and any section 75 agreement could not be inspected because the Aberdeenshire Idox portal was unreachable during research. Submission date approximate ('March 2016' per Energetica; developer press release 18 April 2016).",
+    "eia_required": null,
+    "conditions_summary": "Not obtained — portal unreachable. Developers assert the data centre would 'align with these conditions' (their words), which is the key untested claim.",
+    "official_url": "https://upa.aberdeenshire.gov.uk/online-applications/search.do?action=simple&searchType=Application&searchCriteria.reference=APP/2016/0766",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2016-04-18",
+        "event_type": "application_lodged",
+        "title": "£150m mixed-use application lodged by Ashfield Land and Kirkwood Homes",
+        "source_ids": ["src-ashfield-2016-application"]
+      },
+      {
+        "event_date": "2017-04-27",
+        "event_type": "committee_decision",
+        "title": "Aberdeenshire councillors unanimously approve the mixed-use/town centre plans",
+        "source_ids": ["src-ashfield-2017-consent", "src-urbanrealm-2017", "src-energetica-blackdog"]
+      },
+      {
+        "event_date": "2017-08-22",
+        "event_type": "ministerial_clearance",
+        "title": "Scottish Ministers close notification case NA-ABS-045, clearing the application back to Aberdeenshire Council for its own determination",
+        "source_ids": ["src-govscot-na-abs-045"]
+      }
+    ],
+    "source_ids": ["src-abdnshire-portal-app-2016-0766", "src-govscot-na-abs-045", "src-aprs-blackdog", "src-ashfield-2017-consent"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Aberdeenshire Council",
+    "application_type": "other",
+    "description": "Data centre / AI campus detailed planning application — NOT YET SUBMITTED as of 30 July 2026. APRS and press reporting state detailed planning is yet to be lodged; no PAN, EIA screening or scoping request for a data centre at Blackdog was found. Recorded so the gap between the 'consented' headline and the actual planning position is explicit.",
+    "decision": "pending",
+    "decision_notes": "No application exists; 'pending' here means anticipated. Developers hoped to break ground in 2026 subject to final commercial agreements.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-aprs-blackdog", "src-digit-600mw", "src-abn-blackdog"]
+  }
+]
