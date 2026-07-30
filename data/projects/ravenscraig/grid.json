@@ -1,0 +1,19 @@
+{
+  "network_operator": "SP Energy Networks (transmission area; operator not explicitly named in developer material)",
+  "connection_status": "offer",
+  "requested_import_capacity_mw": {
+    "value": 550,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "applicable_date": "2025-06-27",
+    "confidence": "medium",
+    "notes": "Developer states 550 MW of grid connections are 'confirmed'/'secured' with the offer accepted in June 2025 via NESO.",
+    "source_ids": ["src-apatura-news-ravenscraig", "src-apatura-consult-ravenscraig-project"]
+  },
+  "nearby_substation": "Wishaw and Newarthill substations (direct connection claimed by developer)",
+  "reinforcement_required": null,
+  "evidence_basis": "Developer statements only (announcement and consultation site: grid offer accepted Q2/June 2025 via NESO; connections at Wishaw and Newarthill). No NESO register, SPEN or Ofgem confirmation located. Apatura separately claims 1.6GW+ confirmed and 2.4GW Gate 2-compliant connections across its portfolio.",
+  "overlaps_other_project": "Bylines notes Ravenscraig plus the DataVita Airdrie AI Growth Zone site together represent over 1,000 MW proposed in North Lanarkshire.",
+  "source_ids": ["src-apatura-news-ravenscraig", "src-apatura-consult-ravenscraig-project", "src-datacentrenews-larbert", "src-bylines-hyperscale"]
+}

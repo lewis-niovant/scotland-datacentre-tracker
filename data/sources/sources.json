@@ -598,5 +598,171 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 1,
     "notes": "Parent group PLC, Hamilton-registered; same registered office (33 Bothwell Road, Hamilton ML3 0AS) as ILI Rufus Limited."
+  },
+  {
+    "id": "src-nlc-portal-ravenscraig",
+    "title": "North Lanarkshire Council ePlanning portal — Ravenscraig data centre records (PAN 25/00838/PAN; EIA screening 25/00556/EIA)",
+    "publisher": "North Lanarkshire Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Portal was unreachable from the research environment (HTTP 503 / connection reset) throughout the 2026-07-30 session, so the PAN and EIA screening references could not be verified directly against the portal. References 25/00838/PAN and 25/00556/EIA and the screening outcome are corroborated only via secondary sources (APRS, datacentermap, Bylines). An Idox keyVal T0BHY2BA0EC00 is reported by Bylines for one of the records. Needs direct verification."
+  },
+  {
+    "id": "src-apatura-news-ravenscraig",
+    "title": "Ravenscraig — plans to transform former steelworks into one of the UK's largest green AI data centres",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://apatura.energy/news-insights/ravenscraig-plans-to-transform-former-steelworks-into-one-of-the-uks-largest-green-ai-data-centres/",
+    "publication_date": "2025-06-27",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material",
+    "notes": "Launch announcement: 550 MW of grid connections operational by 2030; £3.9bn estimated construction cost; 'independent socio-economic study' (consultant unnamed) claiming £1.2bn one-off construction GVA, 16,000+ job years, £729m annual GVA, 2,399 long-term jobs (direct, indirect and induced), +0.4% Scottish GDP; AI Growth Zone bid submitted to DSIT; Apatura states it controls 1.6GW+ of grid connections across five central-belt sites. Same text carried on ravenscraig.co.uk."
+  },
+  {
+    "id": "src-apatura-consult-ravenscraig-project",
+    "title": "Ravenscraig AI Energy Campus — consultation project page and timeline",
+    "publisher": "Apatura (consult.apatura.energy)",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/ravenscraig/the-project",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer consultation material",
+    "notes": "550 MW data centre; 650 MW BESS (to be consented via separate Section 36 application to the Energy Consents Unit); sites east and west of the Ravenscraig masterplan area — eastern plot six data halls, western plot three buildings; direct connection to high-capacity substations at Wishaw and Newarthill; grid offer accepted June 2025 via NESO. Timeline: consultations Q3 2025, planning application Q4 2025, decision Q1 2026, construction 2026-2028, operations 2029."
+  },
+  {
+    "id": "src-apatura-consult-ravenscraig-event",
+    "title": "Ravenscraig AI Energy Campus — public consultation event page",
+    "publisher": "Apatura (consult.apatura.energy)",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/ravenscraig",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer consultation material",
+    "notes": "Public consultation event Monday 6 October 2025, 3pm-8pm, Wellbeing Academy, New College Lanarkshire, 1 Enterprise Way, Motherwell ML1 2TX."
+  },
+  {
+    "id": "src-publicnoticeportal-pan",
+    "title": "Public notice — Apatura DC Project 2 Ltd, notice of intention to submit a planning application, Land at Ravenscraig Regeneration Area, Wishaw, Motherwell ML1 1NR",
+    "publisher": "Public Notice Portal (News Media Association)",
+    "source_type": "other",
+    "url": "https://publicnoticeportal.uk/notice/other/68d334da6dee35736ee32f36",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "broken",
+    "notes": "Statutory pre-application notice: 'Erection of an AI Data Centre Campus with a 550MW demand utility capacity with ancillary Battery Energy Storage (to be consented via separate Section 36 application to the ECU), car parking, landscaping, roads, access and associated works'. Applicant named as Apatura DC Project 2 Ltd. Direct fetch returned HTTP 404 during the session; text recovered via search index, so marked broken pending re-check."
+  },
+  {
+    "id": "src-hlws1290",
+    "title": "Lanarkshire AI Growth Zone Designation and Delivery Update (written statement HLWS1290)",
+    "publisher": "UK Parliament (DSIT written ministerial statement)",
+    "source_type": "parliamentary_material",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-01-29/hlws1290",
+    "publication_date": "2026-01-29",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "Lanarkshire named fifth AI Growth Zone, delivered by DataVita in partnership with CoreWeave: 3,400+ jobs, £8.2bn private investment, £540m community commitment over 15 years, up to 500 MW of compute on a site drawing on on-site renewables (heat reuse explored for University Hospital Monklands). Ravenscraig/Apatura is not named. Page returned 403 to direct fetch; content assembled from search index and secondary reporting."
+  },
+  {
+    "id": "src-nlc-news-aigz",
+    "title": "Plans welcomed for North Lanarkshire to become one of the world's most advanced AI sites",
+    "publisher": "North Lanarkshire Council",
+    "source_type": "government_publication",
+    "url": "https://www.northlanarkshire.gov.uk/news/plans-welcomed-north-lanarkshire-become-one-worlds-most-advanced-ai-sites",
+    "publication_date": "2026-01-29",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "Council welcome of the AI Growth Zone designation: DataVita (Chapelhall-based) with CoreWeave; £8.2bn investment, up to 3,400 direct and up to 7,000 wider regional jobs, £543m community fund. Does not mention the Ravenscraig data campus. Notes all proposals remain subject to statutory planning approval."
+  },
+  {
+    "id": "src-datavita-aigz-faq",
+    "title": "Lanarkshire AI Growth Zone — FAQs",
+    "publisher": "DataVita",
+    "source_type": "developer_publication",
+    "url": "https://www.datavita.co.uk/lanarkshire-ai-growth-zone/faqs",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "AIGZ delivery partner material",
+    "notes": "AIGZ comprises 500 MW of data centre capacity, 1GW+ private-wire renewables (800 MW wind, 400 MW+ solar) and an AI Innovation Park; community fund up to £543m over 15 years (£50k/MW data centre + £15k/MW renewables annually). Ravenscraig and Apatura are not mentioned."
+  },
+  {
+    "id": "src-ch-ravenscraig-ltd",
+    "title": "RAVENSCRAIG LIMITED (SC192142) — company profile and persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC192142",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Active private limited company, incorporated 23 December 1998 (formerly Stamek Limited to Feb 2000), registered office c/o Brodies LLP, Edinburgh. Three active PSCs, each holding 25-50% of shares and voting rights: Scottish Enterprise; Wilson Bowden (Ravenscraig) Limited (04199662, part of Barratt); Tata Steel UK Limited."
+  },
+  {
+    "id": "src-dcd-apatura-ravenscraig",
+    "title": "Apatura plans 500MW data center campus in Scotland",
+    "publisher": "Data Center Dynamics",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/apatura-plans-500mw-data-center-campus-in-scotland/",
+    "publication_date": "2025-06-30",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports the £3.9bn / 550 MW proposal on the ~160-acre 'SevenFourEight' site east of the Wishaw Deviation freight railway line, online target 2030; headline uses 500MW. Site 403'd to direct fetch; content via search index."
+  },
+  {
+    "id": "src-scn-consultation",
+    "title": "Consultation continues for Ravenscraig AI energy campus",
+    "publisher": "Scottish Construction Now",
+    "source_type": "journalism",
+    "url": "https://www.scottishconstructionnow.com/articles/consultation-continues-for-ravenscraig-ai-energy-campus",
+    "publication_date": "2025-10-06",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Second consultation event 6 October 2025; developer-reported 75% attendee support at first event; revised claims of over 2,000 jobs, £766m construction GVA and £583m annual GVA thereafter; submission to NLC intended before end-2025; completion 2029."
+  },
+  {
+    "id": "src-bylines-hyperscale",
+    "title": "Best of Bylines: Hyperscale data centres — interrogating the 'green promise'",
+    "publisher": "Bylines Network",
+    "source_type": "journalism",
+    "url": "https://bylinesnetwork.substack.com/p/best-of-bylines-hyperscale-data-centres",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "perspective": "Critical of hyperscale data centre development",
+    "notes": "States PAN submitted 2025 with 'no major impediments' identified; planning application expected summer 2026; cites 550 MW, a 600 MW battery storage facility (vs 650 MW in developer material), 160 acres, £3.9bn, and 'only 1,044 permanent jobs proposed'; notes Ravenscraig plus DataVita Airdrie exceed 1,000 MW proposed in North Lanarkshire; Idox keyVal T0BHY2BA0EC00."
+  },
+  {
+    "id": "src-datacentrenews-larbert",
+    "title": "Apatura submits plans for Larbert data centre campus",
+    "publisher": "Data Centre News UK",
+    "source_type": "journalism",
+    "url": "https://datacentrenews.uk/story/apatura-submits-plans-for-larbert-data-centre-campus",
+    "publication_date": "2026-06-11",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Confirms that as of 11 June 2026 the Ravenscraig planning application had not yet been filed and was expected 'this summer'. Describes Apatura as Edinburgh/York-based with nine central-belt data centre locations, 1.6GW+ confirmed grid connections and 2.4GW Gate 2-compliant connections in total."
+  },
+  {
+    "id": "src-aprs-ravenscraig",
+    "title": "Apatura Ravenscraig — campaign briefing page",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/ravenscraig-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group opposed to unchecked data centre expansion",
+    "status": "active",
+    "notes": "Used as lead-generation only. Page is behind bot-protection captcha and could not be read directly; search-index extracts attribute the references 25/00556/EIA and 25/00838/PAN and the screening-out quote ('not located on or adjacent to a sensitive area...unlikely to have significant effects on the environment') to this page."
+  },
+  {
+    "id": "src-ravenscraig-vision",
+    "title": "Vision — Ravenscraig regeneration (site history and joint venture)",
+    "publisher": "Ravenscraig Ltd",
+    "source_type": "developer_publication",
+    "url": "https://ravenscraig.co.uk/vision/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Landowner/regeneration JV material",
+    "notes": "Describes Ravenscraig Ltd as a joint venture of Scottish Enterprise, Wilson Bowden Developments and Tata Steel regenerating the former Ravenscraig steelworks (closed 1992), one of Europe's largest brownfield regeneration sites."
   }
 ]

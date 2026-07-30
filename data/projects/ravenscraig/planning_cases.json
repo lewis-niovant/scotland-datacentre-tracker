@@ -1,0 +1,53 @@
+[
+  {
+    "reference": "25/00838/PAN",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice by Apatura DC Project 2 Ltd: 'Erection of an AI Data Centre Campus with a 550MW demand utility capacity with ancillary Battery Energy Storage (to be consented via separate Section 36 application to the ECU), car parking, landscaping, roads, access and associated works', Land at Ravenscraig Regeneration Area, Wishaw, Motherwell ML1 1NR. Reference reported by secondary sources; not verified directly on the portal (portal unreachable from research environment).",
+    "decision": "other",
+    "decision_notes": "PAN reported as raising 'no major impediments'; statutory pre-application consultation held including a public event on 6 October 2025.",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-10-06",
+        "event_type": "consultation_event",
+        "title": "Public consultation event, Wellbeing Academy, New College Lanarkshire, Motherwell (3pm-8pm)",
+        "description": "Second public exhibition of the Ravenscraig AI Energy Campus proposals; developer reported 75% attendee support at the first event.",
+        "source_ids": ["src-apatura-consult-ravenscraig-event", "src-scn-consultation"]
+      }
+    ],
+    "source_ids": ["src-publicnoticeportal-pan", "src-aprs-ravenscraig", "src-bylines-hyperscale", "src-nlc-portal-ravenscraig"]
+  },
+  {
+    "reference": "25/00556/EIA",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening request for the proposed 550 MW data centre campus at Ravenscraig. Reference and outcome reported via APRS and other secondary sources; not verified directly on the portal.",
+    "decision": "screening_eia_not_required",
+    "decision_notes": "Screening opinion reportedly concluded: 'The proposed development is not located on or adjacent to a sensitive area and is unlikely to have significant effects on the environment given the characteristics of the development, location of development and characteristics of potential impact'.",
+    "eia_required": false,
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-aprs-ravenscraig", "src-nlc-portal-ravenscraig"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "full_application",
+    "description": "Principal planning application for the data centre campus — NOT YET SUBMITTED. Developer timeline targeted Q4 2025 submission; as of 11 June 2026 Apatura said it expected to submit 'this summer'. No application reference exists yet.",
+    "decision": "pending",
+    "decision_notes": "Entry records the anticipated application only; no submission located as of 2026-07-30.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-datacentrenews-larbert", "src-apatura-consult-ravenscraig-project"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Scottish Government Energy Consents Unit",
+    "application_type": "s36",
+    "description": "Intended Section 36 (Electricity Act 1989) application for the ancillary 650 MW battery energy storage system, to be consented separately from the data centre campus. No application located at the ECU as of 2026-07-30.",
+    "decision": "pending",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-apatura-consult-ravenscraig-project", "src-publicnoticeportal-pan"]
+  }
+]

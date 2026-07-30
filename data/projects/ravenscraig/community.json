@@ -1,0 +1,63 @@
+{
+  "summary": "Statutory pre-application consultation ran during autumn 2025, with a public event on 6 October 2025 at New College Lanarkshire, Motherwell. The developer reported 75% support among attendees at the first event. Organised local opposition specific to Ravenscraig has not been identified; national campaign attention comes from Action to Protect Rural Scotland (APRS) and critical journalism (Bylines Network), focused on water/emissions disclosure, the modest permanent job count relative to scale, and the EIA screening-out decision. Political figures including Pamela Nash MP have publicly supported the proposal.",
+  "principal_concerns": [
+    {
+      "concern": "Minimal public disclosure of cooling system and water consumption details; no mandatory water reporting",
+      "raised_by": "Bylines Network",
+      "source_ids": ["src-bylines-hyperscale"]
+    },
+    {
+      "concern": "Lack of specific emissions data and no cumulative assessment of Scotland-wide data centre impacts under NPF4; no agreed definition of a 'green data centre'",
+      "raised_by": "Bylines Network",
+      "source_ids": ["src-bylines-hyperscale"]
+    },
+    {
+      "concern": "Only 1,044 permanent jobs proposed — 'a lean return for a project of this scale'",
+      "raised_by": "Bylines Network",
+      "source_ids": ["src-bylines-hyperscale"]
+    },
+    {
+      "concern": "EIA screened out for a 550 MW campus; APRS highlights that Apatura sought screening opinions for all its active sites and Ravenscraig was found not to require EIA",
+      "raised_by": "Action to Protect Rural Scotland",
+      "source_ids": ["src-aprs-ravenscraig"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Multi-billion pound investment, jobs and training opportunities attracting people to the area (2,000-2,399 jobs claimed, direct/indirect/induced)",
+      "claimant": "Apatura",
+      "binding_status": "aspirational",
+      "source_ids": ["src-apatura-news-ravenscraig", "src-scn-consultation"]
+    },
+    {
+      "benefit": "Regeneration of remediated former steelworks land within the Ravenscraig masterplan",
+      "claimant": "Apatura / Ravenscraig Ltd",
+      "binding_status": "unstated",
+      "source_ids": ["src-apatura-news-ravenscraig", "src-ravenscraig-vision"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Pamela Nash MP (Motherwell, Wishaw and Carluke)",
+      "stakeholder_type": "elected_member",
+      "position": "Supportive: 'Ravenscraig stands ready as a world-class digital and AI hub powered by Scotland's renewables.'",
+      "date": "2025-06-27",
+      "source_ids": ["src-apatura-news-ravenscraig"]
+    },
+    {
+      "stakeholder": "Russell Wilkie, Director, Ravenscraig Ltd",
+      "stakeholder_type": "business_group",
+      "position": "Supportive: describes the scheme as multi-billion pound investment combining energy, digital infrastructure and regional innovation.",
+      "date": "2025-06-27",
+      "source_ids": ["src-apatura-news-ravenscraig"]
+    },
+    {
+      "stakeholder": "Action to Protect Rural Scotland",
+      "stakeholder_type": "campaign_group",
+      "position": "Critical monitoring of the proposal; publicises the EIA screening-out decision and planning references.",
+      "source_ids": ["src-aprs-ravenscraig"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "notes": "The 75% attendee-support figure is a developer claim about its own consultation event and has not been independently verified. No community council responses or objection counts exist yet because no planning application has been submitted."
+}
