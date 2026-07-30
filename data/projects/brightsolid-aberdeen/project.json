@@ -1,0 +1,27 @@
+{
+  "slug": "brightsolid-aberdeen",
+  "canonical_name": "Brightsolid Aberdeen Data Centre",
+  "display_name": "Brightsolid Aberdeen",
+  "summary": "Brightsolid's Aberdeen facility is a purpose-built Tier III-certified colocation data centre in the Mastrick/Whitemyres area of Aberdeen, opened in 2017 and notable as the main commercial colocation site serving the north-east and the oil and gas sector. Public material describes a ~1 MW IT load initially, a ~2 MW two-hall design with up to 400 high-density racks (25 kW/rack) and Ecofris cooling at ~1.25 PUE. Brightsolid is part of Dundee-based DC Thomson; it also operates a Dundee data centre.",
+  "project_type": "colocation",
+  "status": "operating",
+  "status_source_ids": [
+    "src-dcd-brightsolid"
+  ],
+  "maturity_level": "M5",
+  "maturity_explanation": "Opened 2017 per Data Center Dynamics and operator technical specification; still marketed as operating in directories as of July 2026.",
+  "verification_level": "reported",
+  "local_authority": "Aberdeen City Council",
+  "region": "Aberdeen and North East",
+  "first_public_date": "2015-01-01",
+  "actual_operational_date": "2017",
+  "last_verified_at": "2026-07-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": true,
+  "unknowns": [
+    "Current built-out capacity vs the 2 MW two-hall design",
+    "Formal confirmation of Uptime Institute Tier III certification scope (design vs constructed facility)",
+    "Whether announced timelines (2015 announcement, 2017 opening) reflect phased delivery"
+  ]
+}

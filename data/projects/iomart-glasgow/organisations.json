@@ -1,0 +1,16 @@
+[
+  {
+    "name": "iomart Group plc",
+    "role": "operator",
+    "company_number": "SC204560",
+    "jurisdiction": "Scotland",
+    "website": "https://www.iomart.com",
+    "ownership_summary": "Public limited company (AIM-listed), registered office 6 Atlantic Quay, 55 Robertson Street, Glasgow; incorporated 2000.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "source_ids": [
+      "src-ch-iomart",
+      "src-iomart-glasgow"
+    ]
+  }
+]

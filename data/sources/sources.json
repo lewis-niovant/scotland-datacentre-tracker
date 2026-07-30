@@ -2846,5 +2846,200 @@
     "reliability_tier": 3,
     "perspective": "Developer marketing",
     "notes": "Hosts the AI Growth Zone bid document and the SambaNova partnership announcement."
+  },
+  {
+    "id": "src-pulsant-datacentres",
+    "title": "UK Data Centres overview",
+    "publisher": "Pulsant",
+    "source_type": "developer_publication",
+    "url": "https://www.pulsant.com/datacentres/",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "Lists 14 UK sites; Scottish estate = Edinburgh SC-1, SC-2, SC-3 only (no Glasgow site)."
+  },
+  {
+    "id": "src-pulsant-sc1-page",
+    "title": "Colocation Data Centre - Edinburgh (South Gyle) SC-1",
+    "publisher": "Pulsant",
+    "source_type": "developer_publication",
+    "url": "https://www.pulsant.com/colocation/sc-1",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-dcm-pulsant-sc1",
+    "title": "Pulsant Edinburgh South Gyle SC-1 Data Center (6.6 MW)",
+    "publisher": "Data Center Map",
+    "source_type": "map_or_gis",
+    "url": "https://www.datacentermap.com/united-kingdom/edinburgh/pulsant-south-gyle/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-dcm-pulsant-sc2",
+    "title": "Pulsant Edinburgh SC-2 Data Center",
+    "publisher": "Data Center Map",
+    "source_type": "map_or_gis",
+    "url": "https://www.datacentermap.com/united-kingdom/edinburgh/pulsant-edinburgh/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-dcm-pulsant-sc3",
+    "title": "Pulsant Edinburgh SC-3 Data Center (1.6 MW)",
+    "publisher": "Data Center Map",
+    "source_type": "map_or_gis",
+    "url": "https://www.datacentermap.com/united-kingdom/edinburgh/pulsant-edinburgh-medway/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-baxtel-pulsant-sc1",
+    "title": "Pulsant: Edinburgh South Gyle SC-1 Data Center",
+    "publisher": "Baxtel",
+    "source_type": "map_or_gis",
+    "url": "https://baxtel.com/data-center/pulsant-edinburgh-south-gyle-sc-1",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30",
+    "notes": "SC-1: 3.4MW IT power, 22 carriers, 28,524 sqft raised floor, 600+ racks."
+  },
+  {
+    "id": "src-colox-pulsant-medway",
+    "title": "Pulsant Edinburgh SC-2 Medway (former Onyx)",
+    "publisher": "Colo-X",
+    "source_type": "map_or_gis",
+    "url": "https://www.colo-x.com/data-centre/pulsant-edinburgh-medway-data-centre-former-onyx/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30",
+    "notes": "Records Onyx acquisition 2016 and closure of the ex-Onyx Glasgow site."
+  },
+  {
+    "id": "src-antin-pulsant",
+    "title": "Antin Infrastructure Partners acquires Pulsant",
+    "publisher": "Antin Infrastructure Partners",
+    "source_type": "developer_publication",
+    "url": "https://www.antin-ip.com/media/our-news/antin-infrastructure-partners-acquires-pulsant",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "publication_date": "2021-07-26"
+  },
+  {
+    "id": "src-dcm-iomart-dc1",
+    "title": "iomart Glasgow Data Center, 88 Middlesex Street (1 MW)",
+    "publisher": "Data Center Map",
+    "source_type": "map_or_gis",
+    "url": "https://www.datacentermap.com/united-kingdom/glasgow/iomart-glasgow-dc1/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-iomart-glasgow",
+    "title": "Glasgow Data Centre (DC1)",
+    "publisher": "iomart",
+    "source_type": "developer_publication",
+    "url": "https://www.iomart.com/our-data-centres/glasgow-data-centre",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-ch-iomart",
+    "title": "IOMART GROUP PLC overview (SC204560)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC204560",
+    "reliability_tier": 1,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-datavita-dv2",
+    "title": "DV2 Glasgow Data Centre - 177 Bothwell Street",
+    "publisher": "DataVita",
+    "source_type": "developer_publication",
+    "url": "https://www.datavita.co.uk/location/glasgow",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-dcm-datavita-dv2",
+    "title": "DataVita DV2 - Glasgow Data Center, 177 Bothwell St (1 MW)",
+    "publisher": "Data Center Map",
+    "source_type": "map_or_gis",
+    "url": "https://www.datacentermap.com/united-kingdom/glasgow/datavita-dv2-glasgow/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-datavita-about",
+    "title": "About DataVita - Powering Scotland's Digital Infrastructure",
+    "publisher": "DataVita",
+    "source_type": "developer_publication",
+    "url": "https://www.datavita.co.uk/about-us",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30",
+    "notes": "States DataVita is 100% owned by HFD Group."
+  },
+  {
+    "id": "src-dcd-brightsolid",
+    "title": "Brightsolid opens new Tier III data center in Aberdeen",
+    "publisher": "Data Center Dynamics",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/brightsolid-opens-new-tier-iii-data-center-in-aberdeen/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-brightsolid-spec",
+    "title": "brightsolid Aberdeen Data Hall 1 Technical Specifications",
+    "publisher": "Brightsolid",
+    "source_type": "developer_publication",
+    "url": "https://brightsolid.com/wp-content/uploads/2017/08/brightsolid-Aberdeen-Data-Hall-Tech-Spec-Final.pdf",
+    "reliability_tier": 3,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-baxtel-brightsolid",
+    "title": "brightsolid Aberdeen Data Center",
+    "publisher": "Baxtel",
+    "source_type": "map_or_gis",
+    "url": "https://baxtel.com/data-center/brightsolid-aberdeen",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-silicon-brightsolid",
+    "title": "Brightsolid Plots GBP5m Aberdeen Data Centre",
+    "publisher": "Silicon UK",
+    "source_type": "journalism",
+    "url": "https://www.silicon.co.uk/workspace/brightsolid-aberdeen-data-centre-153755",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-epcc-acf",
+    "title": "Advanced Computing Facility | EPCC",
+    "publisher": "EPCC, University of Edinburgh",
+    "source_type": "government_publication",
+    "url": "https://www.epcc.ed.ac.uk/hpc-services/advanced-computing-facility",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30"
+  },
+  {
+    "id": "src-ed-exascale",
+    "title": "Edinburgh to lead new era of UK supercomputing",
+    "publisher": "University of Edinburgh",
+    "source_type": "government_publication",
+    "url": "https://www.ed.ac.uk/news/2023/edinburgh-to-lead-new-era-of-uk-supercomputing",
+    "reliability_tier": 2,
+    "retrieved_date": "2026-07-30",
+    "publication_date": "2023-10-04"
+  },
+  {
+    "id": "src-dcd-exascale",
+    "title": "GBP750m supercomputer for University of Edinburgh back on the table after government U-turn",
+    "publisher": "Data Center Dynamics",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/750m-supercomputer-for-university-of-edinburgh-back-on-the-table-after-government-u-turn/",
+    "reliability_tier": 4,
+    "retrieved_date": "2026-07-30"
   }
 ]

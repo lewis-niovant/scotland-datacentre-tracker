@@ -1,0 +1,28 @@
+{
+  "slug": "datavita-dv2",
+  "canonical_name": "DataVita DV2 (177 Bothwell Street, Glasgow)",
+  "display_name": "DataVita DV2 Glasgow",
+  "summary": "DV2 is DataVita's city-centre Glasgow colocation facility, located in the basement of the HFD Group office development at 177 Bothwell Street in the International Financial Services District. Directory listings describe roughly 1,000 sq m of space, about 130 racks and ~1 MW of power, built to a Tier III design. DataVita is wholly owned by HFD Group and also operates the larger DV1 campus in Lanarkshire (recorded separately).",
+  "project_type": "colocation",
+  "status": "operating",
+  "status_source_ids": [
+    "src-datavita-dv2"
+  ],
+  "maturity_level": "M5",
+  "maturity_explanation": "Actively marketed operating facility on DataVita's own website and third-party directories as of July 2026.",
+  "verification_level": "reported",
+  "local_authority": "Glasgow City Council",
+  "region": "Glasgow and Clyde Valley",
+  "related_project_slugs": [
+    "datavita-dv1"
+  ],
+  "last_verified_at": "2026-07-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": true,
+  "unknowns": [
+    "Year DV2 opened (the host building at 177 Bothwell Street completed circa 2022; DV2 opening date not separately confirmed)",
+    "Whether the ~1 MW figure is IT load or gross power",
+    "Formal Uptime Institute certification status (marketed as 'Tier III design')"
+  ]
+}

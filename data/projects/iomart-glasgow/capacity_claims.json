@@ -1,0 +1,14 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 1.0,
+    "state": "reported",
+    "claimant": "Data Center Map",
+    "confidence": "low",
+    "notes": "Directory headline figure; facility described as 768 m2 with two ~4,000 sq ft data halls. Not confirmed by operator publication.",
+    "source_ids": [
+      "src-dcm-iomart-dc1",
+      "src-iomart-glasgow"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "capacity_type": "it_load",
+    "value_mw": 3.4,
+    "phase": "SC-1",
+    "state": "developer_stated",
+    "claimant": "Pulsant (via Baxtel listing)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Matches operator marketing for SC-1 IT load.",
+    "source_ids": [
+      "src-baxtel-pulsant-sc1",
+      "src-pulsant-sc1-page"
+    ]
+  },
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 6.6,
+    "phase": "SC-1",
+    "state": "reported",
+    "claimant": "Data Center Map",
+    "confidence": "low",
+    "notes": "Directory headline figure for SC-1; likely total facility power rather than IT load. Conflicts with 3.4 MW IT figure; both preserved.",
+    "source_ids": [
+      "src-dcm-pulsant-sc1"
+    ]
+  },
+  {
+    "capacity_type": "it_load",
+    "value_mw": 1.0,
+    "phase": "SC-2",
+    "state": "reported",
+    "claimant": "Data Center Map / datacenters.com listings",
+    "confidence": "low",
+    "notes": "Some listings state up to 2 MW customer load for the Medway facility.",
+    "source_ids": [
+      "src-dcm-pulsant-sc2",
+      "src-colox-pulsant-medway"
+    ]
+  },
+  {
+    "capacity_type": "it_load",
+    "value_mw": 1.8,
+    "phase": "SC-3",
+    "state": "reported",
+    "claimant": "Directory listings (Data Center Map lists 1.6 MW; others 1.8 MW IT)",
+    "confidence": "low",
+    "minimum_mw": 1.6,
+    "maximum_mw": 1.8,
+    "source_ids": [
+      "src-dcm-pulsant-sc3"
+    ]
+  }
+]

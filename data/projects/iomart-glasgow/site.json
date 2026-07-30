@@ -1,0 +1,14 @@
+{
+  "site_name": "iomart DC1",
+  "settlement": "Glasgow (Kinning Park, south-west of city centre)",
+  "latitude": 55.85,
+  "longitude": -4.29,
+  "location_precision": "coarse_deliberate",
+  "greenfield_brownfield": "brownfield",
+  "current_land_use": "Operating data centre in an urban/industrial area south of the Clyde",
+  "land_notes": "Coordinates coarsened to district level (operating sensitive infrastructure). Street address (88 Middlesex Street, G41) is publicly advertised by the operator and directories.",
+  "source_ids": [
+    "src-dcm-iomart-dc1",
+    "src-iomart-glasgow"
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Brightsolid Online Technology Limited",
+    "role": "operator",
+    "jurisdiction": "Scotland",
+    "website": "https://brightsolid.com",
+    "ownership_summary": "Dundee-headquartered hosting/cloud company; part of the DC Thomson family-owned media group.",
+    "confidence": "medium",
+    "source_ids": [
+      "src-dcd-brightsolid",
+      "src-brightsolid-spec"
+    ]
+  },
+  {
+    "name": "DC Thomson & Co Ltd",
+    "role": "parent_company",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Family-owned Dundee media group; parent of Brightsolid.",
+    "confidence": "medium",
+    "source_ids": [
+      "src-dcd-brightsolid"
+    ]
+  }
+]

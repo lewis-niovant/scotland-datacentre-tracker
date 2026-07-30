@@ -1,0 +1,30 @@
+[
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 8.0,
+    "state": "reported",
+    "claimant": "EPCC",
+    "applicable_date": "2023-01-01",
+    "notes": "Pre-2023 capacity, superseded by the 38 MW upgrade.",
+    "supersedes": "Superseded by 38 MW grid upgrade (2023)",
+    "confidence": "medium",
+    "source_ids": [
+      "src-epcc-acf",
+      "src-ed-exascale"
+    ]
+  },
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 38.0,
+    "state": "reported",
+    "claimant": "EPCC / University of Edinburgh",
+    "applicable_date": "2023-12-31",
+    "preferred": true,
+    "preferred_rationale": "Most recent stated capacity following the 2023 upgrade.",
+    "confidence": "medium",
+    "source_ids": [
+      "src-ed-exascale",
+      "src-epcc-acf"
+    ]
+  }
+]

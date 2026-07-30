@@ -1,0 +1,12 @@
+{
+  "site_name": "EPCC Advanced Computing Facility",
+  "settlement": "South of Edinburgh (Midlothian, university research estate)",
+  "latitude": 55.86,
+  "longitude": -3.21,
+  "location_precision": "coarse_deliberate",
+  "current_land_use": "University high-performance computing data centre",
+  "land_notes": "Coordinates coarsened to district level (sensitive national research infrastructure). EPCC publicly describes the ACF as its secure, resilient data centre outside the city; no further location detail recorded deliberately.",
+  "source_ids": [
+    "src-epcc-acf"
+  ]
+}
