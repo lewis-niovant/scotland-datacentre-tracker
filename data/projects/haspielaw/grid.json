@@ -1,0 +1,7 @@
+{
+  "connection_status": "unknown",
+  "evidence_basis": "No grid connection application, offer, substation or voltage details specific to Haspielaw were found in the screening record or any other source.",
+  "overlaps_other_project": "A separate 500MW Cadzow BESS section 36 application (ECU00005042 / council consultation P/25/0782) by Advance Grid Solutions Limited sits on adjacent land off Muttonhole Road (Land 325m SSE of Windyhills); the council raised no objection on 24 March 2026. No documented link to the Haspielaw data centre, but it indicates grid activity in the immediate area. Note the Haspielaw screening description itself includes an on-site BESS and electricity sub-station.",
+  "notes": "Portfolio-level only: press coverage of Apatura's Larbert submission reports the company claiming more than 1.6GW of confirmed grid connections and 2.4GW of Gate 2-compliant connections across nine Scottish sites; no breakdown attributes any figure to Haspielaw.",
+  "source_ids": ["src-planit-haspielaw-p250490", "src-planit-cadzow-bess-p250782", "src-cadzow-energy-storage-about", "src-dcnews-apatura-larbert"]
+}

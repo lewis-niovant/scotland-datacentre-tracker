@@ -2411,5 +2411,91 @@
     "perspective": "Developer marketing",
     "status": "active",
     "notes": "No Coldstream-specific page as of 2026-07-30; general claims of access to '10GW of renewable energy capacity' and 'Scotland's largest energy storage pipeline'. Press coverage elsewhere attributes to Apatura a 10.6 GW grid-secured portfolio including 1.8 GW of grid connections targeting data centre developments."
+  },
+  {
+    "id": "src-planit-haspielaw-p250490",
+    "title": "PlanIt record of South Lanarkshire application P/25/0490 (Screening opinion request, Land At Haspielaw Farm, Muttonhole Road, Hamilton ML3 8RX)",
+    "publisher": "PlanIt (planit.org.uk, scraped from South Lanarkshire Council Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/SouthLanarkshire/P/25/0490/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Neutral aggregator mirroring the council planning register",
+    "notes": "Full JSON retrieved 2026-07-30: received 2025-04-29, validated 2025-05-13, decided by delegated powers, decision 'Screening opinion - EIA required', decision issued 2025-06-25, ward '18 Hamilton West And Earnock', easting/northing 269965/651784 (55.741923, -4.072860), agent address 1 Bar Lane York YO1 6JU."
+  },
+  {
+    "id": "src-slc-portal-p250490",
+    "title": "South Lanarkshire Council planning portal, application P/25/0490 summary page",
+    "publisher": "South Lanarkshire Council",
+    "source_type": "planning_portal",
+    "url": "https://publicaccess.southlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=SVHBOUOP09500&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Official primary record. Portal was unreachable from the research environment on 2026-07-30 (connection blocked); details verified via PlanIt mirror (src-planit-haspielaw-p250490). Documents tab keyVal SVHBOUOP09500."
+  },
+  {
+    "id": "src-foxglove-scotland-dcs-2025",
+    "title": "Data centres planned for Scotland could use three times more electricity than all Scottish households (briefing)",
+    "publisher": "Foxglove",
+    "source_type": "campaign_material",
+    "url": "https://www.foxglove.org.uk/wp-content/uploads/2025/12/2025_12_02_PUB-Scotland-planned-data-centres.pdf",
+    "publication_date": "2025-12-02",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group critical of data centre expansion",
+    "notes": "Lists 'Haspielaw Farm, Land At Haspielaw Farm, ML3 8RX', developer Apatura, South Lanarkshire, capacity 'n/a'. States Foxglove 'has been unable to find a figure from the developer for Apatura's proposed Haspielaw Farm site, and again has used an estimate of 250MW, putting it in line with Apatura's other proposed facilities'. PDF downloaded and text-extracted 2026-07-30."
+  },
+  {
+    "id": "src-aprs-hamilton-dc",
+    "title": "Haspielaw (Hamilton) - Action to Protect Rural Scotland per-site page and data centre map",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/hamilton-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Rural-protection campaign group opposing green belt development",
+    "status": "active",
+    "notes": "Page content could not be fetched directly on 2026-07-30 (Cloudflare block); search-engine snippet describes 'a hyperscale data centre on Green Belt farmland south west of Hamilton', developer Apatura, EIA required. Treat green-belt characterisation as APRS's claim pending council confirmation."
+  },
+  {
+    "id": "src-planit-cadzow-bess-p250782",
+    "title": "PlanIt record of South Lanarkshire consultation P/25/0782 (Section 36, Cadzow BESS up to 500MW, Land 325m SSE of Windyhills, Muttonhole Road, Hamilton)",
+    "publisher": "PlanIt (planit.org.uk, scraped from South Lanarkshire Council Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/SouthLanarkshire/P/25/0782/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "ECU reference ECU00005042; received 2025-07-02; council raised no objection, decision 2026-03-24; agent AECOM. Adjacent-area energy project, not part of the Haspielaw data centre application."
+  },
+  {
+    "id": "src-cadzow-energy-storage-about",
+    "title": "About the proposal - Cadzow Energy Storage project website",
+    "publisher": "Cadzow Energy Storage / Advance Grid Solutions Limited (via Cogeo)",
+    "source_type": "developer_publication",
+    "url": "https://cadzowenergystorage.co.uk/about/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "notes": "Identifies the Cadzow BESS applicant as Advance Grid Solutions Limited (planning by Cogeo), i.e. NOT Apatura — establishes the neighbouring Muttonhole Road BESS is a separate promoter."
+  },
+  {
+    "id": "src-ch-apatura-search",
+    "title": "Companies House company search results for 'Apatura'",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/search?q=apatura",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Search on 2026-07-30 shows an Apatura group structure including APATURA LTD, APATURA DC LTD and numbered SPVs APATURA DC PROJECT 1–12 LTD. No public record ties a specific numbered SPV to Haspielaw; the screening applicant name is not exposed by the PlanIt mirror."
+  },
+  {
+    "id": "src-dcnews-apatura-larbert",
+    "title": "Apatura submits plans for Larbert data centre campus",
+    "publisher": "DataCentreNews UK",
+    "source_type": "journalism",
+    "url": "https://datacentrenews.uk/story/apatura-submits-plans-for-larbert-data-centre-campus",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports Apatura's portfolio-level claims: nine data centre locations in Scotland, 'more than 1.6GW of confirmed grid connections' and '2.4GW of Gate 2-compliant grid connections'. Portfolio claim, not Haspielaw-specific."
   }
 ]

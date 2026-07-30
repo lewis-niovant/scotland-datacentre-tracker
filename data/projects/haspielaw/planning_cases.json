@@ -1,0 +1,22 @@
+[
+  {
+    "reference": "P/25/0490",
+    "planning_authority": "South Lanarkshire Council",
+    "application_type": "eia_screening",
+    "description": "Screening Opinion request: proposed data centre campus including ancillary offices/employment floorspace, internal/external plant and equipment, emergency back up generators, associated fuel storage, a Battery Energy Storage System (BESS) along with internal roads and parking, hard and soft landscaping, security perimeter fencing, lighting and electricity sub station — Land At Haspielaw Farm, Muttonhole Road, Hamilton ML3 8RX.",
+    "submission_date": "2025-04-29",
+    "validation_date": "2025-05-13",
+    "decision_date": "2025-06-25",
+    "decision": "screening_eia_required",
+    "decision_notes": "Determined under delegated powers; register decision text 'Screening opinion - EIA required' (decision issued 25 June 2025; PlanIt also records a decision_date field of 2025-06-26). Agent address 1 Bar Lane, York YO1 6JU (matches Apatura's York office).",
+    "eia_required": true,
+    "official_url": "https://publicaccess.southlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=SVHBOUOP09500&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2025-04-29", "event_type": "received", "title": "Screening opinion request received by South Lanarkshire Council", "source_ids": ["src-planit-haspielaw-p250490"] },
+      { "event_date": "2025-05-13", "event_type": "validated", "title": "Screening request validated", "source_ids": ["src-planit-haspielaw-p250490"] },
+      { "event_date": "2025-06-25", "event_type": "decision", "title": "Screening opinion issued: EIA required", "source_ids": ["src-planit-haspielaw-p250490"] }
+    ],
+    "source_ids": ["src-planit-haspielaw-p250490", "src-slc-portal-p250490"]
+  }
+]
