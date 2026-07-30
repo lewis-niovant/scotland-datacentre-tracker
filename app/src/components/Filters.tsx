@@ -190,6 +190,18 @@ export function MapLegend({ lens, showPitches, pitchM2, geo, totalProjects }: {
               <em>{counts.official} project{counts.official === 1 ? '' : 's'}.</em>
             </span>
           </div>
+          {counts.osm > 0 && (
+            <div className="row boundary-note">
+              <span className="extent-key t4" aria-hidden="true" />
+              <span>
+                <strong>Solid teal — built footprint, not a planning boundary.</strong> The
+                buildings that actually stand on the site, surveyed by OpenStreetMap
+                contributors. Used where a facility predates the online planning portal, so no
+                red line exists for it. © OpenStreetMap contributors, ODbL.{' '}
+                <em>{counts.osm} project{counts.osm === 1 ? '' : 's'}.</em>
+              </span>
+            </div>
+          )}
           <div className="row boundary-note">
             <span className="extent-key t2" aria-hidden="true" />
             <span>

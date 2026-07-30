@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.2944223,
+              55.9300639
+            ],
+            [
+              -3.2940695,
+              55.9292121
+            ],
+            [
+              -3.2931944,
+              55.9293169
+            ],
+            [
+              -3.2935311,
+              55.9301702
+            ],
+            [
+              -3.2944223,
+              55.9300639
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "osm_footprint",
+        "area_m2": 5441,
+        "name": "Pulsant Edinburgh South Gyle SC-1",
+        "osm_type": "way",
+        "osm_id": 37943653,
+        "retrieved_date": "2026-07-30",
+        "licence": "ODbL \u2014 (c) OpenStreetMap contributors",
+        "review_note": "OSM buildings tagged building=data_center and named for this facility"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.2926681,
+              55.9294761
+            ],
+            [
+              -3.2924281,
+              55.9295047
+            ],
+            [
+              -3.2923643,
+              55.9296869
+            ],
+            [
+              -3.29255,
+              55.9301611
+            ],
+            [
+              -3.2926146,
+              55.9303075
+            ],
+            [
+              -3.2929774,
+              55.9302116
+            ],
+            [
+              -3.2926681,
+              55.9294761
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "osm_footprint",
+        "area_m2": 2010,
+        "name": "Pulsant Edinburgh South Gyle SC-1",
+        "osm_type": "way",
+        "osm_id": 37943663,
+        "retrieved_date": "2026-07-30",
+        "licence": "ODbL \u2014 (c) OpenStreetMap contributors",
+        "review_note": "OSM buildings tagged building=data_center and named for this facility"
+      }
+    }
+  ]
+}

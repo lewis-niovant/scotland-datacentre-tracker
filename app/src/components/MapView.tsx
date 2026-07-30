@@ -6,7 +6,7 @@ import { STATUS_GROUPS, STATUS_GROUP_META, projectCoords, statusGroup } from '..
 import type { LensDef } from '../lib/lenses'
 import {
   boundaryFeatures, buildingMasses, centroidOf, extentExplanation, extentFeatures, pitchGrid,
-  polysOf, primaryBoundary, STOREY_M, type MassSpec,
+  osmFootprints, pitchesPhrase, polysOf, primaryBoundary, STOREY_M, type MassSpec,
 } from '../lib/geometry'
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
@@ -22,6 +22,10 @@ export const REDLINE = '#c0242d'
 export const EXTENT2 = '#9a5b12'
 /** Tier 3 — projected extent, settlement-level location. Dotted, fainter, unfilled. */
 export const EXTENT3 = '#6b6560'
+/** Tier 4 — a surveyed OSM outline of what is actually built. Solid like a red
+    line because it is real geometry, but a different hue so the two are never
+    confused: one is what was applied for, the other is what stands there. */
+export const OSM_BUILT = '#1f7a6f'
 /** Zoom at which real boundaries appear (the national view stays clean). */
 export const BOUNDARY_MIN_ZOOM = 9
 /** Zoom at which the derived pitch grid appears. */
@@ -42,6 +46,12 @@ interface Props {
   pitchM2: number
   /** How many of the shown projects publish a height, so the 3D caption can be honest. */
   onMassCount?: (n: number) => void
+  /** Hands the live map out, so overlays owned by the page (objection bubbles,
+      the guided tour camera) can attach without MapView knowing about them. */
+  onMapReady?: (map: MapLibreMap | null) => void
+  /** The guided tour drives its own camera; the filter auto-fit must stand down
+      while it does, or the two animations fight each other. */
+  suppressAutoFit?: boolean
 }
 
 function qv(q?: QuantityClaim): number | null {
@@ -155,7 +165,7 @@ function donutHTML(props: Record<string, unknown>, lens: LensDef, dark: boolean)
 /* ---------------- extent explanation popups ---------------- */
 
 /** Hit-testable extent layers, most specific first. */
-const EXTENT_LAYERS = ['dc-extent2-fill', 'dc-extent3-fill', 'dc-boundary-fill']
+const EXTENT_LAYERS = ['dc-osm-fill', 'dc-extent2-fill', 'dc-extent3-fill', 'dc-boundary-fill']
 
 function openExtentPopup(
   map: MapLibreMap,
@@ -209,6 +219,7 @@ function ariaFor(props: Record<string, unknown>, lens: LensDef): string {
 
 export default function MapView({
   projects, lens, geo, selectedSlug, onSelect, threeD, showPitches, pitchM2, onMassCount,
+  onMapReady, suppressAutoFit,
 }: Props) {
   const massCountRef = useRef(onMassCount)
   massCountRef.current = onMassCount
@@ -251,6 +262,7 @@ export default function MapView({
       const empty = { type: 'FeatureCollection' as const, features: [] }
 
       map.addSource('dc-boundaries', { type: 'geojson', data: empty })
+      map.addSource('dc-osm', { type: 'geojson', data: empty })
       map.addSource('dc-extents', { type: 'geojson', data: empty })
       map.addSource('dc-extent-centres', { type: 'geojson', data: empty })
       map.addSource('dc-pitches', { type: 'geojson', data: empty })
@@ -274,6 +286,26 @@ export default function MapView({
           'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.6, 12, 2.6, 16, 3.4],
         },
       })
+      /* ---- tier 4: built footprint (OpenStreetMap) ---- */
+      map.addLayer({
+        id: 'dc-osm-fill', type: 'fill', source: 'dc-osm',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        paint: {
+          'fill-color': OSM_BUILT,
+          'fill-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0, BOUNDARY_MIN_ZOOM + 1.2, 0.24],
+        },
+      })
+      map.addLayer({
+        id: 'dc-osm-line', type: 'line', source: 'dc-osm',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: {
+          'line-color': OSM_BUILT,
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0.15, BOUNDARY_MIN_ZOOM + 1, 1],
+          'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.6, 12, 2.6, 16, 3.4],
+        },
+      })
+
       /* ---- tier 2: dashed, faint fill ---- */
       map.addLayer({
         id: 'dc-extent2-fill', type: 'fill', source: 'dc-extents',
@@ -339,6 +371,8 @@ export default function MapView({
         paint: {
           'fill-color': ['case', ['==', ['get', 'stripe'], 1], '#3f9142', '#357c38'],
           'fill-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.62],
+          /* Turf washes in over the site rather than appearing all at once. */
+          'fill-opacity-transition': { duration: 520, delay: 0 },
         },
       })
       map.addLayer({
@@ -349,6 +383,7 @@ export default function MapView({
           'line-color': '#ffffff',
           'line-width': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0.5, 16, 1.4],
           'line-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.85],
+          'line-opacity-transition': { duration: 520, delay: 180 },
         },
       })
       map.addLayer({
@@ -360,8 +395,11 @@ export default function MapView({
             'case', ['==', ['get', 'footprint_sourced'], true], '#1c5cab', '#7a8698',
           ],
           'fill-extrusion-opacity': 0.85,
-          'fill-extrusion-height': ['coalesce', ['to-number', ['get', 'height']], 12],
+          'fill-extrusion-height': 0,
           'fill-extrusion-base': 0,
+          /* Blocks grow up out of the ground when 3D is switched on — the motion
+             is what makes the height register as height rather than as a shape. */
+          'fill-extrusion-height-transition': { duration: 900, delay: 120 },
         },
       })
 
@@ -532,6 +570,11 @@ export default function MapView({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  useEffect(() => {
+    onMapReady?.(ready ? mapRef.current : null)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready])
+
   /* ---------- points update when projects / lens change ---------- */
   useEffect(() => {
     const map = mapRef.current
@@ -556,6 +599,11 @@ export default function MapView({
       if (map.getLayer(id)) map.setFilter(id, ['in', ['get', 'slug'], ['literal', slugs]])
     }
 
+    /* Built footprints travel with the same filters. */
+    const osm = osmFootprints(geo).filter((f) => slugs.includes(f.properties.slug ?? ''))
+    ;(map.getSource('dc-osm') as GeoJSONSource | undefined)
+      ?.setData({ type: 'FeatureCollection', features: osm } as never)
+
     /* Projected extents (tiers 2 and 3) travel with the same filters. */
     const exts = extentFeatures(geo).filter((f) => slugs.includes(f.properties.slug ?? ''))
     ;(map.getSource('dc-extents') as GeoJSONSource | undefined)
@@ -574,7 +622,7 @@ export default function MapView({
     /* The pitch grid works inside projections too, so people can count pitches
        for a projected site as well as an official one. */
     const pitches = map.getSource('dc-pitches') as GeoJSONSource | undefined
-    pitches?.setData(pitchGrid([...feats, ...exts], pitchM2) as never)
+    pitches?.setData(pitchGrid([...feats, ...exts, ...osm], pitchM2) as never)
   }, [geo, projects, pitchM2, ready])
 
   /* ---------- indicative masses: driven by SOURCED HEIGHT ----------
@@ -618,27 +666,31 @@ export default function MapView({
     const wanted = [
       ...boundaryFeatures(geo).filter((f) => f.properties.is_primary && slugs.has(f.properties.slug ?? '')),
       ...extentFeatures(geo).filter((f) => slugs.has(f.properties.slug ?? '')),
+      ...osmFootprints(geo).filter((f) => slugs.has(f.properties.slug ?? '')),
     ]
     const live = new Set<string>()
     for (const f of wanted) {
       const isExtent = f.properties.kind === 'projected_extent'
-      const areaM2 = isExtent ? f.properties.area_m2 : f.properties.official_area_m2
+      const isOsm = f.properties.kind === 'osm_footprint'
+      const areaM2 = isExtent || isOsm ? f.properties.area_m2 : f.properties.official_area_m2
       const centre = centroidOf(polysOf(f))
       if (typeof areaM2 !== 'number' || !centre) continue
       const key = `${f.properties.slug}|${f.properties.reference ?? f.properties.kind ?? ''}`
       live.add(key)
       if (areaLabelsRef.current.has(key)) continue
       const el = document.createElement('div')
-      const tier = isExtent ? (f.properties.tier === 3 ? 3 : 2) : 1
+      const tier = isOsm ? 4 : isExtent ? (f.properties.tier === 3 ? 3 : 2) : 1
       el.className = `pitch-label t${tier}`
       /* The true ratio, from the same area the tooltip quotes. */
-      const pitches = Math.round(areaM2 / pitchM2)
+      const phrase = pitchesPhrase(areaM2, pitchM2)
       const caption = tier === 1
         ? 'official red line'
-        : tier === 2
-          ? 'projected size, not a boundary'
-          : 'projected size · location settlement-level only'
-      el.innerHTML = `<strong>≈ ${pitches} football pitches</strong>`
+        : tier === 4
+          ? 'built footprint (OpenStreetMap)'
+          : tier === 2
+            ? 'projected size, not a boundary'
+            : 'projected size · location settlement-level only'
+      el.innerHTML = `<strong>${phrase.replace(/^about /, '≈ ')}</strong>`
         + `<span>${caption} · ${(areaM2 / 10000).toFixed(1)} ha</span>`
       areaLabelsRef.current.set(key, new Marker({ element: el }).setLngLat(centre).addTo(map))
     }
@@ -668,7 +720,8 @@ export default function MapView({
         el.innerHTML = `<strong>${h} m tall</strong>`
           + `<span>≈ ${Math.max(1, Math.round(h / STOREY_M))} storeys · `
           + `${sourced ? 'published footprint' : 'nominal block, footprint not published'}</span>`
-        heightLabelsRef.current.set(key, new Marker({ element: el }).setLngLat(centre).addTo(map))
+        heightLabelsRef.current.set(key,
+          new Marker({ element: el, offset: [0, -74] }).setLngLat(centre).addTo(map))
       }
     }
     for (const [key, m] of heightLabelsRef.current) {
@@ -714,11 +767,30 @@ export default function MapView({
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
-    map.easeTo({ pitch: threeD ? 55 : 0, bearing: 0, duration: 600 })
+    /* While the tour is flying it owns the camera: its beat already specifies a
+       pitch, and a second easeTo here lands on top of it and cancels the zoom
+       mid-flight. Only the extrusion visibility is ours to change then. */
+    if (!suppressAutoFit) map.easeTo({ pitch: threeD ? 55 : 0, bearing: 0, duration: 600 })
     if (loadedRef.current && map.getLayer('dc-building-extrusion')) {
-      map.setLayoutProperty('dc-building-extrusion', 'visibility', threeD ? 'visible' : 'none')
+      if (threeD) {
+        map.setLayoutProperty('dc-building-extrusion', 'visibility', 'visible')
+        /* Set the real height on the next frame so the transition has a 0 to
+           animate from; setting both at once would skip straight to full height. */
+        requestAnimationFrame(() => {
+          if (!mapRef.current?.getLayer('dc-building-extrusion')) return
+          map.setPaintProperty('dc-building-extrusion', 'fill-extrusion-height',
+            ['coalesce', ['to-number', ['get', 'height']], 12])
+        })
+      } else {
+        map.setPaintProperty('dc-building-extrusion', 'fill-extrusion-height', 0)
+        window.setTimeout(() => {
+          if (mapRef.current?.getLayer('dc-building-extrusion')) {
+            map.setLayoutProperty('dc-building-extrusion', 'visibility', 'none')
+          }
+        }, 900)
+      }
     }
-  }, [threeD, ready])
+  }, [threeD, ready, suppressAutoFit])
 
   /* ---------- a filter change moves the map, so filtering is visibly effective ---------- */
   useEffect(() => {
@@ -728,7 +800,7 @@ export default function MapView({
     const first = fitSigRef.current === null
     const changed = fitSigRef.current !== sig
     fitSigRef.current = sig
-    if (first || !changed || selectedSlug) return
+    if (first || !changed || selectedSlug || suppressAutoFit) return
     const coords = projects.map(projectCoords).filter((c): c is [number, number] => !!c)
     if (!coords.length) return
     let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity

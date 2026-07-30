@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -4.2838192,
+              55.8512806
+            ],
+            [
+              -4.2838393,
+              55.8509979
+            ],
+            [
+              -4.2833727,
+              55.8509889
+            ],
+            [
+              -4.2833705,
+              55.8510555
+            ],
+            [
+              -4.2832713,
+              55.8510526
+            ],
+            [
+              -4.2832599,
+              55.8511768
+            ],
+            [
+              -4.2832581,
+              55.8511968
+            ],
+            [
+              -4.2833499,
+              55.8511995
+            ],
+            [
+              -4.2833455,
+              55.8512599
+            ],
+            [
+              -4.2833448,
+              55.8512696
+            ],
+            [
+              -4.2838192,
+              55.8512806
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "osm_footprint",
+        "area_m2": 1011,
+        "name": "iomart Glasgow Data Centre",
+        "osm_type": "way",
+        "osm_id": 133868759,
+        "retrieved_date": "2026-07-30",
+        "licence": "ODbL \u2014 (c) OpenStreetMap contributors",
+        "review_note": "OSM building tagged building=data_center and named for this facility"
+      }
+    }
+  ]
+}

@@ -730,3 +730,128 @@ ul.plain li:last-child { border-bottom: 0; }
   .map-page.has-panel .map-controls { right: 424px; }
 }
 .map-controls { transition: right 0.24s ease; }
+
+/* ================= guided tour ================= */
+.tour {
+  position: absolute; inset: auto 0 0 0; z-index: 42;
+  display: flex; justify-content: center; padding: 0 12px 18px;
+  pointer-events: none;
+}
+@media (min-width: 800px) {
+  .tour { inset: auto auto 26px 12px; justify-content: flex-start; padding: 0; }
+}
+.tour.leaving { opacity: 0; transform: translateY(10px); transition: all 0.26s ease; }
+.tour-card {
+  pointer-events: auto; width: min(100%, 400px);
+  background: var(--surface-1); border: 1px solid var(--border);
+  border-radius: var(--r-lg); box-shadow: var(--shadow-3);
+  padding: 16px 18px 14px;
+  animation: tour-in 0.34s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+@keyframes tour-in { from { transform: translateY(16px); opacity: 0; } to { transform: none; opacity: 1; } }
+.tour-progress { display: flex; gap: 4px; margin-bottom: 12px; }
+.tour-progress span {
+  height: 3px; flex: 1; border-radius: 2px; background: var(--hairline);
+  transition: background 0.3s ease;
+}
+.tour-progress span.done { background: color-mix(in srgb, var(--accent) 45%, transparent); }
+.tour-progress span.on { background: var(--accent); }
+.tour-kicker {
+  margin: 0 0 4px; font-size: 11px; font-weight: 700; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--accent);
+}
+.tour-card h2 { margin: 0 0 6px; font-size: 19px; line-height: 1.25; letter-spacing: -0.01em; }
+.tour-body { margin: 0 0 14px; font-size: 13.5px; line-height: 1.5; color: var(--ink-2); }
+.tour-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.tour-skip {
+  border: 0; background: none; color: var(--ink-3); cursor: pointer;
+  font-size: 12.5px; padding: 6px 2px;
+}
+.tour-skip:hover { color: var(--ink-1); text-decoration: underline; }
+.tour-next {
+  border: 0; background: var(--accent); color: #fff; cursor: pointer;
+  font-size: 13px; font-weight: 600; padding: 9px 16px; border-radius: var(--r-md);
+}
+.tour-next:hover { filter: brightness(1.06); }
+
+/* ================= objection bubbles ================= */
+.obj-bubble {
+  display: flex; align-items: center; gap: 4px; cursor: pointer;
+  padding: 3px 8px 3px 5px; border-radius: 999px;
+  background: var(--surface-1); border: 1.5px solid #b4432c;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.22);
+  font: inherit; line-height: 1;
+  animation: obj-in 0.3s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+@keyframes obj-in { from { transform: scale(0.5); opacity: 0; } to { transform: none; opacity: 1; } }
+.obj-bubble:hover { transform: scale(1.06); }
+.obj-bubble:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.obj-icon { font-size: 13px; }
+/* A site with objections in the hundreds gets a slow pulse — enough to draw the
+   eye on a national view, not enough to read as decoration. */
+.obj-icon.loud { animation: obj-pulse 2.4s ease-in-out infinite; }
+@keyframes obj-pulse { 0%, 100% { transform: none; } 50% { transform: scale(1.18) rotate(-8deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .obj-icon.loud { animation: none; }
+  .obj-bubble, .tour-card { animation: none; }
+}
+.obj-count { font-size: 11.5px; font-weight: 700; color: #8f2f1c; }
+
+.obj-popup .maplibregl-popup-content { padding: 14px 15px 12px; border-radius: var(--r-md); }
+.obj-pop-title { display: block; font-size: 14px; margin-bottom: 4px; }
+.obj-pop-count { margin: 0 0 6px; font-size: 12px; font-weight: 600; color: #8f2f1c; }
+.obj-pop-groups { margin: 0 0 10px; font-size: 11.5px; color: var(--ink-3); }
+.obj-list { margin: 0; padding: 0; list-style: none; max-height: 320px; overflow-y: auto; }
+.obj-list li { padding: 9px 0; border-top: 1px solid var(--hairline); }
+.obj-concern { margin: 0; font-size: 12.5px; line-height: 1.45; color: var(--ink-1); }
+.obj-by { margin: 3px 0 0; font-size: 11px; color: var(--ink-3); }
+.obj-response {
+  margin: 5px 0 0; font-size: 11.5px; line-height: 1.4; color: var(--ink-2);
+  border-left: 2px solid var(--hairline); padding-left: 7px;
+}
+.obj-cite { margin: 5px 0 0; font-size: 10.5px; }
+.obj-cite a { color: var(--accent); }
+.map-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+
+/* The objection popup can be long; keep it inside the viewport rather than
+   running off the bottom of the map. */
+.obj-popup .maplibregl-popup-content { max-height: min(58vh, 460px); overflow-y: auto; }
+
+/* ================= per-project staged site reveal ================= */
+.reveal-section { display: flex; flex-direction: column; gap: 10px; }
+.reveal-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.reveal-head h2 { margin: 0; font-size: 16px; }
+.reveal-steps { display: flex; gap: 4px; flex-wrap: wrap; }
+.reveal-steps button {
+  border: 1px solid var(--border); background: var(--surface-2); color: var(--ink-2);
+  border-radius: 999px; padding: 5px 11px; font-size: 12px; cursor: pointer;
+}
+.reveal-steps button.done { color: var(--ink-1); border-color: var(--hairline); }
+.reveal-steps button.on {
+  background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+}
+.reveal-map {
+  position: relative; height: 320px; border-radius: var(--r-md); overflow: hidden;
+  border: 1px solid var(--border); background: var(--surface-2);
+}
+@media (min-width: 800px) { .reveal-map { height: 400px; } }
+.reveal-canvas {
+  /* MapLibre stamps `position: relative` on its container, which beats `inset:0`
+     and collapses the box to zero height. Size it explicitly, as .map-canvas does. */
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 0; isolation: isolate;
+}
+.reveal-fallback {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  margin: 0; font-size: 12.5px; color: var(--ink-3);
+}
+.reveal-caption { margin: 0; font-size: 13px; line-height: 1.5; color: var(--ink-2); min-height: 2.6em; }
+.reveal-actions { display: flex; gap: 8px; }
+.reveal-btn {
+  border: 1px solid var(--border); background: var(--surface-1); color: var(--ink-1);
+  border-radius: var(--r-md); padding: 8px 14px; font-size: 13px; cursor: pointer;
+}
+.reveal-btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.reveal-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+.pitch-label.t4 { border-left-color: #1f7a6f; }
+.extent-key.t4, .extent-pop.t4 .extent-key { border: 2px solid #1f7a6f; background: rgb(31 122 111 / 0.18); }

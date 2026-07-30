@@ -6,8 +6,11 @@ Outputs:
   app/public/data/geo.json          — FeatureCollection: one point per project + boundary/building
                                       features + derived projected extents
 
-Three tiers of site extent are published:
+Four tiers of site extent are published:
   1. `kind: "boundary"`          — official red line, researched and committed under data/projects/.
+  1b. `kind: "osm_footprint"`    — a surveyed OpenStreetMap outline of what is actually built,
+     for facilities predating the online planning portal (see scripts/fetch_osm_footprints.py).
+     Real geometry, but evidence of the building, NOT of any application boundary.
   2. `kind: "projected_extent"`, `tier: 2` — DERIVED HERE, never committed: a square of the
      sourced site area centred on a reliably-recorded point. The area is sourced; the shape,
      orientation and parcel are not.
@@ -191,7 +194,14 @@ def main():
 
         site = record.get("site") or {}
         boundary_feats = []
-        for geo_name, kind in (("boundary", "boundary"), ("buildings", "building")):
+        osm_feats = []
+        for geo_name, kind in (
+            ("boundary", "boundary"),
+            ("buildings", "building"),
+            # A surveyed OSM outline of what is actually built. Its own tier: it is
+            # evidence of the facility, and is never a planning boundary.
+            ("osm_footprint", "osm_footprint"),
+        ):
             g = load(pdir / "geo" / f"{geo_name}.geojson")
             if g:
                 feats = g["features"] if g.get("type") == "FeatureCollection" else [g]
@@ -201,16 +211,20 @@ def main():
                     geo_features.append(f)
                     if kind == "boundary":
                         boundary_feats.append(f)
+                    elif kind == "osm_footprint":
+                        osm_feats.append(f)
         has_boundary = bool(boundary_feats)
 
         if "latitude" in site and "longitude" in site:
             recorded = [site["longitude"], site["latitude"]]
             coords, snapped, offset = recorded, False, None
-            if has_boundary:
+            anchor_feats = boundary_feats or osm_feats
+            if anchor_feats:
                 primary = next(
-                    (f for f in boundary_feats if f["properties"].get("is_primary")),
-                    max(boundary_feats,
-                        key=lambda f: f["properties"].get("official_area_m2") or 0),
+                    (f for f in anchor_feats if f["properties"].get("is_primary")),
+                    max(anchor_feats,
+                        key=lambda f: f["properties"].get("official_area_m2")
+                        or f["properties"].get("area_m2") or 0),
                 )
                 rings = _rings(primary.get("geometry"))
                 if rings and not any(_in_ring(recorded, r) for r in rings):
@@ -243,7 +257,7 @@ def main():
             })
 
         # Tiers 2/3 only where tier 1 is absent — a projection never competes with a red line.
-        if not has_boundary:
+        if not has_boundary and not osm_feats:
             ext = projected_extent(slug, site, record["project"].get("is_sensitive"))
             if ext:
                 geo_features.append(ext)
