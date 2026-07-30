@@ -481,5 +481,122 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 4,
     "notes": "Corroborates 27 April 2017 approval of the £150m Blackdog mixed-use masterplan; Kirkwood Homes housing scheme approved the month before."
+  },
+  {
+    "id": "src-eac-portal-25-0008-preapp",
+    "title": "East Ayrshire Council planning portal record 25/0008/PREAPP — Data centre complex, Land at Purroch Farm, Mauchline Road, Hurlford",
+    "publisher": "East Ayrshire Council (Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://eplanning.east-ayrshire.gov.uk/online/applicationDetails.do?keyVal=T5KFT0GF01U00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Portal returned HTTP 503 on direct fetch on 2026-07-30; record contents corroborated via PlanIt mirror of the portal (see src-planit-25-0008-preapp) and the APRS page which links this exact URL and reference."
+  },
+  {
+    "id": "src-planit-25-0008-preapp",
+    "title": "PlanIt aggregated record for East Ayrshire application 25/0008/PREAPP",
+    "publisher": "PlanIt (planit.org.uk, scrape of East Ayrshire Idox portal)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/EastAyrshire/25/0008/PREAPP/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "Machine-readable mirror of the council portal record; last scraped 2025-12-11. Gives description, dates (received/validated 2025-11-10, decided 2025-11-25), KA1 5JJ postcode, ward Kilmarnock East and Hurlford, and point coordinates -4.445493, 55.589073."
+  },
+  {
+    "id": "src-bbc-rufus-2026",
+    "title": "Could a huge data centre revitalise Ayrshire – or ruin it? (BBC Glasgow and West, Jonathan Geddes, 1 March 2026; accessed via repost)",
+    "publisher": "BBC News",
+    "source_type": "journalism",
+    "url": "https://nuclear-news.net/2026/03/06/7-b1-could-a-huge-data-centre-revitalise-ayrshire-or-ruin-it/",
+    "publication_date": "2026-03-01",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "perspective": "BBC reporting; accessed via nuclear-news.net repost (anti-nuclear campaign blog) because the BBC original and Yahoo syndication were not retrievable — quotes should be re-verified against the BBC original.",
+    "notes": "Reports ~100 hectares (250 acres) near HMP Kilmarnock; 540MW; Alex de Vries (Digiconomist) estimate of nearly 6 billion litres of freshwater per year; resident quotes (Lisa Beacham, Cheryl Rowland); ILI statement that the 'vast majority' of the land is for biodiversity and landscaping."
+  },
+  {
+    "id": "src-ili-rufus-consultation",
+    "title": "Rufus Data Centre Project — pre-application consultation page",
+    "publisher": "ILI Group",
+    "source_type": "developer_publication",
+    "url": "https://meetings.ili-energy.com/rufus-data-centre-project/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional/consultation material",
+    "notes": "Describes an AI-focused data centre near Hurlford 'entirely powered by off-site renewable energy sources'; lists consultation events 24 Feb 2026 (Park Hotel, Kilmarnock), 3 Mar 2026 (Hurlford Community Centre), 11 Mar 2026 (Galston Community Centre); claims 'hundreds of jobs during construction and skilled tech jobs when operating'; community support offers (school transport, defibrillators, local funding)."
+  },
+  {
+    "id": "src-ili-data-centres",
+    "title": "Data Centres — The Stoics",
+    "publisher": "ILI Group",
+    "source_type": "developer_publication",
+    "url": "https://ili-energy.com/data-centres/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material",
+    "notes": "Claims each Stoics site 'has secured grid connection, land rights, and has entered the planning process'; 'tens of billions of pounds in private investment'; 'thousands of construction jobs at peak'; renewable power / net-zero and heat-recovery claims. No site-specific figures for Rufus."
+  },
+  {
+    "id": "src-bdc-stoics-2025",
+    "title": "ILI Group Launches The Stoics – A £15 Billion Green Data Centre Network",
+    "publisher": "BDC Magazine",
+    "source_type": "journalism",
+    "url": "https://bdcmagazine.com/2025/11/ili-group-launches-the-stoics-a-15-billion-green-data-centre-network/",
+    "publication_date": "2025-11-04",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Trade press coverage of the 4 Nov 2025 Stoics launch: £15bn total investment across Cato (Fife), Rufus (East Ayrshire), Aurelius (North Lanarkshire); Mark Wilson (CEO) quote."
+  },
+  {
+    "id": "src-yahoo-glasgowlive-rufus-2025",
+    "title": "Massive data centre plan for Ayrshire is part of £15 billion investment (syndicated)",
+    "publisher": "Yahoo News UK (syndication)",
+    "source_type": "journalism",
+    "url": "https://uk.news.yahoo.com/massive-data-centre-plan-ayrshire-114104955.html",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports 540MW capacity for Rufus; site at Purroch Farm just north of HMP Kilmarnock; first Stoics phase targeted online by 2027; Logan Energy Project Management involvement; describes application as awaiting determination on East Ayrshire's portal (the record concerned is the pre-application 25/0008/PREAPP)."
+  },
+  {
+    "id": "src-aprs-hurlford",
+    "title": "ILI Rufus by Hurlford",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/hurlford-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Countryside-protection campaign body running a national data centres campaign; opposed to greenfield data centre development",
+    "notes": "Describes a 540MW data centre on farmland on the edge of Hurlford, 'currently in the pre-application stage'; links portal reference 25/0008/PREAPP, the developer consultation page, a local campaign Facebook group (facebook.com/groups/1604173331036496) and campaign website (ayrshiremajordev.wixsite.com/hurlforddevelopment)."
+  },
+  {
+    "id": "src-amdcg-proposal",
+    "title": "The Proposal — Hurlford Development",
+    "publisher": "Ayrshire Major Development Community Group",
+    "source_type": "community_material",
+    "url": "https://ayrshiremajordev.wixsite.com/hurlforddevelopment/the-proposal",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Volunteer-run local community campaign group critical of the proposal",
+    "notes": "States 540MW base power capacity 'before any future expansion'; pre-application submitted November 2025; concerns: scale, absence of EIA to date, water use for cooling, electricity demand, wildlife, landscape, and residents' exclusion from early engagement."
+  },
+  {
+    "id": "src-ch-ili-rufus",
+    "title": "ILI RUFUS LIMITED (SC825440) — Companies House record",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC825440",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Private limited company incorporated 10 October 2024; active; SIC 41201 (construction of commercial buildings); registered office 33 Bothwell Road, Hamilton, ML3 0AS (ILI Group address)."
+  },
+  {
+    "id": "src-ch-ili-group",
+    "title": "INTELLIGENT LAND INVESTMENTS GROUP PLC (SC564296) — Companies House record",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC564296",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Parent group PLC, Hamilton-registered; same registered office (33 Bothwell Road, Hamilton ML3 0AS) as ILI Rufus Limited."
   }
 ]

@@ -1,0 +1,43 @@
+{
+  "slug": "hurlford-rufus",
+  "canonical_name": "Rufus Data Centre (Purroch Farm, Hurlford)",
+  "display_name": "Rufus (Hurlford)",
+  "aliases": [
+    { "alias": "Rufus", "alias_type": "marketing_name", "source_ids": ["src-ili-data-centres", "src-ili-rufus-consultation"] },
+    { "alias": "The Stoics (Rufus site)", "alias_type": "marketing_name", "source_ids": ["src-ili-data-centres", "src-bdc-stoics-2025"] },
+    { "alias": "Land at Purroch Farm, Mauchline Road, Hurlford", "alias_type": "place_name", "source_ids": ["src-planit-25-0008-preapp"] },
+    { "alias": "ILI Rufus Limited", "alias_type": "spv_name", "source_ids": ["src-ch-ili-rufus"] }
+  ],
+  "summary": "Proposed AI-focused hyperscale data centre campus promoted by ILI Group on farmland at Purroch Farm, Mauchline Road, near Hurlford and HMP Kilmarnock, East Ayrshire, badged at 540MW. One of three ILI 'Stoics' sites (with Cato in Fife and Aurelius in North Lanarkshire) in a claimed £15bn programme. A Proposal of Application Notice (25/0008/PREAPP) was lodged with East Ayrshire Council in November 2025 and pre-application consultation events ran in February–March 2026; no full planning application had been located as of July 2026. There is an active local campaign group opposing the proposal.",
+  "project_type": "hyperscale",
+  "status": "pre_application",
+  "status_source_ids": ["src-planit-25-0008-preapp", "src-aprs-hurlford", "src-amdcg-proposal"],
+  "maturity_level": "M1",
+  "maturity_explanation": "Proposal of Application Notice 25/0008/PREAPP received and validated by East Ayrshire Council on 2025-11-10 (PAN process concluded 2025-11-25), with statutory pre-application consultation events held February–March 2026. No EIA screening/scoping record or full planning application for the Purroch Farm site was found on the council portal (via PlanIt mirror) or in press coverage as of 2026-07-30, so the project is early development, not a validated formal application.",
+  "verification_level": "verified",
+  "local_authority": "East Ayrshire Council",
+  "region": "Ayrshire",
+  "first_public_date": "2025-11-04",
+  "anticipated_operational_date": "First Stoics phase targeted online by 2027 (developer/press claim across the three-site programme; not specific to Rufus)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-03-11",
+    "headline": "Final advertised pre-application consultation event held at Galston Community Centre; formal application to East Ayrshire Council anticipated but not yet located",
+    "source_ids": ["src-ili-rufus-consultation"]
+  },
+  "unknowns": [
+    "Whether a full planning application (or EIA screening/scoping request) has been submitted to East Ayrshire Council since the November 2025 PAN — the council portal returned HTTP 503 on 2026-07-30 and the PlanIt mirror was last scraped 2025-12-11",
+    "Precise red-line site boundary and site area from planning documents (the ~100 ha figure is from BBC reporting, not a verified plan)",
+    "Building footprints, number of data halls, gross floor area and maximum building heights",
+    "Phasing of the development",
+    "Agricultural land classification (LCA class) of the Purroch Farm land",
+    "Whether the 540MW figure is IT load, grid import capacity, or a contracted/applied-for connection figure, and any grid connection agreement details (operator, voltage, substation, connection date)",
+    "Cooling technology and quantified water demand from the applicant (only a third-party estimate exists)",
+    "Site-specific capital cost, construction and operational job numbers with methodology",
+    "Identity of any anchor tenant/operator; ILI is a developer that has historically sold consented projects on"
+  ]
+}
