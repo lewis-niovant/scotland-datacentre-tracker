@@ -27,6 +27,12 @@ scripts/
 app/                 Static web app (Vite + React + MapLibre)
 ```
 
+## Site boundaries and geometry
+
+Official red-line planning boundaries are held for **17 of the 39 projects**, fetched from Spatial Hub Scotland's "Planning Applications: Official" dataset (Improvement Service) under the **Open Government Licence v3**. Attribution: *Contains information from Spatial Hub Scotland, "Planning Applications: Official" (Improvement Service), licensed under the Open Government Licence v3.0.*
+
+See [docs/GEOMETRY_AND_BOUNDARIES.md](docs/GEOMETRY_AND_BOUNDARIES.md) for coverage, the area reconciliation against previously researched site areas, why the other 22 projects have no boundary, where dashed "area sourced, shape modelled" extents are used instead, and the access recipe for reproducing the fetch.
+
 ## Validation
 
 ```
