@@ -1,0 +1,40 @@
+{
+  "slug": "ochiltree",
+  "canonical_name": "Ochiltree (Creoch Farm) Data Centre Campus",
+  "display_name": "Ochiltree / Creoch Farm data centre campus",
+  "aliases": [
+    { "alias": "Apatura Ochiltree", "alias_type": "marketing_name", "source_ids": ["src-aprs-ochiltree"] },
+    { "alias": "Land South of Creoch Farm, Ochiltree, Cumnock", "alias_type": "place_name", "source_ids": ["src-planit-ea-25-0003-eiascr"] },
+    { "alias": "Apatura DC Project 12", "alias_type": "spv_name", "source_ids": ["src-bebeez-dcd-ochiltree-2025", "src-ch-apatura-dc12"] }
+  ],
+  "summary": "Proposed data centre campus of up to 200MW IT load on c.24.5 ha of agricultural land south of Creoch Farm, Ochiltree, near Cumnock, East Ayrshire, immediately north of the former Killoch Colliery. Developer Apatura (via SPV Apatura DC Project 12 Ltd) requested an EIA screening opinion in June 2025; East Ayrshire Council determined on 14 July 2025 that EIA is required. Flexible layout of one or more 1-2 storey buildings totalling c.45,000 sqm, rooftop solar, a new on-site substation and an underground cable connection to Killoch Substation less than 0.5 km away. A screening request for a separate/precursor 200MW BESS adjacent to Killoch was made in January 2025. No PAN, scoping request or planning application had been identified as of 30 July 2026.",
+  "project_type": "unknown",
+  "status": "pre_application",
+  "status_source_ids": ["src-planit-ea-25-0003-eiascr", "src-ea-eplanning-25-0003-eiascr"],
+  "maturity_level": "M1",
+  "maturity_explanation": "EIA screening request submitted 2025-06-03 and determined 2025-07-14 (EIA required) — early development stage. No Proposal of Application Notice, EIA scoping request or planning application located on the East Ayrshire register via PlanIt as of 2026-07-30.",
+  "verification_level": "verified",
+  "local_authority": "East Ayrshire Council",
+  "region": "Ayrshire",
+  "first_public_date": "2025-06-03",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2025-07-14",
+    "headline": "East Ayrshire Council issued screening opinion: EIA required for the proposed data centre campus (25/0003/EIASCR)",
+    "source_ids": ["src-planit-ea-25-0003-eiascr", "src-aprs-ochiltree"]
+  },
+  "unknowns": [
+    "Whether a Proposal of Application Notice (PAN) has been or will be submitted — none found on the register to 2026-07-30",
+    "Whether the January 2025 200MW BESS screening (25/0002/S36SCR, Land Adjacent Killoch) was made by Apatura or another party — journalism links it to the same site but the register scrape does not name the applicant",
+    "Grid connection contractual status at Killoch Substation (application/offer/gate status) — only developer 'grid-secured' portfolio marketing located",
+    "IT load vs grid import basis of the 200MW figure",
+    "Cooling method and water demand — not disclosed",
+    "Jobs, investment and community benefit figures — none published for this site",
+    "End user / operator — developer states none confirmed",
+    "Exact red-line boundary — screening plan not accessible (portal 503, APRS mirror captcha-blocked)"
+  ]
+}

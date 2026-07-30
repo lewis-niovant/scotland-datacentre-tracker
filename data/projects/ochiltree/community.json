@@ -1,0 +1,13 @@
+{
+  "summary": "Little site-specific community response has surfaced publicly as of July 2026. The proposal is at EIA screening stage only, before the statutory pre-application consultation that a Proposal of Application Notice would trigger, so no formal representation window has opened. APRS lists the scheme on its national data centre campaign map and mirrors the screening document, but has not published a site-specific position. No Ochiltree Community Council statement, petition or local press coverage of objections was located.",
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Monitoring: tracks 'Apatura Ochiltree' on its data centres campaign map, noting it is a 200MW data centre on farmland next to Killoch Colliery and that an EIA will be required. No explicit objection published on the page.",
+      "source_ids": ["src-aprs-ochiltree"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "notes": "Re-check once a PAN is lodged: statutory community consultation (minimum one public event) and Ochiltree/Cumnock community council responses would follow at that stage."
+}

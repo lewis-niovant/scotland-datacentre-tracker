@@ -2497,5 +2497,107 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 4,
     "notes": "Reports Apatura's portfolio-level claims: nine data centre locations in Scotland, 'more than 1.6GW of confirmed grid connections' and '2.4GW of Gate 2-compliant grid connections'. Portfolio claim, not Haspielaw-specific."
+  },
+  {
+    "id": "src-ea-eplanning-25-0003-eiascr",
+    "title": "25/0003/EIASCR — Request EIA Screening Opinion for a proposed Data Centre Campus development, Land South Of Creoch Farm Ochiltree Cumnock KA18 2QH",
+    "publisher": "East Ayrshire Council ePlanning",
+    "source_type": "planning_portal",
+    "url": "https://eplanning.east-ayrshire.gov.uk/online/applicationDetails.do?keyVal=SXN0NFGF05O00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Portal returned HTTP 503 on 2026-07-30; record content verified via PlanIt API scrape of this page and via APRS mirror of the screening request document. Received/validated 2025-06-03; decision 'EIA required' issued 2025-07-14 (delegated)."
+  },
+  {
+    "id": "src-planit-ea-25-0003-eiascr",
+    "title": "PlanIt API record EastAyrshire/25/0003/EIASCR (scrape of East Ayrshire portal)",
+    "publisher": "PlanIt (planit.org.uk)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/EastAyrshire/25/0003/EIASCR/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Machine-readable mirror of portal record: received 2025-06-03, decided 2025-07-14, decision 'EIA required', agent AAH Consultants (York), parish Ochiltree, ward Cumnock and New Cumnock, portal point -4.409163, 55.460976."
+  },
+  {
+    "id": "src-planit-ea-25-0002-s36scr",
+    "title": "PlanIt API record EastAyrshire/25/0002/S36SCR — Screening Opinion Request for proposed 200 MW battery energy storage system, Land Adjacent Killoch Ochiltree",
+    "publisher": "PlanIt (planit.org.uk)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/EastAyrshire/25/0002/S36SCR/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Section 36 screening consultation routed via Scottish Government Energy Consents Unit; received by council 2025-01-23; council response 2025-02-12 'EIA required'. Applicant not named in scrape."
+  },
+  {
+    "id": "src-planit-ea-25-0001-s36scr",
+    "title": "PlanIt API record EastAyrshire/25/0001/S36SCR — Screening request for 150MW BESS, On Land At Killoch East Ayrshire KA18 2QH",
+    "publisher": "PlanIt (planit.org.uk)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/EastAyrshire/25/0001/S36SCR/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Separate adjacent scheme: RES's 150MW Westport BESS north of Killoch Colliery. Received 2025-01-22; decided 2025-02-12 'EIA required'."
+  },
+  {
+    "id": "src-bebeez-dcd-ochiltree-2025",
+    "title": "Data center application filed in East Ayrshire, Scotland (Data Centre Dynamics story, syndicated)",
+    "publisher": "BeBeez International / Data Centre Dynamics",
+    "source_type": "journalism",
+    "url": "https://bebeez.eu/2025/06/19/data-center-application-filed-in-in-east-ayrshire-scotland/",
+    "publication_date": "2025-06-19",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "status": "active",
+    "notes": "DCD original at https://www.datacenterdynamics.com/en/news/data-center-application-filed-in-in-east-ayrshire-scotland/ (403 to fetcher). Reports: SPV Apatura DC Project 12 Ltd; 24.5 ha south of Creoch Farm; 200MW IT load; c.45,000 sqm footprint in one or more 1-2 storey buildings; rooftop solar; new on-site substation plus underground cable to Killoch Substation <0.5 km southeast; c.3-year build; no named end user; prior 200MW BESS application for the site; first reported by Cumnock Chronicle."
+  },
+  {
+    "id": "src-aprs-ochiltree",
+    "title": "Apatura Ochiltree — APRS data centre campaign page",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/ochiltree-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Rural-protection campaign group tracking Scottish data centre proposals; lead-generation use only",
+    "status": "active",
+    "notes": "Confirms reference 25/0003/EIASCR, 'EIA will be required', developer Apatura, 200MW, 24.5 ha, 45,000 sqm building, coordinates 55.457124, -4.412888; hosts a mirror PDF of the screening request (download blocked by site captcha on 2026-07-30)."
+  },
+  {
+    "id": "src-ch-apatura-dc12",
+    "title": "APATURA DC PROJECT 12 LTD, company 16470093",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16470093",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Private limited company incorporated 2025-05-23; SIC 63110 data processing/hosting; registered office 3rd Floor 1 Ashley Road, Altrincham WA14 2DT (shared with Apatura DC Project 1-11 Ltd companies incorporated Oct 2024 / May 2025)."
+  },
+  {
+    "id": "src-apatura-website",
+    "title": "Apatura — Data Centres (corporate website)",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://apatura.energy/data-centres/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing",
+    "status": "active",
+    "notes": "Apatura (founded 2014) describes a c.10.6GW 'grid-secured' energy project portfolio including c.1.8GW of grid connections targeted at data centre development; no Ochiltree-specific jobs or investment figures published."
+  },
+  {
+    "id": "src-westport-screening-opinion",
+    "title": "Energy Consents Unit screening opinion — Westport BESS, land at Killoch, East Ayrshire",
+    "publisher": "Scottish Government Energy Consents Unit (hosted by RES / Westport project site)",
+    "source_type": "planning_document",
+    "url": "https://westport-energystorage.co.uk/media/ipjbytzd/westport-screening-opinion.pdf",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Context for cumulative development around Killoch: 150MW Westport BESS screening (EIA considerations incl. cumulative BESS development, Creoch Road access from A70)."
   }
 ]

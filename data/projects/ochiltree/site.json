@@ -1,0 +1,34 @@
+{
+  "site_name": "Land South of Creoch Farm, Ochiltree",
+  "address": "Land South of Creoch Farm, Ochiltree, Cumnock",
+  "postcode": "KA18 2QH",
+  "settlement": "Ochiltree",
+  "latitude": 55.4571,
+  "longitude": -4.4129,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 245000,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Apatura (screening request, as reported)",
+    "confidence": "medium",
+    "notes": "24.5 hectares",
+    "source_ids": ["src-bebeez-dcd-ochiltree-2025", "src-aprs-ochiltree"]
+  },
+  "building_footprint_m2": {
+    "value": 45000,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Apatura (screening request, as reported)",
+    "confidence": "medium",
+    "notes": "c.45,000 sqm total footprint; flexible layout of one or more one-to-two storey buildings",
+    "source_ids": ["src-bebeez-dcd-ochiltree-2025", "src-aprs-ochiltree"]
+  },
+  "greenfield_brownfield": "greenfield",
+  "current_land_use": "Agricultural land",
+  "previous_land_use": "Agricultural; site lies immediately north of the former Killoch Colliery (NCB pithead/washery complex closed as a mine in the 1980s; latterly a depot and washery site). The colliery land itself hosts separate BESS and other proposals but is outside the reported data centre site.",
+  "nearest_settlements": ["Ochiltree", "Coalhall", "Cumnock"],
+  "land_notes": "Coordinates are approximate: APRS gives 55.457124, -4.412888 for the site; the council portal record point (via PlanIt) is 55.460976, -4.409163. Both fall between Creoch Farm and the former Killoch Colliery off the A70/Creoch Road, c.5 km west of Cumnock. Red-line boundary not obtained, so no boundary.geojson is published. Cumulative energy development context: Westport BESS (150MW, RES) north of Killoch Colliery and a 200MW BESS screening adjacent to Killoch (Jan 2025).",
+  "source_ids": ["src-aprs-ochiltree", "src-planit-ea-25-0003-eiascr", "src-bebeez-dcd-ochiltree-2025", "src-westport-screening-opinion"]
+}

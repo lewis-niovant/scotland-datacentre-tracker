@@ -1,0 +1,35 @@
+[
+  {
+    "reference": "25/0003/EIASCR",
+    "planning_authority": "East Ayrshire Council",
+    "application_type": "eia_screening",
+    "description": "Request EIA Screening Opinion for a proposed Data Centre Campus development, Land South of Creoch Farm, Ochiltree, Cumnock KA18 2QH. Agent: AAH Consultants (York). Parish Ochiltree; ward Cumnock and New Cumnock.",
+    "submission_date": "2025-06-03",
+    "validation_date": "2025-06-03",
+    "decision_date": "2025-07-14",
+    "decision": "screening_eia_required",
+    "decision_notes": "Delegated decision recorded on the portal as 'EIA required', issued 2025-07-14.",
+    "eia_required": true,
+    "official_url": "https://eplanning.east-ayrshire.gov.uk/online/applicationDetails.do?keyVal=SXN0NFGF05O00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2025-06-03", "event_type": "submission", "title": "Screening request received and validated", "source_ids": ["src-planit-ea-25-0003-eiascr"] },
+      { "event_date": "2025-07-14", "event_type": "decision", "title": "Screening opinion issued: EIA required", "source_ids": ["src-planit-ea-25-0003-eiascr", "src-aprs-ochiltree"] }
+    ],
+    "source_ids": ["src-ea-eplanning-25-0003-eiascr", "src-planit-ea-25-0003-eiascr"]
+  },
+  {
+    "reference": "25/0002/S36SCR",
+    "planning_authority": "Scottish Government Energy Consents Unit (consultation with East Ayrshire Council)",
+    "application_type": "eia_screening",
+    "description": "Screening Opinion Request for proposed 200 MW battery energy storage system and associated infrastructure, Land Adjacent Killoch, Ochiltree — Section 36 route via the Energy Consents Unit. Reported in trade press as a precursor BESS filing on/adjacent to the data centre site; applicant not named in the register scrape.",
+    "submission_date": "2025-01-23",
+    "validation_date": "2025-01-23",
+    "decision_date": "2025-02-12",
+    "decision": "screening_eia_required",
+    "eia_required": true,
+    "official_url": "https://eplanning.east-ayrshire.gov.uk/online/applicationDetails.do?keyVal=SQQUKNGF01B00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-ea-25-0002-s36scr", "src-bebeez-dcd-ochiltree-2025"]
+  }
+]

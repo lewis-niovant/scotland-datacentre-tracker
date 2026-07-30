@@ -1,0 +1,33 @@
+[
+  {
+    "capacity_type": "it_load",
+    "value_mw": 200,
+    "state": "developer_stated",
+    "applicable_date": "2025-06-03",
+    "claimant": "Apatura DC Project 12 Ltd (EIA screening request, as reported by DCD/BeBeez and APRS)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Figure appears in the EIA screening request itself (reported verbatim by trade press and campaign mirror of the document); no conflicting figure located.",
+    "notes": "Described as up to 200MW IT load across one or more one-to-two storey buildings, c.45,000 sqm footprint. Screening document itself not directly obtained (portal 503; mirror captcha-blocked).",
+    "source_ids": ["src-bebeez-dcd-ochiltree-2025", "src-aprs-ochiltree", "src-ea-eplanning-25-0003-eiascr"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 200,
+    "state": "reported",
+    "applicable_date": "2025-01-23",
+    "claimant": "Unnamed applicant, Section 36 screening 25/0002/S36SCR (Land Adjacent Killoch, Ochiltree)",
+    "confidence": "medium",
+    "notes": "Screening opinion request for a proposed 200 MW BESS adjacent to Killoch, routed via the Energy Consents Unit; council response 2025-02-12 was EIA required. DCD reported a 200MW BESS application 'had previously been filed' for the data centre site; applicant attribution to Apatura is not confirmed by the register scrape.",
+    "source_ids": ["src-planit-ea-25-0002-s36scr", "src-bebeez-dcd-ochiltree-2025"]
+  },
+  {
+    "capacity_type": "onsite_generation",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "Apatura DC Project 12 Ltd (screening request, as reported)",
+    "confidence": "medium",
+    "notes": "Roof-mounted solar PV proposed; capacity not disclosed.",
+    "source_ids": ["src-bebeez-dcd-ochiltree-2025"]
+  }
+]
