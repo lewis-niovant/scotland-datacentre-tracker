@@ -2599,5 +2599,111 @@
     "reliability_tier": 2,
     "status": "active",
     "notes": "Context for cumulative development around Killoch: 150MW Westport BESS screening (EIA considerations incl. cumulative BESS development, Creoch Road access from A70)."
+  },
+  {
+    "id": "src-planit-nlc-25-00989-pan",
+    "title": "25/00989/PAN — Data centre complex, Land At North Lanrigg, Carlisle Road, Cleland (PlanIt mirror of North Lanarkshire Council portal)",
+    "publisher": "North Lanarkshire Council (via PlanIt planning data mirror)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/NorthLanarkshire/25/00989/PAN/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Proposal of Application Notice for 'Data centre complex including data halls, substation, new road accesses, balancing ponds, security, associated development, landscaping, habitat and biodiversity areas (major application)'. Received 2025-09-12, validated 2025-09-18, decision 'Comments' issued 2025-09-22, expiry 2028-09-22. Applicant address 'F.A.O. Simon Munro, 33 Bothwell Road, Hamilton ML3 0AS' (ILI Group's registered office); applicant name shown only as 'See source'. Point coordinates 55.830466, -3.920595 (E 279796, N 661361), ward Fortissat, postcode ML1 5LT. Portal URL: https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=T2GYF2BA0P100 (portal itself intermittently unreachable on 2026-07-30)."
+  },
+  {
+    "id": "src-planit-nlc-26-00595-eiascr",
+    "title": "26/00595/EIASCR — EIA screening opinion request, Data Centre Campus Including Grid Connection, Land At North Lanrigg, Carlisle Road, Cleland (PlanIt mirror)",
+    "publisher": "North Lanarkshire Council (via PlanIt planning data mirror)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/NorthLanarkshire/26/00595/EIASCR/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Environmental Impact Assessment Screening Opinion request, 'Data Centre Campus Including Grid Connection'. Received 2026-05-11, validated 2026-06-03, status 'Pending Consideration' (undecided) as scraped 2026-07-28; target decision date 2026-08-03. Same address/postcode (ML1 5LT) as the PAN; point 55.829891, -3.921716 (E 279724, N 661299). 3 documents on portal (not retrievable — portal unreachable). Portal URL keyVal=TFC7RSBA0EC00."
+  },
+  {
+    "id": "src-pnp-aurelius-exhibition",
+    "title": "Notice of Public Exhibition for Proposed Data Centre Facility — Land at North Lanrigg, Carlisle Road, Motherwell ML1 5SU",
+    "publisher": "ILI Aurelius Limited (via Public Notice Portal)",
+    "source_type": "planning_document",
+    "url": "https://publicnoticeportal.uk/notice/planning/68e6466e08c158eed4fb00ce",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Statutory pre-application consultation notice placed by the developer",
+    "status": "broken",
+    "notes": "Statutory PAN exhibition notice by ILI Aurelius Limited: public exhibitions Tuesday 21 October and 4 November 2025, 3-7pm, Salsburgh Community Centre, Main St, Muirhall Terrace, Shotts ML7 4LH; facility 'would store and process data in association with the emerging digital economy and requirements of artificial intelligence applications'; comments to ILI by 26 November 2025 via online form or Greig Templeton, Planning Manager (gt@ili-energy.com, 01698 891 352). Direct URL returned 404 on 2026-07-30; content captured via search-engine snippet of the Public Notice Portal listing."
+  },
+  {
+    "id": "src-ch-ili-aurelius",
+    "title": "ILI AURELIUS LIMITED (SC825293) — Companies House record",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC825293",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Private limited company, incorporated 9 October 2024, active; registered office 33 Bothwell Road, Hamilton ML3 0AS (ILI Group's office); SIC 41201 construction of commercial buildings."
+  },
+  {
+    "id": "src-dcd-stoics-2025",
+    "title": "Trio of hyperscale data centers dubbed 'The Stoics' could be built in Scotland",
+    "publisher": "Data Center Dynamics",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/trio-of-hyperscale-data-centers-dubbed-the-stoics-could-be-built-in-scotland/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "DCD coverage of the Stoics launch; per aggregated coverage the three sites total ~1.5GW with Aurelius badged at 400MW; first phase of each site could be operational by 2027 at 50-100MW if consented. Article body returned HTTP 403 to direct fetch on 2026-07-30; figures corroborated via search snippets and sibling coverage."
+  },
+  {
+    "id": "src-aprs-newhouse",
+    "title": "ILI Aurelius, Newhouse, North Lanarkshire",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/newhouse-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Countryside-protection charity running a national data centres campaign; opposed to greenfield data centre development",
+    "notes": "Describes the proposal as a 400MW data centre on Green Belt farmland at Newhouse between Chapelhall and Holytown, North Lanarkshire, in the pre-application stage, developer ILI. Page was captcha-gated to direct fetch on 2026-07-30; content captured via search-engine snippets."
+  },
+  {
+    "id": "src-stv-hfd-pan-newhouse",
+    "title": "Data centre plans for land near farm as North Lanarkshire Council given notice of application",
+    "publisher": "STV News",
+    "source_type": "journalism",
+    "url": "https://news.stv.tv/west-central/data-centre-plans-for-land-near-farm-as-north-lanarkshire-council-given-notice-of-application",
+    "publication_date": "2026-01-12",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Covers the SEPARATE South Langridge Farm, Newhouse PAN (25/01328/PAN) by HFD Renewables NL — used here only to disambiguate the two adjacent Newhouse-area data centre PANs; the HFD scheme is not Aurelius."
+  },
+  {
+    "id": "src-stv-greengrab-2026",
+    "title": "Campaigners reveal concerns over data centre 'greengrab' of land",
+    "publisher": "STV News",
+    "source_type": "journalism",
+    "url": "https://news.stv.tv/scotland/campaigners-reveal-concerns-over-data-centre-greengrab-of-land",
+    "publication_date": "2026-05-04",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Coverage of APRS and Woodhall Faskine and Palacecraig Conservation Group concerns about the cluster of data centre developments around the North Lanarkshire AI Growth Zone (Chapelhall/DataVita area): green belt loss, energy demand, fragmented applications, '280 acres... mainly on green belt' (Dr Kat Jones, APRS). Area-level context; does not name Aurelius specifically."
+  },
+  {
+    "id": "src-aprs-agz-transparency",
+    "title": "Campaigners call for transparency on AI Growth Zone developments",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/press-release/campaigners-call-for-transparency-on-ai-growth-zone-developments/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign body opposed to greenfield data centre development",
+    "notes": "APRS and Woodhall Faskine and Palacecraig Conservation Group wrote to North Lanarkshire Council, the UK Government and the Scottish Government asking for a combined plan of all developments associated with the North Lanarkshire AI growth zone so green-belt, community and environmental impacts can be assessed together. Context for the cluster Aurelius sits within."
+  },
+  {
+    "id": "src-planit-nlc-25-01328-pan-hfd",
+    "title": "25/01328/PAN — HFD data centre PAN, South Lanridge Farm, Linrigg Road, Newhouse (PlanIt mirror)",
+    "publisher": "North Lanarkshire Council (via PlanIt planning data mirror)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/planapplic/NorthLanarkshire/25/01328/PAN/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Adjacent but SEPARATE scheme ~0.9km east of Aurelius: PAN received 2025-12-17 for data centre buildings, flexible commercial/industrial buildings, substation and BESS at South Lanridge Farm, Linrigg Road, Newhouse ML1 5ND; applicant HFD Renewables NL per STV. Recorded to prevent conflation with ILI Aurelius."
   }
 ]

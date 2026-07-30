@@ -1,0 +1,26 @@
+{
+  "summary": "Statutory pre-application consultation ran in autumn 2025: two public exhibitions at Salsburgh Community Centre (21 October and 4 November 2025) with developer feedback invited until 26 November 2025. No Aurelius-specific community council position, petition or objection count has been located — the proposal has not yet reached a formal application stage where representations to the council are possible. Wider community and campaign concern exists about the cluster of data centre proposals around the North Lanarkshire AI Growth Zone (Chapelhall/Newhouse/Cleland area), voiced by APRS and the Woodhall Faskine and Palacecraig Conservation Group, focused on green-belt loss, energy demand and fragmented piecemeal applications.",
+  "principal_concerns": [
+    {
+      "concern": "Cumulative loss of Green Belt farmland and habitats to multiple data centre schemes in the Chapelhall/Newhouse area, assessed piecemeal rather than as a whole",
+      "raised_by": "APRS and Woodhall Faskine and Palacecraig Conservation Group (area-level, not Aurelius-specific)",
+      "source_ids": ["src-stv-greengrab-2026", "src-aprs-agz-transparency"]
+    },
+    {
+      "concern": "High energy consumption and grid pressure, and doubts that job numbers promised by data centre developers will materialise",
+      "raised_by": "APRS and local campaigners (area-level)",
+      "source_ids": ["src-stv-greengrab-2026"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Tracks Aurelius as a 400MW proposal on Green Belt farmland; with the Woodhall Faskine and Palacecraig Conservation Group has written to North Lanarkshire Council and the UK and Scottish Governments calling for a combined plan/assessment of all AI Growth Zone-linked developments.",
+      "source_ids": ["src-aprs-newhouse", "src-aprs-agz-transparency"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)", "Woodhall Faskine and Palacecraig Conservation Group (area-level AI Growth Zone concerns)"],
+  "planning_authority_contact": "North Lanarkshire Council eplanning portal (https://eplanning.northlanarkshire.gov.uk/online-applications/)",
+  "notes": "Developer consultation contact was Greig Templeton, Planning Manager, ILI (gt@ili-energy.com, 01698 891 352). Comments made to the developer during the PAN consultation are not formal representations to the council; formal representations become possible only once an application is lodged. No Aurelius-specific resident campaign group was found (unlike Rufus and Cato, which both have organised opposition)."
+}

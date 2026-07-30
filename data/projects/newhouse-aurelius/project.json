@@ -1,0 +1,46 @@
+{
+  "slug": "newhouse-aurelius",
+  "canonical_name": "Aurelius Data Centre (North Lanrigg, Newhouse)",
+  "display_name": "Aurelius (Newhouse, North Lanarkshire)",
+  "aliases": [
+    { "alias": "Aurelius", "alias_type": "marketing_name", "source_ids": ["src-ili-data-centres", "src-bdc-stoics-2025"] },
+    { "alias": "The Stoics (Aurelius site)", "alias_type": "marketing_name", "source_ids": ["src-ili-data-centres", "src-bdc-stoics-2025"] },
+    { "alias": "Land at North Lanrigg, Carlisle Road, Cleland ML1 5LT", "alias_type": "place_name", "source_ids": ["src-planit-nlc-25-00989-pan", "src-planit-nlc-26-00595-eiascr"] },
+    { "alias": "Land at North Lanrigg, Carlisle Road, Motherwell ML1 5SU", "alias_type": "place_name", "source_ids": ["src-pnp-aurelius-exhibition"] },
+    { "alias": "ILI Aurelius Limited", "alias_type": "spv_name", "source_ids": ["src-ch-ili-aurelius", "src-pnp-aurelius-exhibition"] }
+  ],
+  "summary": "Proposed AI-focused hyperscale data centre campus promoted by ILI Group on Green Belt farmland at North Lanrigg, between Newhouse, Cleland, Chapelhall and Holytown in North Lanarkshire, badged at 400MW. The third of ILI's three 'Stoics' sites (with Cato in Fife and Rufus in East Ayrshire) in a claimed £15bn programme. A Proposal of Application Notice (25/00989/PAN) was lodged with North Lanarkshire Council in September 2025, pre-application exhibitions were held in October-November 2025, and an EIA screening opinion request (26/00595/EIASCR, 'Data Centre Campus Including Grid Connection') was lodged in May 2026 and remained undetermined as of late July 2026. No full planning application had been located as of 2026-07-30.",
+  "project_type": "hyperscale",
+  "status": "pre_application",
+  "status_source_ids": ["src-planit-nlc-25-00989-pan", "src-planit-nlc-26-00595-eiascr", "src-aprs-newhouse"],
+  "maturity_level": "M1",
+  "maturity_explanation": "Proposal of Application Notice 25/00989/PAN received by North Lanarkshire Council on 2025-09-12 (PAN 'Comments' decision issued 2025-09-22) with statutory pre-application exhibitions on 2025-10-21 and 2025-11-04; EIA screening opinion request 26/00595/EIASCR received 2026-05-11 and still pending as scraped 2026-07-28 (target decision 2026-08-03). No formal planning application located on the council portal (via PlanIt mirror) as of 2026-07-30, so the project is early development, not a validated application.",
+  "verification_level": "verified",
+  "local_authority": "North Lanarkshire Council",
+  "region": "Lanarkshire",
+  "related_project_slugs": ["cato-auchtertool", "hurlford-rufus"],
+  "first_public_date": "2025-09-12",
+  "anticipated_operational_date": "First Stoics phase targeted online by 2027 at 50-100MW per site (developer/press claim across the three-site programme; not specific to Aurelius)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-09-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-05-11",
+    "headline": "EIA screening opinion request 26/00595/EIASCR ('Data Centre Campus Including Grid Connection') lodged with North Lanarkshire Council; undetermined as of late July 2026 with a target decision date of 3 August 2026",
+    "source_ids": ["src-planit-nlc-26-00595-eiascr"]
+  },
+  "unknowns": [
+    "EIA screening outcome (26/00595/EIASCR target decision date 2026-08-03) — the council portal was unreachable on 2026-07-30 so the three screening documents could not be read",
+    "Named applicant on the PAN and screening request (PlanIt shows 'See source'; applicant address is ILI Group's Hamilton office and the exhibition notice names ILI Aurelius Limited, but the portal record itself could not be opened)",
+    "Red-line site boundary, site area in hectares, building footprints, number of data halls, floor area and heights — no design material located",
+    "Whether the 400MW badge figure is IT load, grid import capacity or a connection application/offer figure, and any grid connection details (operator, voltage, substation, connection date) behind ILI's 'secured grid connection' claim",
+    "Relationship, if any, between the Aurelius campus and ILI's separately reported ~200MW BESS proposal in the North Lanrigg/Newhouse area (the PAN mentions substation but not BESS)",
+    "Site-specific capital cost, construction and operational job numbers with methodology — only network-level Stoics claims exist",
+    "Cooling technology and water demand — nothing published",
+    "Formal community-council or resident-group positions specific to Aurelius (as opposed to the wider North Lanarkshire AI Growth Zone cluster)",
+    "Agricultural land classification of the North Lanrigg land",
+    "Why ILI/press describe the site as Newhouse/Newarthill while the planning address is Cleland — settlement attribution of the site straddles ward/village boundaries"
+  ]
+}

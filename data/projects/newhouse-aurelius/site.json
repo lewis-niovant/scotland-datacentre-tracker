@@ -1,0 +1,16 @@
+{
+  "site_name": "Land at North Lanrigg, Carlisle Road",
+  "address": "Land at North Lanrigg, Carlisle Road, Cleland, North Lanarkshire",
+  "postcode": "ML1 5LT",
+  "settlement": "Newhouse / Cleland",
+  "latitude": 55.82989,
+  "longitude": -3.92172,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "greenfield",
+  "current_land_use": "Farmland (per APRS description; portal 'Land at North Lanrigg' farm address)",
+  "green_belt": true,
+  "nearest_settlements": ["Newhouse", "Cleland", "Chapelhall", "Holytown", "Newarthill", "Salsburgh"],
+  "land_notes": "Coordinates are the North Lanarkshire Council portal point for EIA screening 26/00595/EIASCR (E 279724, N 661299), mirrored by PlanIt; the PAN point is ~100m north-east. No red-line boundary or site-area figure has been published, so no boundary polygon is recorded. Green Belt status is stated by APRS ('Green Belt farmland at Newhouse between Chapelhall and Holytown') and is consistent with wider reporting that the data centre cluster around the North Lanarkshire AI Growth Zone is 'mainly on green belt land'; it has not been verified against the adopted North Lanarkshire Local Development Plan. The planning address says Cleland; developer/press material places the site at Newhouse or Newarthill — the site lies between these settlements in Fortissat ward. Note the separate HFD Renewables NL data centre PAN (25/01328/PAN) at South Lanridge Farm ~0.9km east: two distinct schemes on similarly named farms.",
+  "source_ids": ["src-planit-nlc-26-00595-eiascr", "src-planit-nlc-25-00989-pan", "src-aprs-newhouse", "src-stv-greengrab-2026", "src-planit-nlc-25-01328-pan-hfd"]
+}
