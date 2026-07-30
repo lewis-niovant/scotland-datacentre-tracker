@@ -1,0 +1,35 @@
+{
+  "site_name": "DataVita Fortis campus, York Road, Chapelhall",
+  "settlement": "Chapelhall",
+  "address": "York Road, Chapelhall, Airdrie (coarse; operating critical infrastructure)",
+  "latitude": 55.83,
+  "longitude": -3.95,
+  "location_precision": "coarse_deliberate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 18000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "APRS/New Project Media (DV3 site only: 1.8ha / 4.4 acres)",
+    "phase": "DV3",
+    "confidence": "medium",
+    "notes": "Figure is the DV3 plot adjacent to the existing campus, not the whole campus; the existing DV1 site area was not established.",
+    "source_ids": ["src-npm-dv3-approval", "src-aprs-chapelhall-aigz"]
+  },
+  "gross_floor_area_m2": {
+    "value": 8000,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "DataVita",
+    "phase": "DV1 existing",
+    "confidence": "medium",
+    "notes": "Operator-stated technical/facility space of the existing DV1 building.",
+    "source_ids": ["src-datavita-dv1-page", "src-dcd-dv3-2025"]
+  },
+  "greenfield_brownfield": "mixed",
+  "current_land_use": "Operating data centre campus; DV3 plot was vacant land adjacent to York Road",
+  "green_belt": true,
+  "nearest_settlements": ["Chapelhall", "Airdrie"],
+  "land_notes": "APRS reports the DV1 extension site (25/00150/FUL) is within Green Belt but was granted under NPF4 Policy 8 as compatible with the existing data centre; veteran 'Muirhead Oaks' on the extension site were felled in February 2026 per campaign documentation. Coordinates deliberately coarsened per observatory policy for operating facilities.",
+  "source_ids": ["src-aprs-chapelhall-aigz", "src-planit-nlc-25-01159-ppp"]
+}

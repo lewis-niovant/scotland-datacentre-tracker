@@ -1,0 +1,36 @@
+[
+  {
+    "reference": "25/01322/PAN",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice: construction of data centre building(s), together with associated development, infrastructure and utilities including flexible commercial/industrial buildings, substation, and battery energy storage (BES) and generation (if BES greater than 50MW it will form a separate application to the ECU for Section 36 consent) — Land At Lancaster Avenue, Chapelhall.",
+    "submission_date": "2025-12-17",
+    "validation_date": "2026-01-09",
+    "decision_date": "2026-01-19",
+    "decision": "other",
+    "decision_notes": "PAN 'Comments' decision issued 2026-01-19 (standard PAN acknowledgement enabling a major application after 12 weeks).",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=T7H37XBA0NC00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2026-05-12", "event_type": "consultation_event", "title": "Developer consultation event 1, Mount Pleasant Community Centre, 3:00-6:30pm", "source_ids": ["src-aprs-chapelhall-aigz"] },
+      { "event_date": "2026-06-02", "event_type": "consultation_event", "title": "Developer consultation event 2 (venue TBC), 4:00-8:00pm", "source_ids": ["src-aprs-chapelhall-aigz"] },
+      { "event_date": "2026-06-04", "event_type": "consultation_event", "title": "Developer consultation event 3, Mount Pleasant Community Centre, 3:00-6:30pm", "source_ids": ["src-aprs-chapelhall-aigz"] }
+    ],
+    "source_ids": ["src-planit-nlc-25-01322-pan"]
+  },
+  {
+    "reference": "26/00707/EIASCR",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening opinion request: proposed data centre development and associated landscaping, access works and other infrastructure. Developer's screening report describes 'a c.100-124MW green data centre providing data management services for public sector, business and industry customers', characterised as Class 6 Storage & Distribution use.",
+    "submission_date": "2026-06-04",
+    "validation_date": "2026-06-04",
+    "decision_date": "2026-06-19",
+    "decision": "screening_eia_not_required",
+    "eia_required": false,
+    "decision_notes": "Determined in nine working days. APRS reports the developer's screening report was initially absent from the portal (obtained via a council request taking two weeks) and the screening opinion itself was only published on 2026-07-20; APRS describes the screening report as inadequate, with no layout diagram of the proposed development.",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=TGFAEFBA0EC00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-nlc-26-00707-eiascr", "src-aprs-chapelhall-aigz"]
+  }
+]

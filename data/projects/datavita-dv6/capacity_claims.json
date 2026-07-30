@@ -1,0 +1,28 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "HFD Renewables NL (PAN 25/01328/PAN)",
+    "notes": "No MW figure for the DV6 site itself has been published; the PAN describes data centre building(s), flexible commercial/industrial buildings, substation, and ancillary generation and battery storage without capacities.",
+    "source_ids": ["src-planit-nlc-25-01328-pan"]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 500,
+    "state": "inferred",
+    "claimant": "APRS (inference); underlying 500MW figure is a DataVita/UK Government ZONE-LEVEL claim",
+    "confidence": "low",
+    "notes": "APRS assumes 'most or all' of the AI Growth Zone's claimed 500MW will be located at South Lanridge because it is the largest site. The 500MW is a zone-level claim spanning DV4, DV6 and possibly other sites — not a developer statement about this site.",
+    "source_ids": ["src-aprs-chapelhall-aigz", "src-govuk-lanarkshire-aigz-2026", "src-datavita-aigz-faq"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "DataVita/HFD zone material (as read by APRS)",
+    "confidence": "low",
+    "notes": "Developer AI Growth Zone material cites 2,400MWh of battery storage (an energy, not power, figure; APRS elsewhere quotes 1,400MWh — inconsistency preserved). APRS expects the BESS at this site to exceed 50MW and therefore be consented via an Energy Consents Unit Section 36 application, as anticipated in the PAN wording.",
+    "source_ids": ["src-datavita-aigz-faq", "src-aprs-chapelhall-aigz", "src-planit-nlc-25-01328-pan"]
+  }
+]

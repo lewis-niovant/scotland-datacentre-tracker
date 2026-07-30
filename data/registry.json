@@ -54,7 +54,8 @@
       "developer": "HFD / DataVita",
       "capacity_claim": "part of ~500 MW AIGZ",
       "stage": "pending",
-      "triage": "verified"
+      "triage": "verified",
+      "notes": "DV6 = HFD Renewables NL PAN 25/01328/PAN at South Lanridge Farm, Newhouse (SPV DataVita DV6 Ltd SC863396); distinct from ILI Aurelius ~0.9km away"
     },
     {
       "slug": "datavita-dv1",

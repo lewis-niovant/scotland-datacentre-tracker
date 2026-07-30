@@ -1,0 +1,63 @@
+{
+  "slug": "datavita-dv1",
+  "canonical_name": "DataVita DV1 'Fortis' Data Centre and campus extensions (DV3), Chapelhall",
+  "display_name": "DataVita DV1 Fortis (Chapelhall)",
+  "aliases": [
+    { "alias": "Fortis Data Centre", "alias_type": "marketing_name", "source_ids": ["src-datavita-dv1-page"] },
+    { "alias": "DV1 Data Centre Lanarkshire", "alias_type": "marketing_name", "source_ids": ["src-datavita-dv1-page"] },
+    { "alias": "DV3", "alias_type": "phase_name", "source_ids": ["src-npm-dv3-approval", "src-aprs-chapelhall-aigz"] },
+    { "alias": "DataVita Data Centre, York Road, Chapelhall ML6 8HW", "alias_type": "place_name", "source_ids": ["src-planit-nlc-25-00150-ppp"] }
+  ],
+  "summary": "Operating colocation data centre at York Road, Chapelhall, North Lanarkshire, opened 2016 and operated by HFD DataVita Ltd (HFD Group's technology division). Described by the operator and press as Scotland's largest data centre: Uptime Institute Tier III certified (design and construction), 24MW across circa 8,000 sqm, marketed as expandable to 40MW. The campus is expanding on two fronts: a full-permission extension to the existing building (25/00150/FUL, reported granted December 2025, varied by S42 25/01294/S42 in February 2026) and the separate DV3 building on 1.8ha of adjacent land, granted planning permission in principle (25/01159/PPP) on 9 January 2026 with matters-specified-in-conditions approvals progressing through 2026. The campus is the anchor of the Lanarkshire AI Growth Zone designated 29 January 2026. Record is marked sensitive as operating critical infrastructure; location given coarsely.",
+  "project_type": "colocation",
+  "status": "operating",
+  "status_source_ids": ["src-datavita-dv1-page", "src-dcd-dv3-2025"],
+  "maturity_level": "M5",
+  "maturity_explanation": "DV1 has been operational since 2016 (operator and industry press). Expansion consents are progressing: DV3 PPP 25/01159/PPP permitted 2026-01-09 with two MSC condition packages permitted May-June 2026 and a third pending; extension permission 25/00150/FUL reported granted 2025-12-04 and varied by S42 permitted 2026-02-24, with site clearance (tree felling) reported February 2026.",
+  "verification_level": "verified",
+  "local_authority": "North Lanarkshire Council",
+  "region": "Lanarkshire",
+  "related_project_slugs": ["datavita-dv4", "datavita-dv6"],
+  "actual_operational_date": "2016 (operator-stated opening year for DV1/Fortis)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-31",
+  "confidence_overall": "high",
+  "is_public": true,
+  "is_sensitive": true,
+  "phases": [
+    {
+      "phase_name": "DV1 Fortis (original facility)",
+      "phase_number": 1,
+      "description": "Tier III certified colocation facility, 24MW across c.8,000 sqm, opened 2016.",
+      "status": "operating",
+      "source_ids": ["src-datavita-dv1-page", "src-dcd-dv3-2025"]
+    },
+    {
+      "phase_name": "DV1 extension (25/00150/FUL)",
+      "phase_number": 2,
+      "description": "Extension to the existing data centre including external plant, watercourse diversion and service yard/rooftop plant rearrangement. Full permission reported granted 2025-12-04 (APRS, citing the decision under NPF4 Policy 8); varied by S42 25/01294/S42 permitted 2026-02-24. Veteran oak felling on site reported February 2026, suggesting works have begun; construction status not independently confirmed.",
+      "status": "consented",
+      "source_ids": ["src-aprs-chapelhall-aigz", "src-planit-nlc-25-01294-s42", "src-planit-nlc-25-00150-ppp"]
+    },
+    {
+      "phase_name": "DV3 (Land adjacent to York Road)",
+      "phase_number": 3,
+      "description": "New building on a 1.8ha (4.4-acre) site adjacent to the Fortis campus, expected three storeys; PPP 25/01159/PPP permitted 2026-01-09; MSC condition packages 26/00214/MSC (permitted 2026-06-11) and 26/00350/MSC (permitted 2026-05-25); 26/00803/MSC (lighting and heat-network servicing infrastructure) pending as of 2026-07-30. APRS associates DV3 with taking the campus to 40MW.",
+      "status": "consented",
+      "source_ids": ["src-planit-nlc-25-01159-ppp", "src-npm-dv3-approval", "src-planit-nlc-26-00803-msc", "src-aprs-chapelhall-aigz"]
+    }
+  ],
+  "latest_development": {
+    "date": "2026-07-06",
+    "headline": "Third DV3 matters-specified-in-conditions application (26/00803/MSC, lighting and infrastructure to service a heat network, site access) lodged; undecided as of late July 2026",
+    "source_ids": ["src-planit-nlc-26-00803-msc"]
+  },
+  "unknowns": [
+    "Discrepancy between 25/00150/PPP (shown 'Pending Consideration' on the PlanIt mirror, last updated July 2025) and the granted full permission 25/00150/FUL referenced by S42 25/01294/S42 — 25/00150/FUL itself could not be retrieved (council portal returning errors); whether the PPP was superseded, re-registered as a FUL, or remains live is unresolved",
+    "Whether the DV1 extension and/or DV3 are physically under construction as of July 2026 (tree felling reported February 2026 but no construction reporting located)",
+    "IT load vs grid import split of the 24MW and 40MW figures (operator marketing does not specify)",
+    "DV3's own MW capacity as consented (the 40MW figure is a campus-level operator/APRS figure, not a decision-notice figure)",
+    "Identity of 'DV2' (APRS presumes DataVita's Bothwell Street, Glasgow site) and 'DV5'/'DV7' site allocations",
+    "Grid connection details for the existing campus (operator, voltage, headroom for the 40MW expansion)"
+  ]
+}

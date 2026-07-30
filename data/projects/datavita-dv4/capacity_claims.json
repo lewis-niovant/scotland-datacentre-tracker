@@ -1,0 +1,42 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": null,
+    "minimum_mw": 100,
+    "maximum_mw": 124,
+    "state": "developer_stated",
+    "applicable_date": "2026-06-04",
+    "claimant": "Developer's EIA screening report (26/00707/EIASCR), as quoted by APRS",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Most recent figure and the only one appearing in a formal planning submission ('the outline proposals comprise a c.100-124MW green data centre'); basis (IT load vs grid import) unstated.",
+    "source_ids": ["src-planit-nlc-26-00707-eiascr", "src-aprs-chapelhall-aigz"]
+  },
+  {
+    "capacity_type": "unspecified",
+    "value_mw": null,
+    "maximum_mw": 200,
+    "state": "reported",
+    "claimant": "Press/campaign characterisation ('up to 200MW') during early consultation",
+    "confidence": "low",
+    "notes": "Circulated during the consultation period; superseded in practice by the screening report's c.100-124MW. Preserved as a conflicting claim.",
+    "source_ids": ["src-aprs-chapelhall-aigz"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "PAN 25/01322/PAN",
+    "notes": "PAN anticipates ancillary Battery Energy Storage and generation; size undisclosed — if greater than 50MW it would form a separate Section 36 application to the Energy Consents Unit.",
+    "source_ids": ["src-planit-nlc-25-01322-pan"]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 500,
+    "state": "developer_stated",
+    "claimant": "DataVita / UK Government (Lanarkshire AI Growth Zone announcement)",
+    "confidence": "low",
+    "notes": "ZONE-LEVEL claim across the whole AI Growth Zone (multiple sites including DV6 at South Lanridge), recorded here only for context — not attributable to the Lancaster Avenue building(s).",
+    "source_ids": ["src-govuk-lanarkshire-aigz-2026", "src-datavita-aigz-faq", "src-scn-aigz-2026"]
+  }
+]

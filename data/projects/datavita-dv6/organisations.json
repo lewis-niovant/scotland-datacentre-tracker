@@ -1,0 +1,59 @@
+[
+  {
+    "name": "HFD Renewables NL Limited",
+    "role": "developer",
+    "company_number": "SC745476",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Incorporated 2022-09-27 (formerly HFD Energy NL Limited); registered at 177 Bothwell Street, Glasgow G2 7ER — HFD Group's renewables division vehicle for North Lanarkshire. Named by STV and APRS as the party behind PAN 25/01328/PAN.",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "The PAN applicant name is unreadable on the portal mirror ('See source'), but the applicant address matches 177 Bothwell Street and journalism names HFD Renewables NL.",
+    "source_ids": ["src-ch-hfd-renewables-nl", "src-stv-south-lanridge-pan", "src-aprs-chapelhall-aigz", "src-planit-nlc-25-01328-pan"]
+  },
+  {
+    "name": "DataVita (HFD DataVita Limited)",
+    "role": "operator",
+    "company_number": "SC467509",
+    "jurisdiction": "Scotland",
+    "website": "https://www.datavita.co.uk/",
+    "ownership_summary": "HFD Group's data centre division; expected operator of the AI Growth Zone data centres of which DV6 forms part.",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "source_ids": ["src-ch-hfd-datavita", "src-aprs-chapelhall-aigz"]
+  },
+  {
+    "name": "DataVita DV6 Limited",
+    "role": "spv",
+    "company_number": "SC863396",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Incorporated 2025-09-19 as HFD Renewables 2 Limited, renamed DataVita DV6 Limited; registered at 177 Bothwell Street, Glasgow G2 7ER.",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "Presumed project vehicle for DV6 based on name and timing; not yet confirmed on any planning record.",
+    "source_ids": ["src-ch-datavita-spvs"]
+  },
+  {
+    "name": "HFD Group",
+    "role": "parent_company",
+    "company_number": "SC362322",
+    "jurisdiction": "Scotland",
+    "website": "https://www.hfdgroup.com/",
+    "ownership_summary": "Family-owned group spanning property, renewables (HFD Renewables) and technology (HFD Technology Group/DataVita) divisions.",
+    "confidence": "high",
+    "source_ids": ["src-ch-hfd-datavita", "src-hfd-nlep"]
+  },
+  {
+    "name": "CoreWeave",
+    "role": "tenant",
+    "jurisdiction": "United States (NASDAQ: CRWV)",
+    "confidence": "low",
+    "notes": "Anchor partner of the Lanarkshire AI Growth Zone via a £1.5bn UK commitment announced September 2025; no published contract ties CoreWeave to the DV6 site specifically.",
+    "source_ids": ["src-coreweave-uk-15bn-2025", "src-govuk-lanarkshire-aigz-2026"]
+  },
+  {
+    "name": "North Lanarkshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "source_ids": ["src-planit-nlc-25-01328-pan"]
+  }
+]

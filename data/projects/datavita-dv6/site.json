@@ -1,0 +1,16 @@
+{
+  "site_name": "South Lanridge Farm, Linrigg Road, Newhouse",
+  "settlement": "Newhouse",
+  "address": "South Lanridge Farm, Linrigg Road, Newhouse, North Lanarkshire ML1 5ND",
+  "postcode": "ML1 5ND",
+  "latitude": 55.82795,
+  "longitude": -3.91083,
+  "location_precision": "site_centroid",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "greenfield",
+  "green_belt": true,
+  "current_land_use": "Farmland (South Lanridge Farm), Green Belt south of the M8 opposite Chapelhall",
+  "nearest_settlements": ["Newhouse", "Chapelhall", "Cleland", "Newarthill"],
+  "land_notes": "Coordinates from the council portal application point (easting/northing 280400/661064; ward Fortissat). APRS describes it as the largest of the AI Growth Zone sites, 'over 100 hectares' combined for the two largest sites. Approximately 0.9km from ILI Group's separate Aurelius proposal at North Lanrigg (a different developer and project). Red-line boundary not published.",
+  "source_ids": ["src-planit-nlc-25-01328-pan", "src-aprs-chapelhall-aigz", "src-stv-south-lanridge-pan"]
+}

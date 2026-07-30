@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HFD DataVita Limited",
+    "role": "operator",
+    "company_number": "SC467509",
+    "jurisdiction": "Scotland",
+    "website": "https://www.datavita.co.uk/",
+    "ownership_summary": "Incorporated 2014-01-15 as DataVita Limited; renamed HFD DataVita Limited. PSC since 2024-05-01 is HFD Technology Group Limited (SC806309); previously HFD Group Limited (SC362322) 2021-2024, HFD Managements Ltd (SC234591) 2019-2021, and founder William Dale Hill 2016-2019. Registered office 177 Bothwell Street, Glasgow G2 7ER.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "source_ids": ["src-ch-hfd-datavita"]
+  },
+  {
+    "name": "HFD Technology Group Limited",
+    "role": "parent_company",
+    "company_number": "SC806309",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Registered person with significant control of HFD DataVita Limited since 1 May 2024 (75%+ shares and votes, right to appoint/remove directors); HFD Group's technology division holding company.",
+    "beneficial_owner_public": true,
+    "valid_from": "2024-05-01",
+    "confidence": "high",
+    "source_ids": ["src-ch-hfd-datavita"]
+  },
+  {
+    "name": "HFD Group",
+    "role": "parent_company",
+    "company_number": "SC362322",
+    "jurisdiction": "Scotland",
+    "website": "https://www.hfdgroup.com/",
+    "ownership_summary": "Wider family-owned property/renewables/technology group (HFD Group Limited was PSC of DataVita 2021-2024); DataVita is described as HFD's data centre/technology division. Group also spans HFD Property and HFD Renewables divisions.",
+    "confidence": "high",
+    "notes": "Committed £1m annually to local charities under the AI Growth Zone announcement.",
+    "source_ids": ["src-ch-hfd-datavita", "src-govuk-lanarkshire-aigz-2026", "src-hfd-nlep"]
+  },
+  {
+    "name": "North Lanarkshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "source_ids": ["src-planit-nlc-25-01159-ppp"]
+  },
+  {
+    "name": "CoreWeave",
+    "role": "tenant",
+    "jurisdiction": "United States (NASDAQ: CRWV)",
+    "website": "https://www.coreweave.com/",
+    "confidence": "medium",
+    "notes": "September 2025 announcement: CoreWeave to deploy NVIDIA Grace Blackwell Ultra GPUs 'at DataVita's Lanarkshire campus' as part of a £1.5bn UK commitment. This is an announced commitment/partnership, not a disclosed signed colocation contract; which building(s) host the deployment has not been published.",
+    "source_ids": ["src-coreweave-uk-15bn-2025", "src-futurescot-coreweave-datavita"]
+  }
+]

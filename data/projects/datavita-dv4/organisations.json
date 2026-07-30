@@ -1,0 +1,57 @@
+[
+  {
+    "name": "DataVita (HFD DataVita Limited)",
+    "role": "developer",
+    "company_number": "SC467509",
+    "jurisdiction": "Scotland",
+    "website": "https://www.datavita.co.uk/",
+    "ownership_summary": "HFD Group's data centre division; PSC HFD Technology Group Limited (SC806309).",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "DataVita fronts the Lanarkshire AI Growth Zone programme of which DV4 is a component; the named applicant on the PAN could not be read from the portal mirror ('See source').",
+    "source_ids": ["src-ch-hfd-datavita", "src-aprs-chapelhall-aigz", "src-govuk-lanarkshire-aigz-2026"]
+  },
+  {
+    "name": "DataVita DV4 Limited",
+    "role": "spv",
+    "company_number": "SC863395",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Incorporated 2025-09-19 as HFD Renewables 1 Limited, renamed DataVita DV4 Limited; registered at 177 Bothwell Street, Glasgow G2 7ER (HFD Group office).",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "Presumed project vehicle for DV4 based on its name and timing; not yet confirmed as applicant on any planning record.",
+    "source_ids": ["src-ch-datavita-spvs"]
+  },
+  {
+    "name": "CoreWeave",
+    "role": "tenant",
+    "jurisdiction": "United States (NASDAQ: CRWV)",
+    "website": "https://www.coreweave.com/",
+    "confidence": "low",
+    "notes": "Anchor partner of the Lanarkshire AI Growth Zone (£1.5bn commitment announced September 2025; designation 29 January 2026). Announced partnership only — no published contract ties CoreWeave to the DV4 building specifically.",
+    "source_ids": ["src-coreweave-uk-15bn-2025", "src-govuk-lanarkshire-aigz-2026"]
+  },
+  {
+    "name": "HFD Group",
+    "role": "parent_company",
+    "company_number": "SC362322",
+    "jurisdiction": "Scotland",
+    "website": "https://www.hfdgroup.com/",
+    "ownership_summary": "Family-owned group; DataVita is its data centre division and HFD Renewables its energy division delivering the private-wire renewables claimed for the zone.",
+    "confidence": "high",
+    "source_ids": ["src-ch-hfd-datavita", "src-hfd-nlep"]
+  },
+  {
+    "name": "North Lanarkshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "source_ids": ["src-planit-nlc-25-01322-pan"]
+  },
+  {
+    "name": "UK Government (DSIT)",
+    "role": "government",
+    "jurisdiction": "United Kingdom",
+    "notes": "Designated the Lanarkshire AI Growth Zone on 29 January 2026 (written statement HLWS1290), conditional on agreed criteria and milestones; £5m UK government investment.",
+    "source_ids": ["src-govuk-lanarkshire-aigz-2026", "src-parl-hlws1290"]
+  }
+]

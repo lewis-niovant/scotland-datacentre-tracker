@@ -1,0 +1,9 @@
+{
+  "network_operator": "SP Energy Networks (inferred from FoI reference to 'Scottish Power connections timescales')",
+  "connection_status": "unknown",
+  "target_connection_year": "2027",
+  "evidence_basis": "UK Government FoI response quoted by APRS: 'DV4 will be driven by Scottish Power connections timescales which we expect to be brought forward to 2027.' Zone-level developer material additionally claims 1GW+ of private-wire renewable generation (800MW wind, 400MW+ solar, 2,400MWh BESS) rather than reliance on grid import.",
+  "reinforcement_required": null,
+  "notes": "No connection application, offer or capacity figure has been published for DV4 itself. The private-wire renewables claim is a zone-level developer claim; APRS disputes its deliverability (land take c.100 km2, energy shortfall).",
+  "source_ids": ["src-aprs-chapelhall-aigz", "src-datavita-aigz-faq", "src-hfd-nlep"]
+}

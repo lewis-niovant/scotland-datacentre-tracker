@@ -1,0 +1,33 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 24,
+    "state": "developer_stated",
+    "phase": "DV1 existing",
+    "claimant": "DataVita",
+    "confidence": "high",
+    "preferred": true,
+    "preferred_rationale": "Consistently stated by the operator, industry directories and press since at least 2025 as the current capacity of the operating facility; whether it is IT load or grid import is not specified.",
+    "notes": "24MW across c.8,000 sqm; Uptime Institute Tier III certified.",
+    "source_ids": ["src-datavita-dv1-page", "src-dcd-dv3-2025", "src-datacentermap-dv1"]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 40,
+    "state": "developer_stated",
+    "phase": "Campus including DV3/extension",
+    "claimant": "DataVita",
+    "confidence": "medium",
+    "notes": "Operator markets the site as 'expandable to 40MW'; APRS associates the 40MW with the consented DV3/extension works ('planning to increase the site to 40MW', size defined in the environmental management plan for 25/01159/PPP). Not a decision-notice figure.",
+    "source_ids": ["src-datavita-dv1-page", "src-aprs-chapelhall-aigz", "src-datacentermap-dv1"]
+  },
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 24,
+    "state": "reported",
+    "claimant": "APRS",
+    "confidence": "low",
+    "notes": "APRS states it 'believes' the existing site has a 24MW power connection — an interpretation of the operator's 24MW figure as grid import, not independently confirmed.",
+    "source_ids": ["src-aprs-chapelhall-aigz"]
+  }
+]

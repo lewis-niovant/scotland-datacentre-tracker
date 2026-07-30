@@ -1,0 +1,42 @@
+{
+  "slug": "datavita-dv6",
+  "canonical_name": "DataVita/HFD DV6 Data Centre and Battery Storage, South Lanridge Farm, Newhouse",
+  "display_name": "DataVita DV6 (South Lanridge, Newhouse)",
+  "aliases": [
+    { "alias": "DV6", "alias_type": "phase_name", "source_ids": ["src-aprs-chapelhall-aigz", "src-ch-datavita-spvs"] },
+    { "alias": "South Lanridge Farm, Linrigg Road, Newhouse ML1 5ND", "alias_type": "place_name", "source_ids": ["src-planit-nlc-25-01328-pan"] },
+    { "alias": "HFD Renewables NL data centre", "alias_type": "former_name", "source_ids": ["src-stv-south-lanridge-pan", "src-aprs-chapelhall-aigz"] },
+    { "alias": "DataVita DV6 Limited", "alias_type": "spv_name", "source_ids": ["src-ch-datavita-spvs"] }
+  ],
+  "summary": "Pre-application data centre and battery storage proposal by HFD Renewables NL (HFD Group; DataVita is the group's data centre division) on Green Belt farmland at South Lanridge Farm, Linrigg Road, Newhouse, North Lanarkshire — the largest site in the Lanarkshire AI Growth Zone designated 29 January 2026 and the one APRS assumes will host most of the zone's claimed 500MW capacity (a zone-level figure). A Proposal of Application Notice (25/01328/PAN) was lodged in December 2025 with consultation events intended for spring 2026; a large Battery Energy Storage System (developer material suggests 2,400MWh) is expected to be consented separately via the Energy Consents Unit under Section 36 if over 50MW. The site is around 0.9km from, and distinct from, ILI Group's separate Aurelius data centre proposal at North Lanrigg. No EIA screening request or planning application had been located as of 30 July 2026.",
+  "project_type": "hyperscale",
+  "status": "pre_application",
+  "status_source_ids": ["src-planit-nlc-25-01328-pan", "src-stv-south-lanridge-pan"],
+  "maturity_level": "M1",
+  "maturity_explanation": "PAN 25/01328/PAN received by North Lanarkshire Council 2025-12-17 (Comments issued 2026-01-29); developer consultation events intended April-June 2026 per STV/APRS. No EIA screening request or validated planning application found on the PlanIt mirror of the council portal as of 2026-07-30.",
+  "verification_level": "verified",
+  "local_authority": "North Lanarkshire Council",
+  "region": "Lanarkshire",
+  "related_project_slugs": ["datavita-dv1", "datavita-dv4", "newhouse-aurelius"],
+  "first_public_date": "2025-12-17",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-09-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-01-29",
+    "headline": "PAN 25/01328/PAN acknowledged by North Lanarkshire Council on the same day the Lanarkshire AI Growth Zone was designated; consultation events intended for spring 2026",
+    "source_ids": ["src-planit-nlc-25-01328-pan", "src-govuk-lanarkshire-aigz-2026"]
+  },
+  "unknowns": [
+    "Site-specific capacity: no MW figure has been published for DV6 itself — APRS's assumption that it hosts most of the zone's 500MW is inference from site size, not a developer statement",
+    "Site area and red-line boundary (the PAN covers a large area of South Lanridge Farm; 1,349 constraint records on the portal but no boundary published)",
+    "Whether and when the developer consultation events actually took place (STV/APRS reported intended April-June 2026 dates; no confirmation located)",
+    "BESS size and consenting route — developer zone material suggests 2,400MWh, which would imply a separate Energy Consents Unit Section 36 application; none located as of 2026-07-30",
+    "EIA screening/scoping — none lodged as of 2026-07-30",
+    "Whether HFD Renewables NL Limited or DataVita DV6 Limited will be the applicant on the eventual application",
+    "Grid connection arrangements versus reliance on the claimed private-wire renewables (800MW wind, 400MW+ solar) and where that generation would be sited",
+    "Relationship (if any) between this site and the surrounding proposed energy parks mapped by APRS south and east of Chapelhall"
+  ]
+}

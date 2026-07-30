@@ -1,0 +1,70 @@
+{
+  "summary": "DV4 sits within the contested Lanarkshire AI Growth Zone. APRS and local campaigners criticise the lack of transparency about the zone's extent, the Green Belt location, the adequacy of the EIA screening process, and the composition of the headline jobs figures. Developer consultation events ran May-June 2026.",
+  "principal_concerns": [
+    {
+      "concern": "Transparency: the extent of the AI Growth Zone has not been published; APRS obtained the DV4 screening report only via a council request and notes the screening opinion was published a month after the decision",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    },
+    {
+      "concern": "Adequacy of EIA screening: screening determined 'not required' in nine working days on a report APRS describes as containing no layout diagram of the proposed development",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz", "src-planit-nlc-26-00707-eiascr"]
+    },
+    {
+      "concern": "Green Belt loss and cumulative impact with DV6, ILI's Aurelius proposal and multiple energy developments south and east of Chapelhall",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    },
+    {
+      "concern": "Jobs claims: FoI response indicates >90% of the 3,400 zone jobs are construction/indirect/induced, with induced jobs potentially arising outside Lanarkshire or Scotland",
+      "raised_by": "APRS (FoI to UK Government)",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Community Investment Fund of up to £543m over 15 years at full operation (£36m+/year), plus £1m/year HFD charitable giving",
+      "claimant": "DataVita / UK Government",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-datavita-aigz-faq", "src-govuk-lanarkshire-aigz-2026"]
+    },
+    {
+      "benefit": "Excess heat from cooling systems to be redirected to University Hospital Monklands",
+      "claimant": "UK Government (DSIT)",
+      "binding_status": "aspirational",
+      "source_ids": ["src-govuk-lanarkshire-aigz-2026"]
+    },
+    {
+      "benefit": "50 apprenticeships for Scottish AI talent",
+      "claimant": "UK Government (DSIT)",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-govuk-lanarkshire-aigz-2026"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Opposed/critical: transparency, Green Belt, screening adequacy, jobs and renewable-energy deliverability critiques",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    },
+    {
+      "stakeholder": "North Lanarkshire Council (leadership)",
+      "stakeholder_type": "government",
+      "position": "Welcomed the AI Growth Zone designation",
+      "date": "2026-01-29",
+      "source_ids": ["src-nlc-news-aigz"]
+    },
+    {
+      "stakeholder": "UK Government (DSIT)",
+      "stakeholder_type": "government",
+      "position": "Designated and promotes the zone; 'AI Growth Zones are bringing generation-defining opportunity' (Technology Secretary Liz Kendall)",
+      "date": "2026-01-29",
+      "source_ids": ["src-govuk-lanarkshire-aigz-2026"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "planning_authority_contact": "North Lanarkshire Council, eplanning.northlanarkshire.gov.uk",
+  "notes": "Developer consultation events: 12 May 2026 (Mount Pleasant Community Centre), 2 June 2026 (venue TBC), 4 June 2026 (Mount Pleasant Community Centre). APRS reminds residents comments at developer events are not formal representations."
+}
