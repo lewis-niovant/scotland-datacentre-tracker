@@ -1,0 +1,12 @@
+[
+  {
+    "cooling_type": "air_cooled",
+    "cooling_description": "Free-cooling air-cooled chillers with variable speed compressors specified for the data hall areas; Air Source Heat Pumps serving front-of-house office/admin areas. No water consumption figures published in the documents reviewed.",
+    "annual_water_m3": null,
+    "estimate_type": "consultant",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "Water demand, supply arrangements and drought resilience are specifically flagged as undisclosed by the local petition; the council PAN report requires the applicant to demonstrate acceptability on water consumption. A separate Cundall sustainability report (ADC-CDL-XX-XX-T-SY-70221) covering water consumption is referenced but was not located.",
+    "source_ids": ["src-cundall-op-energy", "src-cundall-ghg-report", "src-changeorg-wester-hermiston", "src-cec-pan-report-wester-hermiston"]
+  }
+]

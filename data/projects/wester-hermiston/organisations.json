@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Apatura DC Project 11 Ltd",
+    "role": "applicant",
+    "company_number": "16470100",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "SPV incorporated 23 May 2025; registered office 3rd Floor, 1 Ashley Road, Altrincham WA14 2DT; SIC 63110. PSCs: Apatura DC Ltd (16041291, 75%+ shares and voting rights) and Adrian Ashley Hill (right to appoint/remove directors).",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "notes": "Named as the party submitting PAN 25/03978/PAN in the council committee report. Note: task brief anticipated 'Apatura DC Project N Ltd'; the actual SPV is number 11 in a family of at least 12 Apatura DC Project companies.",
+    "source_ids": ["src-ch-apatura-dc-project-11", "src-cec-pan-report-wester-hermiston"]
+  },
+  {
+    "name": "Apatura DC Ltd",
+    "role": "parent_company",
+    "company_number": "16041291",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "Holding company controlling Apatura DC Project 11 Ltd (75%+ ownership).",
+    "confidence": "high",
+    "source_ids": ["src-ch-apatura-dc-project-11"]
+  },
+  {
+    "name": "Apatura (Apatura Energy)",
+    "role": "developer",
+    "website": "https://consult.apatura.energy/westerhermiston",
+    "confidence": "high",
+    "notes": "Battery-storage and data centre developer promoting several Scottish data centre schemes (also Westerhill/Bishopbriggs and others); runs the Wester Hermiston consultation website.",
+    "source_ids": ["src-apatura-wh-project", "src-aprs-wester-hermiston"]
+  },
+  {
+    "name": "Cundall",
+    "role": "consultant",
+    "confidence": "high",
+    "notes": "Authored the Energy Statement, Operational Energy Statement and Greenhouse Gas Emissions report (P108 Currie - Wester Hermiston).",
+    "source_ids": ["src-cundall-ghg-report", "src-cundall-op-energy"]
+  },
+  {
+    "name": "City of Edinburgh Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "notes": "Case contact for the PAN report: Lewis McWilliam, Senior Planning Officer; Chief Planning Officer David Givan.",
+    "source_ids": ["src-cec-pan-report-wester-hermiston"]
+  },
+  {
+    "name": "National Energy System Operator (NESO)",
+    "role": "network_operator",
+    "confidence": "low",
+    "notes": "Developer states a 'formal agreement' with NESO in June 2025 for grid capacity; not independently verified. Physical connection claimed to Currie Substation (SP Energy Networks / SP Transmission area).",
+    "source_ids": ["src-apatura-wh-project"]
+  },
+  {
+    "name": "Hermiston Data Centre Campaign",
+    "role": "campaign_group",
+    "website": "https://sites.google.com/foot-logic.co.uk/data-centre/home",
+    "confidence": "medium",
+    "notes": "Local residents' campaign opposing the proposal; spokesperson reported as Sarah Matthews.",
+    "source_ids": ["src-hermiston-campaign-site", "src-aprs-wester-hermiston"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot/hermiston-dc/",
+    "confidence": "high",
+    "notes": "National campaign tracking Scottish data centre proposals; obtained background papers via FOI and hosts them.",
+    "source_ids": ["src-aprs-wester-hermiston"]
+  },
+  {
+    "name": "The Cockburn Association",
+    "role": "other",
+    "website": "https://www.cockburnassociation.org.uk",
+    "confidence": "high",
+    "notes": "Edinburgh civic society; not categorically opposed but calls for a national definition of 'green data centre', brownfield preference and landscape standards.",
+    "source_ids": ["src-cockburn-western-edge"]
+  }
+]

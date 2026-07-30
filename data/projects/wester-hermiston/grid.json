@@ -1,0 +1,18 @@
+{
+  "network_operator": "NESO (agreement claimed by developer); physical connection claimed to Currie Substation (SP Energy Networks / SP Transmission area)",
+  "connection_status": "offer",
+  "requested_import_capacity_mw": {
+    "value": 200,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Apatura consultation website",
+    "applicable_date": "2025-06-30",
+    "confidence": "medium",
+    "source_ids": ["src-apatura-wh-project", "src-cec-pan-report-wester-hermiston"]
+  },
+  "nearby_substation": "Currie Substation (to the south of the site)",
+  "reinforcement_required": null,
+  "evidence_basis": "Developer statements only: 'In June 2025, we secured a formal agreement with the electricity network operator NESO' and a project timeline showing 'grid offer accepted' in Q2 2025. No NESO/TEC register entry, Ofgem or network operator record independently located; connection status recorded as 'offer' on the developer's own account.",
+  "notes": "The 200 MW figure is the 'demand utility capacity' in the PAN description. Campaigners question grid capacity and cumulative effects with other Scottish data centre applications.",
+  "source_ids": ["src-apatura-wh-project", "src-cec-pan-report-wester-hermiston", "src-changeorg-wester-hermiston"]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 200,
+    "state": "developer_stated",
+    "applicable_date": "2025-08-01",
+    "claimant": "Apatura DC Project 11 Ltd (PAN description: 'AI data centre campus with a 200MW demand utility capacity')",
+    "confidence": "high",
+    "preferred": true,
+    "preferred_rationale": "Figure appears in the formal PAN description reported by the council and consistently across developer material.",
+    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-apatura-wh-project", "src-cundall-ghg-report"]
+  },
+  {
+    "capacity_type": "grid_import",
+    "value_mw": null,
+    "minimum_mw": 200,
+    "maximum_mw": 250,
+    "state": "reported",
+    "claimant": "Kevin Williamson / Bella Caledonia ('publicly been listed as using 200-250MW of electricity')",
+    "confidence": "low",
+    "notes": "Campaign-side figure; the 250 MW upper bound has not been located in any developer or council document reviewed.",
+    "source_ids": ["src-bella-oppose-dc"]
+  },
+  {
+    "capacity_type": "it_load",
+    "value_mw": 132,
+    "state": "inferred",
+    "applicable_date": "2025-11-28",
+    "claimant": "Inferred by researcher from Cundall GHG report building descriptions (two 48 MW buildings DC01/DC02 plus one 36 MW building DC03)",
+    "confidence": "low",
+    "notes": "The report labels buildings with MW ratings summing to 132 MW; it does not state whether these are IT load or total building demand, so this inference should be treated cautiously against the 200 MW utility demand figure.",
+    "source_ids": ["src-cundall-ghg-report"]
+  },
+  {
+    "capacity_type": "connection_offer",
+    "value_mw": 200,
+    "state": "developer_stated",
+    "applicable_date": "2025-06-30",
+    "claimant": "Apatura ('In June 2025, we secured a formal agreement with the electricity network operator NESO'; timeline shows grid offer accepted Q2 2025)",
+    "confidence": "medium",
+    "notes": "MW value assumed equal to the stated 200 MW demand; the agreement itself has not been independently verified and NESO connection agreements are normally contracted with the TO/DNO.",
+    "source_ids": ["src-apatura-wh-project"]
+  }
+]

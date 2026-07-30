@@ -1726,5 +1726,172 @@
     "reliability_tier": 5,
     "perspective": "Local opposition group",
     "notes": "Group linked from both APRS and Sustaining Dunbar pages; content not directly readable without login. Lead-generation only."
+  },
+  {
+    "id": "src-cec-pan-report-wester-hermiston",
+    "title": "Development Management Sub-Committee report, 25 March 2026: forthcoming application by Apatura DC Project 11 Ltd, Proposal of Application Notice 25/03978/PAN, Land 300 Metres North Of 50 Research Avenue North, Riccarton",
+    "publisher": "City of Edinburgh Council",
+    "source_type": "committee_report",
+    "url": "https://aprs.scot/wp-content/uploads/2026/03/ECC-committee-paper-on-the-PAN-for-Hermiston-data-centre.pdf",
+    "publication_date": "2026-03-25",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Official council committee paper (hosted as a copy on the APRS website). Confirms PAN 25/03978/PAN (1 Aug 2025), EIA screening 25/02924/SCR (EIA not required, 7 Jul 2025), second screening 25/05576/SCR under consideration (19 Dec 2025), 24 ha agricultural field, Green Belt and Gogar Special Landscape Area, heritage constraints, consultation events, ward and consultee details."
+  },
+  {
+    "id": "src-cec-portal-pan",
+    "title": "City of Edinburgh Council Planning Portal record for 25/03978/PAN (Idox Public Access)",
+    "publisher": "City of Edinburgh Council",
+    "source_type": "planning_portal",
+    "url": "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/applicationDetails.do?keyVal=SXDBH8EW0GY00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Portal URL as linked from APRS. The portal blocked automated access during this research (connection reset), so page content could not be independently read; references corroborated by the council committee report."
+  },
+  {
+    "id": "src-aprs-wester-hermiston",
+    "title": "Apatura Wester Hermiston (Edinburgh) - data centre campaign page",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/hermiston-dc/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group opposing data centre development on green belt land",
+    "notes": "States EIA screening 25/02924/SCR, PAN 25/03978/PAN approved 1 Aug, initial screening did not require EIA, 'now being re-screened by the council - application validated 19 Dec 2025', info last checked 23 Feb 2026. Gives coordinates 55.916720, -3.328259. Hosts background papers obtained via Freedom of Information request."
+  },
+  {
+    "id": "src-cundall-ghg-report",
+    "title": "Apatura Energy - P108 Currie - Wester Hermiston - Greenhouse Gas Emissions report (ADC-CDL-XX-XX-T-SY-70224, rev P01, 28/11/2025)",
+    "publisher": "Cundall for Apatura Energy",
+    "source_type": "planning_document",
+    "url": "https://aprs.scot/wp-content/uploads/2026/06/7002478-BackGround-Papers-GHG-EMISSIONS-REPORT_P01.pdf",
+    "publication_date": "2025-11-28",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Consultant report commissioned by the developer; obtained via FOI and hosted by APRS ('missing from the planning portal')",
+    "notes": "Describes 77-acre site, 200MW campus, total building footprint c.54,690 m2, two identical two-storey 48 MW buildings (DC01, DC02) and one single-storey 36 MW building (DC03), c.6,300 m2 office floor area, 136 car parking spaces, connection to Currie Substation."
+  },
+  {
+    "id": "src-cundall-op-energy",
+    "title": "Apatura Energy - P108 Currie - Wester Hermiston - Operational Energy Statement (ADC-CDL-XX-XX-T-SY-70222, rev P01)",
+    "publisher": "Cundall for Apatura Energy",
+    "source_type": "planning_document",
+    "url": "https://aprs.scot/wp-content/uploads/2026/06/7002481-BackGround-Papers-OPERATIONAL-ENERGY-STATEMENT_P01.pdf",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Consultant report commissioned by the developer; obtained via FOI and hosted by APRS",
+    "notes": "Design PUE target below 1.3; free-cooling air-cooled chillers for data halls; ASHPs for office areas; design intent for future waste-heat export to a possible district heating network (Heriot-Watt campus identified by the council as a future heat network); rooftop PV over admin/office areas to be explored."
+  },
+  {
+    "id": "src-apatura-wh-project",
+    "title": "Wester Hermiston AI Data Campus - The Project (consultation website)",
+    "publisher": "Apatura Energy",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/westerhermiston/the-project",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing/consultation material",
+    "notes": "200MW capacity; site north of Heriot-Watt University, west of Hermiston and the City Bypass; connection to Currie Substation; 'In June 2025, we secured a formal agreement with the electricity network operator NESO'; timeline: grid offer accepted Q2 2025, planning application submission Q1-Q2 2026, decision Q3-Q4 2026, construction 2027-2029, operations 2030."
+  },
+  {
+    "id": "src-apatura-wh-benefits",
+    "title": "Wester Hermiston AI Data Centre Campus - The Benefits (consultation website)",
+    "publisher": "Apatura Energy",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/westerhermiston/the-benefits",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer marketing/consultation material; cites unattributed 'independent economic analysis'",
+    "notes": "£1.4bn total investment; £125m construction spend retained in local supply chain; £66m construction GVA to City of Edinburgh; £205m annual operational GVA; 0.1% Scotland GDP uplift; apprenticeship levy 'up to £272,000 annually'; £23m potential national R&D uplift; community fund proposals; 245 jobs in Edinburgh figure reported in association with this material."
+  },
+  {
+    "id": "src-ch-apatura-dc-project-11",
+    "title": "Companies House record: APATURA DC PROJECT 11 LTD (16470100), including persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16470100",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 23 May 2025; active; registered office 3rd Floor, 1 Ashley Road, Altrincham, Cheshire WA14 2DT; SIC 63110 data processing/hosting. PSCs: Mr Adrian Ashley Hill (right to appoint/remove directors) and Apatura DC Ltd (16041291, 75%+ ownership and voting rights)."
+  },
+  {
+    "id": "src-aprs-south-gyle-refused",
+    "title": "Edinburgh Data Centre Refused (press release, 4 February 2026)",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/press-release/edinburgh-data-centre-refused/",
+    "publication_date": "2026-02-04",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group; celebrated the refusal",
+    "notes": "Development Management Sub-Committee refused Planning Permission in Principle for a 210MW data centre at the Gyle on 4 Feb 2026, citing NPF4 policies 1 and 2 and City Plan Place 19; notes recurring debate over lack of a definition of a 'green data centre'."
+  },
+  {
+    "id": "src-cockburn-western-edge",
+    "title": "Data Centres, Green Claims and Edinburgh's Western Edge",
+    "publisher": "The Cockburn Association",
+    "source_type": "community_material",
+    "url": "https://www.cockburnassociation.org.uk/news/data-centres-green-claims-and-edinburghs-western-edge/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "perspective": "Edinburgh civic/heritage society; cautious, not categorically opposed",
+    "notes": "South Gyle (Shelborn Asset Management, former RBS HQ, 1 Redheughs Avenue) PPiP refused by councillors Feb 2026 against officer recommendation, now at appeal; Wester Hermiston described as greenfield hyperscale proposal; both prompted Edinburgh Planning Committee in June 2026 to ask the Scottish Government for a moratorium on large-scale data centres pending national 'green data centre' guidance."
+  },
+  {
+    "id": "src-bella-oppose-dc",
+    "title": "Oppose AI Data Centres In Edinburgh (Kevin Williamson)",
+    "publisher": "Bella Caledonia",
+    "source_type": "campaign_material",
+    "url": "https://bellacaledonia.org.uk/2026/02/03/oppose-ai-data-centres-in-edinburgh/",
+    "publication_date": "2026-02-03",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Opinion/campaign piece opposing both Edinburgh data centre proposals",
+    "notes": "States Wester Hermiston 'has publicly been listed as using 200-250MW of electricity'; South Gyle applicant Shelborn Drummond Ltd, 212MW constant consumption estimate; criticises lack of named hyperscale tenant for both schemes."
+  },
+  {
+    "id": "src-changeorg-wester-hermiston",
+    "title": "Petition: Stop development of mega data centre Wester Hermiston, Edinburgh",
+    "publisher": "Change.org (Gordon Fraser)",
+    "source_type": "campaign_material",
+    "url": "https://www.change.org/p/stop-development-of-mega-data-centre-wester-hermiston-edinburgh",
+    "publication_date": "2026-03-17",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Local opposition petition",
+    "notes": "3,581 verified signatures at retrieval; arguments: loss of prime agricultural land in the Gogar landscape area, water/cooling transparency, grid and cumulative energy effects, generator testing/noise/air quality near homes and schools, impact on Union Canal corridor; says facility would cover over 30 hectares."
+  },
+  {
+    "id": "src-scotsman-17-locations",
+    "title": "Revealed: 17 locations of Scotland's new hyperscale data centres",
+    "publisher": "The Scotsman",
+    "source_type": "journalism",
+    "url": "https://www.scotsman.com/news/politics/revealed-17-locations-of-scotlands-new-hyperscale-data-centres-5453555",
+    "publication_date": "2025-12-24",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Lists Wester Hermiston and South Gyle as Edinburgh's two hyperscale proposals among 17 across Scotland."
+  },
+  {
+    "id": "src-yahoo-ai-campus",
+    "title": "Plans for Edinburgh 'AI campus' to be built in Green Belt with huge data centre",
+    "publisher": "Yahoo News UK (syndicated Edinburgh local press)",
+    "source_type": "journalism",
+    "url": "https://uk.news.yahoo.com/plans-edinburgh-ai-campus-built-103610400.html",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports Apatura DC Project 11 Ltd pre-application notice submitted 1 August for land 300m north of 50 Research Avenue North, Riccarton; consultations at the National Robotarium 28 Aug and 2 Oct 2025; £1.4bn investment, £125m local construction spend, 245 jobs in Edinburgh claims. Full text could not be re-fetched at retrieval (HTTP 503); details captured via search index and corroborated by council committee report where possible."
+  },
+  {
+    "id": "src-hermiston-campaign-site",
+    "title": "Hermiston data centre local campaign website",
+    "publisher": "Hermiston Data Centre Campaign (local residents)",
+    "source_type": "community_material",
+    "url": "https://sites.google.com/foot-logic.co.uk/data-centre/home",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Local residents' campaign opposing the proposal",
+    "notes": "Linked from APRS page as the local campaign webpage; campaign spokesperson reported in press as Sarah Matthews; petition reported at over 2,000 signatures in earlier coverage."
   }
 ]

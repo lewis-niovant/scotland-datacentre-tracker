@@ -1,0 +1,59 @@
+[
+  {
+    "reference": "25/03978/PAN",
+    "planning_authority": "City of Edinburgh Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice by Apatura DC Project 11 Ltd for an AI data centre campus with a 200MW demand utility capacity with car parking, landscaping, roads, access and associated works, at Land 300 Metres North Of 50 Research Avenue North, Riccarton. The forthcoming application is intended as a full application treated as a national development (subject to demonstrating 'green data centre' status under NPF4 Digital Fibre Network designation).",
+    "submission_date": "2025-08-01",
+    "committee_date": "2026-03-25",
+    "decision": "other",
+    "decision_notes": "PAN noted by the Development Management Sub-Committee on 25 March 2026; committee papers set out key issues (Green Belt/Env 18 and NPF4 policy 8, 'green data centre' demonstration, climate/nature policies, heritage, Gogar Special Landscape Area, residential amenity, transport) and an extensive list of expected supporting documents. APRS records the PAN as approved on 1 August (its submission date).",
+    "official_url": "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/applicationDetails.do?keyVal=SXDBH8EW0GY00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-08-28",
+        "event_type": "public_exhibition",
+        "title": "First public consultation event, National Robotarium, Heriot-Watt University (15:00-20:00)",
+        "source_ids": ["src-cec-pan-report-wester-hermiston"]
+      },
+      {
+        "event_date": "2025-10-02",
+        "event_type": "public_exhibition",
+        "title": "Second public consultation event, National Robotarium, Heriot-Watt University (15:00-20:00)",
+        "source_ids": ["src-cec-pan-report-wester-hermiston"]
+      },
+      {
+        "event_date": "2026-03-25",
+        "event_type": "committee_report",
+        "title": "Development Management Sub-Committee notes forthcoming application (report 25/03978/PAN)",
+        "source_ids": ["src-cec-pan-report-wester-hermiston"]
+      }
+    ],
+    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-aprs-wester-hermiston", "src-yahoo-ai-campus"]
+  },
+  {
+    "reference": "25/02924/SCR",
+    "planning_authority": "City of Edinburgh Council",
+    "application_type": "eia_screening",
+    "description": "EIA Screening Opinion for construction of a data centre campus at Wester Hermiston.",
+    "decision_date": "2025-07-07",
+    "decision": "screening_eia_not_required",
+    "eia_required": false,
+    "decision_notes": "Determined 7 July 2025 that EIA was not required for the construction of a data centre campus (as recorded in the council's site history for 25/03978/PAN).",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-aprs-wester-hermiston"]
+  },
+  {
+    "reference": "25/05576/SCR",
+    "planning_authority": "City of Edinburgh Council",
+    "application_type": "eia_screening",
+    "description": "Second EIA Screening Opinion request for proposed construction of a data centre campus (re-screening).",
+    "validation_date": "2025-12-19",
+    "decision": "pending",
+    "eia_required": null,
+    "decision_notes": "Recorded as 'under consideration' in the council's 25 March 2026 committee paper. APRS ('info last checked 23 Feb 2026') described the initial screening as not requiring EIA and the proposal as 'now being re-screened by the council - application validated 19 Dec 2025' with 'no action as yet'; the 19 Dec 2025 validation therefore appears to relate to this screening request rather than a full planning application.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-aprs-wester-hermiston"]
+  }
+]
