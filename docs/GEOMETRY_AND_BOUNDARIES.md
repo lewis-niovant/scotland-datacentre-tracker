@@ -9,7 +9,7 @@ question rather than resolved silently.
 
 ## 1. What we now have
 
-Official red-line planning boundaries for **17 of 39 projects** (**28 polygon features**
+Official red-line planning boundaries for **19 of 39 projects** (**35 polygon features**
 in total, because several projects carry boundaries for more than one planning
 reference — e.g. a screening record as well as the substantive application).
 
@@ -32,11 +32,13 @@ Each polygon feature records its `reference`, `local_auth`, `application_type`,
 | blackdog | APP/2016/0766 | 39.6 ha |
 | cato-auchtertool | 26/01243/PPP | 68.5 ha |
 | coldstream | 25/00556/SCR | 67.4 ha |
+| datavita-dv1 | 25/00150/FUL | 1.7 ha |
 | datavita-dv4 | 25/01322/PAN | 14.3 ha |
 | datavita-dv6 | 25/01328/PAN | 120.2 ha |
 | drumshangie | 24/01025/PAN | 235.8 ha |
 | dunbar | 25/00008/SCR | 60.2 ha |
 | duns-southside | 25/01835/SCR | 146.7 ha |
+| epcc-acf-edinburgh | 22/00803/DPP | 3.2 ha |
 | killean | 20/00229/PP | 0.4 ha |
 | larbert-glenbervie | P/26/0237/FUL | 18.5 ha |
 | meygen-caithness | 20/01258/SCRE | 43.0 ha |
@@ -130,7 +132,7 @@ questions on their project records rather than resolved, and both figures are re
 
 ## 3. What we still don't have, and why
 
-22 projects have no official boundary. The reasons are not equivalent.
+20 projects have no official boundary. The reasons are not equivalent.
 
 ### No planning reference held yet — 12 projects
 
@@ -163,16 +165,34 @@ has a genuine accepted boundary from its substantive PAN reference while its two
 screening records are buffered points, so re-running the fetcher as schemes progress is
 worthwhile.
 
-### Deliberately excluded as sensitive — 6 projects
+### The operating estate — policy changed 2026-07-30
 
-datavita-dv1, datavita-dv2, pulsant-south-gyle, iomart-glasgow, brightsolid-aberdeen,
-epcc-acf-edinburgh.
+Six operating facilities (datavita-dv1, datavita-dv2, pulsant-south-gyle, iomart-glasgow,
+brightsolid-aberdeen, epcc-acf-edinburgh) previously carried `is_sensitive: true` with
+`location_precision: "coarse_deliberate"`, which suppressed their boundaries and rounded
+their coordinates to roughly a kilometre.
 
-These are operating facilities carrying `is_sensitive: true` with
-`location_precision: "coarse_deliberate"` under the project's existing policy. Adding an
-exact red line would contradict that policy, so the fetcher skips them even though the
-boundary is public planning record. This is a **deliberate editorial choice, not a data
-gap**, and it is reversible if the policy changes.
+**That suppression has been lifted.** Everything the Observatory holds on these sites is
+already public record — the planning register, and addresses the operators themselves
+advertise — so withholding it protected nothing and degraded the map. Nothing non-public
+was added: no internal layouts, no security arrangements, no unpublished capacity.
+
+What the change yielded:
+
+| Project | Outcome |
+|---|---|
+| datavita-dv1 | 6 official boundary features from its 7 planning references, incl. the consented DV3 extension (1.7 ha primary, against 1.8 ha recorded) |
+| epcc-acf-edinburgh | Planning case 22/00803/DPP identified and its 3.2 ha boundary fetched |
+| pulsant-south-gyle | Located to EH12 9LB (exact) — SC-1 only; SC-2/SC-3 noted separately |
+| iomart-glasgow | Located to G41 1EE (exact), 88 Middlesex Street |
+| datavita-dv2 | Located to G2 7ER (exact), basement of 177 Bothwell Street |
+| brightsolid-aberdeen | Located to AB16 6HQ (site centroid; a competing address is preserved) |
+
+Four of the six still have no boundary, because no planning reference could be tied to
+the facility. A spatial search around each returned roughly 60 unrelated application
+boundaries within a kilometre — shopfronts, car parks, advertising consents — and
+**proximity is not attribution**, so nothing was recorded. Precise addresses now make a
+future match feasible.
 
 ### One open lead
 
@@ -190,28 +210,37 @@ This is a general caution for future fetches: **reference formats are not consis
 between planning portals, aggregator mirrors and Spatial Hub submissions**, so a
 no-match is weak evidence of absence.
 
-## 4. Where modelled extents are used instead
+## 4. Where projected extents are used instead
 
-For three projects the map draws a **modelled extent** rather than a boundary:
-ai-pathfinder-irvine, chapelcross, cockenzie.
+The map now shows site extent in **three tiers**, so that a project without a red line
+can still be gauged for scale without any projection being mistaken for a boundary.
 
-The test for using one is deliberately narrow — all three conditions must hold:
+| Tier | `kind` | Drawn as | Projects |
+|---|---|---|---|
+| 1 — official | `boundary` | solid red, filled | 18 |
+| 2 — projected, reliable location | `projected_extent`, `tier: 2` | **dashed** amber, faint fill | 6 |
+| 3 — projected, settlement-level location | `projected_extent`, `tier: 3` | **dotted** grey, unfilled, centre dot | 2 |
+| — no published area | none | point only | 13 |
 
-1. a site area is sourced (not guessed);
-2. location precision is good enough to place a shape honestly (`exact`,
-   `site_centroid` or `approximate`);
-3. the site is not sensitive.
+Tier 2 requires all three of: a **sourced** site area (never guessed), a
+`location_precision` of `exact`, `site_centroid` or `approximate`, and a non-sensitive
+site. Tier 3 is the same but for `location_precision: settlement_level` —
+**dounreay** (148 ha) and **fearn-airfield** (315 ha). A ~1.5 km² square around a
+settlement-level point would assert a position we do not have, so tier 3 is drawn
+weakest of all, carries an explicit "location known only to settlement level" caveat in
+its tooltip, legend entry and profile page, and marks the single point we actually hold
+with a dot.
 
-Derivation: a square of side √(area) centred on the site point. Nothing about the
-shape, orientation or edges is researched, so the shapes are drawn **dashed** and
-captioned **"area sourced, shape modelled"**. `boundary_precision` honestly remains
-`"none"` — no boundary has been researched for these projects, and a modelled square
-must not be allowed to read as one. They are generated at build time and are **not
-committed** into `data/projects/`, so they can never be mistaken for research output.
+Derivation for both projected tiers: a square of side √(area) centred on the site point
+(`dlat = m/111320`, `dlon = m/(111320·cos φ)`). Nothing about the shape, orientation or
+edges is researched. `boundary_precision` honestly remains `"none"`. The squares are
+generated at build time by `scripts/build_dataset.py` and are **not committed** into
+`data/projects/`, so they can never be mistaken for research output.
 
-**dounreay** and **fearn-airfield** are excluded despite having sourced areas, because
-their `location_precision` is `settlement_level`. A ~1.5 km² square drawn around a
-settlement-level point would assert a location we do not have.
+Every extent — official or projected — is tappable and explains itself in a popup, and
+the same wording appears in the map legend with the per-tier project counts computed
+from the data. The football-pitch grid runs inside projected extents as well as official
+boundaries, labelled with the true `area / football_pitch_m2` ratio.
 
 ## 5. Reproducing this
 

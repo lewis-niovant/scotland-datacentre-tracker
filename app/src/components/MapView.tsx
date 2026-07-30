@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { Map as MapLibreMap, Marker, NavigationControl } from 'maplibre-gl'
+import { Map as MapLibreMap, Marker, NavigationControl, Popup } from 'maplibre-gl'
 import type { GeoJSONSource, MapMouseEvent } from 'maplibre-gl'
-import type { GeoCollection, ProjectRecord, QuantityClaim } from '../types'
+import type { GeoCollection, GeoFeature, ProjectRecord, QuantityClaim } from '../types'
 import { STATUS_GROUPS, STATUS_GROUP_META, projectCoords, statusGroup } from '../lib/data'
 import type { LensDef } from '../lib/lenses'
 import {
-  boundaryFeatures, buildingMasses, centroidOf, pitchGrid, polysOf, primaryBoundary,
-  type MassSpec,
+  boundaryFeatures, buildingMasses, centroidOf, extentExplanation, extentFeatures, pitchGrid,
+  polysOf, primaryBoundary, type MassSpec,
 } from '../lib/geometry'
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
@@ -14,8 +14,14 @@ const SCOTLAND_BOUNDS: [[number, number], [number, number]] = [[-7.9, 54.6], [-0
 const ACCENT = '#2a78d6'
 const NO_DATA = '#898781'
 
-/* Official red line — reserved to sourced Spatial Hub boundaries only. */
+/* Official red line — reserved to sourced Spatial Hub boundaries only. Projections
+   are deliberately drawn in another colour AND another line style, so a projection
+   can never be mistaken for a red line, including by a colour-blind reader. */
 export const REDLINE = '#c0242d'
+/** Tier 2 — projected extent from a sourced area on a reliable point. Dashed. */
+export const EXTENT2 = '#9a5b12'
+/** Tier 3 — projected extent, settlement-level location. Dotted, fainter, unfilled. */
+export const EXTENT3 = '#6b6560'
 /** Zoom at which real boundaries appear (the national view stays clean). */
 export const BOUNDARY_MIN_ZOOM = 9
 /** Zoom at which the derived pitch grid appears. */
@@ -140,6 +146,52 @@ function donutHTML(props: Record<string, unknown>, lens: LensDef, dark: boolean)
   }
 }
 
+/* ---------------- extent explanation popups ---------------- */
+
+/** Hit-testable extent layers, most specific first. */
+const EXTENT_LAYERS = ['dc-extent2-fill', 'dc-extent3-fill', 'dc-boundary-fill']
+
+function openExtentPopup(
+  map: MapLibreMap,
+  ref: { current: Popup | null },
+  feature: GeoFeature,
+  lngLat: { lng: number; lat: number },
+) {
+  const { tier, title, body } = extentExplanation(feature)
+  ref.current?.remove()
+  const el = document.createElement('div')
+  el.className = `extent-pop t${tier}`
+  el.setAttribute('role', 'dialog')
+  el.setAttribute('aria-label', `${title}. ${body}`)
+  el.setAttribute('tabindex', '-1')
+  const key = document.createElement('span')
+  key.className = `extent-key t${tier}`
+  key.setAttribute('aria-hidden', 'true')
+  const h = document.createElement('strong')
+  h.textContent = title
+  const head = document.createElement('div')
+  head.className = 'extent-pop-head'
+  head.append(key, h)
+  const p = document.createElement('p')
+  p.textContent = body
+  el.append(head, p)
+  const pop = new Popup({
+    closeButton: true,
+    /* Not maplibre's closeOnClick: it fires on the very click that opened the
+       popup, so the explanation would flash and vanish. The map click handler
+       below dismisses it instead. */
+    closeOnClick: false,
+    maxWidth: '300px',
+    className: 'extent-popup',
+    focusAfterOpen: true,
+  })
+    .setLngLat(lngLat)
+    .setDOMContent(el)
+    .addTo(map)
+  ref.current = pop
+  pop.on('close', () => { if (ref.current === pop) ref.current = null })
+}
+
 function ariaFor(props: Record<string, unknown>, lens: LensDef): string {
   const count = Number(props.point_count ?? 0)
   const withFig = Number(props.n_metric ?? 0)
@@ -163,6 +215,7 @@ export default function MapView({
   const syncRef = useRef<() => void>(() => {})
   const fitSigRef = useRef<string | null>(null)
   const areaLabelsRef = useRef(new Map<string, Marker>())
+  const popupRef = useRef<Popup | null>(null)
   /* Effects that add data to the style must wait for 'load' — and must re-run
      once it happens, or the polygons stay frozen/empty forever. */
   const [ready, setReady] = useState(false)
@@ -188,6 +241,8 @@ export default function MapView({
       const empty = { type: 'FeatureCollection' as const, features: [] }
 
       map.addSource('dc-boundaries', { type: 'geojson', data: empty })
+      map.addSource('dc-extents', { type: 'geojson', data: empty })
+      map.addSource('dc-extent-centres', { type: 'geojson', data: empty })
       map.addSource('dc-pitches', { type: 'geojson', data: empty })
       map.addSource('dc-buildings', { type: 'geojson', data: empty })
 
@@ -209,6 +264,61 @@ export default function MapView({
           'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.6, 12, 2.6, 16, 3.4],
         },
       })
+      /* ---- tier 2: dashed, faint fill ---- */
+      map.addLayer({
+        id: 'dc-extent2-fill', type: 'fill', source: 'dc-extents',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        filter: ['==', ['get', 'tier'], 2],
+        paint: {
+          'fill-color': EXTENT2,
+          'fill-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0, BOUNDARY_MIN_ZOOM + 1.2, 0.07],
+        },
+      })
+      map.addLayer({
+        id: 'dc-extent2-line', type: 'line', source: 'dc-extents',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        filter: ['==', ['get', 'tier'], 2],
+        layout: { 'line-join': 'miter', 'line-cap': 'butt' },
+        paint: {
+          'line-color': EXTENT2,
+          'line-dasharray': [2.6, 1.7],
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0.15, BOUNDARY_MIN_ZOOM + 1, 0.95],
+          'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.4, 12, 2.4, 16, 3],
+        },
+      })
+      /* ---- tier 3: dotted, fainter, unfilled (a near-transparent fill exists only
+             so the shape is tappable); a centre cross marks the point we actually
+             have, since the square's position is not evidence. ---- */
+      map.addLayer({
+        id: 'dc-extent3-fill', type: 'fill', source: 'dc-extents',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        filter: ['==', ['get', 'tier'], 3],
+        paint: { 'fill-color': EXTENT3, 'fill-opacity': 0.02 },
+      })
+      map.addLayer({
+        id: 'dc-extent3-line', type: 'line', source: 'dc-extents',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        filter: ['==', ['get', 'tier'], 3],
+        layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: {
+          'line-color': EXTENT3,
+          'line-dasharray': [0.1, 2.2],
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], BOUNDARY_MIN_ZOOM, 0.12, BOUNDARY_MIN_ZOOM + 1, 0.75],
+          'line-width': ['interpolate', ['linear'], ['zoom'], 9, 1.8, 12, 3, 16, 3.6],
+        },
+      })
+      map.addLayer({
+        id: 'dc-extent-centre', type: 'circle', source: 'dc-extent-centres',
+        minzoom: BOUNDARY_MIN_ZOOM,
+        paint: {
+          'circle-radius': 3.4,
+          'circle-color': EXTENT3,
+          'circle-opacity': 0.9,
+          'circle-stroke-color': '#ffffff',
+          'circle-stroke-width': 1.4,
+        },
+      })
+
       map.addLayer({
         id: 'dc-pitch-grid', type: 'line', source: 'dc-pitches',
         minzoom: PITCH_MIN_ZOOM,
@@ -328,11 +438,27 @@ export default function MapView({
       map.on('click', (e: MapMouseEvent) => {
         const hits = map.queryRenderedFeatures(e.point, { layers: ['dc-dots'] })
         const hit = hits[0]
-        if (!hit) { onSelectRef.current(null); return }
-        if (typeof hit.properties?.slug === 'string') onSelectRef.current(hit.properties.slug)
+        if (hit) {
+          if (typeof hit.properties?.slug === 'string') onSelectRef.current(hit.properties.slug)
+          return
+        }
+        /* Tapping any extent explains what it is — the difference between a real
+           red line and a projection is the whole point of showing them. */
+        const shapeLayers = EXTENT_LAYERS.filter((id) => map.getLayer(id))
+        const shape = map.queryRenderedFeatures(e.point, { layers: shapeLayers })[0]
+        if (shape) {
+          openExtentPopup(map, popupRef, shape as unknown as GeoFeature, e.lngLat)
+          return
+        }
+        popupRef.current?.remove()
+        onSelectRef.current(null)
       })
       map.on('mouseenter', 'dc-dots', () => { map.getCanvas().style.cursor = 'pointer' })
       map.on('mouseleave', 'dc-dots', () => { map.getCanvas().style.cursor = '' })
+      for (const id of EXTENT_LAYERS) {
+        map.on('mouseenter', id, () => { map.getCanvas().style.cursor = 'help' })
+        map.on('mouseleave', id, () => { map.getCanvas().style.cursor = '' })
+      }
     })
 
     mapRef.current = map
@@ -344,6 +470,8 @@ export default function MapView({
       markersRef.current.clear()
       for (const [, m] of areaLabelsRef.current) m.remove()
       areaLabelsRef.current.clear()
+      popupRef.current?.remove()
+      popupRef.current = null
       map.remove()
       mapRef.current = null
     }
@@ -373,9 +501,26 @@ export default function MapView({
     for (const id of ['dc-boundary-fill', 'dc-boundary-line']) {
       if (map.getLayer(id)) map.setFilter(id, ['in', ['get', 'slug'], ['literal', slugs]])
     }
-    /* The pitch grid is derived from the same (filtered) boundaries. */
+
+    /* Projected extents (tiers 2 and 3) travel with the same filters. */
+    const exts = extentFeatures(geo).filter((f) => slugs.includes(f.properties.slug ?? ''))
+    ;(map.getSource('dc-extents') as GeoJSONSource | undefined)
+      ?.setData({ type: 'FeatureCollection', features: exts } as never)
+    ;(map.getSource('dc-extent-centres') as GeoJSONSource | undefined)?.setData({
+      type: 'FeatureCollection',
+      features: exts
+        .filter((f) => f.properties.tier === 3 && Array.isArray(f.properties.centre))
+        .map((f) => ({
+          type: 'Feature',
+          geometry: { type: 'Point', coordinates: f.properties.centre },
+          properties: { slug: f.properties.slug },
+        })),
+    } as never)
+
+    /* The pitch grid works inside projections too, so people can count pitches
+       for a projected site as well as an official one. */
     const pitches = map.getSource('dc-pitches') as GeoJSONSource | undefined
-    pitches?.setData(pitchGrid(feats, pitchM2) as never)
+    pitches?.setData(pitchGrid([...feats, ...exts], pitchM2) as never)
   }, [geo, projects, pitchM2, ready])
 
   /* ---------- indicative masses: only where footprint AND height are sourced ---------- */
@@ -408,22 +553,31 @@ export default function MapView({
     const map = mapRef.current
     if (!map || !loadedRef.current) return
     const slugs = new Set(projects.map((p) => p.project.slug))
-    const wanted = boundaryFeatures(geo).filter(
-      (f) => f.properties.is_primary && slugs.has(f.properties.slug ?? ''),
-    )
+    const wanted = [
+      ...boundaryFeatures(geo).filter((f) => f.properties.is_primary && slugs.has(f.properties.slug ?? '')),
+      ...extentFeatures(geo).filter((f) => slugs.has(f.properties.slug ?? '')),
+    ]
     const live = new Set<string>()
     for (const f of wanted) {
-      const areaM2 = f.properties.official_area_m2
+      const isExtent = f.properties.kind === 'projected_extent'
+      const areaM2 = isExtent ? f.properties.area_m2 : f.properties.official_area_m2
       const centre = centroidOf(polysOf(f))
       if (typeof areaM2 !== 'number' || !centre) continue
-      const key = `${f.properties.slug}|${f.properties.reference ?? ''}`
+      const key = `${f.properties.slug}|${f.properties.reference ?? f.properties.kind ?? ''}`
       live.add(key)
       if (areaLabelsRef.current.has(key)) continue
       const el = document.createElement('div')
-      el.className = 'pitch-label'
+      const tier = isExtent ? (f.properties.tier === 3 ? 3 : 2) : 1
+      el.className = `pitch-label t${tier}`
+      /* The true ratio, from the same area the tooltip quotes. */
       const pitches = Math.round(areaM2 / pitchM2)
+      const caption = tier === 1
+        ? 'official red line'
+        : tier === 2
+          ? 'projected size, not a boundary'
+          : 'projected size · location settlement-level only'
       el.innerHTML = `<strong>≈ ${pitches} football pitches</strong>`
-        + `<span>official red line · ${(areaM2 / 10000).toFixed(1)} ha</span>`
+        + `<span>${caption} · ${(areaM2 / 10000).toFixed(1)} ha</span>`
       areaLabelsRef.current.set(key, new Marker({ element: el }).setLngLat(centre).addTo(map))
     }
     for (const [key, m] of areaLabelsRef.current) {

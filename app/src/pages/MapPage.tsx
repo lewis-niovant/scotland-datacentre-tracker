@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { LensId } from '../types'
+import { extentCounts } from '../lib/geometry'
 import { developersOf, statusGroup, useDataset } from '../lib/data'
 import { lensById } from '../lib/lenses'
 import MapView from '../components/MapView'
@@ -21,6 +22,7 @@ export default function MapPage() {
   const lens = lensById(lensId)
   const all = ds.observatory.projects
   const pitchM2 = ds.observatory.constants?.comparisons?.football_pitch_m2?.value ?? 7140
+  const extents = useMemo(() => extentCounts(ds.geo, all.length), [ds.geo, all.length])
 
   const developers = useMemo(
     () => [...new Set(all.flatMap(developersOf))].sort(),
@@ -68,7 +70,9 @@ export default function MapPage() {
             authorities={authorities}
           />
           <p className="map-note">
-            Zoom in to reveal <strong>official red-line site boundaries</strong> (17 of 39 projects).
+            Zoom in for site extents: <strong>{extents.official} official red-line boundaries</strong>,{' '}
+            {extents.tier2 + extents.tier3} projected from a stated area (dashed/dotted — not
+            boundaries). Tap any shape to see which it is.
           </p>
         </div>
         {threeD && (
@@ -79,11 +83,17 @@ export default function MapPage() {
         )}
         {showPitches && !threeD && (
           <p className="map-hint">
-            <strong>Pitch grid on</strong> — 105 × 68 m cells inside official boundaries; zoom in to
-            see them. Comparisons can be switched off.
+            <strong>Pitch grid on</strong> — 105 × 68 m cells inside official boundaries and
+            projected extents; zoom in to see them. Comparisons can be switched off.
           </p>
         )}
-        <MapLegend lens={lens} showPitches={showPitches} pitchM2={pitchM2} />
+        <MapLegend
+          lens={lens}
+          showPitches={showPitches}
+          pitchM2={pitchM2}
+          geo={ds.geo}
+          totalProjects={all.length}
+        />
         <div className="map-controls">
           <button
             className="map-btn"
@@ -97,7 +107,7 @@ export default function MapPage() {
             className="map-btn"
             aria-pressed={showPitches}
             onClick={() => setShowPitches((v) => !v)}
-            title={`Overlay a ${pitchM2} m² football-pitch grid inside official site boundaries (zoom in to see it)`}
+            title={`Overlay a ${pitchM2} m² football-pitch grid inside official boundaries and projected extents (zoom in to see it)`}
           >
             <span aria-hidden="true">⬚</span>
             <span className="sr-only">Show size comparison grid</span>

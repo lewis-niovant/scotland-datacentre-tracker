@@ -13,5 +13,6 @@
     "src-postcodes-io-eh26-0ph"
   ],
   "address": "Advanced Computing Facility (ACF), Bush Estate, Penicuik, Midlothian",
-  "postcode": "EH26 0PH"
+  "postcode": "EH26 0PH",
+  "boundary_precision": "red_line_official"
 }

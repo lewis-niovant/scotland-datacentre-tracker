@@ -302,7 +302,7 @@ export interface Observatory {
 /* ---- geo.json ---- */
 
 /** The kinds actually emitted by scripts/build_dataset.py. */
-export type GeoKind = 'project_point' | 'boundary' | 'building'
+export type GeoKind = 'project_point' | 'boundary' | 'building' | 'projected_extent'
 
 export interface GeoProperties {
   slug?: string
@@ -322,6 +322,13 @@ export interface GeoProperties {
   source_id?: string
   licence?: string
   retrieved_date?: string
+  /* projected_extent features — derived by scripts/build_dataset.py, never sourced geometry */
+  tier?: number
+  derived?: boolean
+  area_m2?: number
+  area_state?: string
+  side_m?: number
+  centre?: [number, number]
   [key: string]: unknown
 }
 

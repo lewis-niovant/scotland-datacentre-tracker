@@ -1,0 +1,109 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.1981,
+        55.8562
+       ],
+       [
+        -3.1979,
+        55.8564
+       ],
+       [
+        -3.2018,
+        55.857
+       ],
+       [
+        -3.2014,
+        55.8566
+       ],
+       [
+        -3.2019,
+        55.8564
+       ],
+       [
+        -3.2015,
+        55.8561
+       ],
+       [
+        -3.2014,
+        55.8561
+       ],
+       [
+        -3.2014,
+        55.856
+       ],
+       [
+        -3.2014,
+        55.856
+       ],
+       [
+        -3.2013,
+        55.8559
+       ],
+       [
+        -3.2012,
+        55.8558
+       ],
+       [
+        -3.2014,
+        55.8558
+       ],
+       [
+        -3.2013,
+        55.8558
+       ],
+       [
+        -3.2013,
+        55.8557
+       ],
+       [
+        -3.2008,
+        55.855
+       ],
+       [
+        -3.2003,
+        55.855
+       ],
+       [
+        -3.1998,
+        55.8551
+       ],
+       [
+        -3.1991,
+        55.8554
+       ],
+       [
+        -3.1986,
+        55.8557
+       ],
+       [
+        -3.1981,
+        55.8562
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "epcc-acf-edinburgh",
+    "reference": "22/00803/DPP",
+    "local_auth": "Midlothian",
+    "application_type": "full_application",
+    "is_primary": true,
+    "official_area_m2": 31529,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  }
+ ]
+}

@@ -46,6 +46,82 @@ export function primaryBoundary(geo: GeoCollection, slug: string): GeoFeature | 
   )
 }
 
+/** Derived squares emitted by build_dataset.py for projects with no red line. */
+export function extentFeatures(geo: GeoCollection, tier?: 2 | 3): GeoFeature[] {
+  return geo.features.filter(
+    (f) =>
+      f?.properties?.kind === 'projected_extent' &&
+      (tier === undefined || f.properties.tier === tier) &&
+      (f.geometry?.type === 'Polygon' || f.geometry?.type === 'MultiPolygon'),
+  )
+}
+
+/** The projected extent for one project, if it has one (it never has both). */
+export function projectedExtent(geo: GeoCollection, slug: string): GeoFeature | null {
+  return extentFeatures(geo).find((f) => f.properties.slug === slug) ?? null
+}
+
+/** How many projects sit in each extent tier, counted from the data itself. */
+export function extentCounts(geo: GeoCollection, totalProjects: number): {
+  official: number; tier2: number; tier3: number; none: number
+} {
+  const uniq = (fs: GeoFeature[]) => new Set(fs.map((f) => f.properties.slug ?? '')).size
+  const official = uniq(boundaryFeatures(geo))
+  const tier2 = uniq(extentFeatures(geo, 2))
+  const tier3 = uniq(extentFeatures(geo, 3))
+  return { official, tier2, tier3, none: Math.max(0, totalProjects - official - tier2 - tier3) }
+}
+
+/* ------------------------------------------------------------------ */
+/* Tooltip wording — one source of truth for map popups and legend      */
+/* ------------------------------------------------------------------ */
+
+export const EXTENT_TIER_LABELS: Record<1 | 2 | 3, string> = {
+  1: 'Official planning boundary',
+  2: 'Projected size — not a planning boundary',
+  3: 'Projected size, location approximate — not a planning boundary',
+}
+
+const STATE_WORDS: Record<string, string> = {
+  reported: 'reported',
+  developer_stated: 'developer-stated',
+  confirmed: 'confirmed',
+  estimated: 'estimated',
+  modelled: 'modelled',
+  inferred: 'inferred',
+  disputed: 'disputed',
+}
+
+function ha(m2: number): string {
+  return `${(m2 / 10000).toFixed(1)} ha`
+}
+
+/** The wording the owner asked for, verbatim, for either kind of extent feature. */
+export function extentExplanation(f: GeoFeature): { tier: 1 | 2 | 3; title: string; body: string } {
+  const p = f.properties
+  if (p.kind === 'boundary') {
+    return {
+      tier: 1,
+      title: EXTENT_TIER_LABELS[1],
+      body:
+        `Official planning boundary — the red line submitted with application ${p.reference ?? 'unknown reference'}`
+        + ` to ${p.local_auth ?? 'the planning authority'}. Source: Spatial Hub Scotland (OGL v3).`
+        + (p.retrieved_date ? ` Retrieved ${p.retrieved_date}.` : ''),
+    }
+  }
+  const tier = p.tier === 3 ? 3 : 2
+  const state = STATE_WORDS[String(p.area_state)] ?? String(p.area_state ?? 'unverified')
+  let body =
+    `Projected size, not a planning boundary — a square of the site's stated area `
+    + `(${ha(Number(p.area_m2 ?? 0))}, ${state}) centred on the recorded location. `
+    + `The area is sourced; the shape, orientation and exact parcel are not.`
+  if (tier === 3) {
+    body += ' Location is known only to settlement level, so this shows how big the site would be,'
+      + ' not precisely where.'
+  }
+  return { tier, title: EXTENT_TIER_LABELS[tier], body }
+}
+
 export function bboxOf(polys: Poly[]): [number, number, number, number] {
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
   for (const poly of polys) {

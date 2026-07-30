@@ -8,7 +8,7 @@ import {
   headlineWaterM3, developersOf, useDataset,
 } from '../lib/data'
 import { MaturityBadge, StatusBadge, StateChip, VerificationBadge } from '../components/Badges'
-import { primaryBoundary } from '../lib/geometry'
+import { extentExplanation, primaryBoundary, projectedExtent } from '../lib/geometry'
 
 /* ---------------- helpers ---------------- */
 
@@ -157,7 +157,15 @@ export default function ProjectPage() {
   /* Prefer the official red line where one exists — but always show both,
      because the discrepancies are the editorial point. */
   const area = officialArea ?? (typeof reportedArea === 'number' ? reportedArea : undefined)
-  const areaBasis = officialArea != null ? 'official red-line area' : 'claimed site area'
+  /* No red line? Then the map draws a projected extent from this same figure, and the
+     page must say so rather than let a "site area" read as a measured boundary. */
+  const extent = officialArea == null ? projectedExtent(ds.geo, project.slug) : null
+  const extentNote = extent ? extentExplanation(extent) : null
+  const areaBasis = officialArea != null
+    ? 'official red-line area'
+    : extent
+      ? 'stated site area (no official boundary)'
+      : 'claimed site area'
   const pitchM2 = constants?.football_pitch_m2?.value
   const houseKwh = constants?.household_annual_electricity_kwh?.value
   const poolM3 = constants?.olympic_pool_m3?.value
@@ -194,7 +202,9 @@ export default function ProjectPage() {
                 : '—'}
             </div>
             <div className="hl">
-              {officialArea != null ? 'official red-line area' : 'claimed site area'}{' '}
+              {officialArea != null
+                ? 'official red-line area'
+                : extent ? 'stated site area — no official boundary' : 'claimed site area'}{' '}
               {officialArea != null
                 ? <StateChip state="confirmed" />
                 : site?.site_area_m2 && <StateChip state={site.site_area_m2.state} />}
@@ -233,6 +243,13 @@ export default function ProjectPage() {
               )}
             </p>
           </>
+        )}
+        {extentNote && (
+          <p className="small muted extent-note">
+            <strong>No official planning boundary exists for this project.</strong> The figure above
+            is the site area as {extentNote.tier === 3 ? 'reported' : 'stated'} in the sources, not a
+            measured red line. {extentNote.body}
+          </p>
         )}
         <p className="hero-summary">{project.summary}</p>
         {maturity && (

@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import type { StatusGroup } from '../types'
+import type { GeoCollection, StatusGroup } from '../types'
 import { STATUS_GROUPS, STATUS_GROUP_META, fmtInt } from '../lib/data'
+import { extentCounts } from '../lib/geometry'
 import { BOUNDARY_MIN_ZOOM, PITCH_MIN_ZOOM } from './MapView'
 import type { LensDef, StatTileDef } from '../lib/lenses'
 import { LENSES } from '../lib/lenses'
@@ -102,7 +103,14 @@ export function StatsStrip({ tiles, shown, total }: { tiles: StatTileDef[]; show
 
 const SEQ_LEGEND = ['#86b6ef', '#5598e7', '#2a78d6', '#1c5cab', '#0d366b']
 
-export function MapLegend({ lens, showPitches, pitchM2 }: { lens: LensDef; showPitches: boolean; pitchM2: number }) {
+export function MapLegend({ lens, showPitches, pitchM2, geo, totalProjects }: {
+  lens: LensDef
+  showPitches: boolean
+  pitchM2: number
+  geo: GeoCollection
+  totalProjects: number
+}) {
+  const counts = extentCounts(geo, totalProjects)
   /* Collapsed by default on small screens so the map stays clear. */
   const [open, setOpen] = useState<boolean>(() =>
     typeof window !== 'undefined' ? window.matchMedia('(min-width: 800px)').matches : true,
@@ -162,20 +170,45 @@ export function MapLegend({ lens, showPitches, pitchM2 }: { lens: LensDef; showP
                 : 'how many of them have a published figure'}. Tap to zoom in.
             </span>
           </div>
+          <div className="legend-title extent-head">
+            Site extents <span className="small-note">(from zoom {BOUNDARY_MIN_ZOOM}; tap any shape for its explanation)</span>
+          </div>
           <div className="row boundary-note">
-            <span className="redline-key" aria-hidden="true" />
+            <span className="extent-key t1" aria-hidden="true" />
             <span>
-              Solid red line = <strong>official red-line boundary</strong> (Spatial Hub Scotland
-              planning applications, OGL v3). Visible from zoom {BOUNDARY_MIN_ZOOM} — zoom in to
-              reveal real site boundaries. Only 17 of the 39 projects have one; the rest are points.
+              <strong>Solid red — official planning boundary.</strong> The red line submitted with
+              the application, from Spatial Hub Scotland (OGL v3).{' '}
+              <em>{counts.official} project{counts.official === 1 ? '' : 's'}.</em>
             </span>
+          </div>
+          <div className="row boundary-note">
+            <span className="extent-key t2" aria-hidden="true" />
+            <span>
+              <strong>Dashed — projected size, not a planning boundary.</strong> A square of the
+              site’s stated area centred on the recorded location. The area is sourced; the shape,
+              orientation and exact parcel are not.{' '}
+              <em>{counts.tier2} project{counts.tier2 === 1 ? '' : 's'}.</em>
+            </span>
+          </div>
+          <div className="row boundary-note">
+            <span className="extent-key t3" aria-hidden="true" />
+            <span>
+              <strong>Dotted, unfilled — projected size, approximate location.</strong> As above,
+              but the location is known only to settlement level, so this shows how big the site
+              would be, not precisely where. The dot marks the only point we hold.{' '}
+              <em>{counts.tier3} project{counts.tier3 === 1 ? '' : 's'}.</em>
+            </span>
+          </div>
+          <div className="row small-note extent-none">
+            {counts.none} project{counts.none === 1 ? '' : 's'}: no published area, no extent shown.
           </div>
           {showPitches && (
             <div className="row pitch-note-row">
               <span className="pitch-key" aria-hidden="true" />
               <span>
-                Thin green grid = derived {fmtInt(pitchM2)} m² football pitches inside the official
-                boundary (drawn by us, layout illustrative). Appears from zoom {PITCH_MIN_ZOOM}.
+                Thin green grid = derived {fmtInt(pitchM2)} m² football pitches inside official
+                boundaries <em>and</em> projected extents (drawn by us, layout illustrative).
+                Appears from zoom {PITCH_MIN_ZOOM}.
               </span>
             </div>
           )}
