@@ -1,0 +1,40 @@
+{
+  "summary": "Reaction split between an enthusiastic council welcome at announcement (September 2025) and national environmental-campaign opposition. No local consultation ever took place because no planning process was ever started.",
+  "principal_concerns": [
+    {
+      "concern": "Grid strain: 1,000 MW demand (~25% of Scotland's peak) could raise electricity bills and, campaigners claim, risk blackouts",
+      "raised_by": "Stop Climate Chaos Scotland (Mike Robinson)",
+      "source_ids": ["src-irvine-times-sccs-warning"]
+    },
+    {
+      "concern": "Climate impact: data centre growth 'has the potential to blow any chance of meeting our future carbon budgets'; hyperscale AI data centres called 'the gravest threat imaginable to Scotland's climate ambitions'",
+      "raised_by": "Stop Climate Chaos Scotland / Dr Kat Jones, Action to Protect Rural Scotland",
+      "source_ids": ["src-irvine-times-sccs-warning"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Substantial employment in construction, digital infrastructure and data centre operations, plus Ayrshire supply-chain and skills-pipeline opportunities",
+      "claimant": "AI Pathfinder / Cllr Tony Gurney, North Ayrshire Council",
+      "binding_status": "aspirational",
+      "source_ids": ["src-irvine-times-nac-delighted-2025", "src-stv-ai-pathfinder-2025"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "North Ayrshire Council (Cllr Tony Gurney, Cabinet Member for Green Environment and Economy)",
+      "stakeholder_type": "elected_member",
+      "position": "Welcomed the announcement as 'hugely significant' and 'transformational', aligning it with the Ayrshire Regional Economic Strategy and £251m Ayrshire Growth Deal",
+      "date": "2025-09-19",
+      "source_ids": ["src-irvine-times-nac-delighted-2025", "src-stv-ai-pathfinder-2025"]
+    },
+    {
+      "stakeholder": "Stop Climate Chaos Scotland",
+      "stakeholder_type": "campaign_group",
+      "position": "Urged the First Minister to block the project on grid and climate grounds; Scottish Government deferred to planning authorities",
+      "source_ids": ["src-irvine-times-sccs-warning"]
+    }
+  ],
+  "campaign_groups": ["Stop Climate Chaos Scotland", "Action to Protect Rural Scotland"],
+  "notes": "Council's original welcome page on north-ayrshire.gov.uk returned 404 when checked on 2026-07-30; no council statement on the company's reported collapse has been found."
+}

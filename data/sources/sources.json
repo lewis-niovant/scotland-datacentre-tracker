@@ -2154,5 +2154,134 @@
     "reliability_tier": 2,
     "status": "broken",
     "notes": "PDF download failed (503/truncated) on 2026-07-30. Search excerpts attribute to SSG material: data centre relocated to Chapelcross site with manufacturing/R&D moving to Eastriggs; 'potential site commencement in 2027'. Needs verification against the document itself."
+  },
+  {
+    "id": "src-irvine-times-nac-delighted-2025",
+    "title": "North Ayrshire Council delighted by £15bn AI investment",
+    "publisher": "Irvine Times",
+    "source_type": "journalism",
+    "url": "https://www.irvinetimes.com/news/25479549.north-ayrshire-council-delighted-15bn-ai-investment/",
+    "publication_date": "2025-09-19",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "perspective": "Local newspaper reporting council and developer statements largely uncritically",
+    "notes": "Carries Cllr Tony Gurney quotes; 1 GW initial / 1.5 GW potential, 6,400 GPUs, £15bn West Scotland claim, operations from 2026."
+  },
+  {
+    "id": "src-stv-ai-pathfinder-2025",
+    "title": "AI industrial park in North Ayrshire to bring £15bn investment and 'substantial' employment",
+    "publisher": "STV News",
+    "source_type": "journalism",
+    "url": "https://news.stv.tv/west-central/ai-industrial-park-in-north-ayrshire-to-bring-15bn-investment-and-substantial-employment",
+    "publication_date": "2025-09-19",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Identifies AI Pathfinder as linked to Salamanca (Martin Bellamy); £385m initial deployment, up to 6,400 GPUs, i3 site, 'substantial employment' with no numbers; Northamptonshire first UK deployment."
+  },
+  {
+    "id": "src-nac-news-ai-investment",
+    "title": "Council welcomes huge AI investment in North Ayrshire",
+    "publisher": "North Ayrshire Council",
+    "source_type": "government_publication",
+    "url": "https://www.north-ayrshire.gov.uk/news/council-welcome-huge-ai-investment-in-north-ayrshire",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "broken",
+    "notes": "Council's own September 2025 welcome statement. Returned HTTP 404 when checked 2026-07-30 — page appears to have been removed; still surfaced in search indexes."
+  },
+  {
+    "id": "src-irvine-times-sccs-warning",
+    "title": "Environment campaigners warn new AI data centre in Irvine could cause blackouts",
+    "publisher": "Irvine Times",
+    "source_type": "journalism",
+    "url": "https://www.irvinetimes.com/news/25919109.first-minister-urged-block-new-ai-date-centre-irvine/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "perspective": "Reports Stop Climate Chaos Scotland campaign position",
+    "notes": "SCCS (Mike Robinson; Dr Kat Jones, APRS) warn 1,000 MW = ~25% of Scotland's peak demand; blackout and bill-increase warnings; Scottish Government deferred to planning authorities."
+  },
+  {
+    "id": "src-cityam-pathfinder-collapse-2026",
+    "title": "Michael Dell, Lord Johnson and the 'gun to the head' meeting that ended a £15bn AI project",
+    "publisher": "City A.M.",
+    "source_type": "journalism",
+    "url": "https://www.cityam.com/michael-dell-lord-johnson-and-the-gun-to-the-head-meeting-that-ended-a-15bn-ai-project/",
+    "publication_date": "2026-07-24",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Detailed account of the Bellamy–Hughes shareholder dispute, ~£100m seed round at £500m valuation (Nov 2025), £17.7m management buyout (early Jan 2026), High Court judgment of 24 Jul 2026 rejecting Hughes's challenge; reports the ~196-acre Ayrshire site remains undeveloped and Pathfinder effectively ceased operations."
+  },
+  {
+    "id": "src-sifted-pathfinder-court",
+    "title": "Court battle risks £18bn data centre plan central to UK's AI strategy",
+    "publisher": "Sifted",
+    "source_type": "journalism",
+    "url": "https://sifted.eu/articles/ai-pathfinder-data-centre-court",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports asset freeze of AI Pathfinder amid shareholder litigation; Isle of Man holding company founded mid-2025 as founding shareholder. Partially paywalled — some figures unverifiable."
+  },
+  {
+    "id": "src-companies-house-ai-pathfinder-inc",
+    "title": "AI PATHFINDER INC LIMITED (16471441) — company overview",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/16471441",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Incorporated 23 May 2025; active; registered office 58 Grosvenor Street, London W1K 3JB; SIC 64209 (other holding companies). No accounts yet filed (first due Feb 2027). Related: AI PATHFINDER HOLDINGS LIMITED (16926656, inc. 22 Dec 2025, same address)."
+  },
+  {
+    "id": "src-na-portal-datacentre-search",
+    "title": "North Ayrshire e-planning portal — simple search for 'data centre'",
+    "publisher": "North Ayrshire Council",
+    "source_type": "planning_portal",
+    "url": "https://www.eplanning.north-ayrshire.gov.uk/OnlinePlanning/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Keyword search 'data centre' on 2026-07-30 returned only 26/00138/EIA (Hunterston Estate scoping — unrelated project). No AI Pathfinder or i3 data centre application, PAN, screening or scoping request found."
+  },
+  {
+    "id": "src-na-portal-i3-search",
+    "title": "North Ayrshire e-planning portal — simple search for 'i3 Irvine'",
+    "publisher": "North Ayrshire Council",
+    "source_type": "planning_portal",
+    "url": "https://www.eplanning.north-ayrshire.gov.uk/OnlinePlanning/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Search 'i3 Irvine' on 2026-07-30 returned 4 minor historic applications (signage, alterations, spine road 2014-2022). Nothing data-centre related."
+  },
+  {
+    "id": "src-datacentermap-ai-pathfinder-irvine",
+    "title": "AI Pathfinder North Ayrshire Data Center in Irvine (1500 MW)",
+    "publisher": "Data Center Map",
+    "source_type": "other",
+    "url": "https://www.datacentermap.com/united-kingdom/irvine-sct/ai-pathfinder-north-ayrshire/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Industry directory reproducing developer claims",
+    "notes": "Directory listing repeating announcement figures (1 GW initial, 1.5 GW potential, £385m first phase, 6,400 GPUs, £18.4bn UK programme, 2 GW by 2030)."
+  },
+  {
+    "id": "src-ashurst-ai-pathfinder",
+    "title": "Ashurst advises AI Pathfinder on UK sovereign AI infrastructure programme",
+    "publisher": "Ashurst LLP",
+    "source_type": "other",
+    "url": "https://www.ashurst.com/en/who-we-are/our-news-work-market-recognition/ashurst-advises-ai-pathfinder-on-uk-sovereign-ai-infrastructure-programme/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Law firm promotional material",
+    "notes": "Confirms professional advisers were engaged on the UK programme in 2025."
+  },
+  {
+    "id": "src-ai-pathfinder-website",
+    "title": "AI Pathfinder corporate website",
+    "publisher": "AI Pathfinder",
+    "source_type": "developer_publication",
+    "url": "https://ai-pathfinder.com/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "status": "active",
+    "notes": "As of 2026-07-30 the site is a near-empty shell (logo only, © 2026); the /news.html page returns 404. Consistent with reported cessation of operations."
   }
 ]

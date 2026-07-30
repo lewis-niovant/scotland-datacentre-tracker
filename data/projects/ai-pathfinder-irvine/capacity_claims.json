@@ -1,0 +1,33 @@
+[
+  {
+    "capacity_type": "first_phase",
+    "value_mw": 1000,
+    "state": "developer_stated",
+    "applicable_date": "2025-09-19",
+    "claimant": "AI Pathfinder",
+    "confidence": "low",
+    "preferred": true,
+    "preferred_rationale": "The only capacity figures that exist are the developer's own announcement numbers; no planning or grid documentation corroborates any of them.",
+    "notes": "Announced as a '1GW site' with initial deployment of up to 6,400 GPUs (a GPU count consistent with only tens of MW of IT load, far below 1 GW — internal inconsistency in the claim). Whether 1 GW refers to IT load or grid import was never specified.",
+    "source_ids": ["src-irvine-times-nac-delighted-2025", "src-stv-ai-pathfinder-2025"]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 1500,
+    "state": "developer_stated",
+    "applicable_date": "2025-09-19",
+    "claimant": "AI Pathfinder",
+    "confidence": "low",
+    "notes": "'Future potential to expand to 1.5GW', which would make it 'one of the largest AI infrastructure hubs in Europe'. No supporting planning, land or grid evidence.",
+    "source_ids": ["src-irvine-times-nac-delighted-2025", "src-datacentermap-ai-pathfinder-irvine"]
+  },
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 1000,
+    "state": "reported",
+    "claimant": "Stop Climate Chaos Scotland (characterising the developer claim)",
+    "confidence": "low",
+    "notes": "Campaigners cite the site as requiring 1,000 MW, equivalent to ~25% of Scotland's peak electricity demand. This restates the developer figure; no connection application has been identified.",
+    "source_ids": ["src-irvine-times-sccs-warning"]
+  }
+]

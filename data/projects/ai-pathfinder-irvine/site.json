@@ -1,0 +1,22 @@
+{
+  "site_name": "i3 enterprise area, Irvine",
+  "settlement": "Irvine",
+  "latitude": 55.62,
+  "longitude": -4.64,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 793000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "City A.M. (reporting a ~196-acre Ayrshire site)",
+    "confidence": "low",
+    "notes": "City A.M. describes a ~196-acre (~79 ha) Ayrshire site; no plan, address or title evidence published, and no red-line boundary exists. Figure recorded as reported, not verified.",
+    "source_ids": ["src-cityam-pathfinder-collapse-2026"]
+  },
+  "greenfield_brownfield": "unknown",
+  "current_land_use": "i3 is North Ayrshire's Enterprise Area for life sciences and advanced manufacturing (Riverside Way / Annickbank area), a mix of occupied industrial premises and serviced development plots",
+  "nearest_settlements": ["Irvine", "Girdle Toll", "Dreghorn"],
+  "land_notes": "Announcement located the project only in 'the i3 area of Irvine'. No specific plot, address, land option or acquisition has been identified; coordinates are an approximate centroid of the i3 area and should not be treated as a site location. No evidence of land control was found.",
+  "source_ids": ["src-irvine-times-nac-delighted-2025", "src-stv-ai-pathfinder-2025"]
+}

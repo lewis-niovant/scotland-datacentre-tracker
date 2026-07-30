@@ -1,0 +1,36 @@
+[
+  {
+    "name": "AI Pathfinder Inc Limited",
+    "role": "developer",
+    "company_number": "16471441",
+    "jurisdiction": "England and Wales",
+    "website": "https://ai-pathfinder.com/",
+    "ownership_summary": "Holding-company SIC code (64209); incorporated 23 May 2025, four months before the £15bn announcement, with no accounts filed (first due Feb 2027). Press reporting describes an Isle of Man holding company formed mid-2025 as the founding shareholder, a ~£100m seed round at a £500m valuation in November 2025, an asset freeze during shareholder litigation, and a £17.7m management buyout in January 2026 upheld by the High Court on 24 July 2026.",
+    "beneficial_owner_public": null,
+    "valid_from": "2025-05-23",
+    "confidence": "medium",
+    "notes": "A sibling entity, AI PATHFINDER HOLDINGS LIMITED (16926656), was incorporated 22 Dec 2025 at the same registered office (58 Grosvenor Street, London W1K 3JB) — timing consistent with the reported management buyout restructuring. City A.M. reports the operating business effectively ceased after the buyout.",
+    "source_ids": ["src-companies-house-ai-pathfinder-inc", "src-cityam-pathfinder-collapse-2026", "src-sifted-pathfinder-court"]
+  },
+  {
+    "name": "Salamanca Group",
+    "role": "parent_company",
+    "jurisdiction": "United Kingdom",
+    "ownership_summary": "London property development and investment firm chaired by Martin Bellamy, co-founder of AI Pathfinder. Press described AI Pathfinder as a Salamanca subsidiary/affiliate; the exact corporate relationship was never documented publicly and Companies House shows AI Pathfinder Inc Limited as a standalone holding company.",
+    "confidence": "low",
+    "notes": "Recorded as reported association, not verified ownership.",
+    "source_ids": ["src-stv-ai-pathfinder-2025", "src-cityam-pathfinder-collapse-2026"]
+  },
+  {
+    "name": "North Ayrshire Council",
+    "role": "planning_authority",
+    "notes": "Also economic development lead for the i3 Enterprise Area and likely owner of serviced i3 plots. Publicly welcomed the announcement in September 2025 (Cllr Tony Gurney); its news page on the investment returned 404 by July 2026.",
+    "source_ids": ["src-irvine-times-nac-delighted-2025", "src-nac-news-ai-investment"]
+  },
+  {
+    "name": "Stop Climate Chaos Scotland",
+    "role": "campaign_group",
+    "notes": "Coalition (chair Mike Robinson; member Action to Protect Rural Scotland, Dr Kat Jones) urging the First Minister to block the project, warning of grid strain, higher bills, potential blackouts and carbon-budget impacts.",
+    "source_ids": ["src-irvine-times-sccs-warning"]
+  }
+]

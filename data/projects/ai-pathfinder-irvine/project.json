@@ -1,0 +1,40 @@
+{
+  "slug": "ai-pathfinder-irvine",
+  "canonical_name": "AI Pathfinder Irvine (i3)",
+  "display_name": "AI Pathfinder, i3 Irvine",
+  "aliases": [
+    { "alias": "AI Pathfinder North Ayrshire", "alias_type": "marketing_name", "source_ids": ["src-datacentermap-ai-pathfinder-irvine"] },
+    { "alias": "i3 Irvine AI industrial park", "alias_type": "place_name", "source_ids": ["src-stv-ai-pathfinder-2025"] }
+  ],
+  "summary": "In September 2025 AI Pathfinder, a start-up associated with Salamanca Group chairman Martin Bellamy, announced up to £15bn of investment in a 1 GW (potentially 1.5 GW) 'sovereign AI' data centre campus at the i3 enterprise area in Irvine, with operations claimed from 2026. No planning application, PAN, screening or scoping request has ever appeared on the North Ayrshire portal, no grid connection evidence has been published, and no accounts have been filed by the two-month-old holding company behind the claims. In late 2025 the company was paralysed by a shareholder dispute and asset freeze; after a £17.7m management buyout (January 2026) and a High Court judgment (24 July 2026), press reporting states the company effectively ceased operations and the Ayrshire site remains undeveloped.",
+  "project_type": "hyperscale",
+  "status": "announced",
+  "status_source_ids": ["src-irvine-times-nac-delighted-2025", "src-cityam-pathfinder-collapse-2026"],
+  "maturity_level": "M0",
+  "maturity_flags": ["paused"],
+  "maturity_explanation": "M0 concept/marketed only, with the largest claims-vs-evidence gap in this dataset. Evidence for the 1-1.5 GW / £15bn claims consists solely of a company press announcement and uncritical council welcome (Sep 2025). Checks on 2026-07-30 found: no planning application, PAN, EIA screening or scoping on the North Ayrshire portal for any i3 data centre; no published grid connection agreement; no evidence of land control at i3; a developer vehicle (AI Pathfinder Inc Limited, inc. 23 May 2025) with no filed accounts. City A.M. (24 Jul 2026) reports the company raised only ~£100m seed funding, was frozen by shareholder litigation, was sold to management for £17.7m in January 2026, and effectively ceased operations with the Ayrshire site undeveloped — hence the 'paused' flag; collapse is reported by credible journalism but not formally confirmed by the company or council.",
+  "verification_level": "reported",
+  "local_authority": "North Ayrshire Council",
+  "region": "Ayrshire",
+  "related_project_slugs": ["hunterston"],
+  "first_public_date": "2025-09-19",
+  "anticipated_operational_date": "2026 (developer claim at announcement; not credible — no planning application ever lodged)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "low",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-07-24",
+    "headline": "High Court rejects co-founder Martin Hughes's challenge to the £17.7m management buyout; City A.M. reports AI Pathfinder effectively ceased operations and the Ayrshire site remains undeveloped",
+    "source_ids": ["src-cityam-pathfinder-collapse-2026"]
+  },
+  "unknowns": [
+    "Whether AI Pathfinder (or any successor to the management buyout) retains any interest in the i3 Irvine site, or whether the project is formally dead",
+    "Whether any land option, missive or heads of terms over i3 land was ever agreed with North Ayrshire Council or other landowners — no evidence found",
+    "Whether any grid connection application was made to SPEN/NESO for the claimed 1,000 MW — no public record found",
+    "The exact parcel(s) within/around the i3 area intended for the campus (the ~196 acres reported by City A.M. exceeds obviously available i3 plots)",
+    "Source of the £15bn figure and any committed (rather than aspirational) funding beyond the ~£100m seed round",
+    "Whether North Ayrshire Council has issued any statement since the company's reported collapse (its original welcome page now returns 404)"
+  ]
+}
