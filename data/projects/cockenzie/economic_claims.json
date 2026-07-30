@@ -1,0 +1,28 @@
+[
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": null,
+    "value_max": 100,
+    "unit": "jobs",
+    "geographic_scope": "Site",
+    "claimant": "Cllr Lachlan Bruce (critic, citing sector norms)",
+    "methodology": "Councillor's assertion that data centres typically employ fewer than 100 people operationally; not a developer or council figure",
+    "binding_status": "unstated",
+    "state": "reported",
+    "confidence": "low",
+    "notes": "Recorded as a critic's comparative claim, not a project-specific estimate. Neither the council nor SDCL has published jobs figures.",
+    "source_ids": ["src-elcourier-cockenzie-bruce-2025"]
+  },
+  {
+    "claim_category": "other",
+    "value": null,
+    "unit": "unstated",
+    "geographic_scope": "East Lothian",
+    "claimant": "East Lothian Council",
+    "binding_status": "aspirational",
+    "state": "not_disclosed",
+    "confidence": "medium",
+    "notes": "Council states the JV will deliver 'a long-term investment and financial benefit for the council'; the amount of future capital or revenue return 'is yet to be finalised'. Report on main commercial terms expected August 2026.",
+    "source_ids": ["src-elc-cockenzie-dc-update-2026", "src-midlothianview-cockenzie-2026"]
+  }
+]

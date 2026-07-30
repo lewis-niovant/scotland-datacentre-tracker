@@ -1893,5 +1893,133 @@
     "reliability_tier": 5,
     "perspective": "Local residents' campaign opposing the proposal",
     "notes": "Linked from APRS page as the local campaign webpage; campaign spokesperson reported in press as Sarah Matthews; petition reported at over 2,000 signatures in earlier coverage."
+  },
+  {
+    "id": "src-elc-cockenzie-dc-update-2026",
+    "title": "Update on plans for a data centre at Cockenzie",
+    "publisher": "East Lothian Council",
+    "source_type": "government_publication",
+    "url": "https://www.eastlothian.gov.uk/news/2026/update-plans-data-centre-cockenzie",
+    "publication_date": "2026-06-25",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Council is landowner and prospective joint-venture partner; promotional of its own project",
+    "notes": "Confirms SDCL preferred bidder (competitive tender agreed via private report to Council, Feb 2025), 70-acre lease of former coal store to the JV, no council capital contribution, community benefits framework to be agreed, financial return not yet finalised, pre-site due diligence underway, no planning application yet. Publication date approximate (news dated week of 25 June 2026 council update)."
+  },
+  {
+    "id": "src-scn-cockenzie-announcement-2025",
+    "title": "First steps taken towards creation of a data centre at Cockenzie",
+    "publisher": "Scottish Construction Now",
+    "source_type": "journalism",
+    "url": "https://www.scottishconstructionnow.com/articles/first-steps-taken-towards-creation-of-a-data-centre-at-cockenzie",
+    "publication_date": "2025-10-27",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Relays East Lothian Council announcement of 22 Oct 2025 naming SDCL as preferred supplier for a hyperscale data centre on the former coal store site; quotes Cllr John McMillan and SDCL founder/CEO Jonathan Maxwell; ~1 year to finalise legal agreements before statutory public consultation."
+  },
+  {
+    "id": "src-digit-cockenzie-2025",
+    "title": "East Lothian Council Backs Hyperscale Data Centre Plan at Cockenzie",
+    "publisher": "DIGIT",
+    "source_type": "journalism",
+    "url": "https://www.digit.fyi/cockenzie-data-centre/",
+    "publication_date": "2025-10-27",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Describes the proposal as a hyperscale data centre; no capacity or investment figures disclosed."
+  },
+  {
+    "id": "src-midlothianview-cockenzie-2026",
+    "title": "Preferred supplier selected for Cockenzie data centre",
+    "publisher": "Midlothian View",
+    "source_type": "journalism",
+    "url": "https://midlothianview.com/news/prefered-supplier-selected-for-cockenzie-data-centre",
+    "publication_date": "2026-06-25",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "June 2026 update: 70-acre lease, geological/hydrological surveys under way, community benefits framework and JV terms still to come."
+  },
+  {
+    "id": "src-elcourier-cockenzie-bruce-2025",
+    "title": "Councillor slams data centre plan at Cockenzie Power Station",
+    "publisher": "East Lothian Courier",
+    "source_type": "journalism",
+    "url": "https://www.eastlothiancourier.com/news/25564185.councillor-slams-data-centre-plan-cockenzie-power-station/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Cllr Lachlan Bruce (Conservative, Preston Seton Gosford) criticism: 'secretive deal', data centres employ fewer than 100 people operationally vs 3,300 permanent jobs projected in the Cockenzie Masterplan; council response stressed early stage and community benefits."
+  },
+  {
+    "id": "src-elcourier-cockenzie-progress-2026",
+    "title": "New Cockenzie data centre plans progress amid concerns",
+    "publisher": "East Lothian Courier",
+    "source_type": "journalism",
+    "url": "https://www.eastlothiancourier.com/news/26240969.new-cockenzie-data-centre-plans-progress-amid-concerns/",
+    "publication_date": "2026-06-25",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "June 2026 council debate: Cllr Shona McIntosh (Green) concerns re AI energy use and community wealth building; water demand and scrutiny concerns; Prestonpans CC 'greenwashing' concern; Cockenzie & Port Seton CC calls for proper scrutiny."
+  },
+  {
+    "id": "src-elcourier-cockenzie-scrutiny-2026",
+    "title": "Calls for scrutiny over Cockenzie data centre plans",
+    "publisher": "East Lothian Courier",
+    "source_type": "journalism",
+    "url": "https://www.eastlothiancourier.com/news/26254348.calls-scrutiny-cockenzie-data-centre-plans/",
+    "publication_date": "2026-07-01",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Cockenzie & Port Seton Community Council chair Ben Morse calls for residents to 'properly scrutinise' the JV before any planning application; notes no statutory definition of 'green data centre'. Publication date approximate."
+  },
+  {
+    "id": "src-companies-house-sdcl",
+    "title": "Sustainable Development Capital LLP (OC330266)",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/OC330266",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "LLP incorporated 31 July 2007; registered office One Great Cumberland Place, London W1H 7AL; active."
+  },
+  {
+    "id": "src-sdcl-about",
+    "title": "About us",
+    "publisher": "SDCL Group",
+    "source_type": "developer_publication",
+    "url": "https://www.sdclgroup.com/about-us/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Corporate self-description",
+    "notes": "SDCL: investment firm founded 2007 focused on energy efficiency and decentralised energy infrastructure; developer, investor and fund manager; London HQ with offices in New York, Greenwich, Dublin, Hong Kong, Singapore; manages listed SDCL Energy Efficiency Income Trust (SEIT). Data centres named among target energy-user sectors."
+  },
+  {
+    "id": "src-stantec-cockenzie-masterplan",
+    "title": "Cockenzie Masterplan",
+    "publisher": "Stantec",
+    "source_type": "developer_publication",
+    "url": "https://www.stantec.com/uk/projects/c/cockenzie-masterplan",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "notes": "25-year masterplan for the 92 ha former power station site; site divided into four zones reflecting historic land uses: coastal, energy generation, coal store, and Battle of Prestonpans."
+  },
+  {
+    "id": "src-galbraith-cockenzie",
+    "title": "Cockenzie development makes progress",
+    "publisher": "Galbraith",
+    "source_type": "other",
+    "url": "https://www.galbraithgroup.com/insights-news/insights/cockenzie-development-makes-progress/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "notes": "Site history: council bought site from ScottishPower in 2018; ~7 acres on western portion sold to Inch Cape Offshore Windfarm for onshore substation (detailed planning permission); potential BESS south of ScottishPower substation; Levelling Up Fund round 2 award of GBP 11.3m for site remediation."
+  },
+  {
+    "id": "src-wikipedia-cockenzie-ps",
+    "title": "Cockenzie power station",
+    "publisher": "Wikipedia",
+    "source_type": "other",
+    "url": "https://en.wikipedia.org/wiki/Cockenzie_power_station",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Coal-fired station operated 1967/68-2013; chimneys demolished 2015; used for site history and location cross-check only."
   }
 ]

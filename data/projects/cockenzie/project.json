@@ -1,0 +1,41 @@
+{
+  "slug": "cockenzie",
+  "canonical_name": "Cockenzie data centre (former power station coal store)",
+  "display_name": "Cockenzie Data Centre",
+  "aliases": [
+    {
+      "alias": "Cockenzie hyperscale data centre",
+      "alias_type": "other",
+      "source_ids": ["src-digit-cockenzie-2025", "src-scn-cockenzie-announcement-2025"]
+    }
+  ],
+  "summary": "Council-led proposal for a hyperscale data centre on approximately 70 acres of the former coal store at the demolished Cockenzie power station, East Lothian. East Lothian Council owns the 92 ha site (bought from ScottishPower in 2018) and, following a competitive tender agreed via a private report to Council in February 2025 and announced on 22 October 2025, is negotiating a joint venture with preferred bidder Sustainable Development Capital LLP (SDCL). The council would lease the land to the JV with no capital contribution; financial return and community-benefits framework are still being negotiated. Pre-site due diligence is under way; no planning application has been submitted.",
+  "project_type": "hyperscale",
+  "status": "strategic_opportunity",
+  "status_source_ids": ["src-elc-cockenzie-dc-update-2026", "src-scn-cockenzie-announcement-2025"],
+  "maturity_level": "M0",
+  "maturity_explanation": "Concept stage: preferred bidder selected and joint-venture negotiations under way, but no PAN, screening/scoping or planning application has been located; council states the statutory public consultation stage is still ahead, with legal agreements expected to take up to a year from October 2025.",
+  "verification_level": "verified",
+  "local_authority": "East Lothian Council",
+  "region": "East Lothian",
+  "first_public_date": "2025-10-22",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-09-01",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-06-25",
+    "headline": "Council update: JV negotiations with SDCL progressing; 70-acre lease planned; report on main commercial terms expected August 2026; due-diligence surveys under way",
+    "source_ids": ["src-elc-cockenzie-dc-update-2026", "src-midlothianview-cockenzie-2026"]
+  },
+  "unknowns": [
+    "IT load / grid import capacity of the proposed data centre (no MW figure published by any party)",
+    "Identity of any end operator/tenant (multiple operators reportedly expressed interest during tender)",
+    "Commercial terms of the joint venture, including the council's equity/revenue share (report to Council expected August 2026)",
+    "Cooling method and water demand",
+    "Whether the development would use the site's legacy grid connection or the new Inch Cape/ScottishPower substation infrastructure, and any connection application details",
+    "Capital investment value and jobs figures",
+    "Content of the February 2025 private report to Council (taken in private session)"
+  ]
+}

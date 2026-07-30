@@ -1,0 +1,11 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "East Lothian Council / SDCL",
+    "confidence": "high",
+    "notes": "The proposal is consistently described as a 'hyperscale' data centre, but no MW figure (IT load, grid import or connection application) has been published by the council, SDCL or press as of July 2026.",
+    "source_ids": ["src-scn-cockenzie-announcement-2025", "src-digit-cockenzie-2025", "src-elc-cockenzie-dc-update-2026"]
+  }
+]
