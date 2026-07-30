@@ -169,14 +169,37 @@ export default function ObjectionMarkers({
 
   /* The guided tour opens one bubble without a click. The marker it wants only
      exists once the beat's camera has flown far enough in, so wait for the
-     zoom that creates it rather than firing into an empty map. */
+     zoom that creates it rather than firing into an empty map.
+
+     The cleanup closes it again: without that, the popup the tour opened on the
+     objections beat stayed pinned to the map for the rest of the session, over
+     every later beat and over the map afterwards. */
   useEffect(() => {
     if (!map || !openFor || !zoomedIn) return
     const t = window.setTimeout(
       () => markersRef.current.get(openFor)?.getElement().click(), 60,
     )
-    return () => window.clearTimeout(t)
+    return () => {
+      window.clearTimeout(t)
+      popupRef.current?.remove()
+      popupRef.current = null
+    }
   }, [map, openFor, zoomedIn])
+
+  /* Zooming out removes the bubbles; an open popup must not outlive its bubble. */
+  useEffect(() => {
+    if (zoomedIn) return
+    popupRef.current?.remove()
+    popupRef.current = null
+  }, [zoomedIn])
+
+  /* Clicking the map anywhere else dismisses it, like every other map popup. */
+  useEffect(() => {
+    if (!map) return
+    const close = () => { popupRef.current?.remove(); popupRef.current = null }
+    map.on('click', close)
+    return () => { map.off('click', close) }
+  }, [map])
 
   useEffect(() => () => {
     for (const [, m] of markersRef.current) m.remove()

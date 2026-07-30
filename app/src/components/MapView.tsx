@@ -848,12 +848,15 @@ export default function MapView({
     const coords = p && projectCoords(p)
     if (coords) {
       /* Selecting a site can switch 3D on in the same breath (focus mode); the
-         pitch must ride in THIS easeTo, because a second one would cancel it. */
+         pitch must ride in THIS easeTo, because a second one would cancel it.
+         The floor is above the surrounding-buildings layer's own minzoom (13),
+         so arriving in 3D shows the site against its neighbours rather than
+         against empty ground. */
       map.easeTo({
         center: coords,
-        zoom: Math.max(map.getZoom(), 12.4),
+        zoom: Math.max(map.getZoom(), 13.2),
         pitch: threeDRef.current ? 55 : map.getPitch(),
-        duration: 600,
+        duration: 800,
       })
     }
   }, [selectedSlug, projects])

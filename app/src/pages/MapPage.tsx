@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import type { LensId, ProjectRecord } from '../types'
 import { boundaryFeatures, extentCounts } from '../lib/geometry'
-import { developersOf, statusGroup, useDataset } from '../lib/data'
+import { developersOf, projectCoords, statusGroup, useDataset } from '../lib/data'
 import { lensById } from '../lib/lenses'
 import MapView, { SCOTLAND_BOUNDS } from '../components/MapView'
 import ProjectSheet from '../components/ProjectSheet'
@@ -14,15 +14,24 @@ import {
 } from '../components/Filters'
 
 /* Focus mode: get close to one site and the map stops being a national dashboard
-   and becomes that site's close-up — satellite imagery, pitch grid and 3D switch
-   themselves on, the filter chrome stands down, and zooming back out hands
-   everything back exactly as it was. Enter and exit thresholds differ so the
-   mode cannot flap at the boundary. */
-const FOCUS_ENTER_ZOOM = 12.6
-const FOCUS_EXIT_ZOOM = 11.3
-/** Zoom from which the satellite toggle offers itself — imagery is context for
-    a place, not a way to look at all of Scotland. */
-const SAT_BTN_ZOOM = 11
+   and becomes that site's close-up — pitch grid and 3D switch themselves on, the
+   filter chrome stands down, and zooming back out hands everything back exactly
+   as it was. Enter and exit thresholds differ so the mode cannot flap at the
+   boundary.
+
+   The enter threshold is deliberately below the zoom at which a site fills the
+   screen: waiting until then meant the snap often never fired at all, which read
+   as the feature being broken rather than subtle. */
+const FOCUS_ENTER_ZOOM = 11.6
+const FOCUS_EXIT_ZOOM = 10.6
+
+function distSq(a: [number, number], b: [number, number]): number {
+  /* Longitude degrees are shorter than latitude ones this far north; without the
+     correction "nearest" skews east–west. cos(57°) ≈ 0.54. */
+  const dx = (a[0] - b[0]) * 0.54
+  const dy = a[1] - b[1]
+  return dx * dx + dy * dy
+}
 
 export default function MapPage() {
   const ds = useDataset()
@@ -32,7 +41,10 @@ export default function MapPage() {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
   const [selected, setSelected] = useState<string | null>(null)
   const [threeD, setThreeD] = useState(false)
-  const [satellite, setSatellite] = useState(false)
+  /* Imagery is the default view: the sites are fields, industrial estates and
+     edge-of-town parcels, and the cartographic style renders most of them as
+     blank space. The toggle back to it is always available. */
+  const [satellite, setSatellite] = useState(true)
   const [showPitches, setShowPitches] = useState(false)
   /* Arriving on a shared link to one site should land on that site, not on the
      national tour. The tour stays a click away behind the ? button. */
@@ -40,9 +52,8 @@ export default function MapPage() {
   const [massCount, setMassCount] = useState(0)
   const [map, setMap] = useState<MapLibreMap | null>(null)
   const [tourOpenObjections, setTourOpenObjections] = useState<string | null>(null)
-  const [zoom, setZoom] = useState(5)
   const [focus, setFocus] = useState<string | null>(null)
-  const preFocusRef = useRef<{ threeD: boolean; satellite: boolean; showPitches: boolean } | null>(null)
+  const preFocusRef = useRef<{ threeD: boolean; showPitches: boolean } | null>(null)
 
   /* While the tour is flying, the map must not also auto-fit to the filter
      changes the tour itself is making — the two cameras fight and the flight
@@ -123,16 +134,16 @@ export default function MapPage() {
 
   /* ---------- focus mode ---------- */
 
+  /* Focus deliberately does NOT touch the basemap. Imagery is already the
+     default, and someone who has switched to the plain map has made a choice
+     that zooming in should not silently undo. */
   const enterFocus = (slug: string) => {
     setFocus((cur) => {
       if (cur === slug) return cur
-      if (cur == null) {
-        preFocusRef.current = { threeD, satellite, showPitches }
-      }
+      if (cur == null) preFocusRef.current = { threeD, showPitches }
       return slug
     })
     setThreeD(true)
-    setSatellite(true)
     setShowPitches(true)
   }
 
@@ -142,7 +153,6 @@ export default function MapPage() {
     preFocusRef.current = null
     if (prev) {
       setThreeD(prev.threeD)
-      setSatellite(prev.satellite)
       setShowPitches(prev.showPitches)
     }
   }
@@ -152,23 +162,55 @@ export default function MapPage() {
   focusTickRef.current = () => {
     if (!map || tourRunning) return
     const z = map.getZoom()
-    setZoom(z)
     if (focus != null) {
       if (z < FOCUS_EXIT_ZOOM) exitFocus()
       return
     }
     if (z < FOCUS_ENTER_ZOOM) return
-    /* Zoomed right in with exactly one site on screen: that site is the story. */
+    /* Close in on the map and whichever site you have centred is the one you are
+       looking at. Requiring exactly one site in the viewport meant two adjacent
+       sites — or one site plus a sliver of its neighbour — silently blocked the
+       snap forever. Nearest-to-centre always resolves. */
     const bounds = map.getBounds()
-    const visible = filtered.filter((p) => {
-      const dp = p.site?.display_point
-      const c: [number, number] | null = Array.isArray(dp) && typeof dp[0] === 'number'
-        ? [dp[0], dp[1] as number]
-        : (typeof p.site?.longitude === 'number' && typeof p.site?.latitude === 'number'
-          ? [p.site.longitude, p.site.latitude] : null)
-      return !!c && bounds.contains(c)
-    })
-    if (visible.length === 1) enterFocus(visible[0].project.slug)
+    const c = map.getCenter()
+    const centre: [number, number] = [c.lng, c.lat]
+    let best: { slug: string; d: number } | null = null
+    for (const p of filtered) {
+      const coords = projectCoords(p)
+      if (!coords || !bounds.contains(coords)) continue
+      const d = distSq(coords, centre)
+      if (!best || d < best.d) best = { slug: p.project.slug, d }
+    }
+    if (best) enterFocus(best.slug)
+  }
+
+  /* 3D from the national view tilted an empty map: the extrusion layers only
+     draw from zoom 10.5, and the surrounding buildings from 13, so the button
+     genuinely did nothing until you had already zoomed in. Rather than disable
+     it, let it take you somewhere it means something. */
+  const heightSites = useMemo(
+    () => filtered.filter((p) => typeof p.site?.max_building_height_m?.value === 'number'),
+    [filtered],
+  )
+
+  const toggle3D = () => {
+    if (threeD || !map) { setThreeD((v) => !v); return }
+    setThreeD(true)
+    if (map.getZoom() >= FOCUS_ENTER_ZOOM) return
+    /* Fly to a site that actually publishes a height — nearest to where they are
+       already looking, so the jump is explicable rather than arbitrary. */
+    const c = map.getCenter()
+    const centre: [number, number] = [c.lng, c.lat]
+    let best: { p: ProjectRecord; coords: [number, number]; d: number } | null = null
+    for (const p of heightSites) {
+      const coords = projectCoords(p)
+      if (!coords) continue
+      const d = distSq(coords, centre)
+      if (!best || d < best.d) best = { p, coords, d }
+    }
+    if (!best) return
+    enterFocus(best.p.project.slug)
+    setSelected(best.p.project.slug)
   }
 
   useEffect(() => {
@@ -216,11 +258,11 @@ export default function MapPage() {
   }
 
   const startTour = () => {
-    /* No restore on exit here: the tour scripts its own state from beat one. */
+    /* No restore on exit here: the tour scripts its own state from beat one.
+       The basemap is left alone — the tour reads fine over imagery. */
     setFocus(null)
     preFocusRef.current = null
     setSelected(null)
-    setSatellite(false)
     setShowIntro(true)
   }
 
@@ -259,7 +301,7 @@ export default function MapPage() {
               <button className="focus-back" onClick={leaveFocus}>‹ All of Scotland</button>
               <div className="focus-name">
                 <strong>{focusProject.project.display_name ?? focusProject.project.canonical_name}</strong>
-                <span>close-up view — imagery, pitches &amp; 3D on</span>
+                <span>close-up view — scale &amp; height on</span>
               </div>
             </div>
           ) : (
@@ -318,21 +360,26 @@ export default function MapPage() {
           <button
             className="map-btn"
             aria-pressed={threeD}
-            onClick={() => setThreeD((v) => !v)}
-            title="Tilt the map and stand published building heights up in 3D"
+            onClick={toggle3D}
+            title={threeD
+              ? 'Return the map to flat'
+              : heightSites.length > 0
+                ? 'Tilt the map and stand published building heights up in 3D'
+                : 'No project in this selection publishes a building height'}
+            disabled={!threeD && heightSites.length === 0}
           >
             3D
           </button>
-          {(zoom >= SAT_BTN_ZOOM || satellite) && (
-            <button
-              className="map-btn"
-              aria-pressed={satellite}
-              onClick={() => setSatellite((v) => !v)}
-              title="Satellite imagery (Esri World Imagery) with terrain"
-            >
-              Sat
-            </button>
-          )}
+          <button
+            className="map-btn"
+            aria-pressed={satellite}
+            onClick={() => setSatellite((v) => !v)}
+            title={satellite
+              ? 'Switch to the plain map'
+              : 'Switch to satellite imagery (Esri World Imagery)'}
+          >
+            {satellite ? 'Map' : 'Sat'}
+          </button>
           <button
             className="map-btn tour-btn"
             onClick={startTour}
