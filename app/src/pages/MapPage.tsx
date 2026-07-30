@@ -4,6 +4,7 @@ import { developersOf, statusGroup, useDataset } from '../lib/data'
 import { lensById } from '../lib/lenses'
 import MapView from '../components/MapView'
 import ProjectSheet from '../components/ProjectSheet'
+import IntroOverlay, { introDismissed } from '../components/IntroOverlay'
 import {
   EMPTY_FILTERS, FilterChips, LensSwitcher, MapLegend, StatsStrip, type Filters,
 } from '../components/Filters'
@@ -14,6 +15,7 @@ export default function MapPage() {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
   const [selected, setSelected] = useState<string | null>(null)
   const [threeD, setThreeD] = useState(false)
+  const [showIntro, setShowIntro] = useState(() => !introDismissed())
 
   const lens = lensById(lensId)
   const all = ds.observatory.projects
@@ -74,8 +76,13 @@ export default function MapPage() {
           </button>
         </div>
         {selectedProject && (
-          <ProjectSheet p={selectedProject} onClose={() => setSelected(null)} />
+          <ProjectSheet
+            key={selectedProject.project.slug}
+            p={selectedProject}
+            onClose={() => setSelected(null)}
+          />
         )}
+        {showIntro && <IntroOverlay onDismiss={() => setShowIntro(false)} />}
       </div>
     </div>
   )

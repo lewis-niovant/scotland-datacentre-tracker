@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { DataContext, loadDataset, type Dataset, fmtDate } from './lib/data'
 import { Header, BottomNav } from './components/Nav'
@@ -11,10 +11,13 @@ function Shell({ ds }: { ds: Dataset }) {
   const location = useLocation()
   const isMap = location.pathname === '/' || location.pathname === ''
   const snapshot = ds.observatory.constants?.snapshot_date ?? ds.observatory.generated_from_snapshot
+  const mainRef = useRef<HTMLElement>(null)
+  /* The scroll container persists across routes; reset it on navigation. */
+  useEffect(() => { mainRef.current?.scrollTo(0, 0) }, [location.pathname])
   return (
     <div className="app-shell">
       <Header snapshot={snapshot} />
-      <main className={`app-main${isMap ? '' : ' scrollable'}`}>
+      <main ref={mainRef} className={`app-main${isMap ? '' : ' scrollable'}`}>
         <Routes>
           <Route path="/" element={<MapPage />} />
           <Route path="/projects" element={<ProjectsPage />} />

@@ -1,12 +1,13 @@
 import { useMemo, useState } from 'react'
+import type { ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import type { PlanningCase, ProjectRecord, QuantityClaim } from '../types'
 import {
   CAPACITY_TYPE_LABELS, ECONOMIC_CATEGORY_LABELS, MATURITY_META, TIER_LABELS,
-  fmtDate, fmtEconValue, fmtInt, fmtRangeMW, headlineEnergyGWh, headlineWaterM3,
-  useDataset,
+  fmtDate, fmtEconValue, fmtInt, fmtRangeMW, headlineCapacityMW, headlineEnergyGWh,
+  headlineWaterM3, developersOf, useDataset,
 } from '../lib/data'
-import { MaturityBadge, StatusBadge, StateChip } from '../components/Badges'
+import { MaturityBadge, StatusBadge, StateChip, VerificationBadge } from '../components/Badges'
 
 /* ---------------- helpers ---------------- */
 
@@ -53,6 +54,64 @@ function timelineOf(cases: PlanningCase[]): TimelineEntry[] {
   return entries.sort((a, b) => a.date.localeCompare(b.date))
 }
 
+/** Collapsible section — progressive disclosure for the detail-heavy parts. */
+function Section({ title, hint, defaultOpen, children }: {
+  title: string
+  hint?: string
+  defaultOpen?: boolean
+  children: ReactNode
+}) {
+  return (
+    <details className="acc" open={defaultOpen}>
+      <summary>
+        <span className="acc-title">{title}</span>
+        {hint && <span className="acc-hint">{hint}</span>}
+        <svg className="acc-chevron" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </summary>
+      <div className="acc-body">{children}</div>
+    </details>
+  )
+}
+
+/** Football-pitch comparison: a row of pitch icons, assumption disclosed. */
+function PitchIcon() {
+  return (
+    <svg className="pitch-icon" viewBox="0 0 28 18" aria-hidden="true">
+      <rect x="1" y="1" width="26" height="16" rx="2" />
+      <line x1="14" y1="1" x2="14" y2="17" />
+      <circle cx="14" cy="9" r="2.6" fill="none" />
+      <rect x="1" y="5.5" width="3.6" height="7" fill="none" />
+      <rect x="23.4" y="5.5" width="3.6" height="7" fill="none" />
+    </svg>
+  )
+}
+
+function PitchComparison({ areaM2, pitchM2 }: { areaM2: number; pitchM2: number }) {
+  const pitches = areaM2 / pitchM2
+  const rounded = pitches >= 10 ? Math.round(pitches) : Math.round(pitches * 10) / 10
+  let perIcon = 1
+  if (pitches > 200) perIcon = 25
+  else if (pitches > 80) perIcon = 10
+  else if (pitches > 30) perIcon = 5
+  const icons = Math.max(1, Math.round(pitches / perIcon))
+  return (
+    <div className="pitch-compare">
+      <div className="pitch-headline">
+        <strong>≈ {fmtInt(rounded)} football pitches</strong> of claimed site area
+      </div>
+      <div className="pitch-row" aria-hidden="true">
+        {Array.from({ length: Math.min(icons, 40) }, (_, i) => <PitchIcon key={i} />)}
+      </div>
+      <div className="pitch-note">
+        {perIcon > 1 ? `Each pitch icon ≈ ${perIcon} pitches. ` : ''}
+        Assumes a {fmtInt(pitchM2)} m² pitch; site area {fmtInt(areaM2)} m² as claimed.
+      </div>
+    </div>
+  )
+}
+
 /* ---------------- page ---------------- */
 
 export default function ProjectPage() {
@@ -87,44 +146,62 @@ export default function ProjectPage() {
   const constants = ds.observatory.constants?.comparisons
   const energy = headlineEnergyGWh(record)
   const water = headlineWaterM3(record)
+  const cap = headlineCapacityMW(record)
+  const devs = developersOf(record)
+  const area = site?.site_area_m2?.value
+  const pitchM2 = constants?.football_pitch_m2?.value
+  const houseKwh = constants?.household_annual_electricity_kwh?.value
+  const poolM3 = constants?.olympic_pool_m3?.value
 
-  const comparisons: string[] = []
-  if (constants) {
-    const pitch = constants.football_pitch_m2?.value
-    const house = constants.household_annual_electricity_kwh?.value
-    const pool = constants.olympic_pool_m3?.value
-    const area = site?.site_area_m2?.value
-    if (pitch && typeof area === 'number')
-      comparisons.push(`Claimed site area ≈ ${fmtInt(area / pitch)} football pitches (${fmtInt(area)} m² ÷ ${fmtInt(pitch)} m²).`)
-    if (house && energy != null)
-      comparisons.push(`Highest claimed annual energy (${fmtInt(energy)} GWh) ≈ the annual electricity of ${fmtInt((energy * 1e6) / house)} typical households (Ofgem ${fmtInt(house)} kWh/yr).`)
-    if (pool && water != null)
-      comparisons.push(`Claimed annual water use (${fmtInt(water)} m³) ≈ ${(water / pool).toFixed(1)} Olympic swimming pools.`)
-  }
+  const nSources = sourceIds.length
 
   return (
     <div className="page">
-      <div className="profile-head">
-        <div className="name-row">
-          <h1>{name}</h1>
+      {/* ---------- headline card: what / where / how big / status / who ---------- */}
+      <div className="profile-hero">
+        <div className="crumb">
+          <Link to="/projects">Projects</Link> <span aria-hidden="true">/</span> {project.local_authority}
         </div>
+        <h1>{name}</h1>
         {project.canonical_name !== name && <p className="muted small">{project.canonical_name}</p>}
         <div className="badge-row">
           <StatusBadge status={project.status} />
           <MaturityBadge level={project.maturity_level} />
-          {project.verification_level && <span className="badge">{project.verification_level}</span>}
+          <VerificationBadge level={project.verification_level} />
         </div>
+        <div className="hero-grid">
+          <div className="hero-stat">
+            <div className="hv">
+              {cap ? fmtRangeMW(cap.claim) : '—'}
+            </div>
+            <div className="hl">
+              capacity claim {cap && <StateChip state={cap.claim.state} />}
+            </div>
+          </div>
+          <div className="hero-stat">
+            <div className="hv">{typeof area === 'number' ? `${fmtInt(area / 10000)} ha` : '—'}</div>
+            <div className="hl">claimed site area {site?.site_area_m2 && <StateChip state={site.site_area_m2.state} />}</div>
+          </div>
+          <div className="hero-stat">
+            <div className="hv hv-sm">{project.local_authority}</div>
+            <div className="hl">local authority</div>
+          </div>
+          <div className="hero-stat">
+            <div className="hv hv-sm">{devs.length ? devs.join(', ') : 'No developer named'}</div>
+            <div className="hl">developer</div>
+          </div>
+        </div>
+        <p className="hero-summary">{project.summary}</p>
         {maturity && (
           <p className="small muted">
             <strong>{maturity.label}:</strong> {maturity.explanation}{' '}
             {project.maturity_explanation && <>Evidence for this project: {project.maturity_explanation}</>}
           </p>
         )}
-        <p>{project.summary}</p>
         {project.latest_development?.headline && (
-          <div className="card">
-            <strong className="small">Latest development · {fmtDate(project.latest_development.date)}</strong>
-            <div className="small">{project.latest_development.headline}</div>
+          <div className="latest-card">
+            <span className="latest-tag">Latest · {fmtDate(project.latest_development.date)}</span>
+            <div>{project.latest_development.headline}</div>
           </div>
         )}
         {(project.aliases?.length ?? 0) > 0 && (
@@ -134,23 +211,51 @@ export default function ProjectPage() {
         )}
       </div>
 
-      <section className="section">
-        <h2>Key figures</h2>
-        <p className="figure-note">
-          Every value is a claim with an explicit state and claimant. Nothing here is an
-          Observatory measurement.
-        </p>
+      {/* ---------- scale comparisons stay visible: the delight ---------- */}
+      {(typeof area === 'number' && pitchM2) || (energy != null && houseKwh) || (water != null && poolM3) ? (
+        <section className="section compare-section">
+          <div className="compare-head">
+            <h2>How big is that?</h2>
+            <label className="toggle-row">
+              <input
+                type="checkbox"
+                checked={showComparisons}
+                onChange={(e) => setShowComparisons(e.target.checked)}
+              />
+              Show comparisons
+            </label>
+          </div>
+          {showComparisons && (
+            <>
+              {typeof area === 'number' && pitchM2 && <PitchComparison areaM2={area} pitchM2={pitchM2} />}
+              <div className="compare-cards">
+                {energy != null && houseKwh && (
+                  <div className="compare-card">
+                    <div className="cv">{fmtInt((energy * 1e6) / houseKwh)}</div>
+                    <div className="cl">typical households’ annual electricity ≈ the highest claimed annual energy ({fmtInt(energy)} GWh, Ofgem {fmtInt(houseKwh)} kWh/household)</div>
+                  </div>
+                )}
+                {water != null && poolM3 && (
+                  <div className="compare-card">
+                    <div className="cv">{(water / poolM3).toFixed(1)}</div>
+                    <div className="cl">Olympic swimming pools ≈ claimed annual water use ({fmtInt(water)} m³)</div>
+                  </div>
+                )}
+              </div>
+              <p className="figure-note">Approximate, assumption-disclosed comparisons of claimed figures — details in About.</p>
+            </>
+          )}
+        </section>
+      ) : null}
+
+      {/* ---------- expandable detail ---------- */}
+      <Section title="Key figures" hint="every value is a claim, with its state and claimant" defaultOpen>
         <div className="table-scroll">
           <table className="data-table">
             <thead>
               <tr><th>Figure</th><th>Value</th><th>State</th><th>Claimant</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Local authority</td>
-                <td className="num">{project.local_authority}</td>
-                <td /><td />
-              </tr>
               <QuantityRow label="Site area" q={site?.site_area_m2} unitLabel="m²" />
               <QuantityRow label="Gross floor area" q={site?.gross_floor_area_m2} unitLabel="m²" />
               <QuantityRow label="Max building height" q={site?.max_building_height_m} unitLabel="m" />
@@ -175,11 +280,10 @@ export default function ProjectPage() {
             </tbody>
           </table>
         </div>
-      </section>
+      </Section>
 
       {(record.capacity_claims?.length ?? 0) > 0 && (
-        <section className="section">
-          <h2>Capacity claims — all of them, side by side</h2>
+        <Section title="Capacity claims" hint={`${record.capacity_claims!.length} figures, side by side`}>
           <p className="figure-note">
             Conflicting figures are preserved deliberately; the “preferred” row is an editorial
             interpretation with its rationale, never an average.
@@ -194,7 +298,7 @@ export default function ProjectPage() {
                   <tr key={i}>
                     <td>
                       {CAPACITY_TYPE_LABELS[c.capacity_type] ?? c.capacity_type}
-                      {c.preferred && <div className="small" style={{ color: 'var(--accent-deep)', fontWeight: 600 }}>preferred</div>}
+                      {c.preferred && <div className="small preferred-flag">preferred</div>}
                     </td>
                     <td className="num">{fmtRangeMW(c)}</td>
                     <td><StateChip state={c.state} /></td>
@@ -209,12 +313,14 @@ export default function ProjectPage() {
               </tbody>
             </table>
           </div>
-        </section>
+        </Section>
       )}
 
       {(timeline.length > 0 || (record.planning_cases?.length ?? 0) > 0) && (
-        <section className="section">
-          <h2>Planning</h2>
+        <Section
+          title="Planning"
+          hint={`${record.planning_cases?.length ?? 0} case${(record.planning_cases?.length ?? 0) === 1 ? '' : 's'}${timeline.length ? ` · ${timeline.length} events` : ''}`}
+        >
           {record.planning_cases?.map((c, i) => (
             <div className="card" key={i}>
               <strong>{c.reference ?? 'No application yet'}</strong>{' '}
@@ -246,12 +352,11 @@ export default function ProjectPage() {
               ))}
             </ol>
           )}
-        </section>
+        </Section>
       )}
 
       {(record.economic_claims?.length ?? 0) > 0 && (
-        <section className="section">
-          <h2>Economic claims</h2>
+        <Section title="Economic claims" hint={`${record.economic_claims!.length} claims — money and jobs`}>
           <div className="table-scroll">
             <table className="data-table">
               <thead>
@@ -272,12 +377,11 @@ export default function ProjectPage() {
               </tbody>
             </table>
           </div>
-        </section>
+        </Section>
       )}
 
       {(record.organisations?.length ?? 0) > 0 && (
-        <section className="section">
-          <h2>Organisations</h2>
+        <Section title="Who is behind it" hint={`${record.organisations!.length} organisations`}>
           <ul className="plain">
             {record.organisations!.map((o, i) => (
               <li key={i}>
@@ -290,16 +394,15 @@ export default function ProjectPage() {
               </li>
             ))}
           </ul>
-        </section>
+        </Section>
       )}
 
       {community && (
-        <section className="section">
-          <h2>Community</h2>
+        <Section title="Community" hint="concerns raised and benefits claimed">
           {community.summary && <p className="small">{community.summary}</p>}
           {(community.principal_concerns?.length ?? 0) > 0 && (
             <>
-              <h3 className="small" style={{ textTransform: 'uppercase', letterSpacing: '0.04em', color: 'var(--ink-3)' }}>Principal concerns</h3>
+              <h3 className="sub-label">Principal concerns</h3>
               <ul className="plain">
                 {community.principal_concerns!.map((c, i) => (
                   <li key={i}>
@@ -313,7 +416,7 @@ export default function ProjectPage() {
           )}
           {(community.claimed_local_benefits?.length ?? 0) > 0 && (
             <>
-              <h3 className="small" style={{ textTransform: 'uppercase', letterSpacing: '0.04em', color: 'var(--ink-3)' }}>Claimed local benefits</h3>
+              <h3 className="sub-label">Claimed local benefits</h3>
               <ul className="plain">
                 {community.claimed_local_benefits!.map((b, i) => (
                   <li key={i}>
@@ -327,41 +430,19 @@ export default function ProjectPage() {
               </ul>
             </>
           )}
-        </section>
-      )}
-
-      {comparisons.length > 0 && (
-        <section className="section">
-          <h2>Scale comparisons</h2>
-          <label className="toggle-row">
-            <input
-              type="checkbox"
-              checked={showComparisons}
-              onChange={(e) => setShowComparisons(e.target.checked)}
-            />
-            Show approximate comparisons (assumptions disclosed in About)
-          </label>
-          {showComparisons && (
-            <ul className="plain">
-              {comparisons.map((c, i) => <li key={i}>≈ {c}</li>)}
-            </ul>
-          )}
-        </section>
+        </Section>
       )}
 
       {(project.unknowns?.length ?? 0) > 0 && (
-        <section className="section">
-          <h2>What we don’t know</h2>
-          <p className="figure-note">Documented gaps — never guessed at.</p>
+        <Section title="What we don’t know" hint="documented gaps — never guessed at">
           <ul className="plain">
             {project.unknowns!.map((u, i) => <li key={i}>{u}</li>)}
           </ul>
-        </section>
+        </Section>
       )}
 
-      {sourceIds.length > 0 && (
-        <section className="section">
-          <h2>Sources ({sourceIds.length})</h2>
+      {nSources > 0 && (
+        <Section title="Sources" hint={`${nSources} cited`}>
           {sourceIds.map((id) => {
             const s = ds.observatory.sources?.[id]
             if (!s) return <div className="src-item" key={id}><span className="m">{id} (not in ledger)</span></div>
@@ -379,7 +460,7 @@ export default function ProjectPage() {
               </div>
             )
           })}
-        </section>
+        </Section>
       )}
 
       <p style={{ marginTop: 28 }}>

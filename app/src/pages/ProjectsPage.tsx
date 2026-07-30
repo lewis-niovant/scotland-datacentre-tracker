@@ -2,9 +2,9 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   developersOf, fmtRangeMW, headlineCapacityMW, maturityNumber, statusGroup,
-  STATUS_GROUPS, useDataset,
+  STATUS_GROUPS, STATUS_GROUP_META, useDataset,
 } from '../lib/data'
-import { MaturityBadge, StatusBadge, StateChip } from '../components/Badges'
+import { StatusBadge, StateChip, VerificationBadge } from '../components/Badges'
 
 type SortKey = 'capacity' | 'status' | 'authority' | 'name'
 
@@ -55,12 +55,20 @@ export default function ProjectsPage() {
       {projects.map((p) => {
         const cap = headlineCapacityMW(p)
         const devs = developersOf(p)
+        const gMeta = STATUS_GROUP_META[statusGroup(p.project.status)]
         return (
-          <Link key={p.project.slug} to={`/project/${p.project.slug}`} className="card project-card">
-            <h3>{p.project.display_name ?? p.project.canonical_name}</h3>
+          <Link
+            key={p.project.slug}
+            to={`/project/${p.project.slug}`}
+            className="card project-card"
+            style={{ ['--status-color' as string]: `light-dark(${gMeta.color}, ${gMeta.colorDark})` }}
+          >
+            <div className="pc-top">
+              <h3>{p.project.display_name ?? p.project.canonical_name}</h3>
+              <VerificationBadge level={p.project.verification_level} />
+            </div>
             <div className="badge-row">
               <StatusBadge status={p.project.status} />
-              <MaturityBadge level={p.project.maturity_level} />
             </div>
             <div className="figs">
               <div className="f">

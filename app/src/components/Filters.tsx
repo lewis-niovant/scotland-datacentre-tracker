@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import type { StatusGroup } from '../types'
 import { STATUS_GROUPS, STATUS_GROUP_META } from '../lib/data'
 import type { LensDef, StatTileDef } from '../lib/lenses'
@@ -94,24 +95,57 @@ export function StatsStrip({ tiles }: { tiles: StatTileDef[] }) {
   )
 }
 
+const SEQ_LEGEND = ['#86b6ef', '#5598e7', '#2a78d6', '#1c5cab', '#0d366b']
+
 export function MapLegend({ lens }: { lens: LensDef }) {
+  /* Collapsed by default on small screens so the map stays clear. */
+  const [open, setOpen] = useState<boolean>(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(min-width: 800px)').matches : true,
+  )
   return (
-    <div className="map-legend">
-      <div style={{ fontWeight: 600, marginBottom: 2 }}>{lens.legend}</div>
-      {lens.id === 'overview' || lens.id === 'planning' ? (
-        STATUS_GROUPS.map((g) => {
-          const meta = STATUS_GROUP_META[g]
-          return (
-            <div className="row" key={g}>
-              <span className="dot" style={{ background: `light-dark(${meta.color}, ${meta.colorDark})` }} />
-              {meta.label}
-            </div>
-          )
-        })
-      ) : (
-        <div className="row">
-          <span className="dot" style={{ background: '#898781' }} />
-          grey = no figure located
+    <div className={`map-legend${open ? ' open' : ''}`}>
+      <button
+        className="legend-toggle"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+      >
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <circle cx="4.2" cy="4.5" r="2" fill="currentColor" opacity="0.85" />
+          <circle cx="4.2" cy="11.5" r="2" fill="currentColor" opacity="0.45" />
+          <path d="M8.5 4.5h4.5M8.5 11.5h4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        </svg>
+        Legend
+        <span className="caret" aria-hidden="true">{open ? '▾' : '▴'}</span>
+      </button>
+      {open && (
+        <div className="legend-body">
+          <div className="legend-title">{lens.legend}</div>
+          {lens.id === 'overview' || lens.id === 'planning' ? (
+            STATUS_GROUPS.map((g) => {
+              const meta = STATUS_GROUP_META[g]
+              return (
+                <div className="row" key={g}>
+                  <span className="dot" style={{ background: `light-dark(${meta.color}, ${meta.colorDark})` }} />
+                  {meta.label}
+                </div>
+              )
+            })
+          ) : (
+            <>
+              <div className="legend-ramp" aria-hidden="true">
+                {SEQ_LEGEND.map((c) => <span key={c} style={{ background: c }} />)}
+              </div>
+              <div className="row small-note">low → high (marker size too)</div>
+              <div className="row">
+                <span className="dot" style={{ background: '#898781' }} />
+                no figure located
+              </div>
+            </>
+          )}
+          <div className="row cluster-note">
+            <span className="cluster-dot">7</span>
+            grouped sites — tap to zoom
+          </div>
         </div>
       )}
     </div>
