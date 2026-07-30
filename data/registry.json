@@ -1,40 +1,325 @@
 {
   "description": "Provisional project registry (research step 1). Drives Phase 2 deep research. Each entry becomes a canonical project folder in data/projects/ once researched. Triage verified 2026-07-30.",
   "candidates": [
-    { "slug": "cato-auchtertool", "name": "Cato (Auchtertool / Camilla Farm)", "local_authority": "Fife", "developer": "ILI Group / Cato Data Centre Ltd", "capacity_claim": "600 MW, £5bn", "stage": "pending (PPP 26/01243/PPP validated May 2026)", "triage": "verified", "notes": "Flagship 'Stoic'; SPICe: 280,000 m2 buildings, 35 m height, 400->4,000 GWh/yr" },
-    { "slug": "ravenscraig", "name": "Ravenscraig campus", "local_authority": "North Lanarkshire", "developer": "Apatura + Ravenscraig Ltd", "capacity_claim": "550 MW, £3.9bn", "stage": "pre_application (PAN)", "triage": "verified" },
-    { "slug": "drumshangie", "name": "Drumshangie", "local_authority": "North Lanarkshire", "developer": "Apatura", "capacity_claim": "500 MW", "stage": "pre_application (24/01025/PAN)", "triage": "verified" },
-    { "slug": "newhouse-aurelius", "name": "Newhouse (Aurelius)", "local_authority": "North Lanarkshire", "developer": "ILI Group", "capacity_claim": "400 MW", "stage": "pre_application", "triage": "verified" },
-    { "slug": "datavita-dv4", "name": "DataVita DV4 (Chapelhall)", "local_authority": "North Lanarkshire", "developer": "HFD / DataVita", "capacity_claim": "part of ~500 MW AIGZ", "stage": "screening (EIA not required)", "triage": "verified" },
-    { "slug": "datavita-dv6", "name": "DataVita DV6", "local_authority": "North Lanarkshire", "developer": "HFD / DataVita", "capacity_claim": "part of ~500 MW AIGZ", "stage": "pending", "triage": "verified" },
-    { "slug": "datavita-dv1", "name": "DataVita DV1 (Fortis)", "local_authority": "North Lanarkshire", "developer": "DataVita", "capacity_claim": "24 MW (→40 MW); DV3 extension consented Jan 2026", "stage": "operating", "triage": "verified" },
-    { "slug": "haspielaw", "name": "Haspielaw (near Hamilton)", "local_authority": "South Lanarkshire", "developer": "Apatura", "capacity_claim": "unknown", "stage": "pre_application (EIA required)", "triage": "verified" },
-    { "slug": "south-gyle", "name": "South Gyle (former RBS HQ)", "local_authority": "City of Edinburgh", "developer": "Shelborn Asset Management", "capacity_claim": "212.4 MW", "stage": "refused Feb 2026; appeal lodged", "triage": "verified" },
-    { "slug": "wester-hermiston", "name": "Wester Hermiston", "local_authority": "City of Edinburgh", "developer": "Apatura", "capacity_claim": "200 MW", "stage": "pending (validated Dec 2025)", "triage": "verified" },
-    { "slug": "west-calder", "name": "West Calder", "local_authority": "West Lothian", "developer": "Apatura", "capacity_claim": "250 MW", "stage": "reported in planning", "triage": "reported" },
-    { "slug": "gogar", "name": "Gogar", "local_authority": "City of Edinburgh", "developer": "unknown", "capacity_claim": "200 MW (SPICe)", "stage": "screening (EIA screened out)", "triage": "reported" },
-    { "slug": "larbert-glenbervie", "name": "Larbert / Glenbervie", "local_authority": "Falkirk", "developer": "Apatura", "capacity_claim": "300 MW, ~£1bn", "stage": "pending (submitted 2026)", "triage": "verified", "notes": "SPICe: 128,863 m2 over two buildings, 25 m" },
-    { "slug": "jawcraig", "name": "Jawcraig", "local_authority": "Falkirk", "developer": "unknown", "capacity_claim": "180 MW grid connection", "stage": "grid_record_only", "triage": "unverifiable" },
-    { "slug": "westerhill", "name": "Westerhill (Bishopbriggs)", "local_authority": "East Dunbartonshire", "developer": "Apatura", "capacity_claim": "300 MW DC + 500 MW BESS", "stage": "pre_application (EIA required)", "triage": "verified" },
-    { "slug": "clydebridge", "name": "Clydebridge", "local_authority": "South Lanarkshire", "developer": "Apatura (presumed)", "capacity_claim": "360 MW grid connection", "stage": "grid_record_only", "triage": "unverifiable" },
-    { "slug": "easterhouse", "name": "Easterhouse", "local_authority": "Glasgow City", "developer": "Apatura (presumed)", "capacity_claim": "500 MW grid connection", "stage": "grid_record_only", "triage": "unverifiable" },
-    { "slug": "inchinnan", "name": "Inchinnan", "local_authority": "Renfrewshire", "developer": "unknown", "capacity_claim": "180 MW grid connection", "stage": "grid_record_only", "triage": "unverifiable" },
-    { "slug": "hurlford-rufus", "name": "Hurlford (Rufus)", "local_authority": "East Ayrshire", "developer": "ILI Group", "capacity_claim": "540 MW", "stage": "pending (application lodged)", "triage": "verified" },
-    { "slug": "ochiltree", "name": "Ochiltree / Cumnock", "local_authority": "East Ayrshire", "developer": "Apatura", "capacity_claim": "200 MW + BESS", "stage": "pre_application (EIA required)", "triage": "verified" },
-    { "slug": "hunterston", "name": "Hunterston", "local_authority": "North Ayrshire", "developer": "Eneus Energy", "capacity_claim": "unstated (~30 ha DC; 450 MW BESS)", "stage": "scoping (Feb 2026)", "triage": "verified" },
-    { "slug": "ai-pathfinder-irvine", "name": "AI Pathfinder Irvine (i3)", "local_authority": "North Ayrshire", "developer": "AI Pathfinder", "capacity_claim": "1–1.5 GW, £15bn claim", "stage": "announced", "triage": "reported", "notes": "Largest claims-vs-evidence gap; no planning trail" },
-    { "slug": "duns-southside", "name": "Duns / Longformacus (Southside)", "local_authority": "Scottish Borders", "developer": "Sunlaws Development Co (Roxburghe Estates)", "capacity_claim": "225 MW, 151 ha, £2bn", "stage": "pre_application (PAN + EIA request)", "triage": "verified" },
-    { "slug": "coldstream", "name": "Coldstream", "local_authority": "Scottish Borders", "developer": "Apatura", "capacity_claim": "300 MW", "stage": "pending (EIA screened out)", "triage": "verified" },
-    { "slug": "dunbar", "name": "Dunbar (West Barns Mains)", "local_authority": "East Lothian", "developer": "Thistle Sands Data Ltd", "capacity_claim": "unstated; 60–62.5 ha", "stage": "pre_application (EIA required)", "triage": "verified" },
-    { "slug": "cockenzie", "name": "Cockenzie", "local_authority": "East Lothian", "developer": "East Lothian Council + SDCL (JV negotiation)", "capacity_claim": "unstated", "stage": "strategic_opportunity", "triage": "reported" },
-    { "slug": "killean", "name": "Killean / Killellan (Cowal)", "local_authority": "Argyll and Bute", "developer": "Argyll Data Development + SambaNova partnership", "capacity_claim": "claims 100–600 MW → 2 GW+, £15bn", "stage": "announced (only a small 2020 consent exists)", "triage": "reported", "notes": "Treat capacity claims sceptically" },
-    { "slug": "blackdog", "name": "Blackdog", "local_authority": "Aberdeenshire", "developer": "Ashfield Land / TechRE", "capacity_claim": "600 MW initial, multi-GW ambition", "stage": "consented (initial phase)", "triage": "verified" },
-    { "slug": "edzell", "name": "Edzell", "local_authority": "Angus", "developer": "unknown", "capacity_claim": "800 MW gate-2 grid connection", "stage": "grid_record_only", "triage": "unverifiable" },
-    { "slug": "chapelcross", "name": "Chapelcross (CX Technology Campus)", "local_authority": "Dumfries and Galloway", "developer": "NDA + CX Power", "capacity_claim": "up to 1 GW", "stage": "pre_application (env studies)", "triage": "verified" },
-    { "slug": "greenock-spango", "name": "Former IBM Greenock (Spango Valley)", "local_authority": "Inverclyde", "developer": "Slate Island Developments", "capacity_claim": "two buildings ~74,500 m2 + 99 MW BESS", "stage": "pre_application (PAN Feb 2026)", "triage": "verified" },
-    { "slug": "dounreay", "name": "Dounreay", "local_authority": "Highland", "developer": "none (Invest Highland prospect)", "capacity_claim": "n/a", "stage": "strategic_opportunity", "triage": "unverifiable" },
-    { "slug": "fearn-airfield", "name": "Fearn Airfield", "local_authority": "Highland", "developer": "none (Invest Highland prospect)", "capacity_claim": "n/a", "stage": "strategic_opportunity", "triage": "unverifiable" },
-    { "slug": "meygen-caithness", "name": "MeyGen (Caithness)", "local_authority": "Highland", "developer": "none (prospect)", "capacity_claim": "n/a", "stage": "strategic_opportunity", "triage": "unverifiable" },
-    { "slug": "operating-estate", "name": "Operating estate (Pulsant, iomart, DataVita DV2, others)", "local_authority": "various", "developer": "various", "capacity_claim": "~39 facilities, mostly <10 MW", "stage": "operating", "triage": "verified", "notes": "Handled as multiple sensitive-flagged records with coarse locations" }
+    {
+      "slug": "cato-auchtertool",
+      "name": "Cato (Auchtertool / Camilla Farm)",
+      "local_authority": "Fife",
+      "developer": "ILI Group / Cato Data Centre Ltd",
+      "capacity_claim": "600 MW, £5bn",
+      "stage": "pending (PPP 26/01243/PPP validated May 2026)",
+      "triage": "verified",
+      "notes": "Flagship 'Stoic'; SPICe: 280,000 m2 buildings, 35 m height, 400->4,000 GWh/yr"
+    },
+    {
+      "slug": "ravenscraig",
+      "name": "Ravenscraig campus",
+      "local_authority": "North Lanarkshire",
+      "developer": "Apatura + Ravenscraig Ltd",
+      "capacity_claim": "550 MW, £3.9bn",
+      "stage": "pre_application (PAN)",
+      "triage": "verified"
+    },
+    {
+      "slug": "drumshangie",
+      "name": "Drumshangie",
+      "local_authority": "North Lanarkshire",
+      "developer": "Apatura",
+      "capacity_claim": "500 MW",
+      "stage": "pre_application (24/01025/PAN)",
+      "triage": "verified"
+    },
+    {
+      "slug": "newhouse-aurelius",
+      "name": "Newhouse (Aurelius)",
+      "local_authority": "North Lanarkshire",
+      "developer": "ILI Group",
+      "capacity_claim": "400 MW",
+      "stage": "pre_application",
+      "triage": "verified"
+    },
+    {
+      "slug": "datavita-dv4",
+      "name": "DataVita DV4 (Chapelhall)",
+      "local_authority": "North Lanarkshire",
+      "developer": "HFD / DataVita",
+      "capacity_claim": "part of ~500 MW AIGZ",
+      "stage": "screening (EIA not required)",
+      "triage": "verified"
+    },
+    {
+      "slug": "datavita-dv6",
+      "name": "DataVita DV6",
+      "local_authority": "North Lanarkshire",
+      "developer": "HFD / DataVita",
+      "capacity_claim": "part of ~500 MW AIGZ",
+      "stage": "pending",
+      "triage": "verified"
+    },
+    {
+      "slug": "datavita-dv1",
+      "name": "DataVita DV1 (Fortis)",
+      "local_authority": "North Lanarkshire",
+      "developer": "DataVita",
+      "capacity_claim": "24 MW (→40 MW); DV3 extension consented Jan 2026",
+      "stage": "operating",
+      "triage": "verified"
+    },
+    {
+      "slug": "haspielaw",
+      "name": "Haspielaw (near Hamilton)",
+      "local_authority": "South Lanarkshire",
+      "developer": "Apatura",
+      "capacity_claim": "unknown",
+      "stage": "pre_application (EIA required)",
+      "triage": "verified"
+    },
+    {
+      "slug": "south-gyle",
+      "name": "South Gyle (former RBS HQ)",
+      "local_authority": "City of Edinburgh",
+      "developer": "Shelborn Asset Management",
+      "capacity_claim": "212.4 MW",
+      "stage": "refused Feb 2026; appeal lodged",
+      "triage": "verified"
+    },
+    {
+      "slug": "wester-hermiston",
+      "name": "Wester Hermiston",
+      "local_authority": "City of Edinburgh",
+      "developer": "Apatura",
+      "capacity_claim": "200 MW",
+      "stage": "pending (validated Dec 2025)",
+      "triage": "verified"
+    },
+    {
+      "slug": "west-calder",
+      "name": "West Calder",
+      "local_authority": "West Lothian",
+      "developer": "Apatura",
+      "capacity_claim": "250 MW",
+      "stage": "reported in planning",
+      "triage": "reported"
+    },
+    {
+      "slug": "gogar",
+      "name": "Gogar",
+      "local_authority": "City of Edinburgh",
+      "developer": "unknown",
+      "capacity_claim": "200 MW (SPICe)",
+      "stage": "screening (EIA screened out)",
+      "triage": "reported"
+    },
+    {
+      "slug": "larbert-glenbervie",
+      "name": "Larbert / Glenbervie",
+      "local_authority": "Falkirk",
+      "developer": "Apatura",
+      "capacity_claim": "300 MW, ~£1bn",
+      "stage": "pending (submitted 2026)",
+      "triage": "verified",
+      "notes": "SPICe: 128,863 m2 over two buildings, 25 m"
+    },
+    {
+      "slug": "jawcraig",
+      "name": "Jawcraig",
+      "local_authority": "Falkirk",
+      "developer": "unknown",
+      "capacity_claim": "180 MW grid connection",
+      "stage": "grid_record_only",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "westerhill",
+      "name": "Westerhill (Bishopbriggs)",
+      "local_authority": "East Dunbartonshire",
+      "developer": "Apatura",
+      "capacity_claim": "300 MW DC + 500 MW BESS",
+      "stage": "pre_application (EIA required)",
+      "triage": "verified"
+    },
+    {
+      "slug": "clydebridge",
+      "name": "Clydebridge",
+      "local_authority": "South Lanarkshire",
+      "developer": "Apatura (presumed)",
+      "capacity_claim": "360 MW grid connection",
+      "stage": "grid_record_only",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "easterhouse",
+      "name": "Easterhouse",
+      "local_authority": "Glasgow City",
+      "developer": "Apatura (presumed)",
+      "capacity_claim": "500 MW grid connection",
+      "stage": "grid_record_only",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "inchinnan",
+      "name": "Inchinnan",
+      "local_authority": "Renfrewshire",
+      "developer": "unknown",
+      "capacity_claim": "180 MW grid connection",
+      "stage": "grid_record_only",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "hurlford-rufus",
+      "name": "Hurlford (Rufus)",
+      "local_authority": "East Ayrshire",
+      "developer": "ILI Group",
+      "capacity_claim": "540 MW",
+      "stage": "pending (application lodged)",
+      "triage": "verified"
+    },
+    {
+      "slug": "ochiltree",
+      "name": "Ochiltree / Cumnock",
+      "local_authority": "East Ayrshire",
+      "developer": "Apatura",
+      "capacity_claim": "200 MW + BESS",
+      "stage": "pre_application (EIA required)",
+      "triage": "verified"
+    },
+    {
+      "slug": "hunterston",
+      "name": "Hunterston",
+      "local_authority": "North Ayrshire",
+      "developer": "Eneus Energy",
+      "capacity_claim": "unstated (~30 ha DC; 450 MW BESS)",
+      "stage": "scoping (Feb 2026)",
+      "triage": "verified"
+    },
+    {
+      "slug": "ai-pathfinder-irvine",
+      "name": "AI Pathfinder Irvine (i3)",
+      "local_authority": "North Ayrshire",
+      "developer": "AI Pathfinder",
+      "capacity_claim": "1–1.5 GW, £15bn claim",
+      "stage": "announced",
+      "triage": "reported",
+      "notes": "Largest claims-vs-evidence gap; no planning trail"
+    },
+    {
+      "slug": "duns-southside",
+      "name": "Duns / Longformacus (Southside)",
+      "local_authority": "Scottish Borders",
+      "developer": "Sunlaws Development Co (Roxburghe Estates)",
+      "capacity_claim": "225 MW, 151 ha, £2bn",
+      "stage": "pre_application (PAN + EIA request)",
+      "triage": "verified"
+    },
+    {
+      "slug": "coldstream",
+      "name": "Coldstream",
+      "local_authority": "Scottish Borders",
+      "developer": "Apatura",
+      "capacity_claim": "300 MW",
+      "stage": "pending (EIA screened out)",
+      "triage": "verified"
+    },
+    {
+      "slug": "dunbar",
+      "name": "Dunbar (West Barns Mains)",
+      "local_authority": "East Lothian",
+      "developer": "Thistle Sands Data Ltd",
+      "capacity_claim": "unstated; 60–62.5 ha",
+      "stage": "pre_application (EIA required)",
+      "triage": "verified"
+    },
+    {
+      "slug": "cockenzie",
+      "name": "Cockenzie",
+      "local_authority": "East Lothian",
+      "developer": "East Lothian Council + SDCL (JV negotiation)",
+      "capacity_claim": "unstated",
+      "stage": "strategic_opportunity",
+      "triage": "reported"
+    },
+    {
+      "slug": "killean",
+      "name": "Killean / Killellan (Cowal)",
+      "local_authority": "Argyll and Bute",
+      "developer": "Argyll Data Development + SambaNova partnership",
+      "capacity_claim": "claims 100–600 MW → 2 GW+, £15bn",
+      "stage": "announced (only a small 2020 consent exists)",
+      "triage": "reported",
+      "notes": "Treat capacity claims sceptically"
+    },
+    {
+      "slug": "blackdog",
+      "name": "Blackdog",
+      "local_authority": "Aberdeenshire",
+      "developer": "Ashfield Land / TechRE",
+      "capacity_claim": "600 MW initial, multi-GW ambition",
+      "stage": "announced (rests on 2016 mixed-use PPiP APP/2016/0766; no DC application)",
+      "triage": "reported"
+    },
+    {
+      "slug": "edzell",
+      "name": "Edzell",
+      "local_authority": "Angus",
+      "developer": "unknown",
+      "capacity_claim": "800 MW gate-2 grid connection",
+      "stage": "grid_record_only",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "chapelcross",
+      "name": "Chapelcross (CX Technology Campus)",
+      "local_authority": "Dumfries and Galloway",
+      "developer": "NDA + CX Power",
+      "capacity_claim": "up to 1 GW",
+      "stage": "pre_application (env studies)",
+      "triage": "verified"
+    },
+    {
+      "slug": "greenock-spango",
+      "name": "Former IBM Greenock (Spango Valley)",
+      "local_authority": "Inverclyde",
+      "developer": "Slate Island Developments",
+      "capacity_claim": "two buildings ~74,500 m2 + 99 MW BESS",
+      "stage": "pre_application (PAN Feb 2026)",
+      "triage": "verified"
+    },
+    {
+      "slug": "dounreay",
+      "name": "Dounreay",
+      "local_authority": "Highland",
+      "developer": "none (Invest Highland prospect)",
+      "capacity_claim": "n/a",
+      "stage": "strategic_opportunity",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "fearn-airfield",
+      "name": "Fearn Airfield",
+      "local_authority": "Highland",
+      "developer": "none (Invest Highland prospect)",
+      "capacity_claim": "n/a",
+      "stage": "strategic_opportunity",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "meygen-caithness",
+      "name": "MeyGen (Caithness)",
+      "local_authority": "Highland",
+      "developer": "none (prospect)",
+      "capacity_claim": "n/a",
+      "stage": "strategic_opportunity",
+      "triage": "unverifiable"
+    },
+    {
+      "slug": "operating-estate",
+      "name": "Operating estate (Pulsant, iomart, DataVita DV2, others)",
+      "local_authority": "various",
+      "developer": "various",
+      "capacity_claim": "~39 facilities, mostly <10 MW",
+      "stage": "operating",
+      "triage": "verified",
+      "notes": "Handled as multiple sensitive-flagged records with coarse locations"
+    }
   ]
 }
