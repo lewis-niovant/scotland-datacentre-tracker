@@ -1,0 +1,40 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 212.42,
+    "state": "developer_stated",
+    "claimant": "Shelborn Drummond Ltd (application documents, as recorded by APRS)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Most precise figure, attributed to the application documents; the rounded 210 MW and 213 MW figures in campaign material and press appear to derive from it. Whether it denotes IT load or grid import is not stated.",
+    "notes": "APRS case page records the size as 212.42 MW.",
+    "source_ids": ["src-aprs-south-gyle"]
+  },
+  {
+    "capacity_type": "it_load",
+    "value_mw": 213,
+    "state": "reported",
+    "claimant": "Press reports (Scottish Construction Now, The Register, DCD)",
+    "confidence": "medium",
+    "notes": "Reported as 'an IT load of up to 213MW' for the two-building campus.",
+    "source_ids": ["src-scn-refusal", "src-register-refusal"]
+  },
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 210,
+    "state": "reported",
+    "claimant": "APRS (Dr Kat Jones): 'the data centre will draw 210MW from the grid'",
+    "confidence": "low",
+    "notes": "Campaign characterisation ahead of the committee hearing; APRS equated this to powering a quarter of a million homes. Cockburn Association similarly cited peak electricity demand of 210-213 MW.",
+    "source_ids": ["src-dcr-campaigners", "src-cockburn-lessons"]
+  },
+  {
+    "capacity_type": "backup_generation",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "Shelborn Drummond Ltd",
+    "confidence": "low",
+    "notes": "Diesel standby generators in enclosed compounds (with flues/'chimneys') were proposed; consultation material promised 'low carbon back-up generation' but no capacity, generator count or fuel figures were located. APRS claimed running the generators at scale would equate to '100,000 idling cars-worth of diesel'; generator noise and emissions impacts on nearby planned housing were raised at committee.",
+    "source_ids": ["src-shp-consultation-board", "src-dcr-campaigners", "src-aprs-refusal-pr", "src-register-refusal"]
+  }
+]

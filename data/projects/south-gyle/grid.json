@@ -1,0 +1,16 @@
+{
+  "connection_status": "unknown",
+  "requested_import_capacity_mw": {
+    "value": 212.42,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Shelborn Drummond Ltd (application figure as recorded by APRS); APRS/press round to 210-213 MW",
+    "confidence": "medium",
+    "notes": "It is not confirmed whether 212.42 MW is grid import or IT load. No public evidence of a connection application, offer or contracted position was located.",
+    "source_ids": ["src-aprs-south-gyle", "src-dcr-campaigners", "src-scn-refusal"]
+  },
+  "reinforcement_required": null,
+  "evidence_basis": "Planning application material only (via APRS and press). The consultation boards show a dedicated on-site electrical substation for the data centre. At committee, councillors said they had been told power arrangements were 'in place' but were 'not given the figures' and could not hear from the power providers, so the developer's grid position is unverified. No NESO/Ofgem or DNO record located.",
+  "notes": "The local distribution network operator for Edinburgh is SP Energy Networks (SP Distribution) - stated here as general context, not from a project-specific source. Committee members raised concerns about the impact of the demand on the grid and on existing and planned homes and businesses. Data Centre Review commentary noted Scottish grid reinforcement (SSE/National Grid) as a general dependency for large data centre loads.",
+  "source_ids": ["src-aprs-south-gyle", "src-dcr-refusal", "src-aprs-refusal-pr", "src-shp-consultation-board", "src-dcr-campaigners"]
+}

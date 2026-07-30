@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Shelborn Drummond Ltd",
+    "role": "applicant",
+    "company_number": "14136984",
+    "jurisdiction": "England and Wales (UK)",
+    "ownership_summary": "SPV incorporated 27 May 2022 (SIC 68209, letting/operating of own or leased real estate), registered at Sutherland House, 70-78 West Hendon Broadway, London NW9 7BT. Directors: Brian Rabinowitz, Mark Charles Rabinowitz, Martin Stimler. Person with significant control: Shelborn Edinburgh Ltd (13368052) - 75%+ of shares and voting rights and right to appoint/remove directors.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "notes": "Named applicant/appellant for 25/04239/PPP and PPA-230-2794 and site owner vehicle for 1 Redheughs Avenue.",
+    "source_ids": ["src-ch-shelborn-drummond", "src-dpea-ppa-230-2794", "src-aprs-south-gyle"]
+  },
+  {
+    "name": "Shelborn Edinburgh Ltd",
+    "role": "parent_company",
+    "company_number": "13368052",
+    "jurisdiction": "England and Wales (UK)",
+    "ownership_summary": "Incorporated 30 April 2021; immediate parent/PSC of Shelborn Drummond Ltd (75%+ ownership and control). Same registered office as the wider Shelborn group.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "source_ids": ["src-ch-shelborn-drummond", "src-ch-shelborn-search"]
+  },
+  {
+    "name": "Shelborn Asset Management Ltd",
+    "role": "developer",
+    "company_number": "08439076",
+    "jurisdiction": "England and Wales (UK)",
+    "ownership_summary": "Group asset-management company incorporated 11 March 2013, registered at 70-78 West Hendon Broadway, London NW9 7BT; publicly presented as the developer/site owner in press coverage of the scheme.",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "Press names 'Shelborn Asset Management' as the developer; the formal applicant is the SPV Shelborn Drummond Ltd. The precise contractual relationship between the two is not public.",
+    "source_ids": ["src-ch-shelborn-search", "src-dcr-refusal", "src-scn-refusal"]
+  },
+  {
+    "name": "Scott Hobbs Planning",
+    "role": "consultant",
+    "jurisdiction": "Scotland (UK)",
+    "website": "https://www.scotthobbsplanning.com",
+    "confidence": "high",
+    "notes": "Planning agent: prepared the PAN, pre-application consultation, Planning Statement and PAC Report, and acts as agent in the appeal (agent contact Mr Paul Scott; lodged 'Comments on representations' on the DPEA file).",
+    "source_ids": ["src-shp-project-page", "src-dpea-ppa-230-2794"]
+  },
+  {
+    "name": "studioNWA Architects",
+    "role": "consultant",
+    "confidence": "medium",
+    "notes": "Architects for the illustrative design shown in the May 2025 public consultation boards.",
+    "source_ids": ["src-shp-consultation-board"]
+  },
+  {
+    "name": "City of Edinburgh Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "notes": "Determined 25/03575/SCR (EIA not required) and refused 25/04239/PPP on 9 February 2026 following the Development Management Sub-Committee's unanimous vote of 4 February 2026 against officer recommendation.",
+    "source_ids": ["src-dpea-ppa-230-2794", "src-aprs-refusal-pr"]
+  },
+  {
+    "name": "Scottish Government Planning and Environmental Appeals Division (DPEA)",
+    "role": "government",
+    "confidence": "high",
+    "notes": "Handling appeal PPA-230-2794; reporter Ms Sue Bell; written submissions procedure; target date 18 August 2026.",
+    "source_ids": ["src-dpea-ppa-230-2794"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot",
+    "confidence": "high",
+    "notes": "Principal opposing campaign group; published pre-committee research, called for a Scottish Government moratorium, and lodged representations (with legal authorities including the Finch ruling) in the appeal.",
+    "source_ids": ["src-aprs-south-gyle", "src-aprs-refusal-pr", "src-dpea-ppa-230-2794"]
+  },
+  {
+    "name": "The Cockburn Association",
+    "role": "community_group",
+    "website": "https://www.cockburnassociation.org.uk",
+    "confidence": "medium",
+    "notes": "Edinburgh civic society; published analyses of the refusal and supports the council's call for national guidance defining 'green data centres' without formally opposing the specific scheme.",
+    "source_ids": ["src-cockburn-lessons"]
+  },
+  {
+    "name": "ERCS Legal Ltd",
+    "role": "other",
+    "confidence": "medium",
+    "notes": "Environmental Rights Centre for Scotland's legal arm; made written submissions in the DPEA appeal (council commented on its 26 June 2026 submission on 8 July 2026).",
+    "source_ids": ["src-dpea-ppa-230-2794"]
+  }
+]
