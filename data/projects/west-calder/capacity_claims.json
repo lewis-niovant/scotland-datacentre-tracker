@@ -1,0 +1,33 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 250,
+    "state": "developer_stated",
+    "applicable_date": "2025-08-05",
+    "claimant": "Apatura (via agent AAH Consultants, PAN 0625/PAC/25)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Figure appears verbatim in the PAN description on the West Lothian Council portal ('AI Data Centre Campus with a 250 MW demand utility capacity') and matches all developer material; but whether it is IT load or grid import is not stated - 'demand utility capacity' most likely means grid demand.",
+    "notes": "Same 250 MW figure repeated on Apatura's consultation site and in Foxglove's December 2025 table.",
+    "source_ids": ["src-wlc-portal-0625-pac-25", "src-apatura-freeport-consult", "src-foxglove-scotland-dc-2025"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 250,
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "confidence": "medium",
+    "notes": "250 MW BESS paired with the data centre, to be consented separately via a Section 36 application to Scottish Ministers per the PAN description and the developer's project page. No ECU application located as of 2026-07-30.",
+    "source_ids": ["src-apatura-freeport-project", "src-wlc-portal-0625-pac-25"]
+  },
+  {
+    "capacity_type": "connection_offer",
+    "value_mw": null,
+    "state": "developer_stated",
+    "applicable_date": "2025-06-30",
+    "claimant": "Apatura",
+    "confidence": "low",
+    "notes": "Developer states a grid connection offer at Harburn substation was 'formally accepted in Q2 2025' via NESO. Offer capacity in MW not stated (presumably up to 250 MW plus BESS); not independently verified against NESO connections data.",
+    "source_ids": ["src-apatura-freeport-project"]
+  }
+]

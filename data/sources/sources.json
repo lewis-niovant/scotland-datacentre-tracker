@@ -3125,5 +3125,109 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 2,
     "notes": "National site longlist context for Scottish green data hosting strategy; background to Highland Council's marketing of northern sites."
+  },
+  {
+    "id": "src-wlc-portal-0625-pac-25",
+    "title": "West Lothian Council Public Access record 0625/PAC/25 - Proposal of application notice, AI Data Centre Campus with 250 MW demand utility capacity, Land At Former Freeport Shopping Village, West Calder",
+    "publisher": "West Lothian Council",
+    "source_type": "planning_portal",
+    "url": "https://planning.westlothian.gov.uk/publicaccess/applicationDetails.do?keyVal=T0INPCRJ03H00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Portal page unreachable directly from research environment (TLS interception blocked); record content retrieved verbatim via PlanIt mirror (src-planit-westlothian-0625-pac-25). Received 2025-08-05, validated 2025-08-08, PAC response issued 2025-08-14 under delegated powers. Agent: AAH Consultants, 1 Bar Lane, York."
+  },
+  {
+    "id": "src-wlc-portal-0346-eia-25",
+    "title": "West Lothian Council Public Access record 0346/EIA/25 - EIA screening opinion for a data centre campus, Land At Former Freeport Shopping & Leisure Village, Westwood, West Calder",
+    "publisher": "West Lothian Council",
+    "source_type": "planning_portal",
+    "url": "https://planning.westlothian.gov.uk/publicaccess/applicationDetails.do?keyVal=SVMIAPRJ04A00&activeTab=summary",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Portal page unreachable directly from research environment; content via PlanIt mirror. Validated 2025-05-02; decision 'Environmental Assessment Not Required' issued 2025-06-04 under delegated powers. 3 documents and 1 public comment listed on portal (not readable from research environment)."
+  },
+  {
+    "id": "src-planit-westlothian-dc",
+    "title": "PlanIt API mirror of West Lothian Council data centre applications (0625/PAC/25 and 0346/EIA/25)",
+    "publisher": "PlanIt (planit.org.uk)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/api/applics/json?search=data+centre&auth=West+Lothian",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "Scraped mirror of the Idox portal, last scraped 2025-08-30 (PAC) / 2025-06-18 (EIA). Includes coordinates (55.856204, -3.59266 for the PAC red point), full descriptions, dates and decisions. Used because the council portal blocks the research environment."
+  },
+  {
+    "id": "src-apatura-freeport-consult",
+    "title": "Freeport AI Energy Campus Development - consultation landing page",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/freeport",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material for pre-application consultation",
+    "notes": "States 250MW AI Energy Campus at Freeport Leisure Village, Westwood, West Calder; qualitative benefit claims only on this page."
+  },
+  {
+    "id": "src-apatura-freeport-project",
+    "title": "Freeport AI Energy Campus - The Project page (site, grid, BESS, timeline)",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/freeport/the-project",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material",
+    "notes": "States: 250MW data centre paired with 250MW BESS; grid connection to Harburn substation with a NESO grid offer 'formally accepted in Q2 2025'; BESS to be consented via Section 36 application to Scottish Ministers; consultation Q3 2025; application submission target Q1/Q2 2026; decision expected Q3/Q4 2026; construction 2027-2028; fully operational 2029."
+  },
+  {
+    "id": "src-apatura-freeport-benefits",
+    "title": "Freeport AI Data Centre Campus - Benefits page (economic claims)",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/freeport/benefits",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material; methodology not published",
+    "notes": "Claims: £1.7bn total investment; £275m construction spend retained in local supply chain; £137m construction-phase GVA to West Lothian; £257m/yr operational GVA; 0.2% Scotland GDP uplift; up to £350,000/yr apprenticeship levy; £28.9m R&D uplift; Section 75 community benefits approach with Foundation Scotland suggested as fund manager. No job numbers quantified."
+  },
+  {
+    "id": "src-aprs-data-centres-eia-page",
+    "title": "Calling for EIAs and minimum environmental standards for all data centres",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/data-centres/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group seeking mandatory EIAs for data centres",
+    "notes": "Refers to 'the Gogarburn data centre application' on the Edinburgh City Planning Portal and to 'Shelborn Drummond's Request for an EIA screening opinion' - i.e. APRS labels the Shelborn Drummond scheme at 1 Redheughs Avenue (tracked here as south-gyle) as 'Gogarburn'. Used as evidence that press/campaign 'Gogar' naming refers to the Shelborn scheme."
+  },
+  {
+    "id": "src-planit-edinburgh-scr-records",
+    "title": "PlanIt API mirror of City of Edinburgh Council data centre records (25/02924/SCR, 25/05576/SCR, 25/03978/PAN, 25/04239/PPP, 25/01968/PAN)",
+    "publisher": "PlanIt (planit.org.uk)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/api/applics/json?search=data+centre&auth=Edinburgh",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "Establishes that no planning record for a data centre exists at Gogar/Gogarburn itself: keyword searches for 'gogar' and 'gogarburn' return no data centre applications. Edinburgh data centre records are all at Riccarton/Currie (Apatura, 25/02924/SCR decided 'EIA Not Required' 2025-07-04; 25/05576/SCR decided 'EIA Not Required' 2026-05-06) and 1 Redheughs Avenue (Shelborn). Mirrors citydev-portal.edinburgh.gov.uk, which blocks the research environment."
+  },
+  {
+    "id": "src-ch-apatura-entity-search",
+    "title": "Companies House search results for 'Apatura'",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/search?q=apatura",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Shows the Apatura group structure: Apatura DC Ltd (16041291) plus numbered SPVs Apatura DC Project 1-12 Ltd (e.g. Project 11 = 16470100, used for Wester Hermiston). The specific SPV for the Freeport/West Calder project could not be matched to a site from the register alone."
+  },
+  {
+    "id": "src-websearch-apatura-freeport-context",
+    "title": "Press coverage identifying Freeport West Calder as one of Apatura's priority Scottish data centre sites (DCD 'Apatura plans 500MW data center campus in Scotland'; FutureScot)",
+    "publisher": "Data Center Dynamics / FutureScot",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/apatura-plans-500mw-data-center-campus-in-scotland/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "DCD article body not retrievable (403 from research environment); search-result extracts confirm Apatura's priority sites include 'Freeport in West Lothian' alongside Glenbervie, Ravenscraig, Wester Hermiston and Westerhill, all combined with BESS, and a claimed pipeline of 10.6GW including 2.6GW of AI-ready data centre capacity."
   }
 ]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "City of Edinburgh Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "notes": "Planning authority for the Gogar area and for both candidate schemes.",
+    "source_ids": ["src-planit-edinburgh-scr-records"]
+  },
+  {
+    "name": "Shelborn Drummond Ltd",
+    "role": "developer",
+    "company_number": "14136984",
+    "jurisdiction": "England and Wales",
+    "confidence": "low",
+    "notes": "Candidate identity only: APRS labels this company's 1 Redheughs Avenue scheme (tracked as south-gyle, 212.42 MW, EIA screened out under 25/03575/SCR) 'the Gogarburn data centre application'. If the reported 'Gogar' scheme is that scheme, Shelborn Drummond Ltd (Shelborn Asset Management group) is the developer.",
+    "source_ids": ["src-aprs-data-centres-eia-page", "src-planit-edinburgh-scr-records"]
+  },
+  {
+    "name": "Apatura (Apatura Energy)",
+    "role": "developer",
+    "website": "https://apatura.energy",
+    "confidence": "low",
+    "notes": "Alternative candidate identity: Apatura's Wester Hermiston campus (tracked as wester-hermiston, SPV Apatura DC Project 11 Ltd, company 16470100) is the only Edinburgh scheme whose 200 MW figure exactly matches the SPICe 'Gogar' mention, and it was twice screened out of EIA (25/02924/SCR, 25/05576/SCR).",
+    "source_ids": ["src-spice-data-centres-2026", "src-planit-edinburgh-scr-records"]
+  }
+]

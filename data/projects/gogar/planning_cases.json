@@ -1,0 +1,13 @@
+[
+  {
+    "reference": null,
+    "planning_authority": "City of Edinburgh Council",
+    "application_type": "other",
+    "description": "Negative search result: keyword searches of the City of Edinburgh Council planning record (via PlanIt mirror of citydev-portal.edinburgh.gov.uk) for 'gogar', 'gogarburn' and 'data centre' found no data centre application, PAN or EIA screening at Gogar/Gogarburn itself. The only Edinburgh data centre cases are at Riccarton/Currie (Apatura: 25/03978/PAN, 25/02924/SCR decided EIA Not Required 2025-07-04, 25/05576/SCR decided EIA Not Required 2026-05-06 - see wester-hermiston) and 1 Redheughs Avenue (Shelborn: 25/01968/PAN, 25/03575/SCR EIA not required, 25/04239/PPP refused, appeal PPA-230-2794 - see south-gyle). The reported 'Gogar 200 MW EIA-screened-out data centre' therefore has no distinct planning case; the candidate screening references are 25/03575/SCR and 25/02924/SCR, held on the related project records.",
+    "decision": "other",
+    "decision_notes": "No decision exists because no distinct case exists.",
+    "official_url": "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/search.do?action=simple",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-edinburgh-scr-records", "src-aprs-data-centres-eia-page", "src-spice-data-centres-2026"]
+  }
+]

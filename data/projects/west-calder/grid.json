@@ -1,0 +1,16 @@
+{
+  "connection_status": "offer",
+  "nearby_substation": "Harburn substation (south-west of the site)",
+  "requested_import_capacity_mw": {
+    "value": 250,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "confidence": "low",
+    "notes": "Assumes the '250 MW demand utility capacity' in the PAN corresponds to the grid connection; the accepted offer's actual capacity is not published.",
+    "source_ids": ["src-wlc-portal-0625-pac-25", "src-apatura-freeport-project"]
+  },
+  "evidence_basis": "Developer statement only: project page says a grid connection offer at Harburn substation was 'formally accepted in Q2 2025' via NESO. Not verified against NESO/TEC register data; DNO not named in any source.",
+  "notes": "Connection status recorded as 'offer' on the developer's claim of an accepted offer; downgrade if unverifiable at next review.",
+  "source_ids": ["src-apatura-freeport-project"]
+}

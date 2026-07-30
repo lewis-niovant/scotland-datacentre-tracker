@@ -15,22 +15,32 @@
         "event_date": "2025-08-28",
         "event_type": "public_exhibition",
         "title": "First public consultation event, National Robotarium, Heriot-Watt University (15:00-20:00)",
-        "source_ids": ["src-cec-pan-report-wester-hermiston"]
+        "source_ids": [
+          "src-cec-pan-report-wester-hermiston"
+        ]
       },
       {
         "event_date": "2025-10-02",
         "event_type": "public_exhibition",
         "title": "Second public consultation event, National Robotarium, Heriot-Watt University (15:00-20:00)",
-        "source_ids": ["src-cec-pan-report-wester-hermiston"]
+        "source_ids": [
+          "src-cec-pan-report-wester-hermiston"
+        ]
       },
       {
         "event_date": "2026-03-25",
         "event_type": "committee_report",
         "title": "Development Management Sub-Committee notes forthcoming application (report 25/03978/PAN)",
-        "source_ids": ["src-cec-pan-report-wester-hermiston"]
+        "source_ids": [
+          "src-cec-pan-report-wester-hermiston"
+        ]
       }
     ],
-    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-aprs-wester-hermiston", "src-yahoo-ai-campus"]
+    "source_ids": [
+      "src-cec-pan-report-wester-hermiston",
+      "src-aprs-wester-hermiston",
+      "src-yahoo-ai-campus"
+    ]
   },
   {
     "reference": "25/02924/SCR",
@@ -42,7 +52,10 @@
     "eia_required": false,
     "decision_notes": "Determined 7 July 2025 that EIA was not required for the construction of a data centre campus (as recorded in the council's site history for 25/03978/PAN).",
     "last_checked_at": "2026-07-30",
-    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-aprs-wester-hermiston"]
+    "source_ids": [
+      "src-cec-pan-report-wester-hermiston",
+      "src-aprs-wester-hermiston"
+    ]
   },
   {
     "reference": "25/05576/SCR",
@@ -50,10 +63,14 @@
     "application_type": "eia_screening",
     "description": "Second EIA Screening Opinion request for proposed construction of a data centre campus (re-screening).",
     "validation_date": "2025-12-19",
-    "decision": "pending",
+    "decision": "screening_eia_not_required",
     "eia_required": null,
-    "decision_notes": "Recorded as 'under consideration' in the council's 25 March 2026 committee paper. APRS ('info last checked 23 Feb 2026') described the initial screening as not requiring EIA and the proposal as 'now being re-screened by the council - application validated 19 Dec 2025' with 'no action as yet'; the 19 Dec 2025 validation therefore appears to relate to this screening request rather than a full planning application.",
+    "decision_notes": "Recorded as 'under consideration' in the council's 25 March 2026 committee paper. APRS ('info last checked 23 Feb 2026') described the initial screening as not requiring EIA and the proposal as 'now being re-screened by the council - application validated 19 Dec 2025' with 'no action as yet'; the 19 Dec 2025 validation therefore appears to relate to this screening request rather than a full planning application. Decided EIA Not Required 6 May 2026 per PlanIt mirror (portal unverified).",
     "last_checked_at": "2026-07-30",
-    "source_ids": ["src-cec-pan-report-wester-hermiston", "src-aprs-wester-hermiston"]
+    "source_ids": [
+      "src-cec-pan-report-wester-hermiston",
+      "src-aprs-wester-hermiston"
+    ],
+    "decision_date": "2026-05-06"
   }
 ]

@@ -1,0 +1,14 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 200,
+    "state": "reported",
+    "applicable_date": "2026-06-26",
+    "claimant": "SPICe (Scottish Parliament Information Centre)",
+    "confidence": "low",
+    "preferred": true,
+    "preferred_rationale": "The only capacity figure attached to the 'Gogar' name; SPICe cites no source. Exactly matches the Apatura Wester Hermiston PAN figure ('200MW demand utility capacity') and approximates the Shelborn South Gyle 212.42 MW - both EIA-screened-out Edinburgh schemes tracked separately.",
+    "notes": "Not an independent capacity claim for a distinct project; retained to document the reported figure and its likely provenance from the two related projects.",
+    "source_ids": ["src-spice-data-centres-2026", "src-planit-edinburgh-scr-records"]
+  }
+]

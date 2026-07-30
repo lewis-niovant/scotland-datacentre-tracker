@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Apatura (Apatura Energy)",
+    "role": "developer",
+    "website": "https://apatura.energy",
+    "confidence": "high",
+    "notes": "Named developer throughout consultation material and press. Group operates through Apatura DC Ltd and numbered SPVs (Apatura DC Project 1-12 Ltd); the specific SPV acting as applicant for the Freeport/West Calder project could not be identified from the Companies House register or the portal record.",
+    "source_ids": ["src-apatura-freeport-consult", "src-ch-apatura-entity-search"]
+  },
+  {
+    "name": "Apatura DC Ltd",
+    "role": "parent_company",
+    "company_number": "16041291",
+    "jurisdiction": "England and Wales",
+    "confidence": "medium",
+    "notes": "Parent of the numbered Apatura DC Project SPVs used for the group's other Scottish data centre sites (e.g. Apatura DC Project 11 Ltd for Wester Hermiston); inferred to sit above whichever SPV holds Freeport.",
+    "source_ids": ["src-ch-apatura-entity-search"]
+  },
+  {
+    "name": "AAH Consultants",
+    "role": "consultant",
+    "confidence": "high",
+    "notes": "Planning agent on both 0346/EIA/25 and 0625/PAC/25 (1 Bar Lane, York YO1 6JU). Same agent as other Apatura Scottish applications.",
+    "source_ids": ["src-planit-westlothian-dc"]
+  },
+  {
+    "name": "West Lothian Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "source_ids": ["src-wlc-portal-0625-pac-25"]
+  },
+  {
+    "name": "National Energy System Operator (NESO)",
+    "role": "network_operator",
+    "confidence": "low",
+    "notes": "Developer states a grid connection offer at Harburn substation was accepted via NESO in Q2 2025; system operator, not the local DNO (which would be SP Energy Networks - not confirmed in any source).",
+    "source_ids": ["src-apatura-freeport-project"]
+  },
+  {
+    "name": "Foundation Scotland",
+    "role": "other",
+    "confidence": "medium",
+    "notes": "Proposed by Apatura as a possible independent manager of a Section 75 community benefit fund; no agreement in place.",
+    "source_ids": ["src-apatura-freeport-benefits"]
+  }
+]
