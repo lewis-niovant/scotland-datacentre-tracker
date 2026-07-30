@@ -1,0 +1,57 @@
+{
+  "$id": "community.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Community & stakeholder positions",
+  "type": "object",
+  "properties": {
+    "summary": { "type": "string" },
+    "principal_concerns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["concern", "source_ids"],
+        "properties": {
+          "concern": { "type": "string" },
+          "raised_by": { "type": "string" },
+          "developer_response": { "type": "string" },
+          "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "claimed_local_benefits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["benefit", "source_ids"],
+        "properties": {
+          "benefit": { "type": "string" },
+          "claimant": { "type": "string" },
+          "binding_status": { "type": "string", "enum": ["legally_binding", "planning_condition", "section_75", "commitment_stated", "modelled", "aspirational", "unstated"] },
+          "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "stakeholder_positions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stakeholder", "position", "source_ids"],
+        "properties": {
+          "stakeholder": { "type": "string" },
+          "stakeholder_type": { "type": "string", "enum": ["community_council", "resident_group", "campaign_group", "council_officer", "elected_member", "ngo", "trade_union", "business_group", "government", "statutory_consultee", "other"] },
+          "position": { "type": "string" },
+          "date": { "$ref": "common.schema.json#/$defs/isoDate" },
+          "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "campaign_groups": { "type": "array", "items": { "type": "string" } },
+    "consultation_deadline": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "planning_authority_contact": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

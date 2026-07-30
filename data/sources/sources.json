@@ -1,0 +1,75 @@
+[
+  {
+    "id": "src-spice-data-centres-2026",
+    "title": "Data Centres (SPICe Spotlight briefing)",
+    "publisher": "Scottish Parliament Information Centre (SPICe)",
+    "source_type": "parliamentary_material",
+    "url": "https://spice-spotlight.scot/2026/06/26/data-centres/",
+    "publication_date": "2026-06-26",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Neutral parliamentary research service",
+    "status": "active",
+    "notes": "Covers Cato (280,000 m2, 35 m, 400-4,000 GWh/yr), Larbert (128,863 m2), Rufus (540 MW), Gogar (200 MW); Scotland generated 51.8 TWh in 2024 (91.5% renewable); cites APRS mapping of 26 proposals."
+  },
+  {
+    "id": "src-aprs-map",
+    "title": "Data Centre Map (Scotland proposals tracker)",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/data-centre-map/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group advocating a moratorium; useful census but figures must be verified against planning records",
+    "status": "active",
+    "notes": "26 projects with per-site pages linking planning documents. No downloadable dataset."
+  },
+  {
+    "id": "src-ofgem-dc-connection-reforms-2026",
+    "title": "Proposed Data Centre Connection Reforms (consultation)",
+    "publisher": "Ofgem",
+    "source_type": "regulator_publication",
+    "url": "https://www.ofgem.gov.uk/consultation/proposed-data-centre-connection-reforms",
+    "publication_date": "2026-07-29",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Independent energy regulator",
+    "status": "active",
+    "notes": "Demand connection queue grew 41 GW to 125 GW (Nov 2024 - Jun 2025), ~80 GW attributed to data centres. Proposes commitment fee of GBP 237,500-712,500/MW. Closes 16 Sep 2026. Aggregate figures only; no project-level demand register."
+  },
+  {
+    "id": "src-scotgov-green-datacentres-plan",
+    "title": "Green Datacentres and Digital Connectivity: Vision and Action Plan for Scotland",
+    "publisher": "Scottish Government",
+    "source_type": "government_publication",
+    "url": "https://www.gov.scot/publications/green-datacentres-and-digital-connectivity-vision-and-action-plan-for-scotland/",
+    "publication_date": "2021-03-31",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "perspective": "Government strategy promoting Scotland as a data-hosting location",
+    "status": "active"
+  },
+  {
+    "id": "src-ukgov-aigz-statement-2026",
+    "title": "AI Growth Zones written statement HLWS1290 (Lanarkshire designation)",
+    "publisher": "UK Parliament / UK Government",
+    "source_type": "parliamentary_material",
+    "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-01-29/hlws1290",
+    "publication_date": "2026-01-29",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Designates Lanarkshire AI Growth Zone centred on DataVita Chapelhall/Airdrie sites with CoreWeave anchor; 500 MW AI-ready capacity, >1 GW private-wire renewables, GBP 8.2bn claim."
+  },
+  {
+    "id": "src-neso-tec-register",
+    "title": "Transmission Entry Capacity (TEC) Register",
+    "publisher": "NESO",
+    "source_type": "grid_data",
+    "url": "https://www.neso.energy/data-portal/transmission-entry-capacity-tec-register",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "CSV/API, updated twice weekly. Generation-focused; NESO confirmed via FOI that no public register of demand connections exists — the data-centre demand queue is not project-level public data."
+  }
+]

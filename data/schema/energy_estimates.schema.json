@@ -1,0 +1,37 @@
+{
+  "$id": "energy_estimates.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Energy estimates",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["estimate_type", "source_ids"],
+    "properties": {
+      "scenario_name": { "type": "string" },
+      "phase": { "type": "string" },
+      "annual_energy_gwh": { "type": ["number", "null"] },
+      "annual_energy_gwh_min": { "type": "number" },
+      "annual_energy_gwh_max": { "type": "number" },
+      "average_load_mw": { "type": "number" },
+      "peak_load_mw": { "type": "number" },
+      "load_factor": { "type": "number" },
+      "pue": { "type": "number" },
+      "renewable_claim_percent": { "type": "number" },
+      "matching_method": { "type": "string", "enum": ["annual_certificates", "ppa", "hourly_matching", "onsite", "grid_mix", "unstated"] },
+      "power_purchase_agreement": { "type": ["boolean", "null"] },
+      "onsite_generation": { "type": "string" },
+      "demand_flexibility": { "type": "string" },
+      "methodology": { "type": "string" },
+      "assumptions": { "type": "string" },
+      "estimate_type": {
+        "type": "string",
+        "enum": ["application", "developer", "consultant", "regulator", "independently_calculated", "campaign", "unknown"]
+      },
+      "state": { "$ref": "common.schema.json#/$defs/uncertaintyState" },
+      "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+      "notes": { "type": "string" },
+      "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+    },
+    "additionalProperties": false
+  }
+}
