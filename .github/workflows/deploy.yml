@@ -1,7 +1,7 @@
 name: Deploy dashboard
 on:
   push:
-    branches: [claude/scotland-datacentre-observatory-mxq1r7, main]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
