@@ -1,0 +1,12 @@
+{
+  "site_name": "Inchinnan (settlement-level placeholder)",
+  "settlement": "Inchinnan, Renfrewshire",
+  "latitude": 55.8915,
+  "longitude": -4.4372,
+  "location_precision": "settlement_level",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "unknown",
+  "nearest_settlements": ["Inchinnan", "Erskine", "Renfrew", "Paisley"],
+  "land_notes": "Coordinates are the centre of Inchinnan village. No source identifies a parcel; candidate contexts include Inchinnan Business Park and surrounding farmland, but this is speculation and not recorded as fact.",
+  "source_ids": ["src-aprs-data-centre-map", "src-osm-nominatim-settlements"]
+}

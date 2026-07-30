@@ -1,0 +1,13 @@
+[
+  {
+    "capacity_type": "connection_application",
+    "value_mw": 360,
+    "state": "reported",
+    "claimant": "APRS (citing NESO Existing Agreements Register)",
+    "confidence": "low",
+    "preferred": true,
+    "preferred_rationale": "Only figure in the public record; a single-sourced restatement of a NESO register entry.",
+    "notes": "APRS describes Clydebridge as one of five sites that 'have applied for gate 2 grid connections that we have not otherwise seen elsewhere'. Register row not independently verified; unclear whether MW is demand capacity at the connection point or another register quantity, and whether the end use is a data centre.",
+    "source_ids": ["src-aprs-data-centre-map", "src-neso-existing-agreements-register"]
+  }
+]

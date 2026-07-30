@@ -1,0 +1,12 @@
+{
+  "site_name": "Edzell (settlement-level placeholder)",
+  "settlement": "Edzell, Angus",
+  "latitude": 56.81,
+  "longitude": -2.6559,
+  "location_precision": "settlement_level",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "unknown",
+  "nearest_settlements": ["Edzell", "Brechin", "Fettercairn", "Inchbare"],
+  "land_notes": "Coordinates are the centre of Edzell village. No source identifies a parcel. APRS states the connection would be to the new Brechin substation c.5 miles south. The former RAF Edzell base lies nearby but nothing links it to this connection.",
+  "source_ids": ["src-aprs-data-centre-map", "src-osm-nominatim-settlements"]
+}

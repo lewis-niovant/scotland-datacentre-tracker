@@ -3229,5 +3229,62 @@
     "retrieved_date": "2026-07-30",
     "reliability_tier": 4,
     "notes": "DCD article body not retrievable (403 from research environment); search-result extracts confirm Apatura's priority sites include 'Freeport in West Lothian' alongside Glenbervie, Ravenscraig, Wester Hermiston and Westerhill, all combined with BESS, and a claimed pipeline of 10.6GW including 2.6GW of AI-ready data centre capacity."
+  },
+  {
+    "id": "src-aprs-data-centre-map",
+    "title": "Data Centre Map (interactive map and pipeline table, including note on five gate 2 grid-connection-only sites)",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/data-centre-map/",
+    "publication_date": "2026-03-01",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group critical of hyperscale data centre development in Scotland; page last modified 2026-07-29",
+    "status": "active",
+    "notes": "Key passage: 'These sites have applied for gate 2 grid connections that we have not otherwise seen elsewhere: Clydebridge (360MW), just outside Glasgow, Edzel (800MW) to be connected to the new Brechin substation, Inchinan (180MW), Jawcraig, Falkirk (180MW), and Easterhouse (500MW). This is from the Existing Agreements Register.' APRS spellings 'Edzel'/'Inchinan' assumed to mean Edzell and Inchinnan. The page's project table does NOT attribute these five sites to any developer."
+  },
+  {
+    "id": "src-neso-existing-agreements-register",
+    "title": "Connections registers (Existing Agreements Register)",
+    "publisher": "National Energy System Operator (NESO)",
+    "source_type": "grid_data",
+    "url": "https://www.neso.energy/industry-information/connections/registers-reports-and-updates",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Cited by APRS as the origin of the five gate 2 connection entries. The individual register rows (connectee names, connection sites, MW, agreement dates) were NOT independently extracted in this research pass; the register is published as bulk spreadsheets and the specific entries remain to be verified."
+  },
+  {
+    "id": "src-planit-api",
+    "title": "PlanIt UK planning applications API — keyword searches for Clydebridge, Easterhouse, Inchinnan, Jawcraig and Edzell data centre records (negative results)",
+    "publisher": "PlanIt (aggregating council planning portals)",
+    "source_type": "planning_portal",
+    "url": "https://www.planit.org.uk/api/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Searches run 2026-07-30 over 2019-01-01 to 2026-07-30: 'Clydebridge' (all authorities: 0 results); Glasgow + 'data centre' (no Easterhouse-area hyperscale record); Renfrewshire + 'data centre' (6 records, none at Inchinnan — two May 2025 withdrawn EIA screening requests for data centre campuses were at Gleniffer Road, Paisley and Caplaw Road, Neilston); 'Jawcraig' (0); Falkirk + 'data centre'; Angus + 'data centre' and + 'Edzell' (0). Used here as evidence of ABSENCE of planning records for these five sites."
+  },
+  {
+    "id": "src-osm-nominatim-settlements",
+    "title": "OpenStreetMap Nominatim geocoding of Clydebridge (Clydebridge Steelworks, Cambuslang/Rutherglen), Easterhouse, Inchinnan and Edzell",
+    "publisher": "OpenStreetMap contributors",
+    "source_type": "map_or_gis",
+    "url": "https://nominatim.openstreetmap.org/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "Settlement-level coordinates only; no site boundary is known for any of the five sites. Clydebridge Steelworks feature: 55.8327, -4.1850."
+  },
+  {
+    "id": "src-gazetteer-jawcraig",
+    "title": "Jawcraig — Gazetteer for Scotland entry",
+    "publisher": "The Gazetteer for Scotland (University of Edinburgh / RSGS)",
+    "source_type": "other",
+    "url": "https://www.scottish-places.info/towns/townfirst2697.html",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "status": "active",
+    "notes": "'The farming settlement of Jawcraig is located 2 miles (3 km) north of Slamannan in Falkirk Council Area. The settlement comprises Easter Jawcraig, Jawcraig and Wester Jawcraig.' Used to place approximate coordinates."
   }
 ]

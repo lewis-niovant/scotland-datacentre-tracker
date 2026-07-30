@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Renfrewshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "website": "https://www.renfrewshire.gov.uk",
+    "confidence": "medium",
+    "source_ids": ["src-aprs-data-centre-map", "src-osm-nominatim-settlements"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "jurisdiction": "Scotland",
+    "website": "https://aprs.scot",
+    "confidence": "high",
+    "notes": "Sole public reporter of this grid connection; no developer or connectee identified by any source.",
+    "source_ids": ["src-aprs-data-centre-map"]
+  }
+]

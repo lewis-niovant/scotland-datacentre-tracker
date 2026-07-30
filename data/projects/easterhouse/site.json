@@ -1,0 +1,12 @@
+{
+  "site_name": "Easterhouse (settlement-level placeholder)",
+  "settlement": "Easterhouse, Glasgow",
+  "latitude": 55.8676,
+  "longitude": -4.1085,
+  "location_precision": "settlement_level",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "unknown",
+  "nearest_settlements": ["Easterhouse", "Garthamlock", "Gartcosh", "Baillieston"],
+  "land_notes": "Coordinates are the centre of the Easterhouse district of east Glasgow. No source identifies a parcel; the grid connection may be named for the SPEN Easterhouse 275kV substation rather than a specific development site.",
+  "source_ids": ["src-aprs-data-centre-map", "src-osm-nominatim-settlements"]
+}
