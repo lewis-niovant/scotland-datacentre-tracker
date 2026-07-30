@@ -1211,5 +1211,156 @@
     "reliability_tier": 1,
     "status": "active",
     "notes": "Shelborn Asset Management Ltd (08439076, inc. 11 Mar 2013), Shelborn Edinburgh Ltd (13368052, inc. 30 Apr 2021), Shelborn Drummond Ltd (14136984) and other Shelborn vehicles all registered at 70-78 West Hendon Broadway, London NW9 7BT."
+  },
+  {
+    "id": "src-spango-consult-home",
+    "title": "Spango Valley Planning Consultation (homepage)",
+    "publisher": "Slate Island Developments Ltd",
+    "source_type": "developer_publication",
+    "url": "https://www.spangovalleyconsultation.co.uk/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer consultation website; promotional",
+    "notes": "Confirms PAN submitted to Inverclyde Council; data centre as Major application under TCP(S)A 1997; BESS c.99MW via Section 36 (Electricity Act 1989) to Scottish Government Energy Consents Unit."
+  },
+  {
+    "id": "src-spango-consult-proposals",
+    "title": "Development Proposals - Spango Valley Planning Consultation",
+    "publisher": "Slate Island Developments Ltd",
+    "source_type": "developer_publication",
+    "url": "https://www.spangovalleyconsultation.co.uk/proposals/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer consultation website; promotional",
+    "notes": "PAN submission stated as 27 February 2026; exhibitions 24 March and 23 April 2026; online events 26 March and 28 April 2026; application targeted June 2026; determination targeted November 2026. Data centre floorspace to be confirmed through PPP. BESS detail includes 132kV and 33kV substations, inverter/transformer stations, 120,000L water tank, SuDS pond. Site described as brownfield 'Priority Place' in Inverclyde LDP."
+  },
+  {
+    "id": "src-spango-consult-updates",
+    "title": "Consultation Updates - Spango Valley Planning Consultation",
+    "publisher": "Slate Island Developments Ltd",
+    "source_type": "developer_publication",
+    "url": "https://www.spangovalleyconsultation.co.uk/updates/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer consultation website; summarises its own consultation feedback",
+    "notes": "States data centre maximum 150MW; BESS stated as 'c.99.9MW' in one place (page also rendered as '99.9MWh' — units ambiguous); Gate 1 grid offer secured from SPEN to a local substation; approx 1,200 construction jobs and approx 50 operational jobs claimed; exhibition attendance 4 in person (24 Mar 2026), 0 online (26 Mar 2026)."
+  },
+  {
+    "id": "src-dcd-spango",
+    "title": "Former IBM factory site in Scotland earmarked for data center & BESS development",
+    "publisher": "Data Centre Dynamics",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/former-ibm-factory-site-in-scotland-earmarked-for-data-center-bess-development/",
+    "publication_date": "2026-03-25",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Direct fetch blocked (HTTP 403); content read via BeBeez syndication (src-bebeez-spango) and search snippets. Reports two buildings of 34,500 sqm and 40,000 sqm, 99MW BESS, permission targeted end-2026, 'strong interest' from an unnamed data centre operator."
+  },
+  {
+    "id": "src-bebeez-spango",
+    "title": "Former IBM factory site in Scotland earmarked for data center & BESS development (syndicated)",
+    "publisher": "BeBeez International",
+    "source_type": "journalism",
+    "url": "https://bebeez.eu/2026/03/25/former-ibm-factory-site-in-scotland-earmarked-for-data-center-bess-development/",
+    "publication_date": "2026-03-25",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Syndication of the DCD article. Adds site history: IBM opened 1954, fully exited by 2016/2017, buildings demolished and cleared by 2020, rail station closed 2018; prior mixed-use consent 2022; previous developers (McGill's bus group owners) had not secured a viable end user."
+  },
+  {
+    "id": "src-inverclydenow-spango-dc",
+    "title": "Plans For Old IBM Site Switch From Housing To Hi-Tech And Energy Uses",
+    "publisher": "Inverclyde Now",
+    "source_type": "journalism",
+    "url": "https://www.inverclydenow.com/plans-for-old-ibm-site-switch-from-housing-to-hi-tech-and-energy-uses/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports pivot from consented housing-led mixed-use scheme (marketing failed to secure viable end user) to data centre + BESS; June 2026 application target; BESS to ECU; consultation events 26 Mar and 23 Apr 2026; developer cites 'strong interest from a data centre operator' and the site's large flat plot."
+  },
+  {
+    "id": "src-inverclydenow-spango-housing-app",
+    "title": "Planning Application Made For £100Million Spango Valley Transformation",
+    "publisher": "Inverclyde Now",
+    "source_type": "journalism",
+    "url": "https://www.inverclydenow.com/planning-application-made-for-100million-spango-valley-transformation/",
+    "publication_date": "2020-02-10",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Feb 2020 PPP application by Barton Willmore for landowners Sandy Easdale, James Easdale and Advance Construction: up to 450 homes, mixed uses, park-and-ride at IBM rail halt; claims approx 130 construction jobs and est. 300 permanent jobs; £100m investment."
+  },
+  {
+    "id": "src-ch-slate-island",
+    "title": "SLATE ISLAND DEVELOPMENTS LIMITED (SC680122) — overview, officers and filing history",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC680122",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Private limited company, incorporated 6 Nov 2020; registered office 99 Earnhill Road, Larkfield Industrial Estate, Greenock PA16 0EQ; SIC 68100 (buying and selling of own real estate); sole director Alexander (Sandy) Easdale (appointed 6 Nov 2020); total exemption full accounts (small company)."
+  },
+  {
+    "id": "src-ch-slate-island-psc",
+    "title": "SLATE ISLAND DEVELOPMENTS LIMITED (SC680122) — persons with significant control",
+    "publisher": "Companies House",
+    "source_type": "companies_house",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC680122/persons-with-significant-control",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "0 active PSCs; active statement since 22 Apr 2021 that the company believes it has no registrable PSC. James Easdale and Alexander Easdale were each PSCs (25-50% shares/votes) from 6 Nov 2020, ceased 22 Apr 2021."
+  },
+  {
+    "id": "src-wikipedia-spango",
+    "title": "Spango Valley",
+    "publisher": "Wikipedia",
+    "source_type": "other",
+    "url": "https://en.wikipedia.org/wiki/Spango_Valley",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Crowd-sourced encyclopaedia; used for site history and approximate coordinates only",
+    "notes": "Valley coordinates 55.9302N 4.8305W; IBM factory opened 1954, vacated Oct 2016; all buildings demolished by Sep 2020, final demolition Mar 2022; brownfield extending c.2.1 km; IBM railway station open 1978, services suspended Dec 2018; amended £100m mixed-use housing proposal approved by Inverclyde Council March 2023."
+  },
+  {
+    "id": "src-inverclydenow-spango-450",
+    "title": "Councillors Agree Easdales Can Build More Homes At Spango Valley",
+    "publisher": "Inverclyde Now",
+    "source_type": "journalism",
+    "url": "https://www.inverclydenow.com/council-complete-u-turn-on-spango-valley-housing-limit/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Located via search (snippet only): planning board initially granted PPP capped at 270 homes (5-4 vote), later agreed upper level of 450 homes (March 2023)."
+  },
+  {
+    "id": "src-colomap-spango",
+    "title": "Spango Valley DCH1 — Colocation in Greenock, GB",
+    "publisher": "Colo Map",
+    "source_type": "other",
+    "url": "https://colomap.com/facilities/spango-valley-dch1/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Marketing/aggregator listing; describes the unbuilt facility as 'operational' and lists colocation packages — inconsistent with planning status and treated as unreliable",
+    "notes": "Address given as 30 Inverkip Rd, Spango Valley, Greenock PA16 0AH; operator listed as Slate Island Developments."
+  },
+  {
+    "id": "src-datacentermap-spango",
+    "title": "Spango Valley Campus in Glasgow | Slate Island Developments",
+    "publisher": "Data Center Map",
+    "source_type": "other",
+    "url": "https://www.datacentermap.com/united-kingdom/glasgow/spango-valley-campus/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Marketing/aggregator listing",
+    "notes": "Fetch returned HTTP 429; content seen via search snippets only. Lists project as 'Spango Valley Campus'."
+  },
+  {
+    "id": "src-aprs-spango",
+    "title": "Greenock IBM Data Centre",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/greenock-ibm-data-centre/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign tracker; lead-generation only",
+    "status": "broken",
+    "notes": "Page returned no readable content on 2026-07-30; used only as evidence the project is tracked by APRS."
   }
 ]

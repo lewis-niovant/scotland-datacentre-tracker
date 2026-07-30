@@ -1,0 +1,41 @@
+[
+  {
+    "claim_category": "direct_construction_jobs",
+    "value": 1200,
+    "unit": "jobs",
+    "geographic_scope": "unstated",
+    "period": "construction phase",
+    "claimant": "Slate Island Developments Ltd",
+    "methodology": "Not stated; no consultant or economic assessment cited",
+    "independently_reviewed": false,
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Consultation website states 'approximately 1,200 jobs will be created' during construction. Not classified by the developer as direct/indirect or FTE/job-years; recorded as direct construction jobs on plain reading, but the category is the developer's implication, not a methodology-backed classification.",
+    "source_ids": ["src-spango-consult-updates"]
+  },
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": 50,
+    "unit": "jobs",
+    "geographic_scope": "unstated",
+    "period": "operational phase",
+    "claimant": "Slate Island Developments Ltd",
+    "methodology": "Not stated",
+    "independently_reviewed": false,
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Consultation website states 'approximately 50 jobs' in operation, with a stated commitment to local hiring 'where feasible' (unbound).",
+    "source_ids": ["src-spango-consult-updates"]
+  },
+  {
+    "claim_category": "capital_expenditure",
+    "value": null,
+    "unit": "gbp",
+    "claimant": "n/a",
+    "state": "not_disclosed",
+    "notes": "No investment value has been published for the data centre/BESS scheme. The £100m figure in earlier press relates to the superseded 2020-2023 housing-led scheme, not this proposal.",
+    "source_ids": ["src-inverclydenow-spango-housing-app", "src-dcd-spango"]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "network_operator": "SP Energy Networks",
+  "connection_status": "gate_1",
+  "requested_import_capacity_mw": {
+    "value": null,
+    "unit": "MW",
+    "state": "not_disclosed",
+    "claimant": "Slate Island Developments Ltd",
+    "notes": "Developer states a Gate 1 offer secured from SPEN to a local substation; the offered/requested MW is not disclosed. Data centre stated maximum is 150 MW.",
+    "source_ids": ["src-spango-consult-updates"]
+  },
+  "connection_voltage_kv": 132,
+  "nearby_substation": "Unnamed 'local substation' (developer statement); BESS scheme includes 132kV and 33kV substations on site",
+  "evidence_basis": "Developer consultation website only (updates and proposals pages); no NESO/Ofgem or SPEN record located",
+  "notes": "Connection voltage of 132 kV inferred from the BESS substation specification in the developer's proposal documents, not from a published connection agreement — treat as indicative. BESS (c.99 MW) is claimed to store renewable energy, supply the data centre and help balance the grid.",
+  "source_ids": ["src-spango-consult-updates", "src-spango-consult-proposals", "src-inverclydenow-spango-dc"]
+}
