@@ -1,0 +1,69 @@
+{
+  "summary": "The proposal has met organised local opposition. A volunteer-run local campaign, the Ayrshire Major Development Community Group, operates a website and Facebook group; APRS tracks the site in its national data centres campaign. BBC reporting (March 2026) found residents concerned about water use, lack of concrete detail, and whether jobs would go to local people; supporters cited regional revitalisation and investment. ILI ran three pre-application consultation events in February-March 2026 and offers community support measures.",
+  "principal_concerns": [
+    {
+      "concern": "Water consumption for cooling, in the context of a third-party estimate of nearly 6 billion litres of freshwater per year and global water scarcity",
+      "raised_by": "Local resident Lisa Beacham (BBC); Ayrshire Major Development Community Group",
+      "source_ids": ["src-bbc-rufus-2026", "src-amdcg-proposal"]
+    },
+    {
+      "concern": "Uncertainty over long-term commitment and whether operational jobs would be filled locally, including whether education/upskilling would be arranged for local people",
+      "raised_by": "Local resident Cheryl Rowland (BBC)",
+      "source_ids": ["src-bbc-rufus-2026"]
+    },
+    {
+      "concern": "Scale of the development (540MW versus most UK data centres under 100MW), electricity demand, and impacts on wildlife and landscape not yet assessed through an EIA",
+      "raised_by": "Ayrshire Major Development Community Group",
+      "source_ids": ["src-amdcg-proposal"]
+    },
+    {
+      "concern": "Residents feeling excluded from early engagement and a lack of concrete detail about the proposal",
+      "raised_by": "Ayrshire Major Development Community Group; residents contacting BBC Your Voice",
+      "source_ids": ["src-amdcg-proposal", "src-bbc-rufus-2026"]
+    },
+    {
+      "concern": "Loss of greenfield farmland on the edge of Hurlford",
+      "raised_by": "Action to Protect Rural Scotland (APRS)",
+      "source_ids": ["src-aprs-hurlford"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Hundreds of construction jobs and skilled tech jobs in operation",
+      "claimant": "ILI Group",
+      "binding_status": "aspirational",
+      "source_ids": ["src-ili-rufus-consultation"]
+    },
+    {
+      "benefit": "Community support initiatives including school transport, defibrillators and local funding, plus training and apprenticeship pathways",
+      "claimant": "ILI Group",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-ili-rufus-consultation"]
+    },
+    {
+      "benefit": "Majority of the site given over to biodiversity and landscaping (new trees, wildflower meadow)",
+      "claimant": "ILI Group",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-bbc-rufus-2026", "src-planit-25-0008-preapp"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Ayrshire Major Development Community Group",
+      "stakeholder_type": "resident_group",
+      "position": "Critical/opposed: questions scale, absence of EIA to date, water and energy demands, and quality of early engagement",
+      "source_ids": ["src-amdcg-proposal"]
+    },
+    {
+      "stakeholder": "Action to Protect Rural Scotland",
+      "stakeholder_type": "campaign_group",
+      "position": "Tracking the proposal within its national data centres campaign and signposting the local opposition campaign",
+      "source_ids": ["src-aprs-hurlford"]
+    }
+  ],
+  "campaign_groups": [
+    "Ayrshire Major Development Community Group",
+    "Action to Protect Rural Scotland (APRS)"
+  ],
+  "notes": "No community council or elected member positions located as of 2026-07-30; no formal representation counts exist because no full application has been validated."
+}

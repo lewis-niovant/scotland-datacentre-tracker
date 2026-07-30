@@ -1,0 +1,16 @@
+{
+  "connection_status": "unknown",
+  "requested_import_capacity_mw": {
+    "value": 600,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Ashfield Land / TechRE press release",
+    "applicable_date": "2026-04-22",
+    "confidence": "low",
+    "notes": "The 600 MW initial figure is described as 'both renewable and grid connected power'; no evidence located that a 600 MW connection application or offer exists with SSEN Transmission/NESO.",
+    "source_ids": ["src-aprs-blackdog", "src-digit-600mw"]
+  },
+  "evidence_basis": "Developer press release and journalism only. The offshore-wind narrative is explicitly exploratory: developers are 'exploring the potential for private-wire connections' to ScotWind/INTOG projects, and 'discussions are taking place' with Cerulean Winds over the feasibility of a link from the Aspen floating wind farm. Cerulean's own quote frames Aspen as supplying the grid first, with private-wire to industrial users 'as the project scales up'. TechRE claims 'access to three gigawatts of renewably generated wind energy, significant grid connections and the ability to bring international subsea cables' — none evidenced in any regulatory, NESO or planning document found. On present evidence the offshore wind link is rhetorical/prospective, not contractual.",
+  "notes": "No SSEN substation, connection voltage, queue position or Gate 2 status identified for this project. Region context: proximity to landfall of ScotWind/INTOG projects north of Aberdeen is the basis of the developers' power narrative.",
+  "source_ids": ["src-aprs-blackdog", "src-digit-600mw", "src-abn-blackdog"]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "reference": "25/01835/SCR",
+    "planning_authority": "Scottish Borders Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening request by Sunlaws Development Company Limited for 'Erection of data centre comprising of three data centre buildings with associated infrastructure', Southside Data Centre, Land At Clawbare Cottage, Longformacus, Duns. Portal keyVal T7264GNT0BQ00. Submitted circa December 2025 (document mirror dated 11 December 2025; Border Telegraph coverage of the submission).",
+    "decision": "screening_eia_required",
+    "decision_date": "2026-02-27",
+    "decision_notes": "APRS reports 'the development will need to have an EIA (decision letter 27 Feb 2026)'. Screening opinion text not obtained — SBC portal returned 503 during research; decision and date need direct verification.",
+    "eia_required": true,
+    "official_url": "https://eplanning.scotborders.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=T7264GNT0BQ00",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-sbc-portal-southside-scr", "src-planningorg-sunlaws-form", "src-bt-southside-plans", "src-aprs-duns-dc"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Scottish Borders Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice for the Southside Data Centre. Scottish Borders Council confirmed that the proposed pre-application consultation — Longformacus Village Hall on 4 June 2026 and Westruther Village Hall on 10 June 2026 — satisfies the statutory requirement. PAN reference number not located (portal unreachable).",
+    "decision": "other",
+    "decision_notes": "PAN accepted by the council (statutory 21-day check); around 170 residents attended the two June 2026 events.",
+    "official_url": "https://eplanning.scotborders.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2026-06-04",
+        "event_type": "consultation_event",
+        "title": "Pre-application consultation, Longformacus Village Hall",
+        "source_ids": ["src-deadline-southside-consult", "src-bt-southside-pan"]
+      },
+      {
+        "event_date": "2026-06-10",
+        "event_type": "consultation_event",
+        "title": "Pre-application consultation, Westruther Village Hall (attended by the Duke of Roxburghe and Roxburghe Estates MD Jaap Röell)",
+        "source_ids": ["src-hellorayo-duke", "src-bt-southside-pan"]
+      }
+    ],
+    "source_ids": ["src-bt-southside-pan", "src-deadline-southside-consult"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Scottish Borders Council",
+    "application_type": "eia_scoping",
+    "description": "Environmental Scoping Report submitted to Scottish Borders Council (reported mid-July 2026) setting out the proposed scope and methods of the Environmental Impact Assessment. Reference number and submission date not located (portal unreachable). Developer states the full EIA and planning application are expected no earlier than late 2026, with further public engagement planned for autumn 2026.",
+    "decision": "pending",
+    "official_url": "https://eplanning.scotborders.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-bt-southside-scoping"]
+  }
+]

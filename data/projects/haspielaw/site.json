@@ -1,0 +1,16 @@
+{
+  "site_name": "Land at Haspielaw Farm",
+  "address": "Land At Haspielaw Farm, Muttonhole Road, Hamilton ML3 8RX",
+  "postcode": "ML3 8RX",
+  "settlement": "Hamilton",
+  "latitude": 55.741923,
+  "longitude": -4.07286,
+  "location_precision": "site_centroid",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "unknown",
+  "current_land_use": "Farmland (Haspielaw Farm); agricultural per campaign description, unverified against planning documents",
+  "green_belt": null,
+  "nearest_settlements": ["Hamilton", "Quarter", "Meikle Earnock"],
+  "land_notes": "Coordinates are the application point from the council register via PlanIt (easting/northing 269965/651784), in ward 18 Hamilton West and Earnock, south-west of Hamilton off Muttonhole Road. APRS describes the site as green belt farmland south-west of Hamilton, but this could not be verified against council records (portal unreachable; screening documents not retrieved), so green_belt is left null and no site area is recorded. The separate Cadzow BESS section 36 site (Land 325m SSE of Windyhills, Muttonhole Road) lies roughly 0.5 km east of this point.",
+  "source_ids": ["src-planit-haspielaw-p250490", "src-aprs-hamilton-dc", "src-planit-cadzow-bess-p250782"]
+}

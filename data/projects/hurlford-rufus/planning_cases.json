@@ -1,0 +1,43 @@
+[
+  {
+    "reference": "25/0008/PREAPP",
+    "planning_authority": "East Ayrshire Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice: 'Data centre complex including data halls, substation, new road access, balancing pond, security, associated development, landscaping, new trees, wildflower meadow (major application)' at Land at Purroch Farm, Mauchline Road, Hurlford.",
+    "submission_date": "2025-11-10",
+    "validation_date": "2025-11-10",
+    "decision_date": "2025-11-25",
+    "decision": "other",
+    "decision_notes": "The council's Idox portal (via PlanIt mirror) records the outcome as 'Approved with Conditions' (decided 2025-11-25, delegated) — for a PAN this denotes acceptance of the notice/consultation approach, not planning permission. A formal (major) planning application can follow no earlier than 12 weeks after the PAN.",
+    "eia_required": null,
+    "official_url": "https://eplanning.east-ayrshire.gov.uk/online/applicationDetails.do?keyVal=T5KFT0GF01U00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-11-10",
+        "event_type": "pan_lodged",
+        "title": "Proposal of Application Notice received and validated by East Ayrshire Council",
+        "source_ids": ["src-planit-25-0008-preapp"]
+      },
+      {
+        "event_date": "2026-02-24",
+        "event_type": "consultation_event",
+        "title": "Pre-application consultation event, Park Hotel, Rugby Park, Kilmarnock (3pm-7pm)",
+        "source_ids": ["src-ili-rufus-consultation"]
+      },
+      {
+        "event_date": "2026-03-03",
+        "event_type": "consultation_event",
+        "title": "Pre-application consultation event, Hurlford Community Centre, Cessnock Road (3pm-7pm)",
+        "source_ids": ["src-ili-rufus-consultation"]
+      },
+      {
+        "event_date": "2026-03-11",
+        "event_type": "consultation_event",
+        "title": "Pre-application consultation event, Galston Community Centre, 34 Orchard Street (3pm-7pm)",
+        "source_ids": ["src-ili-rufus-consultation"]
+      }
+    ],
+    "source_ids": ["src-eac-portal-25-0008-preapp", "src-planit-25-0008-preapp", "src-aprs-hurlford"]
+  }
+]

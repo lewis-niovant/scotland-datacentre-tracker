@@ -1,0 +1,15 @@
+{
+  "connection_status": "unknown",
+  "requested_import_capacity_mw": {
+    "value": 400,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "ILI Group (badge figure from Stoics launch coverage; metric undefined)",
+    "confidence": "low",
+    "notes": "No grid connection application, offer or agreement document has been located; 400MW is the project badge figure and its metric (import vs IT load) is undisclosed.",
+    "source_ids": ["src-dcd-stoics-2025", "src-dcr-submission"]
+  },
+  "evidence_basis": "Developer statement only: ILI's website says each Stoics site 'has secured grid connection'. The EIA screening request is described as 'Data Centre Campus Including Grid Connection', implying grid infrastructure within the proposal, but no network operator, voltage, substation, connection date or NESO/Ofgem record has been identified for Aurelius.",
+  "notes": "The PAN description includes an on-site substation. The area DNO is SP Energy Networks (SP Distribution) but no source confirms the connection route. Test the 400MW claim against the eventual screening report/application documents and NESO connections-queue data.",
+  "source_ids": ["src-ili-data-centres", "src-planit-nlc-26-00595-eiascr", "src-planit-nlc-25-00989-pan"]
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "reference": "25/01328/PAN",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice: construction of data centre building(s), together with associated development, infrastructure and utilities including flexible commercial/industrial buildings, substation, and battery energy storage (BES) and generation (if BES greater than 50MW it will form a separate application to the ECU for Section 36 consent) — South Lanridge Farm, Linrigg Road, Newhouse ML1 5ND. PAN text (per APRS) also anticipates new road accesses, strategic landscaping and open space enhancements, SUDS and drainage infrastructure, and supporting plant and utilities.",
+    "submission_date": "2025-12-17",
+    "validation_date": "2026-01-09",
+    "decision_date": "2026-01-29",
+    "decision": "other",
+    "decision_notes": "PAN 'Comments' decision issued 2026-01-29. Notice was copied to local MPs, MSPs and community councils (STV). Developer consultation events intended for April-June 2026; confirmation they occurred not located. 1,349 constraint records on the portal entry; ward Fortissat. Applicant address 177 Bothwell Street, Glasgow G2 7ER (HFD Group registered office).",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=T7O051BA0NC00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2026-01-29", "event_type": "pan_decision", "title": "PAN acknowledged ('Comments') by North Lanarkshire Council", "source_ids": ["src-planit-nlc-25-01328-pan"] }
+    ],
+    "source_ids": ["src-planit-nlc-25-01328-pan", "src-stv-south-lanridge-pan", "src-aprs-chapelhall-aigz"]
+  }
+]

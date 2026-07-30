@@ -1,0 +1,13 @@
+[
+  {
+    "capacity_type": "connection_application",
+    "value_mw": 800,
+    "state": "reported",
+    "claimant": "APRS (citing NESO Existing Agreements Register)",
+    "confidence": "low",
+    "preferred": true,
+    "preferred_rationale": "Only figure in the public record; a single-sourced restatement of a NESO register entry.",
+    "notes": "Largest of the five gate 2 connection-only sites APRS reports; stated to connect to the new Brechin substation. Register row not independently verified; MW quantity type and end use unconfirmed.",
+    "source_ids": ["src-aprs-data-centre-map", "src-neso-existing-agreements-register"]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "network_operator": "NESO (system operator agreement claimed); local network operator not stated — SP Transmission/SP Distribution area",
+  "connection_status": "offer",
+  "requested_import_capacity_mw": {
+    "value": 300,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "notes": "300MW demand utility capacity per PAN; developer states 'grid offer accepted' / 'formal agreement with NESO' in June 2025 confirming the project can connect.",
+    "source_ids": ["src-apatura-westerhill-project", "src-edc-portal-tp-ed-25-0428"]
+  },
+  "nearby_substation": "Lambhill substation (south-west of site)",
+  "reinforcement_required": null,
+  "evidence_basis": "Developer consultation website and exhibition panels only; no NESO/TEC register entry independently verified.",
+  "notes": "Developer also claims the campus will prioritise use of curtailed renewable electricity, citing NESO curtailment costs (>£1bn in 2024). The 500MW BESS would connect on the same site. Connection status classed as 'offer' solely on the developer's statement that a grid offer was accepted in June 2025.",
+  "source_ids": ["src-apatura-westerhill-project", "src-apatura-westerhill-panels"]
+}

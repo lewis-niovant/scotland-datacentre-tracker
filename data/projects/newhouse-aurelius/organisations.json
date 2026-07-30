@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ILI Group (Intelligent Land Investments Group plc)",
+    "role": "developer",
+    "company_number": "SC564296",
+    "jurisdiction": "Scotland",
+    "website": "https://ili-energy.com",
+    "ownership_summary": "Hamilton-based clean energy and infrastructure development company; promoter of The Stoics three-site data centre programme (Cato, Rufus, Aurelius). Historically a developer that takes projects through consent rather than an operator. Registered office 33 Bothwell Road, Hamilton ML3 0AS — the applicant contact address on PAN 25/00989/PAN.",
+    "confidence": "high",
+    "source_ids": ["src-ch-ili-group", "src-ili-data-centres", "src-bdc-stoics-2025", "src-planit-nlc-25-00989-pan"]
+  },
+  {
+    "name": "ILI Aurelius Limited",
+    "role": "spv",
+    "company_number": "SC825293",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Private limited company incorporated 9 October 2024, registered at ILI Group's office (33 Bothwell Road, Hamilton ML3 0AS); SIC 41201 construction of commercial buildings. Named as the party giving the statutory public-exhibition notice for the North Lanrigg site; the applicant name on the PAN itself is not visible via the PlanIt mirror.",
+    "beneficial_owner_public": null,
+    "confidence": "high",
+    "notes": "PSC/officer detail not captured. Greig Templeton (Planning Manager, gt@ili-energy.com) was the consultation contact; Simon Munro was the named PAN contact at the Hamilton address.",
+    "source_ids": ["src-ch-ili-aurelius", "src-pnp-aurelius-exhibition", "src-planit-nlc-25-00989-pan"]
+  },
+  {
+    "name": "North Lanarkshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "confidence": "high",
+    "source_ids": ["src-planit-nlc-25-00989-pan", "src-planit-nlc-26-00595-eiascr"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot",
+    "confidence": "high",
+    "notes": "National charity running a Scotland-wide data centres campaign; tracks the Aurelius proposal ('ILI Aurelius, Newhouse') and, with the Woodhall Faskine and Palacecraig Conservation Group, has called for a combined assessment of all data centre developments around the North Lanarkshire AI Growth Zone.",
+    "source_ids": ["src-aprs-newhouse", "src-aprs-agz-transparency"]
+  }
+]

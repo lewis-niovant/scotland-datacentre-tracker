@@ -1,0 +1,23 @@
+[
+  {
+    "capacity_type": "connection_application",
+    "value_mw": 500,
+    "state": "reported",
+    "applicable_date": "2024-10-21",
+    "claimant": "Shepherd Chartered Surveyors (selling agent, on behalf of landowner)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "The 500MW figure is anchored to a specific grid connection application ('submitted 21 October 2024 for 500MW planned demand capacity') in the sale particulars; all other 500MW mentions appear to derive from this.",
+    "notes": "Planned demand capacity per the marketing particulars. Not verified against network operator data; unclear whether this is IT load or import capacity at the connection point.",
+    "source_ids": ["src-shepherd-east-airdrie-sale"]
+  },
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 500,
+    "state": "reported",
+    "claimant": "APRS (describing the Apatura proposal)",
+    "confidence": "low",
+    "notes": "APRS describes the scheme as 'a proposal for a 500MW data centre' and notes 'grid application submitted for 500MW'. Appears to restate the connection-application figure rather than an independent capacity statement.",
+    "source_ids": ["src-aprs-drumshangie"]
+  }
+]

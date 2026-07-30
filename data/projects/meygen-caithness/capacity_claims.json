@@ -1,0 +1,19 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "SIMEC Atlantis Energy / Invest Highland",
+    "notes": "No IT load or grid import figure for the data centre itself has ever been published; the proposal was described only as 'hyperscale'.",
+    "source_ids": ["src-proactive-simec-datacentre-2019", "src-invest-highland-data-centres"]
+  },
+  {
+    "capacity_type": "onsite_generation",
+    "value_mw": 80,
+    "state": "developer_stated",
+    "claimant": "SIMEC Atlantis Energy",
+    "applicable_date": "2019-11-01",
+    "notes": "Planned ~80 MW additional MeyGen tidal capacity (consented seabed lease) intended to supply the data centre by private wire, within a 'virtual power plant' with nearby wind farms. This is generation capacity, not data centre load.",
+    "source_ids": ["src-proactive-simec-datacentre-2019", "src-renewablesnow-atlantis-datacentre-update"]
+  }
+]

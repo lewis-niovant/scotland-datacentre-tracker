@@ -1,0 +1,12 @@
+[
+  {
+    "cooling_type": "unstated",
+    "cooling_description": "Developer states the data centres 'would utilise advanced cooling technologies that don't place a burden on water resources' and would 'strive to achieve full water neutrality'. No cooling technology, water volumes or WUE published.",
+    "annual_water_m3": null,
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Water-neutrality claim is aspirational and unquantified; to be tested against the EIA scoping report when the official record is accessible.",
+    "source_ids": ["src-cx-no2np-repost"]
+  }
+]

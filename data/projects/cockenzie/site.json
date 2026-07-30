@@ -1,0 +1,31 @@
+{
+  "site_name": "Former Cockenzie power station coal store",
+  "settlement": "Cockenzie and Port Seton / Prestonpans",
+  "latitude": 55.963,
+  "longitude": -2.978,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 283000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "East Lothian Council",
+    "notes": "Council states ~70 acres (approx. 28.3 ha) of the former coal store would be leased to the joint venture; boundary not yet published.",
+    "source_ids": ["src-elc-cockenzie-dc-update-2026", "src-midlothianview-cockenzie-2026"]
+  },
+  "greenfield_brownfield": "brownfield",
+  "current_land_use": "Vacant former coal store land within the demolished Cockenzie power station site; remediation/site-preparation works funded by an £11.3m Levelling Up Fund round 2 award",
+  "previous_land_use": "Coal store for Cockenzie coal-fired power station (operational 1967/68-2013, demolished from 2015)",
+  "nearest_settlements": ["Cockenzie", "Port Seton", "Prestonpans"],
+  "protected_designations": [
+    "Adjacent/overlapping: Battle of Prestonpans site (Historic Environment Scotland Inventory of Historic Battlefields) — the wider masterplan area includes a 'Battle of Prestonpans' zone",
+    "Nearby: route of the 1722 Tranent-Cockenzie Waggonway heritage feature"
+  ],
+  "land_notes": "The wider ~92 ha former power station site is owned by East Lothian Council (purchased from ScottishPower in 2018). Approx. 7 acres on the western portion was sold to Inch Cape Offshore Wind for an onshore substation. The coal store forms one of four masterplan zones; the power station footprint remains available for other development. Coordinates are an approximate centroid of the coal store area, pending publication of a red-line boundary.",
+  "source_ids": [
+    "src-elc-cockenzie-dc-update-2026",
+    "src-stantec-cockenzie-masterplan",
+    "src-galbraith-cockenzie",
+    "src-wikipedia-cockenzie-ps"
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Slate Island Developments Limited",
+    "role": "developer",
+    "company_number": "SC680122",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Private limited company incorporated 6 November 2020; registered office 99 Earnhill Road, Larkfield Industrial Estate, Greenock PA16 0EQ; SIC 68100 (buying and selling of own real estate). Sole director Alexander ('Sandy') Easdale. James and Alexander Easdale were registered PSCs (25-50% each) from incorporation until 22 April 2021; since then the company has filed an active statement that it has no registrable person with significant control, so current beneficial ownership is not public. Files small-company (total exemption full) accounts.",
+    "beneficial_owner_public": false,
+    "confidence": "high",
+    "notes": "Name references the Slate Islands (Easdale island) — consistent with Easdale family branding. The Easdale brothers (owners of McGill's bus group) were the housing-era site owners.",
+    "source_ids": ["src-ch-slate-island", "src-ch-slate-island-psc"]
+  },
+  {
+    "name": "Sandy Easdale, James Easdale and Advance Construction",
+    "role": "landowner",
+    "ownership_summary": "Named as the site owners/applicants for the February 2020 housing PPP at the former IBM site. Not re-verified as the current registered owners for the 2026 data centre proposal.",
+    "valid_from": "2020-02-10",
+    "confidence": "medium",
+    "notes": "Current landownership for the data centre application site is an open question; a Registers of Scotland title check is suggested.",
+    "source_ids": ["src-inverclydenow-spango-housing-app"]
+  },
+  {
+    "name": "IBM United Kingdom Ltd",
+    "role": "other",
+    "notes": "Former occupier/operator of the Spango Valley manufacturing campus, 1954 to 2016/17.",
+    "confidence": "high",
+    "source_ids": ["src-bebeez-spango", "src-wikipedia-spango"]
+  },
+  {
+    "name": "Inverclyde Council",
+    "role": "planning_authority",
+    "notes": "Determining authority for the data centre Major application (Town and Country Planning (Scotland) Act 1997). Planning contact: dmplanning@inverclyde.gov.uk.",
+    "confidence": "high",
+    "source_ids": ["src-spango-consult-home"]
+  },
+  {
+    "name": "Scottish Government Energy Consents Unit",
+    "role": "planning_authority",
+    "notes": "Determining authority for the BESS under Section 36 of the Electricity Act 1989.",
+    "confidence": "high",
+    "source_ids": ["src-spango-consult-home"]
+  },
+  {
+    "name": "SP Energy Networks",
+    "role": "network_operator",
+    "notes": "Developer states a Gate 1 grid connection offer secured from SPEN to a local substation.",
+    "confidence": "medium",
+    "source_ids": ["src-spango-consult-updates"]
+  },
+  {
+    "name": "Unnamed data centre operator",
+    "role": "operator",
+    "notes": "Developer reports 'strong interest from a data centre operator'; identity not disclosed. No operator, tenant or pre-let confirmed.",
+    "confidence": "low",
+    "source_ids": ["src-inverclydenow-spango-dc", "src-dcd-spango"]
+  }
+]

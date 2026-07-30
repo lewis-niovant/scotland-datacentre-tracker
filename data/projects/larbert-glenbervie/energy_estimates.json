@@ -1,0 +1,14 @@
+[
+  {
+    "scenario_name": "Developer headline demand",
+    "peak_load_mw": 300,
+    "matching_method": "unstated",
+    "onsite_generation": "200 emergency backup diesel generators with 48-hour fuel supply (reported); connection to separately consented Apatura BESS ~2 miles north",
+    "methodology": "Developer states 300MW 'demand utility capacity' with grid connection at Denny substation; claims of 'maximising use of renewable electricity' and using otherwise-curtailed renewable energy are marketing statements without a published matching method, PPA or hourly-matching evidence.",
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "No annual GWh, load factor or PUE figures located. Campaigners note 300MW is a large share of Scottish peak demand (Larbert plus Auchtertool = 900MW, described as just under a quarter of Scotland's peak demand).",
+    "source_ids": ["src-falkirk-portal-p260237", "src-apatura-news-submission", "src-stv-fears", "src-stv-deadline", "src-datacentrenews"]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "ILI Group (Intelligent Land Investments Group plc)",
+    "role": "developer",
+    "company_number": "SC564296",
+    "jurisdiction": "Scotland",
+    "website": "https://ili-energy.com",
+    "ownership_summary": "Hamilton-based clean energy and infrastructure development company (founded 2004 as Intelligent Land Investments; group plc incorporated 2017). Promoter of The Stoics three-site data centre programme. Historically a developer that takes projects through consent rather than an operator.",
+    "confidence": "high",
+    "source_ids": ["src-ch-ili-group", "src-ili-data-centres", "src-bdc-stoics-2025"]
+  },
+  {
+    "name": "ILI Rufus Limited",
+    "role": "spv",
+    "company_number": "SC825440",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Private limited company incorporated 10 October 2024, registered at ILI Group's office (33 Bothwell Road, Hamilton, ML3 0AS); SIC 41201 construction of commercial buildings. Naming matches the Rufus project; not yet confirmed as the named applicant on planning documents.",
+    "beneficial_owner_public": null,
+    "confidence": "medium",
+    "notes": "PSC/officer detail not captured; applicant name on the PAN not shown by the PlanIt mirror ('See source').",
+    "source_ids": ["src-ch-ili-rufus"]
+  },
+  {
+    "name": "East Ayrshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "confidence": "high",
+    "source_ids": ["src-planit-25-0008-preapp"]
+  },
+  {
+    "name": "Logan Energy Project Management",
+    "role": "consultant",
+    "confidence": "low",
+    "notes": "Reported in press as 'involved in the scheme'; role not specified. The PAN agent address on PlanIt is 'Inverlair Farm, Tulloch, Roy Bridge PH31 4AR' with agent name not shown.",
+    "source_ids": ["src-yahoo-glasgowlive-rufus-2025", "src-planit-25-0008-preapp"]
+  },
+  {
+    "name": "Ayrshire Major Development Community Group",
+    "role": "campaign_group",
+    "website": "https://ayrshiremajordev.wixsite.com/hurlforddevelopment",
+    "confidence": "high",
+    "notes": "Volunteer-run local community campaign group critical of the proposal; runs a Facebook group (facebook.com/groups/1604173331036496).",
+    "source_ids": ["src-amdcg-proposal", "src-aprs-hurlford"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot",
+    "confidence": "high",
+    "notes": "National charity running a Scotland-wide data centres campaign; tracks this proposal and signposts the local campaign.",
+    "source_ids": ["src-aprs-hurlford"]
+  }
+]

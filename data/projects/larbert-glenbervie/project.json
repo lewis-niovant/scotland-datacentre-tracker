@@ -1,0 +1,78 @@
+{
+  "slug": "larbert-glenbervie",
+  "canonical_name": "Larbert Data Centre Campus (Glenbervie)",
+  "display_name": "Larbert Data Centre Campus",
+  "aliases": [
+    {
+      "alias": "Glenbervie",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-falkirk-portal-p260237",
+        "src-apatura-news-submission"
+      ]
+    },
+    {
+      "alias": "Larbert AI Data Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-apatura-consult-project"
+      ]
+    },
+    {
+      "alias": "Larbert AI Energy Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-apatura-consult-project"
+      ]
+    },
+    {
+      "alias": "Apatura Plean data centre (predecessor site)",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-dcd-relocation"
+      ]
+    }
+  ],
+  "summary": "Proposed 300 MW AI data centre campus by Apatura (applicant Apatura DC Project 5 Ltd) on ~55 acres of Scottish Enterprise-owned land at Glenbervie Business Park, Bellsdyke Road/Stirling Road, Larbert, Falkirk. Full application P/26/0237/FUL validated by Falkirk Council on 4 June 2026; two data centre buildings totalling 128,863 m2 at 25 m height plus an 11,500 m2 substation. Developer claims ~£1bn investment and first power 2028; the application drew ~6,700 objections by the July 2026 consultation close. 'Larbert' and 'Glenbervie' are the same campus — the scheme was relocated from Plean (Stirling) to Glenbervie, Larbert in October 2025.",
+  "project_type": "hyperscale",
+  "status": "pending",
+  "status_source_ids": [
+    "src-falkirk-portal-p260237"
+  ],
+  "maturity_level": "M2",
+  "maturity_explanation": "Full planning application P/26/0237/FUL received 29 May 2026 and validated 4 June 2026 by Falkirk Council; status 'Awaiting decision' as of 30 July 2026. Not yet consented.",
+  "verification_level": "verified",
+  "local_authority": "Falkirk Council",
+  "region": "Forth Valley",
+  "first_public_date": "2025-10-21",
+  "anticipated_construction_start": "2027 (developer consultation timeline; site remediation from Q3 2026)",
+  "anticipated_operational_date": "First power 2028 (developer press release); operations commence 2029 (developer consultation timeline)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-09-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-07-02",
+    "headline": "Public consultation period closed with ~6,700 objections recorded on Falkirk Council portal; pre-determination hearing reported to be required before committee decision",
+    "source_ids": [
+      "src-deadline-news-objections",
+      "src-stv-fears"
+    ]
+  },
+  "unknowns": [
+    "Exact site area in the red-line boundary (55 acres per developer press release vs 'around 50 acres' in consultation material) — application drawings not retrieved",
+    "Split of the 1,300+ claimed operational jobs between direct on-site roles and indirect/supply-chain roles, and the methodology/consultant behind the figures",
+    "Fuel storage volume and exact rating of the 200 reported backup diesel generators (planning documents not retrieved)",
+    "Water demand figures (annual/daily volumes) for the closed-loop cooling system",
+    "Whether any district-heating off-taker, network operator or funding has been identified for the 'district heat ready' commitment",
+    "Formal grid connection contract details (capacity, voltage, connection date) beyond developer statements of an accepted 'Gate 2 compliant' offer at Denny substation",
+    "Whether the application is EIA development and whether an EIA Report was submitted (STV reports a 52-document environmental impact assessment, unverified against the portal)",
+    "Committee/pre-determination hearing dates",
+    "Terms of Apatura's land arrangement with Scottish Enterprise (option, missives, lease)"
+  ],
+  "related_project_slugs": [
+    "jawcraig",
+    "ravenscraig"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "site_name": "Jawcraig (settlement-level placeholder)",
+  "settlement": "Jawcraig, near Slamannan, Falkirk",
+  "latitude": 55.966,
+  "longitude": -3.842,
+  "location_precision": "settlement_level",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "unknown",
+  "previous_land_use": "Area history of Jawcraig Colliery, opencast fireclay working (Wester Jawcraig) and Jawcraig brickworks; current land is largely farmland and rough grazing on the Slamannan Plateau. Not tied to any specific development parcel.",
+  "nearest_settlements": ["Slamannan", "Limerigg", "Avonbridge", "Bonnybridge"],
+  "land_notes": "Coordinates estimated as c.3 km north of Slamannan per the Gazetteer for Scotland description (Nominatim has no entry for Jawcraig); treat as settlement-level only.",
+  "source_ids": ["src-aprs-data-centre-map", "src-gazetteer-jawcraig"]
+}

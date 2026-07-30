@@ -1,0 +1,15 @@
+{
+  "connection_status": "unknown",
+  "requested_import_capacity_mw": {
+    "value": 540,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "ILI Group (badge figure, interpreted by SPICe as maximum instantaneous draw)",
+    "confidence": "low",
+    "notes": "No grid connection application, offer or agreement document has been located; 540MW is the project badge figure.",
+    "source_ids": ["src-spice-data-centres-2026", "src-yahoo-glasgowlive-rufus-2025"]
+  },
+  "evidence_basis": "Developer statement only: ILI's website says each Stoics site 'has secured grid connection'. No network operator, voltage, substation, connection date or NESO/Ofgem record identified for Rufus. The area DNO is SP Energy Networks (SP Distribution), but no source confirms the connection route.",
+  "notes": "The PAN description includes an on-site substation. Grid claim should be tested against the eventual planning application and NESO connections queue data.",
+  "source_ids": ["src-ili-data-centres", "src-planit-25-0008-preapp"]
+}

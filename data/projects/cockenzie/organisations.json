@@ -1,0 +1,47 @@
+[
+  {
+    "name": "East Lothian Council",
+    "role": "landowner",
+    "jurisdiction": "Scotland",
+    "website": "https://www.eastlothian.gov.uk",
+    "ownership_summary": "Local authority; bought the ~92 ha former Cockenzie power station site from ScottishPower in 2018. Would lease ~70 acres of the coal store to a joint venture with SDCL, with no capital contribution; equity/revenue return to the council not yet finalised.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "notes": "Also the planning authority for any future application — a dual role (landowner/JV partner and decision-maker) noted by local commentators.",
+    "source_ids": ["src-elc-cockenzie-dc-update-2026", "src-galbraith-cockenzie"]
+  },
+  {
+    "name": "East Lothian Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "confidence": "high",
+    "source_ids": ["src-elc-cockenzie-dc-update-2026"]
+  },
+  {
+    "name": "Sustainable Development Capital LLP (SDCL)",
+    "role": "developer",
+    "company_number": "OC330266",
+    "jurisdiction": "England and Wales (LLP)",
+    "website": "https://www.sdclgroup.com",
+    "ownership_summary": "Investment firm founded 2007 by Jonathan Maxwell (founder and CEO); specialises in energy efficiency and decentralised energy infrastructure; acts as developer, investor and fund manager; manages the listed SDCL Energy Efficiency Income Trust (SEIT). London HQ with offices in New York, Greenwich, Dublin, Hong Kong and Singapore.",
+    "beneficial_owner_public": true,
+    "valid_from": "2025-10-22",
+    "confidence": "high",
+    "notes": "Selected as preferred bidder via competitive tender agreed in a private report to Council, February 2025; announced 22 October 2025. Prospective joint-venture partner rather than confirmed applicant; end operator not identified.",
+    "source_ids": ["src-scn-cockenzie-announcement-2025", "src-companies-house-sdcl", "src-sdcl-about"]
+  },
+  {
+    "name": "Cockenzie and Port Seton Community Council",
+    "role": "community_group",
+    "confidence": "high",
+    "notes": "Chair Ben Morse has called for residents to be able to 'properly scrutinise' the joint venture before any planning application.",
+    "source_ids": ["src-elcourier-cockenzie-scrutiny-2026"]
+  },
+  {
+    "name": "Prestonpans Community Council",
+    "role": "community_group",
+    "confidence": "high",
+    "notes": "Raised concerns including 'greenwashing' of environmental claims, unclear water usage, absent community-benefits framework, and fear of minimal local job creation.",
+    "source_ids": ["src-elcourier-cockenzie-progress-2026"]
+  }
+]

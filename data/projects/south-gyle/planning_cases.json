@@ -1,0 +1,156 @@
+[
+  {
+    "reference": null,
+    "planning_authority": "City of Edinburgh Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice and pre-application consultation for 'Proposed Green Data Centre and Relocation of Green Space' at 1 Redheughs Avenue, prepared by Scott Hobbs Planning for Shelborn Drummond Ltd. Public exhibition boards dated 22 May 2025; feedback deadline 11 June 2025.",
+    "decision": "other",
+    "decision_notes": "PAN reference number not located (portal unreachable from research environment).",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-05-22",
+        "event_type": "consultation",
+        "title": "Public consultation boards published/exhibited",
+        "source_ids": ["src-shp-consultation-board"]
+      },
+      {
+        "event_date": "2025-06-11",
+        "event_type": "consultation_deadline",
+        "title": "Deadline for pre-application consultation feedback",
+        "source_ids": ["src-shp-consultation-board"]
+      }
+    ],
+    "source_ids": ["src-shp-consultation-board", "src-shp-project-page"]
+  },
+  {
+    "reference": "25/03575/SCR",
+    "planning_authority": "City of Edinburgh Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening request for the proposed data centre at 1 Redheughs Avenue. The council determined that an Environmental Impact Assessment was not required, reasoning that the brownfield urban site is not in a sensitive area, that the development would likely have a negligible impact on national greenhouse gas reduction targets, and that mitigation (waste heat, sustainability, noise, light, design, flood risk, landscaping, ecology) could be secured through the planning application process.",
+    "decision": "screening_eia_not_required",
+    "decision_notes": "The screening decision was strongly criticised by APRS ('gobsmacking') and was among the matters scrutinised at the committee hearing; the Screening Checklist and Screening Decision Report were later lodged on the DPEA appeal file (8 July 2026).",
+    "eia_required": false,
+    "official_url": "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/applicationDetails.do?activeTab=documents&keyVal=SZ4X9BEW0XE00",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-cec-portal-25-03575-scr", "src-deadline-hearing", "src-aprs-south-gyle", "src-dpea-ppa-230-2794", "src-scn-refusal"]
+  },
+  {
+    "reference": "25/04239/PPP",
+    "planning_authority": "City of Edinburgh Council",
+    "application_type": "permission_in_principle",
+    "description": "Planning permission in principle for erection of a Green Data Centre with associated infrastructure, landscaping, servicing, car and cycle parking; formation of public park with sports facilities; and formation of active travel routes; full approval for the siting of the data centre development and public park; maximum height and limits of deviation of proposed development; siting of active travel routes and points of vehicular access/egress.",
+    "submission_date": "2025-08-18",
+    "committee_date": "2026-02-04",
+    "decision_date": "2026-02-09",
+    "decision": "refused",
+    "decision_notes": "Refused unanimously by the Development Management Sub-Committee on 4 February 2026 against the officer recommendation of approval, after a hearing (data centre debated for nearly two hours of a four-hour meeting); formal decision date 9 February 2026 per the DPEA record. Refusal grounds as summarised by APRS: contrary to NPF4 Policy 1 (climate and nature crises), contrary to NPF4 Policy 2 (failure to address lifecycle greenhouse gas emissions), and contrary to City Plan 2030 Place 19 (does not support the mixed-use vision for the Edinburgh Park/South Gyle area). Committee debate focused on the undefined status of a 'green data centre' under NPF4, unevidenced renewable power supply figures, cooling and water uncertainty, deliverability of waste heat re-use, limited job creation (council consultation-response estimate of 39 jobs against over 200 proposed parking spaces), and impacts (noise, visual, security fencing, generator flues, diesel generator use) on the consented mixed-use development including housing c. 50 m away.",
+    "eia_required": false,
+    "representations": {
+      "notes": "Objection and support counts not established: the Idox portal was unreachable from the research environment and the committee report could not be retrieved. The application was reported to have 'caused uproar' from October 2025 and triggered a pre-determination hearing; 38 representations were separately lodged with the DPEA at appeal stage."
+    },
+    "official_url": "https://citydev-portal.edinburgh.gov.uk/idoxpa-web/applicationDetails.do?keyVal=T16TBMEWJO800&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-08-18",
+        "event_type": "application",
+        "title": "Date of application (per DPEA record); PPP first requested August 2025",
+        "source_ids": ["src-dpea-ppa-230-2794", "src-deadline-hearing"]
+      },
+      {
+        "event_date": "2025-09-30",
+        "event_type": "validation",
+        "title": "Application submitted/validated September 2025 (month-end used; exact date not established)",
+        "description": "Scott Hobbs Planning states the application was submitted in September 2025.",
+        "source_ids": ["src-shp-project-page"]
+      },
+      {
+        "event_date": "2026-01-27",
+        "event_type": "committee_scheduled",
+        "title": "Hearing at Development Management Sub-Committee announced for 4 February 2026, officers recommending approval",
+        "source_ids": ["src-deadline-hearing"]
+      },
+      {
+        "event_date": "2026-02-02",
+        "event_type": "campaign",
+        "title": "APRS publishes research against the scheme ahead of committee ('100,000 idling cars-worth of diesel')",
+        "source_ids": ["src-dcr-campaigners"]
+      },
+      {
+        "event_date": "2026-02-04",
+        "event_type": "committee_decision",
+        "title": "Development Management Sub-Committee votes unanimously to refuse, against officer recommendation",
+        "source_ids": ["src-aprs-refusal-pr", "src-deadline-refusal", "src-dcr-refusal"]
+      },
+      {
+        "event_date": "2026-02-09",
+        "event_type": "decision_notice",
+        "title": "Formal decision date recorded by DPEA as 9 February 2026",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      }
+    ],
+    "source_ids": ["src-cec-portal-25-04239-ppp", "src-dpea-ppa-230-2794", "src-aprs-refusal-pr", "src-deadline-refusal", "src-dcr-refusal"]
+  },
+  {
+    "reference": "PPA-230-2794",
+    "planning_authority": "Scottish Government Planning and Environmental Appeals Division (DPEA)",
+    "application_type": "appeal",
+    "description": "Planning permission appeal by Shelborn Drummond Ltd against City of Edinburgh Council's refusal of 25/04239/PPP. Reason for appeal: refusal of application. Procedure: written submissions and further written submissions. Reporter: Ms Sue Bell; case officer Christopher Kennedy.",
+    "submission_date": "2026-03-31",
+    "consultation_deadline": "2026-04-28",
+    "decision": "pending",
+    "appeal_reference": "PPA-230-2794",
+    "appeal_status": "Live - allocated to reporter; written submissions; DPEA target decision date 18 August 2026; case update of 15 June 2026 noted one further written information request outstanding",
+    "representations": {
+      "notes": "38 documents under 'Representations to DPEA' on the case file (37 redacted representations plus responses); interested parties include APRS, ERCS Legal Ltd and individual residents. Deadline for representations was 28 April 2026."
+    },
+    "official_url": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?ID=128582",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2026-03-30",
+        "event_type": "appeal_statement",
+        "title": "Shelborn Appeal Statement dated 30 March 2026",
+        "source_ids": ["src-shelborn-appeal-statement", "src-aprs-south-gyle"]
+      },
+      {
+        "event_date": "2026-03-31",
+        "event_type": "appeal_lodged",
+        "title": "Appeal received by DPEA",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      },
+      {
+        "event_date": "2026-04-28",
+        "event_type": "consultation_deadline",
+        "title": "Deadline for representations to DPEA",
+        "source_ids": ["src-aprs-south-gyle"]
+      },
+      {
+        "event_date": "2026-04-30",
+        "event_type": "representation",
+        "title": "APRS submits representation with supporting documents (incl. Finch UKSC ruling, Raeshaw Farms v Scottish Ministers [2026] CSIH 10)",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      },
+      {
+        "event_date": "2026-06-15",
+        "event_type": "case_update",
+        "title": "DPEA case update: further written submission request outstanding; invited parties may comment",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      },
+      {
+        "event_date": "2026-07-08",
+        "event_type": "further_submissions",
+        "title": "Council lodges comments on ERCS Legal written submission and EIA screening documents on the appeal file",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      },
+      {
+        "event_date": "2026-08-18",
+        "event_type": "target_date",
+        "title": "DPEA target decision date",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      }
+    ],
+    "source_ids": ["src-dpea-ppa-230-2794", "src-shelborn-appeal-statement", "src-aprs-south-gyle"]
+  }
+]

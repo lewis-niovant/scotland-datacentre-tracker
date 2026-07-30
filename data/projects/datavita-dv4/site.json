@@ -1,0 +1,22 @@
+{
+  "site_name": "Land at Lancaster Avenue, Chapelhall",
+  "settlement": "Chapelhall",
+  "address": "Land At Lancaster Avenue, Chapelhall, North Lanarkshire",
+  "latitude": 55.83653,
+  "longitude": -3.93559,
+  "location_precision": "site_centroid",
+  "boundary_precision": "red_line_official",
+  "greenfield_brownfield": "greenfield",
+  "green_belt": true,
+  "current_land_use": "Green Belt land east of Chapelhall; a previous consented/proposed scheme for the site comprised a restaurant and other development per APRS's reading of the screening report",
+  "nearest_settlements": [
+    "Chapelhall",
+    "Newhouse"
+  ],
+  "land_notes": "Coordinates are the application point from the council portal record (easting/northing 278876/662062). Red-line boundary not published; APRS criticises the screening report for containing no layout diagram.",
+  "source_ids": [
+    "src-planit-nlc-25-01322-pan",
+    "src-planit-nlc-26-00707-eiascr",
+    "src-aprs-chapelhall-aigz"
+  ]
+}

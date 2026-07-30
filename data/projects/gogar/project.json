@@ -1,0 +1,43 @@
+{
+  "slug": "gogar",
+  "canonical_name": "Gogar data centre (reported 200 MW; no distinct planning record - likely conflation)",
+  "display_name": "Gogar (Edinburgh) - reported",
+  "aliases": [
+    {
+      "alias": "200MW data centre proposed for the Gogar area of Edinburgh",
+      "alias_type": "other",
+      "source_ids": ["src-spice-data-centres-2026"]
+    },
+    {
+      "alias": "Gogarburn data centre",
+      "alias_type": "place_name",
+      "source_ids": ["src-aprs-data-centres-eia-page"]
+    }
+  ],
+  "summary": "A '200 MW data centre proposed for the Gogar area of Edinburgh' that was 'deemed not to need an EIA' is cited by SPICe (June 2026) without developer, reference or further detail. Systematic searches of the City of Edinburgh Council planning record (via the PlanIt mirror of citydev-portal) found no data centre application at Gogar or Gogarburn. The reference is almost certainly a conflation with one of two verified Edinburgh schemes tracked separately: the Shelborn Drummond 212.42 MW 'Green Data Centre' at 1 Redheughs Avenue, South Gyle (EIA screened out under 25/03575/SCR; called 'the Gogarburn data centre' by APRS because the former RBS Drummond House site sits by the NatWest Gogarburn campus), or the Apatura Wester Hermiston 200 MW campus at Riccarton (EIA screened out under 25/02924/SCR and again under 25/05576/SCR), whose 200 MW figure exactly matches SPICe's. No developer identity, site or capacity exists for a distinct Gogar project; this record exists to document and resolve the reported name.",
+  "project_type": "unknown",
+  "status": "unknown",
+  "status_source_ids": ["src-planit-edinburgh-scr-records", "src-spice-data-centres-2026"],
+  "maturity_level": "M0",
+  "maturity_explanation": "No planning record, PAN, screening request or developer announcement for a data centre at Gogar/Gogarburn could be located; the only evidence is a one-line secondary mention in a SPICe blog and campaign material that applies the 'Gogarburn' label to the Shelborn South Gyle scheme. Recorded at M0/unknown pending confirmation that no distinct scheme exists.",
+  "verification_level": "reported",
+  "local_authority": "City of Edinburgh Council",
+  "region": "Edinburgh and Lothians",
+  "related_project_slugs": ["south-gyle", "wester-hermiston"],
+  "first_public_date": "2026-06-26",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "low",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-06-26",
+    "headline": "SPICe briefing cites a '200MW data centre proposed for the Gogor area of Edinburgh' as an example of a large proposal screened out of EIA; no matching distinct planning record found",
+    "source_ids": ["src-spice-data-centres-2026"]
+  },
+  "unknowns": [
+    "Whether SPICe's 'Gogar area' reference means the Shelborn South Gyle scheme (212.42 MW, rounded/near Gogarburn) or the Apatura Wester Hermiston scheme (exactly 200 MW) - SPICe cites no source.",
+    "Whether any genuinely separate data centre proposal exists at Gogar/Gogarburn (e.g. on NatWest Gogarburn or International Business Gateway land) that has not yet reached the planning portal - none found in portal, press, campaign or developer material.",
+    "Developer identity for any distinct Gogar scheme - unresolved because no distinct scheme could be evidenced."
+  ]
+}

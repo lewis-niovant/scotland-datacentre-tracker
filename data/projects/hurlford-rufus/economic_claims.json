@@ -1,0 +1,58 @@
+[
+  {
+    "claim_category": "capital_expenditure",
+    "value": 15000000000,
+    "unit": "gbp",
+    "geographic_scope": "All three Stoics sites (Cato, Rufus, Aurelius) combined — not Rufus alone",
+    "claimant": "ILI Group",
+    "methodology": "Not published",
+    "independently_reviewed": false,
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "£15 billion 'investment' claimed at the Stoics launch (4 Nov 2025). No per-site breakdown for Rufus has been published.",
+    "source_ids": ["src-bdc-stoics-2025", "src-yahoo-glasgowlive-rufus-2025"]
+  },
+  {
+    "claim_category": "peak_construction_workforce",
+    "value": null,
+    "unit": "jobs",
+    "geographic_scope": "All three Stoics sites combined",
+    "claimant": "ILI Group",
+    "methodology": "Not published",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "'Thousands of construction jobs at peak' claimed across the Stoics network; no number, no direct/indirect split, no per-site figure.",
+    "source_ids": ["src-ili-data-centres", "src-bdc-stoics-2025"]
+  },
+  {
+    "claim_category": "total_jobs_unspecified",
+    "value": null,
+    "value_min": 200,
+    "unit": "jobs",
+    "geographic_scope": "Rufus site",
+    "period": "construction",
+    "claimant": "ILI Group (Rufus consultation material)",
+    "methodology": "Not published",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "'Hundreds of jobs during construction' — unquantified and uncategorised (direct/indirect not stated; jobs vs job-years not stated). value_min 200 records only that 'hundreds' implies at least the low hundreds; treat as indicative.",
+    "source_ids": ["src-ili-rufus-consultation"]
+  },
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": null,
+    "unit": "unstated",
+    "geographic_scope": "Rufus site",
+    "period": "operation",
+    "claimant": "ILI Group (Rufus consultation material)",
+    "methodology": "Not published",
+    "binding_status": "aspirational",
+    "state": "not_disclosed",
+    "confidence": "low",
+    "notes": "'Skilled tech jobs when operating' claimed with no number; long-term 'high-value roles in operations and technology' also claimed at network level.",
+    "source_ids": ["src-ili-rufus-consultation", "src-ili-data-centres"]
+  }
+]

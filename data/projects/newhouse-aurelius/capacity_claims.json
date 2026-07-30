@@ -1,0 +1,35 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 400,
+    "state": "developer_stated",
+    "applicable_date": "2025-11-04",
+    "claimant": "ILI Group (via press coverage of The Stoics launch and subsequent trade press)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "The 400MW badge figure appears consistently across developer-derived trade press (DCD, Data Centre Review network breakdown: Cato 600MW + Rufus 540MW + Aurelius 400MW = ~1.5GW) and APRS, but no primary planning or grid document defining what the figure measures has been located.",
+    "notes": "Neither the PAN (25/00989/PAN) nor the EIA screening description states a MW figure. The metric behind 400MW (IT load vs grid import vs connection position) is undisclosed.",
+    "source_ids": ["src-dcd-stoics-2025", "src-dcr-submission", "src-aprs-newhouse", "src-bdc-stoics-2025"]
+  },
+  {
+    "capacity_type": "first_phase",
+    "value_mw": null,
+    "minimum_mw": 50,
+    "maximum_mw": 100,
+    "state": "developer_stated",
+    "phase": "Phase 1",
+    "claimant": "ILI Group (Stoics launch coverage; applies to each of the three sites, not Aurelius specifically)",
+    "confidence": "low",
+    "notes": "If consented, the first phase of each Stoics site could be operational by 2027 at 50-100MW, per launch coverage.",
+    "source_ids": ["src-dcd-stoics-2025", "src-bdc-stoics-2025"]
+  },
+  {
+    "capacity_type": "connection_offer",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "ILI Group",
+    "confidence": "low",
+    "notes": "ILI states each Stoics site 'has secured grid connection'; no MW value, network operator or connection agreement evidence is published for Aurelius. The EIA screening description 'Data Centre Campus Including Grid Connection' suggests grid works within the proposal but gives no figure.",
+    "source_ids": ["src-ili-data-centres", "src-planit-nlc-26-00595-eiascr"]
+  }
+]

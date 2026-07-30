@@ -1,0 +1,31 @@
+{
+  "summary": "Formal community reaction is at an early stage (pre-application). The principal sensitivity flagged publicly is that the site encompasses the location of the 1918 Stanrigg pit disaster, where 19 miners died and 11 remain entombed under the moss, with a memorial adjacent; APRS also highlights the peatland (Drumshangie Moss) and the development-plan history of the site. No community council or resident-group representations were located as of 30 July 2026 — the statutory consultation stage will follow any Planning Permission in Principle application.",
+  "principal_concerns": [
+    {
+      "concern": "The proposal area encompasses the Stanrigg pit disaster site and its memorial; 11 of the 19 victims of the 1918 inrush were never recovered and remain entombed at the site, making ground disturbance highly sensitive.",
+      "raised_by": "APRS (highlighted on its Drumshangie tracking page)",
+      "source_ids": ["src-aprs-drumshangie", "src-wikipedia-stanrigg"]
+    },
+    {
+      "concern": "Loss/disturbance of Drumshangie Moss peatland: organic soils/peat and two local nature conservation designations (Drumshangie Moss North SINC; Drumshangie Moss: Dykehead (South) SINC) are recorded on the wider landholding.",
+      "raised_by": "APRS; designations documented in the applicant's own July 2024 East Airdrie EIA",
+      "source_ids": ["src-aprs-drumshangie", "src-east-airdrie-eia-nts"]
+    },
+    {
+      "concern": "Development-plan status: the land was allocated for a data centre (NLC00520) and energy plant (NLC00519) in the NLC LDP 2022, but APRS states the most recent development-plan position moved the site toward mixed use, raising questions over policy support for a 500MW campus.",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-drumshangie", "src-east-airdrie-eia-nts"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Tracking the proposal on its national data centre map; flags the Stanrigg disaster site, the moss and the LDP history. Has not published a formal objection at pre-application stage.",
+      "source_ids": ["src-aprs-drumshangie"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "planning_authority_contact": "North Lanarkshire Council planning — https://eplanning.northlanarkshire.gov.uk/online-applications/",
+  "notes": "The Stanrigg Memorial was assessed only as a visual receptor (Viewpoint 7, 'slight' effects) in the separate Albert Bartlett East Airdrie mixed-use EIA of July 2024; how the data centre proposal treats the memorial and the unrecovered remains has not yet been published."
+}

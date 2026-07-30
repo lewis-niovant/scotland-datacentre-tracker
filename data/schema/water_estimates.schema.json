@@ -1,0 +1,36 @@
+{
+  "$id": "water_estimates.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Water & cooling estimates",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["estimate_type", "source_ids"],
+    "properties": {
+      "phase": { "type": "string" },
+      "cooling_type": {
+        "type": "string",
+        "enum": ["air_cooled", "closed_loop_liquid", "evaporative", "adiabatic_hybrid", "direct_liquid", "immersion", "mixed", "unstated"]
+      },
+      "cooling_description": { "type": "string" },
+      "annual_water_m3": { "type": ["number", "null"] },
+      "daily_average_m3": { "type": "number" },
+      "daily_peak_m3": { "type": "number" },
+      "initial_fill_m3": { "type": "number" },
+      "potable_water": { "type": ["boolean", "null"] },
+      "reclaimed_water": { "type": ["boolean", "null"] },
+      "closed_loop": { "type": ["boolean", "null"] },
+      "wue_l_per_kwh": { "type": "number" },
+      "discharge_method": { "type": "string" },
+      "estimate_type": {
+        "type": "string",
+        "enum": ["application", "developer", "consultant", "regulator", "independently_calculated", "campaign", "unknown"]
+      },
+      "state": { "$ref": "common.schema.json#/$defs/uncertaintyState" },
+      "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+      "notes": { "type": "string" },
+      "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+    },
+    "additionalProperties": false
+  }
+}

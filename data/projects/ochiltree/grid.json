@@ -1,0 +1,18 @@
+{
+  "network_operator": "SP Energy Networks (SPT/SPD area)",
+  "connection_status": "unknown",
+  "requested_import_capacity_mw": {
+    "value": 200,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Apatura DC Project 12 Ltd (screening request, as reported)",
+    "confidence": "low",
+    "notes": "200MW is described as IT load; whether a matching grid import connection has been applied for or secured at Killoch is not evidenced by any regulator/NESO record located.",
+    "source_ids": ["src-bebeez-dcd-ochiltree-2025"]
+  },
+  "nearby_substation": "Killoch Substation (less than 0.5 km southeast of the site)",
+  "evidence_basis": "Screening request as reported by trade press: new on-site substation plus underground cable to Killoch Substation. Apatura corporate marketing claims a c.10.6GW 'grid-secured' portfolio with c.1.8GW targeted at data centres, but no site-specific connection offer, gate status or voltage has been published.",
+  "overlaps_other_project": "Killoch area also hosts the 150MW Westport BESS proposal (RES) and a 200MW BESS screening adjacent to Killoch (25/0002/S36SCR); potential cumulative demand on the same substation.",
+  "notes": "Network operator inferred from location within the SP Energy Networks licence area; not independently confirmed for this connection.",
+  "source_ids": ["src-bebeez-dcd-ochiltree-2025", "src-apatura-website", "src-planit-ea-25-0002-s36scr", "src-planit-ea-25-0001-s36scr"]
+}

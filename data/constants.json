@@ -1,0 +1,29 @@
+{
+  "comparisons": {
+    "football_pitch_m2": {
+      "value": 7140,
+      "definition": "Standard comparison pitch 105m x 68m. Sources vary in what they call a 'football pitch'; the Observatory uses this definition throughout and comparisons can be turned off in the UI."
+    },
+    "household_annual_electricity_kwh": {
+      "value": 3400,
+      "definition": "Ofgem typical domestic consumption value (medium user, electricity only). Used for household-equivalent comparisons; shown as an approximation."
+    },
+    "olympic_pool_m3": {
+      "value": 2500,
+      "definition": "Nominal 50m x 25m x 2m Olympic swimming pool volume, for water-use comparisons."
+    }
+  },
+  "national_context": {
+    "scotland_electricity_generated_2024_twh": {
+      "value": 51.8,
+      "source": "SPICe Data Centres briefing, 26 June 2026",
+      "note": "91.5% from renewables"
+    },
+    "gb_demand_connection_queue_gw": {
+      "value": 125,
+      "source": "Ofgem, Proposed Data Centre Connection Reforms consultation, 29 July 2026",
+      "note": "Up from 41 GW Nov 2024; ~80 GW attributed to data centres. No public project-level demand register exists."
+    }
+  },
+  "snapshot_date": "2026-07-30"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": 39,
+    "unit": "jobs",
+    "geographic_scope": "On site (1 Redheughs Avenue)",
+    "claimant": "City of Edinburgh Council (estimate in a consultation response, as reported by APRS from the committee hearing)",
+    "methodology": "Not stated; council estimate cited during committee deliberations and not challenged by the developer",
+    "independently_reviewed": null,
+    "binding_status": "unstated",
+    "state": "reported",
+    "confidence": "medium",
+    "notes": "At committee the developer did not dispute that operational employment would be very small, saying there would 'certainly initially' be many contractors and deliveries on site. Cllr Kevin Lang described job creation as 'limited'. Category recorded as direct operational jobs because the figure was discussed as the data centre's own staffing; the council document did not state whether the figure is FTE.",
+    "source_ids": ["src-aprs-refusal-pr", "src-deadline-refusal"]
+  },
+  {
+    "claim_category": "other",
+    "value": null,
+    "unit": "unstated",
+    "geographic_scope": "Edinburgh Park / national digital infrastructure",
+    "claimant": "Shelborn Drummond Ltd (planning statement)",
+    "methodology": "Qualitative claim only",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "The developer's quantified economic case (construction jobs, capital investment, GVA), if any, was not located: the planning statement is on the inaccessible council portal. Publicly reported claims are qualitative: 'vital energy infrastructure' to support and maximise the potential of the Digital Fibre Network, and potential supply of waste heat to homes and offices to be built at Edinburgh Park. No jobs or investment figures were cited in any located source.",
+    "source_ids": ["src-deadline-refusal", "src-dcr-refusal"]
+  }
+]

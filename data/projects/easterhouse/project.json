@@ -1,0 +1,36 @@
+{
+  "slug": "easterhouse",
+  "canonical_name": "Easterhouse grid connection (potential data centre site)",
+  "display_name": "Easterhouse (grid record only)",
+  "summary": "A 500MW gate 2 grid connection reported by APRS (citing NESO's Existing Agreements Register) for 'Easterhouse' — presumed to be the Easterhouse area of east Glasgow. No planning application, pre-application notice, developer announcement or press coverage has been found; the site exists in the public record only as a grid connection agreement. No developer has been identified.",
+  "project_type": "unknown",
+  "status": "grid_record_only",
+  "status_source_ids": [
+    "src-aprs-data-centre-map"
+  ],
+  "maturity_level": "M0",
+  "maturity_explanation": "Only evidence is a reported 500MW gate 2 grid connection in NESO's Existing Agreements Register as relayed by APRS (page updated July 2026). PlanIt search of Glasgow City 'data centre' records 2019-2026 found no Easterhouse-area record (only small unit conversions elsewhere in the city); no developer or press attribution found.",
+  "verification_level": "unverifiable",
+  "local_authority": "Glasgow City Council",
+  "region": "Glasgow and Clyde Valley",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "low",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-07-29",
+    "headline": "APRS data centre map (updated 29 July 2026) lists Easterhouse 500MW among five gate 2 connection sites 'not otherwise seen elsewhere'",
+    "source_ids": [
+      "src-aprs-data-centre-map"
+    ]
+  },
+  "unknowns": [
+    "The NESO register row (connectee, connection site, dates) has not been independently extracted; the 500MW figure rests on APRS's reading.",
+    "Exact location: 'Easterhouse' could denote the housing area, the adjacent Easterfield/Gartloch fringe, or the SPEN Easterhouse 275kV substation area — a substation-named connection need not mean a development within Easterhouse itself.",
+    "No developer or connectee identified. The commissioning brief suggested Apatura as a presumption, but no located source attributes Easterhouse to Apatura or anyone else (a June 2025 'Apatura plans 500MW campus' DCD story concerns Drumshangie/Ravenscraig contexts, not Easterhouse).",
+    "Whether the end use is a data centre rather than another demand user or storage.",
+    "No planning activity of any kind was found.",
+    "Local authority could be North Lanarkshire if the site sits east of the boundary near the Easterhouse substation."
+  ]
+}

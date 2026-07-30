@@ -1,0 +1,43 @@
+[
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 550,
+    "state": "developer_stated",
+    "applicable_date": "2025-06-27",
+    "claimant": "Apatura",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Consistent across the developer announcement ('550 megawatts of grid connections'), consultation material, and the statutory pre-application notice wording ('550MW demand utility capacity').",
+    "notes": "Described variously as data centre capacity and as secured grid connection capacity; no independent NESO/SPEN confirmation located.",
+    "source_ids": ["src-apatura-news-ravenscraig", "src-apatura-consult-ravenscraig-project", "src-publicnoticeportal-pan"]
+  },
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 500,
+    "state": "reported",
+    "applicable_date": "2025-06-30",
+    "claimant": "Data Center Dynamics (headline)",
+    "confidence": "low",
+    "notes": "DCD headline rounds the campus to 500 MW while the body reports 550 MW; retained as a conflicting published figure.",
+    "source_ids": ["src-dcd-apatura-ravenscraig"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 650,
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Figure given in the developer's own consultation material; to be consented via a separate Section 36 application to the Energy Consents Unit.",
+    "source_ids": ["src-apatura-consult-ravenscraig-project"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 600,
+    "state": "reported",
+    "claimant": "Bylines Network",
+    "confidence": "low",
+    "notes": "Bylines reports a 600 MW battery storage facility, conflicting with the 650 MW in developer material; preserved as a separate claim.",
+    "source_ids": ["src-bylines-hyperscale"]
+  }
+]

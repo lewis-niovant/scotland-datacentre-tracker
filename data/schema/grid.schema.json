@@ -1,0 +1,23 @@
+{
+  "$id": "grid.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid position (public, non-sensitive information only)",
+  "type": "object",
+  "properties": {
+    "network_operator": { "type": "string" },
+    "connection_status": {
+      "type": "string",
+      "enum": ["application", "offer", "contracted", "gate_1", "gate_2", "connected", "unknown", "none_found"]
+    },
+    "requested_import_capacity_mw": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "connection_voltage_kv": { "type": "number" },
+    "target_connection_year": { "type": "string" },
+    "nearby_substation": { "type": "string" },
+    "reinforcement_required": { "type": ["boolean", "null"] },
+    "evidence_basis": { "type": "string", "description": "Where the grid figure appears: planning docs, developer statement, NESO/Ofgem material" },
+    "overlaps_other_project": { "type": "string" },
+    "notes": { "type": "string" },
+    "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+  },
+  "additionalProperties": false
+}

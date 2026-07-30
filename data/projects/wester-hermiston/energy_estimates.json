@@ -1,0 +1,24 @@
+[
+  {
+    "scenario_name": "Design intent (Cundall Operational Energy Statement)",
+    "peak_load_mw": 200,
+    "pue": 1.3,
+    "matching_method": "unstated",
+    "onsite_generation": "Rooftop solar PV above admin/office areas 'to be further explored'; Air Source Heat Pumps for office heating/cooling",
+    "methodology": "Emerging UK Net Zero Carbon Building Standard used to set EUI targets; PUE stated as a design focus of 'less than 1.3, trending downwards'",
+    "assumptions": "Free-cooling air-cooled chillers with variable speed compressors for data halls; design intent to enable future waste-heat export to a district heating network (none currently exists nearby; Heriot-Watt campus identified by the council as a future heat network)",
+    "estimate_type": "consultant",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "No annual GWh figure published in the documents reviewed; peak load taken as the 200 MW 'demand utility capacity' from the PAN description. GHG report (Nov 2025) covers whole-life carbon to BS EN 15978/RICS PS V2 over a 60-year reference period; results tables were not machine-readable in the FOI copy.",
+    "source_ids": ["src-cundall-op-energy", "src-cundall-ghg-report", "src-cec-pan-report-wester-hermiston"]
+  },
+  {
+    "scenario_name": "Campaign consumption comparison",
+    "estimate_type": "campaign",
+    "state": "reported",
+    "confidence": "low",
+    "notes": "Kevin Williamson (Bella Caledonia) lists Wester Hermiston at 200-250 MW and argues the two Edinburgh proposals combined would exceed the domestic electricity consumption of every household in Edinburgh and Glasgow; no annual GWh stated.",
+    "source_ids": ["src-bella-oppose-dc"]
+  }
+]

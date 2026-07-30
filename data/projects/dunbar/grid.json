@@ -1,0 +1,16 @@
+{
+  "network_operator": "SP Energy Networks (reported)",
+  "connection_status": "offer",
+  "requested_import_capacity_mw": {
+    "value": null,
+    "state": "not_disclosed",
+    "claimant": "None — Screening Report reportedly gives no power demand figure",
+    "confidence": "low",
+    "notes": "The Bell briefing states the applicant's EIA Screening Report 'mentions two SPEN grid connection offers' but 'provides no details of the scale of power demand from the data centre'.",
+    "source_ids": ["src-bell-briefing-west-barns-mains"]
+  },
+  "reinforcement_required": null,
+  "evidence_basis": "Secondary only: two SPEN grid connection offers referenced in the applicant's EIA Screening Report as summarised in the Simon Bell briefing (2025-11-28). The Screening Report itself has not been located, and no NESO/TEC register entry has been matched to this project. The proposed development includes new on-site substation(s) per the council scoping opinion. The site is roughly 6 km west of Torness power station and its 400 kV connection point, but no source links the project to Torness infrastructure — treat any such link as unverified.",
+  "notes": "Connection status 'offer' is based solely on the reported reference to two SPEN connection offers; voltage, capacity, connection date and substation are all unknown.",
+  "source_ids": ["src-bell-briefing-west-barns-mains", "src-elc-scoping-opinion-25-00008-scr"]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "pulsant-south-gyle",
+  "canonical_name": "Pulsant Edinburgh campus (SC-1 South Gyle, SC-2, SC-3)",
+  "display_name": "Pulsant Edinburgh (South Gyle campus)",
+  "aliases": [
+    {
+      "alias": "Pulsant South Gyle",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-dcm-pulsant-sc1"
+      ]
+    },
+    {
+      "alias": "Pulsant Edinburgh Medway",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-colox-pulsant-medway"
+      ]
+    },
+    {
+      "alias": "ScoLocate",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-dcm-pulsant-sc1"
+      ]
+    }
+  ],
+  "summary": "Pulsant operates three interconnected colocation data centres in west Edinburgh (SC-1 at South Gyle plus the nearby SC-2 and SC-3 facilities), treated here as one campus record. Combined advertised power is in the mid-to-high single-digit megawatts; SC-1 alone advertises 3.4 MW IT load with 600+ racks. Pulsant is owned by Antin Infrastructure Partners (since 2021).",
+  "project_type": "colocation",
+  "status": "operating",
+  "status_source_ids": [
+    "src-pulsant-datacentres"
+  ],
+  "maturity_level": "M5",
+  "maturity_explanation": "All three facilities are actively marketed as operating colocation sites on Pulsant's own website and third-party directories (Data Center Map, Baxtel) as of July 2026.",
+  "verification_level": "reported",
+  "local_authority": "City of Edinburgh Council",
+  "region": "Edinburgh and Lothians",
+  "last_verified_at": "2026-07-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "unknowns": [
+    "Exact combined campus power (directory figures for SC-1 range from 3.4 MW IT load to 6.6 MW; brief figure of ~9.6 MW combined not independently confirmed)",
+    "Year each facility first opened (SC-1 dates to the ScoLocate era, late 1990s/2000s; not verified)",
+    "Current utilisation and expansion plans for the Edinburgh campus"
+  ]
+}

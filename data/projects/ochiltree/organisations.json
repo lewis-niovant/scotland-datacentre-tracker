@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Apatura",
+    "role": "developer",
+    "website": "https://apatura.energy/",
+    "ownership_summary": "Energy infrastructure developer founded 2014, focused on large-scale BESS and, since 2024, data centre sites; states a c.10.6GW portfolio of 'grid-secured' projects including c.1.8GW of grid connections targeted at data centres. Data centre effort led by Michael Hunter (ex-Google infrastructure), per trade press.",
+    "confidence": "high",
+    "source_ids": ["src-apatura-website", "src-bebeez-dcd-ochiltree-2025"]
+  },
+  {
+    "name": "Apatura DC Project 12 Ltd",
+    "role": "spv",
+    "company_number": "16470093",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "Private limited company incorporated 2025-05-23, SIC 63110 (data processing, hosting), registered at 3rd Floor 1 Ashley Road, Altrincham WA14 2DT — the shared registered office of Apatura DC Project 1-11 Ltd. Named by trade press as the applicant for the Ochiltree EIA screening request; PSC/parent detail not captured.",
+    "beneficial_owner_public": null,
+    "confidence": "high",
+    "source_ids": ["src-ch-apatura-dc12", "src-bebeez-dcd-ochiltree-2025"]
+  },
+  {
+    "name": "AAH Consultants",
+    "role": "consultant",
+    "notes": "Planning agent for screening request 25/0003/EIASCR; address 1 Bar Lane, York YO1 6JU per portal record.",
+    "confidence": "medium",
+    "source_ids": ["src-planit-ea-25-0003-eiascr"]
+  },
+  {
+    "name": "East Ayrshire Council",
+    "role": "planning_authority",
+    "website": "https://eplanning.east-ayrshire.gov.uk/online/",
+    "confidence": "high",
+    "source_ids": ["src-ea-eplanning-25-0003-eiascr"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot/",
+    "notes": "Tracks the proposal on its national data centre campaign map ('Apatura Ochiltree'); no site-specific position statement beyond monitoring located.",
+    "confidence": "high",
+    "source_ids": ["src-aprs-ochiltree"]
+  }
+]

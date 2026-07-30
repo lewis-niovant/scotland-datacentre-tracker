@@ -1,0 +1,84 @@
+{
+  "summary": "Significant organised local and city-wide opposition at pre-application stage. A local residents' campaign (Hermiston Data Centre Campaign) and a Change.org petition (3,581 signatures by July 2026) oppose the scheme; APRS campaigns against it nationally; the Cockburn Association questions 'green' claims without opposing data centres outright. The February 2026 refusal of the nearby South Gyle data centre and the council Planning Committee's June 2026 call for a Scottish Government moratorium on large-scale data centres form the political backdrop. The PAN was notified to Currie and Ratho Community Councils, Pentland Hills ward councillors, Gordon MacDonald MSP and Dr Scott Arthur MP; formal representations will only be counted once an application is submitted.",
+  "principal_concerns": [
+    {
+      "concern": "Permanent loss of productive prime agricultural Green Belt land in the Gogar Special Landscape Area",
+      "raised_by": "Change.org petition (Gordon Fraser); Hermiston Data Centre Campaign; APRS",
+      "source_ids": ["src-changeorg-wester-hermiston", "src-aprs-wester-hermiston"]
+    },
+    {
+      "concern": "Lack of transparency on water/cooling requirements, supply arrangements and drought resilience",
+      "raised_by": "Change.org petition",
+      "source_ids": ["src-changeorg-wester-hermiston"]
+    },
+    {
+      "concern": "Scale of electricity demand (200 MW), grid capacity and cumulative effects with other Scottish data centre proposals; diversion of renewable generation",
+      "raised_by": "Change.org petition; Kevin Williamson (Bella Caledonia)",
+      "source_ids": ["src-changeorg-wester-hermiston", "src-bella-oppose-dc"]
+    },
+    {
+      "concern": "Generator testing, noise, air quality and lighting impacts on nearby homes and schools",
+      "raised_by": "Change.org petition",
+      "developer_response": "Council PAN report requires demonstration of no significant impact on residential amenity (noise, air quality, light)",
+      "source_ids": ["src-changeorg-wester-hermiston", "src-cec-pan-report-wester-hermiston"]
+    },
+    {
+      "concern": "Impact on the Union Canal corridor (scheduled monument) and its recreational and biodiversity value, plus Hermiston Conservation Area and listed buildings",
+      "raised_by": "Change.org petition; identified as key heritage issues by council officers",
+      "source_ids": ["src-changeorg-wester-hermiston", "src-cec-pan-report-wester-hermiston"]
+    },
+    {
+      "concern": "Absence of a national definition of a 'green data centre' and of a named hyperscale tenant; EIA not initially required",
+      "raised_by": "Cockburn Association; Kevin Williamson; APRS",
+      "source_ids": ["src-cockburn-western-edge", "src-bella-oppose-dc", "src-aprs-south-gyle-refused"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "£1.4bn investment, local construction spend and GVA claims (see economic_claims.json)",
+      "claimant": "Apatura",
+      "binding_status": "aspirational",
+      "source_ids": ["src-apatura-wh-benefits"]
+    },
+    {
+      "benefit": "Community funds for play areas, youth/skills programmes, wellbeing, green space and social enterprises, managed with the council and an independent delivery partner",
+      "claimant": "Apatura",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-apatura-wh-benefits"]
+    },
+    {
+      "benefit": "Potential future waste-heat export to a district heating network serving the Heriot-Watt area",
+      "claimant": "Apatura / Cundall",
+      "binding_status": "aspirational",
+      "source_ids": ["src-cundall-op-energy"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Hermiston Data Centre Campaign (spokesperson Sarah Matthews)",
+      "stakeholder_type": "resident_group",
+      "position": "Opposes the hyperscale data centre on greenfield land; petition reported at over 2,000 signatures in earlier coverage",
+      "source_ids": ["src-hermiston-campaign-site", "src-aprs-wester-hermiston"]
+    },
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Opposes; campaigns for an immediate Scottish Government moratorium on hyperscale data centre applications",
+      "source_ids": ["src-aprs-wester-hermiston", "src-aprs-south-gyle-refused"]
+    },
+    {
+      "stakeholder": "The Cockburn Association",
+      "stakeholder_type": "ngo",
+      "position": "Not categorically opposed to data centres; calls for a clear national definition of a genuinely 'green' data centre, robust evidence, brownfield preference and landscape integration standards",
+      "source_ids": ["src-cockburn-western-edge"]
+    },
+    {
+      "stakeholder": "City of Edinburgh Council Planning Committee",
+      "stakeholder_type": "government",
+      "position": "In June 2026 requested that the Scottish Government introduce a moratorium on large-scale data centres until clearer national guidance on 'green data centre' definitions emerges",
+      "source_ids": ["src-cockburn-western-edge"]
+    }
+  ],
+  "campaign_groups": ["Hermiston Data Centre Campaign", "Action to Protect Rural Scotland (APRS)"],
+  "notes": "Two Change.org petitions exist ('Stop development of mega data centre Wester Hermiston' by Gordon Fraser, 3,581 signatures; and 'STOP Hyperscale AI DATA CENTRE at Hermiston, Edinburgh'). Formal objection counts will only be available once a planning application is validated and open for representations."
+}

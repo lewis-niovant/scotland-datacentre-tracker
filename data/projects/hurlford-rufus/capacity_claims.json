@@ -1,0 +1,33 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 540,
+    "state": "developer_stated",
+    "applicable_date": "2025-11-04",
+    "claimant": "ILI Group (via press coverage of The Stoics launch)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "The 540MW figure appears consistently across developer-derived press coverage, SPICe, APRS and the local campaign group, but no primary planning or grid document defining what the figure measures has been located.",
+    "notes": "The PAN description (25/0008/PREAPP) does not state a MW figure. The metric behind 540MW (IT load vs grid import vs connection application) is undisclosed.",
+    "source_ids": ["src-yahoo-glasgowlive-rufus-2025", "src-bdc-stoics-2025", "src-amdcg-proposal"]
+  },
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 540,
+    "state": "reported",
+    "applicable_date": "2026-06-26",
+    "claimant": "SPICe (Scottish Parliament Information Centre)",
+    "confidence": "medium",
+    "notes": "SPICe describes the Rufus project as 'badged as 540MW', interpreting MW as the maximum power the facility could draw at any point in time (i.e. an import-capacity style reading). This is SPICe's interpretation of the developer's badge figure, not an independent grid record.",
+    "source_ids": ["src-spice-data-centres-2026"]
+  },
+  {
+    "capacity_type": "connection_offer",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "ILI Group",
+    "confidence": "low",
+    "notes": "ILI states each Stoics site 'has secured grid connection'; no MW value, network operator, or connection agreement evidence is published for Rufus.",
+    "source_ids": ["src-ili-data-centres"]
+  }
+]

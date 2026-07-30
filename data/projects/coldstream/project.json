@@ -1,0 +1,53 @@
+{
+  "slug": "coldstream",
+  "canonical_name": "Coldstream data centre campus (The Laundry Field, Stainrigg Mains)",
+  "display_name": "Apatura Coldstream",
+  "aliases": [
+    {
+      "alias": "The Laundry Field",
+      "alias_type": "marketing_name",
+      "source_ids": ["src-planit-scottish-borders", "src-foxglove-scotland-dc-2025"]
+    },
+    {
+      "alias": "Stainrigg Mains data centre campus",
+      "alias_type": "place_name",
+      "source_ids": ["src-border-telegraph-coldstream-screening"]
+    },
+    {
+      "alias": "Apatura DC Project 3 Ltd",
+      "alias_type": "spv_name",
+      "source_ids": ["src-dcd-apatura-coldstream-2025", "src-companies-house-apatura-dc-project-3"]
+    }
+  ],
+  "summary": "Apatura proposes a circa 300 MW hyperscale data centre campus with a reported 500 MW battery energy storage system on about 69 hectares of arable farmland north and east of Stainrigg Mains Farm, near Leitholm/Eccles, roughly 5 km north-west of Coldstream in the Scottish Borders. Scottish Borders Council issued an EIA screening opinion (25/00556/SCR, decided 4 July 2025) determining that an Environmental Impact Assessment is not required. As of 30 July 2026 no PAN or full planning application for the campus could be found on the council portal (via PlanIt).",
+  "project_type": "hyperscale",
+  "status": "screening",
+  "status_source_ids": ["src-sbc-portal-25-00556-scr", "src-planit-scottish-borders", "src-border-telegraph-aprs-map-2026"],
+  "maturity_level": "M1",
+  "maturity_explanation": "Early development only: an EIA screening request (25/00556/SCR) was submitted 7 May 2025 and determined 4 July 2025 (EIA not required). Press reporting (July 2025) stated full applications for the data centre and BESS had not yet been submitted, and no PAN or full application was found on the Scottish Borders portal via PlanIt as of 30 July 2026.",
+  "verification_level": "verified",
+  "local_authority": "Scottish Borders Council",
+  "region": "Scottish Borders",
+  "first_public_date": "2025-05-07",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2025-07-04",
+    "headline": "Scottish Borders Council screening opinion: EIA not required for proposed data centre campus at Stainrigg Mains",
+    "source_ids": ["src-sbc-portal-25-00556-scr", "src-border-telegraph-coldstream-screening"]
+  },
+  "unknowns": [
+    "Whether a Proposal of Application Notice (PAN) or full planning application has since been lodged — the council portal returned 503 and PlanIt showed no PAN/full application for the site as of 2026-07-30; a Border Telegraph article (circa early 2026) says 'the planning application is still to be decided upon', which could not be reconciled with a specific reference",
+    "Agricultural land classification (LCA class) of the arable site — described only as arable farmland",
+    "Grid connection details: network operator, connection point/substation, application or offer status, and target connection date — no public evidence found",
+    "Whether the 300 MW figure is IT load or grid import capacity — press reporting does not specify",
+    "Quantified economic claims (jobs, investment) specific to Coldstream — none found; only a qualitative 'nationally significant contribution to Scotland' claim in the screening request",
+    "Water demand and cooling approach",
+    "Confirmation from primary documents that Apatura DC Project 3 Ltd is the applicant SPV (attribution is from Data Center Dynamics reporting; screening documents not retrievable)",
+    "Red-line boundary — screening plans not retrieved, so no boundary polygon is recorded",
+    "Relationship of 'The Laundry Field BESS' in the portal address line to any separate consented/pending BESS application on the same land"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 1.0,
+    "state": "reported",
+    "claimant": "Data Center Map / datacenters.com listings",
+    "confidence": "low",
+    "notes": "~1 MW, ~130 racks, ~1,000 sq m; Tier III design claimed by operator. Not broken down into IT vs gross load.",
+    "source_ids": [
+      "src-dcm-datavita-dv2",
+      "src-datavita-dv2"
+    ]
+  }
+]

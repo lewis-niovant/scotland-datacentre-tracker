@@ -1,0 +1,41 @@
+{
+  "$id": "site.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Site record",
+  "type": "object",
+  "required": ["latitude", "longitude", "location_precision"],
+  "properties": {
+    "site_name": { "type": "string" },
+    "address": { "type": "string" },
+    "postcode": { "type": "string" },
+    "settlement": { "type": "string" },
+    "latitude": { "type": "number", "minimum": 54.5, "maximum": 61.0 },
+    "longitude": { "type": "number", "minimum": -8.5, "maximum": 0.0 },
+    "location_precision": {
+      "type": "string",
+      "enum": ["exact", "site_centroid", "approximate", "settlement_level", "coarse_deliberate"],
+      "description": "coarse_deliberate used for sensitive operating infrastructure"
+    },
+    "boundary_precision": { "type": "string", "enum": ["red_line_official", "digitised_from_plan", "approximate_sketch", "none"] },
+    "site_area_m2": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "developable_area_m2": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "building_footprint_m2": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "gross_floor_area_m2": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "max_building_height_m": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "number_of_buildings": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "greenfield_brownfield": {
+      "type": "string",
+      "enum": ["greenfield", "brownfield", "mixed", "disputed", "unknown"]
+    },
+    "agricultural_land_class": { "type": "string" },
+    "current_land_use": { "type": "string" },
+    "previous_land_use": { "type": "string" },
+    "green_belt": { "type": ["boolean", "null"] },
+    "nearest_home_distance_m": { "$ref": "common.schema.json#/$defs/quantityClaim" },
+    "nearest_settlements": { "type": "array", "items": { "type": "string" } },
+    "protected_designations": { "type": "array", "items": { "type": "string" } },
+    "land_notes": { "type": "string" },
+    "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+  },
+  "additionalProperties": false
+}

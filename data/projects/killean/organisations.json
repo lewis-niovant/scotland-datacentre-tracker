@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Argyll Data Development Ltd",
+    "role": "developer",
+    "company_number": "SC759203",
+    "jurisdiction": "Scotland",
+    "website": "https://argylldev.com",
+    "ownership_summary": "Private company incorporated 17 Feb 2023, registered at Killellan Farm. Active directors: Peter Griffiths (executive chairman), Robert Lyle Mitchell (landowner/farmer), Brian Michael Bowen. Two directors appointed Aug 2024 resigned 1 Apr 2026.",
+    "confidence": "high",
+    "notes": "Lead promoter of the Killellan AI Growth Zone bid and SambaNova partnership. A very small SPV-scale company, not an established data centre developer.",
+    "source_ids": ["src-ch-argyll-data-development", "src-add-aigz-application"]
+  },
+  {
+    "name": "Argyll Energy Development Ltd",
+    "role": "developer",
+    "company_number": "SC759139",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Private company incorporated 16 Feb 2023, registered at Killellan Farm; directors Peter Griffiths and Robert Lyle Mitchell.",
+    "confidence": "high",
+    "notes": "Co-promoter responsible for the energy strand of the AI Growth Zone bid.",
+    "source_ids": ["src-ch-argyll-energy-development", "src-add-aigz-application"]
+  },
+  {
+    "name": "Argyll Infrastructure Holdings Limited (AIH)",
+    "role": "investor",
+    "company_number": "SC870385",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Incorporated 17 Nov 2025 in Dunoon. Press describes AIH as the funding vehicle: £15m initial raise (Dec 2025), £100m in negotiation, €2bn target with European Guarantee Services and Ocorian AIFM (Luxembourg). Press claims AIH was 'founded in 2023', contradicted by the Companies House incorporation date.",
+    "beneficial_owner_public": null,
+    "confidence": "medium",
+    "notes": "Holds a stated three-year exclusivity agreement with SambaNova; relationship to the two 2023 development companies not established from filings.",
+    "source_ids": ["src-ch-argyll-infrastructure-holdings", "src-sbn-aih-investment", "src-dcd-oil-rig-2025"]
+  },
+  {
+    "name": "SambaNova Systems",
+    "role": "technology_partner",
+    "jurisdiction": "United States (Palo Alto, CA)",
+    "website": "https://sambanova.ai",
+    "confidence": "high",
+    "notes": "October 2025 'strategic partnership' to deliver a renewable-powered sovereign AI inference cloud using SN40L (and later SN50) systems. This is a partnership/exclusivity and equipment-order arrangement, not a commitment to build or fund the Killellan campus; the cloud launched in May 2026 runs from other undisclosed UK data centres. SambaNova raised $350m Series E in early 2026.",
+    "source_ids": ["src-sambanova-argyll-pr", "src-sbn-aih-investment", "src-bebeez-launch-2026"]
+  },
+  {
+    "name": "Robert Lyle Mitchell (via Cowal Sand & Gravel Ltd.)",
+    "role": "landowner",
+    "company_number": "SC266441",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "The AI Growth Zone bid states surface and mineral rights are held by Mr Robert Mitchell; Cowal Sand & Gravel Ltd. (inc. 2004, registered at Killellan Farm, SIC 08120 sand/gravel pits) operates the quarry and made quarry applications. Mitchell was the applicant for 20/00229/PP and 25/00445/CLAWU and is a director of both Argyll development companies.",
+    "confidence": "high",
+    "source_ids": ["src-ch-cowal-sand-gravel", "src-add-aigz-application", "src-ab-20-00229-pp"]
+  },
+  {
+    "name": "Schneider Electric",
+    "role": "consultant",
+    "confidence": "medium",
+    "notes": "Named consortium partner in the AI Growth Zone bid (microgrid design, UPS/cooling, EcoStruxure). Level of contractual commitment not disclosed.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "name": "Lenovo",
+    "role": "technology_partner",
+    "confidence": "medium",
+    "notes": "Named consortium partner in the bid (HPC systems). Level of contractual commitment not disclosed; not mentioned in the later SambaNova announcements.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "name": "CorPower Ocean",
+    "role": "technology_partner",
+    "confidence": "medium",
+    "notes": "Preferred wave-energy partner; Pre-FEED for a 600 MW wave array off the west coast near Islay, with a stated 2 GW ambition. Technology at pre-commercial stage.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "name": "Invinity Energy Systems",
+    "role": "technology_partner",
+    "confidence": "medium",
+    "notes": "Vanadium flow battery supplier named in the bid.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "name": "Suir Engineering",
+    "role": "contractor",
+    "confidence": "medium",
+    "notes": "Named engineering partner (hyperscale M&E track record).",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "name": "Commsworld",
+    "role": "consultant",
+    "confidence": "medium",
+    "notes": "Fibre connectivity partner; letter in the bid proposes two diverse 100Gb waves, requiring new fibre builds Kilchattan Bay-Rothesay (~8 miles) and Innellan exchange to the site (~6 miles, landowner permissions needed) — i.e. the site currently lacks diverse high-capacity fibre.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "name": "Argyll and Bute Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "notes": "Named in the bid as a local governance partner; also the planning authority. No formal council position on the campus located.",
+    "source_ids": ["src-ab-20-00229-pp", "src-add-aigz-application"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot",
+    "confidence": "high",
+    "notes": "Campaigns against hyperscale data centres in rural Scotland; maintains a page on this project (under the name 'Killean') highlighting the absence of a planning application for the 74 ha site, and runs a 'Stop the Hyperscale AI Data Centres' petition.",
+    "source_ids": ["src-aprs-argyll-dc"]
+  }
+]

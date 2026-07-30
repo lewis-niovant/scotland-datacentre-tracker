@@ -1,0 +1,33 @@
+{
+  "summary": "The operating facility itself has attracted little recorded opposition, but the 2025-26 expansion consents (DV1 extension and DV3) drew a small number of portal comments and campaign criticism, most prominently over the February 2026 felling of the 'Muirhead Oaks', described by a local historian as an avenue of veteran oaks on the extension site.",
+  "principal_concerns": [
+    {
+      "concern": "Felling of veteran 'Muirhead Oaks' (described locally as Category A, ecologically and historically important) on the extension site in February 2026; APRS notes the tree constraints report recorded veteran trees and that buildings are sited in a high-quality tree group (G5)",
+      "raised_by": "Maxine Ross (local horticulturalist/historian) and APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    },
+    {
+      "concern": "Green Belt encroachment and watercourse diversion associated with the extension; council granted under NPF4 Policy 8 as compatible with the existing data centre",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Critical of cumulative Green Belt data centre and energy development around Chapelhall and of the transparency of the AI Growth Zone; documents each DataVita/HFD planning case",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    },
+    {
+      "stakeholder": "North Lanarkshire Council (corporate/leadership)",
+      "stakeholder_type": "government",
+      "position": "Welcomed the AI Growth Zone designation anchored on the DataVita campus",
+      "date": "2026-01-29",
+      "source_ids": ["src-nlc-news-aigz"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "planning_authority_contact": "North Lanarkshire Council, eplanning.northlanarkshire.gov.uk",
+  "notes": "Portal comment counts: 8 on 25/00150/PPP, 5 on 25/01159/PPP, 2 on 25/01294/S42 (objection/support split not retrievable while the council portal is down)."
+}

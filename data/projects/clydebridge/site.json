@@ -1,0 +1,13 @@
+{
+  "site_name": "Clydebridge (presumed former Clydebridge Steelworks area)",
+  "settlement": "Cambuslang / Rutherglen",
+  "latitude": 55.8327,
+  "longitude": -4.185,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "greenfield_brownfield": "unknown",
+  "previous_land_use": "If the presumed location is correct: Clydebridge Steelworks (opened 1887; plate mill closed 1982; residual Liberty Steel operations subsequently mothballed). Not confirmed for this grid connection.",
+  "nearest_settlements": ["Cambuslang", "Rutherglen", "Carmyle"],
+  "land_notes": "Coordinates are the OpenStreetMap point for Clydebridge Steelworks, adopted as a best guess for APRS's 'Clydebridge, just outside Glasgow'. No source ties the grid connection to a specific parcel; no red-line boundary exists.",
+  "source_ids": ["src-aprs-data-centre-map", "src-osm-nominatim-settlements"]
+}

@@ -1,0 +1,30 @@
+{
+  "site_name": "DataVita DV2",
+  "settlement": "Glasgow (city centre, International Financial Services District)",
+  "latitude": 55.861447,
+  "longitude": -4.265494,
+  "location_precision": "exact",
+  "greenfield_brownfield": "brownfield",
+  "current_land_use": "Data centre within the basement of a modern city-centre office building",
+  "land_notes": "DataVita's own location page confirms DV2 occupies the basement of 177 Bothwell Street, Glasgow, in the International Financial Services District, and states 1,000 m2 of space and 130 racks. The building postcode G2 7ER is corroborated by HFD Group Holdings Limited's registered correspondence address at Companies House and by NHS Education for Scotland's published office address in the same building; one commercial listing (LoopNet) instead gives G2 7JH, which is recorded here as an unresolved minor conflict. Coordinates derive from the Royal Mail postcode unit centroid returned by the postcodes.io API for the postcode recorded above. The site is a basement within a 13-storey office block, so the coordinate locates the host building rather than a standalone data centre plot. Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
+  "source_ids": [
+    "src-datavita-dv2",
+    "src-datavita-dv2-location",
+    "src-dcm-datavita-dv2",
+    "src-nes-177-bothwell",
+    "src-postcodes-io-g2-7er"
+  ],
+  "address": "Basement, 177 Bothwell Street, Glasgow",
+  "postcode": "G2 7ER",
+  "gross_floor_area_m2": {
+    "value": 1000,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "DataVita",
+    "confidence": "medium",
+    "notes": "DataVita states 1,000 m2 (about 10,765 sq ft) across 130 racks for DV2. This is the data centre floorspace within the basement, not the floor area of the host building.",
+    "source_ids": [
+      "src-datavita-dv2-location"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "scenario_name": "Early phase (application Energy Statement)",
+    "phase": "early phases",
+    "annual_energy_gwh": 400,
+    "estimate_type": "application",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "SPICe: early-phase consumption of around 400 GWh/yr (~4.5% of Scottish domestic consumption per press).",
+    "source_ids": ["src-spice-data-centres", "src-dcr-objections"]
+  },
+  {
+    "scenario_name": "Full build-out (application Energy Statement)",
+    "phase": "ultimate build-out",
+    "annual_energy_gwh": 4000,
+    "estimate_type": "application",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "Ultimate energy use 'possibly rising to 4,000 GWh/yr (4 TWh)' — SPICe notes this would equal ~7.7% of all electricity generated in Scotland in 2024. Developer says the facility would run on renewable electricity and make use of curtailed generation (matching method unstated).",
+    "matching_method": "unstated",
+    "source_ids": ["src-spice-data-centres", "src-aprs-auchtertool", "src-dcr-objections"]
+  },
+  {
+    "scenario_name": "APRS full build-out calculation",
+    "phase": "ultimate build-out",
+    "annual_energy_gwh": 4200,
+    "load_factor": 0.8,
+    "estimate_type": "campaign",
+    "state": "estimated",
+    "confidence": "low",
+    "methodology": "600 MW x 80% load factor x 8,760 h = ~4,200 GWh/yr; load factor taken from NESO FES 2025 pathway assumptions (fleet average 70%, hyperscale/AI 80-85%).",
+    "notes": "APRS equates this to ~53% of Scottish households' electricity use or ~20% of Scotland's total 2024 electricity consumption (21.7 TWh). Broadly consistent with the application's 4,000 GWh figure.",
+    "source_ids": ["src-aprs-auchtertool"]
+  }
+]

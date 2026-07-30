@@ -1,0 +1,32 @@
+{
+  "site_name": "Pulsant Edinburgh campus (South Gyle area)",
+  "settlement": "Edinburgh (South Gyle / west Edinburgh)",
+  "latitude": 55.929333,
+  "longitude": -3.293943,
+  "location_precision": "exact",
+  "greenfield_brownfield": "brownfield",
+  "current_land_use": "Operating data centres within an established business/industrial area of west Edinburgh",
+  "land_notes": "Coordinates and address are those of SC-1, the South Gyle facility, which Pulsant and PeeringDB both publish openly (The Clocktower Estate, Flassches Yard, South Gyle Crescent, EH12 9LB). Coordinates derive from the Royal Mail postcode unit centroid returned by the postcodes.io API for the postcode recorded above. PeeringDB independently gives 55.930562, -3.295901 for the same facility, about 150 m away. This record covers a campus of three separate buildings: the point here is SC-1 only. The other two are at different addresses - SC-2 (Medway), 7 Bankhead Medway, Edinburgh EH11 4BY, and SC-3 (Newbridge), 7 Claylands Road, Newbridge, Edinburgh EH28 8LF - per PeeringDB. Note that Data Center Map and PeeringDB disagree on which of the two non-South-Gyle sites is labelled SC-2 versus SC-3. Brownfield: all three sit within established west-Edinburgh business/industrial estates. Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
+  "source_ids": [
+    "src-dcm-pulsant-sc1",
+    "src-peeringdb-pulsant-sc1",
+    "src-peeringdb-pulsant-sc2",
+    "src-peeringdb-pulsant-sc3",
+    "src-postcodes-io-eh12-9lb",
+    "src-pulsant-sc1-page",
+    "src-pulsant-sc1-specs"
+  ],
+  "address": "The Clocktower Estate, Flassches Yard, South Gyle Crescent, Edinburgh",
+  "postcode": "EH12 9LB",
+  "gross_floor_area_m2": {
+    "value": 4648,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Pulsant",
+    "confidence": "medium",
+    "notes": "Pulsant's SC-1 page states a total building size of 4,648 m2 and total data hall space of 2,628 m2.",
+    "source_ids": [
+      "src-pulsant-sc1-specs"
+    ]
+  }
+}

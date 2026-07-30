@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Pulsant Limited",
+    "role": "operator",
+    "jurisdiction": "UK",
+    "website": "https://www.pulsant.com",
+    "ownership_summary": "UK colocation/edge operator, 14 UK sites; acquired by Antin Infrastructure Partners in July 2021 from Oak Hill Capital and Scottish Equity Partners.",
+    "confidence": "high",
+    "source_ids": [
+      "src-pulsant-datacentres",
+      "src-antin-pulsant"
+    ]
+  },
+  {
+    "name": "Antin Infrastructure Partners",
+    "role": "parent_company",
+    "jurisdiction": "France",
+    "website": "https://www.antin-ip.com",
+    "ownership_summary": "Infrastructure private-equity firm; owner of Pulsant since July 2021.",
+    "valid_from": "2021-07-26",
+    "confidence": "high",
+    "source_ids": [
+      "src-antin-pulsant"
+    ]
+  }
+]

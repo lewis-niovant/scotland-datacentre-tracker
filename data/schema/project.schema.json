@@ -1,0 +1,100 @@
+{
+  "$id": "project.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project core record",
+  "type": "object",
+  "required": [
+    "slug",
+    "canonical_name",
+    "summary",
+    "project_type",
+    "status",
+    "maturity_level",
+    "maturity_explanation",
+    "verification_level",
+    "local_authority",
+    "last_verified_at",
+    "confidence_overall"
+  ],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "canonical_name": { "type": "string" },
+    "display_name": { "type": "string" },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["alias"],
+        "properties": {
+          "alias": { "type": "string" },
+          "alias_type": { "type": "string", "enum": ["marketing_name", "place_name", "former_name", "spv_name", "phase_name", "other"] },
+          "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "summary": { "type": "string", "minLength": 40 },
+    "project_type": { "$ref": "common.schema.json#/$defs/projectType" },
+    "status": { "$ref": "common.schema.json#/$defs/status" },
+    "status_source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" },
+    "maturity_level": { "$ref": "common.schema.json#/$defs/maturityLevel" },
+    "maturity_flags": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/maturityFlag" }
+    },
+    "maturity_explanation": { "type": "string", "minLength": 20 },
+    "verification_level": {
+      "type": "string",
+      "enum": ["verified", "reported", "unverifiable"],
+      "description": "verified = official planning/government record located; reported = credible secondary sources only; unverifiable = grid record or marketing only"
+    },
+    "local_authority": { "type": "string" },
+    "region": { "type": "string" },
+    "related_project_slugs": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
+    "first_public_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "anticipated_construction_start": { "type": "string" },
+    "anticipated_operational_date": { "type": "string" },
+    "actual_construction_start": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "actual_operational_date": { "type": "string" },
+    "last_verified_at": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "next_review_at": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "confidence_overall": { "$ref": "common.schema.json#/$defs/confidence" },
+    "is_public": { "type": "boolean", "default": true },
+    "is_sensitive": { "type": "boolean", "default": false, "description": "If true, only coarse location and limited detail are published" },
+    "phases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase_name"],
+        "properties": {
+          "phase_name": { "type": "string" },
+          "phase_number": { "type": "integer" },
+          "description": { "type": "string" },
+          "status": { "$ref": "common.schema.json#/$defs/status" },
+          "target_start_date": { "type": "string" },
+          "target_completion_date": { "type": "string" },
+          "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "latest_development": {
+      "type": "object",
+      "properties": {
+        "date": { "$ref": "common.schema.json#/$defs/isoDate" },
+        "headline": { "type": "string" },
+        "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+      },
+      "additionalProperties": false
+    },
+    "unknowns": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Material facts we could not establish — surfaced in the UI as 'what we don't know'"
+    }
+  },
+  "additionalProperties": false
+}

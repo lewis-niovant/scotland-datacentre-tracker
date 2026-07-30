@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Apatura Ltd",
+    "role": "developer",
+    "company_number": "13948114",
+    "jurisdiction": "England and Wales",
+    "website": "https://apatura.energy",
+    "ownership_summary": "Incorporated 1 March 2022 (formerly Green Power Consultants Holding Ltd until October 2023), registered in Altrincham, Cheshire; SIC codes for electricity production/transmission/distribution. Active PSC is Felstead Ford Limited (50-75%), whose sole PSC is Adrian Ashley Hill (b. June 1978) — the ultimate beneficial owner on the Companies House record. Press descriptions of Apatura as 'founded in 2014' and privately owned conflict with the 2022 incorporation date.",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "Named by APRS as the developer for the 2026 Drumshangie PAN. Apatura describes a 10.6GW grid-secured portfolio incl. 1.8GW targeting data centres and is progressing several central-belt data centre sites (Ravenscraig 550MW, Larbert/Falkirk, a relocated c.300MW campus, and a 200MW East Ayrshire site) plus multiple BESS projects. Its named applicant entity for Drumshangie is unconfirmed.",
+    "source_ids": ["src-aprs-drumshangie", "src-ch-apatura-ltd", "src-ch-felstead-ford", "src-dcd-apatura-ravenscraig-bebeez"]
+  },
+  {
+    "name": "Apatura DC Ltd",
+    "role": "spv",
+    "company_number": "16041291",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "Data-centre holding company incorporated 25 October 2024; PSCs are Apatura Ltd (75%+) and Adrian Ashley Hill (right to appoint/remove directors). Ten numbered SPVs (Apatura DC Project 1-10 Ltd) were incorporated 28 October 2024 at the same address — Apatura's pattern is one numbered SPV per data centre site (e.g. Apatura DC Project 3 Ltd was reported as applicant for its Coldstream/relocated campus).",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "It is not yet known which (if any) Apatura DC Project SPV fronts Drumshangie.",
+    "source_ids": ["src-ch-apatura-dc"]
+  },
+  {
+    "name": "Felstead Ford Limited",
+    "role": "parent_company",
+    "company_number": "14552991",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "Majority shareholder (50-75%) of Apatura Ltd; sole PSC is Adrian Ashley Hill (75%+ shares and voting rights), identity verified December 2025.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "source_ids": ["src-ch-felstead-ford", "src-ch-apatura-ltd"]
+  },
+  {
+    "name": "Albert Bartlett Ltd (Albert Bartlett group)",
+    "role": "landowner",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "The Airdrie-headquartered Albert Bartlett potato group (Albert Bartlett & Sons (Airdrie) Limited SC037896, Albert Bartlett Holdings Limited SC531407, Albert Bartlett Properties Limited SC646257 — all at 251 Stirling Road, Airdrie, adjoining the site). The July 2024 East Airdrie EIA names 'Albert Bartlett Ltd' as applicant and states it is 'in full ownership of the Site'. Trade press describes the 2024 data centre filings as by 'an affiliate of UK potato-supplier Albert Bartlett'.",
+    "beneficial_owner_public": true,
+    "confidence": "medium",
+    "notes": "Exact registered entity holding the Drumshangie land and lodging PAN 24/01025/PAN unconfirmed. The 117 ha campus site was simultaneously marketed for sale via Shepherd, suggesting the landowner sought a developer/purchaser — consistent with Apatura's subsequent 2026 PAN.",
+    "source_ids": ["src-east-airdrie-eia-nts", "src-ch-albert-bartlett", "src-dcd-apatura-ravenscraig-bebeez", "src-shepherd-east-airdrie-sale"]
+  },
+  {
+    "name": "Shepherd Chartered Surveyors",
+    "role": "consultant",
+    "website": "https://www.shepherd.co.uk",
+    "notes": "Selling agent marketing the 117.21 ha Digital/Data Centre & Manufacturing Campus, East Airdrie (contact Steven Barnett, Glasgow office); source of the site area, floorspace and grid-application figures.",
+    "confidence": "high",
+    "source_ids": ["src-shepherd-east-airdrie-sale"]
+  },
+  {
+    "name": "North Lanarkshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "website": "https://www.northlanarkshire.gov.uk",
+    "confidence": "high",
+    "source_ids": ["src-aprs-drumshangie", "src-nlc-eplanning-portal"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "jurisdiction": "Scotland",
+    "website": "https://aprs.scot",
+    "notes": "Scottish charity (SC016139) tracking data centre proposals; maintains the Drumshangie page highlighting the Stanrigg disaster site and development-plan history.",
+    "confidence": "high",
+    "source_ids": ["src-aprs-drumshangie"]
+  }
+]

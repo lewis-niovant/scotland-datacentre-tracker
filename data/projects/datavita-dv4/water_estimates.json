@@ -1,0 +1,14 @@
+[
+  {
+    "cooling_type": "closed_loop_liquid",
+    "cooling_description": "Developer states DV4 will operate a closed-loop cooling system with water recirculating continuously; 'roughly the same amount of water as one average family home', no evaporative cooling and 'no ongoing water consumption for cooling'",
+    "annual_water_m3": null,
+    "potable_water": null,
+    "closed_loop": true,
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Marketing/FAQ and screening-stage claim; no quantified water figures in a planning submission yet.",
+    "source_ids": ["src-datavita-aigz-faq", "src-aprs-chapelhall-aigz"]
+  }
+]

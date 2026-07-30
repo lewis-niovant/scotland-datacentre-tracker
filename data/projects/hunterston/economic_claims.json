@@ -1,0 +1,37 @@
+[
+  {
+    "claim_category": "capital_expenditure",
+    "value": 10000000000,
+    "unit": "gbp",
+    "geographic_scope": "Hunterston site",
+    "claimant": "Eneus Energy",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Website states investment 'expected to exceed £10 billion' and describes the scheme as 'one of the largest private investments in Ayrshire's history'; no methodology published.",
+    "source_ids": ["src-eneus-hunterston-page"]
+  },
+  {
+    "claim_category": "direct_construction_jobs",
+    "value": 1000,
+    "unit": "jobs",
+    "geographic_scope": "unstated",
+    "period": "construction (~7 years, 2027-2034)",
+    "claimant": "Eneus Energy",
+    "binding_status": "unstated",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "'More than 1,000 jobs during construction'; direct/indirect split, FTE basis and methodology not stated — categorised as direct construction jobs on the plain reading, but unverified.",
+    "source_ids": ["src-eneus-hunterston-page"]
+  },
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": null,
+    "unit": "unstated",
+    "claimant": "Eneus Energy",
+    "binding_status": "unstated",
+    "state": "not_disclosed",
+    "notes": "Developer states operational job numbers are 'currently under review'.",
+    "source_ids": ["src-eneus-hunterston-page"]
+  }
+]

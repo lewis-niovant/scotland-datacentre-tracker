@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Ashfield Land",
+    "role": "developer",
+    "website": "https://ashfieldland.co.uk",
+    "ownership_summary": "Bristol-headquartered private property developer (group parent Ashfield Land Limited, 04363855). Long-standing Blackdog promoter — lodged the 2016 mixed-use application with Kirkwood Homes and says it has 'spent years assembling the land and securing the planning foundations'. Steven McGarva, Managing Director North, is the named spokesman.",
+    "confidence": "high",
+    "source_ids": ["src-aprs-blackdog", "src-ashfield-2016-application", "src-ch-ashfield-aberdeen"]
+  },
+  {
+    "name": "Ashfield Land (Aberdeen) Ltd",
+    "role": "spv",
+    "company_number": "09634263",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "Active company at the Ashfield Land group registered office (Bristol), incorporated June 2015, SIC 68100. Likely the group vehicle for the Aberdeen/Blackdog landholding, but its role in the data centre venture is inferred from name and group address only.",
+    "confidence": "low",
+    "notes": "Inferred candidate SPV — not confirmed as applicant or landowner by primary documents.",
+    "source_ids": ["src-ch-ashfield-aberdeen"]
+  },
+  {
+    "name": "TechRE",
+    "role": "developer",
+    "ownership_summary": "Described as a data centre specialist/consultancy that has 'delivered projects on behalf of multiple hyperscalers' across UK, Europe, USA and Middle East; partner to Ashfield Land at Blackdog. Companies House shows Edinburgh-registered TECHRE DATA CENTRES LIMITED (SC724371, inc. 2022) and TECHRE CONSULTING LIMITED (SC597436, inc. 2018); which entity is party to the venture is not confirmed. Henry Sutton, Director, is the named spokesman.",
+    "confidence": "medium",
+    "source_ids": ["src-aprs-blackdog", "src-abn-blackdog", "src-ch-techre"]
+  },
+  {
+    "name": "Kirkwood Homes",
+    "role": "other",
+    "ownership_summary": "Local housebuilder; co-promoter of the 2016 mixed-use scheme and developer of the consented housing element at Blackdog. No stated role in the data centre.",
+    "confidence": "high",
+    "valid_from": "2016-04-18",
+    "source_ids": ["src-ashfield-2016-application", "src-energetica-blackdog"]
+  },
+  {
+    "name": "Cerulean Winds",
+    "role": "technology_partner",
+    "ownership_summary": "Floating offshore wind developer (Aspen and two other Central North Sea projects). In discussions with Ashfield over the feasibility of a private-wire link from the Aspen wind farm to Blackdog — discussions only, no contract evidenced. Laura Jarvie, Head of Scotland, quoted in support.",
+    "confidence": "medium",
+    "notes": "Role best described as prospective power supplier; recorded under technology_partner for lack of a closer enum value.",
+    "source_ids": ["src-aprs-blackdog", "src-digit-600mw"]
+  },
+  {
+    "name": "Opportunity North East (ONE)",
+    "role": "other",
+    "ownership_summary": "Private sector-led regional economic development body; publicly supports the proposal (CEO Jennifer Craw quoted).",
+    "confidence": "high",
+    "source_ids": ["src-aprs-blackdog"]
+  },
+  {
+    "name": "ETZ Ltd",
+    "role": "other",
+    "ownership_summary": "Energy Transition Zone Ltd, not-for-profit regional economic development body; publicly supports the proposal (Neil Young, Director of Investment and Development, quoted).",
+    "confidence": "high",
+    "source_ids": ["src-aprs-blackdog"]
+  },
+  {
+    "name": "Aberdeenshire Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "source_ids": ["src-govscot-na-abs-045", "src-abdnshire-portal-app-2016-0766"]
+  },
+  {
+    "name": "Blackdog Land (Aberdeen) Limited",
+    "role": "landowner",
+    "company_number": "SC458222",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Aberdeen-registered company (inc. 2013), PSCs Alexander Barclay Thow and Jacqueline Thow (25-50% each). A possibly related land entity given its name and vintage matching the Blackdog Masterplan period; its connection to the data centre consortium is NOT established.",
+    "beneficial_owner_public": true,
+    "confidence": "low",
+    "notes": "Recorded as a lead only — role as landowner is unverified inference from the company name.",
+    "source_ids": ["src-ch-blackdog-land"]
+  }
+]

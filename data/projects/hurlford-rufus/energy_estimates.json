@@ -1,0 +1,15 @@
+[
+  {
+    "annual_energy_gwh": null,
+    "peak_load_mw": 540,
+    "renewable_claim_percent": 100,
+    "matching_method": "unstated",
+    "power_purchase_agreement": null,
+    "onsite_generation": "None proposed in PAN description (substation only); ILI states the site would be 'entirely powered by off-site renewable energy sources'",
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Peak load taken from the 540MW badge figure (definition undisclosed). ILI claims 100% renewable operation and 'true Net Zero performance' with advanced heat recovery; no matching methodology (annual certificates vs hourly vs PPA) is disclosed. No annual energy (GWh) figure has been published by any party.",
+    "source_ids": ["src-ili-rufus-consultation", "src-ili-data-centres", "src-spice-data-centres-2026"]
+  }
+]

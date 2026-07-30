@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Apatura",
+    "role": "developer",
+    "jurisdiction": "United Kingdom",
+    "website": "https://apatura.energy",
+    "ownership_summary": "Edinburgh- and York-based renewable energy and data centre developer; states it holds 1.6GW+ of confirmed grid connections across central-belt sites (2.4GW Gate 2-compliant in total) and nine data centre locations.",
+    "confidence": "high",
+    "source_ids": ["src-apatura-news-ravenscraig", "src-datacentrenews-larbert"]
+  },
+  {
+    "name": "Apatura DC Project 2 Ltd",
+    "role": "spv",
+    "ownership_summary": "Special purpose vehicle named as the prospective applicant in the statutory pre-application notice for the Ravenscraig AI Data Centre Campus.",
+    "confidence": "medium",
+    "notes": "Companies House record for this SPV not retrieved during the session.",
+    "source_ids": ["src-publicnoticeportal-pan"]
+  },
+  {
+    "name": "Ravenscraig Ltd",
+    "role": "landowner",
+    "company_number": "SC192142",
+    "jurisdiction": "Scotland",
+    "website": "https://ravenscraig.co.uk",
+    "ownership_summary": "Joint venture owning the Ravenscraig regeneration site. Persons with significant control (each 25-50% of shares and voting rights): Scottish Enterprise; Wilson Bowden (Ravenscraig) Limited (04199662, part of Barratt); Tata Steel UK Limited. Incorporated 23 December 1998; registered office c/o Brodies LLP, Edinburgh.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "source_ids": ["src-ch-ravenscraig-ltd", "src-ravenscraig-vision"]
+  },
+  {
+    "name": "Scottish Enterprise",
+    "role": "investor",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Scotland's economic development agency; PSC of Ravenscraig Ltd (25-50%).",
+    "confidence": "high",
+    "source_ids": ["src-ch-ravenscraig-ltd"]
+  },
+  {
+    "name": "Wilson Bowden (Ravenscraig) Limited",
+    "role": "investor",
+    "company_number": "04199662",
+    "jurisdiction": "England and Wales",
+    "ownership_summary": "PSC of Ravenscraig Ltd (25-50%); part of the Barratt (Barratt Redrow) group following Barratt's 2007 acquisition of Wilson Bowden.",
+    "confidence": "high",
+    "source_ids": ["src-ch-ravenscraig-ltd"]
+  },
+  {
+    "name": "Tata Steel UK Limited",
+    "role": "investor",
+    "jurisdiction": "United Kingdom",
+    "ownership_summary": "PSC of Ravenscraig Ltd (25-50%); successor to British Steel/Corus interests in the former steelworks land.",
+    "confidence": "high",
+    "source_ids": ["src-ch-ravenscraig-ltd"]
+  },
+  {
+    "name": "North Lanarkshire Council",
+    "role": "planning_authority",
+    "jurisdiction": "Scotland",
+    "confidence": "high",
+    "source_ids": ["src-publicnoticeportal-pan", "src-nlc-portal-ravenscraig"]
+  },
+  {
+    "name": "Scottish Government Energy Consents Unit",
+    "role": "government",
+    "jurisdiction": "Scotland",
+    "notes": "Intended consenting authority for the separate Section 36 BESS application.",
+    "confidence": "medium",
+    "source_ids": ["src-apatura-consult-ravenscraig-project"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "jurisdiction": "Scotland",
+    "website": "https://aprs.scot",
+    "notes": "Tracks and critiques Scottish hyperscale data centre proposals including Ravenscraig; publishes planning references and screening extracts.",
+    "confidence": "medium",
+    "source_ids": ["src-aprs-ravenscraig"]
+  }
+]

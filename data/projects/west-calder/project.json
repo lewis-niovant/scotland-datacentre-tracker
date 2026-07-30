@@ -1,0 +1,55 @@
+{
+  "slug": "west-calder",
+  "canonical_name": "Freeport AI Energy Campus, West Calder (West Lothian)",
+  "display_name": "West Calder / Freeport (West Lothian)",
+  "aliases": [
+    {
+      "alias": "Freeport AI Energy Campus",
+      "alias_type": "marketing_name",
+      "source_ids": ["src-apatura-freeport-consult"]
+    },
+    {
+      "alias": "Freeport AI Data Centre Campus",
+      "alias_type": "marketing_name",
+      "source_ids": ["src-apatura-freeport-benefits"]
+    },
+    {
+      "alias": "Land At Former Freeport Shopping & Leisure Village, Westwood, West Calder",
+      "alias_type": "place_name",
+      "source_ids": ["src-wlc-portal-0346-eia-25"]
+    }
+  ],
+  "summary": "Proposed 250 MW 'AI Energy Campus' by Apatura on the former Freeport shopping and leisure village site at Westwood, north-west of West Calder, West Lothian, paired with a 250 MW battery energy storage system to be consented separately via a Section 36 application to Scottish Ministers. Despite the site name, this is the former Freeport outlet village, not a UK 'Green Freeport' tax zone. An EIA screening request (0346/EIA/25) was determined 'Environmental Assessment Not Required' on 4 June 2025 and a Proposal of Application Notice (0625/PAC/25) received a PAC response on 14 August 2025. The developer targeted a planning application in Q1/Q2 2026, but no validated application had been located as of 30 July 2026. Apatura claims a NESO grid connection offer at Harburn substation accepted in Q2 2025 and £1.7bn investment; job numbers are not quantified.",
+  "project_type": "hyperscale",
+  "status": "pre_application",
+  "status_source_ids": ["src-wlc-portal-0625-pac-25", "src-planit-westlothian-dc"],
+  "maturity_level": "M1",
+  "maturity_explanation": "Early development, verified: EIA screening 0346/EIA/25 determined 'Environmental Assessment Not Required' (4 June 2025) and PAN 0625/PAC/25 processed with PAC response issued 14 August 2025 on the West Lothian Council portal. No validated planning application for the data centre, and no Section 36 application for the BESS, located as of 30 July 2026, although the developer's published timeline targeted submission in Q1/Q2 2026. Not M2 until an application is verified as validated.",
+  "verification_level": "verified",
+  "local_authority": "West Lothian Council",
+  "region": "Edinburgh and Lothians",
+  "first_public_date": "2025-05-02",
+  "anticipated_construction_start": "2027 (developer consultation-site timeline)",
+  "anticipated_operational_date": "2029 fully operational (developer consultation-site timeline)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2025-08-14",
+    "headline": "West Lothian Council issues pre-application consultation response to PAN 0625/PAC/25; developer consultation ran Q3 2025 with application targeted for Q1/Q2 2026 (not yet located)",
+    "source_ids": ["src-wlc-portal-0625-pac-25", "src-apatura-freeport-project"]
+  },
+  "unknowns": [
+    "Whether a full planning application has been submitted/validated since the PAN (developer targeted Q1/Q2 2026; PlanIt mirror last scraped the portal in mid-2025 and the council portal itself blocks the research environment).",
+    "Identity of the applicant SPV on the PAN and screening request (Apatura operates numbered SPVs 'Apatura DC Project 1-12 Ltd'; the Freeport SPV could not be matched).",
+    "Whether the 250 MW figure is IT load or grid import - the PAN describes it only as '250 MW demand utility capacity'.",
+    "Content of the council's EIA screening opinion (3 documents on portal not readable from research environment).",
+    "Status and reference of the intended Section 36 application to the Energy Consents Unit for the 250 MW BESS.",
+    "Landowner of the former Freeport village site.",
+    "Independent verification of the claimed NESO grid connection offer at Harburn substation (developer statement only).",
+    "Quantified job numbers (construction or operational) - not published by the developer.",
+    "Any community or councillor response to the Q3 2025 consultation - none located in press or campaign material."
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "cooling_type": "unstated",
+    "annual_water_m3": 6000000,
+    "potable_water": null,
+    "estimate_type": "independently_calculated",
+    "state": "estimated",
+    "confidence": "low",
+    "notes": "Alex de Vries (Digiconomist), quoted by BBC (1 Mar 2026), estimated the facility could consume nearly 6 billion litres (~6,000,000 m3) of freshwater per year, and noted cooling residue limits recirculation and that Scotland's cooler climate offers limited benefit. Basis/assumptions not published; this is a third-party order-of-magnitude estimate, not an applicant figure. The applicant has published no cooling technology or water demand figures; the PAN description includes a balancing pond (surface drainage).",
+    "source_ids": ["src-bbc-rufus-2026"]
+  },
+  {
+    "cooling_type": "unstated",
+    "annual_water_m3": null,
+    "estimate_type": "developer",
+    "state": "not_disclosed",
+    "confidence": "low",
+    "notes": "No applicant water or cooling figures located in consultation material as of 2026-07-30.",
+    "source_ids": ["src-ili-rufus-consultation"]
+  }
+]

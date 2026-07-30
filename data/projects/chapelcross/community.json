@@ -1,0 +1,34 @@
+{
+  "summary": "Pre-application community engagement began in May 2026 with developer-run consultation events in Annan and Creca (12-13 May), followed by a second round on 16-17 June 2026. Press coverage of the launch was largely descriptive; no organised opposition, community council position, or published consultation feedback has been located as of 30 July 2026. The Chapelcross Site Stakeholder Group (convened by Nuclear Restoration Services) is the standing local forum for the wider site.",
+  "stakeholder_positions": [
+    {
+      "stakeholder": "South of Scotland Enterprise",
+      "stakeholder_type": "government",
+      "position": "Supportive delivery partner; describes the campus as one of the most significant inward investment opportunities in the South of Scotland.",
+      "date": "2025-11-19",
+      "source_ids": ["src-cx-sose-strategic-developer"]
+    },
+    {
+      "stakeholder": "Nuclear Decommissioning Authority (landowner)",
+      "stakeholder_type": "government",
+      "position": "Supportive; CEO David Peattie called CX Power's appointment 'a significant step forwards, unlocking the combined potential of the public and private sector'.",
+      "date": "2025-11-19",
+      "source_ids": ["src-cx-govuk-nda-release"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Several hundred high value jobs and skills/investment attraction",
+      "claimant": "NDA / SOSE",
+      "binding_status": "aspirational",
+      "source_ids": ["src-cx-govuk-nda-release"]
+    },
+    {
+      "benefit": "Training, education and skills hub on site; apprenticeships and skills pathways",
+      "claimant": "CX Power",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-cx-campus-about", "src-cx-campus-vision"]
+    }
+  ],
+  "notes": "No campaign group or objection activity located. Consultation feedback report expected with the Planning Permission in Principle submission (targeted December 2026)."
+}

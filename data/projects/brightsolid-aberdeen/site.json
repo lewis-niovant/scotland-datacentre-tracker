@@ -1,0 +1,20 @@
+{
+  "site_name": "Brightsolid Aberdeen Data Centre",
+  "settlement": "Aberdeen (Mastrick / Whitemyres area, west Aberdeen)",
+  "latitude": 57.153087,
+  "longitude": -2.157559,
+  "location_precision": "site_centroid",
+  "greenfield_brownfield": "unknown",
+  "current_land_use": "Operating data centre in a west-Aberdeen industrial area",
+  "land_notes": "Data Center Map lists the facility on Whitemyres Avenue, Aberdeen AB16 6HQ; PeeringDB instead records the address as Lang Stracht, Aberdeen AB15 6DF. Both are preserved: the two postcode centroids are only about 120 m apart and Whitemyres Avenue runs off Lang Stracht within the same DC Thomson / Aberdeen Journals complex, so they are almost certainly two descriptions of the same site rather than two sites. AB16 6HQ is preferred here because it is the more specific street-level listing. Coordinates derive from the Royal Mail postcode unit centroid returned by the postcodes.io API for the postcode recorded above. No building number is published, so the point is a site centroid rather than a door-level fix. Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
+  "source_ids": [
+    "src-baxtel-brightsolid",
+    "src-dcd-brightsolid",
+    "src-dcm-brightsolid-aberdeen",
+    "src-peeringdb-brightsolid-aberdeen",
+    "src-postcodes-io-ab15-6df",
+    "src-postcodes-io-ab16-6hq"
+  ],
+  "address": "Whitemyres Avenue, Mastrick, Aberdeen",
+  "postcode": "AB16 6HQ"
+}

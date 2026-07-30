@@ -1,0 +1,44 @@
+[
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 150,
+    "state": "developer_stated",
+    "claimant": "Slate Island Developments Ltd (consultation updates page)",
+    "applicable_date": "2026-04-28",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Only stated data centre power figure, given as a maximum on the developer's own consultation site; press coverage gives no MW figure.",
+    "notes": "Stated as 'maximum 150MW' for the data centre. Not broken down into IT load vs grid import.",
+    "source_ids": ["src-spango-consult-updates"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 99,
+    "state": "developer_stated",
+    "claimant": "Slate Island Developments Ltd / press",
+    "applicable_date": "2026-03-25",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "The c.99MW figure appears on the developer's consultation homepage and in DCD coverage; the updates page variously renders c.99.9MW / 99.9MWh — units ambiguous, so the round 99 MW power rating is treated as the headline claim.",
+    "notes": "BESS to be consented separately under Section 36 of the Electricity Act 1989 (ECU). Conflicting renderings: '99MW' (homepage/DCD), 'c.99.9MW' and '99.9MWh' (updates page). A rating just under 100 MW is consistent with developer positioning below round-number thresholds; energy capacity (MWh) not clearly disclosed.",
+    "source_ids": ["src-spango-consult-home", "src-spango-consult-updates", "src-dcd-spango"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 99.9,
+    "state": "developer_stated",
+    "claimant": "Slate Island Developments Ltd (consultation updates page)",
+    "confidence": "low",
+    "notes": "Updates page text seen as both 'c.99.9MW' and '99.9MWh' in different retrievals; recorded as a separate conflicting claim rather than merged with the 99 MW figure.",
+    "source_ids": ["src-spango-consult-updates"]
+  },
+  {
+    "capacity_type": "connection_offer",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "Slate Island Developments Ltd",
+    "confidence": "low",
+    "notes": "Developer states a Gate 1 grid connection offer has been secured from SP Energy Networks to a local substation; offered MW not disclosed.",
+    "source_ids": ["src-spango-consult-updates"]
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "$id": "economic_claims.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Economic claims (jobs, investment, benefit)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["claim_category", "claimant", "state", "source_ids"],
+    "properties": {
+      "claim_category": {
+        "type": "string",
+        "enum": [
+          "direct_construction_jobs",
+          "indirect_construction_jobs",
+          "induced_construction_jobs",
+          "construction_job_years",
+          "peak_construction_workforce",
+          "direct_operational_jobs",
+          "indirect_operational_jobs",
+          "induced_operational_jobs",
+          "total_jobs_unspecified",
+          "temporary_jobs",
+          "apprenticeships",
+          "gva",
+          "annual_economic_output",
+          "capital_expenditure",
+          "business_rates",
+          "community_benefit",
+          "wider_regional_jobs",
+          "national_sector_claim",
+          "other"
+        ]
+      },
+      "value": { "type": ["number", "null"] },
+      "value_min": { "type": "number" },
+      "value_max": { "type": "number" },
+      "unit": { "type": "string", "enum": ["jobs", "fte", "job_years", "gbp", "gbp_per_year", "other", "unstated"] },
+      "geographic_scope": { "type": "string" },
+      "period": { "type": "string" },
+      "claimant": { "type": "string" },
+      "methodology": { "type": "string" },
+      "consultant": { "type": "string" },
+      "independently_reviewed": { "type": ["boolean", "null"] },
+      "binding_status": {
+        "type": "string",
+        "enum": ["legally_binding", "planning_condition", "section_75", "commitment_stated", "modelled", "aspirational", "unstated"]
+      },
+      "state": { "$ref": "common.schema.json#/$defs/uncertaintyState" },
+      "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+      "notes": { "type": "string" },
+      "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+    },
+    "additionalProperties": false
+  }
+}

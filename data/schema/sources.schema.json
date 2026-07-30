@@ -1,0 +1,53 @@
+{
+  "$id": "sources.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Global source ledger",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "publisher", "source_type", "reliability_tier", "retrieved_date"],
+    "properties": {
+      "id": { "$ref": "common.schema.json#/$defs/sourceId" },
+      "title": { "type": "string" },
+      "publisher": { "type": "string" },
+      "source_type": {
+        "type": "string",
+        "enum": [
+          "planning_portal",
+          "planning_document",
+          "eia_document",
+          "decision_notice",
+          "committee_report",
+          "appeal_document",
+          "companies_house",
+          "developer_publication",
+          "government_publication",
+          "regulator_publication",
+          "parliamentary_material",
+          "journalism",
+          "campaign_material",
+          "community_material",
+          "grid_data",
+          "map_or_gis",
+          "social_media_lead",
+          "other"
+        ]
+      },
+      "url": { "type": "string" },
+      "publication_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "retrieved_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "reliability_tier": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 5,
+        "description": "1 = official primary record, 2 = official secondary/government, 3 = corporate/developer, 4 = credible journalism, 5 = campaign/social/unverified"
+      },
+      "perspective": { "type": "string", "description": "Known standpoint or potential bias" },
+      "archived_path": { "type": "string" },
+      "document_version": { "type": "string" },
+      "status": { "type": "string", "enum": ["active", "broken", "superseded", "archived"], "default": "active" },
+      "notes": { "type": "string" }
+    },
+    "additionalProperties": false
+  }
+}

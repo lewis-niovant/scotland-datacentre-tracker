@@ -1,0 +1,109 @@
+{
+  "slug": "ravenscraig",
+  "canonical_name": "Ravenscraig AI Energy Campus (Motherwell)",
+  "display_name": "Ravenscraig AI Energy Campus",
+  "aliases": [
+    {
+      "alias": "Ravenscraig AI Energy Campus",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-apatura-consult-ravenscraig-project"
+      ]
+    },
+    {
+      "alias": "SevenFourEight",
+      "alias_type": "place_name",
+      "source_ids": [
+        "src-dcd-apatura-ravenscraig"
+      ]
+    },
+    {
+      "alias": "Apatura Ravenscraig",
+      "alias_type": "other",
+      "source_ids": [
+        "src-aprs-ravenscraig"
+      ]
+    },
+    {
+      "alias": "Apatura DC Project 2 Ltd",
+      "alias_type": "spv_name",
+      "source_ids": [
+        "src-publicnoticeportal-pan"
+      ]
+    }
+  ],
+  "summary": "Proposed 550 MW AI data centre campus with an associated 650 MW battery energy storage system by Apatura (SPV Apatura DC Project 2 Ltd) on roughly 160 acres of remediated brownfield land at the former Ravenscraig steelworks, Motherwell, North Lanarkshire, in partnership with landowner Ravenscraig Ltd (Scottish Enterprise / Wilson Bowden (Barratt) / Tata Steel UK joint venture). Developer claims £3.9bn investment and operations from 2029-2030. Pre-application stage: a Proposal of Application Notice (reported reference 25/00838/PAN) and an EIA screening request (reported reference 25/00556/EIA, screened out as not requiring EIA) were lodged with North Lanarkshire Council in 2025; the planning application, originally targeted for Q4 2025, had not been submitted as of mid-June 2026 and is expected in summer 2026. The BESS is to be consented separately via a Section 36 application to the Scottish Government Energy Consents Unit. The project is distinct from the Lanarkshire AI Growth Zone designated in January 2026, which is delivered by DataVita and CoreWeave.",
+  "project_type": "hyperscale",
+  "status": "pre_application",
+  "status_source_ids": [
+    "src-datacentrenews-larbert",
+    "src-bylines-hyperscale",
+    "src-publicnoticeportal-pan"
+  ],
+  "maturity_level": "M1",
+  "maturity_explanation": "PAN lodged and statutory pre-application consultation held in 2025 (public events including 6 October 2025); EIA screening request determined (reported screened out); grid connection offer reportedly accepted June 2025. No planning application had been submitted as of 11 June 2026 per Data Centre News, despite the developer's original Q4 2025 target.",
+  "verification_level": "reported",
+  "local_authority": "North Lanarkshire Council",
+  "region": "Lanarkshire",
+  "related_project_slugs": [
+    "larbert-glenbervie"
+  ],
+  "first_public_date": "2025-06-27",
+  "anticipated_construction_start": "2026 (developer consultation timeline: remediation/construction from 2026 subject to consent; slippage likely as application unsubmitted at mid-2026)",
+  "anticipated_operational_date": "2029 (developer consultation timeline) / 'online in 2030' (developer statements to press)",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-09-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "phases": [
+    {
+      "phase_name": "Eastern site (six data halls)",
+      "phase_number": 1,
+      "description": "Larger plot east of the Ravenscraig masterplan area with six data halls, per developer consultation material.",
+      "status": "pre_application",
+      "source_ids": [
+        "src-apatura-consult-ravenscraig-project"
+      ]
+    },
+    {
+      "phase_name": "Western site (three buildings)",
+      "phase_number": 2,
+      "description": "Western plot with three buildings integrated into the local road network, per developer consultation material.",
+      "status": "pre_application",
+      "source_ids": [
+        "src-apatura-consult-ravenscraig-project"
+      ]
+    },
+    {
+      "phase_name": "Battery energy storage system (650 MW)",
+      "description": "Ancillary BESS to be consented separately via a Section 36 application to the Scottish Government Energy Consents Unit.",
+      "status": "announced",
+      "source_ids": [
+        "src-apatura-consult-ravenscraig-project",
+        "src-publicnoticeportal-pan"
+      ]
+    }
+  ],
+  "latest_development": {
+    "date": "2026-06-11",
+    "headline": "Planning application still unsubmitted; Apatura says it expects to submit the Ravenscraig application in summer 2026",
+    "source_ids": [
+      "src-datacentrenews-larbert"
+    ]
+  },
+  "unknowns": [
+    "Direct portal verification of the reported references 25/00838/PAN and 25/00556/EIA — the North Lanarkshire ePlanning portal was unreachable from the research environment throughout the session; both references come from secondary sources",
+    "Whether the principal planning application (PPP or full) has been submitted since 11 June 2026, and its reference",
+    "Exact PAN submission date and the council's formal response",
+    "Text of the EIA screening opinion and its date (only a quoted extract via APRS/secondary reporting)",
+    "Consultant and methodology behind the 'independent socio-economic study' cited for GVA/jobs figures, and the reason the claimed figures changed between June 2025 (£1.2bn/£729m GVA, 2,399 jobs) and October 2025 (£766m/£583m GVA, 2,000+ jobs)",
+    "Basis of the Bylines figure of 1,044 permanent jobs and whether it comes from PAN documentation",
+    "Formal grid connection contract details (voltage, connection date, NESO queue position) beyond developer statements of an accepted offer at Wishaw and Newarthill substations",
+    "Whether Ravenscraig will gain any formal AI Growth Zone status — the January 2026 Lanarkshire AIGZ designation names only DataVita/CoreWeave; Apatura's June 2025 AIGZ bid outcome for Ravenscraig is unconfirmed",
+    "Red-line boundary of the two plots (east and west of the masterplan area) — no plan retrieved, so no boundary.geojson produced",
+    "Water/cooling demand — no figures disclosed",
+    "Land agreement terms between Apatura and Ravenscraig Ltd",
+    "Section 36 application status for the 650 MW BESS (600 MW per Bylines) at the Energy Consents Unit"
+  ]
+}

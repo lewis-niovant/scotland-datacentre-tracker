@@ -1,0 +1,90 @@
+{
+  "summary": "Council-led project with an unusual public-ownership dimension: East Lothian Council owns the site and would be a joint-venture partner with a financial return. Community councils and some elected members have pressed for scrutiny of the JV before any planning application, citing energy and water demand, transparency of the private tender decision, and whether a data centre delivers fewer jobs than the previous masterplan envisaged. The council states community benefits will be secured through a framework agreed with SDCL and that the normal planning process, including statutory consultation, lies ahead.",
+  "principal_concerns": [
+    {
+      "concern": "Transparency: preferred bidder selected via a private report to Council (February 2025); Cllr Lachlan Bruce described it as 'a secretive deal' agreed 'behind closed doors'",
+      "raised_by": "Cllr Lachlan Bruce (Conservative, Preston Seton Gosford)",
+      "source_ids": ["src-elcourier-cockenzie-bruce-2025"]
+    },
+    {
+      "concern": "Low operational employment relative to the Cockenzie Masterplan's ambitions — Bruce claimed data centres employ fewer than 100 people operationally versus circa 3,300 permanent jobs projected under the masterplan, and that the deal 'locks away one of East Lothian's most important employment sites'",
+      "raised_by": "Cllr Lachlan Bruce",
+      "source_ids": ["src-elcourier-cockenzie-bruce-2025"]
+    },
+    {
+      "concern": "Energy demand and purpose — questioning electricity use for AI, worker displacement, and conflict with community wealth-building principles",
+      "raised_by": "Cllr Shona McIntosh (Green, Musselburgh)",
+      "source_ids": ["src-elcourier-cockenzie-progress-2026"]
+    },
+    {
+      "concern": "Water demand amid existing supply pressures; unclear water usage commitments",
+      "raised_by": "Councillors and Prestonpans Community Council",
+      "source_ids": ["src-elcourier-cockenzie-progress-2026"]
+    },
+    {
+      "concern": "'Greenwashing' of environmental claims; no statutory definition of a 'green data centre'",
+      "raised_by": "Prestonpans Community Council; Cockenzie and Port Seton Community Council",
+      "source_ids": ["src-elcourier-cockenzie-progress-2026", "src-elcourier-cockenzie-scrutiny-2026"]
+    },
+    {
+      "concern": "Need for proper public scrutiny of the joint venture before a planning application, and independent developer engagement separate from wider site redevelopment discussions",
+      "raised_by": "Cockenzie and Port Seton Community Council (chair Ben Morse)",
+      "source_ids": ["src-elcourier-cockenzie-scrutiny-2026", "src-elcourier-cockenzie-progress-2026"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Long-term investment and financial return to the council from the joint venture (amount not yet finalised); no council capital contribution required",
+      "claimant": "East Lothian Council",
+      "binding_status": "aspirational",
+      "source_ids": ["src-elc-cockenzie-dc-update-2026"]
+    },
+    {
+      "benefit": "Local training and employment opportunities, including educational partnerships with local providers",
+      "claimant": "East Lothian Council / SDCL",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-scn-cockenzie-announcement-2025", "src-elc-cockenzie-dc-update-2026"]
+    },
+    {
+      "benefit": "Community benefits to be secured through a framework agreed as part of the JV negotiations",
+      "claimant": "East Lothian Council",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-elc-cockenzie-dc-update-2026"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Cllr John McMillan (Economic Development and Tourism spokesperson)",
+      "stakeholder_type": "elected_member",
+      "position": "Supportive: 'an important step forward in the potential redevelopment of part of this key site'; June 2026 update 'shows the progress being made'.",
+      "date": "2026-06-25",
+      "source_ids": ["src-elc-cockenzie-dc-update-2026", "src-scn-cockenzie-announcement-2025"]
+    },
+    {
+      "stakeholder": "Cllr Lachlan Bruce",
+      "stakeholder_type": "elected_member",
+      "position": "Opposed: criticised secrecy, minimal local benefit, and departure from masterplan employment ambitions and Levelling Up Fund commitments.",
+      "source_ids": ["src-elcourier-cockenzie-bruce-2025"]
+    },
+    {
+      "stakeholder": "Cllr Shona McIntosh",
+      "stakeholder_type": "elected_member",
+      "position": "Critical: questioned AI energy use and consistency with community wealth-building principles.",
+      "date": "2026-06-25",
+      "source_ids": ["src-elcourier-cockenzie-progress-2026"]
+    },
+    {
+      "stakeholder": "Cockenzie and Port Seton Community Council",
+      "stakeholder_type": "community_council",
+      "position": "Seeking proper scrutiny of the JV before any planning application; wants independent engagement from the developer.",
+      "source_ids": ["src-elcourier-cockenzie-scrutiny-2026"]
+    },
+    {
+      "stakeholder": "Prestonpans Community Council",
+      "stakeholder_type": "community_council",
+      "position": "Concerned: greenwashing, water usage, absent community-benefits framework, minimal local jobs.",
+      "source_ids": ["src-elcourier-cockenzie-progress-2026"]
+    }
+  ],
+  "notes": "No formal consultation is open; the council estimated (Oct 2025) up to a year to finalise legal agreements before the statutory public consultation stage."
+}

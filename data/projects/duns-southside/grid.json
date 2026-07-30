@@ -1,0 +1,17 @@
+{
+  "network_operator": "SP Energy Networks / SP Transmission (inferred from location; not confirmed by any source)",
+  "connection_status": "unknown",
+  "requested_import_capacity_mw": {
+    "value": null,
+    "unit": "MW",
+    "state": "not_disclosed",
+    "claimant": "Sunlaws Development Company Limited",
+    "notes": "No evidence of a grid connection application, offer or queue position was located; the developer's 225 MW figure is a project capacity claim, not a documented connection request.",
+    "source_ids": ["src-southsidedc-site", "src-deadline-southside-consult"]
+  },
+  "nearby_substation": "Fallago Rig substation (developer-cited); the Fallago Rig wind farm (48 turbines) is 9.4 km northwest of the site per the screening-stage description",
+  "reinforcement_required": null,
+  "evidence_basis": "Developer statements only: consultation publicity says the site would be 'principally powered through local renewable energy' due to 'the proximity of multiple windfarms and the Fallago Rig substation, providing access to electricity generating assets which are often curtailed due to a shortage of grid capacity'. The screening-stage description also refers to a grid electricity connection, transformer, switchboard and UPS, plus a mains gas connection with emergency gas backup generation; later reporting says no diesel backup generators are proposed. No NESO/TEC register entry, SPEN connection offer or private-wire agreement was found.",
+  "notes": "The curtailment-capture framing ('harnessing wasted wind power') is a developer claim; no contractual arrangement with any wind farm operator (Fallago Rig is operated by EDF Renewables) has been evidenced. Whether the connection would be at distribution or transmission voltage is not disclosed. The screening description places the wind farm 9.4 km from the site ('southeast of Fallago Rig' — i.e. the site is southeast of the wind farm).",
+  "source_ids": ["src-deadline-southside-consult", "src-bt-southside-plans", "src-southsidedc-site", "src-hellorayo-duke", "src-scotsman-southside-wind"]
+}

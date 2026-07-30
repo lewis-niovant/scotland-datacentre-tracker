@@ -1,0 +1,13 @@
+[
+  {
+    "cooling_type": "unstated",
+    "cooling_description": "Developer cites the site's cooler climate enabling efficient 'free cooling'; at pre-application stage cooling options were described as still under exploration, with tap-water cooling noted as the most common but water-intensive option. Definitive cooling technology not confirmed at PPP stage.",
+    "annual_water_m3": 34000,
+    "potable_water": null,
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "Developer figure of ~34,000 m3/yr, described as equivalent to 239 homes; ILI states water would arrive via infrastructure separate from Auchtertool's network. Community council reported the existing mains pipe is too small and a new pipe would likely be required (Scottish Water Horizons involved). Discharge arrangements not disclosed — a key community council concern.",
+    "source_ids": ["src-dcr-submission", "src-dcr-objections", "src-stv-community", "src-acc-village-update"]
+  }
+]

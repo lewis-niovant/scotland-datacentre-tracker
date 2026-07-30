@@ -1,0 +1,71 @@
+{
+  "summary": "Organised local opposition exists at pre-application stage. A dedicated Facebook group, 'Opposition to the West Barns Mains Data Centre' (reported 705 members), was set up in response to the proposals. Local charity Sustaining Dunbar urges residents to oppose the scheme, and the local campaign is coordinating with APRS's Scotland-wide campaign to seek a Scottish Government moratorium on hyperscale AI data centre applications. Statutory and internal-consultee concerns raised at scoping include ecology (SPA qualifying species, water abstraction impacts), heritage (historic battlefields, scheduled monuments), landscape and prime agricultural land. No community benefits have been claimed by the developer in any located source.",
+  "principal_concerns": [
+    {
+      "concern": "Loss of approximately 60.2 ha of excellent (Grade 2 / Class 2 and 3.1 prime) agricultural land",
+      "raised_by": "APRS; Sustaining Dunbar; Simon Bell briefing",
+      "source_ids": ["src-aprs-dunbar-dc", "src-sustaining-dunbar-datacentre-debate", "src-bell-briefing-west-barns-mains"]
+    },
+    {
+      "concern": "Proximity to housing — site reported as only 50 m from homes on Muirfield Road and Home Avenue, with further dwellings (Easter Broomhouse Cottages, Bowerhouse, Wester Broomhouse Farm) identified as noise-sensitive receptors",
+      "raised_by": "APRS; East Lothian Council Environmental Health Officer",
+      "source_ids": ["src-aprs-dunbar-dc", "src-elc-scoping-opinion-25-00008-scr"]
+    },
+    {
+      "concern": "Undisclosed but potentially very large energy demand, backup generation emissions and lifecycle greenhouse gases",
+      "raised_by": "Simon Bell briefing; East Lothian Council Climate Change Officer",
+      "source_ids": ["src-bell-briefing-west-barns-mains", "src-elc-scoping-opinion-25-00008-scr"]
+    },
+    {
+      "concern": "Water demand and impacts of abstraction on the water table, Spott Burn and European Protected Species",
+      "raised_by": "East Lothian Council Biodiversity Officer; Sustaining Dunbar",
+      "source_ids": ["src-elc-scoping-opinion-25-00008-scr", "src-sustaining-dunbar-datacentre-debate"]
+    },
+    {
+      "concern": "Ecological effects on Firth of Forth and Outer Firth of Forth SPA/Ramsar and St Andrews Bay Complex SPA qualifying species; Habitats Regulations Appraisal required",
+      "raised_by": "East Lothian Council Biodiversity Officer / NatureScot consultation",
+      "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+    },
+    {
+      "concern": "Impacts on heritage assets: site within Battle of Dunbar I and II historic battlefields; settings of five scheduled monuments and Category A-listed Bower House Dovecot",
+      "raised_by": "Historic Environment Scotland; East Lothian Council Archaeology & Heritage Officer",
+      "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+    },
+    {
+      "concern": "Landscape and visual impact of very large buildings on open, sloping farmland; council required study area extended to 6 km",
+      "raised_by": "East Lothian Council Landscape Project Officer; Simon Bell briefing",
+      "source_ids": ["src-elc-scoping-opinion-25-00008-scr", "src-bell-briefing-west-barns-mains"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Opposition to the West Barns Mains Data Centre (Facebook group)",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; set up in response to the proposals, reported 705 members.",
+      "source_ids": ["src-courier-cockenzie-scrutiny", "src-fb-opposition-west-barns-mains"]
+    },
+    {
+      "stakeholder": "Sustaining Dunbar",
+      "stakeholder_type": "ngo",
+      "position": "Opposed; asks residents to 'consider the negative impacts' and make their voices heard; supports a moratorium on hyperscale AI data centre applications in Scotland.",
+      "date": "2026-06-19",
+      "source_ids": ["src-sustaining-dunbar-datacentre-debate"]
+    },
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Opposed as part of its national data centres campaign; states 'data centres are the biggest threat to Scotland's net zero target and to our countryside'.",
+      "source_ids": ["src-aprs-dunbar-dc", "src-sustaining-dunbar-datacentre-debate"]
+    },
+    {
+      "stakeholder": "Professor Simon Bell (landscape architect, local resident academic)",
+      "stakeholder_type": "other",
+      "position": "Argued in a briefing to East Lothian Council that EIA should be required, criticising the applicant's Screening Report for omitting power demand, water, backup generation and cumulative effects.",
+      "date": "2025-11-28",
+      "source_ids": ["src-bell-briefing-west-barns-mains"]
+    }
+  ],
+  "campaign_groups": ["Opposition to the West Barns Mains Data Centre", "Action to Protect Rural Scotland (APRS)", "Sustaining Dunbar"],
+  "planning_authority_contact": "policyandprojects@eastlothian.gov.uk (East Lothian Council Policy & Projects, per scoping opinion letterhead)",
+  "notes": "No developer public consultation events, PAN or community benefit offers have been located. Positions above are claims by the named parties."
+}

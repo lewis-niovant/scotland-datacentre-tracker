@@ -1,0 +1,24 @@
+[
+  {
+    "name": "DataVita Ltd",
+    "role": "operator",
+    "jurisdiction": "Scotland",
+    "website": "https://www.datavita.co.uk",
+    "ownership_summary": "Scottish data centre and connectivity operator; states it is 100% owned by HFD Group. Also operates DV1 (Fortis) campus in Lanarkshire.",
+    "confidence": "high",
+    "source_ids": [
+      "src-datavita-about",
+      "src-datavita-dv2"
+    ]
+  },
+  {
+    "name": "HFD Group",
+    "role": "parent_company",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Scottish commercial property, technology and renewable-energy group; owner and developer of 177 Bothwell Street and 100% owner of DataVita.",
+    "confidence": "high",
+    "source_ids": [
+      "src-datavita-about"
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "site_name": "SevenFourEight, Ravenscraig Regeneration Area (former Ravenscraig steelworks)",
+  "address": "Land at Ravenscraig Regeneration Area, Wishaw, Motherwell",
+  "postcode": "ML1 1NR",
+  "settlement": "Motherwell / Wishaw",
+  "latitude": 55.783,
+  "longitude": -3.949,
+  "location_precision": "approximate",
+  "boundary_precision": "red_line_official",
+  "site_area_m2": {
+    "value": 647500,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "notes": "Reported as 'approximately 160 acres' (~64.75 ha); red-line boundary not retrieved. Developer consultation material describes plots east and west of the Ravenscraig masterplan area.",
+    "source_ids": [
+      "src-dcd-apatura-ravenscraig",
+      "src-apatura-consult-ravenscraig-project"
+    ]
+  },
+  "number_of_buildings": {
+    "value": 9,
+    "unit": "buildings",
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "notes": "Six data halls on the eastern site plus three buildings on the western site, per consultation material.",
+    "source_ids": [
+      "src-apatura-consult-ravenscraig-project"
+    ]
+  },
+  "greenfield_brownfield": "brownfield",
+  "current_land_use": "Vacant remediated post-industrial land within the Ravenscraig masterplan regeneration area",
+  "previous_land_use": "Ravenscraig steelworks (closed 1992); described as one of Europe's largest brownfield regeneration sites",
+  "nearest_settlements": [
+    "Motherwell",
+    "Wishaw",
+    "Craigneuk",
+    "New Stevenston",
+    "Carfin"
+  ],
+  "land_notes": "The 'SevenFourEight' plot is reported to lie east of the Wishaw Deviation freight railway line within the Ravenscraig masterplan area; consultation material also shows a western plot. Coordinates are an approximate centroid of the eastern Ravenscraig regeneration land, not taken from a red-line plan — precision set accordingly. Land owned by Ravenscraig Ltd (Scottish Enterprise / Wilson Bowden / Tata Steel UK JV).",
+  "source_ids": [
+    "src-dcd-apatura-ravenscraig",
+    "src-apatura-consult-ravenscraig-project",
+    "src-publicnoticeportal-pan",
+    "src-ravenscraig-vision"
+  ]
+}

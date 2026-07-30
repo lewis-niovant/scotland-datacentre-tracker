@@ -1,0 +1,56 @@
+{
+  "summary": "Organised local opposition emerged quickly after the February 2026 EIA scoping submission. A Change.org petition launched 4 June 2026 had ~3,150 signatures by late July 2026; APRS is campaigning against the scheme and publicised a 'Defend your Castle' protest at a Clan Hunter gathering aimed at the Hunterston Estate as landowner; Scottish Greens MSP Cara McKee has called for a national moratorium on hyperscale data centres pending Scottish Government guidance. No application is yet open for formal representations.",
+  "principal_concerns": [
+    {
+      "concern": "Loss of ~88 ha (petition says ~84 ha, APRS 'almost 200 acres') of agricultural land, woodland, wetland and watercourses; industrialisation of open countryside in an area already hosting Clydeport, the ore terminal and coal yard",
+      "raised_by": "APRS; petition signatories",
+      "source_ids": ["src-aprs-hunterston", "src-change-hunterston-petition"]
+    },
+    {
+      "concern": "Harm to the setting of Hunterston Castle, Hunterston House and Portencross Castle, and to buried archaeology in an area of high archaeological potential",
+      "raised_by": "West of Scotland Archaeology Service (scoping response); petition signatories",
+      "source_ids": ["src-ayrshire-today-archaeology", "src-change-hunterston-petition"]
+    },
+    {
+      "concern": "A78 traffic congestion through Seamill and Fairlie, and unsafe site access — historic stone pillars at the South Entrance too narrow for two-way HGV traffic",
+      "raised_by": "Petition signatories",
+      "source_ids": ["src-change-hunterston-petition"]
+    },
+    {
+      "concern": "Water and power consumption of hyperscale data centres, and potential impacts on the Firth of Clyde marine environment, seabirds and marine mammals",
+      "raised_by": "Cara McKee MSP (Scottish Greens); petition signatories",
+      "source_ids": ["src-irvine-times-greens", "src-change-hunterston-petition"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Investment exceeding £10bn, described as one of the largest private investments in Ayrshire's history, with 1,000+ construction jobs",
+      "claimant": "Eneus Energy",
+      "binding_status": "aspirational",
+      "source_ids": ["src-eneus-hunterston-page"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Cara McKee MSP, Scottish Greens",
+      "stakeholder_type": "elected_member",
+      "position": "Called for a halt to all hyperscale data centre developments (including Hunterston) until a national strategy and guidance for councils is in place, citing water, power and energy-price concerns.",
+      "source_ids": ["src-irvine-times-greens"]
+    },
+    {
+      "stakeholder": "North Ayrshire Council",
+      "stakeholder_type": "council_officer",
+      "position": "Confirmed no formal planning application is under consideration; any future proposal would undergo robust statutory assessment including full EIA.",
+      "source_ids": ["src-irvine-times-greens"]
+    },
+    {
+      "stakeholder": "West of Scotland Archaeology Service",
+      "stakeholder_type": "statutory_consultee",
+      "position": "Scoping approach 'generally satisfactory' but site has high archaeological potential; recommends non-invasive survey and trial trenching before determination and protection of historic landscape links to Hunterston House and Castle.",
+      "source_ids": ["src-ayrshire-today-archaeology"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "planning_authority_contact": "North Ayrshire Council planning (case officer for scoping: Iain Davies)",
+  "notes": "Fairlie Community Council is the community council for the site per the portal record; its formal position has not been located. Petition figures are self-reported by Change.org and change over time."
+}

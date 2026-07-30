@@ -1,0 +1,41 @@
+[
+  {
+    "claim_category": "capital_expenditure",
+    "value": 15000000000,
+    "unit": "gbp",
+    "geographic_scope": "West Scotland (centred on i3, Irvine)",
+    "claimant": "AI Pathfinder",
+    "methodology": "None published",
+    "independently_reviewed": false,
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "'Up to £15bn' announced September 2025. Only ~£100m of seed funding was ever reported as raised across the whole company before its January 2026 buyout, a ~150x gap between claim and evidenced funding.",
+    "source_ids": ["src-irvine-times-nac-delighted-2025", "src-cityam-pathfinder-collapse-2026"]
+  },
+  {
+    "claim_category": "capital_expenditure",
+    "value": 385000000,
+    "unit": "gbp",
+    "geographic_scope": "i3 Irvine, first phase",
+    "period": "from 2026",
+    "claimant": "AI Pathfinder",
+    "methodology": "None published",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "£385m initial deployment (up to 6,400 GPUs) claimed at announcement; no evidence any spend occurred.",
+    "source_ids": ["src-stv-ai-pathfinder-2025", "src-datacentermap-ai-pathfinder-irvine"]
+  },
+  {
+    "claim_category": "total_jobs_unspecified",
+    "value": null,
+    "unit": "unstated",
+    "claimant": "AI Pathfinder / North Ayrshire Council",
+    "binding_status": "aspirational",
+    "state": "not_disclosed",
+    "confidence": "low",
+    "notes": "'Substantial employment' across construction, operations and supply chain claimed; no numbers, categories or methodology ever published.",
+    "source_ids": ["src-stv-ai-pathfinder-2025", "src-irvine-times-nac-delighted-2025"]
+  }
+]

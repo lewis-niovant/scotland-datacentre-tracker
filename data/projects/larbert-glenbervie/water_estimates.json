@@ -1,0 +1,12 @@
+[
+  {
+    "cooling_type": "closed_loop_liquid",
+    "cooling_description": "Developer states a closed-loop cooling system designed to minimise water use; waste heat capture with a 'district heat ready' design. No water volumes, WUE, initial fill, source (potable vs reclaimed) or discharge details located in retrieved material.",
+    "closed_loop": true,
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Closed-loop claim reported by STV from application/consultation material and echoed in developer 'green data centre' messaging; not independently verified against the application's water/drainage documents (not retrieved).",
+    "source_ids": ["src-stv-fears", "src-datacentrenews"]
+  }
+]

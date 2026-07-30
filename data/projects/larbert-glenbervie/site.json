@@ -1,0 +1,67 @@
+{
+  "site_name": "Glenbervie Business Park / land northeast of Glenbervie Nursery",
+  "address": "Land to the northeast of Glenbervie Nursery, Stirling Road (Glenbervie Business Park, Bellsdyke Road), Larbert",
+  "settlement": "Larbert",
+  "latitude": 56.04,
+  "longitude": -3.835,
+  "location_precision": "approximate",
+  "boundary_precision": "red_line_official",
+  "site_area_m2": {
+    "value": 222577,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "notes": "55 acres per Apatura press release (converted); consultation site describes 'around 50 acres of mainly vacant grassland'. Red-line area not verified.",
+    "source_ids": [
+      "src-apatura-news-submission",
+      "src-apatura-consult-project"
+    ]
+  },
+  "gross_floor_area_m2": {
+    "value": 128863,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "SPICe (from application documents)",
+    "notes": "Two data centre buildings; excludes the 11,500 m2 electricity substation.",
+    "source_ids": [
+      "src-spice-data-centres"
+    ]
+  },
+  "max_building_height_m": {
+    "value": 25,
+    "max": 28,
+    "unit": "m",
+    "state": "reported",
+    "claimant": "SPICe (from application documents)",
+    "notes": "25 m building height with flues extending to 28 m.",
+    "source_ids": [
+      "src-spice-data-centres"
+    ]
+  },
+  "number_of_buildings": {
+    "value": 2,
+    "unit": "buildings",
+    "state": "reported",
+    "claimant": "SPICe (from application documents)",
+    "notes": "Two data centre buildings plus an 11,500 m2 electricity substation and associated facilities.",
+    "source_ids": [
+      "src-spice-data-centres"
+    ]
+  },
+  "greenfield_brownfield": "unknown",
+  "current_land_use": "Mainly vacant grassland beside Glenbervie Business Park, allocated for business and industry use in the local development plan (developer description)",
+  "nearest_settlements": [
+    "Larbert",
+    "Stenhousemuir",
+    "Denny"
+  ],
+  "land_notes": "Land reported to be owned by Scottish Enterprise. Site is south of the M876. Objectors state the site is close to housing, a care home (reported ~20 m away), a nursery and Forth Valley Royal Hospital; distances not verified against application drawings. The scheme was relocated here from agricultural land near Plean, Stirling (~3 miles away) in October 2025. Coordinates are an approximate placement of the Glenbervie Business Park area, not taken from a plan.",
+  "source_ids": [
+    "src-falkirk-portal-p260237",
+    "src-apatura-news-submission",
+    "src-apatura-consult-project",
+    "src-dcd-relocation",
+    "src-stv-fears",
+    "src-deadline-news-objections"
+  ]
+}

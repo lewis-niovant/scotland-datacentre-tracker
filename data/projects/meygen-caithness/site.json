@@ -1,0 +1,32 @@
+{
+  "site_name": "Land west of Philips Mains, Mey",
+  "settlement": "Mey, Caithness",
+  "latitude": 58.6295,
+  "longitude": -3.2196,
+  "location_precision": "approximate",
+  "site_area_m2": {
+    "value": 200000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "Invest Highland",
+    "notes": "Marketed as '20+ hectares'; treated as a minimum. Coordinates are the PlanIt point for EIA screening 20/01258/SCRE, near the MeyGen onshore infrastructure and the consented Gills Bay 132kV substation.",
+    "source_ids": [
+      "src-invest-highland-data-centres",
+      "src-planit-highland-20-01258-scre"
+    ]
+  },
+  "greenfield_brownfield": "greenfield",
+  "current_land_use": "Greenfield land per Invest Highland listing; agricultural coastal land near Mey",
+  "nearest_settlements": [
+    "Mey",
+    "Gills Bay",
+    "John o' Groats"
+  ],
+  "land_notes": "Owned by Simec Atlantis Energy Ltd (SAE Renewables) per Invest Highland. SAE's Mey BESS (300 MW / 1.2 GWh, s36 application) occupies a 10.7 ha site in the same locality next to the approved Gills Bay substation. Official red-line area (Spatial Hub, planning application boundary): 43.0 ha; previously recorded 20.0 ha (reported); difference +115%. The official red line for screening 20/01258/SCRE encloses ~43.0 ha against ~20 ha reported. Unresolved; both figures retained.",
+  "source_ids": [
+    "src-invest-highland-data-centres",
+    "src-planit-highland-20-01258-scre",
+    "src-jog-mey-bess"
+  ],
+  "boundary_precision": "red_line_official"
+}

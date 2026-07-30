@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Thistle Sands Data Limited",
+    "role": "developer",
+    "company_number": "SC850350",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Private limited company incorporated 29 May 2025; registered office 295 Fenwick Road, Glasgow G46 6UH; SIC 63110 (data processing, hosting and related activities). Two directors: Kenneth Ross (appointed on incorporation, born September 1948, resident Scotland) and Steve Ruggi (appointed 31 October 2025, born January 1962, resident England). Persons with significant control are the same two individuals, each with 25-50% of shares and voting rights and the right to appoint or remove directors. No corporate parent or institutional investor is registered; no accounts filed yet.",
+    "beneficial_owner_public": true,
+    "confidence": "high",
+    "notes": "Named as the developer by APRS and the East Lothian Courier; the Bell briefing refers to the scheme as the 'TSD Dunbar Data Centre'. No website or corporate backing identified.",
+    "source_ids": ["src-ch-thistle-sands-data", "src-aprs-dunbar-dc", "src-courier-cockenzie-scrutiny"]
+  },
+  {
+    "name": "Young Planning & Energy Consenting",
+    "role": "consultant",
+    "notes": "Planning agent for the EIA screening/scoping process; the council scoping opinion is addressed to Grant Young.",
+    "confidence": "high",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+  },
+  {
+    "name": "TD Tree and Land Services Ltd",
+    "role": "consultant",
+    "notes": "Prepared the Preliminary Ecological Appraisal (December 2025) reviewed by the council's Biodiversity Officer.",
+    "confidence": "high",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+  },
+  {
+    "name": "East Lothian Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+  },
+  {
+    "name": "SP Energy Networks (SPEN)",
+    "role": "network_operator",
+    "notes": "The applicant's EIA Screening Report reportedly mentions two SPEN grid connection offers (per the Bell briefing); no details located.",
+    "confidence": "low",
+    "source_ids": ["src-bell-briefing-west-barns-mains"]
+  },
+  {
+    "name": "Scottish Water",
+    "role": "water_provider",
+    "notes": "Consulted at scoping; cited no objections; requires Pre-Development Enquiry before any technical application and will not accept surface water into the combined sewer.",
+    "confidence": "high",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+  },
+  {
+    "name": "Opposition to the West Barns Mains Data Centre",
+    "role": "campaign_group",
+    "notes": "Local opposition Facebook group set up in response to the proposals; reported at 705 members by the East Lothian Courier. Linked from APRS and Sustaining Dunbar pages.",
+    "confidence": "medium",
+    "source_ids": ["src-courier-cockenzie-scrutiny", "src-fb-opposition-west-barns-mains", "src-aprs-dunbar-dc"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot",
+    "notes": "National charity campaigning against data centre development on rural land; maintains a dedicated Dunbar (West Barns Mains) page and hosts key documents.",
+    "confidence": "high",
+    "source_ids": ["src-aprs-dunbar-dc"]
+  },
+  {
+    "name": "Sustaining Dunbar",
+    "role": "community_group",
+    "website": "https://sustainingdunbar.org",
+    "notes": "Local sustainability charity urging residents to oppose the development and supporting calls for a Scottish Government moratorium on hyperscale AI data centre applications.",
+    "confidence": "high",
+    "source_ids": ["src-sustaining-dunbar-datacentre-debate"]
+  }
+]

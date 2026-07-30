@@ -1,0 +1,23 @@
+[
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 1000,
+    "state": "developer_stated",
+    "applicable_date": "2025-11-19",
+    "claimant": "NDA / CX Power (repeated by SOSE and developer website)",
+    "confidence": "low",
+    "preferred": true,
+    "preferred_rationale": "The only capacity figure in circulation; all instances trace to the November 2025 NDA/CX Power announcement and developer marketing.",
+    "notes": "Described as a 'potential 1 GW data centre campus'. No source defines whether this is IT load, grid import, or total campus energy capacity, and no grid connection evidence supports it. Provenance is entirely the developer/landowner announcement — not a planning or grid document.",
+    "source_ids": ["src-cx-govuk-nda-release", "src-cx-sose-strategic-developer", "src-cx-campus-website"]
+  },
+  {
+    "capacity_type": "onsite_generation",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "CX Power",
+    "confidence": "low",
+    "notes": "Developer describes a 'private grid' drawing on wind, solar, biomass and hydrogen, citing 3 GW of renewable supplies within 50 miles and 1.2 GW of planned/consented regional wind and solar. These are regional resource claims, not project generation capacity; no onsite generation MW figure published.",
+    "source_ids": ["src-cx-campus-vision", "src-cx-govuk-nda-release"]
+  }
+]

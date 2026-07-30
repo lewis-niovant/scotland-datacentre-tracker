@@ -1,0 +1,35 @@
+{
+  "slug": "edzell",
+  "canonical_name": "Edzell grid connection (potential data centre site)",
+  "display_name": "Edzell, Angus (grid record only)",
+  "aliases": [
+    { "alias": "Edzel", "alias_type": "other", "source_ids": ["src-aprs-data-centre-map"] }
+  ],
+  "summary": "An 800MW gate 2 grid connection reported by APRS (citing NESO's Existing Agreements Register) for 'Edzel', stated by APRS to be intended for connection to the new Brechin substation in Angus — the largest of five grid-connection-only sites APRS has 'not otherwise seen elsewhere'. Edzell is a village five miles north of Brechin, adjacent to the former RAF Edzell base. No planning application, developer announcement or press coverage has been found; no developer has been identified.",
+  "project_type": "unknown",
+  "status": "grid_record_only",
+  "status_source_ids": ["src-aprs-data-centre-map"],
+  "maturity_level": "M0",
+  "maturity_explanation": "Only evidence is a reported 800MW gate 2 grid connection (to the new Brechin substation) in NESO's Existing Agreements Register as relayed by APRS (page updated July 2026). PlanIt searches of Angus 2019-2026 for 'data centre' and 'Edzell' found no relevant planning record; no developer or press attribution found.",
+  "verification_level": "unverifiable",
+  "local_authority": "Angus Council",
+  "region": "Angus",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-10-30",
+  "confidence_overall": "low",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-07-29",
+    "headline": "APRS data centre map (updated 29 July 2026) lists Edzell 800MW (to connect to the new Brechin substation) among five gate 2 connection sites 'not otherwise seen elsewhere'",
+    "source_ids": ["src-aprs-data-centre-map"]
+  },
+  "unknowns": [
+    "The NESO register row (connectee, connection site, agreement/connection dates) has not been independently extracted; the 800MW figure and Brechin substation detail rest on APRS's reading.",
+    "Exact location: whether the site is at/near Edzell village, the former RAF Edzell base, Edzell Muir, or simply named 'Edzell' for the connection locality near the new Brechin 400kV substation is unknown.",
+    "No developer or connectee identified by any source; speculation about the former RAF Edzell base is unsupported by any located evidence.",
+    "Whether the end use is a data centre rather than another large demand user, hydrogen or storage project connecting at Brechin.",
+    "No planning activity of any kind was found in Angus.",
+    "Timeline of the new Brechin substation (part of SSEN transmission upgrades) and the implied connection date."
+  ]
+}

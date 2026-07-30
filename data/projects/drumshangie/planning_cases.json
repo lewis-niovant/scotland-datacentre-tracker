@@ -1,0 +1,73 @@
+[
+  {
+    "reference": "24/01025/PAN",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice for a digital/data centre and manufacturing campus at East Airdrie (Drumshangie): data centres, gigafactory, research facilities, offices, electricity infrastructure, battery energy storage and ancillary uses (Classes 1, 3, 4, 5, 6, 10 and sui generis) on c.117.21 ha.",
+    "submission_date": "2024-10-09",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "decision_notes": "Reported by trade press as filed by 'an affiliate of UK potato-supplier Albert Bartlett'; some filings reportedly referenced an energy-from-waste facility alongside a data centre. Not verified on the council portal (portal unreachable from research environment).",
+    "events": [
+      {
+        "event_date": "2024-10-09",
+        "event_type": "submission",
+        "title": "PAN submitted to North Lanarkshire Council",
+        "source_ids": ["src-shepherd-east-airdrie-sale"]
+      },
+      {
+        "event_date": "2024-10-21",
+        "event_type": "grid",
+        "title": "Grid connection application submitted for 500MW planned demand capacity",
+        "source_ids": ["src-shepherd-east-airdrie-sale"]
+      }
+    ],
+    "source_ids": ["src-shepherd-east-airdrie-sale", "src-aprs-drumshangie", "src-dcd-apatura-ravenscraig-bebeez", "src-nlc-eplanning-portal"]
+  },
+  {
+    "reference": "26/00069/PAN",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "pan",
+    "description": "New Proposal of Application Notice (2026) for the Drumshangie data centre proposal, attributed by APRS to developer Apatura; developer intends to submit an application for Planning Permission in Principle in summer 2026.",
+    "submission_date": "2026-01-19",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "decision_notes": "PAN accepted 2 February 2026 per APRS. Not verified on the council portal (portal unreachable from research environment on 2026-07-30). No subsequent PPP application located as of that date.",
+    "events": [
+      {
+        "event_date": "2026-01-19",
+        "event_type": "submission",
+        "title": "Pre-application notification submitted",
+        "source_ids": ["src-aprs-drumshangie"]
+      },
+      {
+        "event_date": "2026-02-02",
+        "event_type": "acceptance",
+        "title": "PAN accepted by North Lanarkshire Council",
+        "source_ids": ["src-aprs-drumshangie"]
+      }
+    ],
+    "source_ids": ["src-aprs-drumshangie", "src-nlc-eplanning-portal"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening for the Drumshangie data centre proposal.",
+    "decision": "screening_eia_not_required",
+    "eia_required": false,
+    "decision_notes": "APRS states 'EIA screening done... They are not required to do an EIA'. Screening reference, date and opinion text not located; not verified against the council portal.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-aprs-drumshangie"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "other",
+    "description": "Historic permission: trade press reports that permission for a data centre at the former Drumshangie Mine was granted in 2012 but 'seemingly never came to fruition'. Reference and decision details not located.",
+    "decision": "other",
+    "decision_notes": "Reported by Data Centre Dynamics (June 2025, read via BeBeez republication). Presumed lapsed/unimplemented.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-dcd-apatura-ravenscraig-bebeez"]
+  }
+]

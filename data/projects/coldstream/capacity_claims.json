@@ -1,0 +1,24 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 300,
+    "state": "developer_stated",
+    "applicable_date": "2025-07-14",
+    "claimant": "Apatura (as reported by Data Center Dynamics)",
+    "confidence": "medium",
+    "preferred": true,
+    "preferred_rationale": "Consistently reported figure (DCD July 2025; Foxglove November 2025 portal survey), but press does not specify whether it is IT load or grid import, so it is typed 'unspecified'.",
+    "notes": "300 MW data centre campus, up to 70,000 sqm of buildings; primary screening documents not retrievable to confirm the basis of the figure.",
+    "source_ids": ["src-dcd-apatura-coldstream-2025", "src-foxglove-scotland-dc-2025"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 500,
+    "state": "developer_stated",
+    "applicable_date": "2025-07-14",
+    "claimant": "Apatura (as reported by Data Center Dynamics)",
+    "confidence": "medium",
+    "notes": "Co-located 500 MW battery energy storage system with on-site substation and roof-mounted solar PV. The planning-portal address line 'The Laundry Field BESS' suggests a related BESS scheme on the same land; relationship not verified.",
+    "source_ids": ["src-dcd-apatura-coldstream-2025", "src-planit-scottish-borders"]
+  }
+]

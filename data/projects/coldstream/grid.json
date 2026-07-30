@@ -1,0 +1,7 @@
+{
+  "connection_status": "unknown",
+  "reinforcement_required": null,
+  "evidence_basis": "No public grid connection evidence specific to Coldstream was found (no NESO/network operator record identified; screening documents not retrievable). Grid claims are generic developer/portfolio statements: press coverage credits Apatura with a 10.6 GW grid-secured portfolio including 1.8 GW of grid connections targeting data centre developments, and the corporate website claims access to 10 GW of renewable energy capacity. The scheme reportedly includes an on-site substation and a 500 MW BESS.",
+  "notes": "The Scottish Borders sits in the SP Energy Networks distribution/transmission area, but no operator was named in any Coldstream-specific material, so network_operator is left unrecorded. Whether the 300 MW figure represents requested grid import was not established.",
+  "source_ids": ["src-dcd-apatura-coldstream-2025", "src-apatura-website-data-centres"]
+}

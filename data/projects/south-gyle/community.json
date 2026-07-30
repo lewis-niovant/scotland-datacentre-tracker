@@ -1,0 +1,150 @@
+{
+  "summary": "The application attracted sustained opposition from October 2025, led by APRS with a local residents' campaign group (WhatsApp/Instagram based), and protests outside the City Chambers before the 4 February 2026 committee hearing. Concerns centred on climate impact and 'greenwashing' of the green data centre label, the decision not to require an EIA, diesel backup generators near planned housing and a nursery, energy/grid demand, and minimal job creation against the mixed-use vision for Edinburgh Park. Councillors from all parties echoed these concerns and refused unanimously against officer advice. At appeal, 38 representations were lodged with the DPEA, including from APRS and ERCS Legal.",
+  "principal_concerns": [
+    {
+      "concern": "Climate impact and lifecycle greenhouse gas emissions of a c. 210-213 MW facility; Cockburn Association-reported analysis put projected annual emissions at roughly 200,000 tonnes CO2, compared to about 10% of Edinburgh's total",
+      "raised_by": "APRS, councillors (refusal grounds cite NPF4 Policies 1 and 2), Cockburn Association",
+      "source_ids": [
+        "src-aprs-refusal-pr",
+        "src-cockburn-lessons"
+      ]
+    },
+    {
+      "concern": "'Greenwashing': no statutory definition of a 'green data centre'; renewable power supply asserted but no figures provided; limited reassurance on cooling efficiency; no pre-engagement with Scottish Water on water use; doubts over deliverability of waste heat re-use",
+      "raised_by": "Cllr Alys Mumford and other committee members; APRS ('Olympic-level greenwashing')",
+      "developer_response": "Shelborn argued the scheme met NPF4 green data centre criteria and that waste heat could supply future Edinburgh Park homes and offices",
+      "source_ids": [
+        "src-dcr-refusal",
+        "src-dcr-campaigners"
+      ]
+    },
+    {
+      "concern": "Decision not to require an Environmental Impact Assessment despite the scale of energy use, described by APRS as 'gobsmacking'",
+      "raised_by": "APRS; also pursued at appeal (Finch UKSC ruling cited)",
+      "source_ids": [
+        "src-deadline-hearing",
+        "src-scn-refusal",
+        "src-dpea-ppa-230-2794"
+      ]
+    },
+    {
+      "concern": "Diesel standby generators: emissions ('100,000 idling cars-worth of diesel' if run at scale), testing, noise and flue stacks, on a site 220 m from a nursery, upwind of the city centre and c. 50 m from a consented housing development",
+      "raised_by": "APRS; committee discussion",
+      "source_ids": [
+        "src-dcr-campaigners",
+        "src-aprs-refusal-pr"
+      ]
+    },
+    {
+      "concern": "Conflict with City Plan 2030 Place 19 mixed-use vision for Edinburgh Park/South Gyle: large secure warehouse-type buildings, security fencing, and over 200 parking spaces for a facility with very few staff",
+      "raised_by": "Cllrs Joanna Mowat, Hal Osler, Kevin Lang, Amy McNeese-Mechan; APRS",
+      "source_ids": [
+        "src-deadline-refusal",
+        "src-aprs-refusal-pr"
+      ]
+    },
+    {
+      "concern": "Impact of the very high electricity demand on the grid and on existing and planned homes and businesses",
+      "raised_by": "Committee members",
+      "source_ids": [
+        "src-aprs-refusal-pr"
+      ]
+    },
+    {
+      "concern": "Errors by the developer in independent environmental assessments",
+      "raised_by": "Committee members (reported)",
+      "source_ids": [
+        "src-deadline-refusal"
+      ]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "New publicly accessible park (relocated protected open space) fronting Lochside Court, with sports facilities, retained or increased in size versus the existing inaccessible green space",
+      "claimant": "Shelborn Drummond Ltd",
+      "binding_status": "commitment_stated",
+      "source_ids": [
+        "src-shp-consultation-board",
+        "src-cec-portal-25-04239-ppp"
+      ]
+    },
+    {
+      "benefit": "Supply of waste heat to homes and offices to be built at Edinburgh Park",
+      "claimant": "Shelborn Drummond Ltd (representatives at committee)",
+      "binding_status": "aspirational",
+      "source_ids": [
+        "src-dcr-refusal"
+      ]
+    },
+    {
+      "benefit": "Active travel routes (east-west pedestrian/cycle route along the south of the site), landscaping and urban greening/biodiversity measures",
+      "claimant": "Shelborn Drummond Ltd",
+      "binding_status": "commitment_stated",
+      "source_ids": [
+        "src-shp-consultation-board"
+      ]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Opposed; called the refusal 'an absolutely momentous decision' and demands a Scottish Government moratorium on hyperscale data centres pending review; active party in the appeal",
+      "date": "2026-02-04",
+      "source_ids": [
+        "src-aprs-refusal-pr",
+        "src-dpea-ppa-230-2794"
+      ]
+    },
+    {
+      "stakeholder": "City of Edinburgh Council planning officers",
+      "stakeholder_type": "council_officer",
+      "position": "Recommended approval in principle, while noting the absence of any definition or glossary entry for 'green data centre' and advising members it was 'in their gift' to weigh national development status against other material considerations",
+      "date": "2026-02-04",
+      "source_ids": [
+        "src-aprs-refusal-pr",
+        "src-deadline-hearing"
+      ]
+    },
+    {
+      "stakeholder": "Development Management Sub-Committee (all parties: Green, Conservative, Lib Dem, SNP, Labour members present)",
+      "stakeholder_type": "elected_member",
+      "position": "Unanimously refused; key quotes: 'we've been told there is something in place but we haven't been given the figures' (Mumford, on renewables); 'If you look at guidance on green data centres - who the hell knows?' (Mowat)",
+      "date": "2026-02-04",
+      "source_ids": [
+        "src-deadline-refusal",
+        "src-dcr-refusal"
+      ]
+    },
+    {
+      "stakeholder": "The Cockburn Association",
+      "stakeholder_type": "ngo",
+      "position": "Supports the council's request for national guidance defining 'green data centres'; critical of green claims lacking evidence, without formally opposing the scheme",
+      "source_ids": [
+        "src-cockburn-lessons"
+      ]
+    },
+    {
+      "stakeholder": "Local residents' campaign group (WhatsApp/Instagram)",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; mobilising representations against the appeal",
+      "source_ids": [
+        "src-aprs-south-gyle"
+      ]
+    },
+    {
+      "stakeholder": "City of Edinburgh Council (post-refusal)",
+      "stakeholder_type": "elected_member",
+      "position": "Councillors backed moves towards a temporary ban/moratorium on AI data centres in March 2026, though officials warned a moratorium would be unenforceable since applicants can appeal to the Scottish Government",
+      "source_ids": [
+        "src-edinburgh-inquirer"
+      ]
+    }
+  ],
+  "campaign_groups": [
+    "Action to Protect Rural Scotland (APRS)",
+    "South Gyle local residents' campaign group (informal)"
+  ],
+  "consultation_deadline": "2026-04-28",
+  "notes": "Consultation_deadline shown is the DPEA appeal representations deadline (28 April 2026), now passed. Objection counts at application stage could not be established."
+}

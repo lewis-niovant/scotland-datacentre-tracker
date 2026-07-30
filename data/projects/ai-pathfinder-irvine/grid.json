@@ -1,0 +1,16 @@
+{
+  "network_operator": "SP Energy Networks (distribution) / SP Transmission area",
+  "connection_status": "none_found",
+  "requested_import_capacity_mw": {
+    "value": 1000,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "AI Pathfinder (restated by Stop Climate Chaos Scotland)",
+    "confidence": "low",
+    "notes": "Announcement figure only; no connection application, offer or NESO queue entry has been identified.",
+    "source_ids": ["src-irvine-times-nac-delighted-2025", "src-irvine-times-sccs-warning"]
+  },
+  "evidence_basis": "Developer press announcement and campaign commentary only. No SPEN/NESO/Ofgem record, substation identification or reinforcement plan was ever published. Delivering 1-1.5 GW in Ayrshire would require major transmission reinforcement with multi-year lead times, incompatible with the announced 2026 operations date.",
+  "notes": "Stop Climate Chaos Scotland characterised the 1,000 MW requirement as ~25% of Scotland's peak electricity demand and warned of blackout risk and bill increases; recorded as a campaign claim.",
+  "source_ids": ["src-irvine-times-sccs-warning"]
+}

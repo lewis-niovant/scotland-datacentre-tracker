@@ -1,0 +1,55 @@
+[
+  {
+    "reference": "0346/EIA/25",
+    "planning_authority": "West Lothian Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening opinion for a data centre campus at Land At Former Freeport Shopping & Leisure Village, Westwood, West Calder EH55 8PN. Agent AAH Consultants (York).",
+    "submission_date": "2025-05-02",
+    "validation_date": "2025-05-02",
+    "decision_date": "2025-06-04",
+    "decision": "screening_eia_not_required",
+    "decision_notes": "Portal decision recorded as 'Environmental Assessment Not Required', issued under delegated powers on 4 June 2025. Screening opinion documents (3 listed) not readable from the research environment.",
+    "eia_required": false,
+    "representations": {
+      "objections": 0,
+      "support": 0,
+      "as_of_date": "2025-06-18",
+      "notes": "PlanIt mirror records 1 public comment on the screening case; nature unknown (screening cases do not normally invite representations)."
+    },
+    "official_url": "https://planning.westlothian.gov.uk/publicaccess/applicationDetails.do?keyVal=SVMIAPRJ04A00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-wlc-portal-0346-eia-25", "src-planit-westlothian-dc"]
+  },
+  {
+    "reference": "0625/PAC/25",
+    "planning_authority": "West Lothian Council",
+    "application_type": "pan",
+    "description": "Proposal of application notice for the erection of an AI Data Centre Campus with a 250 MW demand utility capacity with ancillary battery energy storage system (BESS) (to be consented via separate Section 36 application to Scottish Government), car parking, landscaping, roads, access and associated works.",
+    "submission_date": "2025-08-05",
+    "validation_date": "2025-08-08",
+    "decision_date": "2025-08-14",
+    "decision": "other",
+    "decision_notes": "Portal records 'PAC - response issued' on 14 August 2025 under delegated powers. Developer consultation events ran Q3 2025 per the consultation website; a full application was targeted for Q1/Q2 2026 but has not been located.",
+    "official_url": "https://planning.westlothian.gov.uk/publicaccess/applicationDetails.do?keyVal=T0INPCRJ03H00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-08-14",
+        "event_type": "pac_response",
+        "title": "West Lothian Council issues pre-application consultation response",
+        "source_ids": ["src-wlc-portal-0625-pac-25"]
+      }
+    ],
+    "source_ids": ["src-wlc-portal-0625-pac-25", "src-planit-westlothian-dc"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "Scottish Government Energy Consents Unit",
+    "application_type": "s36",
+    "description": "Intended Section 36 application to Scottish Ministers for the ancillary 250 MW battery energy storage system, stated in the PAN description and on the developer's project page. No ECU application reference located as of 30 July 2026.",
+    "decision": "pending",
+    "decision_notes": "Not yet submitted so far as could be verified; recorded here because the consenting route is explicitly stated in the PAN.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-wlc-portal-0625-pac-25", "src-apatura-freeport-project"]
+  }
+]

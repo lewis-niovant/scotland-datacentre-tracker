@@ -1,0 +1,36 @@
+[
+  {
+    "reference": "25/00008/SCR",
+    "planning_authority": "East Lothian Council",
+    "application_type": "eia_screening",
+    "description": "EIA screening for a proposed green energy data centre and community renewable heat hub on land south of the A1 at West Barns Mains, Dunbar (~60.2 ha). The applicant's Screening Report (dated around November 2025 per the Bell critique) argued no significant environmental effects were likely; East Lothian Council determined that an Environmental Impact Assessment is required (as reported by APRS; the council's screening opinion document itself has not been located because the planning portal was unreachable).",
+    "decision": "screening_eia_required",
+    "eia_required": true,
+    "official_url": "https://pa.eastlothian.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-11-28",
+        "event_type": "third_party_representation",
+        "title": "Simon Bell critique of the EIA Screening Report sent to East Lothian Council",
+        "description": "Briefing by Professor Simon Bell arguing that EIA should be required, submitted to inform the EIA screening process.",
+        "source_ids": ["src-bell-briefing-west-barns-mains", "src-aprs-dunbar-dc"]
+      }
+    ],
+    "source_ids": ["src-aprs-dunbar-dc", "src-bell-briefing-west-barns-mains", "src-elc-scoping-opinion-25-00008-scr", "src-elc-planning-portal-dunbar"]
+  },
+  {
+    "reference": "25/00008/SCR",
+    "planning_authority": "East Lothian Council",
+    "application_type": "eia_scoping",
+    "description": "EIA scoping under the same council reference (council internal ref EIA/SCOPING/26/02). Scoping request from Young Planning & Energy Consenting received 30 January 2026 with a Scoping Report dated 28 January 2026. Scoping opinion issued 30 March 2026: population/human health, soil, water, air quality and climatic factors formally scoped out of EIA in the opinion's table, although the Climate Change Officer advised lifecycle GHG, energy demand, water usage and waste heat should be scoped in; biodiversity, flooding, cultural heritage and landscape scoped in; Habitats Regulations Appraisal required; consultees included Scottish Water, NatureScot, Historic Environment Scotland and SEPA. The Biodiversity Officer was unable to agree with the Scoping Report as presented and the Landscape Officer required a 6 km study area and revised ZTVs.",
+    "submission_date": "2026-01-30",
+    "decision_date": "2026-03-30",
+    "decision": "scoping_opinion_issued",
+    "eia_required": true,
+    "decision_notes": "Scoping opinion addressed to Grant Young, Young Planning & Energy Consenting.",
+    "official_url": "https://pa.eastlothian.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-elc-scoping-opinion-25-00008-scr"]
+  }
+]

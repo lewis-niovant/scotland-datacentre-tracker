@@ -1,0 +1,25 @@
+{
+  "slug": "iomart-glasgow",
+  "canonical_name": "iomart Glasgow Data Centre (DC1)",
+  "display_name": "iomart DC1 Glasgow",
+  "summary": "iomart's DC1 is a purpose-adapted colocation and managed hosting data centre just south-west of Glasgow city centre (Kinning Park area), publicly advertised at 88 Middlesex Street. Directory listings state roughly 1 MW of power across two data halls of about 4,000 sq ft each. iomart Group plc is a Glasgow-headquartered, AIM-listed cloud and hosting company.",
+  "project_type": "colocation",
+  "status": "operating",
+  "status_source_ids": [
+    "src-iomart-glasgow"
+  ],
+  "maturity_level": "M5",
+  "maturity_explanation": "Actively marketed operating facility on iomart's own website and third-party directories as of July 2026.",
+  "verification_level": "reported",
+  "local_authority": "Glasgow City Council",
+  "region": "Glasgow and Clyde Valley",
+  "last_verified_at": "2026-07-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "unknowns": [
+    "Year the facility opened",
+    "Exact IT load vs gross power (directories state ~1 MW without breakdown)",
+    "Rack count and certifications beyond 'Tier 2' directory descriptions"
+  ]
+}

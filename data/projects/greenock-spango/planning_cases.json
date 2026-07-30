@@ -1,0 +1,92 @@
+[
+  {
+    "reference": null,
+    "planning_authority": "Inverclyde Council",
+    "application_type": "pan",
+    "description": "Proposal of Application Notice for a data centre (Major development) at the former IBM site, Spango Valley, Inverkip Road, Greenock, by Slate Island Developments Ltd. Developer states PAN submitted 27 February 2026; research brief cites 24 February 2026 — both retained pending portal verification. Statutory pre-application consultation: public exhibitions at Branchton Community Centre 24 March and 23 April 2026; online events 26 March and 28 April 2026.",
+    "submission_date": "2026-02-27",
+    "decision": "pending",
+    "official_url": "https://planning.inverclyde.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2026-02-27",
+        "event_type": "pan_submitted",
+        "title": "PAN submitted to Inverclyde Council (developer-stated date)",
+        "source_ids": [
+          "src-spango-consult-proposals"
+        ]
+      },
+      {
+        "event_date": "2026-03-24",
+        "event_type": "consultation_event",
+        "title": "First public exhibition, Branchton Community Centre (4 attendees per developer)",
+        "source_ids": [
+          "src-spango-consult-updates"
+        ]
+      },
+      {
+        "event_date": "2026-03-26",
+        "event_type": "consultation_event",
+        "title": "First online interactive event (0 attendees per developer)",
+        "source_ids": [
+          "src-spango-consult-updates"
+        ]
+      },
+      {
+        "event_date": "2026-04-23",
+        "event_type": "consultation_event",
+        "title": "Second public exhibition, Branchton Community Centre",
+        "source_ids": [
+          "src-spango-consult-proposals",
+          "src-inverclydenow-spango-dc"
+        ]
+      },
+      {
+        "event_date": "2026-04-28",
+        "event_type": "consultation_event",
+        "title": "Second online interactive event",
+        "source_ids": [
+          "src-spango-consult-proposals"
+        ]
+      }
+    ],
+    "source_ids": [
+      "src-spango-consult-home",
+      "src-spango-consult-proposals",
+      "src-inverclydenow-spango-dc"
+    ],
+    "decision_notes": "Official PAN reference could not be verified: Inverclyde Council's Idox portal (planning.inverclyde.gov.uk/online-applications/) returned HTTP 503 on 2026-07-30 and no secondary source publishes the reference. Developer targets Major application submission June 2026 and determination November 2026; no evidence of submission found by 30 July 2026."
+  },
+  {
+    "reference": null,
+    "planning_authority": "Scottish Government Energy Consents Unit",
+    "application_type": "s36",
+    "description": "Proposed Section 36 (Electricity Act 1989) application for a c.99 MW battery energy storage system co-located with the data centre, including 132kV and 33kV substations, inverter/transformer stations, control rooms, 120,000-litre water tank and SuDS pond. Consultation held jointly with the data centre PAN to satisfy both Electricity Act and Town and Country Planning Act pre-application requirements.",
+    "decision": "pending",
+    "last_checked_at": "2026-07-30",
+    "source_ids": [
+      "src-spango-consult-home",
+      "src-spango-consult-proposals",
+      "src-inverclydenow-spango-dc"
+    ],
+    "decision_notes": "No ECU case reference located; application not yet found on the ECU portal as of 2026-07-30."
+  },
+  {
+    "reference": null,
+    "planning_authority": "Inverclyde Council",
+    "application_type": "permission_in_principle",
+    "description": "Prior consent context: Planning Permission in Principle for a £100m housing-led mixed-use scheme (up to 450 homes, commercial/leisure/community/retail, park-and-ride at the former IBM rail halt), applied for February 2020 by Barton Willmore for Sandy Easdale, James Easdale and Advance Construction. Planning board initially capped housing at 270 homes; the 450-home upper limit was agreed and permission finalised March 2023. Developer states marketing failed to secure a viable end user, prompting the 2026 data centre/BESS pivot.",
+    "submission_date": "2020-02-10",
+    "decision_date": "2023-03-01",
+    "decision": "approved_with_conditions",
+    "decision_notes": "Decision date approximate (March 2023 per Wikipedia and press; exact date and reference not verified — council committee papers reference case 22/0225/IC in 2022, unconfirmed as this PPP). Whether this consent remains extant alongside the data centre proposal is unresolved.",
+    "last_checked_at": "2026-07-30",
+    "source_ids": [
+      "src-inverclydenow-spango-housing-app",
+      "src-inverclydenow-spango-450",
+      "src-wikipedia-spango",
+      "src-inverclydenow-spango-dc"
+    ]
+  }
+]

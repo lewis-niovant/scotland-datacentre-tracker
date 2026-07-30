@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Apatura",
+    "role": "developer",
+    "jurisdiction": "Scotland/England (group; offices Edinburgh and York)",
+    "website": "https://apatura.energy/",
+    "ownership_summary": "Energy and data centre developer; Companies House shows a group including APATURA LTD, APATURA DC LTD and numbered SPVs APATURA DC PROJECT 1-12 LTD. Which entity (if any numbered SPV) fronts Haspielaw is unconfirmed.",
+    "beneficial_owner_public": null,
+    "confidence": "medium",
+    "notes": "Attribution to Apatura rests on Foxglove, APRS and press listings plus the P/25/0490 agent address (1 Bar Lane, York YO1 6JU) matching Apatura's York office; the applicant name is not exposed by the PlanIt mirror and the council portal was unreachable.",
+    "source_ids": ["src-foxglove-scotland-dcs-2025", "src-aprs-hamilton-dc", "src-planit-haspielaw-p250490", "src-ch-apatura-search"]
+  },
+  {
+    "name": "South Lanarkshire Council",
+    "role": "planning_authority",
+    "notes": "Determined EIA screening request P/25/0490 (EIA required, 25 June 2025).",
+    "source_ids": ["src-planit-haspielaw-p250490"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot/hamilton-dc/",
+    "notes": "Lists Haspielaw (Hamilton) on its Scotland data centre map and characterises it as a hyperscale proposal on green belt farmland; monitoring/opposition stance rather than a site-specific local campaign.",
+    "source_ids": ["src-aprs-hamilton-dc"]
+  },
+  {
+    "name": "Foxglove",
+    "role": "campaign_group",
+    "notes": "Included Haspielaw Farm in its December 2025 briefing on planned Scottish data centres' electricity demand, applying a 250MW working estimate in the absence of a developer figure.",
+    "source_ids": ["src-foxglove-scotland-dcs-2025"]
+  }
+]

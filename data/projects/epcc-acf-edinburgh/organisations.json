@@ -1,0 +1,35 @@
+[
+  {
+    "name": "EPCC (University of Edinburgh)",
+    "role": "operator",
+    "jurisdiction": "Scotland",
+    "website": "https://www.epcc.ed.ac.uk",
+    "ownership_summary": "Supercomputing centre of the University of Edinburgh; operates the ACF.",
+    "confidence": "high",
+    "source_ids": [
+      "src-epcc-acf"
+    ]
+  },
+  {
+    "name": "University of Edinburgh",
+    "role": "landowner",
+    "jurisdiction": "Scotland",
+    "website": "https://www.ed.ac.uk",
+    "confidence": "medium",
+    "source_ids": [
+      "src-epcc-acf",
+      "src-ed-exascale"
+    ]
+  },
+  {
+    "name": "UK Government (DSIT/UKRI)",
+    "role": "investor",
+    "jurisdiction": "UK",
+    "ownership_summary": "Funder of ARCHER2 national service and the reinstated ~GBP750m exascale programme.",
+    "confidence": "medium",
+    "source_ids": [
+      "src-dcd-exascale",
+      "src-ed-exascale"
+    ]
+  }
+]

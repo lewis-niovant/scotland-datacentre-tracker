@@ -1,0 +1,26 @@
+[
+  {
+    "capacity_type": "it_load",
+    "value_mw": 1.0,
+    "state": "reported",
+    "claimant": "Brightsolid (via press/technical specification)",
+    "confidence": "medium",
+    "phase": "Data Hall 1",
+    "source_ids": [
+      "src-brightsolid-spec",
+      "src-dcd-brightsolid"
+    ]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 2.0,
+    "state": "developer_stated",
+    "claimant": "Brightsolid",
+    "confidence": "medium",
+    "notes": "Two-hall design, up to 400 racks at up to 25 kW/rack.",
+    "source_ids": [
+      "src-silicon-brightsolid",
+      "src-brightsolid-spec"
+    ]
+  }
+]

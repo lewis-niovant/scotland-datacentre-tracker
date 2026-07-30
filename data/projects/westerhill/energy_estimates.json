@@ -1,0 +1,16 @@
+[
+  {
+    "scenario_name": "Developer statements (no annual energy figure published)",
+    "phase": "operational",
+    "annual_energy_gwh": null,
+    "peak_load_mw": 300,
+    "matching_method": "grid_mix",
+    "onsite_generation": "None proposed; 500MW BESS for storage/backup, not generation",
+    "demand_flexibility": "Developer states BESS will charge on off-peak/curtailed renewable electricity and discharge at peak, providing backup and reducing reliance on the grid",
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Campus would draw power from the national grid with a stated focus on using curtailed renewable electricity; no PUE, load factor, PPA, or annual GWh figures disclosed. Foxglove counts the site at 300MW within its 2,000-3,000MW total for planned Scottish data centres.",
+    "source_ids": ["src-apatura-westerhill-panels", "src-apatura-westerhill-project", "src-foxglove-scotland-dc"]
+  }
+]

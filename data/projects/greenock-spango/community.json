@@ -1,0 +1,17 @@
+{
+  "summary": "Pre-application consultation ran March-April 2026 with very low reported engagement: the developer reports 4 attendees at the first public exhibition (24 March 2026, Branchton Community Centre) and none at the first online event (26 March 2026). Developer-summarised feedback themes were noise, environmental impact, job creation, traffic and support for brownfield redevelopment; the developer claims respondents unanimously supported the site as appropriate infrastructure. No organised local opposition, community council position or press coverage of objections was found by 30 July 2026. APRS lists the project on its national data centre tracker.",
+  "principal_concerns": [
+    { "concern": "Noise", "raised_by": "Consultation respondents (as summarised by the developer)", "source_ids": ["src-spango-consult-updates"] },
+    { "concern": "Environmental impact", "raised_by": "Consultation respondents (as summarised by the developer)", "source_ids": ["src-spango-consult-updates"] },
+    { "concern": "Traffic impact", "raised_by": "Consultation respondents (as summarised by the developer)", "source_ids": ["src-spango-consult-updates"] },
+    { "concern": "Extent of job creation", "raised_by": "Consultation respondents (as summarised by the developer)", "source_ids": ["src-spango-consult-updates"] }
+  ],
+  "claimed_local_benefits": [
+    { "benefit": "Approximately 1,200 construction jobs and approximately 50 operational jobs, with local hiring 'where feasible'", "claimant": "Slate Island Developments Ltd", "binding_status": "aspirational", "source_ids": ["src-spango-consult-updates"] },
+    { "benefit": "Redevelopment of a long-vacant brownfield 'Priority Place' site", "claimant": "Slate Island Developments Ltd", "binding_status": "unstated", "source_ids": ["src-spango-consult-proposals"] },
+    { "benefit": "BESS claimed to ease pressure on the grid network and lower running costs", "claimant": "Slate Island Developments Ltd", "binding_status": "unstated", "source_ids": ["src-inverclydenow-spango-dc"] }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (national tracker listing only; no local campaign identified)"],
+  "planning_authority_contact": "dmplanning@inverclyde.gov.uk, Inverclyde Council, Municipal Buildings, Clyde Square, Greenock PA15 1LY",
+  "notes": "All consultation feedback figures and characterisations come from the developer's own consultation website and should be treated as developer-stated. Consultation attendance (4 in-person, 0 online) was reported by the developer itself."
+}

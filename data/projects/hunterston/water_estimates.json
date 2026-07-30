@@ -1,0 +1,13 @@
+[
+  {
+    "cooling_type": "closed_loop_liquid",
+    "cooling_description": "Developer states a closed-loop cooling system requiring 'only minimal water during normal operations'; initial system fill to be trucked to site rather than drawn from mains; Scottish Water reported to have confirmed supply capacity from Camphill Water Treatment Works.",
+    "annual_water_m3": null,
+    "closed_loop": true,
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "No quantified annual or peak water figures published; volumes should appear in the EIA. Scoping consultation response from Scottish Water is on the portal (doc 1333577) but has not been reviewed.",
+    "source_ids": ["src-eneus-hunterston-page", "src-nac-26-00138-eia"]
+  }
+]

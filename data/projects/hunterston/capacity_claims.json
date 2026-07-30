@@ -1,0 +1,47 @@
+[
+  {
+    "capacity_type": "grid_import",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "Eneus Energy",
+    "notes": "Developer describes a high-voltage transmission-level connection but has published no MW figure for the data centre.",
+    "source_ids": ["src-eneus-hunterston-page"]
+  },
+  {
+    "capacity_type": "it_load",
+    "minimum_mw": 500,
+    "value_mw": null,
+    "state": "estimated",
+    "claimant": "APRS",
+    "confidence": "low",
+    "notes": "Campaign inference from scale ('given the scale of the buildings... at least 500MW'); not a developer or planning figure.",
+    "source_ids": ["src-aprs-hunterston"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 400,
+    "state": "reported",
+    "claimant": "Revera Energy (via ESS News)",
+    "applicable_date": "2026-06-15",
+    "preferred": true,
+    "preferred_rationale": "Most recent, developer-sourced figure for the adjacent consented BESS (400 MW / 800 MWh, FID June 2026); APRS reports 450 MW for the 2022 consent — possibly the consented maximum vs the FID build.",
+    "notes": "Adjacent/related BESS project, not part of the data centre application. Section 36 consent reported January 2022 (originally Amp Energy's 'Scottish Green Battery Complex'); construction expected from Q3 2026.",
+    "source_ids": ["src-ess-news-revera-bess"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": 450,
+    "state": "reported",
+    "claimant": "APRS",
+    "notes": "APRS states a 450 MW BESS at Hunterston received planning permission in 2022 and is under construction. Conflicts with Revera's 400 MW/800 MWh FID figure; consent reference not yet located (s36 via Scottish Government Energy Consents Unit, so not on the North Ayrshire portal).",
+    "source_ids": ["src-aprs-hunterston"]
+  },
+  {
+    "capacity_type": "backup_generation",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "Eneus Energy",
+    "notes": "On-site batteries sized for ~10 minutes of critical operations plus emergency standby generators for outages of up to 48 hours; MW not stated.",
+    "source_ids": ["src-eneus-hunterston-page"]
+  }
+]

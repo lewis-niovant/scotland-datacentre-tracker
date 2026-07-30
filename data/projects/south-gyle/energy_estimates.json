@@ -1,0 +1,28 @@
+[
+  {
+    "scenario_name": "Campaign/civic-society characterisations of full-buildout demand",
+    "annual_energy_gwh": null,
+    "peak_load_mw": 213,
+    "matching_method": "unstated",
+    "onsite_generation": "Diesel standby generators (backup only); consultation material also cites use of PV panels and heat pumps as green data centre criteria, without project-specific figures",
+    "methodology": "Comparative characterisations, not a published energy model: APRS states a 210 MW draw 'would power a quarter of a million homes'; Cockburn Association-reported analysis puts peak demand at 210-213 MW ('approximately the same as every household in Glasgow and Edinburgh combined' per press) and projected annual emissions at c. 200,000 tonnes CO2, about 10% of Edinburgh's total and comparable to Edinburgh Airport",
+    "estimate_type": "campaign",
+    "state": "disputed",
+    "confidence": "low",
+    "notes": "No annual GWh figure or PUE was located in accessible sources. The developer's Energy and Sustainability Statement (including waste heat strategy) exists on the application file but could not be retrieved. Household equivalences quoted by different sources are mutually inconsistent and are recorded as claims only.",
+    "source_ids": ["src-dcr-campaigners", "src-cockburn-lessons", "src-deadline-hearing", "src-shp-consultation-board"]
+  },
+  {
+    "scenario_name": "Developer green data centre / heat re-use claims",
+    "annual_energy_gwh": null,
+    "matching_method": "unstated",
+    "onsite_generation": "Low carbon back-up generation claimed in consultation material; standby generator compounds shown in layout",
+    "demand_flexibility": "Not disclosed",
+    "methodology": "Qualitative developer claims: powered by renewable energy sources (figures not provided to committee), energy-efficient technologies, minimised water consumption, and re-use of waste heat including potential supply to future Edinburgh Park homes and offices",
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Councillors refused partly because these claims were not evidenced: no renewable supply figures, no Scottish Water pre-engagement, limited cooling detail, and heat re-use dependent on development not yet built.",
+    "source_ids": ["src-dcr-refusal", "src-shp-consultation-board", "src-aprs-refusal-pr"]
+  }
+]

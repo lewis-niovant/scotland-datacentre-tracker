@@ -1,0 +1,59 @@
+{
+  "slug": "epcc-acf-edinburgh",
+  "canonical_name": "EPCC Advanced Computing Facility (ACF), Edinburgh",
+  "display_name": "EPCC Advanced Computing Facility",
+  "aliases": [
+    {
+      "alias": "ACF",
+      "alias_type": "other",
+      "source_ids": [
+        "src-epcc-acf"
+      ]
+    }
+  ],
+  "summary": "The Advanced Computing Facility is the University of Edinburgh's high-performance computing data centre south of Edinburgh, operated by EPCC. It hosts the UK national supercomputer ARCHER2 and other research systems, and its grid capacity was upgraded from 8 MW to 38 MW in 2023 to support future systems including the planned UK exascale supercomputer, to be housed in a new circa GBP31m wing.",
+  "project_type": "research_hpc",
+  "status": "operating",
+  "status_source_ids": [
+    "src-epcc-acf"
+  ],
+  "maturity_level": "M5",
+  "maturity_explanation": "Long-established operating university HPC facility; hosts ARCHER2 (in service since 2021) per EPCC and University of Edinburgh publications.",
+  "verification_level": "verified",
+  "local_authority": "Midlothian Council",
+  "region": "Edinburgh and Lothians",
+  "last_verified_at": "2026-07-30",
+  "confidence_overall": "medium",
+  "is_public": true,
+  "is_sensitive": false,
+  "phases": [
+    {
+      "phase_name": "Existing ACF computer rooms (ARCHER2 and other systems)",
+      "status": "operating",
+      "source_ids": [
+        "src-epcc-acf"
+      ]
+    },
+    {
+      "phase_name": "Exascale wing (new build for UK exascale system)",
+      "status": "under_construction",
+      "description": "Circa GBP31m wing built under the Edinburgh and South East Scotland City Region Deal; exascale project cancelled by UK Government in 2024 then reinstated with ~GBP750m funding; first-phase installation reported due from 2025.",
+      "source_ids": [
+        "src-ed-exascale",
+        "src-dcd-exascale"
+      ]
+    }
+  ],
+  "latest_development": {
+    "date": "2026-07-30",
+    "headline": "UK exascale supercomputer project reinstated for the ACF after 2024 funding U-turn; new wing to house the system.",
+    "source_ids": [
+      "src-dcd-exascale"
+    ]
+  },
+  "unknowns": [
+    "Current actual power draw vs the 38 MW upgraded grid capacity",
+    "Precise construction/commissioning schedule for the exascale system",
+    "Original opening year of the ACF site and detail of earlier expansion phases"
+  ]
+}

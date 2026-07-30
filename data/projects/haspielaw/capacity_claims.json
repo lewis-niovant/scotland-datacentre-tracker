@@ -1,0 +1,25 @@
+[
+  {
+    "capacity_type": "unspecified",
+    "value_mw": null,
+    "state": "not_disclosed",
+    "claimant": "Apatura (developer)",
+    "applicable_date": "2025-12-02",
+    "confidence": "high",
+    "preferred": true,
+    "preferred_rationale": "No capacity figure appears in the screening record description or any developer statement located; the honest position is that capacity is undisclosed.",
+    "notes": "The P/25/0490 screening description covers a data centre campus with back-up generators and a BESS but states no MW figure. Foxglove (Dec 2025) confirms it 'has been unable to find a figure from the developer' for Haspielaw.",
+    "source_ids": ["src-planit-haspielaw-p250490", "src-foxglove-scotland-dcs-2025"]
+  },
+  {
+    "capacity_type": "unspecified",
+    "value_mw": 250,
+    "state": "estimated",
+    "claimant": "Foxglove (campaign group)",
+    "applicable_date": "2025-12-02",
+    "confidence": "low",
+    "preferred": false,
+    "notes": "Working estimate only, chosen by Foxglove 'in line with Apatura's other proposed facilities' for its aggregate electricity-demand analysis; not derived from any project document.",
+    "source_ids": ["src-foxglove-scotland-dcs-2025"]
+  }
+]

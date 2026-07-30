@@ -1,0 +1,9 @@
+{
+  "network_operator": "SP Energy Networks / SP Transmission (site adjoins ScottishPower transmission infrastructure)",
+  "connection_status": "unknown",
+  "nearby_substation": "Cockenzie substation (ScottishPower); new Inch Cape Offshore Wind onshore substation on ~7 acres of the western portion of the former power station site (operational from autumn 2025)",
+  "reinforcement_required": null,
+  "evidence_basis": "No connection application, offer or MW figure has been published for the data centre. The site's grid advantage is inferred from its history as a ~1,200 MW coal power station with legacy transmission connection and from SDCL commissioning advisors to assess 'availability of power' as part of pre-site due diligence (council statement, June 2026).",
+  "notes": "Cockenzie power station (operated 1967/68-2013) gave the site an established high-voltage grid node; the Inch Cape offshore wind connection and consented substation works reinforce the location's transmission access. Whether and how the data centre would connect has not been disclosed.",
+  "source_ids": ["src-elc-cockenzie-dc-update-2026", "src-galbraith-cockenzie", "src-wikipedia-cockenzie-ps"]
+}

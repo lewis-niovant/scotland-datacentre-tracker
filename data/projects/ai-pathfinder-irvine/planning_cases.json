@@ -1,0 +1,19 @@
+[
+  {
+    "reference": null,
+    "planning_authority": "North Ayrshire Council",
+    "application_type": "other",
+    "description": "Negative finding: no planning trail exists. Searches of the North Ayrshire Council e-planning portal on 2026-07-30 for 'data centre' and 'i3 Irvine' found no application, Proposal of Application Notice, EIA screening request or scoping request relating to AI Pathfinder or any data centre at the i3 area. The only data-centre record in North Ayrshire is 26/00138/EIA (Hunterston Estate — an unrelated project). A 1-1.5 GW campus would be a 'major'/'national' development requiring a PAN and at minimum 12 weeks of pre-application consultation before any application, making the announced 2026 operations date impossible even at the time it was made.",
+    "official_url": "https://www.eplanning.north-ayrshire.gov.uk/OnlinePlanning/",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2026-07-30",
+        "event_type": "portal_check",
+        "title": "Portal searched; no AI Pathfinder/i3 data centre record found",
+        "source_ids": ["src-na-portal-datacentre-search", "src-na-portal-i3-search"]
+      }
+    ],
+    "source_ids": ["src-na-portal-datacentre-search", "src-na-portal-i3-search"]
+  }
+]

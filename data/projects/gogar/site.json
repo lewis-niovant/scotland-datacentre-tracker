@@ -1,0 +1,11 @@
+{
+  "site_name": "Gogar area (no specific site evidenced)",
+  "settlement": "Gogar, Edinburgh",
+  "latitude": 55.9364,
+  "longitude": -3.3337,
+  "location_precision": "settlement_level",
+  "boundary_precision": "none",
+  "nearest_settlements": ["Gogar", "South Gyle", "Edinburgh Park", "Ratho Station"],
+  "land_notes": "Coordinates are the Gogar settlement itself, recorded at settlement level only because no site for a distinct Gogar data centre could be evidenced. The two candidate schemes the reported 'Gogar' name likely refers to have precise sites in their own records: 1 Redheughs Avenue, South Gyle (Shelborn, ~1.5 km south-east of Gogarburn) and Wester Hermiston, Riccarton (Apatura, ~3 km south). The Gogar Special Landscape Area and Green Belt cover much of the surrounding land per City Plan 2030.",
+  "source_ids": ["src-spice-data-centres-2026", "src-planit-edinburgh-scr-records"]
+}

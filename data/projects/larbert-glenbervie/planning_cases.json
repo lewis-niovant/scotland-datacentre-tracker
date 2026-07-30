@@ -1,0 +1,61 @@
+[
+  {
+    "reference": "P/26/0237/FUL",
+    "planning_authority": "Falkirk Council",
+    "application_type": "full_application",
+    "description": "Construction of an AI Data Centre with 300MW Demand Utility Capacity and Car Parking, Landscaping, Roads, Access and Associated Works — Land to the northeast of Glenbervie Nursery, Stirling Road, Larbert",
+    "submission_date": "2026-05-29",
+    "validation_date": "2026-06-04",
+    "consultation_deadline": "2026-07-02",
+    "decision": "pending",
+    "eia_required": null,
+    "representations": {
+      "objections": 6719,
+      "support": 80,
+      "as_of_date": "2026-07-03",
+      "notes": "Deadline News reported 6,833 comments (6,820 public: 6,719 objections, 80 support) shortly after the 2 July 2026 consultation close; the portal showed 7,130 comments on 30 July 2026 as late submissions continued. STV reports the council accepts submissions after the statutory 21-day deadline and that a pre-determination hearing will be required before a planning committee/full council decision."
+    },
+    "official_url": "https://edevelopment.falkirk.gov.uk/online/simpleSearchResults.do?action=firstPage&searchType=Application&searchCriteria.reference=P/26/0237/FUL",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      {
+        "event_date": "2025-10-21",
+        "event_type": "pre_application",
+        "title": "Scheme relocated from Plean (Stirling) to Glenbervie, Larbert; pre-planning application lodged",
+        "description": "DCD reported Apatura moved its planned 300MW campus from agricultural land near Plean to land at Glenbervie Business Centre, Larbert, ~3 miles away, lodging a pre-planning application.",
+        "source_ids": ["src-dcd-relocation"]
+      },
+      {
+        "event_date": "2025-10-28",
+        "event_type": "consultation",
+        "title": "First public consultation event, Glenbervie House",
+        "source_ids": ["src-apatura-news-submission", "src-apatura-consult-project"]
+      },
+      {
+        "event_date": "2025-11-27",
+        "event_type": "consultation",
+        "title": "Second public consultation event, Glenbervie House",
+        "source_ids": ["src-apatura-news-submission", "src-apatura-consult-project"]
+      },
+      {
+        "event_date": "2026-05-29",
+        "event_type": "submission",
+        "title": "Full planning application received by Falkirk Council",
+        "source_ids": ["src-falkirk-portal-p260237"]
+      },
+      {
+        "event_date": "2026-06-04",
+        "event_type": "validation",
+        "title": "Application validated",
+        "source_ids": ["src-falkirk-portal-p260237"]
+      },
+      {
+        "event_date": "2026-07-02",
+        "event_type": "consultation_close",
+        "title": "Statutory public comment period closed",
+        "source_ids": ["src-stv-deadline", "src-deadline-news-objections"]
+      }
+    ],
+    "source_ids": ["src-falkirk-portal-p260237", "src-deadline-news-objections", "src-stv-fears", "src-aprs-planning-statement-pdf"]
+  }
+]

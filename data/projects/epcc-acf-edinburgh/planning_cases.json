@@ -1,0 +1,17 @@
+[
+  {
+    "reference": "22/00803/DPP",
+    "planning_authority": "Midlothian Council",
+    "application_type": "full_application",
+    "description": "Extension to advanced computer facility and associated works, ACF Bush Estate, Penicuik EH26 0PH. Tied to this project by the site address, which is the Advanced Computing Facility itself; understood to be the new wing built to house the UK exascale system, though the application documents were not read directly.",
+    "submission_date": "2022-11-07",
+    "validation_date": "2023-08-03",
+    "official_url": "https://planning-applications.midlothian.gov.uk/OnlinePlanning/applicationDetails.do?activeTab=summary&keyVal=RKYOLKKVG9H00",
+    "last_checked_at": "2026-07-30",
+    "decision_notes": "Decision and decision date not established: the Midlothian Idox portal could not be reached from this research environment on 2026-07-30, and the mirror record does not publish a decision.",
+    "source_ids": [
+      "src-midlothian-acf-22-00803-dpp",
+      "src-planningalerts-acf-22-00803-dpp"
+    ]
+  }
+]

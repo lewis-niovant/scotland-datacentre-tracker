@@ -1,0 +1,48 @@
+{
+  "$id": "organisations.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Organisations & roles for a project",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "role", "source_ids"],
+    "properties": {
+      "name": { "type": "string" },
+      "role": {
+        "type": "string",
+        "enum": [
+          "developer",
+          "applicant",
+          "operator",
+          "tenant",
+          "landowner",
+          "spv",
+          "parent_company",
+          "investor",
+          "consultant",
+          "planning_authority",
+          "network_operator",
+          "water_provider",
+          "government",
+          "community_group",
+          "campaign_group",
+          "contractor",
+          "heat_offtaker",
+          "technology_partner",
+          "other"
+        ]
+      },
+      "company_number": { "type": "string" },
+      "jurisdiction": { "type": "string" },
+      "website": { "type": "string" },
+      "ownership_summary": { "type": "string" },
+      "beneficial_owner_public": { "type": ["boolean", "null"] },
+      "valid_from": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "valid_to": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+      "notes": { "type": "string" },
+      "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+    },
+    "additionalProperties": false
+  }
+}

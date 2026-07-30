@@ -1,0 +1,72 @@
+{
+  "$id": "planning_cases.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Planning cases & events",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["planning_authority", "application_type", "source_ids"],
+    "properties": {
+      "reference": { "type": ["string", "null"], "description": "Official reference; null if none exists yet" },
+      "planning_authority": { "type": "string" },
+      "application_type": {
+        "type": "string",
+        "enum": [
+          "pan",
+          "eia_screening",
+          "eia_scoping",
+          "full_application",
+          "permission_in_principle",
+          "msc",
+          "s36",
+          "s37",
+          "appeal",
+          "variation",
+          "other"
+        ]
+      },
+      "description": { "type": "string" },
+      "submission_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "validation_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "consultation_deadline": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "committee_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "decision_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "decision": { "type": "string", "enum": ["approved", "approved_with_conditions", "refused", "withdrawn", "pending", "screening_eia_required", "screening_eia_not_required", "scoping_opinion_issued", "other"] },
+      "decision_notes": { "type": "string" },
+      "appeal_reference": { "type": "string" },
+      "appeal_status": { "type": "string" },
+      "eia_required": { "type": ["boolean", "null"] },
+      "conditions_summary": { "type": "string" },
+      "legal_agreement": { "type": "string" },
+      "representations": {
+        "type": "object",
+        "properties": {
+          "objections": { "type": "integer" },
+          "support": { "type": "integer" },
+          "as_of_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "official_url": { "type": "string" },
+      "last_checked_at": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "events": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["event_date", "title"],
+          "properties": {
+            "event_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+            "event_type": { "type": "string" },
+            "title": { "type": "string" },
+            "description": { "type": "string" },
+            "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+    },
+    "additionalProperties": false
+  }
+}

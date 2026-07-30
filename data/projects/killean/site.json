@@ -1,0 +1,39 @@
+{
+  "site_name": "Killellan Farm, Toward",
+  "address": "Killellan Farm, Toward, Dunoon, Argyll and Bute",
+  "postcode": "PA23 7UJ",
+  "settlement": "Toward (Cowal peninsula, south of Dunoon)",
+  "latitude": 55.877,
+  "longitude": -5.02,
+  "location_precision": "approximate",
+  "boundary_precision": "red_line_official",
+  "site_area_m2": {
+    "value": 744600,
+    "min": 744600,
+    "max": 752700,
+    "unit": "m2",
+    "state": "developer_stated",
+    "claimant": "Argyll Data Development Ltd (184 acres / 74 ha); APRS says 186 acres",
+    "notes": "Developer 'currently holds access to approximately 184 acres within this designated area'; remainder owned by 'a high-net-worth individual'. Bid says full build-out could extend to 400 acres of infrastructure.",
+    "source_ids": [
+      "src-add-aigz-application",
+      "src-aprs-argyll-dc"
+    ]
+  },
+  "greenfield_brownfield": "mixed",
+  "current_land_use": "Working sand and gravel quarry (~20 ha, operated by Cowal Sand and Gravel Ltd since 2006) plus farmland at Killellan Farm",
+  "previous_land_use": "Farmland and quarrying; press links the wider area to the former Ardyne Point oil-rig construction yard near Toward",
+  "nearest_settlements": [
+    "Toward",
+    "Innellan",
+    "Dunoon",
+    "Rothesay (across the Firth on Bute)"
+  ],
+  "land_notes": "Coordinates are an approximate placement of Killellan Farm/quarry area between Toward and Ardyne, from OSM features; no red-line boundary has been published, so no boundary.geojson is provided. Site access stated as via the Killellan Farm entrance from the A815. Developer describes the site as 'industrially zoned'; APRS describes it as brownfield and farmland. Note the place-name: council and developer records use 'Killellan' (Toward, Cowal); 'Killean' is a different settlement in Kintyre — APRS's use of 'Killean' is a variant/erroneous spelling. Official red-line area (Spatial Hub, planning application boundary): 0.4 ha; previously recorded 74.5 ha (developer-stated campus); difference -99.4%. CORROBORATION, not a discrepancy: the only official red line at Killellan encloses ~0.4 ha - the single small data-storage building consented in 2020 (20/00229/PP). The 74.5 ha figure is the promoted campus, which has no application. The official geometry is direct documentary support for the finding that the multi-gigawatt claim rests on one small consent.",
+  "source_ids": [
+    "src-add-aigz-application",
+    "src-ab-20-00229-pp",
+    "src-aprs-argyll-dc",
+    "src-dcd-oil-rig-2025"
+  ]
+}

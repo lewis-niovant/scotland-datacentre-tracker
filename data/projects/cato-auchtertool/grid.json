@@ -1,0 +1,15 @@
+{
+  "connection_status": "gate_2",
+  "requested_import_capacity_mw": {
+    "value": 600,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "ILI Group",
+    "confidence": "medium",
+    "notes": "Developer states an 'approved Gate 2 grid position' for 600 MW at maximum capacity; not independently verified against NESO queue data.",
+    "source_ids": ["src-dcr-submission"]
+  },
+  "evidence_basis": "Developer statements reported at application submission (June 2026); no NESO/Ofgem record or connection agreement independently located. Site selection rationale cites proximity to renewable generation (wind farms) and a newly built ILI battery energy storage system adjacent to the site.",
+  "notes": "Network/transmission operator, connection substation and voltage not established from public sources (see project unknowns). APRS notes the adjacent ILI BESS is already constructed.",
+  "source_ids": ["src-dcr-submission", "src-stv-community", "src-aprs-auchtertool"]
+}

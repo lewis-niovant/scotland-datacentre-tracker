@@ -1,0 +1,25 @@
+{
+  "site_name": "Land at Purroch Farm",
+  "address": "Land at Purroch Farm, Mauchline Road, Hurlford, East Ayrshire",
+  "postcode": "KA1 5JJ",
+  "settlement": "Hurlford",
+  "latitude": 55.589073,
+  "longitude": -4.445493,
+  "location_precision": "approximate",
+  "boundary_precision": "none",
+  "site_area_m2": {
+    "value": 1000000,
+    "unit": "m2",
+    "state": "reported",
+    "claimant": "BBC News (reported as 'about 100 hectares / 250 acres')",
+    "applicable_date": "2026-03-01",
+    "confidence": "medium",
+    "notes": "Journalistic figure; no red-line boundary plan located to verify. 100 ha = 1,000,000 m2.",
+    "source_ids": ["src-bbc-rufus-2026"]
+  },
+  "greenfield_brownfield": "greenfield",
+  "current_land_use": "Agricultural land (farmland at Purroch Farm)",
+  "nearest_settlements": ["Hurlford", "Crookedholm", "Kilmarnock", "Galston"],
+  "land_notes": "Site is on farmland south of Hurlford, just north of HMP Kilmarnock on Mauchline Road (ward: Kilmarnock East and Hurlford; parish: Hurlford and Crookedholm). ILI states the 'vast majority' of the land would be given to biodiversity and landscaping, with development of similar scale to the adjacent prison. Coordinates are the point published on the council portal record via PlanIt, not a verified site centroid. Agricultural land classification not established.",
+  "source_ids": ["src-planit-25-0008-preapp", "src-bbc-rufus-2026", "src-aprs-hurlford"]
+}

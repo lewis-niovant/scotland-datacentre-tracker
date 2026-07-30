@@ -1,0 +1,39 @@
+{
+  "summary": "DV6 is the largest and least-defined site of the contested Lanarkshire AI Growth Zone. Concerns mirror the zone-wide critiques (Green Belt loss, transparency, jobs composition, renewables deliverability) with the added scale of the South Lanridge farmland site and its associated large BESS.",
+  "principal_concerns": [
+    {
+      "concern": "Loss of Green Belt farmland south of the M8, on a site APRS assumes will host most of the zone's 500MW, plus a very large battery energy storage system",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    },
+    {
+      "concern": "Cumulative impact with the adjacent ILI Aurelius data centre proposal (~0.9km away at North Lanrigg), proposed energy parks (up to 19 turbines to 200m, solar, BESS) and multiple other BESS/solar schemes already in the planning system around Chapelhall",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    },
+    {
+      "concern": "Transparency of the AI Growth Zone's extent and of zone-level jobs and renewable-energy claims",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Zone-level Community Investment Fund of up to £543m over 15 years and 3,400+ jobs (see datavita-dv4 economic_claims for full classification and the APRS FoI counter-claim)",
+      "claimant": "DataVita / UK Government",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-govuk-lanarkshire-aigz-2026", "src-datavita-aigz-faq"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Opposed/critical of the AI Growth Zone development on the Green Belt; documents the DV6 PAN and calls for transparency",
+      "source_ids": ["src-aprs-chapelhall-aigz"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "planning_authority_contact": "North Lanarkshire Council, eplanning.northlanarkshire.gov.uk",
+  "notes": "STV reports the PAN was notified to MPs, MSPs and community councils with consultation events intended in April and June 2026 (APRS says April and May); whether they took place, and any community council responses, were not located."
+}

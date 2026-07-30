@@ -1,0 +1,18 @@
+{
+  "site_name": "iomart DC1",
+  "settlement": "Glasgow (Kinning Park, south-west of city centre)",
+  "latitude": 55.85137,
+  "longitude": -4.282626,
+  "location_precision": "exact",
+  "greenfield_brownfield": "brownfield",
+  "current_land_use": "Operating data centre in an urban/industrial area south of the Clyde",
+  "land_notes": "Street address 88 Middlesex Street, Glasgow G41 1EE is publicly advertised by iomart and listed in PeeringDB and Data Center Map. Coordinates derive from the Royal Mail postcode unit centroid returned by the postcodes.io API for the postcode recorded above. PeeringDB independently gives 55.851165, -4.283217 for the same facility, about 40 m away, so the two agree to within building scale. Operating data centre in an urban/industrial area south of the Clyde. Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
+  "source_ids": [
+    "src-dcm-iomart-dc1",
+    "src-iomart-glasgow",
+    "src-peeringdb-iomart-dc1",
+    "src-postcodes-io-g41-1ee"
+  ],
+  "address": "88 Middlesex Street, Kinning Park, Glasgow",
+  "postcode": "G41 1EE"
+}

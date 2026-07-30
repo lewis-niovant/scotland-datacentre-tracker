@@ -1,0 +1,41 @@
+{
+  "$id": "capacity_claims.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Capacity claims (typed; conflicting values preserved)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["capacity_type", "state", "source_ids"],
+    "properties": {
+      "capacity_type": {
+        "type": "string",
+        "enum": [
+          "it_load",
+          "grid_import",
+          "connection_application",
+          "connection_offer",
+          "backup_generation",
+          "onsite_generation",
+          "battery_storage",
+          "first_phase",
+          "ultimate_buildout",
+          "unspecified"
+        ]
+      },
+      "value_mw": { "type": ["number", "null"] },
+      "minimum_mw": { "type": "number" },
+      "maximum_mw": { "type": "number" },
+      "state": { "$ref": "common.schema.json#/$defs/uncertaintyState" },
+      "applicable_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+      "phase": { "type": "string" },
+      "claimant": { "type": "string" },
+      "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+      "preferred": { "type": "boolean" },
+      "preferred_rationale": { "type": "string" },
+      "supersedes": { "type": "string", "description": "Free-text pointer to the superseded claim" },
+      "notes": { "type": "string" },
+      "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+    },
+    "additionalProperties": false
+  }
+}

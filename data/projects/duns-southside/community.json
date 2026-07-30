@@ -1,0 +1,52 @@
+{
+  "summary": "Organised local opposition emerged quickly after the PAN. The 'Save the Lammermuirs – Stop the Data Centre' campaign launched at the site in late May/early June 2026, and an associated online petition was reported at over 6,000 signatures by mid-June 2026. Around 170 residents attended the two statutory consultation events in June 2026, at which the Duke of Roxburghe and Roxburghe Estates MD Jaap Röell appeared for the developer. Concerns centre on landscape and visual impact in the Lammermuir Hills, energy demand, noise, traffic and dark skies. No formal positions from Duns or Longformacus & District community councils were located.",
+  "principal_concerns": [
+    {
+      "concern": "Landscape and visual impact of three 24 m buildings ('a monster') in a sensitive upland landscape; 'industrialisation' of the Lammermuir Hills, with the built footprint compared to 11 football pitches",
+      "raised_by": "Save the Lammermuirs campaign (incl. Kathleen White); residents of Longformacus, Allenford and Cranshaws",
+      "developer_response": "Design revised with green/living roofs planted with moorland species, sculpted landscape and screening; developer says the site suits low-impact development and consultation feedback led to 'little tweaks'",
+      "source_ids": ["src-bt-residents-fight", "src-itv-southside-campaign", "src-hellorayo-duke", "src-midlothianview-campaign"]
+    },
+    {
+      "concern": "Massive electricity consumption and questioned energy/grid logic ('dumb idea', 'wrong development in the wrong place')",
+      "raised_by": "Save the Lammermuirs campaign (Kathleen White)",
+      "developer_response": "Developer says the site accesses frequently curtailed local wind generation via nearby wind farms and the Fallago Rig substation",
+      "source_ids": ["src-midlothianview-campaign", "src-deadline-southside-consult"]
+    },
+    {
+      "concern": "Impact on recreation and wildlife: proximity to the Southern Upland Way and to Dirrington Great Law and Little Law; upland breeding birds including skylarks, curlews and lapwings",
+      "raised_by": "Save the Lammermuirs campaign",
+      "source_ids": ["src-bt-residents-fight", "src-midlothianview-campaign"]
+    },
+    {
+      "concern": "Noise, traffic, dark-sky preservation and grid-connection impacts, raised by residents at the June 2026 consultation events",
+      "raised_by": "Residents at Longformacus and Westruther consultation events (as summarised by the developer's scoping-stage reporting)",
+      "source_ids": ["src-bt-southside-scoping"]
+    },
+    {
+      "concern": "Claimed local economic benefits 'didn't really hold up' under scrutiny",
+      "raised_by": "Campaigner Ben Charlesworth",
+      "source_ids": ["src-hellorayo-duke"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "145 long-term local jobs (100 direct, 45 indirect), 250+ across Scotland, ~1,000 in construction; £12m/year to the Borders economy",
+      "claimant": "Sunlaws Development Company Limited",
+      "binding_status": "aspirational",
+      "source_ids": ["src-bt-southside-scoping", "src-itv-southside-campaign", "src-deadline-southside-consult"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Save the Lammermuirs – Stop the Data Centre",
+      "stakeholder_type": "campaign_group",
+      "position": "Opposed: seeks council refusal; describes the proposal as highly irresponsible development in an area where 'you can't imagine any other development of any size being permitted'",
+      "date": "2026-06-08",
+      "source_ids": ["src-itv-southside-campaign", "src-bt-residents-fight", "src-midlothianview-campaign"]
+    }
+  ],
+  "campaign_groups": ["Save the Lammermuirs – Stop the Data Centre"],
+  "planning_authority_contact": "Scottish Borders Council planning department (eplanning.scotborders.gov.uk)",
+  "notes": "Formal community council positions (Duns Community Council; Longformacus & District; Westruther) not located — statutory consultation on a full application has not yet begun. Petition figure (6,000+) is as reported by Greatest Hits Radio Borders in mid-June 2026 and was not independently verified."
+}

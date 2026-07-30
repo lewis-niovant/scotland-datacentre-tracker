@@ -1,0 +1,40 @@
+{
+  "site_name": "Land Adjacent To Crosshill Road, Westerhill, Bishopbriggs",
+  "address": "Land East of Crosshill Road, Westerhill, Glasgow, G66 4SR",
+  "settlement": "Bishopbriggs",
+  "latitude": 55.92097,
+  "longitude": -4.189606,
+  "location_precision": "approximate",
+  "boundary_precision": "red_line_official",
+  "number_of_buildings": {
+    "value": 4,
+    "unit": "data centre buildings",
+    "state": "developer_stated",
+    "claimant": "Apatura (consultation panels)",
+    "applicable_date": "2025-08-15",
+    "notes": "Buildings A (80MW, 10 data halls), B (64MW, 8 DH), C1 and C2 (48MW, 6 DH each), plus substation, district heating building, general support building, guard huts and three BESS areas.",
+    "source_ids": [
+      "src-apatura-westerhill-panels"
+    ]
+  },
+  "greenfield_brownfield": "mixed",
+  "current_land_use": "Farmland/undeveloped land within the Westerhill Regeneration Area, near HMP Low Moss, a crematorium, rail yard and industrial estate (per consultation masterplan layout)",
+  "green_belt": true,
+  "nearest_settlements": [
+    "Bishopbriggs",
+    "Cadder",
+    "Lenzie"
+  ],
+  "protected_designations": [
+    "Partially within designated Green Belt (developer-stated)",
+    "Adjacent to Antonine Wall World Heritage Site buffer zone (developer-stated 'sensitive area')",
+    "Local Nature Conservation Site adjoining/within layout area (shown on consultation masterplan)"
+  ],
+  "land_notes": "Coordinates are APRS's stated location taken from the developer website; treated as approximate pending a red-line plan. The site lies within East Dunbartonshire Council's c.300 ha Westerhill Regeneration Area, whose masterplan was adopted as planning guidance under LDP2 on 26 September 2024. Developer says the site 'partially lies within the designated Green Belt but is allocated for development within the adopted Westerhill Regeneration Area'; APRS characterises it as 'Green Belt farmland between Bishopbriggs and Lenzie'. Access is proposed from the new Westerhill Development Road, itself in planning. Railway stations: Lenzie 1.8 km east, Bishopbriggs 2 km south-west (developer-stated). Site area not disclosed.",
+  "source_ids": [
+    "src-aprs-westerhill",
+    "src-apatura-westerhill-panels",
+    "src-edc-westerhill-masterplan",
+    "src-edc-portal-tp-ed-25-0428"
+  ]
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "reference": "25/00150/FUL",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "full_application",
+    "description": "Extension of the existing data centre and associated infrastructure including service yard arrangement and rooftop plant (reference and description as cited in S42 application 25/01294/S42; the record itself could not be opened — council portal returning errors and not present on the PlanIt mirror).",
+    "decision": "approved_with_conditions",
+    "decision_date": "2025-12-04",
+    "decision_notes": "Grant date and NPF4 Policy 8 reasoning reported by APRS; decision notice not directly inspected. Conditions include approved plans, facing materials, fencing/boundary, SUDS/drainage, noise mitigation, landscaping (as enumerated in the S42 variation).",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-nlc-25-01294-s42", "src-aprs-chapelhall-aigz"]
+  },
+  {
+    "reference": "25/00150/PPP",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "permission_in_principle",
+    "description": "Extension to Data Centre including Alterations, External Plant and Infrastructure, Watercourse Diversion, Biodiversity Enhancement, Access and Associated Development — DataVita Data Centre, York Road, Chapelhall ML6 8HW.",
+    "submission_date": "2025-02-11",
+    "validation_date": "2025-02-25",
+    "consultation_deadline": "2025-04-24",
+    "decision": "pending",
+    "decision_notes": "Shown 'Pending Consideration' on the PlanIt mirror (last updated 2025-07-04); relationship to the granted 25/00150/FUL unresolved — the PPP record may be stale or superseded.",
+    "representations": { "notes": "8 public comments recorded on the portal mirror; support/objection split not available", "as_of_date": "2025-07-04" },
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=SRIUXBBAGDF00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-nlc-25-00150-ppp"]
+  },
+  {
+    "reference": "25/01294/S42",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "variation",
+    "description": "Section 42 application to vary permission 25/00150/FUL: changes to conditions 1 (approved plans), 6 (facing materials), 7 (fence and boundary treatment), 8-9 (SUDS and drainage), 11 (revised noise mitigation for updated service yard and rooftop plant), 12-13 (revised landscape and maintenance proposals).",
+    "submission_date": "2025-12-09",
+    "validation_date": "2025-12-12",
+    "consultation_deadline": "2026-01-05",
+    "decision_date": "2026-02-24",
+    "decision": "approved_with_conditions",
+    "decision_notes": "Delegated decision; permission expires 2029-02-24; 62 documents on the portal.",
+    "representations": { "notes": "2 public comments recorded", "as_of_date": "2026-03-20" },
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=T6ZQ6ABAJXH00&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-nlc-25-01294-s42"]
+  },
+  {
+    "reference": "25/01159/PPP",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "permission_in_principle",
+    "description": "DV3: Data Centre including Associated Plant, Access and Parking Provision — Land Adjacent To York Road, Chapelhall (1.8ha / 4.4 acres).",
+    "submission_date": "2025-10-31",
+    "validation_date": "2025-11-10",
+    "consultation_deadline": "2025-12-04",
+    "decision_date": "2026-01-09",
+    "decision": "approved_with_conditions",
+    "decision_notes": "Delegated decision; permission expires 2031-01-09. Conditions include building and plant details, noise, drainage, site investigation/remediation, lighting, site access and infrastructure to service a heat network (per subsequent MSC applications).",
+    "representations": { "notes": "5 public comments recorded; split not available", "as_of_date": "2026-01-26" },
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=T501KXBAIJ800&activeTab=summary",
+    "last_checked_at": "2026-07-30",
+    "events": [
+      { "event_date": "2026-05-25", "event_type": "msc_decision", "title": "26/00350/MSC permitted (building and plant details, noise)", "source_ids": ["src-planit-nlc-26-00350-msc"] },
+      { "event_date": "2026-06-11", "event_type": "msc_decision", "title": "26/00214/MSC permitted (drainage, site investigation, remediation)", "source_ids": ["src-planit-nlc-26-00214-msc"] },
+      { "event_date": "2026-07-06", "event_type": "msc_submitted", "title": "26/00803/MSC lodged (lighting, heat-network servicing infrastructure, site access) — undecided", "source_ids": ["src-planit-nlc-26-00803-msc"] }
+    ],
+    "source_ids": ["src-planit-nlc-25-01159-ppp", "src-npm-dv3-approval"]
+  },
+  {
+    "reference": "26/00214/MSC",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "msc",
+    "description": "DV3 conditions discharge: drainage (1(g) and 2), intrusive site investigation (3), ISI findings/remediation (4).",
+    "submission_date": "2026-03-03",
+    "decision_date": "2026-06-11",
+    "decision": "approved",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-nlc-26-00214-msc"]
+  },
+  {
+    "reference": "26/00350/MSC",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "msc",
+    "description": "DV3 conditions discharge: building and plant details (1(a)), noise impact assessment (1(h), 13).",
+    "submission_date": "2026-03-26",
+    "decision_date": "2026-05-25",
+    "decision": "approved",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-nlc-26-00350-msc"]
+  },
+  {
+    "reference": "26/00803/MSC",
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "msc",
+    "description": "DV3 conditions discharge: lighting and infrastructure to service a heat network (1(a)), site access (1(b)).",
+    "submission_date": "2026-07-06",
+    "decision": "pending",
+    "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/",
+    "last_checked_at": "2026-07-30",
+    "source_ids": ["src-planit-nlc-26-00803-msc"]
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "slug": "south-gyle",
+  "canonical_name": "South Gyle Green Data Centre (1 Redheughs Avenue, Edinburgh)",
+  "display_name": "South Gyle (Edinburgh)",
+  "aliases": [
+    {
+      "alias": "Edinburgh Park Green Data Centre",
+      "alias_type": "marketing_name",
+      "source_ids": [
+        "src-shp-project-page"
+      ]
+    },
+    {
+      "alias": "Former RBS headquarters / Drummond House site",
+      "alias_type": "former_name",
+      "source_ids": [
+        "src-shp-consultation-board",
+        "src-dcr-refusal"
+      ]
+    },
+    {
+      "alias": "Proposed Green Data Centre and Relocation of Green Space",
+      "alias_type": "other",
+      "source_ids": [
+        "src-shp-consultation-board"
+      ]
+    }
+  ],
+  "summary": "Proposed c. 212.4 MW hyperscale 'green' data centre by Shelborn Drummond Ltd (Shelborn Asset Management group) on the 5.74 ha former RBS headquarters site at 1 Redheughs Avenue, South Gyle/Edinburgh Park, Edinburgh. Planning permission in principle (25/04239/PPP) for a two-building campus with dedicated substation, standby generator compounds and a relocated public park was recommended for approval by officers but refused unanimously by City of Edinburgh Council's Development Management Sub-Committee on 4 February 2026 (decision notice 9 February 2026), on grounds including conflict with NPF4 Policies 1 and 2 and City Plan 2030 Place 19. Shelborn appealed; the appeal (DPEA ref PPA-230-2794, received 31 March 2026) is proceeding by written submissions and is with a reporter, target date 18 August 2026. This is the highest-profile Scottish data centre refusal case to date.",
+  "project_type": "hyperscale",
+  "status": "appealed",
+  "status_source_ids": [
+    "src-dpea-ppa-230-2794",
+    "src-aprs-south-gyle"
+  ],
+  "maturity_level": "M2",
+  "maturity_flags": [
+    "refused",
+    "appealed"
+  ],
+  "maturity_explanation": "Formal application for planning permission in principle 25/04239/PPP (dated 18 August 2025, per DPEA) was validated and determined: refused by City of Edinburgh Council on 9 February 2026 following the committee's unanimous vote on 4 February 2026 against officer recommendation. Appeal PPA-230-2794 received by DPEA 31 March 2026 and allocated to a reporter (written submissions), so the project remains a live formal application under appeal rather than a lapsed scheme.",
+  "verification_level": "verified",
+  "local_authority": "City of Edinburgh Council",
+  "region": "Edinburgh and Lothians",
+  "first_public_date": "2025-05-22",
+  "last_verified_at": "2026-07-30",
+  "next_review_at": "2026-08-31",
+  "confidence_overall": "high",
+  "is_public": true,
+  "is_sensitive": false,
+  "latest_development": {
+    "date": "2026-06-15",
+    "headline": "DPEA case update: one further written information request outstanding on appeal PPA-230-2794; reporter's target decision date 18 August 2026",
+    "source_ids": [
+      "src-dpea-ppa-230-2794"
+    ]
+  },
+  "unknowns": [
+    "Exact objection/support counts on application 25/04239/PPP (portal unreachable from research environment; committee report not retrievable).",
+    "Full text of the council's refusal reasons as worded in the decision notice of 9 February 2026 (grounds summarised second-hand by APRS as NPF4 Policy 1, NPF4 Policy 2 and City Plan 2030 Place 19).",
+    "Detailed grounds of appeal in Shelborn's Appeal Statement of 30 March 2026 (document identified but not readable from research environment).",
+    "Backup generation capacity in MW, fuel volumes and number of generators (diesel standby generators proposed; figures not located).",
+    "Grid connection status: whether a connection application/offer exists with SP Energy Networks or NESO, connection voltage and date (councillors noted no figures were provided on power arrangements).",
+    "Developer's quantified economic claims (construction jobs, investment/capex, GVA) from the planning statement - only the council's 39-job estimate and qualitative 'limited jobs' statements located.",
+    "PAN reference number for the 2025 pre-application notice.",
+    "Building footprint and gross floor area figures.",
+    "Whether the 212.42 MW figure is IT load or grid import."
+  ],
+  "related_project_slugs": [
+    "gogar",
+    "wester-hermiston"
+  ]
+}

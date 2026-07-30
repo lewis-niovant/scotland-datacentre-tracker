@@ -1,0 +1,39 @@
+{
+  "summary": "No formal consultation exists because no application for the main campus has been made. The principal public scrutiny to date comes from APRS, which profiles the project (as 'Killean') in its national campaign against hyperscale AI data centres and highlights the absence of any planning application for the 74 ha site. The relevant community council is South Cowal Community Council (consultee on the 2020 application, which drew 6 public comments); no stated position from it on the campus was located. The developer claims strong local interest and education partnerships (Dunoon Grammar School, Argyll and Bute education team, University of Strathclyde).",
+  "principal_concerns": [
+    {
+      "concern": "Scale of claims (1,000-2,000 MW) versus a single small 2020 consent; no visible planning application for the AI Growth Zone site",
+      "raised_by": "APRS",
+      "source_ids": ["src-aprs-argyll-dc"]
+    },
+    {
+      "concern": "Cumulative national concerns about hyperscale data centres: energy demand, grid, climate emissions and lack of mandatory EIA — APRS petitions for a moratorium",
+      "raised_by": "APRS ('Stop the Hyperscale AI Data Centres' petition)",
+      "source_ids": ["src-aprs-argyll-dc"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "Waste heat reuse for vertical farming, aquaculture and district heating",
+      "claimant": "Argyll Data Development / SambaNova",
+      "binding_status": "aspirational",
+      "source_ids": ["src-sambanova-argyll-pr", "src-add-aigz-application"]
+    },
+    {
+      "benefit": "Skills and education partnerships with Dunoon Grammar School and University of Strathclyde; local jobs and supply-chain spend (~£2bn claimed regionally)",
+      "claimant": "Argyll Data Development Ltd",
+      "binding_status": "aspirational",
+      "source_ids": ["src-add-aigz-application"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland",
+      "stakeholder_type": "campaign_group",
+      "position": "Opposed; calls for a halt to hyperscale AI data centres pending mandatory EIA and national impact assessment; flags the Killellan claims-vs-consent gap",
+      "source_ids": ["src-aprs-argyll-dc"]
+    }
+  ],
+  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "notes": "APRS page content was captcha-blocked at retrieval and is cited from search excerpts. Local press/community council minutes not located; follow-up suggested."
+}

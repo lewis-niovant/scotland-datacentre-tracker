@@ -1,0 +1,66 @@
+[
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 20,
+    "state": "developer_stated",
+    "applicable_date": "2025-05-30",
+    "claimant": "Argyll Data Development Ltd (AI Growth Zone bid)",
+    "confidence": "low",
+    "notes": "Bid states the site 'currently benefits from existing infrastructure capable of supporting up to 20 MW of operation'. A separate SPEN budget quote in the bid describes a 20 MW connection at 33 kV (16.8 km of cable, £5.31m + VAT). Not independently verified.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "capacity_type": "connection_application",
+    "value_mw": 6,
+    "state": "developer_stated",
+    "applicable_date": "2025-05-30",
+    "claimant": "Argyll Data Development Ltd",
+    "confidence": "low",
+    "notes": "Bid states a formal application has been submitted for the initial connection to power the first building at 6 MW. No independent grid-register confirmation located.",
+    "source_ids": ["src-add-aigz-application"]
+  },
+  {
+    "capacity_type": "first_phase",
+    "minimum_mw": 100,
+    "maximum_mw": 600,
+    "state": "developer_stated",
+    "applicable_date": "2025-10-23",
+    "phase": "Phase 1 (marketing)",
+    "claimant": "Argyll Data Development / SambaNova joint press release",
+    "confidence": "low",
+    "preferred": true,
+    "preferred_rationale": "The 100-600 MW range is the developers' own most-repeated figure; treated as the canonical marketing claim while noting no planning or grid evidence supports capacity beyond single-digit MW",
+    "notes": "No planning application exists for any of this capacity; only consent is one small 2020 building.",
+    "source_ids": ["src-sambanova-argyll-pr", "src-add-aigz-application"]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "value_mw": 2000,
+    "state": "developer_stated",
+    "applicable_date": "2025-10-23",
+    "claimant": "Argyll Data Development / SambaNova",
+    "confidence": "low",
+    "notes": "'Potential to ultimately exceed 2 GW at full build-out'. The AI Growth Zone bid adds a 'long-term vision' of up to 10 GW of total connectivity supporting 2-3 GW of active capacity with triple redundancy — aspirational, no supporting infrastructure evidence.",
+    "source_ids": ["src-sambanova-argyll-pr", "src-add-aigz-application"]
+  },
+  {
+    "capacity_type": "ultimate_buildout",
+    "minimum_mw": 1000,
+    "maximum_mw": 2000,
+    "state": "reported",
+    "claimant": "APRS (campaign characterisation: '1000MW hyperscale data centre scaling to 2000MW')",
+    "confidence": "low",
+    "notes": "Campaign restatement of developer claims; recorded to preserve the differing framing.",
+    "source_ids": ["src-aprs-argyll-dc"]
+  },
+  {
+    "capacity_type": "onsite_generation",
+    "value_mw": 2000,
+    "state": "developer_stated",
+    "applicable_date": "2025-05-30",
+    "claimant": "Argyll Data Development Ltd / CorPower Ocean",
+    "confidence": "low",
+    "notes": "Ambition for a 2 GW wave energy array with CorPower Ocean; the CorPower Pre-FEED document in the bid describes a 600 MW project off the west coast near Islay, phased 30 MW (2029), 60 MW (2030), 120 MW (2031), remainder to 2033. Wave energy at this scale is unprecedented (CorPower's technology is at pre-FEED/FEED stage). On-site wind, solar and vanadium-flow battery storage also claimed, unquantified.",
+    "source_ids": ["src-add-aigz-application", "src-sambanova-argyll-pr"]
+  }
+]

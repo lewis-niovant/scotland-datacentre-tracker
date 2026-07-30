@@ -1,0 +1,93 @@
+{
+  "summary": "Opposition to the Cato application is among the largest recorded for a Scottish data centre proposal: 1,200+ objections were published on Fife Council's portal by the 24 July 2026 deadline, and the council reported 14,000-16,000 total representations. Auchtertool Community Council (the village has ~215 houses / ~250 residents) formally objected, having initially acted as a neutral facilitator; a local campaign group 'Say No to Cato' and national group APRS are active; petitions gathered 8,000+ signatures against the development and 2,500+ for a Scottish moratorium on hyperscale data centres. SEPA lodged a holding objection on flooding. Fife Council's decision that no EIA was required drew particular criticism and is subject to a screening direction request to Scottish Ministers. ILI has defended the scheme and met residents (including a well-attended June 2026 village hall meeting and further meetings announced in July 2026).",
+  "principal_concerns": [
+    {
+      "concern": "Scale and landscape impact: six to seven data halls up to 35 m high on farmland beside a small village; ~25% of the site visible from most of the village",
+      "raised_by": "Auchtertool Community Council; residents; APRS",
+      "source_ids": ["src-stv-community", "src-acc-village-update", "src-aprs-auchtertool"]
+    },
+    {
+      "concern": "Absence of an Environmental Impact Assessment: Fife Council's 'EIA not required' screening opinion described as 'appalling' (community council) and 'unfathomable' (Mark Ruskell MSP); legal challenge considered and a screening direction requested from the Scottish Government",
+      "raised_by": "Auchtertool Community Council; Mark Ruskell MSP; Environmental Rights Centre Scotland",
+      "source_ids": ["src-cft-eia"]
+    },
+    {
+      "concern": "Electricity consumption: full build-out of ~4,000-4,200 GWh/yr equated by APRS to about half of Scottish households' annual electricity use or ~20% of Scotland's total consumption",
+      "raised_by": "APRS",
+      "developer_response": "ILI states the facility would run on renewable electricity and put curtailed generation to productive use",
+      "source_ids": ["src-aprs-auchtertool", "src-dcr-objections"]
+    },
+    {
+      "concern": "Water: uncertainty over how much water is required, its source, and where discharge would go; existing mains too small",
+      "raised_by": "Auchtertool Community Council",
+      "developer_response": "ILI states water would be supplied via infrastructure separate from Auchtertool's network (~34,000 m3/yr claimed)",
+      "source_ids": ["src-stv-community", "src-dcr-objections", "src-acc-village-update"]
+    },
+    {
+      "concern": "Flood risk: insufficient flooding information in the application",
+      "raised_by": "SEPA (holding objection, July 2026)",
+      "source_ids": ["src-cft-14000"]
+    },
+    {
+      "concern": "Lack of detail at PPP stage: campaigners argue planners are being asked to grant the principle with little scrutiny, that the application conflicts with NPF4 and the Local Development Plan, and that the design contradicts material submitted at EIA screening; plans reportedly show buildings over the Hallyards Castle ruins",
+      "raised_by": "APRS / local campaigners (Kate Wheway)",
+      "source_ids": ["src-aprs-auchtertool"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "~120 permanent skilled on-site jobs; 9,660 construction job-years and £708m construction GVA in Scotland (1,450 job-years and £105m in Fife)",
+      "claimant": "ILI Group / BiGGAR Economics",
+      "binding_status": "modelled",
+      "source_ids": ["src-dcr-submission"]
+    },
+    {
+      "benefit": "Possible district heating for surrounding areas, if viable, and local apprenticeships",
+      "claimant": "ILI Group (pre-application statements to community council)",
+      "binding_status": "aspirational",
+      "source_ids": ["src-acc-village-update"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Auchtertool Community Council",
+      "stakeholder_type": "community_council",
+      "position": "Objects; describes the application as 'ill-conceived and inappropriate'; chair Andrea Cail said residents were 'appalled' at the EIA screening decision and 'somewhat taken aback' by the scale",
+      "source_ids": ["src-dcr-objections", "src-cft-eia", "src-stv-community"]
+    },
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Objects (formal objection by policy manager Nikki Sinclair); published EIA scoping analysis and energy-use calculations",
+      "source_ids": ["src-aprs-auchtertool"]
+    },
+    {
+      "stakeholder": "Say No to Cato",
+      "stakeholder_type": "campaign_group",
+      "position": "Local campaign group opposing the development",
+      "source_ids": ["src-aprs-auchtertool"]
+    },
+    {
+      "stakeholder": "SEPA",
+      "stakeholder_type": "statutory_consultee",
+      "position": "Holding objection pending additional flooding information (July 2026)",
+      "source_ids": ["src-cft-14000"]
+    },
+    {
+      "stakeholder": "Mark Ruskell MSP (Scottish Greens)",
+      "stakeholder_type": "elected_member",
+      "position": "Criticised the no-EIA decision as 'unfathomable'; suggested the matter should go to a public inquiry",
+      "source_ids": ["src-cft-eia"]
+    },
+    {
+      "stakeholder": "ILI Group",
+      "stakeholder_type": "other",
+      "position": "Defends the project: renewable electricity use, productive use of curtailed generation, separate water infrastructure, economic benefits; holding further meetings with residents (July 2026)",
+      "source_ids": ["src-dcr-objections"]
+    }
+  ],
+  "campaign_groups": ["Say No to Cato", "Action to Protect Rural Scotland (APRS)"],
+  "consultation_deadline": "2026-07-02",
+  "planning_authority_contact": "Fife Council planning — case officer Scott Simpson; Head of Planning Pam Ewen",
+  "notes": "Advertised comment deadline was 2 July 2026, but the portal neighbour-consultation expiry was 24 July 2026 and the council confirmed all representations received by 24 July would be considered."
+}

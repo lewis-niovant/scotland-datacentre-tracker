@@ -1,0 +1,13 @@
+[
+  {
+    "capacity_type": "connection_application",
+    "value_mw": 180,
+    "state": "reported",
+    "claimant": "APRS (citing NESO Existing Agreements Register)",
+    "confidence": "low",
+    "preferred": true,
+    "preferred_rationale": "Only figure in the public record; a single-sourced restatement of a NESO register entry.",
+    "notes": "One of five gate 2 connection sites APRS reports 'not otherwise seen elsewhere'. Register row not independently verified; MW quantity type and end use unconfirmed.",
+    "source_ids": ["src-aprs-data-centre-map", "src-neso-existing-agreements-register"]
+  }
+]
