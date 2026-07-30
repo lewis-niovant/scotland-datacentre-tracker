@@ -29,6 +29,17 @@ export interface LensDef {
   marker: (p: ProjectRecord) => MarkerStyle
   legend: string
   stats: (projects: ProjectRecord[]) => StatTileDef[]
+  /** The numeric quantity this lens aggregates in cluster bubbles.
+      null = this project has no published figure for the lens. */
+  metric?: (p: ProjectRecord) => number | null
+  /** FIXED reference maximum for the *aggregated* (cluster-sum) value, so
+      bubble sizes never rescale when filters change. */
+  metricMax: number
+  /** Formats an aggregated metric for the centre of a cluster bubble.
+      `count` is the number of contributing projects (for averages). */
+  fmtAggregate: (total: number, count: number) => string
+  /** What the aggregate is, in words — used under the donut / in the legend. */
+  aggregateLabel: string
 }
 
 function seqStyle(frac: number | null, size: number, metricLabel: string): MarkerStyle {
@@ -59,16 +70,27 @@ const MAX_MW = 1000
 const MAX_WATER = 500000
 const MAX_CAPEX = 10e9
 
+/* Reference maxima for *aggregates* (sums across a cluster). Also fixed, so a
+   cluster bubble that loses members shrinks rather than the scale moving. */
+const AGG_MW = 5000
+const AGG_WATER = 2.5e6
+const AGG_CAPEX = 40e9
+const AGG_OBJECTIONS = 1500
+const AGG_MATURITY = 5 // per-project average, not a sum
+
 export const LENSES: LensDef[] = [
   {
     id: 'overview',
+    metric: (p) => headlineCapacityMW(p)?.mw ?? null,
+    metricMax: AGG_MW,
+    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figures'),
+    aggregateLabel: 'claimed capacity in the group',
     label: 'Overview',
     legend: 'Colour: status group',
     marker: (p) => statusStyle(p),
     stats: (ps) => {
       const cap = sum(ps.map((p) => headlineCapacityMW(p)?.mw ?? null))
       return [
-        { value: fmtInt(ps.length), label: 'projects shown' },
         { value: cap.n ? fmtMW(cap.total) : '—', label: `claimed capacity (${cap.n} projects, mixed claim states)` },
         { value: fmtInt(new Set(ps.map((p) => p.project.local_authority)).size), label: 'local authorities' },
       ]
@@ -76,6 +98,10 @@ export const LENSES: LensDef[] = [
   },
   {
     id: 'electricity',
+    metric: (p) => headlineCapacityMW(p)?.mw ?? null,
+    metricMax: AGG_MW,
+    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figures'),
+    aggregateLabel: 'claimed capacity in the group',
     label: '⚡ Electricity',
     legend: 'Size & shade: claimed capacity (MW)',
     marker: (p) => {
@@ -95,6 +121,10 @@ export const LENSES: LensDef[] = [
   },
   {
     id: 'water',
+    metric: (p) => headlineWaterM3(p),
+    metricMax: AGG_WATER,
+    fmtAggregate: (t, n) => (n ? `${fmtM3(t)}/yr` : 'no figures'),
+    aggregateLabel: 'claimed water use in the group',
     label: '💧 Water',
     legend: 'Size & shade: claimed water use (m³/yr)',
     marker: (p) => {
@@ -113,6 +143,10 @@ export const LENSES: LensDef[] = [
   },
   {
     id: 'economics',
+    metric: (p) => headlineCapexGBP(p),
+    metricMax: AGG_CAPEX,
+    fmtAggregate: (t, n) => (n ? fmtGBP(t) : 'no figures'),
+    aggregateLabel: 'claimed investment in the group',
     label: '💷 Economics',
     legend: 'Size & shade: claimed capital expenditure',
     marker: (p) => {
@@ -132,6 +166,10 @@ export const LENSES: LensDef[] = [
   },
   {
     id: 'planning',
+    metric: (p) => publishedObjections(p),
+    metricMax: AGG_OBJECTIONS,
+    fmtAggregate: (t, n) => (n ? `${fmtInt(t)}+` : 'no objections published'),
+    aggregateLabel: 'published objections in the group',
     label: '📋 Planning',
     legend: 'Colour: status group · size: live application',
     marker: (p) => {
@@ -151,6 +189,10 @@ export const LENSES: LensDef[] = [
   },
   {
     id: 'credibility',
+    metric: (p) => maturityNumber(p.project.maturity_level),
+    metricMax: AGG_MATURITY,
+    fmtAggregate: (t, n) => (n ? `M${(t / n).toFixed(1)}` : '—'),
+    aggregateLabel: 'mean maturity in the group',
     label: '🔍 Credibility',
     legend: 'Shade: maturity M0 (concept) → M5 (operating)',
     marker: (p) => {

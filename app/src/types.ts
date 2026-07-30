@@ -300,14 +300,27 @@ export interface Observatory {
 
 /* ---- geo.json ---- */
 
+/** The kinds actually emitted by scripts/build_dataset.py. */
+export type GeoKind = 'project_point' | 'boundary' | 'building'
+
 export interface GeoProperties {
   slug?: string
-  kind?: string // project_point | boundary | building
+  kind?: GeoKind
   name?: string
   status?: string
   maturity?: string
   height?: number
   location_precision?: string
+  /* boundary features (Spatial Hub Scotland, official red lines) */
+  reference?: string
+  local_auth?: string
+  application_type?: string
+  is_primary?: boolean
+  official_area_m2?: number
+  source?: string
+  source_id?: string
+  licence?: string
+  retrieved_date?: string
   [key: string]: unknown
 }
 
