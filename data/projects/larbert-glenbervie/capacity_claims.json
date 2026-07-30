@@ -1,0 +1,32 @@
+[
+  {
+    "capacity_type": "grid_import",
+    "value_mw": 300,
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "applicable_date": "2026-06-09",
+    "confidence": "high",
+    "preferred": true,
+    "preferred_rationale": "Consistent across the application description on the Falkirk Council portal ('300MW Demand Utility Capacity'), developer material and journalism.",
+    "notes": "Application description on the portal is 'Construction of an AI Data Centre with 300MW Demand Utility Capacity'. Whether 300 MW is IT load or total grid import is not stated; treated as demand/grid import.",
+    "source_ids": ["src-falkirk-portal-p260237", "src-apatura-news-submission"]
+  },
+  {
+    "capacity_type": "backup_generation",
+    "value_mw": null,
+    "state": "reported",
+    "claimant": "STV News (from application/consultation material)",
+    "confidence": "medium",
+    "notes": "200 emergency backup diesel generators with a 48-hour fuel supply, tested monthly/quarterly/annually. Aggregate MW rating not disclosed.",
+    "source_ids": ["src-stv-fears"]
+  },
+  {
+    "capacity_type": "battery_storage",
+    "value_mw": null,
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "confidence": "medium",
+    "notes": "Campus would connect to Apatura's separately consented battery energy storage (BESS) site about two miles to the north; that BESS is a separate project and its MW rating is not part of this application.",
+    "source_ids": ["src-apatura-news-submission", "src-datacentrenews"]
+  }
+]

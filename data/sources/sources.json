@@ -71,5 +71,142 @@
     "reliability_tier": 1,
     "status": "active",
     "notes": "CSV/API, updated twice weekly. Generation-focused; NESO confirmed via FOI that no public register of demand connections exists — the data-centre demand queue is not project-level public data."
+  },
+  {
+    "id": "src-falkirk-portal-p260237",
+    "title": "Planning application P/26/0237/FUL — Construction of an AI Data Centre with 300MW Demand Utility Capacity, Land to the northeast of Glenbervie Nursery, Stirling Road, Larbert",
+    "publisher": "Falkirk Council (eDevelopment / Idox Public Access)",
+    "source_type": "planning_portal",
+    "url": "https://edevelopment.falkirk.gov.uk/online/simpleSearchResults.do?action=firstPage&searchType=Application&searchCriteria.reference=P/26/0237/FUL",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "notes": "Received 2026-05-29, validated 2026-06-04, status 'Awaiting decision'. Portal showed 7,130 comments, 133 documents, 6 constraints at retrieval. Direct applicationDetails URL requires the record keyVal; use reference search."
+  },
+  {
+    "id": "src-aprs-planning-statement-pdf",
+    "title": "Planning Statement for P/26/0237/FUL (portal document 1644123, mirrored by APRS)",
+    "publisher": "Apatura / Falkirk Council portal (mirrored by Action to Protect Rural Scotland)",
+    "source_type": "planning_document",
+    "url": "https://aprs.scot/wp-content/uploads/2026/06/P_26_0237_FUL-Planning_Statement-1644123.pdf",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 1,
+    "status": "active",
+    "notes": "Could not be downloaded during this research session (APRS bot-protection captcha); cited only as corroboration that the application reference is P/26/0237/FUL. No values were taken from it."
+  },
+  {
+    "id": "src-apatura-news-submission",
+    "title": "Plans submitted to Falkirk Council for Larbert Data Centre Campus",
+    "publisher": "Apatura",
+    "source_type": "developer_publication",
+    "url": "https://apatura.energy/news-insights/larbert-data-centre-campus-plans-submitted-to-falkirk-council-for-larbert-data-centre-campus/",
+    "publication_date": "2026-06-09",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer promotional material"
+  },
+  {
+    "id": "src-apatura-consult-project",
+    "title": "Larbert AI Data Campus — public consultation project page and timeline",
+    "publisher": "Apatura (consult.apatura.energy)",
+    "source_type": "developer_publication",
+    "url": "https://consult.apatura.energy/larbert/project",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 3,
+    "perspective": "Developer consultation material",
+    "notes": "Timeline: grid offer accepted Q2 2025; consultations Q4 2025; application Q2 2026; remediation Q3 2026; construction 2027-2028; operations 2029. Describes ~50 acres of mainly vacant grassland beside Glenbervie Business Park."
+  },
+  {
+    "id": "src-spice-data-centres",
+    "title": "SPICe Spotlight: Data Centres",
+    "publisher": "Scottish Parliament Information Centre (SPICe)",
+    "source_type": "parliamentary_material",
+    "url": "https://spice-spotlight.scot/2026/06/26/data-centres/",
+    "publication_date": "2026-06-26",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 2,
+    "notes": "States Larbert campus comprises two data centre buildings of 128,863 m2 floor area, 25 m high (flues to 28 m), plus an 11,500 m2 electricity substation and associated facilities."
+  },
+  {
+    "id": "src-stv-fears",
+    "title": "'You don't want this where you live': Fears over plans for massive AI data centre in Larbert",
+    "publisher": "STV News",
+    "source_type": "journalism",
+    "url": "https://news.stv.tv/east-central/you-dont-want-this-where-you-live-fears-over-plans-for-massive-ai-data-centre-in-larbert",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports 200 backup diesel generators with 48-hour fuel supply, closed-loop cooling, 'district heat ready' design, 1,100+ objections at time of writing, campaign groups and public meeting of 25 June 2026, 21-day comment period ending 2026-07-02, pre-determination hearing required."
+  },
+  {
+    "id": "src-stv-deadline",
+    "title": "Deadline approaches for views on 'humungous' planned data centres in Falkirk and Fife",
+    "publisher": "STV News",
+    "source_type": "journalism",
+    "url": "https://news.stv.tv/east-central/deadline-approaches-for-views-on-humungous-planned-data-centres-in-falkirk-and-fife",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Consultation deadline 2026-07-02; 3,100+ objections at time of writing; Larbert (300MW) and Auchtertool, Fife (600MW) together 900MW."
+  },
+  {
+    "id": "src-deadline-news-objections",
+    "title": "Larbert AI Data Centre: what happens next after more than 6,700 objections?",
+    "publisher": "Deadline News",
+    "source_type": "journalism",
+    "url": "https://www.deadlinenews.co.uk/2026/07/03/larbert-ai-data-centre-what-happens-next-after-more-than-6700-objections/",
+    "publication_date": "2026-07-03",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports (via search excerpt; page itself returned 403) applicant Apatura DC Project 5 Ltd; 6,833 comments of which 6,719 objections and 80 support as of consultation close 2026-07-02."
+  },
+  {
+    "id": "src-dcd-relocation",
+    "title": "Apatura changes location of planned 300MW data center campus in Scotland",
+    "publisher": "Data Centre Dynamics (DCD)",
+    "source_type": "journalism",
+    "url": "https://www.datacenterdynamics.com/en/news/apatura-changes-location-of-planned-300mw-data-center-campus-in-scotland/",
+    "publication_date": "2025-10-21",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports (via search excerpt; page returned 403) the 300MW campus was originally proposed on agricultural land near Plean, Stirling, and was relocated ~3 miles to Glenbervie Business Centre, Larbert, in October 2025."
+  },
+  {
+    "id": "src-futurescot",
+    "title": "Falkirk could be site of one of largest datacentres in the UK — with plans for development submitted to council",
+    "publisher": "FutureScot",
+    "source_type": "journalism",
+    "url": "https://futurescot.com/falkirk-could-be-site-of-one-of-largest-datacentres-in-the-uk-with-plans-for-development-submitted-to-council/",
+    "publication_date": "2026-06-09",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Reports 'Gate 2 compliant grid connections', Denny substation, Scottish Enterprise landowner, jobs and investment claims."
+  },
+  {
+    "id": "src-datacentrenews",
+    "title": "Apatura submits plans for Larbert data centre campus",
+    "publisher": "DataCentreNews UK",
+    "source_type": "journalism",
+    "url": "https://datacentrenews.uk/story/apatura-submits-plans-for-larbert-data-centre-campus",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4,
+    "notes": "Includes Scottish Enterprise quote (Victoria Carmichael) and Apatura CEO Giles Hanglin; district heat-ready design; BESS connection 2 miles north; 1.6GW confirmed connections across Apatura pipeline."
+  },
+  {
+    "id": "src-projectscot",
+    "title": "Build of proposed Larbert data centre would create over 5,000 construction jobs",
+    "publisher": "Project Scotland",
+    "source_type": "journalism",
+    "url": "https://projectscot.com/2026/06/build-of-proposed-larbert-data-centre-would-create-over-5000-construction-jobs/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 4
+  },
+  {
+    "id": "src-aprs-objection",
+    "title": "APRS Objection to Falkirk Council for the Larbert Data Centre",
+    "publisher": "Action to Protect Rural Scotland (APRS)",
+    "source_type": "campaign_material",
+    "url": "https://aprs.scot/resources/aprs-objection-to-falkirk-council-for-the-larbert-data-centre/",
+    "retrieved_date": "2026-07-30",
+    "reliability_tier": 5,
+    "perspective": "Campaign group opposed to hyperscale data centres in Scotland",
+    "notes": "Page itself blocked by bot protection; content known via search excerpts: objection argues proposal contrary to development plan and environmental information inadequate; APRS calls for moratorium on hyperscale AI data centres."
   }
 ]

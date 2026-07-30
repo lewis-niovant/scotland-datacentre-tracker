@@ -1,0 +1,82 @@
+{
+  "summary": "The application attracted one of the largest objection counts recorded on Falkirk Council's portal: about 6,700 objections against 80 messages of support by the 2 July 2026 consultation close, rising to over 7,100 comments by late July. Opposition is organised through the resident group 'Say No To Larbert Data Centre', with APRS and Stop Climate Chaos Scotland also objecting; a residents' public meeting was held on 25 June 2026 and a protest was reported. Apatura and Scottish Enterprise present the scheme as major inward investment with jobs and green-design commitments.",
+  "principal_concerns": [
+    {
+      "concern": "Proximity to sensitive uses — objectors state the site is close to housing, a nursery and Forth Valley Royal Hospital, and reportedly only ~20 m from a care home",
+      "raised_by": "Residents / campaigners (reported)",
+      "source_ids": ["src-deadline-news-objections", "src-stv-fears"]
+    },
+    {
+      "concern": "Air quality and noise from 200 emergency backup diesel generators (campaigners compare emissions to '106,000 idling diesel cars' during testing)",
+      "raised_by": "Residents / campaign groups",
+      "developer_response": "Apatura states generators are for emergency backup only with periodic testing, and that the campus is designed to green-charter standards.",
+      "source_ids": ["src-stv-fears"]
+    },
+    {
+      "concern": "Scale of electricity demand (300MW; combined with Auchtertool, Fife, 900MW — just under a quarter of Scottish peak demand) and possible impact on energy prices",
+      "raised_by": "Campaigners / APRS",
+      "source_ids": ["src-stv-deadline", "src-stv-fears", "src-deadline-news-objections"]
+    },
+    {
+      "concern": "Adequacy of consultation and of environmental information; complexity of a 52-document environmental submission; APRS argues the proposal is contrary to the development plan and calls for a moratorium on hyperscale AI data centres",
+      "raised_by": "APRS; residents",
+      "source_ids": ["src-aprs-objection", "src-stv-fears", "src-deadline-news-objections"]
+    },
+    {
+      "concern": "Water use and pressure concerns (drawing on reported experience near US data centres)",
+      "raised_by": "Residents (reported)",
+      "developer_response": "Apatura states a closed-loop cooling system will minimise water use.",
+      "source_ids": ["src-stv-fears"]
+    }
+  ],
+  "claimed_local_benefits": [
+    {
+      "benefit": "More than 5,000 construction jobs a year and 1,300+ long-term operational jobs (500+ local at ~£56,000 average salary)",
+      "claimant": "Apatura",
+      "binding_status": "aspirational",
+      "source_ids": ["src-apatura-news-submission"]
+    },
+    {
+      "benefit": "'District heat ready' design offering potential future heat supply to local homes/businesses; no off-taker, network or funding identified",
+      "claimant": "Apatura",
+      "binding_status": "aspirational",
+      "source_ids": ["src-stv-fears", "src-datacentrenews"]
+    },
+    {
+      "benefit": "Almost £1bn of direct investment in Scotland",
+      "claimant": "Apatura",
+      "binding_status": "aspirational",
+      "source_ids": ["src-apatura-news-submission"]
+    }
+  ],
+  "stakeholder_positions": [
+    {
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
+      "stakeholder_type": "campaign_group",
+      "position": "Formal objection: contrary to development plan, inadequate environmental information; seeks refusal and a national moratorium on hyperscale AI data centres.",
+      "source_ids": ["src-aprs-objection"]
+    },
+    {
+      "stakeholder": "Say No To Larbert Data Centre",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; organised objection drives, public meeting (25 June 2026) and protest.",
+      "source_ids": ["src-stv-fears"]
+    },
+    {
+      "stakeholder": "Stop Climate Chaos Scotland",
+      "stakeholder_type": "campaign_group",
+      "position": "Raised concerns about the proposal.",
+      "source_ids": ["src-stv-fears"]
+    },
+    {
+      "stakeholder": "Scottish Enterprise",
+      "stakeholder_type": "government",
+      "position": "Supportive as landowner/economic agency: 'Scotland welcomes the ambition and scale' (Victoria Carmichael).",
+      "date": "2026-06-09",
+      "source_ids": ["src-datacentrenews"]
+    }
+  ],
+  "campaign_groups": ["Say No To Larbert Data Centre", "Action to Protect Rural Scotland (APRS)", "Stop Climate Chaos Scotland"],
+  "consultation_deadline": "2026-07-02",
+  "notes": "Objection/support counts are point-in-time figures from press reporting and the portal; the council reportedly continues to accept late representations. A pre-determination hearing is reportedly required before decision."
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "claim_category": "capital_expenditure",
+    "value": 1000000000,
+    "unit": "gbp",
+    "geographic_scope": "Scotland",
+    "claimant": "Apatura",
+    "methodology": "Described as 'almost £1 billion of direct investment in Scotland'; methodology not published.",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "Rounded headline figure ('almost £1bn').",
+    "source_ids": ["src-apatura-news-submission", "src-futurescot"]
+  },
+  {
+    "claim_category": "total_jobs_unspecified",
+    "value": 5000,
+    "unit": "jobs",
+    "geographic_scope": "unstated",
+    "period": "construction phase (per year)",
+    "claimant": "Apatura",
+    "methodology": "Stated as 'more than 5,000 jobs a year during construction'; direct/indirect split, FTE basis and consultant not published in retrieved material.",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Phrased 'jobs a year', suggesting job-years or annual average workforce rather than distinct posts; category unresolved.",
+    "source_ids": ["src-apatura-news-submission", "src-projectscot"]
+  },
+  {
+    "claim_category": "total_jobs_unspecified",
+    "value": 1300,
+    "unit": "jobs",
+    "geographic_scope": "unstated (Scotland implied)",
+    "period": "operational",
+    "claimant": "Apatura",
+    "methodology": "Stated as 'more than 1,300 long-term skilled jobs once operational'; direct vs indirect/induced split not published. Typical hyperscale campuses employ far fewer direct on-site staff, so this likely includes wider/supply-chain employment — unverified.",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "source_ids": ["src-apatura-news-submission", "src-futurescot"]
+  },
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": 500,
+    "unit": "jobs",
+    "geographic_scope": "local (Falkirk area)",
+    "period": "operational",
+    "claimant": "Apatura",
+    "methodology": "Stated as 'more than 500 of those long-term roles would be local, with a predicted average annual salary of £56,000'. Described as local roles within the 1,300 total; whether all are direct on-site employment is not stated.",
+    "binding_status": "aspirational",
+    "state": "developer_stated",
+    "confidence": "low",
+    "notes": "Categorised as the closest available proxy for direct local employment; treat with caution — the developer does not use the word 'direct'.",
+    "source_ids": ["src-apatura-news-submission", "src-datacentrenews"]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Apatura DC Project 5 Ltd",
+    "role": "applicant",
+    "jurisdiction": "UK",
+    "confidence": "medium",
+    "notes": "Named as applicant for P/26/0237/FUL in press reporting of the application; company number not verified against Companies House in this session.",
+    "source_ids": ["src-deadline-news-objections"]
+  },
+  {
+    "name": "Apatura",
+    "role": "developer",
+    "website": "https://apatura.energy",
+    "ownership_summary": "Scottish renewable energy and data centre developer; states 1.6GW+ of confirmed grid connections across its pipeline. CEO Giles Hanglin.",
+    "confidence": "high",
+    "source_ids": ["src-apatura-news-submission", "src-datacentrenews"]
+  },
+  {
+    "name": "Scottish Enterprise",
+    "role": "landowner",
+    "jurisdiction": "Scotland",
+    "ownership_summary": "Scotland's national economic development agency; reported owner of the ~55-acre Glenbervie site, which is allocated for business and industry use. A Scottish Enterprise spokesperson (Victoria Carmichael) welcomed the proposal's 'ambition and scale'. Transaction terms with Apatura not disclosed.",
+    "confidence": "medium",
+    "source_ids": ["src-apatura-news-submission", "src-futurescot", "src-datacentrenews"]
+  },
+  {
+    "name": "Falkirk Council",
+    "role": "planning_authority",
+    "confidence": "high",
+    "source_ids": ["src-falkirk-portal-p260237"]
+  },
+  {
+    "name": "Action to Protect Rural Scotland (APRS)",
+    "role": "campaign_group",
+    "website": "https://aprs.scot",
+    "notes": "Lodged formal objection arguing the proposal is contrary to the development plan and environmental information is inadequate; calls for a moratorium on hyperscale AI data centres in Scotland.",
+    "confidence": "high",
+    "source_ids": ["src-aprs-objection"]
+  },
+  {
+    "name": "Say No To Larbert Data Centre",
+    "role": "community_group",
+    "notes": "Resident-organised campaign (Facebook group); organised public meeting on 25 June 2026 and objection drives.",
+    "confidence": "medium",
+    "source_ids": ["src-stv-fears"]
+  },
+  {
+    "name": "Stop Climate Chaos Scotland",
+    "role": "campaign_group",
+    "notes": "Reported among groups raising concerns about the proposal.",
+    "confidence": "medium",
+    "source_ids": ["src-stv-fears"]
+  }
+]

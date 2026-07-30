@@ -1,0 +1,17 @@
+{
+  "network_operator": "SP Energy Networks / SP Transmission area (inferred from Denny substation location; operator not named in retrieved material)",
+  "connection_status": "offer",
+  "requested_import_capacity_mw": {
+    "value": 300,
+    "unit": "MW",
+    "state": "developer_stated",
+    "claimant": "Apatura",
+    "notes": "Application description is '300MW Demand Utility Capacity'.",
+    "source_ids": ["src-falkirk-portal-p260237", "src-apatura-news-submission"]
+  },
+  "nearby_substation": "Denny substation",
+  "evidence_basis": "Developer statements only: consultation timeline shows 'grid offer accepted' Q2 2025; press material cites 'confirmed grid connections' to Denny substation described as 'Gate 2 compliant', within 1.6GW+ of confirmed connections across Apatura's pipeline. No NESO/TEC register entry, connection agreement or voltage was independently verified.",
+  "reinforcement_required": null,
+  "notes": "Site also claimed to connect to Apatura's consented BESS ~2 miles north. Connection status recorded as 'offer' on the basis of the developer's 'grid offer accepted' statement; 'contracted'/'gate_2' status not independently confirmed.",
+  "source_ids": ["src-apatura-consult-project", "src-apatura-news-submission", "src-futurescot", "src-datacentrenews"]
+}
