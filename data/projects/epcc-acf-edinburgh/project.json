@@ -25,7 +25,7 @@
   "last_verified_at": "2026-07-30",
   "confidence_overall": "medium",
   "is_public": true,
-  "is_sensitive": true,
+  "is_sensitive": false,
   "phases": [
     {
       "phase_name": "Existing ACF computer rooms (ARCHER2 and other systems)",

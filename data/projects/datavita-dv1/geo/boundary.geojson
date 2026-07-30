@@ -1,0 +1,657 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.9529,
+        55.8348
+       ],
+       [
+        -3.9532,
+        55.8341
+       ],
+       [
+        -3.9528,
+        55.8341
+       ],
+       [
+        -3.9528,
+        55.8341
+       ],
+       [
+        -3.9528,
+        55.8339
+       ],
+       [
+        -3.9524,
+        55.8339
+       ],
+       [
+        -3.9523,
+        55.8339
+       ],
+       [
+        -3.9522,
+        55.8339
+       ],
+       [
+        -3.9521,
+        55.8338
+       ],
+       [
+        -3.9519,
+        55.8338
+       ],
+       [
+        -3.9518,
+        55.8338
+       ],
+       [
+        -3.9516,
+        55.8336
+       ],
+       [
+        -3.9514,
+        55.8336
+       ],
+       [
+        -3.9513,
+        55.8335
+       ],
+       [
+        -3.9512,
+        55.8334
+       ],
+       [
+        -3.9505,
+        55.8348
+       ],
+       [
+        -3.9507,
+        55.8349
+       ],
+       [
+        -3.9508,
+        55.8349
+       ],
+       [
+        -3.9509,
+        55.8349
+       ],
+       [
+        -3.951,
+        55.8349
+       ],
+       [
+        -3.9511,
+        55.8349
+       ],
+       [
+        -3.9512,
+        55.835
+       ],
+       [
+        -3.9512,
+        55.835
+       ],
+       [
+        -3.9513,
+        55.835
+       ],
+       [
+        -3.9513,
+        55.835
+       ],
+       [
+        -3.9514,
+        55.835
+       ],
+       [
+        -3.9515,
+        55.8348
+       ],
+       [
+        -3.9519,
+        55.8348
+       ],
+       [
+        -3.9519,
+        55.8347
+       ],
+       [
+        -3.952,
+        55.8347
+       ],
+       [
+        -3.9523,
+        55.8348
+       ],
+       [
+        -3.9523,
+        55.8348
+       ],
+       [
+        -3.9528,
+        55.8349
+       ],
+       [
+        -3.9528,
+        55.8348
+       ],
+       [
+        -3.9529,
+        55.8348
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "datavita-dv1",
+    "reference": "25/00150/FUL",
+    "local_auth": "North Lanarkshire",
+    "application_type": "full_application",
+    "is_primary": true,
+    "official_area_m2": 16827,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.9534,
+        55.8343
+       ],
+       [
+        -3.9545,
+        55.8345
+       ],
+       [
+        -3.9549,
+        55.8339
+       ],
+       [
+        -3.9559,
+        55.8341
+       ],
+       [
+        -3.9563,
+        55.8332
+       ],
+       [
+        -3.9562,
+        55.8332
+       ],
+       [
+        -3.9556,
+        55.8331
+       ],
+       [
+        -3.9554,
+        55.8331
+       ],
+       [
+        -3.9553,
+        55.8332
+       ],
+       [
+        -3.955,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8339
+       ],
+       [
+        -3.9535,
+        55.8341
+       ],
+       [
+        -3.9534,
+        55.8343
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "datavita-dv1",
+    "reference": "25/01159/PPP",
+    "local_auth": "North Lanarkshire",
+    "application_type": "permission_in_principle",
+    "is_primary": false,
+    "official_area_m2": 18590,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.9529,
+        55.8348
+       ],
+       [
+        -3.9532,
+        55.8341
+       ],
+       [
+        -3.9528,
+        55.8341
+       ],
+       [
+        -3.9528,
+        55.8341
+       ],
+       [
+        -3.9528,
+        55.8339
+       ],
+       [
+        -3.9524,
+        55.8339
+       ],
+       [
+        -3.9523,
+        55.8339
+       ],
+       [
+        -3.9522,
+        55.8339
+       ],
+       [
+        -3.9519,
+        55.8338
+       ],
+       [
+        -3.9519,
+        55.8338
+       ],
+       [
+        -3.9517,
+        55.8337
+       ],
+       [
+        -3.9514,
+        55.8336
+       ],
+       [
+        -3.9512,
+        55.8334
+       ],
+       [
+        -3.9505,
+        55.8348
+       ],
+       [
+        -3.9508,
+        55.8349
+       ],
+       [
+        -3.9512,
+        55.835
+       ],
+       [
+        -3.9512,
+        55.835
+       ],
+       [
+        -3.9513,
+        55.835
+       ],
+       [
+        -3.9513,
+        55.835
+       ],
+       [
+        -3.9514,
+        55.835
+       ],
+       [
+        -3.9515,
+        55.8348
+       ],
+       [
+        -3.9519,
+        55.8348
+       ],
+       [
+        -3.9519,
+        55.8347
+       ],
+       [
+        -3.9523,
+        55.8348
+       ],
+       [
+        -3.9523,
+        55.8348
+       ],
+       [
+        -3.9528,
+        55.8349
+       ],
+       [
+        -3.9528,
+        55.8348
+       ],
+       [
+        -3.9529,
+        55.8348
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "datavita-dv1",
+    "reference": "25/01294/S42",
+    "local_auth": "North Lanarkshire",
+    "application_type": "variation",
+    "is_primary": false,
+    "official_area_m2": 16827,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.9545,
+        55.8345
+       ],
+       [
+        -3.9549,
+        55.8339
+       ],
+       [
+        -3.9559,
+        55.8341
+       ],
+       [
+        -3.9561,
+        55.8336
+       ],
+       [
+        -3.9563,
+        55.8332
+       ],
+       [
+        -3.9562,
+        55.8332
+       ],
+       [
+        -3.9556,
+        55.8331
+       ],
+       [
+        -3.9554,
+        55.8331
+       ],
+       [
+        -3.9553,
+        55.8332
+       ],
+       [
+        -3.955,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8339
+       ],
+       [
+        -3.9534,
+        55.8343
+       ],
+       [
+        -3.9545,
+        55.8345
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "datavita-dv1",
+    "reference": "26/00214/MSC",
+    "local_auth": "North Lanarkshire",
+    "application_type": "msc",
+    "is_primary": false,
+    "official_area_m2": 18521,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.9545,
+        55.8345
+       ],
+       [
+        -3.9549,
+        55.8339
+       ],
+       [
+        -3.9559,
+        55.8341
+       ],
+       [
+        -3.9563,
+        55.8332
+       ],
+       [
+        -3.9562,
+        55.8332
+       ],
+       [
+        -3.9556,
+        55.8332
+       ],
+       [
+        -3.9554,
+        55.8331
+       ],
+       [
+        -3.9553,
+        55.8332
+       ],
+       [
+        -3.955,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8339
+       ],
+       [
+        -3.9536,
+        55.834
+       ],
+       [
+        -3.9534,
+        55.8343
+       ],
+       [
+        -3.9545,
+        55.8345
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "datavita-dv1",
+    "reference": "26/00350/MSC",
+    "local_auth": "North Lanarkshire",
+    "application_type": "msc",
+    "is_primary": false,
+    "official_area_m2": 18244,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -3.9545,
+        55.8345
+       ],
+       [
+        -3.9549,
+        55.8339
+       ],
+       [
+        -3.9559,
+        55.8341
+       ],
+       [
+        -3.9563,
+        55.8332
+       ],
+       [
+        -3.9562,
+        55.8332
+       ],
+       [
+        -3.9556,
+        55.8332
+       ],
+       [
+        -3.9554,
+        55.8331
+       ],
+       [
+        -3.9553,
+        55.8332
+       ],
+       [
+        -3.955,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8331
+       ],
+       [
+        -3.9537,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8335
+       ],
+       [
+        -3.9536,
+        55.8339
+       ],
+       [
+        -3.9536,
+        55.834
+       ],
+       [
+        -3.9534,
+        55.8343
+       ],
+       [
+        -3.9545,
+        55.8345
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "slug": "datavita-dv1",
+    "reference": "26/00803/MSC",
+    "local_auth": "North Lanarkshire",
+    "application_type": "msc",
+    "is_primary": false,
+    "official_area_m2": 18244,
+    "source": "spatialhub_planning_applications_official",
+    "source_id": "src-spatialhub-planning-applications",
+    "licence": "OGL v3",
+    "retrieved_date": "2026-07-30"
+   }
+  }
+ ]
+}

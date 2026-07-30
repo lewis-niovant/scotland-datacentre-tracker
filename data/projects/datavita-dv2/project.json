@@ -21,7 +21,7 @@
   "last_verified_at": "2026-07-30",
   "confidence_overall": "medium",
   "is_public": true,
-  "is_sensitive": true,
+  "is_sensitive": false,
   "unknowns": [
     "Year DV2 opened (the host building at 177 Bothwell Street completed circa 2022; DV2 opening date not separately confirmed)",
     "Whether the ~1 MW figure is IT load or gross power",

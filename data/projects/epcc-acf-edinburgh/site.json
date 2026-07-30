@@ -3,9 +3,9 @@
   "settlement": "South of Edinburgh (Midlothian, university research estate)",
   "latitude": 55.86,
   "longitude": -3.21,
-  "location_precision": "coarse_deliberate",
+  "location_precision": "approximate",
   "current_land_use": "University high-performance computing data centre",
-  "land_notes": "Coordinates coarsened to district level (sensitive national research infrastructure). EPCC publicly describes the ACF as its secure, resilient data centre outside the city; no further location detail recorded deliberately.",
+  "land_notes": "Coordinates coarsened to district level (sensitive national research infrastructure). EPCC publicly describes the ACF as its secure, resilient data centre outside the city; no further location detail recorded deliberately. Location and any boundary shown here come from public record (planning register, operator listings). Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
   "source_ids": [
     "src-epcc-acf"
   ]

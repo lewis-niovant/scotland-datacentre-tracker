@@ -3,10 +3,10 @@
   "settlement": "Glasgow (city centre, International Financial Services District)",
   "latitude": 55.86,
   "longitude": -4.27,
-  "location_precision": "coarse_deliberate",
+  "location_precision": "approximate",
   "greenfield_brownfield": "brownfield",
   "current_land_use": "Data centre within the basement of a modern city-centre office building",
-  "land_notes": "Coordinates coarsened to district level (operating sensitive infrastructure). The 177 Bothwell Street address is publicly advertised by the operator.",
+  "land_notes": "Coordinates coarsened to district level (operating sensitive infrastructure). The 177 Bothwell Street address is publicly advertised by the operator. Location and any boundary shown here come from public record (planning register, operator listings). Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
   "source_ids": [
     "src-datavita-dv2",
     "src-dcm-datavita-dv2"

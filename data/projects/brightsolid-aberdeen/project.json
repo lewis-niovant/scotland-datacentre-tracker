@@ -18,7 +18,7 @@
   "last_verified_at": "2026-07-30",
   "confidence_overall": "medium",
   "is_public": true,
-  "is_sensitive": true,
+  "is_sensitive": false,
   "unknowns": [
     "Current built-out capacity vs the 2 MW two-hall design",
     "Formal confirmation of Uptime Institute Tier III certification scope (design vs constructed facility)",

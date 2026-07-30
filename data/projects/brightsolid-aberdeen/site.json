@@ -3,10 +3,10 @@
   "settlement": "Aberdeen (Mastrick / Whitemyres area, west Aberdeen)",
   "latitude": 57.15,
   "longitude": -2.17,
-  "location_precision": "coarse_deliberate",
+  "location_precision": "approximate",
   "greenfield_brownfield": "unknown",
   "current_land_use": "Operating data centre in a west-Aberdeen industrial area",
-  "land_notes": "Coordinates coarsened to district level (operating sensitive infrastructure). Whitemyres Avenue location is publicly listed in directories and PeeringDB.",
+  "land_notes": "Coordinates coarsened to district level (operating sensitive infrastructure). Whitemyres Avenue location is publicly listed in directories and PeeringDB. Location and any boundary shown here come from public record (planning register, operator listings). Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
   "source_ids": [
     "src-baxtel-brightsolid",
     "src-dcd-brightsolid"

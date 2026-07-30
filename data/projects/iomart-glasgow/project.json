@@ -16,7 +16,7 @@
   "last_verified_at": "2026-07-30",
   "confidence_overall": "medium",
   "is_public": true,
-  "is_sensitive": true,
+  "is_sensitive": false,
   "unknowns": [
     "Year the facility opened",
     "Exact IT load vs gross power (directories state ~1 MW without breakdown)",

@@ -1,11 +1,11 @@
 {
   "site_name": "DataVita Fortis campus, York Road, Chapelhall",
   "settlement": "Chapelhall",
-  "address": "York Road, Chapelhall, Airdrie (coarse; operating critical infrastructure)",
+  "address": "York Road, Chapelhall, Airdrie",
   "latitude": 55.83,
   "longitude": -3.95,
-  "location_precision": "coarse_deliberate",
-  "boundary_precision": "none",
+  "location_precision": "approximate",
+  "boundary_precision": "red_line_official",
   "site_area_m2": {
     "value": 18000,
     "unit": "m2",
@@ -14,7 +14,10 @@
     "phase": "DV3",
     "confidence": "medium",
     "notes": "Figure is the DV3 plot adjacent to the existing campus, not the whole campus; the existing DV1 site area was not established.",
-    "source_ids": ["src-npm-dv3-approval", "src-aprs-chapelhall-aigz"]
+    "source_ids": [
+      "src-npm-dv3-approval",
+      "src-aprs-chapelhall-aigz"
+    ]
   },
   "gross_floor_area_m2": {
     "value": 8000,
@@ -24,12 +27,21 @@
     "phase": "DV1 existing",
     "confidence": "medium",
     "notes": "Operator-stated technical/facility space of the existing DV1 building.",
-    "source_ids": ["src-datavita-dv1-page", "src-dcd-dv3-2025"]
+    "source_ids": [
+      "src-datavita-dv1-page",
+      "src-dcd-dv3-2025"
+    ]
   },
   "greenfield_brownfield": "mixed",
   "current_land_use": "Operating data centre campus; DV3 plot was vacant land adjacent to York Road",
   "green_belt": true,
-  "nearest_settlements": ["Chapelhall", "Airdrie"],
-  "land_notes": "APRS reports the DV1 extension site (25/00150/FUL) is within Green Belt but was granted under NPF4 Policy 8 as compatible with the existing data centre; veteran 'Muirhead Oaks' on the extension site were felled in February 2026 per campaign documentation. Coordinates deliberately coarsened per observatory policy for operating facilities.",
-  "source_ids": ["src-aprs-chapelhall-aigz", "src-planit-nlc-25-01159-ppp"]
+  "nearest_settlements": [
+    "Chapelhall",
+    "Airdrie"
+  ],
+  "land_notes": "APRS reports the DV1 extension site (25/00150/FUL) is within Green Belt but was granted under NPF4 Policy 8 as compatible with the existing data centre; veteran 'Muirhead Oaks' on the extension site were felled in February 2026 per campaign documentation. Coordinates deliberately coarsened per observatory policy for operating facilities. Location and any boundary shown here come from public record (planning register, operator listings). Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
+  "source_ids": [
+    "src-aprs-chapelhall-aigz",
+    "src-planit-nlc-25-01159-ppp"
+  ]
 }

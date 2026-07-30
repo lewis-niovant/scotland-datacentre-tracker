@@ -3,10 +3,10 @@
   "settlement": "Edinburgh (South Gyle / west Edinburgh)",
   "latitude": 55.93,
   "longitude": -3.3,
-  "location_precision": "coarse_deliberate",
+  "location_precision": "approximate",
   "greenfield_brownfield": "brownfield",
   "current_land_use": "Operating data centres within an established business/industrial area of west Edinburgh",
-  "land_notes": "Coordinates deliberately coarsened to district level (operating sensitive infrastructure). Pulsant publicly advertises the South Gyle location; SC-2 and SC-3 are nearby west-Edinburgh facilities interconnected with SC-1.",
+  "land_notes": "Coordinates deliberately coarsened to district level (operating sensitive infrastructure). Pulsant publicly advertises the South Gyle location; SC-2 and SC-3 are nearby west-Edinburgh facilities interconnected with SC-1. Location and any boundary shown here come from public record (planning register, operator listings). Earlier snapshots deliberately coarsened this site; that suppression was lifted on 2026-07-30 because all of it is already public.",
   "source_ids": [
     "src-dcm-pulsant-sc1",
     "src-pulsant-sc1-page"

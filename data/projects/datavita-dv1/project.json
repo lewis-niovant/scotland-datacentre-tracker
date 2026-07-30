@@ -55,7 +55,7 @@
   "next_review_at": "2026-10-31",
   "confidence_overall": "high",
   "is_public": true,
-  "is_sensitive": true,
+  "is_sensitive": false,
   "phases": [
     {
       "phase_name": "DV1 Fortis (original facility)",

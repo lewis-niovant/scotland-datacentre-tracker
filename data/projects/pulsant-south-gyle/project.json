@@ -39,7 +39,7 @@
   "last_verified_at": "2026-07-30",
   "confidence_overall": "medium",
   "is_public": true,
-  "is_sensitive": true,
+  "is_sensitive": false,
   "unknowns": [
     "Exact combined campus power (directory figures for SC-1 range from 3.4 MW IT load to 6.6 MW; brief figure of ~9.6 MW combined not independently confirmed)",
     "Year each facility first opened (SC-1 dates to the ScoLocate era, late 1990s/2000s; not verified)",
