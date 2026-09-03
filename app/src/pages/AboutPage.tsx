@@ -21,6 +21,12 @@ export default function AboutPage() {
   const snapshot = ds.observatory.constants?.snapshot_date ?? ds.observatory.generated_from_snapshot
   const comparisons = ds.observatory.constants?.comparisons ?? {}
   const national = ds.observatory.constants?.national_context ?? {}
+  const boundaryProjects = new Set(
+    ds.geo.features
+      .filter((feature) => feature.properties.kind === 'boundary')
+      .map((feature) => feature.properties.slug)
+      .filter(Boolean),
+  ).size
 
   return (
     <div className="page about">
@@ -85,8 +91,9 @@ export default function AboutPage() {
             <strong>Solid red lines are official.</strong> They are the red-line application
             boundaries published in the Spatial Hub Scotland planning-applications dataset (local
             authority data, Ordnance Survey base, licensed under the Open Government Licence v3),
-            retrieved on the snapshot date. 17 of the 39 projects currently have one; the remainder
-            appear only as approximate points.
+            retrieved on the snapshot date. {boundaryProjects} of the {ds.observatory.projects.length} projects currently have one; the remainder
+            appear as approximate points, with dashed modelled extents only where a sourced site
+            area supports one.
           </li>
           <li>
             <strong>The official area often disagrees with the reported one.</strong> Where both

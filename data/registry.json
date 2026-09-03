@@ -1,5 +1,5 @@
 {
-  "description": "Provisional project registry (research step 1). Drives Phase 2 deep research. Each entry becomes a canonical project folder in data/projects/ once researched. Triage verified 2026-07-30.",
+  "description": "Provisional project registry (research step 1). Drives Phase 2 deep research. Each entry becomes a canonical project folder in data/projects/ once researched. Triage refreshed 2026-09-03; project folders remain authoritative.",
   "candidates": [
     {
       "slug": "cato-auchtertool",
@@ -9,7 +9,7 @@
       "capacity_claim": "600 MW, £5bn",
       "stage": "pending (PPP 26/01243/PPP validated May 2026)",
       "triage": "verified",
-      "notes": "Flagship 'Stoic'; SPICe: 280,000 m2 buildings, 35 m height, 400->4,000 GWh/yr"
+      "notes": "Flagship 'Stoic'; Scottish Ministers directed on 17 Aug 2026 that EIA is required; main PPP remains pending"
     },
     {
       "slug": "ravenscraig",
@@ -44,7 +44,7 @@
       "local_authority": "North Lanarkshire",
       "developer": "HFD / DataVita",
       "capacity_claim": "part of ~500 MW AIGZ",
-      "stage": "pre_application (PAN 25/01322/PAN Dec 2025; EIA screening 26/00707/EIASCR not required Jun 2026)",
+      "stage": "pre_application (developer says PPP submitted 2 Sep 2026; no council validation/reference located on 3 Sep)",
       "triage": "verified"
     },
     {
@@ -62,8 +62,8 @@
       "name": "DataVita DV1 (Fortis)",
       "local_authority": "North Lanarkshire",
       "developer": "DataVita",
-      "capacity_claim": "24 MW (→40 MW); DV3 extension consented Jan 2026",
-      "stage": "operating",
+      "capacity_claim": "24 MW (→40 MW); DV1 expansion and DV3 financed",
+      "stage": "operating; DV1 expansion and DV3 under construction",
       "triage": "verified"
     },
     {
@@ -81,7 +81,7 @@
       "local_authority": "City of Edinburgh",
       "developer": "Shelborn Asset Management",
       "capacity_claim": "212.4 MW",
-      "stage": "refused Feb 2026; appeal lodged",
+      "stage": "refused Feb 2026; appeal recalled by Ministers and on hold, EIA required",
       "triage": "verified"
     },
     {
@@ -90,7 +90,7 @@
       "local_authority": "City of Edinburgh",
       "developer": "Apatura",
       "capacity_claim": "200 MW",
-      "stage": "pre_application (PAN 25/03978/PAN; screening 25/02924/SCR EIA-not-required Jul 2025; re-screening 25/05576/SCR EIA-not-required 6 May 2026; no FUL found)",
+      "stage": "pre_application (PAN 25/03978/PAN; Scottish Ministers directed EIA required 17 Aug 2026; no FUL found)",
       "triage": "verified"
     },
     {
@@ -209,7 +209,7 @@
       "local_authority": "Scottish Borders",
       "developer": "Sunlaws Development Co (Roxburghe Estates)",
       "capacity_claim": "225 MW, 151 ha, £2bn",
-      "stage": "pre_application (PAN + EIA request)",
+      "stage": "pre_application (EIA scoping opinion 26/01031/SCO issued 31 Aug 2026)",
       "triage": "verified"
     },
     {
@@ -273,7 +273,7 @@
       "local_authority": "Dumfries and Galloway",
       "developer": "NDA + CX Power",
       "capacity_claim": "up to 1 GW",
-      "stage": "pre_application (env studies)",
+      "stage": "pre_application (PAN 26/0855/PAN; full PPP targeted Dec 2026)",
       "triage": "reported"
     },
     {
@@ -281,9 +281,9 @@
       "name": "Former IBM Greenock (Spango Valley)",
       "local_authority": "Inverclyde",
       "developer": "Slate Island Developments",
-      "capacity_claim": "two buildings ~74,500 m2 + 99 MW BESS",
-      "stage": "pre_application (PAN Feb 2026)",
-      "triage": "reported"
+      "capacity_claim": "developer-stated max 150 MW; four buildings ~80,000 m2; proposed ~99 MW BESS",
+      "stage": "pending (PPP 26/0136/IC validated 26 Aug 2026)",
+      "triage": "verified"
     },
     {
       "slug": "dounreay",

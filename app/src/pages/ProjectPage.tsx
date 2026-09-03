@@ -188,7 +188,7 @@ export default function ProjectPage() {
           <VerificationBadge level={project.verification_level} />
           <Link
             className="map-jump"
-            to={{ pathname: '/', search: `?site=${project.slug}` }}
+            to={{ pathname: '/map', search: `?site=${project.slug}` }}
             title="Open the main map zoomed to this site"
           >
             ◎ View on the map
@@ -401,9 +401,13 @@ export default function ProjectPage() {
                 {c.application_type?.replace(/_/g, ' ')} · {c.planning_authority} · decision: {c.decision ?? 'unknown'}
               </span>
               {c.description && <p className="small" style={{ margin: '6px 0 0' }}>{c.description}</p>}
-              {c.representations?.objections != null && (
+              {c.representations && (
                 <p className="small muted" style={{ margin: '6px 0 0' }}>
-                  {fmtInt(c.representations.objections)}+ published objections
+                  {c.representations.objections != null
+                    ? `${fmtInt(c.representations.objections)}+ published objections`
+                    : c.representations.support != null
+                      ? `${fmtInt(c.representations.support)} published expressions of support`
+                      : 'Representation record'}
                   {c.representations.as_of_date ? ` (as of ${fmtDate(c.representations.as_of_date)})` : ''}.{' '}
                   {c.representations.notes ?? ''}
                 </p>
@@ -503,6 +507,29 @@ export default function ProjectPage() {
               </ul>
             </>
           )}
+          {(community.stakeholder_positions?.length ?? 0) > 0 && (
+            <>
+              <h3 className="sub-label">Who says what</h3>
+              <ul className="plain">
+                {community.stakeholder_positions!.map((position, i) => (
+                  <li key={i}>
+                    <strong>{position.stakeholder}</strong>
+                    {position.date && <span className="small muted"> · {fmtDate(position.date)}</span>}
+                    {position.position && <div className="small muted">{position.position}</div>}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {(community.campaign_groups?.length ?? 0) > 0 && (
+            <>
+              <h3 className="sub-label">Groups in the record</h3>
+              <div className="campaign-chip-row">
+                {community.campaign_groups!.map((group) => <span key={group}>{group}</span>)}
+              </div>
+            </>
+          )}
+          {community.notes && <p className="figure-note">{community.notes}</p>}
         </Section>
       )}
 
@@ -538,7 +565,7 @@ export default function ProjectPage() {
 
       <p style={{ marginTop: 28 }}>
         <Link to="/projects">← All projects</Link>{' · '}
-        <Link to="/">Map</Link>
+        <Link to="/map">Map</Link>
       </p>
     </div>
   )

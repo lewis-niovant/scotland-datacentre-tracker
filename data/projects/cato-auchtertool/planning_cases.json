@@ -21,7 +21,7 @@
     "submission_date": "2025-11-10",
     "decision_date": "2026-04-01",
     "decision": "screening_eia_not_required",
-    "decision_notes": "Fife Council concluded under the Town and Country Planning (EIA) (Scotland) Regulations 2017 (Schedule 2 discretion) that predicted effects were not significant enough to require EIA. The decision was strongly criticised (community council 'appalled'; MSP Mark Ruskell 'unfathomable'); Environmental Rights Centre Scotland advised a credible legal basis for challenge; a screening direction request has since been made to the Scottish Government, whose determination is outstanding.",
+    "decision_notes": "Fife Council concluded under the Town and Country Planning (EIA) (Scotland) Regulations 2017 (Schedule 2 discretion) that predicted effects were not significant enough to require EIA. The decision was strongly criticised (community council 'appalled'; MSP Mark Ruskell 'unfathomable'); Environmental Rights Centre Scotland advised a credible legal basis for challenge. This remains the historical council decision, but Scottish Ministers later directed on 17 August 2026 that EIA is required; see separate DPEA case EIA-250-002.",
     "eia_required": false,
     "official_url": "https://planning.fife.gov.uk/online/",
     "last_checked_at": "2026-07-30",
@@ -29,7 +29,35 @@
       { "event_date": "2025-11-10", "event_type": "submission", "title": "EIA screening request submitted", "source_ids": ["src-aprs-auchtertool"] },
       { "event_date": "2026-04-01", "event_type": "decision", "title": "Screening opinion issued: EIA not required", "source_ids": ["src-aprs-auchtertool", "src-cft-eia"] }
     ],
-    "source_ids": ["src-aprs-auchtertool", "src-cft-eia"]
+    "source_ids": ["src-aprs-auchtertool", "src-cft-eia", "src-dpea-eia-250-002-cato"]
+  },
+  {
+    "reference": "EIA-250-002",
+    "planning_authority": "Scottish Government Planning and Architecture (DPEA register)",
+    "application_type": "eia_screening",
+    "description": "Scottish Ministers' Environmental Impact Assessment screening direction for the Cato data centre proposal, linked to Fife Council planning permission in principle application 26/01243/PPP at land north of Camilla Road, Gleniston, Auchtertool.",
+    "submission_date": "2026-06-15",
+    "decision_date": "2026-08-17",
+    "decision": "screening_eia_required",
+    "decision_notes": "DPEA records the case as decision issued. Consideration concluded on 17 August 2026 with a direction that an EIA is required. This later ministerial direction supersedes the practical effect of Fife Council's 1 April 2026 no-EIA screening opinion without erasing that historical local decision.",
+    "eia_required": true,
+    "official_url": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778",
+    "last_checked_at": "2026-09-03",
+    "events": [
+      {
+        "event_date": "2026-06-15",
+        "event_type": "screening_direction_received",
+        "title": "EIA screening direction case received by Scottish Government Planning and Architecture",
+        "source_ids": ["src-dpea-eia-250-002-cato"]
+      },
+      {
+        "event_date": "2026-08-17",
+        "event_type": "screening_direction_decision",
+        "title": "Scottish Ministers issue direction: EIA required",
+        "source_ids": ["src-dpea-eia-250-002-cato", "src-scotgov-data-centre-planning-direction-2026"]
+      }
+    ],
+    "source_ids": ["src-dpea-eia-250-002-cato", "src-scotgov-data-centre-planning-direction-2026"]
   },
   {
     "reference": "26/01243/PPP",
@@ -40,22 +68,23 @@
     "validation_date": "2026-05-21",
     "consultation_deadline": "2026-07-02",
     "decision": "pending",
-    "decision_notes": "Status 'Registered' as of 30 July 2026. Portal neighbour-consultation expiry 24 July 2026; council confirmed all representations received by 24 July 2026 will be considered. Portal records 'Environmental Assessment Requested: No' and expected decision level 'Case Officer' (likely to change given scale/representations).",
-    "eia_required": false,
+    "decision_notes": "Status 'Registered' as of 3 September 2026. Portal neighbour-consultation expiry 24 July 2026; council confirmed all representations received by 24 July 2026 will be considered. The portal then recorded 'Environmental Assessment Requested: No', reflecting the council's screening position. Scottish Ministers subsequently directed on 17 August 2026 that an EIA is required (DPEA EIA-250-002).",
+    "eia_required": true,
     "representations": {
       "objections": 1200,
       "as_of_date": "2026-07-24",
       "notes": "1,200+ objections published on the portal at the 24 July 2026 deadline; the council reported 14,000-16,000 total representations received, with ~10,000 documents processed for publication. Objection/support split not yet published. SEPA lodged a holding objection requesting further flooding information. Petitions: 8,000+ signatures against the development; 2,500+ for a Scottish moratorium on hyperscale data centres. The 1,200 figure is a published minimum."
     },
     "official_url": "https://planning.fife.gov.uk/online/applicationDetails.do?activeTab=summary&keyVal=TE9GGMHFFWY00",
-    "last_checked_at": "2026-07-30",
+    "last_checked_at": "2026-09-03",
     "events": [
       { "event_date": "2026-04-29", "event_type": "received", "title": "Application received by Fife Council", "source_ids": ["src-fife-portal-26-01243-ppp"] },
       { "event_date": "2026-05-21", "event_type": "validated", "title": "Application validated", "source_ids": ["src-fife-portal-26-01243-ppp"] },
       { "event_date": "2026-05-25", "event_type": "published", "title": "Application published on the Fife planning portal (per APRS)", "source_ids": ["src-aprs-auchtertool"] },
       { "event_date": "2026-07-02", "event_type": "consultation_close", "title": "Advertised public comment deadline", "source_ids": ["src-aprs-auchtertool"] },
-      { "event_date": "2026-07-24", "event_type": "consultation_close", "title": "Neighbour consultation expiry; council confirms all representations to this date will be considered; 14,000-16,000 representations reported", "source_ids": ["src-fife-portal-26-01243-ppp", "src-cft-14000"] }
+      { "event_date": "2026-07-24", "event_type": "consultation_close", "title": "Neighbour consultation expiry; council confirms all representations to this date will be considered; 14,000-16,000 representations reported", "source_ids": ["src-fife-portal-26-01243-ppp", "src-cft-14000"] },
+      { "event_date": "2026-08-17", "event_type": "eia_direction", "title": "Scottish Ministers direct that an EIA is required (DPEA EIA-250-002)", "source_ids": ["src-dpea-eia-250-002-cato", "src-scotgov-data-centre-planning-direction-2026"] }
     ],
-    "source_ids": ["src-fife-portal-26-01243-ppp", "src-cft-14000", "src-dcr-objections", "src-aprs-auchtertool"]
+    "source_ids": ["src-fife-portal-26-01243-ppp", "src-cft-14000", "src-dcr-objections", "src-aprs-auchtertool", "src-dpea-eia-250-002-cato"]
   }
 ]

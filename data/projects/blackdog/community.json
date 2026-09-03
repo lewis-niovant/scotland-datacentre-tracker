@@ -1,5 +1,5 @@
 {
-  "summary": "Announcement-stage project; no statutory consultation for a data centre application has occurred. The developers commissioned a poll (True North Advisors / Diffley Partnership) reporting 62% of 1,303 people across Aberdeen and Aberdeenshire in favour of a 'green data centre, industrial and energy park' at Blackdog. APRS has added Blackdog to its data centres campaign map and questions whether offshore wind should power data centres. Regional economic development bodies ONE and ETZ Ltd publicly support the project.",
+  "summary": "Announcement-stage project; no statutory consultation for a data-centre application has occurred. The developers commissioned a poll (True North Advisors / Diffley Partnership) reporting 62% of 1,303 people across Aberdeen and Aberdeenshire in favour of a 'green data centre, industrial and energy park' at Blackdog. Organised local scrutiny is now represented by AI Data Centres Awareness Group – Blackdog, Balmedie and surrounding area, a signatory to the August 2026 community-campaign coalition letter. APRS has added Blackdog to its data-centres campaign map and questions whether offshore wind should power data centres. Regional economic development bodies ONE and ETZ Ltd publicly support the project.",
   "claimed_local_benefits": [
     {
       "benefit": "Around 1,000 construction jobs, ~100 permanent high-skilled roles, up to 2,000 indirect jobs, billions of pounds of private investment and a 'just transition' route for oil and gas workers",
@@ -35,9 +35,16 @@
       "position": "Supportive as prospective power supplier: 'clean power enabling digital growth, and digital demand accelerating renewable deployment' (Laura Jarvie), while noting Aspen will first supply the grid and decarbonise oil and gas platforms.",
       "date": "2026-04-22",
       "source_ids": ["src-aprs-blackdog", "src-digit-600mw"]
+    },
+    {
+      "stakeholder": "AI Data Centres Awareness Group – Blackdog, Balmedie and surrounding area",
+      "stakeholder_type": "resident_group",
+      "position": "Signed the community-campaign coalition letter seeking a moratorium on hyperscale AI data-centre decisions pending national safeguards.",
+      "date": "2026-08-23",
+      "source_ids": ["src-aprs-community-letter-2026"]
     }
   ],
-  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "campaign_groups": ["AI Data Centres Awareness Group – Blackdog, Balmedie and surrounding area", "Action to Protect Rural Scotland (APRS)"],
   "planning_authority_contact": "Aberdeenshire Council planning service (Formartine area)",
-  "notes": "The 62%-in-favour poll was commissioned in connection with the developers' announcement and reported in their press release; the questionnaire and methodology have not been published, so it is recorded as a developer claim. Belhelvie Community Council covers the Blackdog area and has commented on other local applications; its position on the data centre was not located."
+  "notes": "The 62%-in-favour poll was commissioned in connection with the developers' announcement and reported in their press release; the questionnaire and methodology have not been published, so it is recorded as a developer claim. The coalition letter establishes the local awareness group's participation but does not provide a project-specific objection count. Belhelvie Community Council covers the Blackdog area and has commented on other local applications; its position on the data centre was not located."
 }

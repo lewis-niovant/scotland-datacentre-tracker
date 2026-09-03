@@ -133,10 +133,12 @@ export interface EnergyEstimate {
   annual_energy_gwh?: number | null
   peak_load_mw?: number
   load_factor?: number
+  pue?: number
   renewable_claim_percent?: number
   matching_method?: string
   power_purchase_agreement?: string
   onsite_generation?: string
+  demand_flexibility?: string
   estimate_type?: string
   methodology?: string
   state?: UncertaintyState
@@ -151,6 +153,7 @@ export interface WaterEstimate {
   annual_water_m3?: number | null
   potable_water?: boolean | null
   closed_loop?: boolean | null
+  wue_l_per_kwh?: number
   estimate_type?: string
   state?: UncertaintyState
   confidence?: Confidence
@@ -198,7 +201,7 @@ export interface PlanningCase {
   decision_notes?: string
   eia_required?: boolean | null
   conditions_summary?: string
-  representations?: { objections?: number; supports?: number; as_of_date?: string; notes?: string }
+  representations?: { objections?: number; support?: number; as_of_date?: string; notes?: string }
   official_url?: string
   last_checked_at?: string
   events?: PlanningEvent[]
@@ -297,9 +300,27 @@ export interface Constants {
   national_context?: Record<string, { value: number; source?: string; note?: string }>
 }
 
+export interface BriefingUpdate {
+  date: string
+  category: 'national_policy' | 'planning' | 'construction' | 'community' | 'research'
+  title: string
+  summary: string
+  project_slugs?: string[]
+  source_ids: string[]
+}
+
+export interface Briefing {
+  as_of_date: string
+  headline: string
+  summary: string
+  updates: BriefingUpdate[]
+  caveats?: string[]
+}
+
 export interface Observatory {
   generated_from_snapshot?: string
   constants?: Constants
+  briefing?: Briefing
   projects: ProjectRecord[]
   sources?: Record<string, SourceEntry>
 }
@@ -308,7 +329,8 @@ export interface Observatory {
 
 /** The kinds actually emitted by scripts/build_dataset.py. */
 export type GeoKind =
-  | 'project_point' | 'boundary' | 'building' | 'projected_extent' | 'pitch' | 'osm_footprint'
+  | 'project_point' | 'boundary' | 'building' | 'projected_extent' | 'pitch' | 'pitch_mark'
+  | 'osm_footprint'
 
 export interface GeoProperties {
   slug?: string

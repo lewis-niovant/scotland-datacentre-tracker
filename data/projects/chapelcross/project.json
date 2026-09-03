@@ -7,19 +7,19 @@
     { "alias": "Chapelcross Green Energy Hub", "alias_type": "other", "source_ids": ["src-cx-govuk-nda-release"] },
     { "alias": "Chapelcross nuclear power station (former site)", "alias_type": "former_name", "source_ids": ["src-cx-govuk-nda-release"] }
   ],
-  "summary": "Proposed data centre-led technology and energy campus on around 55 hectares of Nuclear Decommissioning Authority-owned unlicensed land north of the former Chapelcross nuclear power station near Annan. Strategic developer CX Power (a vehicle of GA Consultants and Global Mutual Properties Limited, appointed under Heads of Terms with the NDA in November 2025) proposes up to 161,920 sqm of AI-enabled data centres described as a potential 1 GW campus, plus substation, light industrial space and a skills hub. At pre-application stage: the developer states an EIA scoping report was submitted in March 2026, statutory-style community consultation events ran May-June 2026, and a Planning Permission in Principle application is targeted for December 2026, with phased construction 2027-2035 and first operations claimed possible by 2030.",
+  "summary": "Proposed data centre-led technology and energy campus on around 55 hectares of Nuclear Decommissioning Authority-owned unlicensed land north of the former Chapelcross nuclear power station near Annan. PAN 26/0855/PAN describes up to about 162,000 sqm of data-centre buildings plus a training/reception/security centre, industrial units, substation and infrastructure. CX Power describes a potential 1 GW campus, but does not define whether that is IT load or grid import. Pre-application consultation ran in May-June 2026 and a planning-permission-in-principle application is targeted for December 2026, with phased construction claimed for 2027-2035. A local opposition campaign launched in August 2026.",
   "project_type": "hyperscale",
   "status": "pre_application",
-  "status_source_ids": ["src-cx-campus-website", "src-cx-dng24-consultation"],
+  "status_source_ids": ["src-cx-campus-website", "src-leadlinka-26-0855-pan"],
   "maturity_level": "M1",
-  "maturity_explanation": "Early development: developer states an EIA scoping report was submitted to Dumfries and Galloway Council in March 2026 and pre-application community consultation events were held in May and June 2026, ahead of a targeted Planning Permission in Principle application in December 2026. No planning application has been identified as validated. Scoping/PAN references could not be verified on the council portal (access blocked), so official-record confirmation is outstanding.",
+  "maturity_explanation": "Early development: PAN 26/0855/PAN is now identified through a mirror of the Dumfries and Galloway planning record, and community consultation took place in May and June 2026. The developer says an EIA scoping report was submitted in March, but its official reference remains unverified. No full planning application has yet been validated.",
   "verification_level": "reported",
   "local_authority": "Dumfries and Galloway Council",
   "region": "Dumfries and Galloway",
   "first_public_date": "2025-11-19",
   "anticipated_construction_start": "2027 (developer-stated phased delivery 2027-2035; SSG material reportedly refers to potential site commencement in 2027)",
   "anticipated_operational_date": "2030 (press-reported 'could be operational by 2030' if consents proceed)",
-  "last_verified_at": "2026-07-30",
+  "last_verified_at": "2026-09-03",
   "next_review_at": "2026-10-01",
   "confidence_overall": "medium",
   "is_public": true,
@@ -35,12 +35,12 @@
     }
   ],
   "latest_development": {
-    "date": "2026-06-17",
-    "headline": "Second round of pre-application consultation events held at Creca Village Hall (16 June) and Victoria Halls, Annan (17 June 2026)",
-    "source_ids": ["src-cx-dng24-plan-unveiled"]
+    "date": "2026-08-16",
+    "headline": "Local campaign Say NO to the Chapelcross AI Data Centre launched a petition opposing the proposed hyperscale campus",
+    "source_ids": ["src-changeorg-chapelcross-2026"]
   },
   "unknowns": [
-    "Official PAN and EIA scoping references on the Dumfries and Galloway portal (portal search blocked by anti-bot protection on 2026-07-30; developer claims scoping submitted March 2026)",
+    "Official EIA scoping reference and opinion on the Dumfries and Galloway portal; the developer claims scoping was submitted in March 2026",
     "Whether the 1 GW figure refers to IT load, grid import or total campus energy capacity — no source defines it",
     "Any grid connection application/offer for the site (no public NESO/SPEN record located)",
     "CX Power Limited ownership: PSC register entries not yet visible at Companies House; relationship between CX Power Limited (16880627), GA Consultants and Global Mutual Properties Limited not documented in filings reviewed",

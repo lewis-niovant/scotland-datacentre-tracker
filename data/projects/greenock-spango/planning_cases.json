@@ -59,6 +59,48 @@
     "decision_notes": "Official PAN reference could not be verified: Inverclyde Council's Idox portal (planning.inverclyde.gov.uk/online-applications/) returned HTTP 503 on 2026-07-30 and no secondary source publishes the reference. Developer targets Major application submission June 2026 and determination November 2026; no evidence of submission found by 30 July 2026."
   },
   {
+    "reference": "26/0136/IC",
+    "planning_authority": "Inverclyde Council",
+    "application_type": "permission_in_principle",
+    "description": "Planning permission in principle for four data-centre buildings totalling approximately 80,000 sqm, with energy centre and electrical infrastructure, access, drainage, landscaping and associated works at the former IBM site, Spango Valley.",
+    "submission_date": "2026-07-22",
+    "validation_date": "2026-08-26",
+    "consultation_deadline": "2026-09-16",
+    "decision": "pending",
+    "decision_notes": "Pending consideration on 3 September 2026. The portal displayed 1,456 comments and 33 documents at that check; both totals can change. Applicant listed as Slate Islands Development Ltd and agent as Pegasus Group.",
+    "representations": {
+      "as_of_date": "2026-09-03",
+      "notes": "Portal displayed 1,456 public comments. The interface did not establish an objection/support split, so this is a comments total rather than a verified objection count."
+    },
+    "official_url": "https://planning.inverclyde.gov.uk/Online/applicationDetails.do?activeTab=summary&keyVal=TIKFMBIMKXV00",
+    "last_checked_at": "2026-09-03",
+    "events": [
+      {
+        "event_date": "2026-07-22",
+        "event_type": "received",
+        "title": "Application received by Inverclyde Council",
+        "source_ids": ["src-inverclyde-26-0136-ic"]
+      },
+      {
+        "event_date": "2026-08-26",
+        "event_type": "validated",
+        "title": "Application validated and opened for comment",
+        "source_ids": ["src-inverclyde-26-0136-ic"]
+      },
+      {
+        "event_date": "2026-09-16",
+        "event_type": "consultation_deadline",
+        "title": "Published public-comment deadline",
+        "source_ids": ["src-inverclydenow-spango-application-2026"]
+      }
+    ],
+    "source_ids": [
+      "src-inverclyde-26-0136-ic",
+      "src-inverclydenow-spango-application-2026",
+      "src-planningorg-spango-26-0136-ic"
+    ]
+  },
+  {
     "reference": null,
     "planning_authority": "Scottish Government Energy Consents Unit",
     "application_type": "s36",

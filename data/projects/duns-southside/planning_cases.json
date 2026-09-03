@@ -38,13 +38,32 @@
     "source_ids": ["src-bt-southside-pan", "src-deadline-southside-consult"]
   },
   {
-    "reference": null,
+    "reference": "26/01031/SCO",
     "planning_authority": "Scottish Borders Council",
     "application_type": "eia_scoping",
-    "description": "Environmental Scoping Report submitted to Scottish Borders Council (reported mid-July 2026) setting out the proposed scope and methods of the Environmental Impact Assessment. Reference number and submission date not located (portal unreachable). Developer states the full EIA and planning application are expected no earlier than late 2026, with further public engagement planned for autumn 2026.",
-    "decision": "pending",
-    "official_url": "https://eplanning.scotborders.gov.uk/online-applications/",
-    "last_checked_at": "2026-07-30",
-    "source_ids": ["src-bt-southside-scoping"]
+    "description": "Scoping Opinion request for erection of a data centre comprising three data centre buildings with associated infrastructure at Southside Data Centre, Land at Clawbare Cottage, Longformacus. The case establishes the scope of the Environmental Impact Assessment required before a planning application is submitted.",
+    "submission_date": "2026-07-08",
+    "validation_date": "2026-07-08",
+    "decision_date": "2026-08-31",
+    "decision": "scoping_opinion_issued",
+    "decision_notes": "Scottish Borders Council's official portal records the case as Decided, with 'Screening/Scoping Opinion Issued'. The decision was both made and issued on 31 August 2026. The portal lists consultation material from SEPA, Scottish Water, NatureScot, Historic Environment Scotland and council services, but the documents themselves were unavailable for download during this refresh.",
+    "eia_required": true,
+    "official_url": "https://eplanning.scotborders.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=THV0H2NT0BQ00",
+    "last_checked_at": "2026-09-03",
+    "events": [
+      {
+        "event_date": "2026-07-08",
+        "event_type": "scoping_received_validated",
+        "title": "EIA scoping case received and validated by Scottish Borders Council",
+        "source_ids": ["src-sbc-26-01031-sco"]
+      },
+      {
+        "event_date": "2026-08-31",
+        "event_type": "scoping_opinion_issued",
+        "title": "Scottish Borders Council issues its EIA scoping opinion",
+        "source_ids": ["src-sbc-26-01031-sco"]
+      }
+    ],
+    "source_ids": ["src-sbc-26-01031-sco", "src-bt-southside-scoping"]
   }
 ]

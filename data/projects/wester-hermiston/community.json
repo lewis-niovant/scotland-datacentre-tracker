@@ -1,5 +1,5 @@
 {
-  "summary": "Significant organised local and city-wide opposition at pre-application stage. A local residents' campaign (Hermiston Data Centre Campaign) and a Change.org petition (3,581 signatures by July 2026) oppose the scheme; APRS campaigns against it nationally; the Cockburn Association questions 'green' claims without opposing data centres outright. The February 2026 refusal of the nearby South Gyle data centre and the council Planning Committee's June 2026 call for a Scottish Government moratorium on large-scale data centres form the political backdrop. The PAN was notified to Currie and Ratho Community Councils, Pentland Hills ward councillors, Gordon MacDonald MSP and Dr Scott Arthur MP; formal representations will only be counted once an application is submitted.",
+  "summary": "Significant organised local and city-wide opposition at pre-application stage. A local residents' campaign (Hermiston Data Centre Campaign) and a Change.org petition (3,581 signatures by July 2026) oppose the scheme; APRS campaigns against it nationally; the Cockburn Association questions 'green' claims without opposing data centres outright. The February 2026 refusal of the nearby South Gyle data centre and the council Planning Committee's June 2026 call for a Scottish Government moratorium on large-scale data centres form the political backdrop. Following a third-party request, Scottish Ministers directed on 17 August 2026 that an Environmental Impact Assessment is required. The PAN was notified to Currie and Ratho Community Councils, Pentland Hills ward councillors, Gordon MacDonald MSP and Dr Scott Arthur MP; formal representations will only be counted once an application is submitted.",
   "principal_concerns": [
     {
       "concern": "Permanent loss of productive prime agricultural Green Belt land in the Gogar Special Landscape Area",
@@ -28,9 +28,9 @@
       "source_ids": ["src-changeorg-wester-hermiston", "src-cec-pan-report-wester-hermiston"]
     },
     {
-      "concern": "Absence of a national definition of a 'green data centre' and of a named hyperscale tenant; EIA not initially required",
+      "concern": "Absence of a national definition of a 'green data centre' and of a named hyperscale tenant; the council initially concluded EIA was not required, but Scottish Ministers directed on 17 August 2026 that an EIA is required",
       "raised_by": "Cockburn Association; Kevin Williamson; APRS",
-      "source_ids": ["src-cockburn-western-edge", "src-bella-oppose-dc", "src-aprs-south-gyle-refused"]
+      "source_ids": ["src-cockburn-western-edge", "src-bella-oppose-dc", "src-aprs-south-gyle-refused", "src-dpea-eia-230-002-hermiston"]
     }
   ],
   "claimed_local_benefits": [
@@ -77,6 +77,13 @@
       "stakeholder_type": "government",
       "position": "In June 2026 requested that the Scottish Government introduce a moratorium on large-scale data centres until clearer national guidance on 'green data centre' definitions emerges",
       "source_ids": ["src-cockburn-western-edge"]
+    },
+    {
+      "stakeholder": "Scottish Ministers",
+      "stakeholder_type": "government",
+      "position": "Directed on 17 August 2026 that an Environmental Impact Assessment is required for the Wester Hermiston proposal (EIA-230-002).",
+      "date": "2026-08-17",
+      "source_ids": ["src-dpea-eia-230-002-hermiston", "src-scotgov-data-centre-planning-direction-2026"]
     }
   ],
   "campaign_groups": ["Hermiston Data Centre Campaign", "Action to Protect Rural Scotland (APRS)"],

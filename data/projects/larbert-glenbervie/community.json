@@ -1,5 +1,5 @@
 {
-  "summary": "The application attracted one of the largest objection counts recorded on Falkirk Council's portal: about 6,700 objections against 80 messages of support by the 2 July 2026 consultation close, rising to over 7,100 comments by late July. Opposition is organised through the resident group 'Say No To Larbert Data Centre', with APRS and Stop Climate Chaos Scotland also objecting; a residents' public meeting was held on 25 June 2026 and a protest was reported. Apatura and Scottish Enterprise present the scheme as major inward investment with jobs and green-design commitments.",
+  "summary": "The application attracted one of the largest public responses recorded on Falkirk Council's portal: about 6,700 objections against 80 messages of support by the 2 July 2026 consultation close, rising to more than 7,100 comments in late-July reporting. An APRS coalition letter published on 23 August recorded 7,020 objections uploaded to the portal as at 22 August; the figures may reflect different cut-offs or categories. Organised opposition includes Say No To Larbert Data Centre, The Inches and Kinnaird Village Residents Association and Larbert Residents Association, alongside APRS and Stop Climate Chaos Scotland. A Change.org petition was recorded at 5,402 signatures on 22 August and displayed 5,884 when checked on 3 September. More than 100 people attended a protest on 13 August, while APRS described the attendance as hundreds. Police Scotland's consultation response anticipated substantial public opposition and recommended robust site security. Apatura and Scottish Enterprise present the scheme as major inward investment with jobs and green-design commitments.",
   "principal_concerns": [
     {
       "concern": "Proximity to sensitive uses — objectors state the site is close to housing, a nursery and Forth Valley Royal Hospital, and reportedly only ~20 m from a care home",
@@ -59,8 +59,22 @@
     {
       "stakeholder": "Say No To Larbert Data Centre",
       "stakeholder_type": "resident_group",
-      "position": "Opposed; organised objection drives, public meeting (25 June 2026) and protest.",
-      "source_ids": ["src-stv-fears"]
+      "position": "Opposed; organised objection drives, a public meeting on 25 June 2026 and the 13 August protest.",
+      "source_ids": ["src-stv-fears", "src-guardian-larbert-protest-2026", "src-aprs-larbert-protest-2026", "src-changeorg-larbert-2026"]
+    },
+    {
+      "stakeholder": "The Inches and Kinnaird Village Residents Association",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; signed the community-campaign coalition letter calling for a moratorium on hyperscale AI data-centre decisions pending national safeguards.",
+      "date": "2026-08-23",
+      "source_ids": ["src-aprs-community-letter-2026"]
+    },
+    {
+      "stakeholder": "Larbert Residents Association",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; signed the community-campaign coalition letter calling for a moratorium on hyperscale AI data-centre decisions pending national safeguards.",
+      "date": "2026-08-23",
+      "source_ids": ["src-aprs-community-letter-2026"]
     },
     {
       "stakeholder": "Stop Climate Chaos Scotland",
@@ -74,9 +88,16 @@
       "position": "Supportive as landowner/economic agency: 'Scotland welcomes the ambition and scale' (Victoria Carmichael).",
       "date": "2026-06-09",
       "source_ids": ["src-datacentrenews"]
+    },
+    {
+      "stakeholder": "Police Scotland",
+      "stakeholder_type": "statutory_consultee",
+      "position": "Its consultation response anticipated 'a great deal of public opposition' and recommended robust security against protest-related disruption or vandalism. This was operational advice rather than an objection on the planning merits.",
+      "date": "2026-08-14",
+      "source_ids": ["src-guardian-larbert-protest-2026", "src-aprs-larbert-protest-2026"]
     }
   ],
-  "campaign_groups": ["Say No To Larbert Data Centre", "Action to Protect Rural Scotland (APRS)", "Stop Climate Chaos Scotland"],
+  "campaign_groups": ["Say No To Larbert Data Centre", "The Inches and Kinnaird Village Residents Association", "Larbert Residents Association", "Action to Protect Rural Scotland (APRS)", "Stop Climate Chaos Scotland"],
   "consultation_deadline": "2026-07-02",
-  "notes": "Objection/support counts are point-in-time figures from press reporting and the portal; the council reportedly continues to accept late representations. A pre-determination hearing is reportedly required before decision."
+  "notes": "All objection, comment and petition totals are point-in-time figures. The 7,020 figure is APRS's count of objections uploaded to the portal as at 22 August 2026; earlier press described more than 7,100 comments in late July, so the categories may not be like-for-like. Change.org totals are self-reported and volatile: 5,402 signatures were recorded in the coalition letter as at 22 August and 5,884 were displayed when the petition was checked on 3 September. The council reportedly continues to accept late representations. A pre-determination hearing is reportedly required before decision."
 }

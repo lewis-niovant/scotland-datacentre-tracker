@@ -6,7 +6,7 @@ import {
   bboxOf, buildingMasses, centroidOf, osmFootprints, pitchesPhrase, pitchGrid, polysOf,
   primaryBoundary, projectedExtent, STOREY_M, type MassSpec,
 } from '../lib/geometry'
-import { EXTENT2, EXTENT3, NOMINAL_BLOCK_M2, OSM_BUILT, REDLINE } from './MapView'
+import { EXTENT2, EXTENT3, NOMINAL_BLOCK_M2, OSM_BUILT, REDLINE } from '../lib/mapPresentation'
 import { addContextLayers, setContext3D, setSatellite } from '../lib/context3d'
 
 /* A small staged map on the project page: locate the site, draw its extent, fill
@@ -19,7 +19,7 @@ import { addContextLayers, setContext3D, setSatellite } from '../lib/context3d'
 
    Only the stages we actually hold data for are offered, and the caption on each
    says which of the three tiers the extent is. A project with no geometry gets no
-   map at all rather than an empty frame — see hasSiteReveal(). */
+   map at all rather than an empty frame. */
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
 /** The Location stage pulls right back to this zoom, so "where is it?" is
@@ -30,12 +30,6 @@ function qv(q?: { value?: number | null; max?: number | null; min?: number | nul
   if (!q) return null
   const v = q.value ?? q.max ?? q.min
   return typeof v === 'number' ? v : null
-}
-
-export function hasSiteReveal(geo: GeoCollection, p: ProjectRecord): boolean {
-  return !!(primaryBoundary(geo, p.project.slug)
-    ?? osmFootprints(geo, p.project.slug)[0]
-    ?? projectedExtent(geo, p.project.slug))
 }
 
 interface Stage { key: string; label: string; caption: string }

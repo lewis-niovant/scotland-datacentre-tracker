@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import type { ProjectRecord } from '../types'
 import {
-  fmtMW, fmtRangeMW, headlineCapacityMW, stateLabel, developersOf, statusGroup,
+  fmtRangeMW, headlineCapacityMW, stateLabel, developersOf, statusGroup,
   statusLabel, STATUS_GROUP_META,
 } from '../lib/data'
 import { MaturityBadge, StateChip, VerificationBadge } from './Badges'
@@ -78,9 +78,9 @@ export default function ProjectSheet({ p, onClose }: { p: ProjectRecord; onClose
             </>
           )}
         </dl>
-        {cap && cap.mw >= 1000 && (
+        {cap && cap.maximumMw >= 1000 && (
           <p className="small muted">
-            Large figures like {fmtMW(cap.mw)} are {stateLabel(cap.claim.state)} claims by{' '}
+            Large figures like {fmtRangeMW(cap.claim)} are {stateLabel(cap.claim.state)} claims by{' '}
             {cap.claim.claimant ?? 'the promoter'}, not verified capacity.
           </p>
         )}

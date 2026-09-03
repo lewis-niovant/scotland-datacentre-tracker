@@ -1,5 +1,5 @@
 {
-  "summary": "DV4 sits within the contested Lanarkshire AI Growth Zone. APRS and local campaigners criticise the lack of transparency about the zone's extent, the Green Belt location, the adequacy of the EIA screening process, and the composition of the headline jobs figures. Developer consultation events ran May-June 2026.",
+  "summary": "DV4 sits within the contested Lanarkshire AI Growth Zone. APRS and local campaigners criticise the lack of transparency about the zone's extent, the Green Belt location, the adequacy of EIA screening, and headline jobs figures. DataVita says it revised the design after May-June consultation and now proposes a £75m site-specific community fund, local-contract targets, native hedgerow and heat-recovery discussions. These remain developer commitments until the validated application and any legal agreement are published.",
   "principal_concerns": [
     {
       "concern": "Transparency: the extent of the AI Growth Zone has not been published; APRS obtained the DV4 screening report only via a council request and notes the screening opinion was published a month after the decision",
@@ -24,7 +24,25 @@
   ],
   "claimed_local_benefits": [
     {
-      "benefit": "Community Investment Fund of up to £543m over 15 years at full operation (£36m+/year), plus £1m/year HFD charitable giving",
+      "benefit": "£75m DV4 community fund over 15 years, with allocation and governance still to be published",
+      "claimant": "DataVita",
+      "binding_status": "commitment_stated",
+      "source_ids": ["src-datavita-dv4-submission-2026"]
+    },
+    {
+      "benefit": "Target for at least 40% of capital contracts to be placed with local businesses",
+      "claimant": "DataVita",
+      "binding_status": "aspirational",
+      "source_ids": ["src-datavita-dv4-submission-2026"]
+    },
+    {
+      "benefit": "Heat-recovery discussions with University Hospital Monklands and BioCity",
+      "claimant": "DataVita",
+      "binding_status": "aspirational",
+      "source_ids": ["src-datavita-dv4-submission-2026"]
+    },
+    {
+      "benefit": "AI Growth Zone-wide Community Investment Fund of up to £543m over 15 years at full operation (£36m+/year), plus £1m/year HFD charitable giving; this is not a DV4-only sum and must not be added to the proposed £75m DV4 fund",
       "claimant": "DataVita / UK Government",
       "binding_status": "commitment_stated",
       "source_ids": ["src-datavita-aigz-faq", "src-govuk-lanarkshire-aigz-2026"]
@@ -66,5 +84,5 @@
   ],
   "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
   "planning_authority_contact": "North Lanarkshire Council, eplanning.northlanarkshire.gov.uk",
-  "notes": "Developer consultation events: 12 May 2026 (Mount Pleasant Community Centre), 2 June 2026 (venue TBC), 4 June 2026 (Mount Pleasant Community Centre). APRS reminds residents comments at developer events are not formal representations."
+  "notes": "Developer consultation events: 12 May 2026 (Mount Pleasant Community Centre), 2 June 2026 (venue TBC), 4 June 2026 (Mount Pleasant Community Centre). APRS reminds residents comments at developer events are not formal representations. Application-submission benefits are developer-stated; no section 75 agreement or other enforceable mechanism was available by 3 September 2026."
 }

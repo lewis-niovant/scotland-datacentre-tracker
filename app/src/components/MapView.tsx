@@ -5,36 +5,18 @@ import type { GeoCollection, GeoFeature, ProjectRecord, QuantityClaim } from '..
 import { STATUS_GROUPS, STATUS_GROUP_META, projectCoords, statusGroup } from '../lib/data'
 import type { LensDef } from '../lib/lenses'
 import {
-  boundaryFeatures, buildingMasses, centroidOf, extentExplanation, extentFeatures, pitchGrid,
+  boundaryFeatures, buildingMasses, centroidOf, extentExplanation, extentFeatures, pitchGrid, pitchMarkings,
   osmFootprints, pitchesPhrase, polysOf, primaryBoundary, STOREY_M, type MassSpec,
 } from '../lib/geometry'
 import { addContextLayers, setContext3D, setSatellite } from '../lib/context3d'
+import {
+  BOUNDARY_MIN_ZOOM, EXTENT2, EXTENT3, NOMINAL_BLOCK_M2, OSM_BUILT, PITCH_MIN_ZOOM,
+  REDLINE, SCOTLAND_BOUNDS,
+} from '../lib/mapPresentation'
 
 const MAP_STYLE = 'https://tiles.openfreemap.org/styles/positron'
-export const SCOTLAND_BOUNDS: [[number, number], [number, number]] = [[-7.9, 54.6], [-0.6, 60.95]]
 const ACCENT = '#2a78d6'
 const NO_DATA = '#898781'
-
-/* Official red line — reserved to sourced Spatial Hub boundaries only. Projections
-   are deliberately drawn in another colour AND another line style, so a projection
-   can never be mistaken for a red line, including by a colour-blind reader. */
-export const REDLINE = '#c0242d'
-/** Tier 2 — projected extent from a sourced area on a reliable point. Dashed. */
-export const EXTENT2 = '#9a5b12'
-/** Tier 3 — projected extent, settlement-level location. Dotted, fainter, unfilled. */
-export const EXTENT3 = '#6b6560'
-/** Tier 4 — a surveyed OSM outline of what is actually built. Solid like a red
-    line because it is real geometry, but a different hue so the two are never
-    confused: one is what was applied for, the other is what stands there. */
-export const OSM_BUILT = '#1f7a6f'
-/** Zoom at which real boundaries appear (the national view stays clean). */
-export const BOUNDARY_MIN_ZOOM = 9
-/** Zoom at which the derived pitch grid appears. */
-export const PITCH_MIN_ZOOM = 12
-/** Block drawn for a site that publishes a height but no footprint: 120 m square.
-    It exists so the sourced height has something to stand on — it is captioned as
-    nominal everywhere it appears and is drawn in a different colour. */
-export const NOMINAL_BLOCK_M2 = 120 * 120
 
 interface Props {
   projects: ProjectRecord[]
@@ -272,6 +254,7 @@ export default function MapView({
       map.addSource('dc-extents', { type: 'geojson', data: empty })
       map.addSource('dc-extent-centres', { type: 'geojson', data: empty })
       map.addSource('dc-pitches', { type: 'geojson', data: empty })
+      map.addSource('dc-pitch-marks', { type: 'geojson', data: empty })
       map.addSource('dc-buildings', { type: 'geojson', data: empty })
 
       map.addLayer({
@@ -390,6 +373,20 @@ export default function MapView({
           'line-width': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0.5, 16, 1.4],
           'line-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM, 0, PITCH_MIN_ZOOM + 0.8, 0.85],
           'line-opacity-transition': { duration: 520, delay: 180 },
+        },
+      })
+      /* Halfway lines, centre circles and penalty areas. They only earn their
+         keep once a cell is big enough on screen to read as a pitch, so they
+         fade in a little later than the grid itself. */
+      map.addLayer({
+        id: 'dc-pitch-marks', type: 'line', source: 'dc-pitch-marks',
+        minzoom: PITCH_MIN_ZOOM + 1.4,
+        layout: { visibility: 'none', 'line-join': 'round', 'line-cap': 'round' },
+        paint: {
+          'line-color': '#ffffff',
+          'line-width': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM + 1.4, 0.4, 17, 1.1],
+          'line-opacity': ['interpolate', ['linear'], ['zoom'], PITCH_MIN_ZOOM + 1.4, 0, PITCH_MIN_ZOOM + 2.4, 0.7],
+          'line-opacity-transition': { duration: 600, delay: 260 },
         },
       })
       map.addLayer({
@@ -559,17 +556,21 @@ export default function MapView({
 
     mapRef.current = map
     ;(window as unknown as { __sdoMap?: MapLibreMap }).__sdoMap = map
+    const markers = markersRef.current
+    const areaLabels = areaLabelsRef.current
+    const heightLabels = heightLabelsRef.current
+    const popup = popupRef
     return () => {
       loadedRef.current = false
       setReady(false)
-      for (const [, m] of markersRef.current) m.marker.remove()
-      markersRef.current.clear()
-      for (const [, m] of areaLabelsRef.current) m.remove()
-      areaLabelsRef.current.clear()
-      for (const [, m] of heightLabelsRef.current) m.remove()
-      heightLabelsRef.current.clear()
-      popupRef.current?.remove()
-      popupRef.current = null
+      for (const [, m] of markers) m.marker.remove()
+      markers.clear()
+      for (const [, m] of areaLabels) m.remove()
+      areaLabels.clear()
+      for (const [, m] of heightLabels) m.remove()
+      heightLabels.clear()
+      popup.current?.remove()
+      popup.current = null
       map.remove()
       mapRef.current = null
     }
@@ -628,7 +629,10 @@ export default function MapView({
     /* The pitch grid works inside projections too, so people can count pitches
        for a projected site as well as an official one. */
     const pitches = map.getSource('dc-pitches') as GeoJSONSource | undefined
-    pitches?.setData(pitchGrid([...feats, ...exts, ...osm], pitchM2) as never)
+    const grid = pitchGrid([...feats, ...exts, ...osm], pitchM2)
+    pitches?.setData(grid as never)
+    const marks = map.getSource('dc-pitch-marks') as GeoJSONSource | undefined
+    marks?.setData(pitchMarkings(grid.features, pitchM2) as never)
   }, [geo, projects, pitchM2, ready])
 
   /* ---------- indicative masses: driven by SOURCED HEIGHT ----------
@@ -757,7 +761,7 @@ export default function MapView({
   useEffect(() => {
     const map = mapRef.current
     if (!map || !loadedRef.current) return
-    for (const id of ['dc-pitch-fill', 'dc-pitch-grid']) {
+    for (const id of ['dc-pitch-fill', 'dc-pitch-grid', 'dc-pitch-marks']) {
       if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', showPitches ? 'visible' : 'none')
     }
   }, [showPitches, ready])
@@ -841,9 +845,14 @@ export default function MapView({
   /* ---------- fly to selection ---------- */
   const threeDRef = useRef(threeD)
   threeDRef.current = threeD
+  /* Read through a ref so suppression toggling off doesn't re-fire the fly. */
+  const suppressRef = useRef(suppressAutoFit)
+  suppressRef.current = suppressAutoFit
   useEffect(() => {
     const map = mapRef.current
-    if (!map || !selectedSlug) return
+    /* When the tour or the voice guide owns the camera, selection must not
+       fire this competing ease — the voice flight choreographs its own. */
+    if (!map || !selectedSlug || suppressRef.current) return
     const p = projects.find((x) => x.project.slug === selectedSlug)
     const coords = p && projectCoords(p)
     if (coords) {

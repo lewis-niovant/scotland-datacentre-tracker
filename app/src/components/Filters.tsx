@@ -1,19 +1,12 @@
 import { useState } from 'react'
 import type { GeoCollection, StatusGroup } from '../types'
 import { STATUS_GROUPS, STATUS_GROUP_META, fmtInt } from '../lib/data'
+import { EMPTY_FILTERS, type Filters } from '../lib/filterState'
 import { extentCounts } from '../lib/geometry'
-import { BOUNDARY_MIN_ZOOM, PITCH_MIN_ZOOM } from './MapView'
+import { BOUNDARY_MIN_ZOOM, PITCH_MIN_ZOOM } from '../lib/mapPresentation'
 import type { LensDef, StatTileDef } from '../lib/lenses'
 import { LENSES } from '../lib/lenses'
 import type { LensId } from '../types'
-
-export interface Filters {
-  groups: StatusGroup[]
-  developer: string
-  authority: string
-}
-
-export const EMPTY_FILTERS: Filters = { groups: [], developer: '', authority: '' }
 
 export function FilterChips({
   filters, onChange, developers, authorities, availableGroups, presentGroups,
@@ -135,6 +128,7 @@ export function MapLegend({ lens, showPitches, pitchM2, geo, totalProjects, pres
       <button
         className="legend-toggle"
         aria-expanded={open}
+        aria-label="Legend and site extent explanations"
         onClick={() => setOpen((v) => !v)}
       >
         <svg viewBox="0 0 16 16" aria-hidden="true">
@@ -186,7 +180,7 @@ export function MapLegend({ lens, showPitches, pitchM2, geo, totalProjects, pres
             </span>
           </div>
           <div className="legend-title extent-head">
-            Site extents <span className="small-note">(from zoom {BOUNDARY_MIN_ZOOM}; tap any shape for its explanation)</span>
+            Site extents <span className="small-note">(from zoom {BOUNDARY_MIN_ZOOM}; explanations are listed below)</span>
           </div>
           <div className="row boundary-note">
             <span className="extent-key t1" aria-hidden="true" />

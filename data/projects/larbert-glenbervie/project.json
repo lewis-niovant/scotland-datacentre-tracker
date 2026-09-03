@@ -47,17 +47,17 @@
   "first_public_date": "2025-10-21",
   "anticipated_construction_start": "2027 (developer consultation timeline; site remediation from Q3 2026)",
   "anticipated_operational_date": "First power 2028 (developer press release); operations commence 2029 (developer consultation timeline)",
-  "last_verified_at": "2026-07-30",
+  "last_verified_at": "2026-09-03",
   "next_review_at": "2026-09-30",
   "confidence_overall": "medium",
   "is_public": true,
   "is_sensitive": false,
   "latest_development": {
-    "date": "2026-07-02",
-    "headline": "Public consultation period closed with ~6,700 objections recorded on Falkirk Council portal; pre-determination hearing reported to be required before committee decision",
+    "date": "2026-08-14",
+    "headline": "Police Scotland's consultation response anticipated substantial opposition and recommended robust security; more than 100 people attended a 13 August protest, which APRS described as drawing hundreds",
     "source_ids": [
-      "src-deadline-news-objections",
-      "src-stv-fears"
+      "src-guardian-larbert-protest-2026",
+      "src-aprs-larbert-protest-2026"
     ]
   },
   "unknowns": [

@@ -33,14 +33,15 @@
       ]
     }
   ],
-  "summary": "Proposed ~600 MW hyperscale AI/cloud data centre campus of around £5bn on farmland north-west of Auchtertool village, Fife, promoted by ILI Group through SPV ILI Cato Limited. A planning permission in principle application (26/01243/PPP) was validated by Fife Council on 21 May 2026 for a campus of six to seven data hall buildings up to 35 m high (~280,000 m2 of buildings), gatehouses, substations and infrastructure. Fife Council screened the project as not requiring EIA (April 2026), a decision now subject to a Scottish Government screening direction request. The first of ILI's three planned 'Stoics' data centres (with Rufus, East Ayrshire, and Aurelius, North Lanarkshire). The application drew over 1,200 published objections and reportedly 14,000-16,000 total representations, plus a SEPA holding objection on flooding.",
+  "summary": "Proposed ~600 MW hyperscale AI/cloud data centre campus of around £5bn on farmland north-west of Auchtertool village, Fife, promoted by ILI Group through SPV ILI Cato Limited. A planning permission in principle application (26/01243/PPP) was validated by Fife Council on 21 May 2026 for a campus of six to seven data hall buildings up to 35 m high (~280,000 m2 of buildings), gatehouses, substations and infrastructure. Fife Council's 1 April 2026 screening opinion said EIA was not required, but Scottish Ministers subsequently considered the proposal through DPEA case EIA-250-002 and directed on 17 August 2026 that an EIA is required. The first of ILI's three planned 'Stoics' data centres (with Rufus, East Ayrshire, and Aurelius, North Lanarkshire). The application drew over 1,200 published objections and reportedly 14,000-16,000 total representations, plus a SEPA holding objection on flooding.",
   "project_type": "hyperscale",
   "status": "pending",
   "status_source_ids": [
-    "src-fife-portal-26-01243-ppp"
+    "src-fife-portal-26-01243-ppp",
+    "src-dpea-eia-250-002-cato"
   ],
   "maturity_level": "M2",
-  "maturity_explanation": "Formal planning permission in principle application 26/01243/PPP validated by Fife Council on 21 May 2026 and currently undetermined ('Registered'); preceded by PAN 25/00552/PAN (2025) and EIA screening 25/03079/SCR (decided 1 April 2026).",
+  "maturity_explanation": "Formal planning permission in principle application 26/01243/PPP was validated by Fife Council on 21 May 2026 and remains undetermined. It was preceded by PAN 25/00552/PAN and council EIA screening 25/03079/SCR. Scottish Ministers' later screening direction EIA-250-002, issued 17 August 2026, requires an Environmental Impact Assessment for the proposal.",
   "verification_level": "verified",
   "local_authority": "Fife Council",
   "region": "Fife",
@@ -51,8 +52,8 @@
   "first_public_date": "2025-03-22",
   "anticipated_construction_start": "2027 (developer statement at submission)",
   "anticipated_operational_date": "Phased over roughly five years from a 2027 start (developer); a three-year build programme was also reported",
-  "last_verified_at": "2026-07-30",
-  "next_review_at": "2026-09-30",
+  "last_verified_at": "2026-09-03",
+  "next_review_at": "2026-10-03",
   "confidence_overall": "high",
   "is_public": true,
   "is_sensitive": false,
@@ -69,23 +70,22 @@
     }
   ],
   "latest_development": {
-    "date": "2026-07-24",
-    "headline": "Consultation closed with 14,000-16,000 representations reported, including 1,200+ published objections, an Auchtertool Community Council objection and a SEPA holding objection on flooding; ILI arranged further meetings with residents",
+    "date": "2026-08-17",
+    "headline": "Scottish Ministers direct that an Environmental Impact Assessment is required for application 26/01243/PPP (DPEA EIA-250-002), reversing the practical effect of Fife Council's earlier no-EIA screening opinion",
     "source_ids": [
-      "src-cft-14000",
-      "src-dcr-objections"
+      "src-dpea-eia-250-002-cato",
+      "src-scotgov-data-centre-planning-direction-2026"
     ]
   },
   "unknowns": [
     "Agricultural land classification (LCA class) of the site — not found in available reporting; check the planning statement/soil assessment among the 1,651 portal documents",
-    "Red-line site area: 25 ha (61 acres) was reported by DCD, but 280,000 m2 (28 ha) of buildings is also reported — the exact red-line boundary area and how the two figures reconcile is unverified",
+    "How the official 68.5 ha application red line relates to the previously reported 25 ha site figure and 280,000 m2 of building floor area",
     "Cooling technology and definitive water source/volumes at full build-out (developer cites 'free cooling' and 34,000 m3/yr, but the community council notes a new water main would likely be required)",
     "Backup/standby generation type and capacity (diesel/gas engine count) — not disclosed in secondary sources; check application documents",
     "Grid connection details: which network/transmission operator, connection site/substation and voltage behind the claimed 600 MW Gate 2 position",
-    "Outcome of the EIA screening direction request to Scottish Ministers",
+    "Scope and submission timetable for the Environmental Impact Assessment required by Scottish Ministers on 17 August 2026, and its effect on the determination timetable for 26/01243/PPP",
     "Exact objection/support split among the 14,000-16,000 representations (council had published only ~1,200+ at time of reporting)",
     "IT load vs grid import split of the 600 MW figure",
-    "Whether Hallyards Castle ruins on/adjacent to the site are a designated heritage asset and how the layout treats them",
-    "Why the official application red line (68.5 ha) differs from the previously reported site area (25 ha (reported)) - needs a check of the application location plan."
+    "Whether Hallyards Castle ruins on/adjacent to the site are a designated heritage asset and how the layout treats them"
   ]
 }

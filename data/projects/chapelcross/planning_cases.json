@@ -19,13 +19,13 @@
     "source_ids": ["src-cx-campus-website", "src-cx-dumgal-portal-attempt"]
   },
   {
-    "reference": null,
+    "reference": "26/0855/PAN",
     "planning_authority": "Dumfries and Galloway Council",
     "application_type": "pan",
-    "description": "Statutory-style pre-application community consultation is underway ahead of a Planning Permission in Principle application targeted for December 2026 (a PAN is required at least 12 weeks before a major application in Scotland, but no PAN reference has been located). Consultation events: Victoria Halls, Annan 12 May 2026 and Creca Hall 13 May 2026; second round Creca Village Hall 16 June 2026 and Victoria Halls, Annan 17 June 2026.",
+    "description": "Proposal of Application Notice for a data-centre-led development including up to 162,000 sqm of data-centre buildings, up to 1,100 sqm of training/reception/security space, up to 6,500 sqm of industrial units, substation and other infrastructure. Consultation events: Victoria Halls, Annan 12 May and Creca Hall 13 May; second round 16-17 June 2026.",
     "decision": "pending",
     "official_url": "https://eaccess.dumgal.gov.uk/online-applications/",
-    "last_checked_at": "2026-07-30",
+    "last_checked_at": "2026-09-03",
     "events": [
       {
         "event_date": "2026-05-12",
@@ -52,6 +52,6 @@
         "source_ids": ["src-cx-dng24-plan-unveiled"]
       }
     ],
-    "source_ids": ["src-cx-dng24-consultation", "src-cx-dng24-plan-unveiled", "src-cx-dumgal-portal-attempt"]
+    "source_ids": ["src-leadlinka-26-0855-pan", "src-cx-dng24-consultation", "src-cx-dng24-plan-unveiled", "src-cx-dumgal-portal-attempt"]
   }
 ]

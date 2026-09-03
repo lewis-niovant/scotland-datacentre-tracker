@@ -1,5 +1,5 @@
 {
-  "summary": "Opposition to the Cato application is among the largest recorded for a Scottish data centre proposal: 1,200+ objections were published on Fife Council's portal by the 24 July 2026 deadline, and the council reported 14,000-16,000 total representations. Auchtertool Community Council (the village has ~215 houses / ~250 residents) formally objected, having initially acted as a neutral facilitator; a local campaign group 'Say No to Cato' and national group APRS are active; petitions gathered 8,000+ signatures against the development and 2,500+ for a Scottish moratorium on hyperscale data centres. SEPA lodged a holding objection on flooding. Fife Council's decision that no EIA was required drew particular criticism and is subject to a screening direction request to Scottish Ministers. ILI has defended the scheme and met residents (including a well-attended June 2026 village hall meeting and further meetings announced in July 2026).",
+  "summary": "Opposition to the Cato application is among the largest recorded for a Scottish data centre proposal: 1,200+ objections were published on Fife Council's portal by the 24 July 2026 deadline, and the council reported 14,000-16,000 total representations. The objection/support split for that larger total is unknown, so it is not treated as an objection count. Auchtertool Community Council (the village has ~215 houses / ~250 residents) formally objected, having initially acted as a neutral facilitator; a local campaign group 'Say No to Cato' and national group APRS are active; petitions gathered 8,000+ signatures against the development and 2,500+ for a Scottish moratorium on hyperscale data centres. SEPA lodged a holding objection on flooding. Fife Council's decision that no EIA was required drew particular criticism; Scottish Ministers subsequently directed on 17 August 2026 that an EIA is required. ILI has defended the scheme and met residents (including a well-attended June 2026 village hall meeting and further meetings announced in July 2026).",
   "principal_concerns": [
     {
       "concern": "Scale and landscape impact: six to seven data halls up to 35 m high on farmland beside a small village; ~25% of the site visible from most of the village",
@@ -7,9 +7,9 @@
       "source_ids": ["src-stv-community", "src-acc-village-update", "src-aprs-auchtertool"]
     },
     {
-      "concern": "Absence of an Environmental Impact Assessment: Fife Council's 'EIA not required' screening opinion described as 'appalling' (community council) and 'unfathomable' (Mark Ruskell MSP); legal challenge considered and a screening direction requested from the Scottish Government",
+      "concern": "Fife Council's initial decision not to require an Environmental Impact Assessment was described as 'appalling' (community council) and 'unfathomable' (Mark Ruskell MSP); Scottish Ministers resolved this screening dispute on 17 August 2026 by directing that EIA is required",
       "raised_by": "Auchtertool Community Council; Mark Ruskell MSP; Environmental Rights Centre Scotland",
-      "source_ids": ["src-cft-eia"]
+      "source_ids": ["src-cft-eia", "src-dpea-eia-250-002-cato"]
     },
     {
       "concern": "Electricity consumption: full build-out of ~4,000-4,200 GWh/yr equated by APRS to about half of Scottish households' annual electricity use or ~20% of Scotland's total consumption",
@@ -84,6 +84,13 @@
       "stakeholder_type": "other",
       "position": "Defends the project: renewable electricity use, productive use of curtailed generation, separate water infrastructure, economic benefits; holding further meetings with residents (July 2026)",
       "source_ids": ["src-dcr-objections"]
+    },
+    {
+      "stakeholder": "Scottish Ministers",
+      "stakeholder_type": "government",
+      "position": "Directed on 17 August 2026 that an Environmental Impact Assessment is required for the Cato proposal (EIA-250-002).",
+      "date": "2026-08-17",
+      "source_ids": ["src-dpea-eia-250-002-cato", "src-scotgov-data-centre-planning-direction-2026"]
     }
   ],
   "campaign_groups": ["Say No to Cato", "Action to Protect Rural Scotland (APRS)"],

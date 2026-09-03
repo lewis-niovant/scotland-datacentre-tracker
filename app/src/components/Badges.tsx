@@ -36,8 +36,8 @@ export function TierChip({ tier }: { tier?: number }) {
    profile. Icon shape differs per level so colour never carries it alone. */
 const VERIFICATION_META: Record<string, { label: string; title: string; cls: string; icon: ReactElement }> = {
   verified: {
-    label: 'Verified',
-    title: 'Checked against official records (planning portal, Companies House or grid register).',
+    label: 'Record checked',
+    title: 'The project record has been matched to official material. Individual claims still carry their own evidence state.',
     cls: 'verified',
     icon: (
       <svg viewBox="0 0 16 16" aria-hidden="true">

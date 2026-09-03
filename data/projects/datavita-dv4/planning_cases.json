@@ -32,5 +32,24 @@
     "official_url": "https://eplanning.northlanarkshire.gov.uk/online-applications/applicationDetails.do?keyVal=TGFAEFBA0EC00&activeTab=summary",
     "last_checked_at": "2026-07-30",
     "source_ids": ["src-planit-nlc-26-00707-eiascr", "src-aprs-chapelhall-aigz"]
+  },
+  {
+    "reference": null,
+    "planning_authority": "North Lanarkshire Council",
+    "application_type": "permission_in_principle",
+    "description": "Planning-permission-in-principle application for DV4 at Lancaster Avenue, announced as submitted by DataVita on 2 September 2026. The developer says the design was revised after consultation, including a maximum height reduction from 30 m to 26 m.",
+    "submission_date": "2026-09-02",
+    "decision": "other",
+    "decision_notes": "Developer-announced submission only. No application reference or validation date was present in North Lanarkshire Council's weekly list when checked on 3 September 2026; it is not counted as a live formal application until an official record appears.",
+    "last_checked_at": "2026-09-03",
+    "events": [
+      {
+        "event_date": "2026-09-02",
+        "event_type": "developer_announced_submission",
+        "title": "DataVita announces submission of its DV4 planning application",
+        "source_ids": ["src-datavita-dv4-submission-2026"]
+      }
+    ],
+    "source_ids": ["src-datavita-dv4-submission-2026"]
   }
 ]

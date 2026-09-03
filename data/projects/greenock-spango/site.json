@@ -8,24 +8,31 @@
   "location_precision": "approximate",
   "boundary_precision": "none",
   "gross_floor_area_m2": {
-    "value": 74500,
+    "value": 80000,
     "unit": "m2",
-    "state": "reported",
-    "claimant": "Data Centre Dynamics (from site plans)",
-    "notes": "Sum of two reported buildings: 34,500 sqm and 40,000 sqm. Developer says floorspace is to be confirmed through a Planning Permission in Principle application.",
-    "source_ids": ["src-dcd-spango", "src-bebeez-spango"]
+    "state": "confirmed",
+    "claimant": "Planning application 26/0136/IC",
+    "notes": "Application description states approximately 80,000 sqm across four buildings. Earlier reporting described two buildings totalling 74,500 sqm; the formal application figure supersedes that early layout.",
+    "source_ids": ["src-inverclyde-26-0136-ic", "src-inverclydenow-spango-application-2026"]
   },
   "number_of_buildings": {
-    "value": 2,
+    "value": 4,
     "unit": "buildings",
+    "state": "confirmed",
+    "claimant": "Planning application 26/0136/IC",
+    "source_ids": ["src-inverclyde-26-0136-ic"]
+  },
+  "max_building_height_m": {
+    "value": 18,
+    "unit": "m",
     "state": "reported",
-    "claimant": "Data Centre Dynamics (from site plans)",
-    "source_ids": ["src-dcd-spango", "src-bebeez-spango"]
+    "claimant": "Application reporting",
+    "source_ids": ["src-inverclydenow-spango-application-2026"]
   },
   "greenfield_brownfield": "brownfield",
   "current_land_use": "Vacant cleared former industrial land; all former IBM buildings demolished (complete by September 2020, final demolition March 2022)",
   "previous_land_use": "IBM manufacturing campus (typewriters/office equipment, later personal computers and call centre), 1954 to 2016/17; site later branded Valley Park; served by dedicated IBM railway halt (1978-2018, services suspended)",
-  "land_notes": "Large flat valley-floor brownfield strip extending c.2.1 km along the A78 Inverkip Road, south-west Greenock. Designated a 'Priority Place' in the Inverclyde Local Development Plan (developer statement). Coordinates are the valley/former-campus centroid from Wikipedia, not a red-line centroid — no application boundary has been published, so precision is 'approximate' and no boundary.geojson is provided. Reusable infrastructure: the site retains its cleared development platforms and the disused IBM rail halt (a park-and-ride reopening was part of the 2023 housing consent); no developer claim found about reusing former IBM power or fibre infrastructure.",
+  "land_notes": "Large flat valley-floor brownfield strip extending c.2.1 km along the A78 Inverkip Road, south-west Greenock. Designated a 'Priority Place' in the Inverclyde Local Development Plan (developer statement). Coordinates remain an approximate former-campus centroid; the official application boundary has not yet been extracted into this dataset. Reusable infrastructure includes cleared development platforms and the disused IBM rail halt, whose reopening formed part of the earlier housing consent.",
   "nearest_settlements": ["Branchton (Greenock)", "Inverkip"],
-  "source_ids": ["src-spango-consult-proposals", "src-bebeez-spango", "src-wikipedia-spango", "src-colomap-spango"]
+  "source_ids": ["src-spango-consult-proposals", "src-inverclyde-26-0136-ic", "src-bebeez-spango", "src-wikipedia-spango", "src-colomap-spango"]
 }

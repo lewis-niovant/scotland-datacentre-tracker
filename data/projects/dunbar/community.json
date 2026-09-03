@@ -1,5 +1,5 @@
 {
-  "summary": "Organised local opposition exists at pre-application stage. A dedicated Facebook group, 'Opposition to the West Barns Mains Data Centre' (reported 705 members), was set up in response to the proposals. Local charity Sustaining Dunbar urges residents to oppose the scheme, and the local campaign is coordinating with APRS's Scotland-wide campaign to seek a Scottish Government moratorium on hyperscale AI data centre applications. Statutory and internal-consultee concerns raised at scoping include ecology (SPA qualifying species, water abstraction impacts), heritage (historic battlefields, scheduled monuments), landscape and prime agricultural land. No community benefits have been claimed by the developer in any located source.",
+  "summary": "Organised local opposition exists at pre-application stage. A dedicated Facebook group, Opposition to the West Barns Mains Data Centre (reported 705 members), was set up in response to the proposals, while Dunbar Against Massive Datacentres is named in the national community-campaign coalition. Local charity Sustaining Dunbar urges residents to oppose the scheme, and campaigners are coordinating with APRS to seek a Scottish Government moratorium on hyperscale AI data-centre decisions. APRS's coalition letter recorded 2,465 signatures on the Dunbar petition as at 22 August; the petition displayed 3,161 when checked on 3 September. Statutory and internal-consultee concerns raised at scoping include ecology, water abstraction, heritage, landscape and prime agricultural land. No community benefits have been claimed by the developer in any located source.",
   "principal_concerns": [
     {
       "concern": "Loss of approximately 60.2 ha of excellent (Grade 2 / Class 2 and 3.1 prime) agricultural land",
@@ -63,9 +63,16 @@
       "position": "Argued in a briefing to East Lothian Council that EIA should be required, criticising the applicant's Screening Report for omitting power demand, water, backup generation and cumulative effects.",
       "date": "2025-11-28",
       "source_ids": ["src-bell-briefing-west-barns-mains"]
+    },
+    {
+      "stakeholder": "Dunbar Against Massive Datacentres",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; signed the community-campaign coalition letter seeking a moratorium on hyperscale AI data-centre decisions pending national safeguards.",
+      "date": "2026-08-23",
+      "source_ids": ["src-changeorg-dunbar-2026", "src-aprs-community-letter-2026"]
     }
   ],
-  "campaign_groups": ["Opposition to the West Barns Mains Data Centre", "Action to Protect Rural Scotland (APRS)", "Sustaining Dunbar"],
+  "campaign_groups": ["Opposition to the West Barns Mains Data Centre", "Dunbar Against Massive Datacentres", "Action to Protect Rural Scotland (APRS)", "Sustaining Dunbar"],
   "planning_authority_contact": "policyandprojects@eastlothian.gov.uk (East Lothian Council Policy & Projects, per scoping opinion letterhead)",
-  "notes": "No developer public consultation events, PAN or community benefit offers have been located. Positions above are claims by the named parties."
+  "notes": "No developer public consultation events, PAN or community benefit offers have been located. Change.org totals are self-reported and volatile: APRS recorded 2,465 petition signatures as at 22 August 2026 and the live petition displayed 3,161 when checked on 3 September. Positions above are claims by the named parties."
 }

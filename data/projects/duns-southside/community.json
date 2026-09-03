@@ -1,5 +1,5 @@
 {
-  "summary": "Organised local opposition emerged quickly after the PAN. The 'Save the Lammermuirs – Stop the Data Centre' campaign launched at the site in late May/early June 2026, and an associated online petition was reported at over 6,000 signatures by mid-June 2026. Around 170 residents attended the two statutory consultation events in June 2026, at which the Duke of Roxburghe and Roxburghe Estates MD Jaap Röell appeared for the developer. Concerns centre on landscape and visual impact in the Lammermuir Hills, energy demand, noise, traffic and dark skies. No formal positions from Duns or Longformacus & District community councils were located.",
+  "summary": "Organised local opposition emerged quickly after the PAN through Save the Lammermuirs. Its online petition was reported at more than 6,000 signatures by mid-June 2026, APRS's coalition letter recorded 25,085 as at 22 August, and the live petition displayed 41,907 when checked on 3 September. The page also showed a sharp same-day increase, so the stability and geographic origin of that total have not been verified. Around 170 residents attended the two statutory consultation events in June, at which the Duke of Roxburghe and Roxburghe Estates MD Jaap Röell appeared for the developer. Concerns centre on landscape and visual impact in the Lammermuir Hills, energy demand, noise, traffic and dark skies. No formal positions from Duns or Longformacus & District community councils were located.",
   "principal_concerns": [
     {
       "concern": "Landscape and visual impact of three 24 m buildings ('a monster') in a sensitive upland landscape; 'industrialisation' of the Lammermuir Hills, with the built footprint compared to 11 football pitches",
@@ -39,14 +39,14 @@
   ],
   "stakeholder_positions": [
     {
-      "stakeholder": "Save the Lammermuirs – Stop the Data Centre",
+      "stakeholder": "Save the Lammermuirs",
       "stakeholder_type": "campaign_group",
       "position": "Opposed: seeks council refusal; describes the proposal as highly irresponsible development in an area where 'you can't imagine any other development of any size being permitted'",
       "date": "2026-06-08",
-      "source_ids": ["src-itv-southside-campaign", "src-bt-residents-fight", "src-midlothianview-campaign"]
+      "source_ids": ["src-itv-southside-campaign", "src-bt-residents-fight", "src-midlothianview-campaign", "src-changeorg-lammermuirs-2026", "src-aprs-community-letter-2026"]
     }
   ],
-  "campaign_groups": ["Save the Lammermuirs – Stop the Data Centre"],
+  "campaign_groups": ["Save the Lammermuirs"],
   "planning_authority_contact": "Scottish Borders Council planning department (eplanning.scotborders.gov.uk)",
-  "notes": "Formal community council positions (Duns Community Council; Longformacus & District; Westruther) not located — statutory consultation on a full application has not yet begun. Petition figure (6,000+) is as reported by Greatest Hits Radio Borders in mid-June 2026 and was not independently verified."
+  "notes": "Formal community-council positions (Duns Community Council; Longformacus & District; Westruther) have not been located; statutory consultation on a full application has not yet begun. Petition totals are point-in-time and volatile: the 6,000-plus figure was reported by Greatest Hits Radio Borders in mid-June, APRS recorded 25,085 signatures as at 22 August, and the Change.org page displayed 41,907 when checked on 3 September 2026. The page showed a sharp same-day increase; neither the stability nor geographic origin of that count has been independently verified."
 }

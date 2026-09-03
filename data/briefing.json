@@ -1,0 +1,110 @@
+{
+  "as_of_date": "2026-09-03",
+  "headline": "Data-centre planning has become a national issue in Scotland",
+  "summary": "Since the previous snapshot, Scottish Ministers have required councils to notify them about data-centre applications above 50 MW, required environmental assessment for two proposals and recalled the South Gyle appeal. New applications and financing announcements are also moving parts of the pipeline forward, while petitions and local campaigns are increasing scrutiny of cumulative electricity, water, landscape and community impacts.",
+  "updates": [
+    {
+      "date": "2026-09-01",
+      "category": "national_policy",
+      "title": "Government promises a responsible-investment framework",
+      "summary": "The 2026-31 Programme for Government commits ministers to publish a strategic approach during 2026-27, setting expectations for environmental sustainability, resource use, community benefit, and economic and strategic value. It is a future commitment, not a moratorium or guidance already in force.",
+      "source_ids": [
+        "src-scotgov-programme-government-data-centres-2026"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "category": "national_policy",
+      "title": "Scottish Ministers introduce notification for data centres above 50 MW",
+      "summary": "Planning authorities must notify Scottish Ministers within seven days of validating qualifying applications. The direction applies to current as well as new cases and allows ministers to consider whether national-level intervention is needed.",
+      "project_slugs": [
+        "south-gyle",
+        "wester-hermiston",
+        "cato-auchtertool"
+      ],
+      "source_ids": [
+        "src-scotgov-data-centre-planning-direction-2026"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "category": "planning",
+      "title": "Environmental assessment required at Wester Hermiston and Cato",
+      "summary": "Scottish Ministers reversed the local screening outcomes for the Wester Hermiston and Cato proposals. Cato's live application, and any future Wester Hermiston application, now require an Environmental Impact Assessment before determination.",
+      "project_slugs": [
+        "wester-hermiston",
+        "cato-auchtertool"
+      ],
+      "source_ids": [
+        "src-dpea-eia-230-002-hermiston",
+        "src-dpea-eia-250-002-cato"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "category": "planning",
+      "title": "South Gyle appeal recalled for a ministerial decision",
+      "summary": "The live appeal over Edinburgh Council's refusal of the South Gyle proposal was recalled from the reporter. It remains undecided and is now for Scottish Ministers to determine.",
+      "project_slugs": [
+        "south-gyle"
+      ],
+      "source_ids": [
+        "src-dpea-ppa-230-2794"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "category": "planning",
+      "title": "Formal Spango Valley application enters the Inverclyde system",
+      "summary": "The former IBM site proposal moved beyond consultation into a planning-permission-in-principle application for four data-centre buildings and associated works. The application remains pending.",
+      "project_slugs": [
+        "greenock-spango"
+      ],
+      "source_ids": [
+        "src-inverclyde-26-0136-ic",
+        "src-inverclydenow-spango-application-2026"
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "category": "planning",
+      "title": "DataVita says it has submitted its DV4 application",
+      "summary": "DataVita announced submission of its Chapelhall DV4 proposal after revising the design. No validated council reference was located by the snapshot date, so the Observatory continues to classify it as pre-application until an official case record is confirmed.",
+      "project_slugs": [
+        "datavita-dv4"
+      ],
+      "source_ids": [
+        "src-datavita-dv4-submission-2026"
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "category": "community",
+      "title": "Campaign groups coordinate around cumulative national impacts",
+      "summary": "A joint letter coordinated by APRS brought together campaigners from 14 communities. Separately, Scottish Parliament petition PE2233 asks for a moratorium while cumulative impacts and planning guidance are assessed. Petition and objection totals are time-sensitive campaign-reported figures, not measures of wider public opinion.",
+      "project_slugs": [
+        "blackdog",
+        "cato-auchtertool",
+        "chapelcross",
+        "cockenzie",
+        "dunbar",
+        "duns-southside",
+        "hunterston",
+        "larbert-glenbervie",
+        "ravenscraig",
+        "wester-hermiston",
+        "westerhill"
+      ],
+      "source_ids": [
+        "src-aprs-community-letter-2026",
+        "src-scotparl-petition-pe2233"
+      ]
+    }
+  ],
+  "caveats": [
+    "A project count is not a count of schemes likely to be built: records range from operating sites to strategic opportunities and grid-only leads.",
+    "Capacity figures describe different things, including IT load, grid import and developer headline capacity. They are kept separate and should not be added without qualification.",
+    "Application, objection and petition numbers can change daily. Counts are dated and attributed where the source permits; treat all of them as snapshots rather than measures of wider opinion.",
+    "The Scottish Government has said it does not yet maintain a definitive published list of all Scottish data-centre proposals. This Observatory is an independent research dataset, not an official register."
+  ]
+}

@@ -175,6 +175,7 @@ def projected_extent(slug, site, is_sensitive):
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     constants = load(ROOT / "data" / "constants.json")
+    briefing = load(ROOT / "data" / "briefing.json")
     sources = load(ROOT / "data" / "sources" / "sources.json") or []
 
     projects = []
@@ -265,6 +266,7 @@ def main():
     payload = {
         "generated_from_snapshot": constants.get("snapshot_date") if constants else None,
         "constants": constants,
+        "briefing": briefing,
         "projects": projects,
         "sources": {s["id"]: s for s in sources},
     }

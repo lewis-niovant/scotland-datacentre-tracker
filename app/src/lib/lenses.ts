@@ -1,9 +1,11 @@
 import type { LensId, ProjectRecord } from '../types'
 import {
-  fmtGBP, fmtInt, fmtM3, fmtMW, headlineCapacityMW, headlineCapexGBP, headlineEnergyGWh,
-  headlineWaterM3, maturityNumber, operationalJobsClaim, publishedObjections,
-  statusGroup, STATUS_GROUP_META,
+  fmtGBP, fmtInt, fmtM3, fmtMW, fmtMWRange, fmtRangeMW, headlineCapacityMW,
+  headlineCapexGBP, headlineEnergyGWh, headlineWaterM3, maturityNumber,
+  operationalJobsClaim, publishedObjections, statusGroup, STATUS_GROUP_META,
+  sumHeadlineCapacity,
 } from './data'
+import { hasLiveFormalApplication } from './planning'
 
 /* Sequential blue ramp (light->dark = low->high magnitude), from the
    validated reference palette. Ordinal-safe steps only. */
@@ -83,15 +85,15 @@ export const LENSES: LensDef[] = [
     id: 'overview',
     metric: (p) => headlineCapacityMW(p)?.mw ?? null,
     metricMax: AGG_MW,
-    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figure'),
-    aggregateLabel: 'claimed capacity in the group',
+    fmtAggregate: (t, n) => (n ? `up to ${fmtMW(t)}` : 'no figure'),
+    aggregateLabel: 'upper end of claimed capacity ranges in the group',
     label: 'Overview',
     legend: 'Colour: status group',
     marker: (p) => statusStyle(p),
     stats: (ps) => {
-      const cap = sum(ps.map((p) => headlineCapacityMW(p)?.mw ?? null))
+      const cap = sumHeadlineCapacity(ps)
       return [
-        { value: cap.n ? fmtMW(cap.total) : '—', label: `claimed capacity (${cap.n} projects, mixed claim states)` },
+        { value: cap.projects ? fmtMWRange(cap.minimumMw, cap.maximumMw) : '—', label: `claimed capacity (${cap.projects} projects, mixed claim states)` },
         { value: fmtInt(new Set(ps.map((p) => p.project.local_authority)).size), label: 'local authorities' },
       ]
     },
@@ -100,22 +102,22 @@ export const LENSES: LensDef[] = [
     id: 'electricity',
     metric: (p) => headlineCapacityMW(p)?.mw ?? null,
     metricMax: AGG_MW,
-    fmtAggregate: (t, n) => (n ? fmtMW(t) : 'no figure'),
-    aggregateLabel: 'claimed capacity in the group',
+    fmtAggregate: (t, n) => (n ? `up to ${fmtMW(t)}` : 'no figure'),
+    aggregateLabel: 'upper end of claimed capacity ranges in the group',
     label: '⚡ Electricity',
     legend: 'Size & shade: claimed capacity (MW)',
     marker: (p) => {
       const cap = headlineCapacityMW(p)
       if (!cap) return seqStyle(null, 12, 'no capacity figure located')
-      return seqStyle(Math.sqrt(cap.mw / MAX_MW), sizeBySqrt(cap.mw, MAX_MW), `${fmtMW(cap.mw)} claimed (${cap.claim.capacity_type.replace(/_/g, ' ')})`)
+      return seqStyle(Math.sqrt(cap.maximumMw / MAX_MW), sizeBySqrt(cap.maximumMw, MAX_MW), `${fmtRangeMW(cap.claim)} claimed (${cap.claim.capacity_type.replace(/_/g, ' ')})`)
     },
     stats: (ps) => {
-      const cap = sum(ps.map((p) => headlineCapacityMW(p)?.mw ?? null))
+      const cap = sumHeadlineCapacity(ps)
       const gwh = sum(ps.map(headlineEnergyGWh))
       return [
-        { value: cap.n ? fmtMW(cap.total) : '—', label: `total claimed capacity (${cap.n}/${ps.length} projects; largely developer-stated)` },
+        { value: cap.projects ? fmtMWRange(cap.minimumMw, cap.maximumMw) : '—', label: `total claimed capacity (${cap.projects}/${ps.length} projects; largely developer-stated)` },
         { value: gwh.n ? `${fmtInt(gwh.total)} GWh/yr` : '—', label: `claimed / estimated annual energy at full build (${gwh.n} projects)` },
-        { value: fmtInt(ps.length - cap.n), label: 'projects with no capacity figure' },
+        { value: fmtInt(ps.length - cap.projects), label: 'projects with no capacity figure' },
       ]
     },
   },
@@ -177,17 +179,14 @@ export const LENSES: LensDef[] = [
     fmtAggregate: (t, n) => (n ? `${fmtInt(t)}+` : '0 published'),
     aggregateLabel: 'published objections in the group',
     label: '📋 Planning',
-    legend: 'Colour: status group · size: live application',
-    marker: (p) => {
-      const livePending = (p.planning_cases ?? []).some((c) => c.decision === 'pending' && c.reference)
-      return statusStyle(p, livePending ? 24 : 14)
-    },
+    legend: 'Colour: status group · size: live formal application',
+    marker: (p) => statusStyle(p, hasLiveFormalApplication(p) ? 24 : 14),
     stats: (ps) => {
-      const pending = ps.filter((p) => (p.planning_cases ?? []).some((c) => c.decision === 'pending' && c.reference))
+      const pending = ps.filter(hasLiveFormalApplication)
       const obj = sum(ps.map(publishedObjections))
       const eiaNo = ps.filter((p) => (p.planning_cases ?? []).some((c) => c.decision === 'screening_eia_not_required')).length
       return [
-        { value: fmtInt(pending.length), label: 'live applications awaiting decision' },
+        { value: fmtInt(pending.length), label: 'formal applications awaiting decision' },
         { value: obj.n ? `${fmtInt(obj.total)}+` : '—', label: 'published objections (portal minimums)' },
         { value: fmtInt(eiaNo), label: 'screened as not requiring EIA' },
       ]

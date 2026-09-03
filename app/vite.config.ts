@@ -3,6 +3,7 @@ import { createRequire } from 'node:module'
 import { dirname, join } from 'node:path'
 import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
+import realtimeToken from './vite-plugin-realtime-token.js'
 
 /* MapLibre resolves its module worker at runtime with
    new URL('./maplibre-gl-worker.mjs', import.meta.url) — a dynamic string no
@@ -30,7 +31,7 @@ function maplibreWorkerAssets(): Plugin {
 
 export default defineConfig({
   base: './',
-  plugins: [react(), maplibreWorkerAssets()],
+  plugins: [react(), maplibreWorkerAssets(), realtimeToken()],
   /* In dev the optimizer pre-bundles maplibre-gl but never emits the module
      worker it resolves at runtime, so the map silently never loads tiles.
      Excluding it serves the package's own files, worker included. */

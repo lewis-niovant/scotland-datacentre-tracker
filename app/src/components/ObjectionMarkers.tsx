@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Marker, Popup, type Map as MapLibreMap } from 'maplibre-gl'
 import type { ProjectRecord, SourceEntry } from '../types'
 import { fmtInt, projectCoords, publishedObjections } from '../lib/data'
+import { hasObjectionStory } from '../lib/communityStories'
 
 /* Objection markers: a megaphone bubble offset from each site dot, opening the
    concerns communities actually raised — who raised them, what the developer
@@ -10,12 +11,6 @@ import { fmtInt, projectCoords, publishedObjections } from '../lib/data'
    Everything here is quoted from the record. Nothing is characterised, ranked or
    summarised by the app: the point is to surface opposition that was previously
    buried three clicks deep in a profile page, not to editorialise about it. */
-
-/** Sites with nothing recorded get no bubble at all — an empty megaphone would
-    imply "no objections" when it usually means "we have not researched this". */
-export function hasObjectionStory(p: ProjectRecord): boolean {
-  return (p.community?.principal_concerns?.length ?? 0) > 0
-}
 
 function bubbleHTML(p: ProjectRecord): string {
   const n = publishedObjections(p)
@@ -99,7 +94,7 @@ function popupContent(p: ProjectRecord, sources: Record<string, SourceEntry>): H
    There is deliberately no on/off button for these any more: objections are part
    of the record, and they surface by themselves as the reader gets close enough
    for them to be legible. */
-export const OBJECTION_MIN_ZOOM = 9.2
+const OBJECTION_MIN_ZOOM = 9.2
 
 interface Props {
   map: MapLibreMap | null

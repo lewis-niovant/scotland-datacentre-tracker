@@ -20,6 +20,13 @@
     "source_ids": ["src-inverclydenow-spango-housing-app"]
   },
   {
+    "name": "Pegasus Group",
+    "role": "consultant",
+    "confidence": "high",
+    "notes": "Agent named on planning permission in principle application 26/0136/IC.",
+    "source_ids": ["src-inverclyde-26-0136-ic"]
+  },
+  {
     "name": "IBM United Kingdom Ltd",
     "role": "other",
     "notes": "Former occupier/operator of the Spango Valley manufacturing campus, 1954 to 2016/17.",

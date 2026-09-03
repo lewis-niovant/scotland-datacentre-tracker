@@ -43,8 +43,8 @@
     "role": "tenant",
     "jurisdiction": "United States (NASDAQ: CRWV)",
     "website": "https://www.coreweave.com/",
-    "confidence": "medium",
-    "notes": "September 2025 announcement: CoreWeave to deploy NVIDIA Grace Blackwell Ultra GPUs 'at DataVita's Lanarkshire campus' as part of a £1.5bn UK commitment. This is an announced commitment/partnership, not a disclosed signed colocation contract; which building(s) host the deployment has not been published.",
-    "source_ids": ["src-coreweave-uk-15bn-2025", "src-futurescot-coreweave-datavita"]
+    "confidence": "high",
+    "notes": "The National Wealth Fund states that full capacity of both the DV1 expansion and DV3 is contracted to CoreWeave under a 15-year lease. Commercial contract details and the capacity split between the facilities are not public.",
+    "source_ids": ["src-coreweave-uk-15bn-2025", "src-futurescot-coreweave-datavita", "src-nwf-datavita-financing-2026"]
   }
 ]

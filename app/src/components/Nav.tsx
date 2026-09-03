@@ -11,9 +11,10 @@ export function Header({ snapshot }: { snapshot?: string }) {
         <span>Independent, evidence-led tracking</span>
       </NavLink>
       <nav className="desktop-nav" aria-label="Primary">
-        <NavLink to="/" end className={cls}>Map</NavLink>
+        <NavLink to="/" end className={cls}>Overview</NavLink>
+        <NavLink to="/map" className={cls}>Map</NavLink>
         <NavLink to="/projects" className={cls}>Projects</NavLink>
-        <NavLink to="/about" className={cls}>About</NavLink>
+        <NavLink to="/about" className={cls}>Method</NavLink>
       </nav>
       <span className="snapshot-tag">Data snapshot: {fmtDate(snapshot)}</span>
     </header>
@@ -33,6 +34,10 @@ export function BottomNav() {
   return (
     <nav className="bottom-nav" aria-label="Primary">
       <NavLink to="/" end className={cls}>
+        <Icon d="M4 19V9l8-6 8 6v10h-5v-6H9v6H4z" />
+        Overview
+      </NavLink>
+      <NavLink to="/map" className={cls}>
         <Icon d="M9 20l-5.5-2.2V5.3L9 7.5l6-2.8 5.5 2.2v12.5L15 17.2l-6 2.8zm0 0V7.5m6-2.8v12.5" />
         Map
       </NavLink>
@@ -42,7 +47,7 @@ export function BottomNav() {
       </NavLink>
       <NavLink to="/about" className={cls}>
         <Icon d="M12 8h.01M11 12h1v4h1m9-4a10 10 0 11-20 0 10 10 0 0120 0z" />
-        About
+        Method
       </NavLink>
     </nav>
   )

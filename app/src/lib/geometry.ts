@@ -273,6 +273,64 @@ export function pitchGrid(features: GeoFeature[], pitchM2: number): GeoCollectio
   return { type: 'FeatureCollection', features: out }
 }
 
+/* Pitch markings — halfway line, centre circle and both penalty areas, at
+   real proportions inside each cell. A plain grid of green rectangles reads
+   as a mesh; the markings are what make a reader see football pitches and so
+   actually feel the area. Drawn by us, like the grid itself.
+
+   Proportions are the standard 105 x 68 m pitch scaled to the dataset's own
+   pitch area, so they stay right if that constant changes. */
+const MAX_MARKED = 140
+
+export function pitchMarkings(cells: GeoFeature[], pitchM2: number): GeoCollection {
+  const { w, h } = pitchDims(pitchM2)
+  const sx = w / 105
+  const sy = h / 68
+  const out: GeoFeature[] = []
+
+  for (const cell of cells.slice(0, MAX_MARKED)) {
+    const ring = polysOf(cell)[0]?.[0]
+    if (!ring || ring.length < 4) continue
+    const [minX, minY, maxX, maxY] = bboxOf(polysOf(cell))
+    const midLat = (minY + maxY) / 2
+    /* Metres to degrees within this cell. */
+    const mx = 1 / mPerDegLon(midLat)
+    const my = 1 / M_PER_DEG_LAT
+    const cx = (minX + maxX) / 2
+    const cy = (minY + maxY) / 2
+    const line = (coords: Position[]) => {
+      out.push({
+        type: 'Feature',
+        geometry: { type: 'LineString', coordinates: coords },
+        properties: { kind: 'pitch_mark', slug: cell.properties.slug },
+      })
+    }
+
+    line([[cx, minY], [cx, maxY]])
+
+    const r = 9.15 * sx * mx
+    const ry = 9.15 * sy * my
+    const circle: Position[] = []
+    for (let i = 0; i <= 24; i++) {
+      const a = (i / 24) * Math.PI * 2
+      circle.push([cx + Math.cos(a) * r, cy + Math.sin(a) * ry])
+    }
+    line(circle)
+
+    const boxDepth = 16.5 * sx * mx
+    const boxHalf = 20.15 * sy * my
+    for (const side of [-1, 1]) {
+      const edge = side < 0 ? minX : maxX
+      const inner = edge + side * -1 * boxDepth
+      line([
+        [edge, cy - boxHalf], [inner, cy - boxHalf],
+        [inner, cy + boxHalf], [edge, cy + boxHalf],
+      ])
+    }
+  }
+  return { type: 'FeatureCollection', features: out }
+}
+
 /* ------------------------------------------------------------------ */
 /* Indicative building masses                                         */
 /* ------------------------------------------------------------------ */

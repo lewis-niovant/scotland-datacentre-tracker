@@ -5,10 +5,11 @@
     "annual_water_m3": null,
     "potable_water": null,
     "closed_loop": true,
+    "wue_l_per_kwh": 0.05,
     "estimate_type": "developer",
     "state": "developer_stated",
-    "confidence": "low",
-    "notes": "Marketing/FAQ and screening-stage claim; no quantified water figures in a planning submission yet.",
-    "source_ids": ["src-datavita-aigz-faq", "src-aprs-chapelhall-aigz"]
+    "confidence": "medium",
+    "notes": "DataVita's submission announcement repeats the closed-loop/no-evaporative-cooling design and states a WUE target of no more than 0.05 L/kWh. This is a design target, not measured use; annual and initial-fill volumes remain undisclosed.",
+    "source_ids": ["src-datavita-aigz-faq", "src-aprs-chapelhall-aigz", "src-datavita-dv4-submission-2026"]
   }
 ]

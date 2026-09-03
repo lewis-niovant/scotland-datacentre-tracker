@@ -1,5 +1,5 @@
 {
-  "summary": "Organised local opposition emerged quickly after the February 2026 EIA scoping submission. A Change.org petition launched 4 June 2026 had ~3,150 signatures by late July 2026; APRS is campaigning against the scheme and publicised a 'Defend your Castle' protest at a Clan Hunter gathering aimed at the Hunterston Estate as landowner; Scottish Greens MSP Cara McKee has called for a national moratorium on hyperscale data centres pending Scottish Government guidance. No application is yet open for formal representations.",
+  "summary": "Organised local opposition emerged quickly after the February 2026 EIA scoping submission through Reject Hunterston Data Centre and APRS. A Change.org petition launched on 4 June 2026 had about 3,150 signatures by late July, 4,847 as at 22 August in APRS's coalition letter, and displayed 5,660 when checked on 3 September. APRS also publicised a 'Defend your Castle' protest at a Clan Hunter gathering aimed at the Hunterston Estate as landowner. Scottish Greens MSP Cara McKee has called for a national moratorium on hyperscale data centres pending Scottish Government guidance. No application is yet open for formal representations.",
   "principal_concerns": [
     {
       "concern": "Loss of ~88 ha (petition says ~84 ha, APRS 'almost 200 acres') of agricultural land, woodland, wetland and watercourses; industrialisation of open countryside in an area already hosting Clydeport, the ore terminal and coal yard",
@@ -48,9 +48,16 @@
       "stakeholder_type": "statutory_consultee",
       "position": "Scoping approach 'generally satisfactory' but site has high archaeological potential; recommends non-invasive survey and trial trenching before determination and protection of historic landscape links to Hunterston House and Castle.",
       "source_ids": ["src-ayrshire-today-archaeology"]
+    },
+    {
+      "stakeholder": "Reject Hunterston Data Centre",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; organised the petition and signed the community-campaign coalition letter seeking a moratorium pending national safeguards.",
+      "date": "2026-08-23",
+      "source_ids": ["src-change-hunterston-petition", "src-aprs-community-letter-2026"]
     }
   ],
-  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
+  "campaign_groups": ["Reject Hunterston Data Centre", "Action to Protect Rural Scotland (APRS)"],
   "planning_authority_contact": "North Ayrshire Council planning (case officer for scoping: Iain Davies)",
-  "notes": "Fairlie Community Council is the community council for the site per the portal record; its formal position has not been located. Petition figures are self-reported by Change.org and change over time."
+  "notes": "Fairlie Community Council is the community council for the site per the portal record; its formal position has not been located. Change.org totals are self-reported and volatile: about 3,150 signatures were reported in late July, APRS recorded 4,847 as at 22 August, and the live petition displayed 5,660 when checked on 3 September 2026."
 }

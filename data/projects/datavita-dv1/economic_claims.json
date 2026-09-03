@@ -1,0 +1,47 @@
+[
+  {
+    "claim_category": "other",
+    "value": 300000000,
+    "unit": "gbp",
+    "geographic_scope": "Combined DV1 expansion and DV3 financing package",
+    "period": "announced 18 August 2026",
+    "claimant": "DataVita, National Wealth Fund and lending partners",
+    "methodology": "£300m total debt package; includes £252.5m bank lending supported by a £202m National Wealth Fund guarantee, plus Scottish National Investment Bank and Siemens Financial Services participation",
+    "independently_reviewed": null,
+    "binding_status": "commitment_stated",
+    "state": "confirmed",
+    "confidence": "high",
+    "notes": "Financing, not project capital expenditure. It supports both new facilities and must not be double-counted as £300m for each phase.",
+    "source_ids": ["src-nwf-datavita-financing-2026", "src-govuk-datavita-financing-2026", "src-datavita-funding-2026"]
+  },
+  {
+    "claim_category": "direct_construction_jobs",
+    "value": 600,
+    "unit": "jobs",
+    "geographic_scope": "Combined DV1 expansion and DV3",
+    "period": "construction",
+    "claimant": "National Wealth Fund and DataVita",
+    "methodology": "Headline announcement; detailed basis not published",
+    "independently_reviewed": false,
+    "binding_status": "modelled",
+    "state": "reported",
+    "confidence": "medium",
+    "notes": "Approximate combined figure. It is not attributed to either phase individually.",
+    "source_ids": ["src-nwf-datavita-financing-2026", "src-datavita-funding-2026"]
+  },
+  {
+    "claim_category": "direct_operational_jobs",
+    "value": 100,
+    "unit": "jobs",
+    "geographic_scope": "Combined DV1 expansion and DV3",
+    "period": "when both new facilities are operational",
+    "claimant": "National Wealth Fund and DataVita",
+    "methodology": "Headline announcement; detailed basis not published",
+    "independently_reviewed": false,
+    "binding_status": "aspirational",
+    "state": "reported",
+    "confidence": "medium",
+    "notes": "Approximate permanent-job claim across both new facilities. Wider AI Growth Zone job figures are excluded.",
+    "source_ids": ["src-nwf-datavita-financing-2026", "src-datavita-funding-2026"]
+  }
+]

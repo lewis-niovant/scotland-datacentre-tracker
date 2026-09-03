@@ -1,5 +1,5 @@
 {
-  "summary": "Statutory pre-application consultation ran during autumn 2025, with a public event on 6 October 2025 at New College Lanarkshire, Motherwell. The developer reported 75% support among attendees at the first event. Organised local opposition specific to Ravenscraig has not been identified; national campaign attention comes from Action to Protect Rural Scotland (APRS) and critical journalism (Bylines Network), focused on water/emissions disclosure, the modest permanent job count relative to scale, and the EIA screening-out decision. Political figures including Pamela Nash MP have publicly supported the proposal.",
+  "summary": "Statutory pre-application consultation ran during autumn 2025, with a public event on 6 October 2025 at New College Lanarkshire, Motherwell. The developer reported 75% support among attendees at the first event. Organised opposition is now represented by Ravenscraig Locals against Mega Data Centres, which signed the August 2026 community-campaign coalition letter; national campaign attention also comes from Action to Protect Rural Scotland (APRS) and critical journalism by Bylines Network. An Inkl report published on 19 August said North Lanarkshire Council had apologised after mistakenly passing a resident's telephone details to Apatura, which then called her; the report said the council would investigate. This is a narrow privacy and process issue reported by one secondary source and does not establish the wider planning position. Political figures including Pamela Nash MP have publicly supported the proposal.",
   "principal_concerns": [
     {
       "concern": "Minimal public disclosure of cooling system and water consumption details; no mandatory water reporting",
@@ -20,6 +20,11 @@
       "concern": "EIA screened out for a 550 MW campus; APRS highlights that Apatura sought screening opinions for all its active sites and Ravenscraig was found not to require EIA",
       "raised_by": "Action to Protect Rural Scotland",
       "source_ids": ["src-aprs-ravenscraig"]
+    },
+    {
+      "concern": "Privacy and consultation-process incident: North Lanarkshire Council reportedly passed a resident's telephone details to Apatura by mistake, after which the developer called her; the council apologised and said it would investigate.",
+      "raised_by": "Affected resident; Planning Democracy (reported)",
+      "source_ids": ["src-inkl-ravenscraig-privacy-2026"]
     }
   ],
   "claimed_local_benefits": [
@@ -52,12 +57,33 @@
       "source_ids": ["src-apatura-news-ravenscraig"]
     },
     {
-      "stakeholder": "Action to Protect Rural Scotland",
+      "stakeholder": "Action to Protect Rural Scotland (APRS)",
       "stakeholder_type": "campaign_group",
       "position": "Critical monitoring of the proposal; publicises the EIA screening-out decision and planning references.",
       "source_ids": ["src-aprs-ravenscraig"]
+    },
+    {
+      "stakeholder": "Ravenscraig Locals against Mega Data Centres",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; signed the community-campaign coalition letter seeking a moratorium on hyperscale AI data-centre decisions pending national safeguards.",
+      "date": "2026-08-23",
+      "source_ids": ["src-aprs-community-letter-2026"]
+    },
+    {
+      "stakeholder": "North Lanarkshire Council",
+      "stakeholder_type": "council_officer",
+      "position": "An Inkl report said the council admitted mistakenly sharing a resident's telephone details with Apatura, apologised, and would investigate the incident and consider any training implications.",
+      "date": "2026-08-19",
+      "source_ids": ["src-inkl-ravenscraig-privacy-2026"]
+    },
+    {
+      "stakeholder": "Planning Democracy",
+      "stakeholder_type": "ngo",
+      "position": "Called for a public investigation into the reported privacy incident and for the development process to be paused while it was examined.",
+      "date": "2026-08-19",
+      "source_ids": ["src-inkl-ravenscraig-privacy-2026"]
     }
   ],
-  "campaign_groups": ["Action to Protect Rural Scotland (APRS)"],
-  "notes": "The 75% attendee-support figure is a developer claim about its own consultation event and has not been independently verified. No community council responses or objection counts exist yet because no planning application has been submitted."
+  "campaign_groups": ["Ravenscraig Locals against Mega Data Centres", "Action to Protect Rural Scotland (APRS)"],
+  "notes": "The 75% attendee-support figure is a developer claim about its own consultation event and has not been independently verified. The privacy incident is reported by Inkl; no primary council statement was located, so the account is explicitly attributed. No community council responses or objection counts exist yet because no planning application has been submitted."
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "Council-led project with an unusual public-ownership dimension: East Lothian Council owns the site and would be a joint-venture partner with a financial return. Community councils and some elected members have pressed for scrutiny of the JV before any planning application, citing energy and water demand, transparency of the private tender decision, and whether a data centre delivers fewer jobs than the previous masterplan envisaged. The council states community benefits will be secured through a framework agreed with SDCL and that the normal planning process, including statutory consultation, lies ahead.",
+  "summary": "Council-led project with an unusual public-ownership dimension: East Lothian Council owns the site and would be a joint-venture partner with a financial return. Community councils and some elected members have pressed for scrutiny of the JV before any planning application, citing energy and water demand, transparency of the private tender decision, and whether a data centre delivers fewer jobs than the previous masterplan envisaged. Organised opposition is also represented by Say NO to Cockenzie Data Centre, a signatory to the August 2026 community-campaign coalition letter. The council states community benefits will be secured through a framework agreed with SDCL and that the normal planning process, including statutory consultation, lies ahead.",
   "principal_concerns": [
     {
       "concern": "Transparency: preferred bidder selected via a private report to Council (February 2025); Cllr Lachlan Bruce described it as 'a secretive deal' agreed 'behind closed doors'",
@@ -84,7 +84,15 @@
       "stakeholder_type": "community_council",
       "position": "Concerned: greenwashing, water usage, absent community-benefits framework, minimal local jobs.",
       "source_ids": ["src-elcourier-cockenzie-progress-2026"]
+    },
+    {
+      "stakeholder": "Say NO to Cockenzie Data Centre",
+      "stakeholder_type": "resident_group",
+      "position": "Opposed; signed the community-campaign coalition letter seeking a moratorium on hyperscale AI data-centre decisions pending national safeguards.",
+      "date": "2026-08-23",
+      "source_ids": ["src-aprs-community-letter-2026"]
     }
   ],
+  "campaign_groups": ["Say NO to Cockenzie Data Centre", "Action to Protect Rural Scotland (APRS)"],
   "notes": "No formal consultation is open; the council estimated (Oct 2025) up to a year to finalise legal agreements before the statutory public consultation stage."
 }

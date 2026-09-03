@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_DIR = ROOT / "data" / "schema"
 PROJECTS_DIR = ROOT / "data" / "projects"
 SOURCES_FILE = ROOT / "data" / "sources" / "sources.json"
+BRIEFING_FILE = ROOT / "data" / "briefing.json"
 
 # project-folder file -> schema file (all optional except project.json)
 FILE_SCHEMAS = {
@@ -80,6 +81,18 @@ def main():
     else:
         warnings.append("No sources ledger yet (data/sources/sources.json)")
 
+    # The public briefing is source-backed just like each project record.
+    if BRIEFING_FILE.exists():
+        briefing = load_json(BRIEFING_FILE, errors)
+        if briefing is not None:
+            v = validator_for("briefing.schema.json")
+            for err in v.iter_errors(briefing):
+                errors.append(f"briefing.json: {'/'.join(map(str, err.path))}: {err.message}")
+            used = set(SOURCE_ID_RE.findall(BRIEFING_FILE.read_text()))
+            missing = used - known_source_ids
+            if missing:
+                errors.append(f"briefing.json: unknown source ids: {sorted(missing)}")
+
     # Projects
     slugs = set()
     project_dirs = sorted(p for p in PROJECTS_DIR.iterdir() if p.is_dir()) if PROJECTS_DIR.exists() else []
@@ -126,6 +139,14 @@ def main():
             for r in proj.get("related_project_slugs", []):
                 if r not in slugs:
                     errors.append(f"{pdir.relative_to(ROOT)}: related project '{r}' not found")
+
+    if BRIEFING_FILE.exists():
+        briefing = load_json(BRIEFING_FILE, [])
+        if briefing:
+            for update in briefing.get("updates", []):
+                for slug in update.get("project_slugs", []):
+                    if slug not in slugs:
+                        errors.append(f"briefing.json: project '{slug}' not found")
 
     for w in warnings:
         print(f"WARN  {w}")

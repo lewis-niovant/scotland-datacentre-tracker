@@ -16,6 +16,7 @@ data/
   schema/            JSON Schemas for every record type
   registry.json      Provisional project registry (research triage)
   constants.json     Disclosed comparison constants & national context figures
+  briefing.json      Source-backed national updates shown on the public overview
   sources/sources.json   Global source ledger (reliability-tiered)
   projects/<slug>/   One folder per canonical project:
     project.json, site.json, capacity_claims.json, energy_estimates.json,
@@ -29,9 +30,9 @@ app/                 Static web app (Vite + React + MapLibre)
 
 ## Site boundaries and geometry
 
-Official red-line planning boundaries are held for **17 of the 39 projects**, fetched from Spatial Hub Scotland's "Planning Applications: Official" dataset (Improvement Service) under the **Open Government Licence v3**. Attribution: *Contains information from Spatial Hub Scotland, "Planning Applications: Official" (Improvement Service), licensed under the Open Government Licence v3.0.*
+Official red-line planning boundaries are held for **19 of the 39 projects**, fetched from Spatial Hub Scotland's "Planning Applications: Official" dataset (Improvement Service) under the **Open Government Licence v3**. Attribution: *Contains information from Spatial Hub Scotland, "Planning Applications: Official" (Improvement Service), licensed under the Open Government Licence v3.0.*
 
-See [docs/GEOMETRY_AND_BOUNDARIES.md](docs/GEOMETRY_AND_BOUNDARIES.md) for coverage, the area reconciliation against previously researched site areas, why the other 22 projects have no boundary, where dashed "area sourced, shape modelled" extents are used instead, and the access recipe for reproducing the fetch.
+See [docs/GEOMETRY_AND_BOUNDARIES.md](docs/GEOMETRY_AND_BOUNDARIES.md) for coverage, the area reconciliation against previously researched site areas, why the remaining projects have no official boundary, where dashed "area sourced, shape modelled" extents are used instead, and the access recipe for reproducing the fetch.
 
 ## Basemap, imagery and terrain
 

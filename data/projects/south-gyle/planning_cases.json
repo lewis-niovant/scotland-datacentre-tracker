@@ -101,12 +101,13 @@
     "consultation_deadline": "2026-04-28",
     "decision": "pending",
     "appeal_reference": "PPA-230-2794",
-    "appeal_status": "Live - allocated to reporter; written submissions; DPEA target decision date 18 August 2026; case update of 15 June 2026 noted one further written information request outstanding",
+    "appeal_status": "Recalled by Scottish Ministers on 17 August 2026; DPEA status 'Case on hold' while Ministers consider the appeal; appellant has confirmed it will submit an EIA Report; revised DPEA target date 28 September 2026",
+    "eia_required": true,
     "representations": {
       "notes": "38 documents under 'Representations to DPEA' on the case file (37 redacted representations plus responses); interested parties include APRS, ERCS Legal Ltd and individual residents. Deadline for representations was 28 April 2026."
     },
     "official_url": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?ID=128582",
-    "last_checked_at": "2026-07-30",
+    "last_checked_at": "2026-09-03",
     "events": [
       {
         "event_date": "2026-03-30",
@@ -145,12 +146,36 @@
         "source_ids": ["src-dpea-ppa-230-2794"]
       },
       {
+        "event_date": "2026-07-30",
+        "event_type": "eia_screening_direction",
+        "title": "Reporter issues screening direction requiring an Environmental Impact Assessment",
+        "source_ids": ["src-dpea-ppa-230-2794", "src-ercs-south-gyle-eia-2026"]
+      },
+      {
+        "event_date": "2026-08-12",
+        "event_type": "eia_report_commitment",
+        "title": "Appellant confirms that it will submit an EIA Report",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      },
+      {
+        "event_date": "2026-08-17",
+        "event_type": "appeal_recalled",
+        "title": "Scottish Ministers recall the appeal; DPEA records the case as on hold for ministerial consideration",
+        "source_ids": ["src-dpea-ppa-230-2794", "src-scotgov-data-centre-planning-direction-2026"]
+      },
+      {
         "event_date": "2026-08-18",
+        "event_type": "superseded_target_date",
+        "title": "Former DPEA target decision date, superseded after ministerial recall",
+        "source_ids": ["src-dpea-ppa-230-2794"]
+      },
+      {
+        "event_date": "2026-09-28",
         "event_type": "target_date",
-        "title": "DPEA target decision date",
+        "title": "Revised DPEA target date for the recalled appeal",
         "source_ids": ["src-dpea-ppa-230-2794"]
       }
     ],
-    "source_ids": ["src-dpea-ppa-230-2794", "src-shelborn-appeal-statement", "src-aprs-south-gyle"]
+    "source_ids": ["src-dpea-ppa-230-2794", "src-shelborn-appeal-statement", "src-aprs-south-gyle", "src-ercs-south-gyle-eia-2026"]
   }
 ]

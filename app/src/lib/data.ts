@@ -11,33 +11,44 @@ import type {
 export interface Dataset {
   observatory: Observatory
   geo: GeoCollection
+  geoLoadFailed: boolean
 }
 
 const EMPTY_OBSERVATORY: Observatory = { projects: [], sources: {} }
 const EMPTY_GEO: GeoCollection = { type: 'FeatureCollection', features: [] }
 
-async function fetchJson<T>(path: string, fallback: T): Promise<T> {
-  try {
-    const res = await fetch(`${import.meta.env.BASE_URL}${path}`)
-    if (!res.ok) return fallback
-    return (await res.json()) as T
-  } catch {
-    return fallback
-  }
+async function fetchJson<T>(path: string): Promise<T> {
+  const res = await fetch(`${import.meta.env.BASE_URL}${path}`)
+  if (!res.ok) throw new Error(`Could not load ${path} (${res.status})`)
+  return (await res.json()) as T
 }
 
 export async function loadDataset(): Promise<Dataset> {
-  const [observatory, geo] = await Promise.all([
-    fetchJson<Observatory>('data/observatory.json', EMPTY_OBSERVATORY),
-    fetchJson<GeoCollection>('data/geo.json', EMPTY_GEO),
-  ])
+  const observatory = await fetchJson<Observatory>('data/observatory.json')
+  if (!Array.isArray(observatory.projects) || observatory.projects.length === 0) {
+    throw new Error('The Observatory project dataset is empty or malformed')
+  }
+
+  let geoLoadFailed = false
+  let geo = EMPTY_GEO
+  try {
+    geo = await fetchJson<GeoCollection>('data/geo.json')
+    if (geo?.type !== 'FeatureCollection' || !Array.isArray(geo.features)) {
+      geoLoadFailed = true
+      geo = EMPTY_GEO
+    }
+  } catch {
+    geoLoadFailed = true
+  }
+
   return {
     observatory: {
       ...EMPTY_OBSERVATORY,
       ...observatory,
       projects: (observatory.projects ?? []).filter((p) => p?.project?.is_public !== false),
     },
-    geo: geo?.type === 'FeatureCollection' && Array.isArray(geo.features) ? geo : EMPTY_GEO,
+    geo,
+    geoLoadFailed,
   }
 }
 
@@ -92,7 +103,7 @@ export function statusGroup(status?: Status | string): StatusGroup {
 export const STATUS_GROUP_META: Record<StatusGroup, { label: string; short: string; color: string; colorDark: string }> = {
   operating:   { label: 'Operating',                 short: 'Operating',   color: '#008300', colorDark: '#008300' },
   consented:   { label: 'Consented / building',      short: 'Consented',   color: '#2a78d6', colorDark: '#3987e5' },
-  pending:     { label: 'Application pending',       short: 'Pending',     color: '#eda100', colorDark: '#c98500' },
+  pending:     { label: 'Application / appeal live', short: 'Live case',   color: '#eda100', colorDark: '#c98500' },
   pre_app:     { label: 'Pre-application / early',   short: 'Pre-app',     color: '#e87ba4', colorDark: '#d55181' },
   refused:     { label: 'Refused / withdrawn',       short: 'Refused',     color: '#4a3aa7', colorDark: '#9085e9' },
   speculative: { label: 'Speculative / grid only',   short: 'Speculative', color: '#898781', colorDark: '#898781' },
@@ -177,22 +188,73 @@ export function claimValueMW(c: CapacityClaim): number | null {
   return null
 }
 
+function claimBoundsMW(c: CapacityClaim): { minimumMw: number; maximumMw: number } | null {
+  if (typeof c.value_mw === 'number') return { minimumMw: c.value_mw, maximumMw: c.value_mw }
+  if (typeof c.minimum_mw === 'number' && typeof c.maximum_mw === 'number') {
+    return { minimumMw: c.minimum_mw, maximumMw: c.maximum_mw }
+  }
+  if (typeof c.minimum_mw === 'number') return { minimumMw: c.minimum_mw, maximumMw: c.minimum_mw }
+  if (typeof c.maximum_mw === 'number') return { minimumMw: c.maximum_mw, maximumMw: c.maximum_mw }
+  return null
+}
+
+export interface HeadlineCapacity {
+  /** Upper end, retained for sorting and proportional marker size only. */
+  mw: number
+  minimumMw: number
+  maximumMw: number
+  claim: CapacityClaim
+}
+
 /** Headline capacity: the preferred non-superseded facility claim, else the
     largest facility-scale claim. Excludes onsite/backup generation claims. */
-export function headlineCapacityMW(p: ProjectRecord): { mw: number; claim: CapacityClaim } | null {
-  const facility = (p.capacity_claims ?? []).filter(
+export function headlineCapacityMW(p: ProjectRecord): HeadlineCapacity | null {
+  const allClaims = p.capacity_claims ?? []
+  const excludedTypes = ['onsite_generation', 'backup_generation', 'battery_storage', 'connection_application', 'connection_offer']
+  const explicitlyPreferred = allClaims.find((c) => c.preferred && c.state !== 'superseded')
+  if (explicitlyPreferred) {
+    if (excludedTypes.includes(explicitlyPreferred.capacity_type)) return null
+    const bounds = claimBoundsMW(explicitlyPreferred)
+    return bounds == null ? null : {
+      mw: bounds.maximumMw,
+      ...bounds,
+      claim: explicitlyPreferred,
+    }
+  }
+  const facility = allClaims.filter(
     (c) =>
       c.state !== 'superseded' &&
-      !['onsite_generation', 'backup_generation', 'battery_storage'].includes(c.capacity_type),
+      !['estimated', 'inferred', 'disputed'].includes(c.state) &&
+      !excludedTypes.includes(c.capacity_type),
   )
-  const preferred = facility.find((c) => c.preferred && claimValueMW(c) != null)
-  if (preferred) return { mw: claimValueMW(preferred)!, claim: preferred }
-  let best: { mw: number; claim: CapacityClaim } | null = null
+  let best: HeadlineCapacity | null = null
   for (const c of facility) {
-    const v = claimValueMW(c)
-    if (v != null && (!best || v > best.mw)) best = { mw: v, claim: c }
+    const bounds = claimBoundsMW(c)
+    if (bounds && (!best || bounds.maximumMw > best.maximumMw)) {
+      best = { mw: bounds.maximumMw, ...bounds, claim: c }
+    }
   }
   return best
+}
+
+export interface HeadlineCapacityTotal {
+  minimumMw: number
+  maximumMw: number
+  projects: number
+}
+
+export function sumHeadlineCapacity(projects: ProjectRecord[]): HeadlineCapacityTotal {
+  let minimumMw = 0
+  let maximumMw = 0
+  let withCapacity = 0
+  for (const project of projects) {
+    const capacity = headlineCapacityMW(project)
+    if (!capacity) continue
+    minimumMw += capacity.minimumMw
+    maximumMw += capacity.maximumMw
+    withCapacity += 1
+  }
+  return { minimumMw, maximumMw, projects: withCapacity }
 }
 
 export function headlineEnergyGWh(p: ProjectRecord): number | null {
@@ -303,6 +365,12 @@ export function fmtRangeMW(c: CapacityClaim): string {
   if (typeof c.minimum_mw === 'number') return `≥ ${fmtMW(c.minimum_mw)}`
   if (typeof c.maximum_mw === 'number') return `≤ ${fmtMW(c.maximum_mw)}`
   return 'not disclosed'
+}
+
+export function fmtMWRange(minimumMw: number, maximumMw: number): string {
+  return minimumMw === maximumMw
+    ? fmtMW(maximumMw)
+    : `${fmtMW(minimumMw)}–${fmtMW(maximumMw)}`
 }
 
 export const CAPACITY_TYPE_LABELS: Record<string, string> = {

@@ -1,0 +1,39 @@
+{
+  "$id": "briefing.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public briefing and national update timeline",
+  "type": "object",
+  "required": ["as_of_date", "headline", "summary", "updates"],
+  "properties": {
+    "as_of_date": { "$ref": "common.schema.json#/$defs/isoDate" },
+    "headline": { "type": "string", "minLength": 20 },
+    "summary": { "type": "string", "minLength": 40 },
+    "updates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "category", "title", "summary", "source_ids"],
+        "properties": {
+          "date": { "$ref": "common.schema.json#/$defs/isoDate" },
+          "category": {
+            "type": "string",
+            "enum": ["national_policy", "planning", "construction", "community", "research"]
+          },
+          "title": { "type": "string" },
+          "summary": { "type": "string" },
+          "project_slugs": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+          },
+          "source_ids": { "$ref": "common.schema.json#/$defs/sourceIds" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "caveats": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

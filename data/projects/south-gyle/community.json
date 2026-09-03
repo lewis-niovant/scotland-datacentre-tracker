@@ -1,5 +1,5 @@
 {
-  "summary": "The application attracted sustained opposition from October 2025, led by APRS with a local residents' campaign group (WhatsApp/Instagram based), and protests outside the City Chambers before the 4 February 2026 committee hearing. Concerns centred on climate impact and 'greenwashing' of the green data centre label, the decision not to require an EIA, diesel backup generators near planned housing and a nursery, energy/grid demand, and minimal job creation against the mixed-use vision for Edinburgh Park. Councillors from all parties echoed these concerns and refused unanimously against officer advice. At appeal, 38 representations were lodged with the DPEA, including from APRS and ERCS Legal.",
+  "summary": "The application attracted sustained opposition from October 2025, led by APRS with a local residents' campaign group (WhatsApp/Instagram based), and protests outside the City Chambers before the 4 February 2026 committee hearing. Concerns centred on climate impact and 'greenwashing' of the green data centre label, the decision not to require an EIA, diesel backup generators near planned housing and a nursery, energy/grid demand, and minimal job creation against the mixed-use vision for Edinburgh Park. Councillors from all parties echoed these concerns and refused unanimously against officer advice. At appeal, 38 representations were lodged with the DPEA, including from APRS and ERCS Legal. The appellant confirmed on 12 August 2026 that it would submit an EIA Report, and Scottish Ministers recalled the appeal on 17 August for their own consideration.",
   "principal_concerns": [
     {
       "concern": "Climate impact and lifecycle greenhouse gas emissions of a c. 210-213 MW facility; Cockburn Association-reported analysis put projected annual emissions at roughly 200,000 tonnes CO2, compared to about 10% of Edinburgh's total",
@@ -21,6 +21,7 @@
     {
       "concern": "Decision not to require an Environmental Impact Assessment despite the scale of energy use, described by APRS as 'gobsmacking'",
       "raised_by": "APRS; also pursued at appeal (Finch UKSC ruling cited)",
+      "developer_response": "The appellant confirmed to DPEA on 12 August 2026 that it will submit an EIA Report; Scottish Ministers recalled the appeal five days later.",
       "source_ids": [
         "src-deadline-hearing",
         "src-scn-refusal",
@@ -138,6 +139,16 @@
       "position": "Councillors backed moves towards a temporary ban/moratorium on AI data centres in March 2026, though officials warned a moratorium would be unenforceable since applicants can appeal to the Scottish Government",
       "source_ids": [
         "src-edinburgh-inquirer"
+      ]
+    },
+    {
+      "stakeholder": "Scottish Ministers",
+      "stakeholder_type": "government",
+      "position": "Recalled appeal PPA-230-2794 on 17 August 2026 for ministerial consideration; the DPEA case is on hold.",
+      "date": "2026-08-17",
+      "source_ids": [
+        "src-dpea-ppa-230-2794",
+        "src-scotgov-data-centre-planning-direction-2026"
       ]
     }
   ],

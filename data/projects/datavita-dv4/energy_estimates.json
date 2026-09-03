@@ -13,5 +13,20 @@
     "confidence": "low",
     "notes": "Zone-level marketing claims (PUE 1.15, sub-5 gCO2e/kWh). APRS analysis argues the claimed renewables would need c.100 km2 and would still deliver only about half the energy a 500MW load requires; UK Government press release says zone energy 'drawn from on-site renewables'. Recorded on DV4 as the AIGZ context record; applies equally to DV6.",
     "source_ids": ["src-datavita-aigz-faq", "src-scn-aigz-2026", "src-govuk-lanarkshire-aigz-2026", "src-aprs-chapelhall-aigz"]
+  },
+  {
+    "scenario_name": "DV4 design target announced with application submission",
+    "phase": "DV4 site",
+    "annual_energy_gwh": null,
+    "pue": 1.25,
+    "renewable_claim_percent": 100,
+    "matching_method": "annual_certificates",
+    "power_purchase_agreement": null,
+    "onsite_generation": "HVO-fuelled standby generation proposed; not a normal operating supply",
+    "estimate_type": "developer",
+    "state": "developer_stated",
+    "confidence": "medium",
+    "notes": "DataVita states a target PUE below 1.25 and 100% REGO-backed Scottish electricity. Recording 1.25 represents the disclosed target ceiling, not measured performance. REGO certificates do not demonstrate hourly matching or a dedicated physical supply.",
+    "source_ids": ["src-datavita-dv4-submission-2026"]
   }
 ]

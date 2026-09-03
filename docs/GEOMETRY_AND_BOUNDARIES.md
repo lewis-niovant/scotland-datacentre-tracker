@@ -1,7 +1,7 @@
 # Site boundaries and geometry
 
 How the Observatory sources site geometry, what is official, what is modelled, what is
-missing, and why. Snapshot date 2026-07-30; 39 project records.
+missing, and why. Geometry inventory checked 2026-09-03; 39 project records.
 
 Nothing here overrides a per-project record. Where official geometry and researched
 figures disagree, both are retained and the disagreement is recorded as an open
@@ -134,24 +134,33 @@ questions on their project records rather than resolved, and both figures are re
 
 20 projects have no official boundary. The reasons are not equivalent.
 
-### No planning reference held yet — 12 projects
+### No planning reference held yet — 10 projects
 
-ai-pathfinder-irvine, chapelcross, clydebridge, cockenzie, dounreay, easterhouse,
-edzell, fearn-airfield, gogar, greenock-spango, inchinnan, jawcraig.
+ai-pathfinder-irvine, clydebridge, cockenzie, dounreay, easterhouse, edzell,
+fearn-airfield, gogar, inchinnan, jawcraig.
 
 These are announcements, strategic opportunities or grid-record-only entries that have
 not entered the planning system. No red line exists upstream to fetch. This is a fact
 about the projects — most of the pipeline is not yet an application — not a gap in our
 research.
 
-### Upstream geometry is a buffered point, not a real boundary — 4 projects
+### A reference is now known, but no boundary has arrived upstream — 2 projects
+
+| Project | Authority | Reference | Current position |
+|---|---|---|---|
+| chapelcross | Dumfries and Galloway | 26/0855/PAN | Reference located through a council-record mirror; direct portal and upstream geometry still need rechecking |
+| greenock-spango | Inverclyde | 26/0136/IC | Formal application verified directly on the council portal on 3 September 2026; no matching boundary in the current Spatial Hub snapshot |
+
+These should be checked again on the next geometry refresh before any manual
+digitisation is attempted.
+
+### Upstream geometry is a buffered point, not a real boundary — 3 projects
 
 | Project | Authority | Reference | Upstream polygon area |
 |---|---|---|---|
 | hunterston | North Ayrshire | 26/00138/EIA | 312 m² |
 | hurlford-rufus | East Ayrshire | 25/0008/PREAPP | 382 m² |
 | ochiltree | East Ayrshire | 25/0003/EIASCR, 25/0002/S36SCR | 397 m² |
-| westerhill (screening records only) | East Dunbartonshire | TP/ED/25/0245, ENQ/ED/2025/00075 | 310 m² |
 
 The dataset's own documentation warns that some authorities supply buffered points
 rather than true red lines — **East Ayrshire is named upstream as doing so**; the North
@@ -286,13 +295,14 @@ substitute for the Spatial Hub polygons.
 Priority-ordered:
 
 1. **Chase the buffered-point records** (North Ayrshire, East Ayrshire, East Dunbartonshire) and the
-   Improvement Service — four significant schemes have no usable upstream geometry.
+Improvement Service — three significant schemes have no usable upstream geometry.
 2. **Check application documents for Cato, Drumshangie and MeyGen** to resolve whether
    the recorded areas describe developable area or footprint rather than the red line.
    Until then the discrepancies stay open questions.
-3. **Hand-digitise from site-plan PDFs** for high-profile schemes with no planning
-   reference — chapelcross, cockenzie, greenock-spango — at roughly 30–60 minutes each,
-   recorded as `boundary_precision: "digitised_from_plan"`.
+3. **Recheck the newly referenced Chapelcross and Greenock records upstream**, then
+   hand-digitise from site-plan PDFs only if their official polygons remain unavailable;
+   Cockenzie still has no planning reference. Record any manual outline as
+   `boundary_precision: "digitised_from_plan"`.
 4. **Re-run the fetcher periodically.** The upstream dataset updates daily, and
    pre-application schemes will acquire references over time, so coverage should rise
-   above 17 of 39 without further research effort.
+   above 19 of 39 without further research effort.
